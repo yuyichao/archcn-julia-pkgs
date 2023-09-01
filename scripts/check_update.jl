@@ -28,8 +28,19 @@ function load_packages(pkgsdir)
     return res
 end
 
-const pkgsdir = joinpath(@__DIR__, "../pkgs")
+struct Context
+    pkgsdir::String
+    workdir::String
+    registry::Pkg.Registry.RegistryInstance
+    packages_info::Dict{String,Any}
+    function Context()
+        pkgsdir = joinpath(@__DIR__, "../pkgs")
+        workdir = get(ENV, "JL_ARCHCN_WORKDIR",
+                      joinpath(Base.DEPOT_PATH[1], "archcn"))
+        registry = find_general_registry()
+        packages_info = load_packages(pkgsdir)
+        return new(pkgsdir, workdir, registry, packages_info)
+    end
+end
 
-const registry = find_general_registry()
-
-const packages_info = load_packages(pkgsdir)
+const context = Context()
