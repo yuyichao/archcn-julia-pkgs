@@ -38,9 +38,10 @@ struct Context
         pkgsdir = joinpath(@__DIR__, "../pkgs")
         workdir = get(ENV, "JL_ARCHCN_WORKDIR",
                       joinpath(Base.DEPOT_PATH[1], "archcn"))
+        mkpath(workdir)
         registry = find_general_registry()
         packages_info = load_packages(pkgsdir)
-        return new(pkgsdir, workdir, registry, packages_info)
+        return new(pkgsdir, workdir, registry, packages_info, String[])
     end
 end
 
@@ -114,3 +115,5 @@ function scan(ctx::Context)
         find_new_versions(ctx, uuid, VersionNumber(arch_info["Status"]["version"]))
     end
 end
+
+scan(context)
