@@ -33,6 +33,7 @@ struct Context
     workdir::String
     registry::Pkg.Registry.RegistryInstance
     packages_info::Dict{Base.UUID,Any}
+    unknown_packages::Set{Base.UUID}
     messages::Vector{String}
     function Context()
         pkgsdir = joinpath(@__DIR__, "../pkgs")
@@ -41,7 +42,8 @@ struct Context
         mkpath(workdir)
         registry = find_general_registry()
         packages_info = load_packages(pkgsdir)
-        return new(pkgsdir, workdir, registry, packages_info, String[])
+        return new(pkgsdir, workdir, registry, packages_info,
+                   Set{Base.UUID}(), String[])
     end
 end
 
@@ -56,11 +58,15 @@ function check_missing_deps(ctx::Context, pkginfo, new_ver,
             continue
         end
         uuid in keys(ctx.packages_info) && continue
+        if !haskey(ctx.registry, uuid)
+            push!(ctx.unknown_packages, uuid)
+            continue
+        end
         has_miss = true
         push!(missed_deps, uuid)
     end
     _weak_compat_info = Pkg.Registry.weak_compat_info(pkginfo)
-    if weak_compat_info === nothing
+    if _weak_compat_info === nothing
         return !has_miss
     end
     for (uuid, ver) in _weak_compat_info[new_ver]
@@ -68,6 +74,10 @@ function check_missing_deps(ctx::Context, pkginfo, new_ver,
             continue
         end
         uuid in keys(ctx.packages_info) && continue
+        if !haskey(ctx.registry, uuid)
+            push!(ctx.unknown_packages, uuid)
+            continue
+        end
         # Do not treat missing weak dependencies as hard break for now
         push!(missed_weak_deps, uuid)
     end
