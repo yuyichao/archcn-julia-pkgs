@@ -24,17 +24,14 @@ end
 const context = Context()
 
 function update_stdlib_list(ctx, stdlibs)
-    global_info_file = joinpath(ctx.pkgsdir, "global.toml")
-    global_info = (isfile(global_info_file) ? TOML.parsefile(global_info_file) :
-        Dict{String,Any}())
-    old_stdlibs = get(global_info, "StdLibs", nothing)
+    old_stdlibs = get(ctx.global_info, "StdLibs", nothing)
     if old_stdlibs !== nothing && old_stdlibs == stdlibs
         @info "StdLibs list already up to date."
         return
     end
-    global_info["StdLibs"] = stdlibs
-    open(global_info_file, "w") do io
-        TOML.print(io, global_info)
+    ctx.global_info["StdLibs"] = stdlibs
+    open(joinpath(ctx.pkgsdir, "global.toml"), "w") do io
+        TOML.print(io, ctx.global_info)
     end
     @info "StdLibs list updated."
 end

@@ -36,6 +36,7 @@ struct Context
     workdir::String
     registry::Pkg.Registry.RegistryInstance
     packages_info::Dict{Base.UUID,Any}
+    global_info::Dict{String,Any}
     unknown_packages::Set{Base.UUID}
     messages::Vector{String}
     function Context()
@@ -45,7 +46,8 @@ struct Context
         mkpath(workdir)
         registry = find_general_registry()
         packages_info = load_packages(pkgsdir)
+        global_info = TOML.parsefile(joinpath(pkgsdir, "global.toml"))
         return new(pkgsdir, workdir, registry, packages_info,
-                   Set{Base.UUID}(), String[])
+                   global_info, Set{Base.UUID}(), String[])
     end
 end
