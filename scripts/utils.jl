@@ -6,6 +6,8 @@ using TOML
 include("git_utils.jl")
 include("jll_utils.jl")
 
+const project_toml_names = ("Project.toml", "JuliaProject.toml")
+
 function find_general_registry()
     Pkg.Registry.update("General")
     for reg in Pkg.Registry.reachable_registries()
@@ -18,6 +20,7 @@ end
 function load_packages(pkgsdir)
     res = Dict{Base.UUID,Any}()
     for dir in readdir(pkgsdir, join=true)
+        isdir(dir) || continue
         try
             d = TOML.parsefile(joinpath(dir, "info.toml"))
             res[Base.UUID(d["Pkg"]["uuid"])] = d
