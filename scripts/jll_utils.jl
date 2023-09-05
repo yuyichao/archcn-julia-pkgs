@@ -2,8 +2,8 @@
 
 function get_jll_content(url, name, hash, workdir)
     LibGit2.with(get_repo(url, name, workdir)) do repo
-        reset_commit(repo, hash)
         repopath = LibGit2.workdir(repo)
+        checkout_tree(repo, hash, repopath)
         wrappersdir = joinpath(repopath, "src/wrappers")
         for file in readdir(wrappersdir)
             m = match(r"x86_64-(.*-|)linux-(.*-|)gnu.*\.jl", file)
@@ -39,7 +39,7 @@ function check_jll_content(ctx::Context, pkginfo, arch_info, new_ver,
                            out::JLLChanges)
     name = arch_info["Pkg"]["name"]
     url = pkginfo.repo
-    hash = string(pkginfo.version_info[new_ver].git_tree_sha1)
+    hash = pkginfo.version_info[new_ver].git_tree_sha1.bytes
     workdir = joinpath(ctx.workdir, "gitcache")
     products = get_jll_content(url, name, hash, workdir)
     old_products = get!(Dict{String,Vector{String}},

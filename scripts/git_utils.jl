@@ -27,3 +27,14 @@ end
 function reset_commit(repo, hash)
     LibGit2.reset!(repo, LibGit2.GitHash(hash), LibGit2.Consts.RESET_HARD)
 end
+
+function checkout_tree(repo, hash, path)
+    tree = LibGit2.GitObject(repo, LibGit2.GitHash(hash))
+    GC.@preserve path begin
+        opts = LibGit2.CheckoutOptions(
+            checkout_strategy = LibGit2.Consts.CHECKOUT_FORCE,
+            target_directory = Base.unsafe_convert(Cstring, path)
+        )
+        LibGit2.checkout_tree(repo, tree, options=opts)
+    end
+end
