@@ -135,9 +135,63 @@ function find_new_versions(ctx::Context, uuid, version)
     return pkg_ver_info
 end
 
+struct PackageVersionInfo
+    issues::Dict{VersionNumber,Vector{Any}}
+    good_versions::Set{VersionNumber}
+    PackageVersionInfo() =
+        new(Dict{VersionNumber,Vector{Any}}(), Set{VersionNumber}())
+end
+
+function create_messages(ctx::Context, uuid, info::PackageVersionInfo)
+    arch_info = ctx.packages_info[uuid]
+    if isempty(info.issues)
+        delete!(arch_info, "Issues")
+        return
+    end
+    messages = String[]
+    empty_issue = []
+    name = arch_info["Pkg"]["name"]
+    old_issues = get(Dict{String,Any}, arch_info, "Issues")
+    new_issues = Dict{String,Any}()
+    for (ver, issues) in info.issues
+        ver_str = string(ver)
+        pkgprefix = "$(name)@$(ver_str) [$(uuid)]"
+        for issue in issues
+            if isa(issue, MissingDepsInfo)
+                issue_dict = todict(ctx, issue)
+                new_issues[ver_str] = issue_dict
+                if issue_dict in get(old_issues, ver_str, empty_issue)
+                    continue
+                end
+                push!(messages, "Missing dependencies for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
+            elseif isa(issue, JLLChanges)
+                issue_dict = todict(ctx, issue)
+                new_issues[ver_str] = issue_dict
+                if issue_dict in get(old_issues, ver_str, empty_issue)
+                    continue
+                end
+                push!(messages, "JLL changed for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
+            elseif isa(issue, CheckError)
+                push!(messages,
+                      "Error during version check for $(pkgprefix):\n$(sprint(print, issue.e))")
+            else
+                push!(messages, "Unknown issue for $(pkgprefix): $(issue)")
+            end
+        end
+    end
+    if isempty(new_issues)
+        delete!(arch_info, "Issues")
+    else
+        arch_info["Issues"] = new_issues
+    end
+    return messages
+end
+
 function scan(ctx::Context)
     for (uuid, arch_info) in ctx.packages_info
-        find_new_versions(ctx, uuid, VersionNumber(arch_info["Status"]["version"]))
+        check_res = find_new_versions(ctx, uuid,
+                                      VersionNumber(arch_info["Status"]["version"]))
+        create_messages(ctx, uuid, check_res)
     end
 end
 
