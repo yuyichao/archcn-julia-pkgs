@@ -60,6 +60,10 @@ function check_missing_deps(ctx::Context, pkginfo, new_ver, is_jll,
     return isempty(out.deps)
 end
 
+struct CheckError
+    e
+end
+
 struct PackageVersionInfo
     issues::Dict{VersionNumber,Vector{Any}}
     good_versions::Set{VersionNumber}
@@ -79,14 +83,29 @@ function find_new_versions(ctx::Context, uuid, version)
     jll_changes = JLLChanges()
     for new_ver in keys(pkginfo.version_info)
         new_ver > version || continue
-        ver_ok = check_missing_deps(ctx, pkginfo, new_ver, is_jll,
-                                    missing_deps_info)
+        ver_ok = true
+
+        try
+            ver_ok &= check_missing_deps(ctx, pkginfo, new_ver, is_jll,
+                                         missing_deps_info)
+        catch
+            ver_ok = false
+            push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver),
+                  CheckError(current_exceptions()))
+        end
         if !isempty(missing_deps_info)
             push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver), missing_deps_info)
             missing_deps_info = MissingDepsInfo()
         end
         if is_jll
-            ver_ok &= check_jll_content(ctx, pkginfo, arch_info, new_ver, jll_changes)
+            try
+                ver_ok &= check_jll_content(ctx, pkginfo, arch_info, new_ver,
+                                            jll_changes)
+            catch
+                ver_ok = false
+                push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver),
+                      CheckError(current_exceptions()))
+            end
             if !isempty(jll_changes)
                 push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver),
                       jll_changes)
