@@ -26,3 +26,49 @@ function get_jll_content(url, name, hash, workdir)
         end
     end
 end
+
+struct JLLChanges
+    add::Dict{String,Vector{String}}
+    remove::Dict{String,Vector{String}}
+    JLLChanges() = new(Dict{String,Vector{String}}(), Dict{String,Vector{String}}())
+end
+
+Base.isempty(changes::JLLChanges) = isempty(changes.add) && isempty(changes.remove)
+
+function check_jll_content(ctx::Context, pkginfo, arch_info, new_ver,
+                           out::JLLChanges)
+    name = arch_info["Pkg"]["name"]
+    url = pkginfo.repo
+    hash = string(pkginfo.version_info[new_ver].git_tree_sha1)
+    workdir = joinpath(ctx.workdir, "gitcache")
+    products = get_jll_content(url, name, hash, workdir)
+    old_products = get!(Dict{String,Vector{String}},
+                        get!(Dict{String,Any}, arch_info, "JLL"), "products")
+    for key in ("library", "executable", "file")
+        has_type = haskey(products, key)
+        had_type = haskey(old_products, key)
+        if has_type && had_type
+            p = products[key]
+            old_p = old_products[key]
+            add = setdiff(p, old_p)
+            if !isempty(add)
+                out.add[key] = add
+            end
+            remove = setdiff(old_p, p)
+            if !isempty(remove)
+                out.remove[key] = remove
+            end
+        elseif has_type
+            p = products[key]
+            if !isempty(p)
+                out.add[key] = p
+            end
+        elseif had_type
+            old_p = old_products[key]
+            if !isempty(old_p)
+                out.remove[key] = old_p
+            end
+        end
+    end
+    return isempty(out)
+end

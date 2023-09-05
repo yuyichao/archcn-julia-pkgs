@@ -62,16 +62,26 @@ function find_new_versions(ctx::Context, uuid, version)
     pkgentry = ctx.registry[uuid]
     pkginfo = Pkg.Registry.registry_info(pkgentry)
     arch_info = ctx.packages_info[uuid]
+    is_jll = get(arch_info["Pkg"], "is_jll", false)
 
     pkg_ver_info = PackageVersionInfo()
 
     missing_deps_info = MissingDepsInfo()
+    jll_changes = JLLChanges()
     for new_ver in keys(pkginfo.version_info)
         new_ver > version || continue
         ver_ok = check_missing_deps(ctx, pkginfo, new_ver, missing_deps_info)
         if !isempty(missing_deps_info)
             push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver), missing_deps_info)
             missing_deps_info = MissingDepsInfo()
+        end
+        if is_jll
+            ver_ok &= check_jll_content(ctx, pkginfo, arch_info, new_ver, jll_changes)
+            if !isempty(jll_changes)
+                push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver),
+                      jll_changes)
+                jll_changes = JLLChanges()
+            end
         end
 
         if ver_ok

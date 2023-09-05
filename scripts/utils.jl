@@ -3,9 +3,6 @@
 using Pkg
 using TOML
 
-include("git_utils.jl")
-include("jll_utils.jl")
-
 const project_toml_names = ("Project.toml", "JuliaProject.toml")
 
 function find_general_registry()
@@ -48,3 +45,6 @@ struct Context
         return new(pkgsdir, workdir, registry, packages_info, global_info)
     end
 end
+
+include("git_utils.jl")
+include("jll_utils.jl")
