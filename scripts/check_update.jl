@@ -16,12 +16,18 @@ end
 Base.isempty(info::MissingDepsInfo) =
     isempty(info.deps) && isempty(info.weak_deps) && isempty(info.unknown)
 
-function check_missing_deps(ctx::Context, pkginfo, new_ver, out::MissingDepsInfo)
+JLLWrappers_UUID = Base.UUID("692b3bcd-3c85-4b1f-b108-f13ce0eb3210")
+
+function check_missing_deps(ctx::Context, pkginfo, new_ver, is_jll,
+                            out::MissingDepsInfo)
     stdlibs = get(Dict{String,Any}, ctx.global_info, "StdLibs")
 
     compat_info = Pkg.Registry.compat_info(pkginfo)[new_ver]
     for (uuid, ver) in compat_info
         if uuid == Pkg.Registry.JULIA_UUID || haskey(stdlibs, string(uuid))
+            continue
+        end
+        if is_jll && uuid == JLLWrappers_UUID
             continue
         end
         uuid in keys(ctx.packages_info) && continue
@@ -38,6 +44,9 @@ function check_missing_deps(ctx::Context, pkginfo, new_ver, out::MissingDepsInfo
     end
     for (uuid, ver) in _weak_compat_info[new_ver]
         if uuid == Pkg.Registry.JULIA_UUID || haskey(stdlibs, string(uuid))
+            continue
+        end
+        if is_jll && uuid == JLLWrappers_UUID
             continue
         end
         uuid in keys(ctx.packages_info) && continue
@@ -70,7 +79,8 @@ function find_new_versions(ctx::Context, uuid, version)
     jll_changes = JLLChanges()
     for new_ver in keys(pkginfo.version_info)
         new_ver > version || continue
-        ver_ok = check_missing_deps(ctx, pkginfo, new_ver, missing_deps_info)
+        ver_ok = check_missing_deps(ctx, pkginfo, new_ver, is_jll,
+                                    missing_deps_info)
         if !isempty(missing_deps_info)
             push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver), missing_deps_info)
             missing_deps_info = MissingDepsInfo()
