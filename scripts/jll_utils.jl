@@ -42,8 +42,7 @@ function todict(ctx::Context, changes::JLLChanges)
     return res
 end
 
-function check_jll_content(ctx::Context, pkginfo, arch_info, new_ver,
-                           out::JLLChanges)
+function check_jll_content(ctx::Context, arch_info, new_ver, out::JLLChanges)
     repopath = checkout_pkg_ver(ctx, Base.UUID(arch_info["Pkg"]["uuid"]), new_ver)
     products = get_jll_content(repopath)
     old_products = get!(Dict{String,Vector{String}},

@@ -113,8 +113,7 @@ function find_new_versions(ctx::Context, uuid, version)
         end
         if is_jll
             try
-                ver_ok &= check_jll_content(ctx, pkginfo, arch_info, new_ver,
-                                            jll_changes)
+                ver_ok &= check_jll_content(ctx, arch_info, new_ver, jll_changes)
             catch
                 ver_ok = false
                 push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver),
