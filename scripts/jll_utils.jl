@@ -2,8 +2,8 @@
 
 function get_jll_content(url, name, hash, workdir)
     LibGit2.with(get_repo(url, name, workdir)) do repo
+        reset_tree(repo, hash)
         repopath = LibGit2.workdir(repo)
-        checkout_tree(repo, hash, repopath)
         wrappersdir = joinpath(repopath, "src/wrappers")
         for file in readdir(wrappersdir)
             m = match(r"x86_64-(.*-|)linux-(.*-|)gnu.*\.jl", file)
