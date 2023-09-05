@@ -159,14 +159,14 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
         for issue in issues
             if isa(issue, MissingDepsInfo)
                 issue_dict = todict(ctx, issue)
-                new_issues[ver_str] = issue_dict
+                push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
                 if issue_dict in get(old_issues, ver_str, empty_issue)
                     continue
                 end
                 push!(messages, "Missing dependencies for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
             elseif isa(issue, JLLChanges)
                 issue_dict = todict(ctx, issue)
-                new_issues[ver_str] = issue_dict
+                push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
                 if issue_dict in get(old_issues, ver_str, empty_issue)
                     continue
                 end
@@ -194,6 +194,7 @@ function scan(ctx::Context)
                                       VersionNumber(arch_info["Status"]["version"]))
         collect_messages(ctx, uuid, check_res, messages)
     end
+    write_back_info(ctx)
 end
 
 scan(context)

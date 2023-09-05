@@ -16,16 +16,19 @@ end
 
 function load_packages(pkgsdir)
     res = Dict{Base.UUID,Any}()
+    paths = Dict{Base.UUID,String}()
     for dir in readdir(pkgsdir, join=true)
         isdir(dir) || continue
         try
             d = TOML.parsefile(joinpath(dir, "info.toml"))
-            res[Base.UUID(d["Pkg"]["uuid"])] = d
+            uuid = Base.UUID(d["Pkg"]["uuid"])
+            res[uuid] = d
+            paths[uuid] = dir
         catch e
             @error e
         end
     end
-    return res
+    return res, paths
 end
 
 struct Context
@@ -34,15 +37,35 @@ struct Context
     registry::Pkg.Registry.RegistryInstance
     packages_info::Dict{Base.UUID,Any}
     global_info::Dict{String,Any}
+    package_paths::Dict{Base.UUID,String}
+    _packages_info::Dict{Base.UUID,Any}
+    _global_info::Dict{String,Any}
     function Context()
         pkgsdir = joinpath(@__DIR__, "../pkgs")
         workdir = get(ENV, "JL_ARCHCN_WORKDIR",
                       joinpath(Base.DEPOT_PATH[1], "archcn"))
         mkpath(workdir)
         registry = find_general_registry()
-        packages_info = load_packages(pkgsdir)
+        packages_info, paths = load_packages(pkgsdir)
         global_info = TOML.parsefile(joinpath(pkgsdir, "global.toml"))
-        return new(pkgsdir, workdir, registry, packages_info, global_info)
+        return new(pkgsdir, workdir, registry, packages_info, global_info, paths,
+                   deepcopy(packages_info), deepcopy(global_info))
+    end
+end
+
+function write_back_info(ctx::Context)
+    if ctx.global_info != ctx._global_info
+        open(joinpath(ctx.pkgsdir, "global.toml"), "w") do io
+            TOML.print(io, ctx.global_info)
+        end
+    end
+    for (k, v) in ctx.packages_info
+        if v == ctx._packages_info[k]
+            continue
+        end
+        open(joinpath(ctx.package_paths[k], "info.toml"), "w") do io
+            TOML.print(io, v)
+        end
     end
 end
 
