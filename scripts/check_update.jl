@@ -142,13 +142,13 @@ struct PackageVersionInfo
         new(Dict{VersionNumber,Vector{Any}}(), Set{VersionNumber}())
 end
 
-function create_messages(ctx::Context, uuid, info::PackageVersionInfo)
+function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
+                          messages)
     arch_info = ctx.packages_info[uuid]
     if isempty(info.issues)
         delete!(arch_info, "Issues")
         return
     end
-    messages = String[]
     empty_issue = []
     name = arch_info["Pkg"]["name"]
     old_issues = get(Dict{String,Any}, arch_info, "Issues")
@@ -184,14 +184,15 @@ function create_messages(ctx::Context, uuid, info::PackageVersionInfo)
     else
         arch_info["Issues"] = new_issues
     end
-    return messages
+    return
 end
 
 function scan(ctx::Context)
+    messages = String[]
     for (uuid, arch_info) in ctx.packages_info
         check_res = find_new_versions(ctx, uuid,
                                       VersionNumber(arch_info["Status"]["version"]))
-        create_messages(ctx, uuid, check_res)
+        collect_messages(ctx, uuid, check_res, messages)
     end
 end
 
