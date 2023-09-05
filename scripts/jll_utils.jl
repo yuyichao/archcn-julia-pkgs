@@ -35,6 +35,17 @@ end
 
 Base.isempty(changes::JLLChanges) = isempty(changes.add) && isempty(changes.remove)
 
+function todict(ctx::Context, changes::JLLChanges)
+    res = Dict{String,Any}("type"=>"jll_changes")
+    if !isempty(changes.add)
+        res["add"] = changes.add
+    end
+    if !isempty(changes.remove)
+        res["remove"] = changes.remove
+    end
+    return res
+end
+
 function check_jll_content(ctx::Context, pkginfo, arch_info, new_ver,
                            out::JLLChanges)
     name = arch_info["Pkg"]["name"]

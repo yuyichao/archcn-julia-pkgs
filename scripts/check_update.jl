@@ -16,6 +16,20 @@ end
 Base.isempty(info::MissingDepsInfo) =
     isempty(info.deps) && isempty(info.weak_deps) && isempty(info.unknown)
 
+function todict(ctx::Context, info::MissingDepsInfo)
+    res = Dict{String,Any}("type"=>"missing_deps")
+    if !isempty(info.deps)
+        res["deps"] = get_pkg_uuid_names(ctx, info.deps)
+    end
+    if !isempty(info.weak_deps)
+        res["weak_deps"] = get_pkg_uuid_names(ctx, info.weak_deps)
+    end
+    if !isempty(info.unknown)
+        res["unknown"] = sort!(collect(info.unknown))
+    end
+    return res
+end
+
 JLLWrappers_UUID = Base.UUID("692b3bcd-3c85-4b1f-b108-f13ce0eb3210")
 
 function check_missing_deps(ctx::Context, pkginfo, new_ver, is_jll,

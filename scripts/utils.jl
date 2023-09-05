@@ -46,5 +46,16 @@ struct Context
     end
 end
 
+function get_pkg_uuid_names(ctx::Context, pkgs)
+    info = Dict{String,Any}[]
+    for uuid in pkgs
+        entry = ctx.registry[uuid]
+        push!(info, Dict{String,Any}("name"=>entry.name,
+                                     "uuid"=>string(uuid)))
+    end
+    sort!(info, by=x->(x["name"], x["uuid"]))
+    return info
+end
+
 include("git_utils.jl")
 include("jll_utils.jl")
