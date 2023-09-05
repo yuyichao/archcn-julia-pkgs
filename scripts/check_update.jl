@@ -4,75 +4,82 @@ include("utils.jl")
 
 const context = Context()
 
-function check_missing_deps(ctx::Context, pkginfo, new_ver,
-                            missed_deps, missed_weak_deps)
-    compat_info = Pkg.Registry.compat_info(pkginfo)[new_ver]
-    has_miss = false
-    for (uuid, ver) in compat_info
-        if uuid == Pkg.Registry.JULIA_UUID
-            continue
-        end
-        uuid in keys(ctx.packages_info) && continue
-        if !haskey(ctx.registry, uuid)
-            push!(ctx.unknown_packages, uuid)
-            continue
-        end
-        has_miss = true
-        push!(missed_deps, uuid)
+struct MissingDepsInfo
+    deps::Set{Base.UUID}
+    weak_deps::Set{Base.UUID}
+    unknown::Set{Base.UUID}
+    function MissingDepsInfo()
+        return new(Set{Base.UUID}(), Set{Base.UUID}(), Set{Base.UUID}())
     end
-    _weak_compat_info = Pkg.Registry.weak_compat_info(pkginfo)
-    if _weak_compat_info === nothing
-        return !has_miss
-    end
-    for (uuid, ver) in _weak_compat_info[new_ver]
-        if uuid == Pkg.Registry.JULIA_UUID
-            continue
-        end
-        uuid in keys(ctx.packages_info) && continue
-        if !haskey(ctx.registry, uuid)
-            push!(ctx.unknown_packages, uuid)
-            continue
-        end
-        # Do not treat missing weak dependencies as hard break for now
-        push!(missed_weak_deps, uuid)
-    end
-    return !has_miss
 end
 
-function _get_full_missed_deps_info(ctx::Context, missed_deps)
-    info = Dict{String,Any}[]
-    for dep_uuid in missed_deps
-        dep_entry = ctx.registry[dep_uuid]
-        push!(info, Dict{String,Any}("name"=>dep_entry.name,
-                                     "uuid"=>dep_uuid))
+Base.isempty(info::MissingDepsInfo) =
+    isempty(info.deps) && isempty(info.weak_deps) && isempty(info.unknown)
+
+function check_missing_deps(ctx::Context, pkginfo, new_ver, out::MissingDepsInfo)
+    stdlibs = get(Dict{String,Any}, ctx.global_info, "StdLibs")
+
+    compat_info = Pkg.Registry.compat_info(pkginfo)[new_ver]
+    for (uuid, ver) in compat_info
+        if uuid == Pkg.Registry.JULIA_UUID || haskey(stdlibs, string(uuid))
+            continue
+        end
+        uuid in keys(ctx.packages_info) && continue
+        if !haskey(ctx.registry, uuid)
+            push!(out.unknown, uuid)
+            continue
+        end
+        push!(out.deps, uuid)
     end
-    sort!(info, by=x->(x["name"], x["uuid"]))
-    return info
+
+    _weak_compat_info = Pkg.Registry.weak_compat_info(pkginfo)
+    if _weak_compat_info === nothing
+        return isempty(out.deps)
+    end
+    for (uuid, ver) in _weak_compat_info[new_ver]
+        if uuid == Pkg.Registry.JULIA_UUID || haskey(stdlibs, string(uuid))
+            continue
+        end
+        uuid in keys(ctx.packages_info) && continue
+        if !haskey(ctx.registry, uuid)
+            push!(out.unknown, uuid)
+            continue
+        end
+        push!(out.weak_deps, uuid)
+    end
+    # Do not treat missing weak dependencies as hard break for now
+    return isempty(out.deps)
+end
+
+struct PackageVersionInfo
+    issues::Dict{VersionNumber,Vector{Any}}
+    good_versions::Set{VersionNumber}
+    PackageVersionInfo() =
+        new(Dict{VersionNumber,Vector{Any}}(), Set{VersionNumber}())
 end
 
 function find_new_versions(ctx::Context, uuid, version)
     pkgentry = ctx.registry[uuid]
     pkginfo = Pkg.Registry.registry_info(pkgentry)
     arch_info = ctx.packages_info[uuid]
-    missed_deps = Set{Base.UUID}()
-    missed_weak_deps = Set{Base.UUID}()
+
+    pkg_ver_info = PackageVersionInfo()
+
+    missing_deps_info = MissingDepsInfo()
     for new_ver in keys(pkginfo.version_info)
         new_ver > version || continue
-        check_missing_deps(ctx, pkginfo, new_ver, missed_deps, missed_weak_deps)
-    end
-    if !(isempty(missed_deps) && isempty(missed_weak_deps))
-        missed_deps_section = get!(Dict{String,Any}, arch_info, "MissedDeps")
-        missed_deps_info = _get_full_missed_deps_info(ctx, missed_deps)
-        missed_weak_deps_info = _get_full_missed_deps_info(ctx, missed_weak_deps)
-        if get(missed_deps_section, "deps", nothing) != missed_deps_info ||
-            get(missed_deps_section, "weakdeps", nothing) != missed_weak_deps_info
+        ver_ok = check_missing_deps(ctx, pkginfo, new_ver, missing_deps_info)
+        if !isempty(missing_deps_info)
+            push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver), missing_deps_info)
+            missing_deps_info = MissingDepsInfo()
+        end
 
-            missed_deps_section["deps"] = missed_deps_info
-            missed_deps_section["weakdeps"] = missed_weak_deps_info
-            push!(ctx.messages,
-                  "Missing dependencies for $(pkgentry.name) [$(pkgentry.uuid)]:\n$(sprint(TOML.print, missed_deps_section))")
+        if ver_ok
+            push!(pkg_ver_info.good_versions, new_ver)
         end
     end
+
+    return pkg_ver_info
 end
 
 function scan(ctx::Context)

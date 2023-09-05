@@ -37,8 +37,6 @@ struct Context
     registry::Pkg.Registry.RegistryInstance
     packages_info::Dict{Base.UUID,Any}
     global_info::Dict{String,Any}
-    unknown_packages::Set{Base.UUID}
-    messages::Vector{String}
     function Context()
         pkgsdir = joinpath(@__DIR__, "../pkgs")
         workdir = get(ENV, "JL_ARCHCN_WORKDIR",
@@ -47,7 +45,6 @@ struct Context
         registry = find_general_registry()
         packages_info = load_packages(pkgsdir)
         global_info = TOML.parsefile(joinpath(pkgsdir, "global.toml"))
-        return new(pkgsdir, workdir, registry, packages_info,
-                   global_info, Set{Base.UUID}(), String[])
+        return new(pkgsdir, workdir, registry, packages_info, global_info)
     end
 end
