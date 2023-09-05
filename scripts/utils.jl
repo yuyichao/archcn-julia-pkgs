@@ -80,5 +80,19 @@ function get_pkg_uuid_names(ctx::Context, pkgs)
     return info
 end
 
+function checkout_pkg_ver(ctx::Context, uuid, ver)
+    pkgentry = ctx.registry[uuid]
+    pkginfo = Pkg.Registry.registry_info(pkgentry)
+    arch_info = ctx.packages_info[uuid]
+    name = pkgentry.name
+    url = pkginfo.repo
+    hash = pkginfo.version_info[ver].git_tree_sha1.bytes
+    workdir = joinpath(ctx.workdir, "gitcache")
+    return LibGit2.with(get_repo(url, name, workdir)) do repo
+        reset_tree(repo, hash)
+        return LibGit2.workdir(repo)
+    end
+end
+
 include("git_utils.jl")
 include("jll_utils.jl")
