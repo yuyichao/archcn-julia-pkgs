@@ -74,6 +74,36 @@ function check_missing_deps(ctx::Context, pkginfo, new_ver, is_jll,
     return isempty(out.deps)
 end
 
+struct ExternInfo
+    deps_build::Int8 # -1: removed, 1: added, 0: unchanged
+    artifacts::Int8
+end
+
+Base.isempty(info::ExternInfo) = info.deps_build == 0 && info.artifacts == 0
+
+function todict(ctx::Context, info::ExternInfo)
+    res = Dict{String,Any}("type"=>"extern")
+    if info.deps_build != 0
+        res["deps_build"] = info.deps_build
+    end
+    if info.artifacts != 0
+        res["artifacts"] = info.artifacts
+    end
+    return res
+end
+
+function check_extern(ctx::Context, arch_info, new_ver)
+    arch_info_pkg = arch_info["Pkg"]
+    has_deps_build = get(arch_info_pkg, "has_deps_build", false)
+    has_artifacts = get(arch_info_pkg, "has_artifacts", false)
+    repopath = checkout_pkg_ver(ctx, Base.UUID(arch_info_pkg["uuid"]), new_ver)
+
+    found_deps_build = isfile(joinpath(repopath, "deps/build.jl"))
+    found_artifacts = isfile(joinpath(repopath, "Artifacts.toml"))
+    return ExternInfo(found_deps_build - has_deps_build,
+                      found_artifacts - has_artifacts)
+end
+
 struct CheckError
     e
 end
@@ -124,6 +154,19 @@ function find_new_versions(ctx::Context, uuid, version)
                       jll_changes)
                 jll_changes = JLLChanges()
             end
+        else
+            try
+                extern_info = check_extern(ctx, arch_info, new_ver)
+                if !isempty(extern_info)
+                    ver_ok = false
+                    push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver),
+                          extern_info)
+                end
+            catch
+                ver_ok = false
+                push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver),
+                      CheckError(current_exceptions()))
+            end
         end
 
         if ver_ok
@@ -170,6 +213,13 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
                     continue
                 end
                 push!(messages, "JLL changed for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
+            elseif isa(issue, ExternInfo)
+                issue_dict = todict(ctx, issue)
+                push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
+                if issue_dict in get(old_issues, ver_str, empty_issue)
+                    continue
+                end
+                push!(messages, "External dependencies changed for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
             elseif isa(issue, CheckError)
                 push!(messages,
                       "Error during version check for $(pkgprefix):\n$(sprint(print, issue.e))")
