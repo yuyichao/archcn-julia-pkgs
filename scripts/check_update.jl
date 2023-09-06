@@ -238,12 +238,15 @@ end
 
 function scan(ctx::Context)
     messages = String[]
+    new_versions = Dict{Base.UUID,Set{VersionNumber}}()
     for (uuid, arch_info) in ctx.packages_info
         check_res = find_new_versions(ctx, uuid,
                                       VersionNumber(arch_info["Status"]["version"]))
+        new_versions[uuid] = check_res.good_versions
         collect_messages(ctx, uuid, check_res, messages)
     end
     write_back_info(ctx)
+    return messages
 end
 
 scan(context)
