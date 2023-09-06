@@ -236,6 +236,76 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
     return
 end
 
+function resolve_new_versions(ctx::Context, new_versions)
+
+    compat = Dict{Base.UUID,Dict{VersionNumber,
+                                 Dict{Base.UUID,Pkg.Versions.VersionSpec}}}()
+    compat_weak = Dict{Base.UUID,Dict{VersionNumber,Set{Base.UUID}}}()
+    uuid_to_name = Dict{Base.UUID,String}()
+    reqs = Dict{Base.UUID,Pkg.Versions.VersionSpec}()
+    fixed = Dict{Base.UUID,Pkg.Resolve.Fixed}()
+
+    ver_ub = Pkg.Versions.VersionBound("*")
+
+    for (uuid, arch_info) in ctx.packages_info
+        versions = new_versions[uuid]
+        name = arch_info["Pkg"]["name"]
+        uuid_to_name[uuid] = name
+        cur_ver = VersionNumber(arch_info["Status"]["version"])
+        reqs[uuid] = Pkg.Versions.VersionSpec(Pkg.Versions.VersionRange(
+            Pkg.Versions.VersionBound(cur_ver), ver_ub))
+
+        pkgentry = ctx.registry[uuid]
+        pkginfo = Pkg.Registry.registry_info(pkgentry)
+
+        push!(versions, cur_ver)
+
+        _compat = Dict{VersionNumber,Dict{Base.UUID,Pkg.Versions.VersionSpec}}()
+        compat[uuid] = _compat
+        _compat_weak = Dict{VersionNumber,Set{Base.UUID}}()
+        compat_weak[uuid] = _compat_weak
+
+        compat_info = Pkg.Registry.compat_info(pkginfo)
+        weak_compat_info = Pkg.Registry.weak_compat_info(pkginfo)
+
+        for ver in versions
+            __compat = Dict{Base.UUID,Pkg.Versions.VersionSpec}()
+            _compat[ver] = __compat
+            if haskey(compat_info, ver)
+                for (uuid, ver) in compat_info[ver]
+                    if haskey(ctx.packages_info, uuid)
+                        __compat[uuid] = ver
+                    end
+                end
+            end
+            if weak_compat_info === nothing
+                _compat_weak[ver] = Set{Base.UUID}()
+                continue
+            end
+            __compat_weak = Set{Base.UUID}()
+            _compat_weak[ver] = __compat_weak
+            if haskey(weak_compat_info, ver)
+                for (uuid, ver) in weak_compat_info[ver]
+                    if haskey(ctx.packages_info, uuid)
+                        push!(__compat_weak, uuid)
+                    end
+                end
+            end
+        end
+    end
+
+    graph = Pkg.Resolve.Graph(compat, compat_weak, uuid_to_name, reqs, fixed,
+                              true, nothing)
+    for (uuid, ver) in Pkg.Resolve.resolve(graph)
+        old_version = VersionNumber(ctx.packages_info[uuid]["Status"]["version"])
+        if ver == old_version
+            continue
+        end
+        ctx.packages_info[uuid]["Status"]["version"] = string(ver)
+        # TODO: update version file
+    end
+end
+
 function scan(ctx::Context)
     messages = String[]
     new_versions = Dict{Base.UUID,Set{VersionNumber}}()
@@ -245,6 +315,7 @@ function scan(ctx::Context)
         new_versions[uuid] = check_res.good_versions
         collect_messages(ctx, uuid, check_res, messages)
     end
+    resolve_new_versions(ctx, new_versions)
     write_back_info(ctx)
     return messages
 end
