@@ -93,3 +93,18 @@ function ls(r::LibGit2.GitRemote)
     return [GitRemoteHead(unsafe_load(unsafe_load(head_ptr, i)))
             for i in 1:nheads[]]
 end
+
+function find_remote_head_commit(repo, url, branch=nothing)
+    return with(LibGit2.GitRemoteAnon(repo, url)) do remote
+        connect(remote, :fetch)
+        remote_ref = (branch === nothing ? default_branch(remote) :
+            "refs/heads/$(branch)")
+        remote_heads = ls(remote)
+        for head in remote_heads
+            if head.name == remote_ref
+                return head.oid
+            end
+        end
+        return
+    end
+end
