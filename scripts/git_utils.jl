@@ -187,3 +187,20 @@ function find_commit_for_tree(repo, tree, head, last_commit)
     end
     return nothing
 end
+
+function find_package_commit(url, name, workdir, branch, tree, last_commit)
+    if last_commit !== nothing
+        last_commit = LibGit2.GitHash(last_commit)
+    end
+    return with(get_repo(url, name, workdir)) do repo
+        remote_head = find_remote_head_commit(repo, url, branch)
+        if remote_head === nothing && branch !== nothing
+            @warn "Cannot find remote branch $(branch) at $(url), try remote default branch."
+            remote_head = find_remote_head_commit(repo, url)
+        end
+        if remote_head === nothing
+            @warn "Cannot find remote default branch at $(url)."
+        end
+        return find_commit_for_tree(repo, tree, remote_head, last_commit)
+    end
+end

@@ -237,7 +237,6 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
 end
 
 function resolve_new_versions(ctx::Context, new_versions)
-
     compat = Dict{Base.UUID,Dict{VersionNumber,
                                  Dict{Base.UUID,Pkg.Versions.VersionSpec}}}()
     compat_weak = Dict{Base.UUID,Dict{VersionNumber,Set{Base.UUID}}}()
@@ -297,11 +296,32 @@ function resolve_new_versions(ctx::Context, new_versions)
     graph = Pkg.Resolve.Graph(compat, compat_weak, uuid_to_name, reqs, fixed,
                               true, nothing)
     for (uuid, ver) in Pkg.Resolve.resolve(graph)
-        old_version = VersionNumber(ctx.packages_info[uuid]["Status"]["version"])
+        arch_info = ctx.packages_info[uuid]
+        arch_info_status = arch_info["Status"]
+        old_version = VersionNumber(arch_info_status["version"])
         if ver == old_version
             continue
         end
-        ctx.packages_info[uuid]["Status"]["version"] = string(ver)
+        arch_info_status["version"] = string(ver)
+        verfile = joinpath(ctx.package_paths[uuid], "version")
+        last_commit = nothing
+        if isfile(verfile)
+            verstrs = split(read(verfile, String), '@')
+            if length(verstrs) == 2
+                hash_str = strip(verstrs[2])
+                if length(hash_str) == 40
+                    last_commit = hash_str
+                end
+            end
+        end
+        pkgentry = ctx.registry[uuid]
+        pkginfo = Pkg.Registry.registry_info(pkgentry)
+        name = pkgentry.name
+        url = pkginfo.repo
+        tree = pkginfo.version_info[ver].git_tree_sha1.bytes
+        commit = find_package_commit(url, name, joinpath(ctx.workdir, "gitcache"),
+                                     get(arch_info["Pkg"], "branch", nothing),
+                                     tree, last_commit)
         # TODO: update version file
     end
 end
