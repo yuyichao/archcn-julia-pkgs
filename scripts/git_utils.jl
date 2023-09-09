@@ -94,6 +94,25 @@ function ls(r::LibGit2.GitRemote)
             for i in 1:nheads[]]
 end
 
+parentcount(c::LibGit2.GitCommit) =
+    Int(ccall((:git_commit_parentcount, :libgit2), Cuint, (Ptr{Cvoid},), c))
+function parent(c::LibGit2.GitCommit, n)
+    ptr_ref = Ref{Ptr{Cvoid}}()
+    LibGit2.@check ccall((:git_commit_parent, :libgit2), Cint,
+                         (Ptr{Ptr{Cvoid}}, Ptr{Cvoid}, Cuint), ptr_ref, c, n - 1)
+    return LibGit2.GitCommit(c.owner, ptr_ref[])
+end
+function parent_id(c::LibGit2.GitCommit, n)
+    oid_ptr = ccall((:git_commit_parent_id, :libgit2), Ptr{LibGit2.GitHash},
+                    (Ptr{Cvoid}, Cuint), c, n - 1)
+    if oid_ptr == C_NULL
+        throw(LibGit2.GitError(LibGit2.Error.Invalid,
+                               LibGit2.Error.ENOTFOUND,
+                               "parent $(n - 1) does not exist"))
+    end
+    return unsafe_load(oid_ptr)
+end
+
 function find_remote_head_commit(repo, url, branch=nothing)
     return with(LibGit2.GitRemoteAnon(repo, url)) do remote
         connect(remote, :fetch)
