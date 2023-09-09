@@ -54,7 +54,9 @@ struct Context
 end
 
 function write_back_info(ctx::Context)
+    changed = false
     if ctx.global_info != ctx._global_info
+        changed = true
         open(joinpath(ctx.pkgsdir, "global.toml"), "w") do io
             TOML.print(io, ctx.global_info)
         end
@@ -63,10 +65,12 @@ function write_back_info(ctx::Context)
         if v == ctx._packages_info[k]
             continue
         end
+        changed = true
         open(joinpath(ctx.package_paths[k], "info.toml"), "w") do io
             TOML.print(io, v)
         end
     end
+    return changed
 end
 
 function get_pkg_uuid_names(ctx::Context, pkgs)

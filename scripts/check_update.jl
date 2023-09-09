@@ -359,14 +359,15 @@ function scan(ctx::Context)
     for (uuid, arch_info) in ctx.packages_info
         collect_messages(ctx, uuid, check_results[uuid], messages)
     end
-    write_back_info(ctx)
-    return messages
+    changed = write_back_info(ctx)
+    return messages, changed
 end
 
-const messages = scan(context)
+const messages, changed = scan(context)
 
 using GitHubActions
 
+set_output("has_change", changed ? "1" : "0")
 if !isempty(messages)
     set_output("has_messages", "1")
     set_output("messages", join(messages, "\n\n"))

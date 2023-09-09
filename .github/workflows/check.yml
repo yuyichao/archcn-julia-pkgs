@@ -12,9 +12,6 @@ jobs:
       fail-fast: false
     steps:
       - name: Get token
-        # This gets the installation token for the -build repo.
-        # However, by default this would also work for the other installation
-        # (which I assume means other repo for the same owner) so it's fine for now...
         id: get_token
         uses: machine-learning-apps/actions-app-token@master
         with:
@@ -43,10 +40,11 @@ jobs:
           subject: 'Julia package update results'
           body: ${{ steps.check.outputs.messages }}
       - name: Commit changes
+        if: ${{ steps.check.outputs.has_change == 1 }}
         run: |
           git config --global user.name 'Yichao Yu'
           git config --global user.email 'yuyichao@users.noreply.github.com'
           git status
           git add .
-          git commit -m "Automatic version update"
+          git commit -m "Automatic version update" -m "[skip actions]"
           git push
