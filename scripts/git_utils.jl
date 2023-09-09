@@ -127,3 +127,63 @@ function find_remote_head_commit(repo, url, branch=nothing)
         return
     end
 end
+
+function _find_commit_for_tree(tree, commit, visited, toplevel_only)
+    hash = LibGit2.GitHash(commit)
+    if hash in visited
+        return
+    end
+    push!(visited, hash)
+    # First iterate parent to find the first commit with the tree hash
+    for i in 1:parentcount(commit)
+        res = _find_commit_for_tree(tree, parent(commit, i),
+                                    visited, toplevel_only)
+        if res !== nothing
+            return res
+        end
+    end
+    commit_toplevel = LibGit2.GitTree(commit)
+    if LibGit2.GitHash(commit_toplevel) == tree
+        return hash
+    end
+    if toplevel_only
+        return
+    end
+    found = Ref(false)
+    LibGit2.treewalk(commit_toplevel) do root, entry
+        if LibGit2.entryid(entry) == tree
+            found[] = true
+            return -1
+        end
+        return 0
+    end
+    if found[]
+        return hash
+    end
+end
+
+function find_commit_for_tree(repo, tree, head, last_commit)
+    head_commit = LibGit2.GitCommit(repo, head)
+    visited = Set{LibGit2.GitHash}()
+    for toplevel_only in (true, false)
+        if !toplevel_only
+            # No need to clear the set the first time around
+            empty!(visited)
+        end
+        if last_commit !== nothing
+            push!(visited, last_commit)
+        end
+        res = _find_commit_for_tree(tree, head_commit, visited, toplevel_only)
+        if res !== nothing
+            return res
+        end
+        if last_commit !== nothing
+            empty!(visited)
+            res = _find_commit_for_tree(tree, head_commit, visited, toplevel_only)
+            if res !== nothing
+                return res
+            end
+        end
+    end
+    return nothing
+end
