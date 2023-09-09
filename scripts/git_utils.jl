@@ -192,6 +192,7 @@ function find_package_commit(url, name, workdir, branch, tree, last_commit)
     if last_commit !== nothing
         last_commit = LibGit2.GitHash(last_commit)
     end
+    tree = LibGit2.GitHash(tree)
     return with(get_repo(url, name, workdir)) do repo
         remote_head = find_remote_head_commit(repo, url, branch)
         if remote_head === nothing && branch !== nothing

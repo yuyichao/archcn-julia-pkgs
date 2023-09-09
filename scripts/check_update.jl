@@ -104,6 +104,16 @@ function check_extern(ctx::Context, arch_info, new_ver)
                       found_artifacts - has_artifacts)
 end
 
+struct PkgCommitMissing
+    tree_hash::String
+end
+
+function todict(ctx::Context, info::PkgCommitMissing)
+    res = Dict{String,Any}("type"=>"commit_missing")
+    res["hash"] = info.tree_hash
+    return res
+end
+
 struct CheckError
     e
 end
@@ -220,6 +230,13 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
                     continue
                 end
                 push!(messages, "External dependencies changed for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
+            elseif isa(issue, PkgCommitMissing)
+                issue_dict = todict(ctx, issue)
+                push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
+                if issue_dict in get(old_issues, ver_str, empty_issue)
+                    continue
+                end
+                push!(messages, "Package commit not found for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
             elseif isa(issue, CheckError)
                 push!(messages,
                       "Error during version check for $(pkgprefix):\n$(sprint(print, issue.e))")
@@ -236,7 +253,7 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
     return
 end
 
-function resolve_new_versions(ctx::Context, new_versions)
+function resolve_new_versions(ctx::Context, check_results)
     compat = Dict{Base.UUID,Dict{VersionNumber,
                                  Dict{Base.UUID,Pkg.Versions.VersionSpec}}}()
     compat_weak = Dict{Base.UUID,Dict{VersionNumber,Set{Base.UUID}}}()
@@ -247,7 +264,7 @@ function resolve_new_versions(ctx::Context, new_versions)
     ver_ub = Pkg.Versions.VersionBound("*")
 
     for (uuid, arch_info) in ctx.packages_info
-        versions = new_versions[uuid]
+        versions = check_results[uuid].good_versions
         name = arch_info["Pkg"]["name"]
         uuid_to_name[uuid] = name
         cur_ver = VersionNumber(arch_info["Status"]["version"])
@@ -322,20 +339,26 @@ function resolve_new_versions(ctx::Context, new_versions)
         commit = find_package_commit(url, name, joinpath(ctx.workdir, "gitcache"),
                                      get(arch_info["Pkg"], "branch", nothing),
                                      tree, last_commit)
-        # TODO: update version file
+        if commit === nothing
+            push!(check_results[uuid], PkgCommitMissing(String(tree)))
+        else
+            write(verfile, "version: $(ver)@$(commit)\n")
+        end
     end
 end
 
 function scan(ctx::Context)
     messages = String[]
-    new_versions = Dict{Base.UUID,Set{VersionNumber}}()
+    check_results = Dict{Base.UUID,PackageVersionInfo}()
     for (uuid, arch_info) in ctx.packages_info
         check_res = find_new_versions(ctx, uuid,
                                       VersionNumber(arch_info["Status"]["version"]))
-        new_versions[uuid] = check_res.good_versions
-        collect_messages(ctx, uuid, check_res, messages)
+        check_results[uuid] = check_res
     end
-    resolve_new_versions(ctx, new_versions)
+    resolve_new_versions(ctx, check_results)
+    for (uuid, arch_info) in ctx.packages_info
+        collect_messages(ctx, uuid, check_results[uuid], messages)
+    end
     write_back_info(ctx)
     return messages
 end
