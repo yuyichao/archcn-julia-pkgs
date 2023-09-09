@@ -363,4 +363,9 @@ function scan(ctx::Context)
     return messages
 end
 
-scan(context)
+const messages = scan(context)
+for msg in messages
+    println()
+    println(msg)
+end
+exit(isempty(messages) ? 0 : 1)
