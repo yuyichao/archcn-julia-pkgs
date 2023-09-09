@@ -11,7 +11,18 @@ jobs:
     strategy:
       fail-fast: false
     steps:
+      - name: Get token
+        # This gets the installation token for the -build repo.
+        # However, by default this would also work for the other installation
+        # (which I assume means other repo for the same owner) so it's fine for now...
+        id: get_token
+        uses: machine-learning-apps/actions-app-token@master
+        with:
+          APP_PEM: ${{ secrets.ARCHLINUXCN_JULIA_BOT_PEM }}
+          APP_ID: ${{ secrets.ARCHLINUXCN_JULIA_BOT_ID }}
       - uses: actions/checkout@v3
+        with:
+          token: ${{ steps.get_token.outputs.app_token }}
       - uses: julia-actions/setup-julia@v1
         with:
           version: 1.9.2
