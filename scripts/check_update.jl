@@ -364,8 +364,12 @@ function scan(ctx::Context)
 end
 
 const messages = scan(context)
-for msg in messages
-    println()
-    println(msg)
+
+using GitHubActions
+
+if !isempty(messages)
+    set_output("has_messages", "1")
+    set_output("messages", join(messages, "\n\n"))
+else
+    set_output("has_messages", "0")
 end
-exit(isempty(messages) ? 0 : 1)

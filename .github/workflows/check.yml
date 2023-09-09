@@ -1,0 +1,41 @@
+name: Version Check
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches: [master]
+jobs:
+  check:
+    name: Check new version
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v3
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: 1.9.2
+          arch: x64
+      - name: Install dependencies
+        run: |
+          julia -e '
+            using Pkg
+            Pkg.install("GitHubActions")'
+      - name: Check version
+        id: check
+        run: julia scripts/check_update.jl
+      - name: Send notification
+        uses: cinotify/github-action@main
+        if: ${{ steps.check.outputs.has_messages == 1 }}
+        with:
+          to: 'yyc1992@gmail.com'
+          subject: 'Julia package update results'
+          body: ${{ steps.check.outputs.messages }}
+      - name: Commit changes
+        run: |
+          git config --global user.name 'Yichao Yu'
+          git config --global user.email 'yuyichao@users.noreply.github.com'
+          git status
+          git add .
+          git commit -m "Automatic version update"
+          git push
