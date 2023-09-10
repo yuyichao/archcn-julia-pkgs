@@ -127,7 +127,7 @@ function todict(ctx::Context, info::MissingDepsInfo)
     return res
 end
 
-JLLWrappers_UUID = Base.UUID("692b3bcd-3c85-4b1f-b108-f13ce0eb3210")
+const JLLWrappers_UUID = Base.UUID("692b3bcd-3c85-4b1f-b108-f13ce0eb3210")
 
 function check_missing_deps(ctx::Context, pkginfo, new_ver, is_jll,
                             out::MissingDepsInfo)
