@@ -1,5 +1,65 @@
 #!/usr/bin/julia
 
+function _get_name(@nospecialize expr)
+    if isa(expr, QuoteNode)
+        return expr.value
+    elseif !isa(expr, Expr)
+        return expr
+    end
+    if Meta.isexpr(expr, :., 2)
+        return _get_name(expr.args[2])
+    end
+    return expr
+end
+
+function _get_jll_content(products, expr::Expr)
+    if Meta.isexpr(expr, :macrocall) && length(expr.args) >= 2
+        macro_name = _get_name(expr.args[1])
+        if macro_name == Symbol("@declare_executable_product")
+            # product_name
+            name = string(expr.args[end]::Symbol)
+            get!(get!(Dict{String,String}, products, "executable"), name, name)
+            return products
+        elseif macro_name == Symbol("@init_executable_product")
+            # product_name, product_path
+            name = string(expr.args[end - 1]::Symbol)
+            path = expr.args[end]
+            get!(Dict{String,String}, products, "executable")[name] = basename(path)
+            return products
+        elseif macro_name == Symbol("@declare_file_product")
+            # product_name
+            name = string(expr.args[end]::Symbol)
+            get!(get!(Dict{String,String}, products, "file"), name, name)
+            return products
+        elseif macro_name == Symbol("@init_file_product")
+            # product_name, product_path
+            name = string(expr.args[end - 1]::Symbol)
+            path = expr.args[end]
+            get!(Dict{String,String}, products, "file")[name] = basename(path)
+            return products
+        elseif macro_name == Symbol("@declare_library_product")
+            # product_name, product_soname
+            name = string(expr.args[end - 1]::Symbol)
+            soname = expr.args[end]
+            get!(get!(Dict{String,String}, products, "library"), name,
+                 replace(soname, r"\.so\..*"=>".so"))
+            return products
+        elseif macro_name == Symbol("@init_library_product")
+            # product_name, product_path, dlopen_flags
+            name = string(expr.args[end - 2]::Symbol)
+            path = expr.args[end - 1]
+            get!(Dict{String,String}, products, "library")[name] = basename(path)
+            return products
+        end
+    end
+    for arg in expr.args
+        if isa(arg, Expr)
+            _get_jll_content(products, arg)
+        end
+    end
+    return products
+end
+
 function get_jll_content(repopath)
     wrappersdir = joinpath(repopath, "src/wrappers")
     products = Dict{String,Vector{String}}()
@@ -8,15 +68,10 @@ function get_jll_content(repopath)
         if m === nothing
             continue
         end
-        for line in eachline(joinpath(wrappersdir, file))
-            m = match(r"@declare_(library|executable|file)_product\(([^, )]*)", line)
-            if m === nothing
-                continue
-            end
-            push!(get!(Vector{String}, products, m[1]), m[2])
-        end
-        for (k, v) in products
-            sort!(v)
+        for (k, v) in _get_jll_content(Dict{String,Dict{String,String}}(),
+                                       Meta.parseall(read(joinpath(wrappersdir,
+                                                                   file), String)))
+            products[k] = sort!(collect(keys(v)))
         end
         return products
     end
