@@ -240,6 +240,7 @@ function find_new_versions(ctx::Context, uuid, version)
             ver_ok &= check_missing_deps(ctx, pkginfo, new_ver, is_jll,
                                          missing_deps_info)
         catch
+            @show current_exceptions()
             ver_ok = false
             push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver),
                   CheckError(current_exceptions()))
@@ -252,6 +253,7 @@ function find_new_versions(ctx::Context, uuid, version)
             try
                 ver_ok &= check_jll_content(ctx, arch_info, new_ver, jll_changes)
             catch
+                @show current_exceptions()
                 ver_ok = false
                 push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver),
                       CheckError(current_exceptions()))
@@ -270,6 +272,7 @@ function find_new_versions(ctx::Context, uuid, version)
                           extern_info)
                 end
             catch
+                @show current_exceptions()
                 ver_ok = false
                 push!(get!(Vector{Any}, pkg_ver_info.issues, new_ver),
                       CheckError(current_exceptions()))
