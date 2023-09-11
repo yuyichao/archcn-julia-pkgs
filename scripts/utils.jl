@@ -87,7 +87,6 @@ end
 function checkout_pkg_ver(ctx::Context, uuid, ver)
     pkgentry = ctx.registry[uuid]
     pkginfo = Pkg.Registry.registry_info(pkgentry)
-    arch_info = ctx.packages_info[uuid]
     name = pkgentry.name
     url = pkginfo.repo
     hash = pkginfo.version_info[ver].git_tree_sha1.bytes
@@ -463,4 +462,52 @@ function scan(ctx::Context)
     end
     changed = write_back_info(ctx)
     return messages, changed
+end
+
+struct JLLPkgInfo
+    products::Dict{String,Vector{Tuple{String,String}}}
+end
+
+struct NormalPkgInfo
+    deps_build::Bool
+    artifacts::Bool
+end
+
+struct NewPkgInfo
+    name::String
+    uuid::Base.UUID
+    url::String
+    ver::VersionNumber
+    commit::String
+
+    extra::Union{JLLPkgInfo,NormalPkgInfo}
+end
+
+function collect_new_pkg_info(ctx::Context, uuid, ver)
+    pkgentry = ctx.registry[uuid]
+    pkginfo = Pkg.Registry.registry_info(pkgentry)
+    name = pkgentry.name
+    url = pkginfo.repo
+    tree = pkginfo.version_info[ver].git_tree_sha1.bytes
+    # TODO: guess branch name
+    commit = find_package_commit(url, name, joinpath(ctx.workdir, "gitcache"),
+                                 nothing, tree, nothing)
+    if commit === nothing
+        commit = ""
+        @warn "Cannot find commit hash for $(name)[$(uuid)]@$(ver)"
+    else
+        commit = string(commit)
+    end
+
+    repopath = checkout_pkg_ver(ctx, uuid, ver)
+
+    if endswith(name, "_jll")
+        extra = JLLPkgInfo(Dict(k=>sort!([(name, path) for (name, path) in v])
+                                for (k, v) in collect_jll_products(repopath)))
+    else
+        deps_build = isfile(joinpath(repopath, "deps/build.jl"))
+        artifacts = isfile(joinpath(repopath, "Artifacts.toml"))
+        extra = NormalPkgInfo(deps_build, artifacts)
+    end
+    return NewPkgInfo(name, uuid, url, ver, commit, extra)
 end
