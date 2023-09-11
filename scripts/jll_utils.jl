@@ -1,20 +1,20 @@
 #!/usr/bin/julia
 
-function _get_name(@nospecialize expr)
+function _get_name_from_expr(@nospecialize expr)
     if isa(expr, QuoteNode)
         return expr.value
     elseif !isa(expr, Expr)
         return expr
     end
     if Meta.isexpr(expr, :., 2)
-        return _get_name(expr.args[2])
+        return _get_name_from_expr(expr.args[2])
     end
     return expr
 end
 
-function _get_jll_content(products, expr::Expr)
+function _collect_jll_products(products, expr::Expr)
     if Meta.isexpr(expr, :macrocall) && length(expr.args) >= 2
-        macro_name = _get_name(expr.args[1])
+        macro_name = _get_name_from_expr(expr.args[1])
         if macro_name == Symbol("@declare_executable_product")
             # product_name
             name = string(expr.args[end]::Symbol)
@@ -54,28 +54,29 @@ function _get_jll_content(products, expr::Expr)
     end
     for arg in expr.args
         if isa(arg, Expr)
-            _get_jll_content(products, arg)
+            _collect_jll_products(products, arg)
         end
     end
     return products
 end
 
-function get_jll_content(repopath)
+function collect_jll_products(repopath)
     wrappersdir = joinpath(repopath, "src/wrappers")
-    products = Dict{String,Vector{String}}()
+    products = Dict{String,Dict{String,String}}()
     for file in readdir(wrappersdir)
         m = match(r"x86_64-(.*-|)linux-(.*-|)gnu.*\.jl", file)
         if m === nothing
             continue
         end
-        for (k, v) in _get_jll_content(Dict{String,Dict{String,String}}(),
-                                       Meta.parseall(read(joinpath(wrappersdir,
-                                                                   file), String)))
-            products[k] = sort!(collect(keys(v)))
-        end
-        return products
+        exprs = Meta.parseall(read(joinpath(wrappersdir, file), String))
+        return _collect_jll_products(products, exprs)
     end
     return products
+end
+
+function collect_jll_product_names(repopath)
+    return Dict(k=>sort!(collect(keys(v)))
+                for (k, v) in collect_jll_products(repopath))
 end
 
 struct JLLChanges
@@ -99,7 +100,7 @@ end
 
 function check_jll_content(ctx::Context, arch_info, new_ver, out::JLLChanges)
     repopath = checkout_pkg_ver(ctx, Base.UUID(arch_info["Pkg"]["uuid"]), new_ver)
-    products = get_jll_content(repopath)
+    products = collect_jll_product_names(repopath)
     old_products = get!(Dict{String,Vector{String}},
                         get!(Dict{String,Any}, arch_info, "JLL"), "products")
     for key in ("library", "executable", "file")
