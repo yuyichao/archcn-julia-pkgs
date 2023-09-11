@@ -419,6 +419,8 @@ function resolve_new_versions(ctx::Context, check_results)
         if ver == old_version
             continue
         end
+        issues = check_results[uuid].issues
+        filter!(kv->kv.first >= ver, issues)
         arch_info_status["version"] = string(ver)
         verfile = joinpath(ctx.package_paths[uuid], "version")
         last_commit = nothing
@@ -440,7 +442,7 @@ function resolve_new_versions(ctx::Context, check_results)
                                      get(arch_info["Pkg"], "branch", nothing),
                                      tree, last_commit)
         if commit === nothing
-            push!(check_results[uuid], PkgCommitMissing(String(tree)))
+            push!(get!(Vector{Any}, issues, ver), PkgCommitMissing(String(tree)))
         else
             write(verfile, "version: $(ver)@$(commit)\n")
         end
