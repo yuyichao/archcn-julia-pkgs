@@ -18,5 +18,7 @@ const messages, changed = scan(context)
         set_output("has_messages", "0")
     end
 else
-    @warn join(messages, "\n\n")
+    if !isempty(messages)
+        @warn join(messages, "\n\n")
+    end
 end
