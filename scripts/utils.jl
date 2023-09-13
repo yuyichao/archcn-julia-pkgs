@@ -511,3 +511,109 @@ function collect_full_pkg_info(ctx::Context, uuid, ver)
     end
     return FullPkgInfo(name, uuid, url, ver, commit, extra)
 end
+
+function resolve_all_dependencies(ctx::Context, uuids)
+    uuids = Set{Base.UUID}(uuids)
+    for (uuid, v) in ctx.packages_info
+        push!(uuids, uuid)
+    end
+    todo_pkgs = copy(uuids)
+    done_pkgs = Set{Base.UUID}()
+
+    compat = Dict{Base.UUID,Dict{VersionNumber,
+                                 Dict{Base.UUID,Pkg.Versions.VersionSpec}}}()
+    compat_weak = Dict{Base.UUID,Dict{VersionNumber,Set{Base.UUID}}}()
+    uuid_to_name = Dict{Base.UUID,String}()
+    reqs = Dict{Base.UUID,Pkg.Versions.VersionSpec}()
+    fixed = Dict{Base.UUID,Pkg.Resolve.Fixed}()
+
+    ver_ub = Pkg.Versions.VersionBound("*")
+    stdlibs = get(Dict{String,Any}, ctx.global_info, "StdLibs")
+
+    function process_package(uuid)
+        pkgentry = ctx.registry[uuid]
+        pkginfo = Pkg.Registry.registry_info(pkgentry)
+        name = pkgentry.name
+        uuid_to_name[uuid] = name
+
+        old_ver = v"0"
+
+        arch_info = get(ctx.packages_info, uuid, nothing)
+        if arch_info !== nothing
+            arch_info_status = get(arch_info, "Status", nothing)
+            if arch_info_status !== nothing
+                old_ver = VersionNumber(get(arch_info_status, "version", "0"))
+            end
+        end
+
+        if uuid in uuids
+            reqs[uuid] = Pkg.Versions.VersionSpec(Pkg.Versions.VersionRange(
+                Pkg.Versions.VersionBound(old_ver), ver_ub))
+        end
+
+        _compat = Dict{VersionNumber,Dict{Base.UUID,Pkg.Versions.VersionSpec}}()
+        compat[uuid] = _compat
+        _compat_weak = Dict{VersionNumber,Set{Base.UUID}}()
+        compat_weak[uuid] = _compat_weak
+
+        compat_info = Pkg.Registry.compat_info(pkginfo)
+        weak_compat_info = Pkg.Registry.weak_compat_info(pkginfo)
+
+        for ver in keys(pkginfo.version_info)
+            ver >= old_ver || continue
+            __compat = Dict{Base.UUID,Pkg.Versions.VersionSpec}()
+            _compat[ver] = __compat
+
+            for (dep_uuid, dep_ver) in compat_info[ver]
+                if dep_uuid == Pkg.Registry.JULIA_UUID ||
+                    haskey(stdlibs, string(dep_uuid))
+                    continue
+                end
+                if dep_uuid == JLLWrappers_UUID
+                    continue
+                end
+                if !haskey(ctx.registry, dep_uuid)
+                    @warn "Unkown package UUID $(dep_uuid) as dependency for $(name)[$(uuid)]@$(ver)"
+                    continue
+                end
+                if !(dep_uuid in done_pkgs)
+                    push!(todo_pkgs, dep_uuid)
+                end
+                __compat[dep_uuid] = dep_ver
+            end
+            if weak_compat_info === nothing
+                _compat_weak[ver] = Set{Base.UUID}()
+                continue
+            end
+            __compat_weak = Set{Base.UUID}()
+            _compat_weak[ver] = __compat_weak
+            for (dep_uuid, dep_ver) in weak_compat_info[ver]
+                if dep_uuid == Pkg.Registry.JULIA_UUID ||
+                    haskey(stdlibs, string(dep_uuid))
+                    continue
+                end
+                if dep_uuid == JLLWrappers_UUID
+                    continue
+                end
+                if !haskey(ctx.registry, dep_uuid)
+                    @warn "Unkown package UUID $(dep_uuid) as weak dependency for $(name)[$(uuid)]@$(ver)"
+                    continue
+                end
+                if !(dep_uuid in done_pkgs)
+                    push!(todo_pkgs, dep_uuid)
+                end
+                push!(__compat_weak, dep_uuid)
+            end
+        end
+    end
+
+    while !isempty(todo_pkgs)
+        uuid = pop!(todo_pkgs)
+        push!(done_pkgs, uuid)
+        process_package(uuid)
+    end
+
+    graph = Pkg.Resolve.Graph(compat, compat_weak, uuid_to_name, reqs, fixed,
+                              true, nothing)
+    return Pkg.Resolve.resolve(graph)
+end
