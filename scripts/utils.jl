@@ -473,7 +473,7 @@ struct NormalPkgInfo
     artifacts::Bool
 end
 
-struct NewPkgInfo
+struct FullPkgInfo
     name::String
     uuid::Base.UUID
     url::String
@@ -483,7 +483,7 @@ struct NewPkgInfo
     extra::Union{JLLPkgInfo,NormalPkgInfo}
 end
 
-function collect_new_pkg_info(ctx::Context, uuid, ver)
+function collect_full_pkg_info(ctx::Context, uuid, ver)
     pkgentry = ctx.registry[uuid]
     pkginfo = Pkg.Registry.registry_info(pkgentry)
     name = pkgentry.name
@@ -509,5 +509,5 @@ function collect_new_pkg_info(ctx::Context, uuid, ver)
         artifacts = isfile(joinpath(repopath, "Artifacts.toml"))
         extra = NormalPkgInfo(deps_build, artifacts)
     end
-    return NewPkgInfo(name, uuid, url, ver, commit, extra)
+    return FullPkgInfo(name, uuid, url, ver, commit, extra)
 end
