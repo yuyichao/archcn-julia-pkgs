@@ -617,3 +617,21 @@ function resolve_all_dependencies(ctx::Context, uuids)
                               true, nothing)
     return Pkg.Resolve.resolve(graph)
 end
+
+function collect_all_pkg_info(ctx::Context, versions)
+    res = Dict{Base.UUID,FullPkgInfo}()
+    for (uuid, ver) in versions
+        arch_info = get(ctx.packages_info, uuid, nothing)
+        if arch_info !== nothing
+            arch_info_status = get(arch_info, "Status", nothing)
+            if arch_info_status !== nothing
+                old_ver = VersionNumber(get(arch_info_status, "version", "0"))
+                if old_ver == ver
+                    continue
+                end
+            end
+        end
+        res[uuid] = collect_full_pkg_info(ctx, uuid, ver)
+    end
+    return res
+end
