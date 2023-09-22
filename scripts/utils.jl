@@ -5,6 +5,12 @@ using TOML
 
 const project_toml_names = ("Project.toml", "JuliaProject.toml")
 
+_get(d, key, default) = if d === nothing
+    return default
+else
+    return get(d, key, default)
+end
+
 function find_general_registry()
     Pkg.Registry.update("General")
     for reg in Pkg.Registry.reachable_registries()
@@ -536,15 +542,9 @@ function resolve_all_dependencies(ctx::Context, uuids)
         name = pkgentry.name
         uuid_to_name[uuid] = name
 
-        old_ver = v"0"
-
         arch_info = get(ctx.packages_info, uuid, nothing)
-        if arch_info !== nothing
-            arch_info_status = get(arch_info, "Status", nothing)
-            if arch_info_status !== nothing
-                old_ver = VersionNumber(get(arch_info_status, "version", "0"))
-            end
-        end
+        arch_info_status = _get(arch_info, "Status", nothing)
+        old_ver = VersionNumber(_get(arch_info_status, "version", "0"))
 
         if uuid in uuids
             reqs[uuid] = Pkg.Versions.VersionSpec(Pkg.Versions.VersionRange(
@@ -622,14 +622,10 @@ function collect_all_pkg_info(ctx::Context, versions)
     res = Dict{Base.UUID,FullPkgInfo}()
     for (uuid, ver) in versions
         arch_info = get(ctx.packages_info, uuid, nothing)
-        if arch_info !== nothing
-            arch_info_status = get(arch_info, "Status", nothing)
-            if arch_info_status !== nothing
-                old_ver = VersionNumber(get(arch_info_status, "version", "0"))
-                if old_ver == ver
-                    continue
-                end
-            end
+        arch_info_status = _get(arch_info, "Status", nothing)
+        old_ver = VersionNumber(_get(arch_info_status, "version", "0"))
+        if old_ver == ver
+            continue
         end
         res[uuid] = collect_full_pkg_info(ctx, uuid, ver)
     end
