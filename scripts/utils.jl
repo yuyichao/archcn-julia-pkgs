@@ -631,3 +631,161 @@ function collect_all_pkg_info(ctx::Context, versions)
     end
     return res
 end
+
+function write_additional_extra_info(ctx::Context, arch_info, pkgdir,
+                                     extra_info::JLLPkgInfo)
+    products = get!(Dict{String,Vector{String}},
+                    get!(Dict{String,Any}, arch_info, "JLL"), "products")
+    for key in ("library", "executable", "file")
+        new_ps = get(extra_info.products, key, nothing)
+        ps = get(products, key, nothing)
+
+        if new_ps !== nothing
+            new_p_names = [p[1] for p in new_ps]
+            if ps !== nothing
+                add = setdiff(Set(new_p_names), ps)
+                remove = setdiff(ps, new_p_names)
+                resize!(ps, length(new_ps))
+                ps .= new_p_names
+                if isempty(add) && isempty(remove)
+                    continue
+                end
+                open(joinpath(pkgdir, "jll.toml"), "a") do io
+                    if !isempty(add)
+                        for p in new_ps
+                            if p[1] in add
+                                println(io)
+                                println(io, "[[$(key)]]")
+                                println(io, "name = \"$(p[1])\"")
+                                if p[1] != p[2]
+                                    println(io, "file = \"$(p[2])\"")
+                                end
+                            end
+                        end
+                    end
+                    if !isempty(remove)
+                        for p in remove
+                            println(io, "# $(key) product removed: $(p)")
+                        end
+                    end
+                end
+            else
+                products[key] = new_p_names
+                open(joinpath(pkgdir, "jll.toml"), "a") do io
+                    for p in new_ps
+                        println(io)
+                        println(io, "[[$(key)]]")
+                        println(io, "name = \"$(p[1])\"")
+                        if p[1] != p[2]
+                            println(io, "file = \"$(p[2])\"")
+                        end
+                    end
+                end
+            end
+        elseif ps !== nothing
+            delete!(products, key)
+            open(joinpath(pkgdir, "jll.toml"), "a") do io
+                for p in ps
+                    println(io, "# $(key) product removed: $(p)")
+                end
+            end
+        end
+    end
+end
+
+function write_additional_extra_info(ctx::Context, arch_info, pkgdir,
+                                     extra_info::NormalPkgInfo)
+    arch_info_pkg = arch_info["Pkg"]
+    has_deps_build = get(arch_info_pkg, "has_deps_build", false)
+    has_artifacts = get(arch_info_pkg, "has_artifacts", false)
+
+    if has_deps_build == extra_info.deps_build &&
+        has_artifacts == extra_info.artifacts
+        return
+    end
+    open(joinpath(pkgdir, "PKGBUILD"), "a") do io
+        if has_deps_build != extra_info.deps_build
+            println(io, "# deps_build: $(has_deps_build) -> $(extra_info.deps_build)")
+            if extra_info.deps_build
+                arch_info_pkg["has_deps_build"] = true
+            else
+                delete!(arch_info_pkg, "has_deps_build")
+            end
+        end
+        if has_artifacts != extra_info.artifacts
+            println(io, "# artifacts: $(has_artifacts) -> $(extra_info.artifacts)")
+            if extra_info.artifacts
+                arch_info_pkg["has_artifacts"] = true
+            else
+                delete!(arch_info_pkg, "has_artifacts")
+            end
+        end
+    end
+    return
+end
+
+function write_repo(ctx::Context, pkg_infos, repodir)
+    new_packages = Set{String}()
+    for (uuid, full_pkg_info) in pkg_infos
+        name = full_pkg_info.name
+        arch_pkg_name = "julia-git-$(lowercase(name))-src"
+
+        pkgdir = joinpath(repodir, "archlinuxcn", arch_pkg_name)
+        pkgbuild_path = joinpath(pkgdir, "PKGBUILD")
+
+        pkg_exist = isfile(pkgbuild_path)
+
+        arch_info = get!(Dict{String,Any}, ctx.packages_info, uuid)
+        arch_info_pkg = get!(Dict{String,Any}, arch_info, "Pkg")
+        arch_info_pkg["name"] = name
+        arch_info_pkg["uuid"] = string(uuid)
+        arch_info_status = get!(Dict{String,Any}, arch_info, "Status")
+        arch_info_status["version"] = string(full_pkg_info.ver)
+        if pkg_exist
+            write_additional_extra_info(ctx, arch_info, pkgdir, full_pkg_info.extra)
+        else
+            # TODO create new package directory
+        end
+        # TODO: write to the version file
+        # TODO: update julia-git-precompiled-packages' lilac.yaml
+
+        # lilac_yaml_path = joinpath(pkgdir, "lilac.yaml")
+        # lilac_py_path = joinpath(pkgdir, "lilac.py")
+    end
+end
+
+function _add_pkg_uuids(ctx::Context, uuids, new_packages)
+    for name in new_packages
+        if length(name) == 36 && contains(name, "-")
+            push!(uuids, Base.UUID(name))
+            continue
+        end
+        pkg_uuids = Pkg.Registry.uuids_from_name(ctx.registry, name)
+        if length(pkg_uuids) == 0
+            @error "Package $(name) not found in registry"
+            return -1
+        elseif length(pkg_uuids) != 1
+            buf = IOBuffer()
+            println(buf, "Package $(name) not unique in registry. Possible matches:")
+            for uuid in pkg_uuids
+                println(buf, "  $(uuid)")
+            end
+            println(buf, "Please specify the package using the UUID instead.")
+            @error String(take!(buf))
+            return -1
+        end
+        push!(uuids, pkg_uuids[1])
+    end
+end
+
+function update_packages(ctx::Context, repo_dir, new_packages=nothing)
+    uuids = Base.UUID[]
+    if new_packages !== nothing
+        _add_pkg_uuids(ctx, uuids, new_packages)
+    end
+    versions = resolve_all_dependencies(ctx, uuids)
+    full_pkg_infos = collect_all_pkg_info(ctx, versions)
+    write_repo(ctx, full_pkg_infos, repodir)
+    write_back_info(ctx)
+    return
+end
