@@ -68,7 +68,7 @@ function write_back_info(ctx::Context)
         end
     end
     for (k, v) in ctx.packages_info
-        if v == ctx._packages_info[k]
+        if v == get(ctx._packages_info, k, nothing)
             continue
         end
         changed = true
@@ -426,31 +426,39 @@ function resolve_new_versions(ctx::Context, check_results)
         end
         issues = check_results[uuid].issues
         filter!(kv->kv.first >= ver, issues)
-        arch_info_status["version"] = string(ver)
-        verfile = joinpath(ctx.package_paths[uuid], "version")
-        last_commit = nothing
-        if isfile(verfile)
-            verstrs = split(read(verfile, String), '@')
-            if length(verstrs) == 2
-                hash_str = strip(verstrs[2])
-                if length(hash_str) == 40
-                    last_commit = hash_str
-                end
+        res = update_pkg_version(ctx, uuid, ver, arch_info)
+        if res isa PkgCommitMissing
+            push!(get!(Vector{Any}, issues, ver), res)
+        end
+    end
+end
+
+function update_pkg_version(ctx::Context, uuid, ver, arch_info)
+    arch_info["Status"]["version"] = string(ver)
+    verfile = joinpath(ctx.package_paths[uuid], "version")
+    last_commit = nothing
+    if isfile(verfile)
+        verstrs = split(read(verfile, String), '@')
+        if length(verstrs) == 2
+            hash_str = strip(verstrs[2])
+            if length(hash_str) == 40
+                last_commit = hash_str
             end
         end
-        pkgentry = ctx.registry[uuid]
-        pkginfo = Pkg.Registry.registry_info(pkgentry)
-        name = pkgentry.name
-        url = pkginfo.repo
-        tree = pkginfo.version_info[ver].git_tree_sha1.bytes
-        commit = find_package_commit(url, name, joinpath(ctx.workdir, "gitcache"),
-                                     get(arch_info["Pkg"], "branch", nothing),
-                                     tree, last_commit)
-        if commit === nothing
-            push!(get!(Vector{Any}, issues, ver), PkgCommitMissing(String(tree)))
-        else
-            write(verfile, "version: $(ver)@$(commit)\n")
-        end
+    end
+    pkgentry = ctx.registry[uuid]
+    pkginfo = Pkg.Registry.registry_info(pkgentry)
+    name = pkgentry.name
+    url = pkginfo.repo
+    tree = pkginfo.version_info[ver].git_tree_sha1
+    commit = find_package_commit(url, name, joinpath(ctx.workdir, "gitcache"),
+                                 get(arch_info["Pkg"], "branch", nothing),
+                                 tree.bytes, last_commit)
+    if commit === nothing
+        return PkgCommitMissing(string(tree))
+    else
+        write(verfile, "version: $(ver)@$(commit)\n")
+        return commit
     end
 end
 
@@ -494,10 +502,11 @@ function collect_full_pkg_info(ctx::Context, uuid, ver)
     pkginfo = Pkg.Registry.registry_info(pkgentry)
     name = pkgentry.name
     url = pkginfo.repo
-    tree = pkginfo.version_info[ver].git_tree_sha1.bytes
+    @info "Collecting info for package $(name) [$(uuid)] @ $(ver)"
+    tree = pkginfo.version_info[ver].git_tree_sha1
     # TODO: guess branch name
     commit = find_package_commit(url, name, joinpath(ctx.workdir, "gitcache"),
-                                 nothing, tree, nothing)
+                                 nothing, tree.bytes, nothing)
     if commit === nothing
         commit = ""
         @warn "Cannot find commit hash for $(name)[$(uuid)]@$(ver)"
@@ -724,6 +733,110 @@ function write_additional_extra_info(ctx::Context, arch_info, pkgdir,
     return
 end
 
+function write_new_package(ctx::Context, arch_info, pkgdir,
+                           full_pkg_info, commit, extra_info::JLLPkgInfo)
+    products = get!(Dict{String,Vector{String}},
+                    get!(Dict{String,Any}, arch_info, "JLL"), "products")
+    for key in ("library", "executable", "file")
+        ps = get(extra_info.products, key, nothing)
+        if ps === nothing
+            continue
+        end
+
+        p_names = [p[1] for p in ps]
+        products[key] = p_names
+        open(joinpath(pkgdir, "jll.toml"), "a") do io
+            for p in ps
+                println(io)
+                println(io, "[[$(key)]]")
+                println(io, "name = \"$(p[1])\"")
+                if p[1] != p[2]
+                    println(io, "file = \"$(p[2])\"")
+                end
+            end
+        end
+    end
+    arch_pkg_name = "julia-git-$(lowercase(full_pkg_info.name))-src"
+    write("$(pkgdir)/PKGBUILD", """
+pkgname=$(arch_pkg_name)
+pkgver=$(full_pkg_info.ver)
+_commit=$(commit)
+pkgrel=1
+pkgdesc="$(full_pkg_info.name).jl"
+url="$(full_pkg_info.url)"
+arch=('any')
+license=('MIT')
+# TODO: Add dependency on the libraries
+makedepends=(git julia-pkg-scripts)
+depends=(julia-git)
+source=("git+$(full_pkg_info.url)#commit=\$_commit"
+        jll.toml)
+sha256sums=('SKIP')
+
+build() {
+  cd $(full_pkg_info.name).jl
+
+  julia /usr/lib/julia/julia-gen-jll.jl $(full_pkg_info.name) ../jll.toml
+}
+
+package() {
+  cd $(full_pkg_info.name).jl
+
+  JULIA_INSTALL_SRCPKG=1 . /usr/lib/julia/julia-install-pkg.sh $(full_pkg_info.name) "\${pkgdir}" "\${pkgname}" julia-git
+}
+""")
+    return
+end
+
+function write_new_package(ctx::Context, arch_info, pkgdir,
+                           full_pkg_info, commit, extra_info::NormalPkgInfo)
+    arch_info_pkg = arch_info["Pkg"]
+    if extra_info.deps_build
+        arch_info_pkg["has_deps_build"] = true
+    else
+        delete!(arch_info_pkg, "has_deps_build")
+    end
+    if extra_info.artifacts
+        arch_info_pkg["has_artifacts"] = true
+    else
+        delete!(arch_info_pkg, "has_artifacts")
+    end
+    arch_pkg_name = "julia-git-$(lowercase(full_pkg_info.name))-src"
+    open("$(pkgdir)/PKGBUILD", "w") do fh
+        write(fh, """
+pkgname=$(arch_pkg_name)
+pkgver=$(full_pkg_info.ver)
+_commit=$(commit)
+pkgrel=1
+pkgdesc="$(full_pkg_info.name).jl"
+url="$(full_pkg_info.url)"
+arch=('any')
+license=('MIT')
+makedepends=(git julia-pkg-scripts)
+depends=(julia-git)
+source=("git+$(full_pkg_info.url)#commit=\$_commit")
+sha256sums=('SKIP')
+
+""")
+
+        if extra_info.deps_build
+            println(fh, "# TODO: handle deps/build.jl\n")
+        end
+        if extra_info.artifacts
+            println(fh, "# TODO: handle artifacts\n")
+        end
+
+        write(fh, """
+package() {
+  cd $(full_pkg_info.name).jl
+
+  JULIA_INSTALL_SRCPKG=1 . /usr/lib/julia/julia-install-pkg.sh $(full_pkg_info.name) "\${pkgdir}" "\${pkgname}" julia-git
+}
+""")
+    end
+    return
+end
+
 function write_repo(ctx::Context, pkg_infos, repodir)
     new_packages = Set{String}()
     for (uuid, full_pkg_info) in pkg_infos
@@ -740,17 +853,139 @@ function write_repo(ctx::Context, pkg_infos, repodir)
         arch_info_pkg["name"] = name
         arch_info_pkg["uuid"] = string(uuid)
         arch_info_status = get!(Dict{String,Any}, arch_info, "Status")
-        arch_info_status["version"] = string(full_pkg_info.ver)
+
+        pkginfo_path = get!(()->joinpath(ctx.pkgsdir, name),
+                            ctx.package_paths, uuid)
+        mkpath(pkginfo_path)
+        commit = update_pkg_version(ctx, uuid, full_pkg_info.ver, arch_info)
+        if commit isa PkgCommitMissing
+            @error "Package commit for $(name)@$(full_pkg_info.ver)[$(commit.tree_hash)] not found"
+            exit(1)
+        end
         if pkg_exist
+            @info "Update PKGBUILD for $(name) [$(uuid)] @ $(full_pkg_info.ver)"
             write_additional_extra_info(ctx, arch_info, pkgdir, full_pkg_info.extra)
         else
-            # TODO create new package directory
-        end
-        # TODO: write to the version file
-        # TODO: update julia-git-precompiled-packages' lilac.yaml
+            @info "Generate PKGBUILD for $(name) [$(uuid)] @ $(full_pkg_info.ver)"
+            push!(new_packages, name)
+            mkpath(pkgdir)
+            cp(joinpath(@__DIR__, "lilac-common.py"), joinpath(pkgdir, "lilac.py"))
+            write("$(pkgdir)/lilac.yaml", """
+maintainers:
+  - github: yuyichao
 
-        # lilac_yaml_path = joinpath(pkgdir, "lilac.yaml")
-        # lilac_py_path = joinpath(pkgdir, "lilac.py")
+post_build: git_pkgbuild_commit
+
+repo_depends:
+  - julia-git
+  - openspecfun-git
+  - openblas-lapack-git: openblas-git
+  - openblas-lapack-git
+  - libutf8proc-git
+  - openlibm-git
+  - llvm-julia: llvm-libs-julia
+  - julia-pkg-scripts
+
+update_on:
+  - source: regex
+    url: https://raw.githubusercontent.com/yuyichao/archcn-julia-pkgs/master/pkgs/$(name)/version
+    regex: 'version: *([^ ]*@[^ ]*)'
+  - alias: alpm-lilac
+    alpm: julia-git
+    provided: julia
+  - source: manual
+    manual: 1
+""")
+            write_new_package(ctx, arch_info, pkgdir, full_pkg_info,
+                              commit, full_pkg_info.extra)
+        end
+    end
+    new_packages = sort!(collect(new_packages))
+    edit_precompiled_lilac(joinpath(repodir, "archlinuxcn",
+                                    "julia-git-precompiled-packages",
+                                    "lilac.yaml"),
+                           new_packages)
+    edit_precompiled_lilac(joinpath(repodir, "alarmcn",
+                                    "julia-git-precompiled-packages",
+                                    "lilac.yaml"),
+                           new_packages)
+end
+
+function edit_precompiled_lilac(path, new_packages)
+    @info "Updating $(path)"
+    mv(path, "$(path).bak")
+    try
+        open(path, "w") do io
+            _edit_precompiled_lilac(io, eachline("$(path).bak"), new_packages)
+        end
+        rm("$(path).bak")
+    catch
+        mv("$(path).bak", path, force=true)
+        rethrow()
+    end
+end
+
+function _edit_precompiled_lilac(fout, linein, new_packages)
+    for line in linein
+        println(fout, line)
+        if line == "###=== JLPKG_UPDATE_ON_LIST {{"
+            @info "Found update_on list"
+            items = ["  - alias: alpm-lilac\n    alpm: julia-git-$(lowercase(pkg))-src"
+                     for pkg in new_packages]
+            insert_lines_sorted(fout, linein, items, 2,
+                                "###=== }} JLPKG_UPDATE_ON_LIST")
+        elseif line == "###=== JLPKG_DEPEND_LIST {{"
+            @info "Found depend list"
+            items = ["  - julia-git-$(lowercase(pkg))-src"
+                     for pkg in new_packages]
+            insert_lines_sorted(fout, linein, items, 1,
+                                "###=== }} JLPKG_DEPEND_LIST")
+        elseif line == "###=== JLPKG_UPDATE_ON_BUILD_LIST {{"
+            @info "Found update_on_build list"
+            items = ["  - pkgbase: julia-git-$(lowercase(pkg))-src"
+                     for pkg in new_packages]
+            insert_lines_sorted(fout, linein, items, 1,
+                                "###=== }} JLPKG_UPDATE_ON_BUILD_LIST")
+        end
+    end
+end
+
+function next_lines(line_it, nline, endline)
+    line1, _ = iterate(line_it)
+    if line1 == endline
+        return
+    end
+    if nline == 1
+        return line1
+    end
+    buf = IOBuffer()
+    write(buf, line1)
+    for i in 2:nline
+        line, _ = iterate(line_it)
+        write(buf, "\n")
+        write(buf, line)
+    end
+    return String(take!(buf))
+end
+
+function insert_lines_sorted(fout, linein, new_items, nline, endline)
+    item_idx = 1
+    nitems = length(new_items)
+    while true
+        line = next_lines(linein, nline, endline)
+        if line === nothing
+            while item_idx <= nitems
+                println(fout, new_items[item_idx])
+                item_idx += 1
+            end
+            println(fout, endline)
+            return
+        end
+        while item_idx <= nitems && new_items[item_idx] < line
+            println(fout, new_items[item_idx])
+            item_idx += 1
+        end
+        println(fout, line)
     end
 end
 
@@ -763,7 +998,7 @@ function _add_pkg_uuids(ctx::Context, uuids, new_packages)
         pkg_uuids = Pkg.Registry.uuids_from_name(ctx.registry, name)
         if length(pkg_uuids) == 0
             @error "Package $(name) not found in registry"
-            return -1
+            exit(1)
         elseif length(pkg_uuids) != 1
             buf = IOBuffer()
             println(buf, "Package $(name) not unique in registry. Possible matches:")
@@ -772,13 +1007,13 @@ function _add_pkg_uuids(ctx::Context, uuids, new_packages)
             end
             println(buf, "Please specify the package using the UUID instead.")
             @error String(take!(buf))
-            return -1
+            exit(1)
         end
         push!(uuids, pkg_uuids[1])
     end
 end
 
-function update_packages(ctx::Context, repo_dir, new_packages=nothing)
+function update_packages(ctx::Context, repodir, new_packages=nothing)
     uuids = Base.UUID[]
     if new_packages !== nothing
         _add_pkg_uuids(ctx, uuids, new_packages)
