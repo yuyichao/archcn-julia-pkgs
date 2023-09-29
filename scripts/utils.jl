@@ -743,6 +743,7 @@ function write_new_package(ctx::Context, arch_info, pkgdir,
                            full_pkg_info, extra_info::JLLPkgInfo)
     products = get!(Dict{String,Vector{String}},
                     get!(Dict{String,Any}, arch_info, "JLL"), "products")
+    first_item = Ref(true)
     for key in ("library", "executable", "file")
         ps = get(extra_info.products, key, nothing)
         if ps === nothing
@@ -753,7 +754,11 @@ function write_new_package(ctx::Context, arch_info, pkgdir,
         products[key] = p_names
         open(joinpath(pkgdir, "jll.toml"), "a") do io
             for p in ps
-                println(io)
+                if first_item[]
+                    first_item[] = false
+                else
+                    println(io)
+                end
                 println(io, "[[$(key)]]")
                 println(io, "name = \"$(p[1])\"")
                 if p[1] != p[2]
