@@ -654,6 +654,10 @@ function write_additional_extra_info(ctx::Context, arch_info, pkgdir,
     for key in ("library", "executable", "file")
         new_ps = get(extra_info.products, key, nothing)
         ps = get(products, key, nothing)
+        jlltoml_key = key
+        if key == "executable"
+            jlltoml_key = "binary"
+        end
 
         if new_ps !== nothing
             new_p_names = [p[1] for p in new_ps]
@@ -670,7 +674,7 @@ function write_additional_extra_info(ctx::Context, arch_info, pkgdir,
                         for p in new_ps
                             if p[1] in add
                                 println(io)
-                                println(io, "[[$(key)]]")
+                                println(io, "[[$(jlltoml_key)]]")
                                 println(io, "name = \"$(p[1])\"")
                                 if p[1] != p[2]
                                     println(io, "file = \"$(p[2])\"")
@@ -680,7 +684,7 @@ function write_additional_extra_info(ctx::Context, arch_info, pkgdir,
                     end
                     if !isempty(remove)
                         for p in remove
-                            println(io, "# $(key) product removed: $(p)")
+                            println(io, "# $(jlltoml_key) product removed: $(p)")
                         end
                     end
                 end
@@ -689,7 +693,7 @@ function write_additional_extra_info(ctx::Context, arch_info, pkgdir,
                 open(joinpath(pkgdir, "jll.toml"), "a") do io
                     for p in new_ps
                         println(io)
-                        println(io, "[[$(key)]]")
+                        println(io, "[[$(jlltoml_key)]]")
                         println(io, "name = \"$(p[1])\"")
                         if p[1] != p[2]
                             println(io, "file = \"$(p[2])\"")
@@ -749,6 +753,10 @@ function write_new_package(ctx::Context, arch_info, pkgdir,
         if ps === nothing
             continue
         end
+        jlltoml_key = key
+        if key == "executable"
+            jlltoml_key = "binary"
+        end
 
         p_names = [p[1] for p in ps]
         products[key] = p_names
@@ -759,7 +767,7 @@ function write_new_package(ctx::Context, arch_info, pkgdir,
                 else
                     println(io)
                 end
-                println(io, "[[$(key)]]")
+                println(io, "[[$(jlltoml_key)]]")
                 println(io, "name = \"$(p[1])\"")
                 if p[1] != p[2]
                     println(io, "file = \"$(p[2])\"")
