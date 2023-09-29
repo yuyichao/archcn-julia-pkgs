@@ -508,8 +508,8 @@ function collect_full_pkg_info(ctx::Context, uuid, ver)
     commit = find_package_commit(url, name, joinpath(ctx.workdir, "gitcache"),
                                  nothing, tree.bytes, nothing)
     if commit === nothing
-        commit = ""
         @warn "Cannot find commit hash for $(name)[$(uuid)]@$(ver)"
+        exit(1)
     else
         commit = string(commit)
     end
@@ -734,7 +734,7 @@ function write_additional_extra_info(ctx::Context, arch_info, pkgdir,
 end
 
 function write_new_package(ctx::Context, arch_info, pkgdir,
-                           full_pkg_info, commit, extra_info::JLLPkgInfo)
+                           full_pkg_info, extra_info::JLLPkgInfo)
     products = get!(Dict{String,Vector{String}},
                     get!(Dict{String,Any}, arch_info, "JLL"), "products")
     for key in ("library", "executable", "file")
@@ -760,7 +760,7 @@ function write_new_package(ctx::Context, arch_info, pkgdir,
     write("$(pkgdir)/PKGBUILD", """
 pkgname=$(arch_pkg_name)
 pkgver=$(full_pkg_info.ver)
-_commit=$(commit)
+_commit=$(full_pkg_info.commit)
 pkgrel=1
 pkgdesc="$(full_pkg_info.name).jl"
 url="$(full_pkg_info.url)"
@@ -789,7 +789,7 @@ package() {
 end
 
 function write_new_package(ctx::Context, arch_info, pkgdir,
-                           full_pkg_info, commit, extra_info::NormalPkgInfo)
+                           full_pkg_info, extra_info::NormalPkgInfo)
     arch_info_pkg = arch_info["Pkg"]
     if extra_info.deps_build
         arch_info_pkg["has_deps_build"] = true
@@ -806,7 +806,7 @@ function write_new_package(ctx::Context, arch_info, pkgdir,
         write(fh, """
 pkgname=$(arch_pkg_name)
 pkgver=$(full_pkg_info.ver)
-_commit=$(commit)
+_commit=$(full_pkg_info.commit)
 pkgrel=1
 pkgdesc="$(full_pkg_info.name).jl"
 url="$(full_pkg_info.url)"
@@ -853,15 +853,13 @@ function write_repo(ctx::Context, pkg_infos, repodir)
         arch_info_pkg["name"] = name
         arch_info_pkg["uuid"] = string(uuid)
         arch_info_status = get!(Dict{String,Any}, arch_info, "Status")
+        arch_info_status["version"] = string(full_pkg_info.ver)
 
         pkginfo_path = get!(()->joinpath(ctx.pkgsdir, name),
                             ctx.package_paths, uuid)
         mkpath(pkginfo_path)
-        commit = update_pkg_version(ctx, uuid, full_pkg_info.ver, arch_info)
-        if commit isa PkgCommitMissing
-            @error "Package commit for $(name)@$(full_pkg_info.ver)[$(commit.tree_hash)] not found"
-            exit(1)
-        end
+        verfile = joinpath(pkginfo_path, "version")
+        write(verfile, "version: $(ver)@$(full_pkg_info.commit)\n")
         if pkg_exist
             @info "Update PKGBUILD for $(name) [$(uuid)] @ $(full_pkg_info.ver)"
             write_additional_extra_info(ctx, arch_info, pkgdir, full_pkg_info.extra)
@@ -897,7 +895,7 @@ update_on:
     manual: 1
 """)
             write_new_package(ctx, arch_info, pkgdir, full_pkg_info,
-                              commit, full_pkg_info.extra)
+                              full_pkg_info.extra)
         end
     end
     new_packages = sort!(collect(new_packages))
