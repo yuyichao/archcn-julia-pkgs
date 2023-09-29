@@ -905,22 +905,30 @@ update_on:
         end
     end
     new_packages = sort!(collect(new_packages))
-    edit_precompiled_lilac(joinpath(repodir, "archlinuxcn",
-                                    "julia-git-precompiled-packages",
-                                    "lilac.yaml"),
-                           new_packages)
-    edit_precompiled_lilac(joinpath(repodir, "alarmcn",
-                                    "julia-git-precompiled-packages",
-                                    "lilac.yaml"),
-                           new_packages)
+    edit_precompiled_pkgfile(joinpath(repodir, "archlinuxcn",
+                                      "julia-git-precompiled-packages",
+                                      "lilac.yaml"),
+                             new_packages)
+    edit_precompiled_pkgfile(joinpath(repodir, "archlinuxcn",
+                                      "julia-git-precompiled-packages",
+                                      "PKGBUILD"),
+                             new_packages)
+    edit_precompiled_pkgfile(joinpath(repodir, "alarmcn",
+                                      "julia-git-precompiled-packages",
+                                      "lilac.yaml"),
+                             new_packages)
+    edit_precompiled_pkgfile(joinpath(repodir, "alarmcn",
+                                      "julia-git-precompiled-packages",
+                                      "PKGBUILD"),
+                             new_packages)
 end
 
-function edit_precompiled_lilac(path, new_packages)
+function edit_precompiled_pkgfile(path, new_packages)
     @info "Updating $(path)"
     mv(path, "$(path).bak")
     try
         open(path, "w") do io
-            _edit_precompiled_lilac(io, eachline("$(path).bak"), new_packages)
+            _edit_precompiled_pkgfile(io, eachline("$(path).bak"), new_packages)
         end
         rm("$(path).bak")
     catch
@@ -929,7 +937,7 @@ function edit_precompiled_lilac(path, new_packages)
     end
 end
 
-function _edit_precompiled_lilac(fout, linein, new_packages)
+function _edit_precompiled_pkgfile(fout, linein, new_packages)
     for line in linein
         println(fout, line)
         if line == "###=== JLPKG_UPDATE_ON_LIST {{"
@@ -950,6 +958,11 @@ function _edit_precompiled_lilac(fout, linein, new_packages)
                      for pkg in new_packages]
             insert_lines_sorted(fout, linein, items, 1,
                                 "###=== }} JLPKG_UPDATE_ON_BUILD_LIST")
+        elseif line == "###=== JLPKG_JLNAME_LIST {{"
+            @info "Found _jlpackages list"
+            items = ["  $(pkg)" for pkg in new_packages]
+            insert_lines_sorted(fout, linein, items, 1,
+                                "###=== }} JLPKG_JLNAME_LIST")
         end
     end
 end
