@@ -426,23 +426,29 @@ function resolve_new_versions(ctx::Context, check_results)
         end
         issues = check_results[uuid].issues
         filter!(kv->kv.first >= ver, issues)
-        res = update_pkg_version(ctx, uuid, ver, arch_info)
+        arch_info["Status"]["version"] = string(ver)
+        res = find_package_commit(ctx, uuid, ver, arch_info)
         if res isa PkgCommitMissing
             push!(get!(Vector{Any}, issues, ver), res)
+        else
+            verfile = joinpath(ctx.package_paths[uuid], "version")
+            write(verfile, "version: $(ver)@$(commit)\n")
         end
     end
 end
 
-function update_pkg_version(ctx::Context, uuid, ver, arch_info)
-    arch_info["Status"]["version"] = string(ver)
-    verfile = joinpath(ctx.package_paths[uuid], "version")
+function find_package_commit(ctx::Context, uuid, ver, arch_info)
+    package_path = get(ctx.package_paths, uuid, nothing)
     last_commit = nothing
-    if isfile(verfile)
-        verstrs = split(read(verfile, String), '@')
-        if length(verstrs) == 2
-            hash_str = strip(verstrs[2])
-            if length(hash_str) == 40
-                last_commit = hash_str
+    if package_path !== nothing
+        verfile = joinpath(package_path, "version")
+        if isfile(verfile)
+            verstrs = split(read(verfile, String), '@')
+            if length(verstrs) == 2
+                hash_str = strip(verstrs[2])
+                if length(hash_str) == 40
+                    last_commit = hash_str
+                end
             end
         end
     end
@@ -452,12 +458,12 @@ function update_pkg_version(ctx::Context, uuid, ver, arch_info)
     url = pkginfo.repo
     tree = pkginfo.version_info[ver].git_tree_sha1
     commit = find_package_commit(url, name, joinpath(ctx.workdir, "gitcache"),
-                                 get(arch_info["Pkg"], "branch", nothing),
+                                 _get(_get(arch_info, "Pkg", nothing),
+                                      "branch", nothing),
                                  tree.bytes, last_commit)
     if commit === nothing
         return PkgCommitMissing(string(tree))
     else
-        write(verfile, "version: $(ver)@$(commit)\n")
         return commit
     end
 end
@@ -505,9 +511,9 @@ function collect_full_pkg_info(ctx::Context, uuid, ver)
     @info "Collecting info for package $(name) [$(uuid)] @ $(ver)"
     tree = pkginfo.version_info[ver].git_tree_sha1
     # TODO: guess branch name
-    commit = find_package_commit(url, name, joinpath(ctx.workdir, "gitcache"),
-                                 nothing, tree.bytes, nothing)
-    if commit === nothing
+    commit = find_package_commit(ctx, uuid, ver,
+                                 get(ctx.packages_info, uuid, nothing))
+    if commit isa PkgCommitMissing
         @warn "Cannot find commit hash for $(name)[$(uuid)]@$(ver)"
         exit(1)
     else
@@ -859,7 +865,7 @@ function write_repo(ctx::Context, pkg_infos, repodir)
                             ctx.package_paths, uuid)
         mkpath(pkginfo_path)
         verfile = joinpath(pkginfo_path, "version")
-        write(verfile, "version: $(ver)@$(full_pkg_info.commit)\n")
+        write(verfile, "version: $(full_pkg_info.ver)@$(full_pkg_info.commit)\n")
         if pkg_exist
             @info "Update PKGBUILD for $(name) [$(uuid)] @ $(full_pkg_info.ver)"
             write_additional_extra_info(ctx, arch_info, pkgdir, full_pkg_info.extra)
