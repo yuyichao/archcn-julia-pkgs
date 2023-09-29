@@ -162,24 +162,38 @@ function _find_commit_for_tree(tree, commit, visited, toplevel_only)
     end
 end
 
-function find_commit_for_tree(repo, tree, head, last_commit)
-    head_commit = LibGit2.GitCommit(repo, head)
-    visited = Set{LibGit2.GitHash}()
-    for toplevel_only in (true, false)
-        if !toplevel_only
-            # No need to clear the set the first time around
-            empty!(visited)
-        end
-        if last_commit !== nothing
-            push!(visited, last_commit)
-        end
-        res = _find_commit_for_tree(tree, head_commit, visited, toplevel_only)
-        if res !== nothing
-            return res
-        end
-        if last_commit !== nothing
-            empty!(visited)
+function find_commit_for_tree(repo, tree, head, last_commit, url)
+    visited_full = Set{LibGit2.GitHash}()
+    visited_toponly = Set{LibGit2.GitHash}()
+    if head !== nothing
+        head_commit = LibGit2.GitCommit(repo, head)
+        for toplevel_only in (true, false)
+            visited = toplevel_only ? visited_toponly : visited_full
+            if last_commit !== nothing
+                push!(visited, last_commit)
+            end
             res = _find_commit_for_tree(tree, head_commit, visited, toplevel_only)
+            if res !== nothing
+                return res
+            end
+            if last_commit !== nothing
+                empty!(visited)
+                res = _find_commit_for_tree(tree, head_commit, visited, toplevel_only)
+                if res !== nothing
+                    return res
+                end
+            end
+        end
+    end
+    remote_heads = with(LibGit2.GitRemoteAnon(repo, url)) do remote
+        connect(remote, :fetch)
+        return ls(remote)
+    end
+    for toplevel_only in (true, false)
+        visited = toplevel_only ? visited_toponly : visited_full
+        for head in remote_heads
+            res = _find_commit_for_tree(tree, LibGit2.GitCommit(repo, head.oid),
+                                        visited, toplevel_only)
             if res !== nothing
                 return res
             end
@@ -202,6 +216,6 @@ function find_package_commit(url, name, workdir, branch, tree, last_commit)
         if remote_head === nothing
             @warn "Cannot find remote default branch at $(url)."
         end
-        return find_commit_for_tree(repo, tree, remote_head, last_commit)
+        return find_commit_for_tree(repo, tree, remote_head, last_commit, url)
     end
 end
