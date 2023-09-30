@@ -1,0 +1,6 @@
+[Pkg]
+name = "DataValueInterfaces"
+uuid = "e2d170a0-9d28-54be-80f0-106bbe20a464"
+
+[Status]
+version = "1.0.0"

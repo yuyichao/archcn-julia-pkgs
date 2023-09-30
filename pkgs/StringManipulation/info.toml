@@ -1,0 +1,6 @@
+[Pkg]
+name = "StringManipulation"
+uuid = "892a3eda-7b42-436c-8928-eab12a02cf0e"
+
+[Status]
+version = "0.3.4"

@@ -1,0 +1,6 @@
+[Pkg]
+name = "CodecZlib"
+uuid = "944b1d66-785c-5afd-91f1-9de20f533193"
+
+[Status]
+version = "0.7.2"

@@ -1,0 +1,6 @@
+[Pkg]
+name = "LoweredCodeUtils"
+uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
+
+[Status]
+version = "2.3.0"

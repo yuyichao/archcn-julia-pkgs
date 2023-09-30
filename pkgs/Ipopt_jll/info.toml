@@ -1,0 +1,11 @@
+[Pkg]
+name = "Ipopt_jll"
+uuid = "9cc047cb-c261-5740-88fc-0cf96f7bdcc7"
+is_jll = true
+
+[Status]
+version = "300.1400.1302+0"
+
+[JLL.products]
+executable = ["amplexe"]
+library = ["libipopt", "libipoptamplinterface"]

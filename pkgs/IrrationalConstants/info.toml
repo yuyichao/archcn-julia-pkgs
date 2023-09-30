@@ -1,0 +1,6 @@
+[Pkg]
+name = "IrrationalConstants"
+uuid = "92d709cd-6900-40b7-9082-c6be49f344b6"
+
+[Status]
+version = "0.2.2"

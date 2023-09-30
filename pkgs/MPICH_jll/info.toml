@@ -1,0 +1,11 @@
+[Pkg]
+name = "MPICH_jll"
+uuid = "7cb0a576-ebde-5e09-9194-50597f1243b4"
+is_jll = true
+
+[Status]
+version = "4.1.2+0"
+
+[JLL.products]
+executable = ["mpiexec"]
+library = ["libmpi", "libmpicxx", "libmpifort"]

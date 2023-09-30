@@ -1,0 +1,6 @@
+[Pkg]
+name = "IndirectArrays"
+uuid = "9b13fd28-a010-5f03-acff-a1bbcff69959"
+
+[Status]
+version = "1.0.0"

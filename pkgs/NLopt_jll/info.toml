@@ -1,0 +1,10 @@
+[Pkg]
+name = "NLopt_jll"
+uuid = "079eb43e-fd8e-5478-9966-2cf3e3edb778"
+is_jll = true
+
+[Status]
+version = "2.7.1+0"
+
+[JLL.products]
+library = ["libnlopt"]

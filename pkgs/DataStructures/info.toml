@@ -1,0 +1,6 @@
+[Pkg]
+name = "DataStructures"
+uuid = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+
+[Status]
+version = "0.18.15"

@@ -1,0 +1,6 @@
+[Pkg]
+name = "PooledArrays"
+uuid = "2dfb63ee-cc39-5dd5-95bd-886bf059d720"
+
+[Status]
+version = "1.4.3"

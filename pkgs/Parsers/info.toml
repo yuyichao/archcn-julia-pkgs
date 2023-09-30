@@ -1,0 +1,6 @@
+[Pkg]
+name = "Parsers"
+uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
+
+[Status]
+version = "2.7.2"

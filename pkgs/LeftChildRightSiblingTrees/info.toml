@@ -1,0 +1,6 @@
+[Pkg]
+name = "LeftChildRightSiblingTrees"
+uuid = "1d6d02ad-be62-4b6b-8a6d-2f90e265016e"
+
+[Status]
+version = "0.2.0"

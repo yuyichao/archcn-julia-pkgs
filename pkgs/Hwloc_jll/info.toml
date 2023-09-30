@@ -1,0 +1,11 @@
+[Pkg]
+name = "Hwloc_jll"
+uuid = "e33a78d0-f292-5ffc-b300-72abe9b543c8"
+is_jll = true
+
+[Status]
+version = "2.9.3+0"
+
+[JLL.products]
+executable = ["lstopo_no_graphics"]
+library = ["libhwloc"]

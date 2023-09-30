@@ -1,0 +1,6 @@
+[Pkg]
+name = "NaNMath"
+uuid = "77ba4419-2d1f-58cd-9bb1-8ffee604a2e3"
+
+[Status]
+version = "1.0.2"

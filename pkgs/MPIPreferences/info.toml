@@ -1,0 +1,6 @@
+[Pkg]
+name = "MPIPreferences"
+uuid = "3da0fdf6-3ccc-4f1b-acd9-58baa6c99267"
+
+[Status]
+version = "0.1.9"

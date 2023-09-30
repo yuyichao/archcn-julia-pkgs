@@ -1,0 +1,6 @@
+[Pkg]
+name = "ChainRulesCore"
+uuid = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
+
+[Status]
+version = "1.16.0"

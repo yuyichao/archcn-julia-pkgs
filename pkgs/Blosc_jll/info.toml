@@ -1,0 +1,10 @@
+[Pkg]
+name = "Blosc_jll"
+uuid = "0b7ba130-8d10-5ba8-a3d6-c5182647fed9"
+is_jll = true
+
+[Status]
+version = "1.21.4+0"
+
+[JLL.products]
+library = ["libblosc"]

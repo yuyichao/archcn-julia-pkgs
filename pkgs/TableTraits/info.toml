@@ -1,0 +1,6 @@
+[Pkg]
+name = "TableTraits"
+uuid = "3783bdb8-4a98-5b6b-af9a-565f29a5fe9c"
+
+[Status]
+version = "1.0.1"

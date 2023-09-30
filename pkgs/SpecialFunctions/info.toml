@@ -1,0 +1,6 @@
+[Pkg]
+name = "SpecialFunctions"
+uuid = "276daf66-3868-5448-9aa4-cd146d93841b"
+
+[Status]
+version = "2.3.1"

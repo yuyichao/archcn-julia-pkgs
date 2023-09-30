@@ -1,0 +1,6 @@
+[Pkg]
+name = "OrderedCollections"
+uuid = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
+
+[Status]
+version = "1.6.2"

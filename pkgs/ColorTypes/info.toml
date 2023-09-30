@@ -1,0 +1,6 @@
+[Pkg]
+name = "ColorTypes"
+uuid = "3da002f7-5984-5a60-b8a6-cbb66c0b333f"
+
+[Status]
+version = "0.11.4"

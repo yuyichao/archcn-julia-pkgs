@@ -1,0 +1,6 @@
+[Pkg]
+name = "DiffRules"
+uuid = "b552c78f-8df3-52c6-915a-8e097449b14b"
+
+[Status]
+version = "1.15.1"
