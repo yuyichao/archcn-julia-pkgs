@@ -719,6 +719,7 @@ end
 
 function write_new_package(ctx::Context, arch_info, pkgdir,
                            full_pkg_info, extra_info::JLLPkgInfo)
+    arch_info["Pkg"]["is_jll"] = true
     products = get!(Dict{String,Vector{String}},
                     get!(Dict{String,Any}, arch_info, "JLL"), "products")
     first_item = Ref(true)
