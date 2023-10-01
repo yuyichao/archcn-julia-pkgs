@@ -386,12 +386,18 @@ function resolve_new_versions(ctx::Context, check_results)
 
         compat_info = Pkg.Registry.compat_info(pkginfo)
 
+        deps = Set{Base.UUID}()
         for ver in versions
+            empty!(deps)
+            for (vrange, vdeps) in pkginfo.deps
+                ver in vrange || continue
+                union!(deps, values(vdeps))
+            end
             __compat = Dict{Base.UUID,Pkg.Versions.VersionSpec}()
             _compat[ver] = __compat
             if haskey(compat_info, ver)
                 for (uuid, ver) in compat_info[ver]
-                    if haskey(ctx.packages_info, uuid)
+                    if haskey(ctx.packages_info, uuid) && (uuid in deps)
                         __compat[uuid] = ver
                     end
                 end
@@ -555,8 +561,15 @@ function resolve_all_dependencies(ctx::Context, uuids)
 
         compat_info = Pkg.Registry.compat_info(pkginfo)
 
+        deps = Set{Base.UUID}()
         for ver in keys(pkginfo.version_info)
             ver >= old_ver || continue
+            empty!(deps)
+            for (vrange, vdeps) in pkginfo.deps
+                ver in vrange || continue
+                union!(deps, values(vdeps))
+            end
+
             __compat = Dict{Base.UUID,Pkg.Versions.VersionSpec}()
             _compat[ver] = __compat
 
@@ -566,6 +579,9 @@ function resolve_all_dependencies(ctx::Context, uuids)
                     continue
                 end
                 if dep_uuid == JLLWrappers_UUID
+                    continue
+                end
+                if !(dep_uuid in deps)
                     continue
                 end
                 if !haskey(ctx.registry, dep_uuid)
