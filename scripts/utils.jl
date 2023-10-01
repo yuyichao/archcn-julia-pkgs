@@ -383,11 +383,8 @@ function resolve_new_versions(ctx::Context, check_results)
 
         _compat = Dict{VersionNumber,Dict{Base.UUID,Pkg.Versions.VersionSpec}}()
         compat[uuid] = _compat
-        _compat_weak = Dict{VersionNumber,Set{Base.UUID}}()
-        compat_weak[uuid] = _compat_weak
 
         compat_info = Pkg.Registry.compat_info(pkginfo)
-        weak_compat_info = Pkg.Registry.weak_compat_info(pkginfo)
 
         for ver in versions
             __compat = Dict{Base.UUID,Pkg.Versions.VersionSpec}()
@@ -396,19 +393,6 @@ function resolve_new_versions(ctx::Context, check_results)
                 for (uuid, ver) in compat_info[ver]
                     if haskey(ctx.packages_info, uuid)
                         __compat[uuid] = ver
-                    end
-                end
-            end
-            if weak_compat_info === nothing
-                _compat_weak[ver] = Set{Base.UUID}()
-                continue
-            end
-            __compat_weak = Set{Base.UUID}()
-            _compat_weak[ver] = __compat_weak
-            if haskey(weak_compat_info, ver)
-                for (uuid, ver) in weak_compat_info[ver]
-                    if haskey(ctx.packages_info, uuid)
-                        push!(__compat_weak, uuid)
                     end
                 end
             end
@@ -568,11 +552,8 @@ function resolve_all_dependencies(ctx::Context, uuids)
 
         _compat = Dict{VersionNumber,Dict{Base.UUID,Pkg.Versions.VersionSpec}}()
         compat[uuid] = _compat
-        _compat_weak = Dict{VersionNumber,Set{Base.UUID}}()
-        compat_weak[uuid] = _compat_weak
 
         compat_info = Pkg.Registry.compat_info(pkginfo)
-        weak_compat_info = Pkg.Registry.weak_compat_info(pkginfo)
 
         for ver in keys(pkginfo.version_info)
             ver >= old_ver || continue
@@ -595,29 +576,6 @@ function resolve_all_dependencies(ctx::Context, uuids)
                     push!(todo_pkgs, dep_uuid)
                 end
                 __compat[dep_uuid] = dep_ver
-            end
-            if weak_compat_info === nothing
-                _compat_weak[ver] = Set{Base.UUID}()
-                continue
-            end
-            __compat_weak = Set{Base.UUID}()
-            _compat_weak[ver] = __compat_weak
-            for (dep_uuid, dep_ver) in weak_compat_info[ver]
-                if dep_uuid == Pkg.Registry.JULIA_UUID ||
-                    haskey(stdlibs, string(dep_uuid))
-                    continue
-                end
-                if dep_uuid == JLLWrappers_UUID
-                    continue
-                end
-                if !haskey(ctx.registry, dep_uuid)
-                    @warn "Unkown package UUID $(dep_uuid) as weak dependency for $(name)[$(uuid)]@$(ver)"
-                    continue
-                end
-                if !(dep_uuid in done_pkgs)
-                    push!(todo_pkgs, dep_uuid)
-                end
-                push!(__compat_weak, dep_uuid)
             end
         end
     end
