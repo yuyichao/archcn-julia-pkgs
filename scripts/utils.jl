@@ -3,6 +3,8 @@
 using Pkg
 using TOML
 
+include("Resolve/Resolve.jl")
+
 const project_toml_names = ("Project.toml", "JuliaProject.toml")
 
 _get(d, key, default) = if d === nothing
@@ -364,7 +366,7 @@ function resolve_new_versions(ctx::Context, check_results)
     compat_weak = Dict{Base.UUID,Dict{VersionNumber,Set{Base.UUID}}}()
     uuid_to_name = Dict{Base.UUID,String}()
     reqs = Dict{Base.UUID,Pkg.Versions.VersionSpec}()
-    fixed = Dict{Base.UUID,Pkg.Resolve.Fixed}()
+    fixed = Dict{Base.UUID,Resolve.Fixed}()
 
     ver_ub = Pkg.Versions.VersionBound("*")
 
@@ -405,9 +407,9 @@ function resolve_new_versions(ctx::Context, check_results)
         end
     end
 
-    graph = Pkg.Resolve.Graph(compat, compat_weak, uuid_to_name, reqs, fixed,
+    graph = Resolve.Graph(compat, compat_weak, uuid_to_name, reqs, fixed,
                               true, nothing)
-    for (uuid, ver) in Pkg.Resolve.resolve(graph)
+    for (uuid, ver) in Resolve.resolve(graph)
         arch_info = ctx.packages_info[uuid]
         arch_info_status = arch_info["Status"]
         old_version = VersionNumber(arch_info_status["version"])
@@ -536,7 +538,7 @@ function resolve_all_dependencies(ctx::Context, uuids)
     compat_weak = Dict{Base.UUID,Dict{VersionNumber,Set{Base.UUID}}}()
     uuid_to_name = Dict{Base.UUID,String}()
     reqs = Dict{Base.UUID,Pkg.Versions.VersionSpec}()
-    fixed = Dict{Base.UUID,Pkg.Resolve.Fixed}()
+    fixed = Dict{Base.UUID,Resolve.Fixed}()
 
     ver_ub = Pkg.Versions.VersionBound("*")
     stdlibs = get(Dict{String,Any}, ctx.global_info, "StdLibs")
@@ -602,9 +604,9 @@ function resolve_all_dependencies(ctx::Context, uuids)
         process_package(uuid)
     end
 
-    graph = Pkg.Resolve.Graph(compat, compat_weak, uuid_to_name, reqs, fixed,
+    graph = Resolve.Graph(compat, compat_weak, uuid_to_name, reqs, fixed,
                               true, nothing)
-    return Pkg.Resolve.resolve(graph)
+    return Resolve.resolve(graph)
 end
 
 function collect_all_pkg_info(ctx::Context, versions)
