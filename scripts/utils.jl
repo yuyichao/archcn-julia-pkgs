@@ -424,7 +424,7 @@ function resolve_new_versions(ctx::Context, check_results)
             push!(get!(Vector{Any}, issues, ver), res)
         else
             verfile = joinpath(ctx.package_paths[uuid], "version")
-            write(verfile, "version: $(ver)@$(commit)\n")
+            write(verfile, "version: $(ver)@$(res)\n")
         end
     end
 end
