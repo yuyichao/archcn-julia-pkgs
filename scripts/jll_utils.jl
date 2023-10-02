@@ -42,7 +42,7 @@ function _collect_jll_products(products, expr::Expr)
             name = string(expr.args[end - 1]::Symbol)
             soname = expr.args[end]
             get!(get!(Dict{String,String}, products, "library"), name,
-                 replace(soname, r"\.so\..*"=>".so"))
+                 replace(soname, r"\.so.*"=>""))
             return products
         elseif macro_name == Symbol("@init_library_product")
             # product_name, product_path, dlopen_flags
