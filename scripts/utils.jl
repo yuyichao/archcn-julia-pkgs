@@ -896,9 +896,6 @@ update_on:
   - source: regex
     url: https://raw.githubusercontent.com/yuyichao/archcn-julia-pkgs/master/pkgs/$(name)/version
     regex: 'version: *([^ ]*@[^ ]*)'
-  - alias: alpm-lilac
-    alpm: julia-git
-    provided: julia
   - source: manual
     manual: 1
 """)
