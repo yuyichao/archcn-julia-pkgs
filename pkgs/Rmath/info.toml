@@ -1,0 +1,6 @@
+[Pkg]
+name = "Rmath"
+uuid = "79098fc4-a85e-5d69-aa6a-4863f24498fa"
+
+[Status]
+version = "0.7.1"

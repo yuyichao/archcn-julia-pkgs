@@ -1,0 +1,6 @@
+[Pkg]
+name = "CodecXz"
+uuid = "ba30903b-d9e8-5048-a5ec-d1f5b0d4b47b"
+
+[Status]
+version = "0.7.0"

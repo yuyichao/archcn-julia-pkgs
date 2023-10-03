@@ -1,0 +1,6 @@
+[Pkg]
+name = "SimpleWeightedGraphs"
+uuid = "47aef6b3-ad0c-573a-a1e2-d07658019622"
+
+[Status]
+version = "1.4.0"

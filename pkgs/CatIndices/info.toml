@@ -1,0 +1,6 @@
+[Pkg]
+name = "CatIndices"
+uuid = "aafaddc9-749c-510e-ac4f-586e18779b91"
+
+[Status]
+version = "0.2.2"

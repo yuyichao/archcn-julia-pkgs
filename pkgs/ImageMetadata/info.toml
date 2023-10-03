@@ -1,0 +1,6 @@
+[Pkg]
+name = "ImageMetadata"
+uuid = "bc367c6b-8a6b-528e-b4bd-a4b897500b49"
+
+[Status]
+version = "0.9.9"

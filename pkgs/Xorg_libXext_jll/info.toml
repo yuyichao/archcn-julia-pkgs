@@ -1,0 +1,10 @@
+[Pkg]
+name = "Xorg_libXext_jll"
+uuid = "1082639a-0dae-5f34-9b06-72781eeb8cb3"
+is_jll = true
+
+[Status]
+version = "1.3.4+4"
+
+[JLL.products]
+library = ["libXext"]

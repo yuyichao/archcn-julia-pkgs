@@ -1,0 +1,10 @@
+[Pkg]
+name = "GLPK_jll"
+uuid = "e8aa6df9-e6ca-548a-97ff-1f85fc5b8b98"
+is_jll = true
+
+[Status]
+version = "5.0.1+0"
+
+[JLL.products]
+library = ["libglpk"]

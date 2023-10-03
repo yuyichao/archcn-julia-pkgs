@@ -1,0 +1,6 @@
+[Pkg]
+name = "Images"
+uuid = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
+
+[Status]
+version = "0.26.0"

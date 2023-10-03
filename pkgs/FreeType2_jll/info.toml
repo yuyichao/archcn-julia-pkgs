@@ -1,0 +1,10 @@
+[Pkg]
+name = "FreeType2_jll"
+uuid = "d7e528f0-a631-5988-bf34-fe36492bcfd7"
+is_jll = true
+
+[Status]
+version = "2.13.1+0"
+
+[JLL.products]
+library = ["libfreetype"]

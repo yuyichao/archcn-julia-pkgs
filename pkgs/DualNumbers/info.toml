@@ -1,0 +1,6 @@
+[Pkg]
+name = "DualNumbers"
+uuid = "fa6b7ba4-c1ee-5f82-b5fc-ecf0adba8f74"
+
+[Status]
+version = "0.6.8"

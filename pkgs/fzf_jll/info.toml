@@ -1,0 +1,10 @@
+[Pkg]
+name = "fzf_jll"
+uuid = "214eeab7-80f7-51ab-84ad-2988db7cef09"
+is_jll = true
+
+[Status]
+version = "0.35.1+0"
+
+[JLL.products]
+executable = ["fzf"]

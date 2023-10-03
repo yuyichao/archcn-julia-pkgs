@@ -1,0 +1,6 @@
+[Pkg]
+name = "ImageDistances"
+uuid = "51556ac3-7006-55f5-8cb3-34580c88182d"
+
+[Status]
+version = "0.2.17"

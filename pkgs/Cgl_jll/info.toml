@@ -1,0 +1,10 @@
+[Pkg]
+name = "Cgl_jll"
+uuid = "3830e938-1dd0-5f3e-8b8e-b3ee43226782"
+is_jll = true
+
+[Status]
+version = "0.6000.600+0"
+
+[JLL.products]
+library = ["libCgl"]

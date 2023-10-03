@@ -1,0 +1,6 @@
+[Pkg]
+name = "RealDot"
+uuid = "c1ae055f-0cd5-4b69-90a6-9a35b1a98df9"
+
+[Status]
+version = "0.1.0"

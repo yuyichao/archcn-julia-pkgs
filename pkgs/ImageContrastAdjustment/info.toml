@@ -1,0 +1,6 @@
+[Pkg]
+name = "ImageContrastAdjustment"
+uuid = "f332f351-ec65-5f6a-b3d1-319c6670881a"
+
+[Status]
+version = "0.3.12"

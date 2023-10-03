@@ -1,0 +1,6 @@
+[Pkg]
+name = "ManualMemory"
+uuid = "d125e4d3-2237-4719-b19c-fa641b8a4667"
+
+[Status]
+version = "0.1.8"

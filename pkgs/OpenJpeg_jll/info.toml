@@ -1,0 +1,11 @@
+[Pkg]
+name = "OpenJpeg_jll"
+uuid = "643b3616-a352-519d-856d-80112ee9badc"
+is_jll = true
+
+[Status]
+version = "2.5.0+0"
+
+[JLL.products]
+executable = ["opj_compress", "opj_decompress", "opj_dump"]
+library = ["libopenjp2"]

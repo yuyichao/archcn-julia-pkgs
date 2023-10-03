@@ -1,0 +1,10 @@
+[Pkg]
+name = "Libtiff_jll"
+uuid = "89763e89-9b03-5906-acba-b20f662cd828"
+is_jll = true
+
+[Status]
+version = "4.5.1+1"
+
+[JLL.products]
+library = ["libtiff"]

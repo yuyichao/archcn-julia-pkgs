@@ -1,0 +1,6 @@
+[Pkg]
+name = "StackViews"
+uuid = "cae243ae-269e-4f55-b966-ac2d0dc13c15"
+
+[Status]
+version = "0.1.1"

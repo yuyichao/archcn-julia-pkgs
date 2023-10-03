@@ -1,0 +1,12 @@
+[Pkg]
+name = "Ghostscript_jll"
+uuid = "61579ee1-b43e-5ca0-a5da-69d92c66a64b"
+is_jll = true
+
+[Status]
+version = "9.55.0+4"
+
+[JLL.products]
+executable = ["gs", "gsc", "gsx"]
+file = ["dvipdf", "eps2eps", "gsbj", "gsdj", "gsdj500", "gserrors_h", "gslj", "gslp", "gsnd", "iapi_h", "ierrors_h", "pdf2dsc", "pdf2ps", "pf2afm", "pfbtopfa", "pphs", "printafm", "ps2ascii", "ps2epsi", "ps2pdf", "ps2pdf12", "ps2pdf13", "ps2pdf14", "ps2pdfwr", "ps2ps", "ps2ps2"]
+library = ["libgs"]

@@ -1,0 +1,6 @@
+[Pkg]
+name = "MosaicViews"
+uuid = "e94cdb99-869f-56ef-bcf0-1ae2bcbe0389"
+
+[Status]
+version = "0.3.4"

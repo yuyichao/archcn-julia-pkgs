@@ -1,0 +1,6 @@
+[Pkg]
+name = "ImageSegmentation"
+uuid = "80713f31-8817-5129-9cf8-209ff8fb23e1"
+
+[Status]
+version = "1.8.2"

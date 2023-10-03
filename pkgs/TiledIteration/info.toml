@@ -1,0 +1,6 @@
+[Pkg]
+name = "TiledIteration"
+uuid = "06e1c1a7-607b-532d-9fad-de7d9aa2abac"
+
+[Status]
+version = "0.5.0"

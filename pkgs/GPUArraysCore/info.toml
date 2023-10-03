@@ -1,0 +1,6 @@
+[Pkg]
+name = "GPUArraysCore"
+uuid = "46192b85-c4d5-4398-a991-12ede77f4527"
+
+[Status]
+version = "0.1.5"

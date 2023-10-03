@@ -1,0 +1,6 @@
+[Pkg]
+name = "CoordinateTransformations"
+uuid = "150eb455-5306-5404-9cee-2592286d6298"
+
+[Status]
+version = "0.6.3"

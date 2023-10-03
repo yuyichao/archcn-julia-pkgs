@@ -1,0 +1,11 @@
+[Pkg]
+name = "FFMPEG_jll"
+uuid = "b22a6f82-2f65-5046-a5b2-351ab43fb4e5"
+is_jll = true
+
+[Status]
+version = "4.4.4+1"
+
+[JLL.products]
+executable = ["ffmpeg", "ffprobe"]
+library = ["libavcodec", "libavdevice", "libavfilter", "libavformat", "libavresample", "libavutil", "libpostproc", "libswresample", "libswscale"]

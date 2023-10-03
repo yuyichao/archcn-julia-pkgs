@@ -1,0 +1,10 @@
+[Pkg]
+name = "OpenEXR_jll"
+uuid = "18a262bb-aa17-5467-a713-aee519bc75cb"
+is_jll = true
+
+[Status]
+version = "3.1.4+0"
+
+[JLL.products]
+library = ["libIex", "libIlmThread", "libOpenEXR", "libOpenEXRCore", "libOpenEXRUtil"]

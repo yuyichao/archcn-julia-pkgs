@@ -1,0 +1,10 @@
+[Pkg]
+name = "Gettext_jll"
+uuid = "78b55507-aeef-58d4-861c-77aaff3498b1"
+is_jll = true
+
+[Status]
+version = "0.21.0+0"
+
+[JLL.products]
+library = ["libgettext"]

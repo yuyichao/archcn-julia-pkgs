@@ -1,0 +1,6 @@
+[Pkg]
+name = "Scratch"
+uuid = "6c6a2e73-6563-6170-7368-637461726353"
+
+[Status]
+version = "1.2.0"

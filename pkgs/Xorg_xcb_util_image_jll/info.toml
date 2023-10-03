@@ -1,0 +1,10 @@
+[Pkg]
+name = "Xorg_xcb_util_image_jll"
+uuid = "12413925-8142-5f55-bb0e-6d7ca50bb09b"
+is_jll = true
+
+[Status]
+version = "0.4.0+1"
+
+[JLL.products]
+library = ["libxcb_image"]

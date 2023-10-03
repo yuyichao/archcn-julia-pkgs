@@ -1,0 +1,6 @@
+[Pkg]
+name = "ImageShow"
+uuid = "4e3cecfd-b093-5904-9786-8bbb286a6a31"
+
+[Status]
+version = "0.3.8"

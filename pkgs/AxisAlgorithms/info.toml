@@ -1,0 +1,6 @@
+[Pkg]
+name = "AxisAlgorithms"
+uuid = "13072b0f-2c55-5437-9ae7-d433b7a33950"
+
+[Status]
+version = "1.0.1"

@@ -1,0 +1,6 @@
+[Pkg]
+name = "Mustache"
+uuid = "ffc61752-8dc7-55ee-8c37-f3e9cdd09e70"
+
+[Status]
+version = "1.0.17"

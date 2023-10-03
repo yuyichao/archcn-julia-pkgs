@@ -1,0 +1,10 @@
+[Pkg]
+name = "Xorg_libXi_jll"
+uuid = "a51aa0fd-4e3c-5386-b890-e753decda492"
+is_jll = true
+
+[Status]
+version = "1.7.10+4"
+
+[JLL.products]
+library = ["libXi"]

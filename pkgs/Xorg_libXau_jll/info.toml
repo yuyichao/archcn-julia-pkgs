@@ -1,0 +1,10 @@
+[Pkg]
+name = "Xorg_libXau_jll"
+uuid = "0c0b7dd1-d40b-584c-a123-a41640f87eec"
+is_jll = true
+
+[Status]
+version = "1.0.11+0"
+
+[JLL.products]
+library = ["libXau"]

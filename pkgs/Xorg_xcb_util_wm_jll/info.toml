@@ -1,0 +1,10 @@
+[Pkg]
+name = "Xorg_xcb_util_wm_jll"
+uuid = "c22f9ab0-d5fe-5066-847c-f4bb1cd4e361"
+is_jll = true
+
+[Status]
+version = "0.4.1+1"
+
+[JLL.products]
+library = ["libxcb_ewmh", "libxcb_icccm"]

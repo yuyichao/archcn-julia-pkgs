@@ -1,0 +1,10 @@
+[Pkg]
+name = "Xorg_libXrender_jll"
+uuid = "ea2f1a96-1ddc-540d-b46f-429655e07cfa"
+is_jll = true
+
+[Status]
+version = "0.9.10+4"
+
+[JLL.products]
+library = ["libXrender"]

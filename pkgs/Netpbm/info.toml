@@ -1,0 +1,6 @@
+[Pkg]
+name = "Netpbm"
+uuid = "f09324ee-3d7c-5217-9330-fc30815ba969"
+
+[Status]
+version = "1.1.1"

@@ -1,0 +1,6 @@
+[Pkg]
+name = "LazyModules"
+uuid = "8cdb02fc-e678-4876-92c5-9defec4f444e"
+
+[Status]
+version = "0.3.1"

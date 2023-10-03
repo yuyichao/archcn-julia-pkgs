@@ -1,0 +1,6 @@
+[Pkg]
+name = "ImageCore"
+uuid = "a09fc81d-aa75-5fe9-8630-4744c3626534"
+
+[Status]
+version = "0.10.1"

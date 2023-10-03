@@ -1,0 +1,10 @@
+[Pkg]
+name = "libvorbis_jll"
+uuid = "f27f6e37-5d2b-51aa-960f-b287f2bc3b7a"
+is_jll = true
+
+[Status]
+version = "1.3.7+1"
+
+[JLL.products]
+library = ["libvorbis", "libvorbisenc", "libvorbisfile"]

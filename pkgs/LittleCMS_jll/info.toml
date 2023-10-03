@@ -1,0 +1,11 @@
+[Pkg]
+name = "LittleCMS_jll"
+uuid = "d3a379c0-f9a3-5b72-a4c0-6bf4d2e8af0f"
+is_jll = true
+
+[Status]
+version = "2.15.0+0"
+
+[JLL.products]
+executable = ["linkicc", "psicc", "transicc"]
+library = ["liblcms2"]

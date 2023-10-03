@@ -1,0 +1,6 @@
+[Pkg]
+name = "HistogramThresholding"
+uuid = "2c695a8d-9458-5d45-9878-1b8a99cf7853"
+
+[Status]
+version = "0.3.1"

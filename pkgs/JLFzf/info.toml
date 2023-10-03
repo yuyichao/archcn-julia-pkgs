@@ -1,0 +1,6 @@
+[Pkg]
+name = "JLFzf"
+uuid = "1019f520-868f-41f5-a6de-eb00f4b6a39c"
+
+[Status]
+version = "0.1.5"

@@ -1,0 +1,10 @@
+[Pkg]
+name = "Cubature_jll"
+uuid = "7bc98958-0e37-5d67-a6ac-a3a19030071a"
+is_jll = true
+
+[Status]
+version = "1.0.5+0"
+
+[JLL.products]
+library = ["libcubature"]

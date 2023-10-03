@@ -1,0 +1,6 @@
+[Pkg]
+name = "NLsolve"
+uuid = "2774e3e8-f4cf-5e23-947b-6d7e65073b56"
+
+[Status]
+version = "4.5.1"

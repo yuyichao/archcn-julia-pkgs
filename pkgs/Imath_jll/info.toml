@@ -1,0 +1,10 @@
+[Pkg]
+name = "Imath_jll"
+uuid = "905a6f67-0a94-5f89-b386-d35d92009cd1"
+is_jll = true
+
+[Status]
+version = "3.1.7+0"
+
+[JLL.products]
+library = ["libImath"]

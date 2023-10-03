@@ -1,0 +1,6 @@
+[Pkg]
+name = "GLPK"
+uuid = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
+
+[Status]
+version = "1.1.3"

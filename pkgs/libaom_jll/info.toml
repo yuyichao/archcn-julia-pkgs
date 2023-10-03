@@ -1,0 +1,11 @@
+[Pkg]
+name = "libaom_jll"
+uuid = "a4ae2306-e953-59d6-aa16-d00cac43593b"
+is_jll = true
+
+[Status]
+version = "3.4.0+0"
+
+[JLL.products]
+executable = ["aomdec", "aomenc"]
+library = ["libaom"]

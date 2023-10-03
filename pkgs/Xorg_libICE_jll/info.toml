@@ -1,0 +1,9 @@
+[Pkg]
+name = "Xorg_libICE_jll"
+uuid = "f67eecfb-183a-506d-b269-f58e52b52d7c"
+is_jll = true
+
+[Status]
+version = "1.0.10+1"
+
+[JLL.products]

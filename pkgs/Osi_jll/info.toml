@@ -1,0 +1,10 @@
+[Pkg]
+name = "Osi_jll"
+uuid = "7da25872-d9ce-5375-a4d3-7a845f58efdd"
+is_jll = true
+
+[Status]
+version = "0.10800.700+0"
+
+[JLL.products]
+library = ["libOsi", "libOsiCommonTests"]

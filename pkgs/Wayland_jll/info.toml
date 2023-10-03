@@ -1,0 +1,11 @@
+[Pkg]
+name = "Wayland_jll"
+uuid = "a2964d1f-97da-50d4-b82a-358c7fce9d89"
+is_jll = true
+
+[Status]
+version = "1.21.0+1"
+
+[JLL.products]
+executable = ["wayland_scanner"]
+library = ["libwayland_client", "libwayland_cursor", "libwayland_egl", "libwayland_server"]

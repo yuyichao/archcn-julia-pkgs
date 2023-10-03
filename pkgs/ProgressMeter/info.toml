@@ -1,0 +1,6 @@
+[Pkg]
+name = "ProgressMeter"
+uuid = "92933f4c-e287-5a05-a399-4b506db050ca"
+
+[Status]
+version = "1.9.0"

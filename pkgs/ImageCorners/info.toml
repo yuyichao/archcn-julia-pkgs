@@ -1,0 +1,6 @@
+[Pkg]
+name = "ImageCorners"
+uuid = "89d5987c-236e-4e32-acd0-25bd6bd87b70"
+
+[Status]
+version = "0.1.3"

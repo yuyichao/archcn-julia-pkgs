@@ -1,0 +1,10 @@
+[Pkg]
+name = "FFTW_jll"
+uuid = "f5851436-0d7a-5f13-b9de-f02708fd171a"
+is_jll = true
+
+[Status]
+version = "3.3.10+0"
+
+[JLL.products]
+library = ["libfftw3", "libfftw3f"]

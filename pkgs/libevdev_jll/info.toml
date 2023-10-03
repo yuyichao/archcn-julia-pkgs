@@ -1,0 +1,10 @@
+[Pkg]
+name = "libevdev_jll"
+uuid = "2db6ffa8-e38f-5e21-84af-90c45d0032cc"
+is_jll = true
+
+[Status]
+version = "1.11.0+0"
+
+[JLL.products]
+library = ["libevdev"]

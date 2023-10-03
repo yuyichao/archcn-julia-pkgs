@@ -1,0 +1,6 @@
+[Pkg]
+name = "LsqFit"
+uuid = "2fda8390-95c7-5789-9bda-21331edee243"
+
+[Status]
+version = "0.13.0"

@@ -1,0 +1,6 @@
+[Pkg]
+name = "StaticArrayInterface"
+uuid = "0d7ed370-da01-4f52-bd93-41d350b8b718"
+
+[Status]
+version = "1.4.1"

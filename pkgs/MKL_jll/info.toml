@@ -1,0 +1,10 @@
+[Pkg]
+name = "MKL_jll"
+uuid = "856f044c-d86e-5d09-b602-aeab76dc8ba7"
+is_jll = true
+
+[Status]
+version = "2023.2.0+0"
+
+[JLL.products]
+library = ["libmkl_core", "libmkl_rt"]

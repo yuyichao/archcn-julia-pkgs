@@ -1,0 +1,6 @@
+[Pkg]
+name = "OpenEXR"
+uuid = "52e1d378-f018-4a11-a4be-720524705ac7"
+
+[Status]
+version = "0.3.2"

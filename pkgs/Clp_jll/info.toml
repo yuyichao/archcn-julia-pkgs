@@ -1,0 +1,11 @@
+[Pkg]
+name = "Clp_jll"
+uuid = "06985876-5285-5a41-9fcb-8948a742cc53"
+is_jll = true
+
+[Status]
+version = "100.1700.700+1"
+
+[JLL.products]
+executable = ["clp"]
+library = ["libClp", "libClpSolver", "libOsiClp"]

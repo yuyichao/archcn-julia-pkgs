@@ -1,0 +1,6 @@
+[Pkg]
+name = "ImageIO"
+uuid = "82e4d734-157c-48bb-816b-45c225c6df19"
+
+[Status]
+version = "0.6.7"

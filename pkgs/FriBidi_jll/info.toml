@@ -1,0 +1,11 @@
+[Pkg]
+name = "FriBidi_jll"
+uuid = "559328eb-81f9-559d-9380-de523a88c83c"
+is_jll = true
+
+[Status]
+version = "1.0.10+0"
+
+[JLL.products]
+executable = ["fribidi"]
+library = ["libfribidi"]

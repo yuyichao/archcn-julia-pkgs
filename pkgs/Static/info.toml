@@ -1,0 +1,6 @@
+[Pkg]
+name = "Static"
+uuid = "aedffcd0-7271-4cad-89d0-dc628f76c6d3"
+
+[Status]
+version = "0.8.8"

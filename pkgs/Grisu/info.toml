@@ -1,0 +1,6 @@
+[Pkg]
+name = "Grisu"
+uuid = "42e2da0e-8278-4e71-bc24-59509adca0fe"
+
+[Status]
+version = "1.0.2"

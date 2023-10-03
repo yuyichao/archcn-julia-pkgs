@@ -1,0 +1,6 @@
+[Pkg]
+name = "ZygoteRules"
+uuid = "700de1a5-db45-46bc-99cf-38207098b444"
+
+[Status]
+version = "0.2.3"

@@ -1,0 +1,10 @@
+[Pkg]
+name = "Xorg_libXinerama_jll"
+uuid = "d1454406-59df-5ea1-beac-c340f2130bc3"
+is_jll = true
+
+[Status]
+version = "1.1.4+4"
+
+[JLL.products]
+library = ["libXinerama"]
