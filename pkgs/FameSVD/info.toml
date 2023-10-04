@@ -1,0 +1,6 @@
+[Pkg]
+name = "FameSVD"
+uuid = "9ba2d756-9ce3-11e9-1a71-0ffcb019784d"
+
+[Status]
+version = "0.1.0"

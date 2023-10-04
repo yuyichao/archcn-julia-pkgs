@@ -1,0 +1,6 @@
+[Pkg]
+name = "MadNLP"
+uuid = "2621e9c9-9eb4-46b1-8089-e8c72242dfb6"
+
+[Status]
+version = "0.7.0"

@@ -1,0 +1,6 @@
+[Pkg]
+name = "GeoInterface"
+uuid = "cf35fbd7-0cd7-5166-be24-54bfbe79505f"
+
+[Status]
+version = "1.3.2"

@@ -1,0 +1,10 @@
+[Pkg]
+name = "EarCut_jll"
+uuid = "5ae413db-bbd1-5e63-b57d-d24a61df00f5"
+is_jll = true
+
+[Status]
+version = "2.2.4+0"
+
+[JLL.products]
+library = ["libearcut"]
