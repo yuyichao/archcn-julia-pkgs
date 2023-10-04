@@ -1,0 +1,10 @@
+[Pkg]
+name = "LLVMExtra_jll"
+uuid = "dad2f222-ce93-54a1-a47d-0025e8a3acab"
+is_jll = true
+
+[Status]
+version = "0.0.26+0"
+
+[JLL.products]
+library = ["libLLVMExtra"]
