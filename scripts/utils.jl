@@ -912,6 +912,10 @@ update_on:
                                       "julia-git-precompiled-packages",
                                       "PKGBUILD"),
                              new_packages)
+    edit_precompiled_pkgfile(joinpath(repodir, "archlinuxcn",
+                                      "julia-git-precompiled-packages",
+                                      "package.list"),
+                             new_packages)
     edit_precompiled_pkgfile(joinpath(repodir, "alarmcn",
                                       "julia-git-precompiled-packages",
                                       "lilac.yaml"),
@@ -919,6 +923,10 @@ update_on:
     edit_precompiled_pkgfile(joinpath(repodir, "alarmcn",
                                       "julia-git-precompiled-packages",
                                       "PKGBUILD"),
+                             new_packages)
+    edit_precompiled_pkgfile(joinpath(repodir, "alarmcn",
+                                      "julia-git-precompiled-packages",
+                                      "package.list"),
                              new_packages)
 end
 
@@ -962,6 +970,11 @@ function _edit_precompiled_pkgfile(fout, linein, new_packages)
             items = ["  $(pkg)" for pkg in new_packages]
             insert_lines_sorted(fout, linein, items, 1,
                                 "###=== }} JLPKG_JLNAME_LIST")
+        elseif line == "###=== JLPKG_PACKAGE_LIST {{"
+            @info "Found packages.list"
+            items = ["julia-git-$(lowercase(pkg))" for pkg in new_packages]
+            insert_lines_sorted(fout, linein, items, 1,
+                                "###=== }} JLPKG_PACKAGE_LIST")
         end
     end
 end
