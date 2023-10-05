@@ -1,0 +1,6 @@
+[Pkg]
+name = "IntegerMathUtils"
+uuid = "18e54dd8-cb9d-406c-a71d-865a43cbb235"
+
+[Status]
+version = "0.1.2"

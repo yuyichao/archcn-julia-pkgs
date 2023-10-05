@@ -1,0 +1,6 @@
+[Pkg]
+name = "Tricks"
+uuid = "410a4b4d-49e4-4fbc-ab6d-cb71b17b3775"
+
+[Status]
+version = "0.1.7"

@@ -1,0 +1,6 @@
+[Pkg]
+name = "LabelledArrays"
+uuid = "2ee39098-c373-598a-b85f-a56591580800"
+
+[Status]
+version = "1.14.0"

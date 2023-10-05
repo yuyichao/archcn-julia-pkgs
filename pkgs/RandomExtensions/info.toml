@@ -1,0 +1,6 @@
+[Pkg]
+name = "RandomExtensions"
+uuid = "fb686558-2515-59ef-acaa-46db3789a887"
+
+[Status]
+version = "0.4.3"
