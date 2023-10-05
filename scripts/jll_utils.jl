@@ -48,7 +48,8 @@ function _collect_jll_products(products, expr::Expr)
             # product_name, product_path, dlopen_flags
             name = string(expr.args[end - 2]::Symbol)
             path = expr.args[end - 1]
-            get!(Dict{String,String}, products, "library")[name] = basename(path)
+            get!(Dict{String,String}, products, "library")[name] =
+                replace(basename(path), r"\.so.*"=>"")
             return products
         end
     end
