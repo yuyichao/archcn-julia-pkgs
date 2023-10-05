@@ -3,4 +3,11 @@ name = "SciMLBase"
 uuid = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
 
 [Status]
-version = "2.0.7"
+version = "2.1.0"
+
+[[Issues."2.1.0"]]
+type = "missing_deps"
+
+    [[Issues."2.1.0".weak_deps]]
+    name = "Zygote"
+    uuid = "e88e6eb3-aa80-5325-afca-941959d7151f"
