@@ -1020,13 +1020,16 @@ function insert_lines_sorted(fout, linein, new_items, nline, endline)
     end
 end
 
+function get_pkg_uuids(ctx::Context, pkg)
+    if length(pkg) == 36 && contains(pkg, "-")
+        return [Base.UUID(pkg)]
+    end
+    return Pkg.Registry.uuids_from_name(ctx.registry, pkg)
+end
+
 function _add_pkg_uuids(ctx::Context, uuids, new_packages)
     for name in new_packages
-        if length(name) == 36 && contains(name, "-")
-            push!(uuids, Base.UUID(name))
-            continue
-        end
-        pkg_uuids = Pkg.Registry.uuids_from_name(ctx.registry, name)
+        pkg_uuids = get_pkg_uuids(ctx, name)
         if length(pkg_uuids) == 0
             @error "Package $(name) not found in registry"
             exit(1)
@@ -1053,5 +1056,47 @@ function update_packages(ctx::Context, repodir, new_packages=nothing)
     full_pkg_infos = collect_all_pkg_info(ctx, versions)
     write_repo(ctx, full_pkg_infos, repodir)
     write_back_info(ctx)
+    return
+end
+
+function find_dependents(ctx::Context, pkg)
+    pkg_uuids = get_pkg_uuids(ctx, pkg)
+    if length(pkg_uuids) == 0
+        error("Package $(pkg) not found in registry")
+    elseif length(pkg_uuids) != 1
+        buf = IOBuffer()
+        println(buf, "Package $(pkg) not unique in registry. Possible matches:")
+        for uuid in pkg_uuids
+            println(buf, "  $(uuid)")
+        end
+        println(buf, "Please specify the package using the UUID instead.")
+        error(String(take!(buf)))
+    end
+    pkg_uuid = pkg_uuids[1]
+    dependents = Set{Base.UUID}()
+    for (uuid, arch_info) in ctx.packages_info
+        cur_ver = VersionNumber(arch_info["Status"]["version"])
+        pkgentry = ctx.registry[uuid]
+        pkginfo = Pkg.Registry.registry_info(pkgentry)
+        for (vrange, vdeps) in pkginfo.deps
+            cur_ver in vrange || continue
+            if pkg_uuid in values(vdeps)
+                push!(dependents, uuid)
+                break
+            end
+        end
+    end
+    return dependents
+end
+
+show_pkg_info(ctx::Context, uuid) = show_pkg_info(stdout, ctx, uuid)
+
+function show_pkg_info(io::IO, ctx::Context, uuid)
+    pkgentry = get(ctx.registry, uuid, nothing)
+    if pkgentry === nothing
+        println(io, "Unknown package [$uuid]")
+        return
+    end
+    println(io, "$(pkgentry.name) [$uuid]")
     return
 end
