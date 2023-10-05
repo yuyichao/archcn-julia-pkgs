@@ -388,9 +388,10 @@ function resolve_new_versions(ctx::Context, check_results)
 
         compat_info = Pkg.Registry.compat_info(pkginfo)
 
-        deps = Set{Base.UUID}()
+        # deps = Set{Base.UUID}()
         for ver in versions
-            empty!(deps)
+            # empty!(deps)
+            deps = Set{Base.UUID}()
             for (vrange, vdeps) in pkginfo.deps
                 ver in vrange || continue
                 union!(deps, values(vdeps))
@@ -569,10 +570,11 @@ function resolve_all_dependencies(ctx::Context, uuids)
 
         compat_info = Pkg.Registry.compat_info(pkginfo)
 
-        deps = Set{Base.UUID}()
+        # deps = Set{Base.UUID}()
         for ver in keys(pkginfo.version_info)
             ver >= old_ver || continue
-            empty!(deps)
+            # empty!(deps)
+            deps = Set{Base.UUID}()
             for (vrange, vdeps) in pkginfo.deps
                 ver in vrange || continue
                 union!(deps, values(vdeps))
