@@ -1,0 +1,6 @@
+[Pkg]
+name = "FastExpm"
+uuid = "7868e603-8603-432e-a1a1-694bd70b01f2"
+
+[Status]
+version = "1.1.0"

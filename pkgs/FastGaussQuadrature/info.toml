@@ -1,0 +1,6 @@
+[Pkg]
+name = "FastGaussQuadrature"
+uuid = "442a2c76-b920-505d-bb47-c5924d526838"
+
+[Status]
+version = "0.5.1"
