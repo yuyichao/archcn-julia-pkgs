@@ -1,0 +1,6 @@
+[Pkg]
+name = "AndorSIF"
+uuid = "d04cd5f8-5917-4006-ac6f-d139328806a7"
+
+[Status]
+version = "0.1.2"

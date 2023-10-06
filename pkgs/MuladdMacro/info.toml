@@ -1,0 +1,6 @@
+[Pkg]
+name = "MuladdMacro"
+uuid = "46d2c3a1-f734-5fdb-9937-b9b9aeba4221"
+
+[Status]
+version = "0.2.4"

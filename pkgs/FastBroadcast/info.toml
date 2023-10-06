@@ -1,0 +1,6 @@
+[Pkg]
+name = "FastBroadcast"
+uuid = "7034ab61-46d4-4ed7-9d0f-46aef9175898"
+
+[Status]
+version = "0.2.6"
