@@ -1,0 +1,6 @@
+[Pkg]
+name = "FastLapackInterface"
+uuid = "29a986be-02c6-4525-aec4-84b980013641"
+
+[Status]
+version = "2.0.0"

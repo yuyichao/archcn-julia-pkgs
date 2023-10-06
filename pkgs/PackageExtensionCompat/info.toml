@@ -1,0 +1,6 @@
+[Pkg]
+name = "PackageExtensionCompat"
+uuid = "65ce6f38-6b18-4e1d-a461-8949797d7930"
+
+[Status]
+version = "1.0.2"

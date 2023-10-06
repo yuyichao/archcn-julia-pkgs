@@ -1,0 +1,6 @@
+[Pkg]
+name = "LinearSolve"
+uuid = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
+
+[Status]
+version = "2.9.0"

@@ -1,0 +1,6 @@
+[Pkg]
+name = "GenericSchur"
+uuid = "c145ed77-6b09-5dd9-b285-bf645a82121e"
+
+[Status]
+version = "0.5.3"

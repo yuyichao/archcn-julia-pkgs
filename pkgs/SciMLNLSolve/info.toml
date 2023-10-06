@@ -1,0 +1,6 @@
+[Pkg]
+name = "SciMLNLSolve"
+uuid = "e9a6253c-8580-4d32-9898-8661bb511710"
+
+[Status]
+version = "0.1.9"

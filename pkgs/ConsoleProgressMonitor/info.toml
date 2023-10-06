@@ -1,0 +1,6 @@
+[Pkg]
+name = "ConsoleProgressMonitor"
+uuid = "88cd18e8-d9cc-4ea6-8889-5259c0d15c8b"
+
+[Status]
+version = "0.1.2"

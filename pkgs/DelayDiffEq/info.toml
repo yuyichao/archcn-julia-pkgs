@@ -1,0 +1,6 @@
+[Pkg]
+name = "DelayDiffEq"
+uuid = "bcd4f6db-9728-5f36-b5f7-82caef46ccdb"
+
+[Status]
+version = "5.43.0"
