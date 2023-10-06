@@ -1,0 +1,6 @@
+[Pkg]
+name = "UnsafeArrays"
+uuid = "c4a57d5a-5b31-53a6-b365-19f8c011fbd6"
+
+[Status]
+version = "1.0.5"
