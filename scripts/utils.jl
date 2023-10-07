@@ -237,6 +237,8 @@ function find_new_versions(ctx::Context, uuid, version)
 
     pkg_ver_info = PackageVersionInfo()
 
+    @info "Checking $(pkgentry.name) [$uuid]"
+
     missing_deps_info = MissingDepsInfo()
     jll_changes = JLLChanges()
     for new_ver in keys(pkginfo.version_info)
@@ -361,6 +363,8 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
 end
 
 function resolve_new_versions(ctx::Context, check_results)
+    @info "Computing new versions"
+
     compat = Dict{Base.UUID,Dict{VersionNumber,
                                  Dict{Base.UUID,Pkg.Versions.VersionSpec}}}()
     compat_weak = Dict{Base.UUID,Dict{VersionNumber,Set{Base.UUID}}}()
@@ -476,9 +480,11 @@ function scan(ctx::Context)
         check_results[uuid] = check_res
     end
     resolve_new_versions(ctx, check_results)
+    @info "Collecting messages"
     for (uuid, arch_info) in ctx.packages_info
         collect_messages(ctx, uuid, check_results[uuid], messages)
     end
+    @info "Writing back info"
     changed = write_back_info(ctx)
     return messages, changed
 end
