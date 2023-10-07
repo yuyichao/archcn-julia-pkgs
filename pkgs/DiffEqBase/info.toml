@@ -4,25 +4,3 @@ uuid = "2b5f629d-d688-5b77-993f-72d75c75574e"
 
 [Status]
 version = "6.132.0"
-
-[[Issues."6.132.0"]]
-type = "missing_deps"
-
-    [[Issues."6.132.0".weak_deps]]
-    name = "Enzyme"
-    uuid = "7da242da-08ed-463a-9acd-ee780be4f1d9"
-    [[Issues."6.132.0".weak_deps]]
-    name = "GeneralizedGenerated"
-    uuid = "6b9d7cbe-bcb9-11e9-073f-15a7a543e2eb"
-    [[Issues."6.132.0".weak_deps]]
-    name = "Measurements"
-    uuid = "eff96d63-e80a-5855-80a2-b1b0885c5ab7"
-    [[Issues."6.132.0".weak_deps]]
-    name = "MonteCarloMeasurements"
-    uuid = "0987c9cc-fe09-11e8-30f0-b96dd679fdca"
-    [[Issues."6.132.0".weak_deps]]
-    name = "ReverseDiff"
-    uuid = "37e2e3b7-166d-5795-8a7a-e32c996b4267"
-    [[Issues."6.132.0".weak_deps]]
-    name = "Tracker"
-    uuid = "9f7883ad-71c0-57eb-9f7f-b5c9e6d3789c"
