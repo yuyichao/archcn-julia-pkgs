@@ -242,7 +242,7 @@ function find_new_versions(ctx::Context, uuid, version)
     missing_deps_info = MissingDepsInfo()
     jll_changes = JLLChanges()
     for new_ver in keys(pkginfo.version_info)
-        new_ver > version || continue
+        new_ver >= version || continue
         ver_ok = true
 
         try
