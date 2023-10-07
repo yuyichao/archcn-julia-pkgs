@@ -4,10 +4,3 @@ uuid = "764a87c0-6b3e-53db-9096-fe964310641d"
 
 [Status]
 version = "5.1.0"
-
-[[Issues."5.1.0"]]
-type = "missing_deps"
-
-    [[Issues."5.1.0".weak_deps]]
-    name = "ODEInterface"
-    uuid = "54ca160b-1b9f-5127-a996-1867f4bc2a2c"
