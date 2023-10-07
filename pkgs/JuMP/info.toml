@@ -4,3 +4,10 @@ uuid = "4076af6c-e467-56ae-b986-b466b2749572"
 
 [Status]
 version = "1.15.1"
+
+[[Issues."1.15.1"]]
+type = "missing_deps"
+
+    [[Issues."1.15.1".weak_deps]]
+    name = "DimensionalData"
+    uuid = "0703355e-b756-11e9-17c0-8b28908087d0"

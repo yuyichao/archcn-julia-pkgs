@@ -4,3 +4,16 @@ uuid = "4fba245c-0d91-5ea0-9b3e-6abc04ee57a9"
 
 [Status]
 version = "7.4.11"
+
+[[Issues."7.4.11"]]
+type = "missing_deps"
+
+    [[Issues."7.4.11".weak_deps]]
+    name = "BandedMatrices"
+    uuid = "aae01518-5342-5314-be14-df237901396f"
+    [[Issues."7.4.11".weak_deps]]
+    name = "BlockBandedMatrices"
+    uuid = "ffab5731-97b5-5995-9138-79e8c1846df0"
+    [[Issues."7.4.11".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
