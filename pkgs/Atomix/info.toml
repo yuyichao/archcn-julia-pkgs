@@ -1,0 +1,6 @@
+[Pkg]
+name = "Atomix"
+uuid = "a9b6321e-bd34-4604-b9c9-b65b8de01458"
+
+[Status]
+version = "0.1.0"

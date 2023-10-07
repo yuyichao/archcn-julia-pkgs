@@ -1,0 +1,6 @@
+[Pkg]
+name = "PrettyPrint"
+uuid = "8162dcfd-2161-5ef2-ae6c-7681170c5f98"
+
+[Status]
+version = "0.2.0"

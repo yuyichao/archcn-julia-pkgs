@@ -1,0 +1,10 @@
+[Pkg]
+name = "HYPRE_jll"
+uuid = "0a602bbd-b08b-5d75-8d32-0de6eef44785"
+is_jll = true
+
+[Status]
+version = "2.23.1+1"
+
+[JLL.products]
+library = ["libHYPRE"]

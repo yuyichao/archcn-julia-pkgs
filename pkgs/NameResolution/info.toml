@@ -1,0 +1,6 @@
+[Pkg]
+name = "NameResolution"
+uuid = "71a1bf82-56d0-4bbc-8a3c-48b961074391"
+
+[Status]
+version = "0.1.5"

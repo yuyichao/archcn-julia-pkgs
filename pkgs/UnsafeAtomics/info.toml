@@ -1,0 +1,6 @@
+[Pkg]
+name = "UnsafeAtomics"
+uuid = "013be700-e6cd-48c3-b4a1-df204f14c38f"
+
+[Status]
+version = "0.2.1"

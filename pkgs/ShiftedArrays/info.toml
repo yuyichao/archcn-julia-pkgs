@@ -1,0 +1,6 @@
+[Pkg]
+name = "ShiftedArrays"
+uuid = "1277b4bf-5013-50f5-be3d-901d8477a67a"
+
+[Status]
+version = "2.0.0"

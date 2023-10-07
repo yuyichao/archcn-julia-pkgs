@@ -1,0 +1,6 @@
+[Pkg]
+name = "Arrow"
+uuid = "69666777-d1a9-59fb-9406-91d4454c9d45"
+
+[Status]
+version = "2.6.2"

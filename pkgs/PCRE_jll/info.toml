@@ -1,0 +1,10 @@
+[Pkg]
+name = "PCRE_jll"
+uuid = "2f80f16e-611a-54ab-bc61-aa92de5b98fc"
+is_jll = true
+
+[Status]
+version = "8.44.0+0"
+
+[JLL.products]
+library = ["libpcre"]
