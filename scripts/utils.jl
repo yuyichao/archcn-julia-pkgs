@@ -916,6 +916,14 @@ update_on:
                                       "julia-git-precompiled-packages",
                                       "package.list"),
                              new_packages)
+    edit_precompiled_pkgfile(joinpath(repodir, "archlinuxcn",
+                                      "julia-git-packages-meta",
+                                      "lilac.yaml"),
+                             new_packages)
+    edit_precompiled_pkgfile(joinpath(repodir, "archlinuxcn",
+                                      "julia-git-packages-meta",
+                                      "PKGBUILD"),
+                             new_packages)
     edit_precompiled_pkgfile(joinpath(repodir, "alarmcn",
                                       "julia-git-precompiled-packages",
                                       "lilac.yaml"),
