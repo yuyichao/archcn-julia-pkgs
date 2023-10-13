@@ -4,3 +4,10 @@ uuid = "47a9eef4-7e08-11e9-0b38-333d64bd3804"
 
 [Status]
 version = "2.8.0"
+
+[[Issues."2.8.0"]]
+type = "missing_deps"
+
+    [[Issues."2.8.0".weak_deps]]
+    name = "Enzyme"
+    uuid = "7da242da-08ed-463a-9acd-ee780be4f1d9"
