@@ -3,4 +3,4 @@ name = "CodecLz4"
 uuid = "5ba52731-8f18-5e0d-9241-30f10d1ec561"
 
 [Status]
-version = "0.4.0"
+version = "0.4.1"
