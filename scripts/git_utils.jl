@@ -5,7 +5,9 @@ using LibGit2
 function _open_repo(repopath, url)
     try
         repo = LibGit2.GitRepo(repopath)
-        LibGit2.fetch(repo, remoteurl=url)
+        remote = GitRemoteAnon(repo, url)
+        fetch_opts = LibGit2.FetchOptions(download_tags=true)
+        LibGit2.fetch(remote, String[], msg="from $(url)", options=fetch_opts)
         return repo
     catch
         return
@@ -21,7 +23,8 @@ function get_repo(url, name, workdir)
         end
         rm(repopath, recursive=true, force=true)
     end
-    return LibGit2.clone(url, repopath)
+    fetch_opts = LibGit2.FetchOptions(download_tags=true)
+    return LibGit2.clone(url, repopath, LibGit2.CloneOptions(fetch_opts=fetch_opts))
 end
 
 function reset_commit(repo, hash)
