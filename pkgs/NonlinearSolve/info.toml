@@ -3,14 +3,14 @@ name = "NonlinearSolve"
 uuid = "8913a72c-1f9b-4ce2-8d82-65094dcecaec"
 
 [Status]
-version = "2.3.0"
+version = "2.4.0"
 
-[[Issues."2.3.0"]]
+[[Issues."2.4.0"]]
 type = "missing_deps"
 
-    [[Issues."2.3.0".weak_deps]]
+    [[Issues."2.4.0".weak_deps]]
     name = "FastLevenbergMarquardt"
     uuid = "7a0df574-e128-4d35-8cbd-3d84502bf7ce"
-    [[Issues."2.3.0".weak_deps]]
+    [[Issues."2.4.0".weak_deps]]
     name = "LeastSquaresOptim"
     uuid = "0fc2ff8b-aaa3-5acd-a817-1944a5e08891"
