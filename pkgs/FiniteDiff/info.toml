@@ -9,8 +9,5 @@ version = "2.21.1"
 type = "missing_deps"
 
     [[Issues."2.21.1".weak_deps]]
-    name = "BandedMatrices"
-    uuid = "aae01518-5342-5314-be14-df237901396f"
-    [[Issues."2.21.1".weak_deps]]
     name = "BlockBandedMatrices"
     uuid = "ffab5731-97b5-5995-9138-79e8c1846df0"
