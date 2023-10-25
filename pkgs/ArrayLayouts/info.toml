@@ -1,0 +1,6 @@
+[Pkg]
+name = "ArrayLayouts"
+uuid = "4c555306-a7a7-4459-81d9-ec55ddd5c99a"
+
+[Status]
+version = "1.4.2"
