@@ -3,20 +3,20 @@ name = "LinearSolve"
 uuid = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
 
 [Status]
-version = "2.12.0"
+version = "2.12.1"
 
-[[Issues."2.12.0"]]
+[[Issues."2.12.1"]]
 type = "missing_deps"
 
-    [[Issues."2.12.0".weak_deps]]
+    [[Issues."2.12.1".weak_deps]]
     name = "BlockDiagonals"
     uuid = "0a1fb500-61f7-11e9-3c65-f5ef3456f9f0"
-    [[Issues."2.12.0".weak_deps]]
+    [[Issues."2.12.1".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-    [[Issues."2.12.0".weak_deps]]
+    [[Issues."2.12.1".weak_deps]]
     name = "Enzyme"
     uuid = "7da242da-08ed-463a-9acd-ee780be4f1d9"
-    [[Issues."2.12.0".weak_deps]]
+    [[Issues."2.12.1".weak_deps]]
     name = "Metal"
     uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
