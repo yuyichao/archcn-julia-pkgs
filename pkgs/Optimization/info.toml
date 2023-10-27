@@ -4,13 +4,3 @@ uuid = "7f7a1694-90dd-40f0-9382-eb1efda571ba"
 
 [Status]
 version = "3.19.3"
-
-[[Issues."3.19.3"]]
-type = "missing_deps"
-
-    [[Issues."3.19.3".weak_deps]]
-    name = "Enzyme"
-    uuid = "7da242da-08ed-463a-9acd-ee780be4f1d9"
-    [[Issues."3.19.3".weak_deps]]
-    name = "ModelingToolkit"
-    uuid = "961ee093-0014-501f-94e3-6117800e7a78"
