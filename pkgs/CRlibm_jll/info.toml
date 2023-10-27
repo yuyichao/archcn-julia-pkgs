@@ -1,0 +1,10 @@
+[Pkg]
+name = "CRlibm_jll"
+uuid = "4e9b3aee-d8a1-5a3d-ad8b-7d824db253f0"
+is_jll = true
+
+[Status]
+version = "1.0.1+0"
+
+[JLL.products]
+library = ["libcrlibm"]

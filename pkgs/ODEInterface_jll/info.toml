@@ -1,0 +1,10 @@
+[Pkg]
+name = "ODEInterface_jll"
+uuid = "c771fb93-2439-5ece-a3b3-58fecce82101"
+is_jll = true
+
+[Status]
+version = "0.0.1+0"
+
+[JLL.products]
+library = ["libbvp_m_proxy", "libbvpsol", "libbvpsol_i32", "libcolnew", "libcolnew_i32", "libddeabm", "libddeabm_i32", "libddebdf", "libddebdf_i32", "libdop853", "libdop853_i32", "libdopri5", "libdopri5_i32", "libodex", "libodex_i32", "libradau", "libradau5", "libradau5_i32", "libradau_i32", "librodas", "librodas_i32", "libseulex", "libseulex_i32"]

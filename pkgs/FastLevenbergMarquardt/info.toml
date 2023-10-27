@@ -1,0 +1,6 @@
+[Pkg]
+name = "FastLevenbergMarquardt"
+uuid = "7a0df574-e128-4d35-8cbd-3d84502bf7ce"
+
+[Status]
+version = "0.1.0"

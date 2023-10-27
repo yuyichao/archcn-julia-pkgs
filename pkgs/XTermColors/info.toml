@@ -1,0 +1,6 @@
+[Pkg]
+name = "XTermColors"
+uuid = "c8c2cc18-de81-4e68-b407-38a3a0c0491f"
+
+[Status]
+version = "0.2.1"

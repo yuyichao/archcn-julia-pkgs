@@ -1,0 +1,6 @@
+[Pkg]
+name = "BlockArrays"
+uuid = "8e7c35d0-a365-5155-bbbb-fb81a777f24e"
+
+[Status]
+version = "0.16.38"

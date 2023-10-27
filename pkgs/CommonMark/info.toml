@@ -1,0 +1,6 @@
+[Pkg]
+name = "CommonMark"
+uuid = "a80b9123-70ca-4bc0-993e-6e3bcb318db6"
+
+[Status]
+version = "0.8.12"

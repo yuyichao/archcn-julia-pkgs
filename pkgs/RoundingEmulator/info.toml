@@ -1,0 +1,6 @@
+[Pkg]
+name = "RoundingEmulator"
+uuid = "5eaf0fd0-dfba-4ccb-bf02-d820a40db705"
+
+[Status]
+version = "0.2.1"

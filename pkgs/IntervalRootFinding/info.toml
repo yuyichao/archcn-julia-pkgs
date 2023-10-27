@@ -1,0 +1,6 @@
+[Pkg]
+name = "IntervalRootFinding"
+uuid = "d2bf35a9-74e0-55ec-b149-d360ff49b807"
+
+[Status]
+version = "0.5.11"
