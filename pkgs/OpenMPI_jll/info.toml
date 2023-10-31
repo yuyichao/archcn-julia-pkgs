@@ -4,21 +4,8 @@ uuid = "fe0851c0-eecd-5654-98d4-656369965a5c"
 is_jll = true
 
 [Status]
-version = "4.1.6+0"
+version = "5.0.0+0"
 
 [JLL.products]
 executable = ["mpiexec"]
 library = ["libmpi"]
-
-[[Issues."5.0.0+0"]]
-type = "missing_deps"
-
-    [[Issues."5.0.0+0".deps]]
-    name = "PMIx_jll"
-    uuid = "32165bc3-0280-59bc-8c0b-c33b6203efab"
-    [[Issues."5.0.0+0".deps]]
-    name = "libevent_jll"
-    uuid = "1080aeaf-3a6a-583e-a51c-c537b09f60ec"
-    [[Issues."5.0.0+0".deps]]
-    name = "prrte_jll"
-    uuid = "eb928a42-fffd-568d-ab9c-3f5d54fc65b9"
