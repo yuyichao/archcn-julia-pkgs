@@ -1,0 +1,10 @@
+[Pkg]
+name = "prrte_jll"
+uuid = "eb928a42-fffd-568d-ab9c-3f5d54fc65b9"
+is_jll = true
+
+[Status]
+version = "3.0.2+0"
+
+[JLL.products]
+executable = ["prte", "prte_info", "prterun", "prun"]
