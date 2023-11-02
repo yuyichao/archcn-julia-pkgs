@@ -8,3 +8,9 @@ version = "2.1.13+0"
 
 [JLL.products]
 library = ["libevent"]
+
+[[Issues."2.1.13+1"]]
+type = "jll_changes"
+
+    [Issues."2.1.13+1".add]
+    library = ["libevent_core", "libevent_pthreads"]
