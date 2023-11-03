@@ -4,10 +4,3 @@ uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
 
 [Status]
 version = "6.4.0"
-
-[[Issues."6.4.0"]]
-type = "missing_deps"
-
-    [[Issues."6.4.0".weak_deps]]
-    name = "BFloat16s"
-    uuid = "ab4f0b2a-ad5b-11e8-123f-65d77653426b"
