@@ -4,10 +4,10 @@ uuid = "1080aeaf-3a6a-583e-a51c-c537b09f60ec"
 is_jll = true
 
 [Status]
-version = "2.1.13+0"
+version = "2.1.13+1"
 
 [JLL.products]
-library = ["libevent"]
+library = ["libevent", "libevent_core", "libevent_pthreads"]
 
 [[Issues."2.1.13+1"]]
 type = "jll_changes"
