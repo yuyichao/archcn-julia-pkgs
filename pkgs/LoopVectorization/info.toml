@@ -3,4 +3,4 @@ name = "LoopVectorization"
 uuid = "bdcacae8-1622-11e9-2a5c-532679323890"
 
 [Status]
-version = "0.12.165"
+version = "0.12.166"
