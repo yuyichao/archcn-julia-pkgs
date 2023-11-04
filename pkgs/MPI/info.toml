@@ -3,14 +3,14 @@ name = "MPI"
 uuid = "da04e1cc-30fd-572f-bb4f-1f8673147195"
 
 [Status]
-version = "0.20.16"
+version = "0.20.18"
 
-[[Issues."0.20.16"]]
+[[Issues."0.20.18"]]
 type = "missing_deps"
 
-    [[Issues."0.20.16".weak_deps]]
+    [[Issues."0.20.18".weak_deps]]
     name = "AMDGPU"
     uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."0.20.16".weak_deps]]
+    [[Issues."0.20.18".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
