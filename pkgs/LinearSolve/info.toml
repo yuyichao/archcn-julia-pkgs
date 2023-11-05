@@ -9,9 +9,6 @@ version = "2.15.0"
 type = "missing_deps"
 
     [[Issues."2.15.0".weak_deps]]
-    name = "BlockDiagonals"
-    uuid = "0a1fb500-61f7-11e9-3c65-f5ef3456f9f0"
-    [[Issues."2.15.0".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
     [[Issues."2.15.0".weak_deps]]

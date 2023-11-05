@@ -8,3 +8,9 @@ version = "6.5.2+2"
 
 [JLL.products]
 library = ["libqt6concurrent", "libqt6core", "libqt6dbus", "libqt6gui", "libqt6network", "libqt6opengl", "libqt6printsupport", "libqt6sql", "libqt6test", "libqt6widgets", "libqt6xml"]
+
+[[Issues."6.5.3+0"]]
+type = "jll_changes"
+
+    [Issues."6.5.3+0".remove]
+    library = ["libqt6concurrent", "libqt6core", "libqt6dbus", "libqt6gui", "libqt6network", "libqt6opengl", "libqt6printsupport", "libqt6sql", "libqt6test", "libqt6widgets", "libqt6xml"]
