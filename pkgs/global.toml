@@ -69,3 +69,9 @@ pkg = "QuantumOptics"
 version = ">= 1.0"
 dep = "Arpack"
 depversion = "0.5"
+
+[[Overrides.DepsVersion]]
+pkg = "JLD"
+version = ">= 0.13"
+dep = "HDF5"
+depversion = ">= 0.16"
