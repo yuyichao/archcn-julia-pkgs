@@ -136,11 +136,17 @@ end
 
 const JLLWrappers_UUID = Base.UUID("692b3bcd-3c85-4b1f-b108-f13ce0eb3210")
 
-function check_missing_deps(ctx::Context, pkginfo, new_ver, is_jll,
+function get_compat_info(ctx::Context, pkgentry)
+    pkginfo = Pkg.Registry.registry_info(pkgentry)
+    return Pkg.Registry.compat_info(pkginfo)
+end
+
+function check_missing_deps(ctx::Context, pkgentry, new_ver, is_jll,
                             out::MissingDepsInfo)
     stdlibs = get(Dict{String,Any}, ctx.global_info, "StdLibs")
+    pkginfo = Pkg.Registry.registry_info(pkgentry)
 
-    compat_info = Pkg.Registry.compat_info(pkginfo)[new_ver]
+    compat_info = get_compat_info(ctx, pkgentry)[new_ver]
     for (uuid, ver) in compat_info
         if uuid == Pkg.Registry.JULIA_UUID || haskey(stdlibs, string(uuid))
             continue
@@ -174,7 +180,7 @@ function check_missing_deps(ctx::Context, pkginfo, new_ver, is_jll,
         end
         push!(out.weak_deps, uuid)
     end
-    # Do not treat missing weak dependencies as hard break for now
+    # Do not treat missing weak dependencies as hard break
     return isempty(out.deps)
 end
 
@@ -244,7 +250,7 @@ function find_new_versions(ctx::Context, uuid, version)
         ver_ok = true
 
         try
-            ver_ok &= check_missing_deps(ctx, pkginfo, new_ver, is_jll,
+            ver_ok &= check_missing_deps(ctx, pkgentry, new_ver, is_jll,
                                          missing_deps_info)
         catch
             @show current_exceptions()
@@ -388,7 +394,7 @@ function resolve_new_versions(ctx::Context, check_results)
         _compat = Dict{VersionNumber,Dict{Base.UUID,Pkg.Versions.VersionSpec}}()
         compat[uuid] = _compat
 
-        compat_info = Pkg.Registry.compat_info(pkginfo)
+        compat_info = get_compat_info(ctx, pkgentry)
 
         # deps = Set{Base.UUID}()
         for ver in versions
@@ -575,7 +581,7 @@ function resolve_all_dependencies(ctx::Context, uuids)
         _compat = Dict{VersionNumber,Dict{Base.UUID,Pkg.Versions.VersionSpec}}()
         compat[uuid] = _compat
 
-        compat_info = Pkg.Registry.compat_info(pkginfo)
+        compat_info = get_compat_info(ctx, pkgentry)
 
         # deps = Set{Base.UUID}()
         for ver in keys(pkginfo.version_info)
