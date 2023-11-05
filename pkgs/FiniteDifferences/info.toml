@@ -1,0 +1,6 @@
+[Pkg]
+name = "FiniteDifferences"
+uuid = "26cc04aa-876d-5657-8c51-4c34ba976000"
+
+[Status]
+version = "0.12.31"

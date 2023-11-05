@@ -1,0 +1,6 @@
+[Pkg]
+name = "BlockDiagonals"
+uuid = "0a1fb500-61f7-11e9-3c65-f5ef3456f9f0"
+
+[Status]
+version = "0.1.42"
