@@ -63,3 +63,9 @@ bea87d4a-7f5b-5778-9afe-8cc45184846c = "SuiteSparse_jll"
 pkg = "StridedViews"
 version = ">= 0.2.0"
 remove = ["CUDA"]
+
+[[Overrides.DepsVersion]]
+pkg = "QuantumOptics"
+version = ">= 1.0"
+dep = "Arpack"
+depversion = "0.5"
