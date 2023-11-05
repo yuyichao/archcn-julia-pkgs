@@ -342,11 +342,17 @@ function find_new_versions(ctx::Context, uuid, version)
     is_jll = get(arch_info["Pkg"], "is_jll", false)
 
     pkg_ver_info = PackageVersionInfo()
+    had_issues = haskey(arch_info, "Issues")
 
     missing_deps_info = MissingDepsInfo()
     jll_changes = JLLChanges()
     for new_ver in keys(pkginfo.version_info)
         new_ver >= version || continue
+        if new_ver == version && !had_issues
+            # Only rescan current version if we had some issue for this package
+            # to see if it is resolved.
+            continue
+        end
         ver_ok = true
 
         try
