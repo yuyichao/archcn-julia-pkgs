@@ -39,6 +39,51 @@ function load_packages(pkgsdir)
     return res, paths
 end
 
+function get_pkg_uuids(registry::Pkg.Registry.RegistryInstance, pkg)
+    if length(pkg) == 36 && contains(pkg, "-")
+        return [Base.UUID(pkg)]
+    end
+    return Pkg.Registry.uuids_from_name(registry, pkg)
+end
+
+struct RemoveDeps
+    version::Pkg.Versions.VersionSpec
+    remove::Vector{Base.UUID}
+end
+
+# This is stored in global info instead of the package info
+# since we may need this before we add the package
+# and won't have a package info to add it to
+function load_remove_deps(registry, global_info)
+    remove_deps = Dict{Base.UUID,Vector{RemoveDeps}}()
+
+    _remove_deps = _get(get(global_info, "Overrides", nothing), "RemoveDeps", nothing)
+    if _remove_deps === nothing
+        return remove_deps
+    end
+
+    function get_unique_uuid(pkg)
+        uuids = get_pkg_uuids(registry, pkg)
+        if length(uuids) == 0
+            error("Package $(name) not found in registry")
+        elseif length(uuids) > 1
+            error("Package $(name) not unique in registry")
+        end
+        return uuids[1]
+    end
+
+    for _r in _remove_deps
+        uuid = get_unique_uuid(_r["pkg"])
+        rs = get!(remove_deps, uuid) do
+            return RemoveDeps[]
+        end
+        push!(rs, RemoveDeps(Pkg.Versions.semver_spec(_r["version"]),
+                             [get_unique_uuid(p) for p in _r["remove"]]))
+    end
+
+    return remove_deps
+end
+
 struct Context
     pkgsdir::String
     workdir::String
@@ -46,6 +91,7 @@ struct Context
     packages_info::Dict{Base.UUID,Any}
     global_info::Dict{String,Any}
     package_paths::Dict{Base.UUID,String}
+    remove_deps::Dict{Base.UUID,Vector{RemoveDeps}}
     _packages_info::Dict{Base.UUID,Any}
     _global_info::Dict{String,Any}
     function Context()
@@ -57,6 +103,7 @@ struct Context
         packages_info, paths = load_packages(pkgsdir)
         global_info = TOML.parsefile(joinpath(pkgsdir, "global.toml"))
         return new(pkgsdir, workdir, registry, packages_info, global_info, paths,
+                   load_remove_deps(registry, global_info),
                    deepcopy(packages_info), deepcopy(global_info))
     end
 end
@@ -138,7 +185,19 @@ const JLLWrappers_UUID = Base.UUID("692b3bcd-3c85-4b1f-b108-f13ce0eb3210")
 
 function get_compat_info(ctx::Context, pkgentry)
     pkginfo = Pkg.Registry.registry_info(pkgentry)
-    return Pkg.Registry.compat_info(pkginfo)
+    compat_infos = Pkg.Registry.compat_info(pkginfo)
+    remove_deps = get(ctx.remove_deps, pkgentry.uuid, nothing)
+    if remove_deps !== nothing
+        for r in remove_deps
+            for (ver, compat_info) in compat_infos
+                ver in r.version || continue
+                for d in r.remove
+                    delete!(compat_info, d)
+                end
+            end
+        end
+    end
+    return compat_infos
 end
 
 function check_missing_deps(ctx::Context, pkgentry, new_ver, is_jll,
@@ -1038,12 +1097,7 @@ function insert_lines_sorted(fout, linein, new_items, nline, endline)
     end
 end
 
-function get_pkg_uuids(ctx::Context, pkg)
-    if length(pkg) == 36 && contains(pkg, "-")
-        return [Base.UUID(pkg)]
-    end
-    return Pkg.Registry.uuids_from_name(ctx.registry, pkg)
-end
+get_pkg_uuids(ctx::Context, pkg) = get_pkg_uuids(ctx.registry, pkg)
 
 function _add_pkg_uuids(ctx::Context, uuids, new_packages)
     for name in new_packages
