@@ -46,12 +46,22 @@ function get_pkg_uuids(registry::Pkg.Registry.RegistryInstance, pkg)
     return Pkg.Registry.uuids_from_name(registry, pkg)
 end
 
+function get_unique_uuid(reg_or_ctx, pkg)
+    uuids = get_pkg_uuids(reg_or_ctx, pkg)
+    if length(uuids) == 0
+        error("Package $(name) not found in registry")
+    elseif length(uuids) > 1
+        error("Package $(name) not unique in registry")
+    end
+    return uuids[1]
+end
+
 struct RemoveDeps
     version::Pkg.Versions.VersionSpec
     remove::Vector{Base.UUID}
 end
 
-# This is stored in global info instead of the package info
+# These are stored in global info instead of the package info
 # since we may need this before we add the package
 # and won't have a package info to add it to
 function load_remove_deps(registry, global_info)
@@ -62,26 +72,44 @@ function load_remove_deps(registry, global_info)
         return remove_deps
     end
 
-    function get_unique_uuid(pkg)
-        uuids = get_pkg_uuids(registry, pkg)
-        if length(uuids) == 0
-            error("Package $(name) not found in registry")
-        elseif length(uuids) > 1
-            error("Package $(name) not unique in registry")
-        end
-        return uuids[1]
-    end
-
     for _r in _remove_deps
-        uuid = get_unique_uuid(_r["pkg"])
+        uuid = get_unique_uuid(registry, _r["pkg"])
         rs = get!(remove_deps, uuid) do
             return RemoveDeps[]
         end
         push!(rs, RemoveDeps(Pkg.Versions.semver_spec(_r["version"]),
-                             [get_unique_uuid(p) for p in _r["remove"]]))
+                             [get_unique_uuid(registry, p) for p in _r["remove"]]))
     end
 
     return remove_deps
+end
+
+struct DepsVersionOvr
+    version::Pkg.Versions.VersionSpec
+    dep::Base.UUID
+    depversion::Pkg.Versions.VersionSpec
+end
+
+function load_deps_version_ovr(registry, global_info)
+    deps_version_ovr = Dict{Base.UUID,Vector{DepsVersionOvr}}()
+
+    _deps_version_ovr = _get(get(global_info, "Overrides", nothing),
+                             "DepsVersion", nothing)
+    if _deps_version_ovr === nothing
+        return deps_version_ovr
+    end
+
+    for _r in _deps_version_ovr
+        uuid = get_unique_uuid(registry, _r["pkg"])
+        rs = get!(deps_version_ovr, uuid) do
+            return DepsVersionOvr[]
+        end
+        push!(rs, DepsVersionOvr(Pkg.Versions.semver_spec(_r["version"]),
+                                 get_unique_uuid(registry, _r["dep"]),
+                                 Pkg.Versions.semver_spec(_r["depversion"])))
+    end
+
+    return deps_version_ovr
 end
 
 struct Context
@@ -92,6 +120,7 @@ struct Context
     global_info::Dict{String,Any}
     package_paths::Dict{Base.UUID,String}
     remove_deps::Dict{Base.UUID,Vector{RemoveDeps}}
+    deps_version_ovr::Dict{Base.UUID,Vector{DepsVersionOvr}}
     _packages_info::Dict{Base.UUID,Any}
     _global_info::Dict{String,Any}
     function Context()
@@ -104,6 +133,7 @@ struct Context
         global_info = TOML.parsefile(joinpath(pkgsdir, "global.toml"))
         return new(pkgsdir, workdir, registry, packages_info, global_info, paths,
                    load_remove_deps(registry, global_info),
+                   load_deps_version_ovr(registry, global_info),
                    deepcopy(packages_info), deepcopy(global_info))
     end
 end
@@ -193,6 +223,17 @@ function get_compat_info(ctx::Context, pkgentry)
                 ver in r.version || continue
                 for d in r.remove
                     delete!(compat_info, d)
+                end
+            end
+        end
+    end
+    deps_version_ovr = get(ctx.deps_version_ovr, pkgentry.uuid, nothing)
+    if deps_version_ovr !== nothing
+        for r in deps_version_ovr
+            for (ver, compat_info) in compat_infos
+                ver in r.version || continue
+                if r.dep in keys(compat_info)
+                    compat_info[r.dep] = r.depversion
                 end
             end
         end
