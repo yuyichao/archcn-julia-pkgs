@@ -49,9 +49,9 @@ end
 function get_unique_uuid(reg_or_ctx, pkg)
     uuids = get_pkg_uuids(reg_or_ctx, pkg)
     if length(uuids) == 0
-        error("Package $(name) not found in registry")
+        error("Package $(pkg) not found in registry")
     elseif length(uuids) > 1
-        error("Package $(name) not unique in registry")
+        error("Package $(pkg) not unique in registry")
     end
     return uuids[1]
 end
