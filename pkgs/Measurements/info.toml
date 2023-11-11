@@ -4,13 +4,3 @@ uuid = "eff96d63-e80a-5855-80a2-b1b0885c5ab7"
 
 [Status]
 version = "2.11.0"
-
-[[Issues."2.11.0"]]
-type = "missing_deps"
-
-    [[Issues."2.11.0".weak_deps]]
-    name = "BaseType"
-    uuid = "7fbed51b-1ef5-4d67-9085-a4a9b26f478c"
-    [[Issues."2.11.0".weak_deps]]
-    name = "Juno"
-    uuid = "e5e0dc1b-0480-54bc-9374-aad01c23163d"
