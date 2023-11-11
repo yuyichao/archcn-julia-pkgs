@@ -1,0 +1,6 @@
+[Pkg]
+name = "Cairo"
+uuid = "159f3aea-2a34-519c-b102-8c37f9878175"
+
+[Status]
+version = "1.0.5"

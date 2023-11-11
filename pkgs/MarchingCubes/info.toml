@@ -1,0 +1,6 @@
+[Pkg]
+name = "MarchingCubes"
+uuid = "299715c1-40a9-479a-aaf9-4a633d36f717"
+
+[Status]
+version = "0.1.8"

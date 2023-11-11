@@ -1,0 +1,6 @@
+[Pkg]
+name = "Configurations"
+uuid = "5218b696-f38b-4ac9-8b61-a12ec717816d"
+
+[Status]
+version = "0.17.6"

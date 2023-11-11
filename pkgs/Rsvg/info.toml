@@ -1,0 +1,6 @@
+[Pkg]
+name = "Rsvg"
+uuid = "c4c386cf-5103-5370-be45-f3a111cca3b8"
+
+[Status]
+version = "1.0.0"

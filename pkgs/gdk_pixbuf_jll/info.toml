@@ -1,0 +1,12 @@
+[Pkg]
+name = "gdk_pixbuf_jll"
+uuid = "da03df04-f53b-5353-a52f-6a8b0620ced0"
+is_jll = true
+
+[Status]
+version = "2.42.8+0"
+
+[JLL.products]
+executable = ["gdk_pixbuf_query_loaders"]
+file = ["gdk_pixbuf_loaders_dir"]
+library = ["libgdkpixbuf"]

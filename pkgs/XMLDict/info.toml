@@ -1,0 +1,6 @@
+[Pkg]
+name = "XMLDict"
+uuid = "228000da-037f-5747-90a9-8195ccbf91a5"
+
+[Status]
+version = "0.4.1"

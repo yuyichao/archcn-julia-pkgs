@@ -1,0 +1,6 @@
+[Pkg]
+name = "SymDict"
+uuid = "2da68c74-98d7-5633-99d6-8493888d7b1e"
+
+[Status]
+version = "0.3.0"

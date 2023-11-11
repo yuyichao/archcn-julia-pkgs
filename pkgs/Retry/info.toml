@@ -1,0 +1,6 @@
+[Pkg]
+name = "Retry"
+uuid = "20febd7b-183b-5ae2-ac4a-720e7ce64774"
+
+[Status]
+version = "0.4.1"

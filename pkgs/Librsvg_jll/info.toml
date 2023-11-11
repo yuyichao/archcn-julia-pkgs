@@ -1,0 +1,12 @@
+[Pkg]
+name = "Librsvg_jll"
+uuid = "925c91fb-5dd6-59dd-8e8c-345e74382d89"
+is_jll = true
+
+[Status]
+version = "2.54.5+0"
+
+[JLL.products]
+executable = ["rsvg_convert"]
+file = ["libpixbufloader_svg"]
+library = ["librsvg"]

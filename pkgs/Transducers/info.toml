@@ -1,0 +1,6 @@
+[Pkg]
+name = "Transducers"
+uuid = "28d57a85-8fef-5791-bfe6-a80928e7c999"
+
+[Status]
+version = "0.4.79"

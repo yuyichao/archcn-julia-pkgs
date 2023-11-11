@@ -75,3 +75,33 @@ pkg = "JLD"
 version = ">= 0.13"
 dep = "HDF5"
 depversion = ">= 0.16"
+
+[[Overrides.DepsVersion]]
+pkg = "YaoSubspaceArrayReg"
+version = ">= 0.1"
+dep = "StatsBase"
+depversion = ">= 0.33"
+
+[[Overrides.DepsVersion]]
+pkg = "BloqadeLattices"
+version = ">= 0.1"
+dep = "StatsBase"
+depversion = ">= 0.33"
+
+[[Overrides.DepsVersion]]
+pkg = "BloqadeODE"
+version = ">= 0.1"
+dep = "SciMLBase"
+depversion = "1, 2"
+
+[[Overrides.DepsVersion]]
+pkg = "BloqadeWaveforms"
+version = ">= 0.1"
+dep = "Interpolations"
+depversion = ">= 0.13"
+
+[[Overrides.DepsVersion]]
+pkg = "BloqadeWaveforms"
+version = ">= 0.1"
+dep = "UnicodePlots"
+depversion = ">= 2"

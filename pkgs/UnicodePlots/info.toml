@@ -1,0 +1,6 @@
+[Pkg]
+name = "UnicodePlots"
+uuid = "b8865327-cd53-5732-bb35-84acbb429228"
+
+[Status]
+version = "3.6.0"

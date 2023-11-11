@@ -1,0 +1,6 @@
+[Pkg]
+name = "CacheServers"
+uuid = "a921213e-d44a-5460-ac04-5d720a99ba71"
+
+[Status]
+version = "0.2.0"
