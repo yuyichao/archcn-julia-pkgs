@@ -3,4 +3,4 @@ name = "QuasiMonteCarlo"
 uuid = "8a4e6c94-4038-4cdc-81c3-7e6ffdb2a71b"
 
 [Status]
-version = "0.3.2"
+version = "0.3.3"
