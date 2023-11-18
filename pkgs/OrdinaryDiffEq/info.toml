@@ -3,4 +3,4 @@ name = "OrdinaryDiffEq"
 uuid = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
 
 [Status]
-version = "6.59.1"
+version = "6.59.2"
