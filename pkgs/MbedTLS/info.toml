@@ -3,4 +3,4 @@ name = "MbedTLS"
 uuid = "739be429-bea8-5141-9913-cc70e7f3736d"
 
 [Status]
-version = "1.1.8"
+version = "1.1.9"
