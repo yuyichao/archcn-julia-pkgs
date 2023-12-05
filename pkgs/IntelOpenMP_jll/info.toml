@@ -4,7 +4,7 @@ uuid = "1d5cc7b8-4909-519e-a0f8-d0f5ad9712d0"
 is_jll = true
 
 [Status]
-version = "2023.2.0+0"
+version = "2024.0.0+0"
 
 [JLL.products]
 library = ["libiomp"]
