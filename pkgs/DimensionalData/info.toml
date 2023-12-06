@@ -3,11 +3,11 @@ name = "DimensionalData"
 uuid = "0703355e-b756-11e9-17c0-8b28908087d0"
 
 [Status]
-version = "0.25.6"
+version = "0.25.7"
 
-[[Issues."0.25.6"]]
+[[Issues."0.25.7"]]
 type = "missing_deps"
 
-    [[Issues."0.25.6".weak_deps]]
+    [[Issues."0.25.7".weak_deps]]
     name = "Makie"
     uuid = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
