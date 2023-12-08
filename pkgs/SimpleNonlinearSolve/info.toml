@@ -4,24 +4,3 @@ uuid = "727e6d20-b764-4bd8-a329-72de5adea6c7"
 
 [Status]
 version = "0.1.25"
-
-[[Issues."1.0.0"]]
-type = "missing_deps"
-
-    [[Issues."1.0.0".deps]]
-    name = "MaybeInplace"
-    uuid = "bb5d69b7-63fc-4a16-80bd-7e42200c7bdb"
-
-[[Issues."1.0.2"]]
-type = "missing_deps"
-
-    [[Issues."1.0.2".deps]]
-    name = "MaybeInplace"
-    uuid = "bb5d69b7-63fc-4a16-80bd-7e42200c7bdb"
-
-[[Issues."1.0.1"]]
-type = "missing_deps"
-
-    [[Issues."1.0.1".deps]]
-    name = "MaybeInplace"
-    uuid = "bb5d69b7-63fc-4a16-80bd-7e42200c7bdb"
