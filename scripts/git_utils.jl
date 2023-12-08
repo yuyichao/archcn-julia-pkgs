@@ -1,11 +1,11 @@
 #!/usr/bin/julia
 
-using LibGit2
+import LibGit2
 
 function _open_repo(repopath, url)
     try
         repo = LibGit2.GitRepo(repopath)
-        remote = GitRemoteAnon(repo, url)
+        remote = LibGit2.GitRemoteAnon(repo, url)
         fetch_opts = LibGit2.FetchOptions(download_tags=true)
         LibGit2.fetch(remote, String[], msg="from $(url)", options=fetch_opts)
         return repo
@@ -117,7 +117,7 @@ function parent_id(c::LibGit2.GitCommit, n)
 end
 
 function find_remote_head_commit(repo, url, branch=nothing)
-    return with(LibGit2.GitRemoteAnon(repo, url)) do remote
+    return LibGit2.with(LibGit2.GitRemoteAnon(repo, url)) do remote
         connect(remote, :fetch)
         remote_ref = (branch === nothing ? default_branch(remote) :
             "refs/heads/$(branch)")
@@ -188,7 +188,7 @@ function find_commit_for_tree(repo, tree, head, last_commit, url)
             end
         end
     end
-    remote_heads = with(LibGit2.GitRemoteAnon(repo, url)) do remote
+    remote_heads = LibGit2.with(LibGit2.GitRemoteAnon(repo, url)) do remote
         connect(remote, :fetch)
         return ls(remote)
     end
@@ -210,7 +210,7 @@ function find_package_commit(url, name, workdir, branch, tree, last_commit)
         last_commit = LibGit2.GitHash(last_commit)
     end
     tree = LibGit2.GitHash(tree)
-    return with(get_repo(url, name, workdir)) do repo
+    return LibGit2.with(get_repo(url, name, workdir)) do repo
         remote_head = find_remote_head_commit(repo, url, branch)
         if remote_head === nothing && branch !== nothing
             @warn "Cannot find remote branch $(branch) at $(url), try remote default branch."
