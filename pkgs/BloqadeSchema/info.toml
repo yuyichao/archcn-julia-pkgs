@@ -3,4 +3,4 @@ name = "BloqadeSchema"
 uuid = "a64e8dd8-bb5a-11ec-104d-290571fc3a8d"
 
 [Status]
-version = "0.3.2"
+version = "0.4.0"
