@@ -11,3 +11,10 @@ type = "missing_deps"
     [[Issues."8.73.2".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+
+[[Issues."8.74.0"]]
+type = "missing_deps"
+
+    [[Issues."8.74.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
