@@ -4,4 +4,4 @@ uuid = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 has_deps_build = true
 
 [Status]
-version = "1.96.3"
+version = "1.96.4"
