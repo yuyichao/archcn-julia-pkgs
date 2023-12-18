@@ -16,6 +16,17 @@ type = "missing_deps"
     name = "MINPACK"
     uuid = "4854310b-de5a-5eb6-a2a5-c1dee2bd17f9"
 
+[[Issues."3.1.1"]]
+type = "missing_deps"
+
+    [[Issues."3.1.1".deps]]
+    name = "LazyArrays"
+    uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
+
+    [[Issues."3.1.1".weak_deps]]
+    name = "MINPACK"
+    uuid = "4854310b-de5a-5eb6-a2a5-c1dee2bd17f9"
+
 [[Issues."3.0.1"]]
 type = "missing_deps"
 
