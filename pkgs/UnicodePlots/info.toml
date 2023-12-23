@@ -3,4 +3,14 @@ name = "UnicodePlots"
 uuid = "b8865327-cd53-5732-bb35-84acbb429228"
 
 [Status]
-version = "3.6.0"
+version = "3.6.2"
+
+[[Issues."3.6.2"]]
+type = "missing_deps"
+
+    [[Issues."3.6.2".weak_deps]]
+    name = "FreeType"
+    uuid = "b38be410-82b0-50bf-ab77-7b57e271db43"
+    [[Issues."3.6.2".weak_deps]]
+    name = "Term"
+    uuid = "22787eb5-b846-44ae-b979-8e399b8463ab"

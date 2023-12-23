@@ -4,7 +4,7 @@ uuid = "fe0851c0-eecd-5654-98d4-656369965a5c"
 is_jll = true
 
 [Status]
-version = "5.0.0+0"
+version = "5.0.1+0"
 
 [JLL.products]
 executable = ["mpiexec"]
