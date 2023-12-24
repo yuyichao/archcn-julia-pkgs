@@ -16,6 +16,23 @@ type = "missing_deps"
     name = "MINPACK"
     uuid = "4854310b-de5a-5eb6-a2a5-c1dee2bd17f9"
 
+[[Issues."3.2.0"]]
+type = "missing_deps"
+
+    [[Issues."3.2.0".deps]]
+    name = "LazyArrays"
+    uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
+
+    [[Issues."3.2.0".weak_deps]]
+    name = "FixedPointAcceleration"
+    uuid = "817d07cb-a79a-5c30-9a31-890123675176"
+    [[Issues."3.2.0".weak_deps]]
+    name = "MINPACK"
+    uuid = "4854310b-de5a-5eb6-a2a5-c1dee2bd17f9"
+    [[Issues."3.2.0".weak_deps]]
+    name = "SpeedMapping"
+    uuid = "f1835b91-879b-4a3f-a438-e4baacf14412"
+
 [[Issues."3.1.1"]]
 type = "missing_deps"
 
