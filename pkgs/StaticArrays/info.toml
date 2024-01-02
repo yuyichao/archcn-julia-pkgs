@@ -3,4 +3,4 @@ name = "StaticArrays"
 uuid = "90137ffa-7385-5640-81b9-e52037218182"
 
 [Status]
-version = "1.8.1"
+version = "1.8.2"
