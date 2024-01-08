@@ -3,4 +3,4 @@ name = "ImageTransformations"
 uuid = "02fcd773-0e25-5acc-982a-7f6622650795"
 
 [Status]
-version = "0.10.0"
+version = "0.10.1"
