@@ -3,4 +3,14 @@ name = "Transducers"
 uuid = "28d57a85-8fef-5791-bfe6-a80928e7c999"
 
 [Status]
-version = "0.4.79"
+version = "0.4.80"
+
+[[Issues."0.4.80"]]
+type = "missing_deps"
+
+    [[Issues."0.4.80".weak_deps]]
+    name = "LazyArrays"
+    uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
+    [[Issues."0.4.80".weak_deps]]
+    name = "OnlineStatsBase"
+    uuid = "925886fa-5bf2-5e8e-b522-a9147a512338"
