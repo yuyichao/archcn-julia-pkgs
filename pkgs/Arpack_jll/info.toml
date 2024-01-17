@@ -4,7 +4,7 @@ uuid = "68821587-b530-5797-8361-c406ea357684"
 is_jll = true
 
 [Status]
-version = "3.8.0+1"
+version = "3.9.1+0"
 
 [JLL.products]
 library = ["libarpack"]
