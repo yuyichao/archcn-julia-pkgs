@@ -4,7 +4,7 @@ uuid = "319450e9-13b8-58e8-aa9f-8fd1420848ab"
 is_jll = true
 
 [Status]
-version = "2023.11.15+0"
+version = "2024.1.18+0"
 
 [JLL.products]
 executable = ["spral_ssids"]
