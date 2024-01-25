@@ -15,3 +15,10 @@ type = "jll_changes"
     [Issues."1.14.3+0".add]
     executable = ["h5clear", "h5copy", "h5debug", "h5delete", "h5diff", "h5dump", "h5format_convert", "h5import", "h5jam", "h5ls", "h5mkgrp", "h5perf_serial", "h5repack", "h5repart", "h5stat", "h5unjam", "h5watch"]
     library = ["libhdf5_cpp", "libhdf5_fortran", "libhdf5_hl_cpp", "libhdf5_hl_fortran"]
+
+[[Issues."1.14.3+1"]]
+type = "jll_changes"
+
+    [Issues."1.14.3+1".add]
+    executable = ["h5clear", "h5copy", "h5debug", "h5delete", "h5diff", "h5dump", "h5format_convert", "h5import", "h5jam", "h5ls", "h5mkgrp", "h5perf_serial", "h5repack", "h5repart", "h5stat", "h5unjam", "h5watch"]
+    library = ["libhdf5_cpp", "libhdf5_fortran", "libhdf5_hl_cpp", "libhdf5_hl_fortran"]
