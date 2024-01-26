@@ -4,7 +4,7 @@ uuid = "656ef2d0-ae68-5445-9ca0-591084a874a2"
 is_jll = true
 
 [Status]
-version = "0.3.26+1"
+version = "0.3.26+2"
 
 [JLL.products]
 library = ["libopenblas"]
