@@ -4,7 +4,7 @@ uuid = "d2c73de3-f751-5644-a686-071e5b155ba9"
 is_jll = true
 
 [Status]
-version = "0.73.1+0"
+version = "0.73.2+0"
 
 [JLL.products]
 executable = ["gksqt", "grplot"]
