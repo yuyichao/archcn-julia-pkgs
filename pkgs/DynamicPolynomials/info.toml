@@ -3,4 +3,4 @@ name = "DynamicPolynomials"
 uuid = "7c1d4256-1411-5781-91ec-d7bc3513ac07"
 
 [Status]
-version = "0.5.4"
+version = "0.5.5"
