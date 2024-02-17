@@ -3,11 +3,11 @@ name = "BangBang"
 uuid = "198e06fe-97b7-11e9-32a5-e1d131e6ad66"
 
 [Status]
-version = "0.4.0"
+version = "0.4.1"
 
-[[Issues."0.4.0"]]
+[[Issues."0.4.1"]]
 type = "missing_deps"
 
-    [[Issues."0.4.0".weak_deps]]
+    [[Issues."0.4.1".weak_deps]]
     name = "TypedTables"
     uuid = "9d95f2ec-7b3d-5a63-8d20-e2491e220bb9"

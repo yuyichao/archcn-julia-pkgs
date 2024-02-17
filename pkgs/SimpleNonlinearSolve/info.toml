@@ -5,6 +5,13 @@ uuid = "727e6d20-b764-4bd8-a329-72de5adea6c7"
 [Status]
 version = "0.1.25"
 
+[[Issues."1.5.0"]]
+type = "missing_deps"
+
+    [[Issues."1.5.0".weak_deps]]
+    name = "PolyesterForwardDiff"
+    uuid = "98d1487c-24ca-40b6-b7ab-df2af84e126b"
+
 [[Issues."1.1.0"]]
 type = "missing_deps"
 
