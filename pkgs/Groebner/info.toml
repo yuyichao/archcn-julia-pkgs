@@ -12,6 +12,13 @@ type = "missing_deps"
     name = "Nemo"
     uuid = "2edaba10-b0f1-5616-af89-8c11ac63239a"
 
+[[Issues."0.7.2"]]
+type = "missing_deps"
+
+    [[Issues."0.7.2".deps]]
+    name = "Nemo"
+    uuid = "2edaba10-b0f1-5616-af89-8c11ac63239a"
+
 [[Issues."0.6.3"]]
 type = "missing_deps"
 
