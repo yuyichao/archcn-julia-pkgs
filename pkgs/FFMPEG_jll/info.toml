@@ -8,10 +8,4 @@ version = "4.4.4+1"
 
 [JLL.products]
 executable = ["ffmpeg", "ffprobe"]
-library = ["libavcodec", "libavdevice", "libavfilter", "libavformat", "libavresample", "libavutil", "libpostproc", "libswresample", "libswscale"]
-
-[[Issues."6.1.1+0"]]
-type = "jll_changes"
-
-    [Issues."6.1.1+0".remove]
-    library = ["libavresample"]
+library = ["libavcodec", "libavdevice", "libavfilter", "libavformat", "libavutil", "libpostproc", "libswresample", "libswscale"]
