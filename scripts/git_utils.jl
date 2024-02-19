@@ -7,7 +7,8 @@ function _open_repo(repopath, url)
         repo = LibGit2.GitRepo(repopath)
         remote = LibGit2.GitRemoteAnon(repo, url)
         fetch_opts = LibGit2.FetchOptions(download_tags=true)
-        LibGit2.fetch(remote, String[], msg="from $(url)", options=fetch_opts)
+        LibGit2.fetch(remote, String["+refs/heads/*:refs/remotes/origin/*"],
+                      msg="from $(url)", options=fetch_opts)
         return repo
     catch
         return
