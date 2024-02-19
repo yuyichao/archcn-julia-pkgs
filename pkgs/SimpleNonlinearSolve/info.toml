@@ -3,7 +3,7 @@ name = "SimpleNonlinearSolve"
 uuid = "727e6d20-b764-4bd8-a329-72de5adea6c7"
 
 [Status]
-version = "0.1.25"
+version = "1.5.0"
 
 [[Issues."1.5.0"]]
 type = "missing_deps"

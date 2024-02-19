@@ -3,7 +3,7 @@ name = "Symbolics"
 uuid = "0c5d862f-8b57-4792-8d23-62f2024744c7"
 
 [Status]
-version = "5.11.0"
+version = "5.19.1"
 
 [[Issues."5.16.1"]]
 type = "missing_deps"

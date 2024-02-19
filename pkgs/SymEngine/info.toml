@@ -1,0 +1,6 @@
+[Pkg]
+name = "SymEngine"
+uuid = "123dc426-2d89-5057-bbad-38513e3affd8"
+
+[Status]
+version = "0.11.0"

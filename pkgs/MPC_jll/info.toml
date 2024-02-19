@@ -1,0 +1,10 @@
+[Pkg]
+name = "MPC_jll"
+uuid = "2ce0c516-f11f-5db3-98ad-e0e1048fbd70"
+is_jll = true
+
+[Status]
+version = "1.2.1+0"
+
+[JLL.products]
+library = ["libmpc"]

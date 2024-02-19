@@ -3,7 +3,7 @@ name = "Groebner"
 uuid = "0b43b601-686d-58a3-8a1c-6623616c7cd4"
 
 [Status]
-version = "0.5.1"
+version = "0.7.2"
 
 [[Issues."0.7.1"]]
 type = "missing_deps"

@@ -1,0 +1,10 @@
+[Pkg]
+name = "Calcium_jll"
+uuid = "fcfa6d1b-d8ce-59d5-8c0a-c0d7f69e4f40"
+is_jll = true
+
+[Status]
+version = "0.401.100+0"
+
+[JLL.products]
+library = ["libcalcium"]
