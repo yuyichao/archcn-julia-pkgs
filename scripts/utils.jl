@@ -1005,9 +1005,6 @@ post_build: git_pkgbuild_commit
 
 repo_depends:
   - julia-git
-  - openspecfun-git
-  - openlibm-git
-  - llvm-julia: llvm-libs-julia
   - julia-pkg-scripts
 
 update_on:
