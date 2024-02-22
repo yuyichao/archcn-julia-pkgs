@@ -4,3 +4,8 @@ uuid = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
 
 [Status]
 version = "3.2.13"
+
+[[Issues."3.2.13"]]
+type = "not_on_latest"
+version = "3.2.13"
+latest = "4.0.6"
