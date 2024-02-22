@@ -324,6 +324,17 @@ function todict(ctx::Context, info::PkgCommitMissing)
     return res
 end
 
+struct NotOnLatestInfo
+    version::VersionNumber
+    latest::VersionNumber
+end
+
+function todict(ctx::Context, info::NotOnLatestInfo)
+    return Dict{String,Any}("type"=>"not_on_latest",
+                            "version"=>string(info.version),
+                            "latest"=>string(info.latest))
+end
+
 struct CheckError
     e
 end
@@ -331,8 +342,9 @@ end
 struct PackageVersionInfo
     issues::Dict{VersionNumber,Vector{Any}}
     good_versions::Set{VersionNumber}
-    PackageVersionInfo() =
-        new(Dict{VersionNumber,Vector{Any}}(), Set{VersionNumber}())
+    latest::VersionNumber
+    PackageVersionInfo(latest) =
+        new(Dict{VersionNumber,Vector{Any}}(), Set{VersionNumber}(), latest)
 end
 
 function find_new_versions(ctx::Context, uuid, version)
@@ -341,7 +353,7 @@ function find_new_versions(ctx::Context, uuid, version)
     arch_info = ctx.packages_info[uuid]
     is_jll = get(arch_info["Pkg"], "is_jll", false)
 
-    pkg_ver_info = PackageVersionInfo()
+    pkg_ver_info = PackageVersionInfo(maximum(keys(pkginfo.version_info)))
     had_issues = haskey(arch_info, "Issues")
 
     missing_deps_info = MissingDepsInfo()
@@ -406,13 +418,6 @@ function find_new_versions(ctx::Context, uuid, version)
     return pkg_ver_info
 end
 
-struct PackageVersionInfo
-    issues::Dict{VersionNumber,Vector{Any}}
-    good_versions::Set{VersionNumber}
-    PackageVersionInfo() =
-        new(Dict{VersionNumber,Vector{Any}}(), Set{VersionNumber}())
-end
-
 function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
                           messages)
     arch_info = ctx.packages_info[uuid]
@@ -456,6 +461,14 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
                     continue
                 end
                 push!(messages, "Package commit not found for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
+            elseif isa(issue, NotOnLatestInfo)
+                issue_dict = todict(ctx, issue)
+                push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
+                if issue_dict in get(old_issues, ver_str, empty_issue)
+                    continue
+                end
+                push!(messages,
+                      "Package not on latest version $(pkgprefix):\nLatest $(issue.latest)")
             elseif isa(issue, CheckError)
                 push!(messages,
                       "Error during version check for $(pkgprefix):\n$(sprint(print, issue.e))")
@@ -534,10 +547,16 @@ function resolve_new_versions(ctx::Context, check_results)
         arch_info = ctx.packages_info[uuid]
         arch_info_status = arch_info["Status"]
         old_version = VersionNumber(arch_info_status["version"])
+        check_res = check_results[uuid]
+        latest = check_res.latest
+        if ver != latest && latest in check_res.good_versions
+            push!(get!(Vector{Any}, check_res.issues, ver),
+                  NotOnLatestInfo(ver, latest))
+        end
         if ver == old_version
             continue
         end
-        issues = check_results[uuid].issues
+        issues = check_res.issues
         filter!(kv->kv.first >= ver, issues)
         arch_info["Status"]["version"] = string(ver)
         res = find_package_commit(ctx, uuid, ver, arch_info)
