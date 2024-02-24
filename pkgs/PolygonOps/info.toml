@@ -1,0 +1,6 @@
+[Pkg]
+name = "PolygonOps"
+uuid = "647866c9-e3ac-4575-94e7-e3d426903924"
+
+[Status]
+version = "0.1.2"

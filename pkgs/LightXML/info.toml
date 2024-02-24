@@ -1,0 +1,6 @@
+[Pkg]
+name = "LightXML"
+uuid = "9c8b4983-aa76-5018-a973-4c85ecc9e179"
+
+[Status]
+version = "0.9.1"

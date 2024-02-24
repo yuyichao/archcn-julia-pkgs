@@ -1,0 +1,11 @@
+[Pkg]
+name = "Hyperscript"
+uuid = "47d2ed2b-36de-50cf-bf87-49c2cf4b8b91"
+
+[Status]
+version = "0.0.4"
+
+[[Issues."0.0.4"]]
+type = "not_on_latest"
+version = "0.0.4"
+latest = "0.0.5"

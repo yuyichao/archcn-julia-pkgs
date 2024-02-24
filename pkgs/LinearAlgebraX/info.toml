@@ -1,0 +1,6 @@
+[Pkg]
+name = "LinearAlgebraX"
+uuid = "9b3f67b0-2d00-526e-9884-9e4938f8fb88"
+
+[Status]
+version = "0.2.7"

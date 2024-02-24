@@ -1,0 +1,11 @@
+[Pkg]
+name = "GridLayoutBase"
+uuid = "3955a311-db13-416c-9275-1d80ed98e5e9"
+
+[Status]
+version = "0.9.2"
+
+[[Issues."0.9.2"]]
+type = "not_on_latest"
+version = "0.9.2"
+latest = "0.10.0"

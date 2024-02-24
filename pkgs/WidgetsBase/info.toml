@@ -1,0 +1,6 @@
+[Pkg]
+name = "WidgetsBase"
+uuid = "eead4739-05f7-45a1-878c-cee36b57321c"
+
+[Status]
+version = "0.1.4"

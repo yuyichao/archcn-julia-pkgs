@@ -1,0 +1,6 @@
+[Pkg]
+name = "JSServe"
+uuid = "824d6782-a2ef-11e9-3a09-e5662e0c26f9"
+
+[Status]
+version = "2.3.1"

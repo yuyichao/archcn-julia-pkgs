@@ -1,0 +1,6 @@
+[Pkg]
+name = "SimplePolynomials"
+uuid = "cc47b68c-3164-5771-a705-2bc0097375a0"
+
+[Status]
+version = "0.2.17"

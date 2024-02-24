@@ -1,0 +1,6 @@
+[Pkg]
+name = "Animations"
+uuid = "27a7e980-b3e6-11e9-2bcd-0b925532e340"
+
+[Status]
+version = "0.4.1"

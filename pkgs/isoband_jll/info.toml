@@ -1,0 +1,10 @@
+[Pkg]
+name = "isoband_jll"
+uuid = "9a68df92-36a6-505f-a73e-abb412b6bfb4"
+is_jll = true
+
+[Status]
+version = "0.2.3+0"
+
+[JLL.products]
+library = ["libisoband"]

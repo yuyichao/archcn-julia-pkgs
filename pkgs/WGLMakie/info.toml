@@ -1,0 +1,41 @@
+[Pkg]
+name = "WGLMakie"
+uuid = "276b4fcb-3e11-5398-bf8b-a0c2d153d008"
+
+[Status]
+version = "0.8.16"
+
+[[Issues."0.9.4"]]
+type = "missing_deps"
+
+    [[Issues."0.9.4".deps]]
+    name = "Bonito"
+    uuid = "824d6782-a2ef-11e9-3a09-e5662e0c26f8"
+
+[[Issues."0.9.7"]]
+type = "missing_deps"
+
+    [[Issues."0.9.7".deps]]
+    name = "Bonito"
+    uuid = "824d6782-a2ef-11e9-3a09-e5662e0c26f8"
+
+[[Issues."0.9.6"]]
+type = "missing_deps"
+
+    [[Issues."0.9.6".deps]]
+    name = "Bonito"
+    uuid = "824d6782-a2ef-11e9-3a09-e5662e0c26f8"
+
+[[Issues."0.9.5"]]
+type = "missing_deps"
+
+    [[Issues."0.9.5".deps]]
+    name = "Bonito"
+    uuid = "824d6782-a2ef-11e9-3a09-e5662e0c26f8"
+
+[[Issues."0.9.8"]]
+type = "missing_deps"
+
+    [[Issues."0.9.8".deps]]
+    name = "Bonito"
+    uuid = "824d6782-a2ef-11e9-3a09-e5662e0c26f8"

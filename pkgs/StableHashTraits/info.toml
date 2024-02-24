@@ -1,0 +1,6 @@
+[Pkg]
+name = "StableHashTraits"
+uuid = "c5dd0088-6c3f-4803-b00e-f31a60c170fa"
+
+[Status]
+version = "1.1.8"
