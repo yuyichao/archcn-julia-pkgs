@@ -1,0 +1,6 @@
+[Pkg]
+name = "ResumableFunctions"
+uuid = "c5292f4c-5179-55e1-98c5-05642aab7184"
+
+[Status]
+version = "0.6.9"

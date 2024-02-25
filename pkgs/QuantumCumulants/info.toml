@@ -1,0 +1,6 @@
+[Pkg]
+name = "QuantumCumulants"
+uuid = "35bcea6d-e19f-57db-af74-8011de6c7255"
+
+[Status]
+version = "0.2.25"
