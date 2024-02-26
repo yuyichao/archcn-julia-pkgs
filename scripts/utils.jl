@@ -570,8 +570,8 @@ function resolve_new_versions(ctx::Context, check_results)
                     push!(dependent, Base.PkgId(dep, uuid_to_name[dep]))
                 end
             end
-            sort!(dependent)
-            sort!(dependency)
+            sort!(dependent, by=x->(x.name, x.uuid))
+            sort!(dependency, by=x->(x.name, x.uuid))
             push!(get!(Vector{Any}, check_res.issues, ver),
                   NotOnLatestInfo(ver, latest, dependent, dependency))
         end
