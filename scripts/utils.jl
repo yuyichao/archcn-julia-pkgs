@@ -327,12 +327,18 @@ end
 struct NotOnLatestInfo
     version::VersionNumber
     latest::VersionNumber
+    dependent::Vector{PkgId}
+    dependency::Vector{PkgId}
 end
 
 function todict(ctx::Context, info::NotOnLatestInfo)
     return Dict{String,Any}("type"=>"not_on_latest",
                             "version"=>string(info.version),
-                            "latest"=>string(info.latest))
+                            "latest"=>string(info.latest),
+                            "dependent"=>["$(id.name) [$(id.uuid)]"
+                                          for id in info.dependent],
+                            "dependency"=>["$(id.name) [$(id.uuid)]"
+                                           for id in info.dependency])
 end
 
 struct CheckError
@@ -468,7 +474,7 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
                     continue
                 end
                 push!(messages,
-                      "Package not on latest version $(pkgprefix):\nLatest $(issue.latest)")
+                      "Package not on latest version $(pkgprefix):\nLatest $(issue.latest)\n$(sprint(TOML.print, issue_dict))")
             elseif isa(issue, CheckError)
                 push!(messages,
                       "Error during version check for $(pkgprefix):\n$(sprint(print, issue.e))")
@@ -542,16 +548,30 @@ function resolve_new_versions(ctx::Context, check_results)
     end
 
     graph = Resolve.Graph(compat, compat_weak, uuid_to_name, reqs, fixed,
-                              true, nothing)
-    for (uuid, ver) in Resolve.resolve(graph)
+                          true, nothing)
+    solution = Resolve.resolve(graph)
+    for (uuid, ver) in solution
         arch_info = ctx.packages_info[uuid]
         arch_info_status = arch_info["Status"]
         old_version = VersionNumber(arch_info_status["version"])
         check_res = check_results[uuid]
         latest = check_res.latest
         if ver != latest && latest in check_res.good_versions
+            dependent = PkgId[]
+            dependency = PkgId[]
+            for (dep, verspec) in compat[uuid][latest]
+                if !haskey(dep, solution) || !(solution[dep] in verspec)
+                    push!(dependency, dep)
+                end
+            end
+            for (dep, depver) in solution
+                if !(latest in get(compat[dep][depver], uuid,
+                                   Pkg.Versions.VersionSpec("*")))
+                    push!(dependent, dep)
+                end
+            end
             push!(get!(Vector{Any}, check_res.issues, ver),
-                  NotOnLatestInfo(ver, latest))
+                  NotOnLatestInfo(ver, latest, dependent, dependency))
         end
         if ver == old_version
             continue
