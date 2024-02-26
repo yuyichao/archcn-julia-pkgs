@@ -3,11 +3,4 @@ name = "DataStructures"
 uuid = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
 
 [Status]
-version = "0.18.15"
-
-[[Issues."0.18.15"]]
-dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]"]
-dependency = []
-type = "not_on_latest"
-version = "0.18.15"
-latest = "0.18.17"
+version = "0.18.17"
