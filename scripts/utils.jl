@@ -560,7 +560,7 @@ function resolve_new_versions(ctx::Context, check_results)
             dependent = Base.PkgId[]
             dependency = Base.PkgId[]
             for (dep, verspec) in compat[uuid][latest]
-P                if !haskey(solution, dep) || !(solution[dep] in verspec)
+                if !haskey(solution, dep) || !(solution[dep] in verspec)
                     push!(dependency, Base.PkgId(dep, uuid_to_name[dep]))
                 end
             end
