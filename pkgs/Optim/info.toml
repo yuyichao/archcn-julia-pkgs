@@ -1,6 +1,7 @@
 [Pkg]
 name = "Optim"
 uuid = "429524aa-4258-5aef-a3af-852621145aeb"
+required = true
 
 [Status]
 version = "1.9.2"

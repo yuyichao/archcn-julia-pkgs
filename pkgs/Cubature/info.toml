@@ -1,6 +1,7 @@
 [Pkg]
 name = "Cubature"
 uuid = "667455a9-e2ce-5579-9412-b964f529a492"
+required = true
 
 [Status]
 version = "1.5.1"

@@ -1,6 +1,7 @@
 [Pkg]
 name = "MD5"
 uuid = "6ac74813-4b46-53a4-afec-0b5dc9d7885c"
+required = true
 
 [Status]
 version = "0.2.3"

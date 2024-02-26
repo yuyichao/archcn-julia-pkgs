@@ -1,6 +1,7 @@
 [Pkg]
 name = "H5Zblosc"
 uuid = "c8ec2601-a99c-407f-b158-e79c03c2f5f7"
+required = true
 
 [Status]
 version = "0.1.2"

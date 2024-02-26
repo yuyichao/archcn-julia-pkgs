@@ -1,6 +1,7 @@
 [Pkg]
 name = "YAML"
 uuid = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
+required = true
 
 [Status]
 version = "0.4.9"

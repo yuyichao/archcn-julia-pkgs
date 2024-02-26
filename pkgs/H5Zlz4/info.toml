@@ -1,6 +1,7 @@
 [Pkg]
 name = "H5Zlz4"
 uuid = "eb20ec05-5464-47b5-ba41-098e3c1068a3"
+required = true
 
 [Status]
 version = "0.1.1"

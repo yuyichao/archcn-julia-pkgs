@@ -1,6 +1,7 @@
 [Pkg]
 name = "Primes"
 uuid = "27ebfcd6-29c5-5fa9-bf4b-fb8fc14df3ae"
+required = true
 
 [Status]
 version = "0.5.6"

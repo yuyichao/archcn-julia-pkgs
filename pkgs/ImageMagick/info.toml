@@ -1,6 +1,7 @@
 [Pkg]
 name = "ImageMagick"
 uuid = "6218d12a-5da1-5696-b52f-db25d2ecc6d1"
+required = true
 
 [Status]
 version = "1.3.1"
