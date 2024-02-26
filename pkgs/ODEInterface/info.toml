@@ -1,11 +1,8 @@
 [Pkg]
 name = "ODEInterface"
 uuid = "54ca160b-1b9f-5127-a996-1867f4bc2a2c"
-has_deps_build = true
 required = true
+has_deps_build = true
 
 [Status]
 version = "0.5.0"
-
-[[Issues."0.5.0"]]
-type = "not_needed"

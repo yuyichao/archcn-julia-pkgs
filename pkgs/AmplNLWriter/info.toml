@@ -5,6 +5,3 @@ required = true
 
 [Status]
 version = "1.2.1"
-
-[[Issues."1.2.1"]]
-type = "not_needed"
