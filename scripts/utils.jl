@@ -1235,11 +1235,20 @@ end
 
 function update_packages(ctx::Context, repodir, new_packages=nothing)
     uuids = Base.UUID[]
+    new_uuids = nothing
     if new_packages !== nothing
         _add_pkg_uuids(ctx, uuids, new_packages)
+        new_uuids = copy(uuids)
     end
     versions = resolve_all_dependencies(ctx, uuids)
     full_pkg_infos = collect_all_pkg_info(ctx, versions)
+    if new_packages !== nothing
+        for uuid in new_uuids
+            arch_info = get!(Dict{String,Any}, ctx.packages_info, uuid)
+            arch_info_pkg = get!(Dict{String,Any}, arch_info, "Pkg")
+            arch_info_pkg["required"] = true
+        end
+    end
     write_repo(ctx, full_pkg_infos, repodir)
     write_back_info(ctx)
     return
