@@ -1,9 +1,0 @@
-[Pkg]
-name = "OptimBase"
-uuid = "87e2bd06-a317-5318-96d9-3ecbac512eee"
-
-[Status]
-version = "2.0.2"
-
-[[Issues."2.0.2"]]
-type = "not_needed"

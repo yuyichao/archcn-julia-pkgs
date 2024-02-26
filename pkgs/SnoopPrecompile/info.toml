@@ -1,9 +1,0 @@
-[Pkg]
-name = "SnoopPrecompile"
-uuid = "66db9d55-30c0-4569-8b51-7e840670fc0c"
-
-[Status]
-version = "1.0.3"
-
-[[Issues."1.0.3"]]
-type = "not_needed"
