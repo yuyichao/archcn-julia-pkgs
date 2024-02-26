@@ -570,6 +570,8 @@ function resolve_new_versions(ctx::Context, check_results)
                     push!(dependent, dep)
                 end
             end
+            sort!(dependent)
+            sort!(dependency)
             push!(get!(Vector{Any}, check_res.issues, ver),
                   NotOnLatestInfo(ver, latest, dependent, dependency))
         end
