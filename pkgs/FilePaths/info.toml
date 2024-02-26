@@ -1,0 +1,6 @@
+[Pkg]
+name = "FilePaths"
+uuid = "8fc22ac5-c921-52a6-82fd-178b2807b824"
+
+[Status]
+version = "0.8.3"
