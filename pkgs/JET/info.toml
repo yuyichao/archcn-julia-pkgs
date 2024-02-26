@@ -11,3 +11,5 @@ dependency = ["LoweredCodeUtils [6f1432cf-f94c-5a45-995e-cdbf5db27b0b]"]
 type = "not_on_latest"
 version = "0.8.22"
 latest = "0.8.29"
+[[Issues."0.8.22"]]
+type = "not_needed"
