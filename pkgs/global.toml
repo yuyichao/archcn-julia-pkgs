@@ -123,3 +123,21 @@ pkg = "QuantumClifford"
 version = ">= 0.8"
 dep = "Nemo"
 depversion = ">= 0.38"
+
+[[Overrides.DepsVersion]]
+pkg = "ODE"
+version = ">= 2.15.0"
+dep = "Polynomials"
+depversion = ">= 1.2"
+
+[[Overrides.DepsVersion]]
+pkg = "IntervalRootFinding"
+version = ">= 0.5.11"
+dep = "Polynomials"
+depversion = ">= 0.5"
+
+[[Overrides.DepsVersion]]
+pkg = "ImageBinarization"
+version = ">= 0.3.0"
+dep = "Polynomials"
+depversion = ">= 1"
