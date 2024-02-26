@@ -5,3 +5,6 @@ has_deps_build = true
 
 [Status]
 version = "0.5.5"
+
+[[Issues."0.5.5"]]
+type = "not_needed"

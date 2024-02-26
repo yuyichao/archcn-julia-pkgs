@@ -9,3 +9,6 @@ version = "3.5.2+0"
 [JLL.products]
 executable = ["bsdcat", "bsdcpio", "bsdtar"]
 library = ["libarchive"]
+
+[[Issues."3.5.2+0"]]
+type = "not_needed"

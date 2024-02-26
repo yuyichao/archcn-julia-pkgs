@@ -8,3 +8,6 @@ version = "8.44.0+0"
 
 [JLL.products]
 library = ["libpcre"]
+
+[[Issues."8.44.0+0"]]
+type = "not_needed"
