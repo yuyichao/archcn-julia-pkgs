@@ -241,6 +241,12 @@ function get_compat_info(ctx::Context, pkgentry)
     return compat_infos
 end
 
+function collect_latest_deps(ctx::Context, pkgentry, ver, latest_deps)
+    for (uuid, ver) in get_compat_info(ctx, pkgentry)[ver]
+        push!(latest_deps, uuid)
+    end
+end
+
 function check_missing_deps(ctx::Context, pkgentry, new_ver, is_jll,
                             out::MissingDepsInfo)
     stdlibs = get(Dict{String,Any}, ctx.global_info, "StdLibs")
@@ -341,6 +347,13 @@ function todict(ctx::Context, info::NotOnLatestInfo)
                                            for id in info.dependency])
 end
 
+struct NotNeeded
+end
+
+function todict(ctx::Context, info::NotNeeded)
+    return Dict{String,Any}("type"=>"not_needed")
+end
+
 struct CheckError
     e
 end
@@ -353,7 +366,7 @@ struct PackageVersionInfo
         new(Dict{VersionNumber,Vector{Any}}(), Set{VersionNumber}(), latest)
 end
 
-function find_new_versions(ctx::Context, uuid, version)
+function find_new_versions(ctx::Context, uuid, version, latest_deps)
     pkgentry = ctx.registry[uuid]
     pkginfo = Pkg.Registry.registry_info(pkgentry)
     arch_info = ctx.packages_info[uuid]
@@ -366,6 +379,9 @@ function find_new_versions(ctx::Context, uuid, version)
     jll_changes = JLLChanges()
     for new_ver in keys(pkginfo.version_info)
         new_ver >= version || continue
+        if new_ver == pkg_ver_info.latest
+            collect_latest_deps(ctx, pkgentry, new_ver, latest_deps)
+        end
         if new_ver == version && !had_issues
             # Only rescan current version if we had some issue for this package
             # to see if it is resolved.
@@ -475,6 +491,14 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
                 end
                 push!(messages,
                       "Package not on latest version $(pkgprefix):\nLatest $(issue.latest)\n$(sprint(TOML.print, issue_dict))")
+            elseif isa(issue, NotNeeded)
+                issue_dict = todict(ctx, issue)
+                push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
+                if issue_dict in get(old_issues, ver_str, empty_issue)
+                    continue
+                end
+                push!(messages,
+                      "Package not explicitly required and not needed as dependency: $(pkgprefix)")
             elseif isa(issue, CheckError)
                 push!(messages,
                       "Error during version check for $(pkgprefix):\n$(sprint(print, issue.e))")
@@ -491,7 +515,7 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
     return
 end
 
-function resolve_new_versions(ctx::Context, check_results)
+function resolve_new_versions(ctx::Context, check_results, latest_deps)
     @info "Computing new versions"
 
     compat = Dict{Base.UUID,Dict{VersionNumber,
@@ -575,6 +599,9 @@ function resolve_new_versions(ctx::Context, check_results)
             push!(get!(Vector{Any}, check_res.issues, ver),
                   NotOnLatestInfo(ver, latest, dependent, dependency))
         end
+        if !(uuid in latest_deps) && !get(arch_info["Pkg"], "required", false)
+            push!(get!(Vector{Any}, check_res.issues, ver), NotNeeded())
+        end
         if ver == old_version
             continue
         end
@@ -626,14 +653,16 @@ function scan(ctx::Context)
     messages = String[]
     check_results = Dict{Base.UUID,PackageVersionInfo}()
     npackages = length(ctx.packages_info)
+    latest_deps = Set{Base.UUID}()
     for (idx, (uuid, arch_info)) in enumerate(ctx.packages_info)
         pkgentry = ctx.registry[uuid]
         @info "($(idx)/$(npackages)) Checking $(pkgentry.name) [$uuid]"
         check_res = find_new_versions(ctx, uuid,
-                                      VersionNumber(arch_info["Status"]["version"]))
+                                      VersionNumber(arch_info["Status"]["version"]),
+                                      latest_deps)
         check_results[uuid] = check_res
     end
-    resolve_new_versions(ctx, check_results)
+    resolve_new_versions(ctx, check_results, latest_deps)
     @info "Collecting messages"
     for (uuid, arch_info) in ctx.packages_info
         collect_messages(ctx, uuid, check_results[uuid], messages)
