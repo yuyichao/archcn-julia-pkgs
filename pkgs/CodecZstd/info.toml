@@ -3,11 +3,4 @@ name = "CodecZstd"
 uuid = "6b39b394-51ab-5f42-8807-6242bab2b4c2"
 
 [Status]
-version = "0.7.2"
-
-[[Issues."0.7.2"]]
-dependent = ["H5Zzstd [f6f2d980-1ec6-471c-a70d-0270e22f1103]"]
-dependency = []
-type = "not_on_latest"
-version = "0.7.2"
-latest = "0.8.2"
+version = "0.8.2"
