@@ -159,3 +159,75 @@ pkg = "ImageIO"
 version = "0.6.7"
 dep = "TiffImages"
 depversion = "0.3, 0.4, 0.5, 0.6, 0.7, 0.8"
+
+[[Overrides.DepsVersion]]
+pkg = "BloqadeExpr"
+version = "0.2.1"
+dep = "Adapt"
+depversion = "3, 4"
+
+[[Overrides.DepsVersion]]
+pkg = "BloqadeKrylov"
+version = "0.2.0"
+dep = "Adapt"
+depversion = "3, 4"
+
+[[Overrides.DepsVersion]]
+pkg = "BloqadeODE"
+version = "0.2.1"
+dep = "Adapt"
+depversion = "3, 4"
+
+[[Overrides.DepsVersion]]
+pkg = "YaoSubspaceArrayReg"
+version = "0.2.0"
+dep = "Adapt"
+depversion = "3, 4"
+
+[[Overrides.DepsVersion]]
+pkg = "QuantumOpticsBase"
+version = "0.4.20"
+dep = "Arpack"
+depversion = "3.3, 4"
+
+[[Overrides.DepsVersion]]
+pkg = "YaoArrayRegister"
+version = "0.9.8"
+dep = "Adapt"
+depversion = "3, 4"
+
+[[Overrides.DepsVersion]]
+pkg = "Bracket"
+version = "0.8.1"
+dep = "CSV"
+depversion = "0.10"
+
+[[Overrides.DepsVersion]]
+pkg = "Bracket"
+version = "0.8.1"
+dep = "Compat"
+depversion = "4.10"
+
+[[Overrides.DepsVersion]]
+pkg = "Bracket"
+version = "0.8.1"
+dep = "HTTP"
+depversion = "1.10"
+
+[[Overrides.DepsVersion]]
+pkg = "Bracket"
+version = "0.8.1"
+dep = "JLD2"
+depversion = "0.4"
+
+[[Overrides.DepsVersion]]
+pkg = "Bracket"
+version = "0.8.1"
+dep = "JSON3"
+depversion = "1.14"
+
+[[Overrides.DepsVersion]]
+pkg = "Bracket"
+version = "0.8.1"
+dep = "OrderedCollections"
+depversion = "1.6"
