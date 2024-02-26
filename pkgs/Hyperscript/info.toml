@@ -3,11 +3,4 @@ name = "Hyperscript"
 uuid = "47d2ed2b-36de-50cf-bf87-49c2cf4b8b91"
 
 [Status]
-version = "0.0.4"
-
-[[Issues."0.0.4"]]
-dependent = ["JSServe [824d6782-a2ef-11e9-3a09-e5662e0c26f9]"]
-dependency = []
-type = "not_on_latest"
-version = "0.0.4"
-latest = "0.0.5"
+version = "0.0.5"
