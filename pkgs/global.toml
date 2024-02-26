@@ -255,3 +255,21 @@ pkg = "H5Zzstd"
 version = ">= 0.1"
 dep = "CodecZstd"
 depversion = ">= 0.7"
+
+[[Overrides.DepsVersion]]
+pkg = "HYPRE"
+version = ">= 1.5.0"
+dep = "CEnum"
+depversion = "0.3, 0.4"
+
+[[Overrides.DepsVersion]]
+pkg = "HYPRE"
+version = ">= 1.5.0"
+dep = "PartitionedArrays"
+depversion = "0.4, 0.5"
+
+[[Overrides.DepsVersion]]
+pkg = "ModelingToolkit"
+version = ">= 1.5.0"
+dep = "DynamicQuantities"
+depversion = "0.11, 0.12"
