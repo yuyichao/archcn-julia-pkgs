@@ -1,6 +1,7 @@
 [Pkg]
 name = "Bloqade"
 uuid = "bd27d05e-4ce1-5e79-84dd-c5d7d508bbe1"
+required = true
 
 [Status]
 version = "0.2.2"

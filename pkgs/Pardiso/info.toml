@@ -2,6 +2,7 @@
 name = "Pardiso"
 uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
 has_deps_build = true
+required = true
 
 [Status]
 version = "0.5.5"

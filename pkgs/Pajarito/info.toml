@@ -1,6 +1,7 @@
 [Pkg]
 name = "Pajarito"
 uuid = "2f354839-79df-5901-9f0a-cdb2aac6fe30"
+required = true
 
 [Status]
 version = "0.8.2"

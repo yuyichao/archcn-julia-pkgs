@@ -1,6 +1,7 @@
 [Pkg]
 name = "SIMDDualNumbers"
 uuid = "3cdde19b-5bb0-4aaf-8931-af3e248e098b"
+required = true
 
 [Status]
 version = "0.1.1"
