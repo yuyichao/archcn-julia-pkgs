@@ -26,6 +26,8 @@ type = "missing_deps"
     name = "ScientificTypes"
     uuid = "321657f4-b219-11e9-178b-2701a2544e81"
 [[Issues."0.11.3"]]
+dependent = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]"]
+dependency = []
 type = "not_on_latest"
 version = "0.11.3"
 latest = "0.12.1"

@@ -6,6 +6,8 @@ uuid = "61eb1bfa-7361-4325-ad38-22787b887f55"
 version = "0.25.0"
 
 [[Issues."0.25.0"]]
+dependent = ["Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9]"]
+dependency = []
 type = "not_on_latest"
 version = "0.25.0"
 latest = "0.26.1"

@@ -6,6 +6,8 @@ uuid = "fbe9abb3-538b-5e4e-ba9e-bc94f4f92ebc"
 version = "1.90.3"
 
 [[Issues."1.90.3"]]
+dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]"]
+dependency = []
 type = "not_on_latest"
 version = "1.90.3"
 latest = "1.90.4"

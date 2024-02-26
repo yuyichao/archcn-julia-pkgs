@@ -6,6 +6,8 @@ uuid = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
 version = "3.2.13"
 
 [[Issues."3.2.13"]]
+dependent = ["ImageBinarization [cbc4b850-ae4b-5111-9e64-df94c024a13d]", "IntervalRootFinding [d2bf35a9-74e0-55ec-b149-d360ff49b807]", "ODE [c030b06c-0b6d-57c2-b091-7029874bd033]"]
+dependency = []
 type = "not_on_latest"
 version = "3.2.13"
 latest = "4.0.6"

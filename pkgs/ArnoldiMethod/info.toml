@@ -6,6 +6,8 @@ uuid = "ec485272-7323-5ecc-a04f-4719b315124d"
 version = "0.2.0"
 
 [[Issues."0.2.0"]]
+dependent = ["Graphs [86223c79-3864-5bf0-83f7-82e725a168b6]"]
+dependency = []
 type = "not_on_latest"
 version = "0.2.0"
 latest = "0.4.0"
