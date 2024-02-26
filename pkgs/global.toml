@@ -147,3 +147,15 @@ pkg = "BloqadeSchema"
 version = "0.4.0"
 dep = "Braket"
 depversion = "0.7, 0.8"
+
+[[Overrides.DepsVersion]]
+pkg = "Graphs"
+version = "1.9.0"
+dep = "ArnoldiMethod"
+depversion = "0.1, 0.2, 0.3"
+
+[[Overrides.DepsVersion]]
+pkg = "ImageIO"
+version = "0.6.7"
+dep = "TiffImages"
+depversion = "0.3, 0.4, 0.5, 0.6, 0.7, 0.8"
