@@ -3,11 +3,4 @@ name = "CEnum"
 uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"
 
 [Status]
-version = "0.4.2"
-
-[[Issues."0.4.2"]]
-dependent = ["HYPRE [b5ffcf37-a2bd-41ab-a3da-4bd9bc8ad771]"]
-dependency = []
-type = "not_on_latest"
-version = "0.4.2"
-latest = "0.5.0"
+version = "0.5.0"
