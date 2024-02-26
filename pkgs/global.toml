@@ -243,3 +243,15 @@ pkg = "Braket"
 version = "0.8.1"
 dep = "OrderedCollections"
 depversion = "1.6"
+
+[[Overrides.DepsVersion]]
+pkg = "H5Zbzip2"
+version = ">= 0.1"
+dep = "CodecBzip2"
+depversion = ">= 0.7"
+
+[[Overrides.DepsVersion]]
+pkg = "H5Zzstd"
+version = ">= 0.1"
+dep = "CodecZstd"
+depversion = ">= 0.7"
