@@ -3,11 +3,4 @@ name = "HTTP"
 uuid = "cd3eb016-35fb-5094-929b-558a96fad6f3"
 
 [Status]
-version = "1.10.0"
-
-[[Issues."1.10.0"]]
-dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]"]
-dependency = []
-type = "not_on_latest"
-version = "1.10.0"
-latest = "1.10.2"
+version = "1.10.2"

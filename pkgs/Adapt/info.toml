@@ -6,7 +6,7 @@ uuid = "79e6a3ab-5dfb-504d-930d-738a2a938a0e"
 version = "3.7.2"
 
 [[Issues."3.7.2"]]
-dependent = ["BloqadeExpr [bd27d05e-4ce1-5e79-84dd-c5d7d508abe2]", "BloqadeKrylov [bd27d05e-4cd1-5e79-84dd-c5d7d508ade2]", "BloqadeODE [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe5]", "GPUArrays [0c68f7d7-f131-5f86-a1c3-88cf8149b2d7]", "GPUArraysCore [46192b85-c4d5-4398-a991-12ede77f4527]", "QuantumOpticsBase [4f57444f-1401-5e15-980d-4471b28d5678]", "YaoArrayRegister [e600142f-9330-5003-8abb-0ebd767abc51]", "YaoSubspaceArrayReg [bd27d05e-4ce1-5e79-84dd-c5d7d508ade2]"]
+dependent = ["GPUArrays [0c68f7d7-f131-5f86-a1c3-88cf8149b2d7]", "GPUArraysCore [46192b85-c4d5-4398-a991-12ede77f4527]", "QuantumOpticsBase [4f57444f-1401-5e15-980d-4471b28d5678]"]
 dependency = []
 type = "not_on_latest"
 version = "3.7.2"

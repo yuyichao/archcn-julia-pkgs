@@ -3,11 +3,4 @@ name = "JSON3"
 uuid = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
 
 [Status]
-version = "1.13.2"
-
-[[Issues."1.13.2"]]
-dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]"]
-dependency = []
-type = "not_on_latest"
-version = "1.13.2"
-latest = "1.14.0"
+version = "1.14.0"

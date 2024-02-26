@@ -3,11 +3,4 @@ name = "CSV"
 uuid = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 
 [Status]
-version = "0.10.11"
-
-[[Issues."0.10.11"]]
-dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]"]
-dependency = []
-type = "not_on_latest"
-version = "0.10.11"
-latest = "0.10.12"
+version = "0.10.12"
