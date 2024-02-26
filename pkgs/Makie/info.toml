@@ -5,68 +5,9 @@ uuid = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
 [Status]
 version = "0.19.12"
 
-[[Issues."0.20.0"]]
-type = "missing_deps"
-
-    [[Issues."0.20.0".deps]]
-    name = "FilePaths"
-    uuid = "8fc22ac5-c921-52a6-82fd-178b2807b824"
-
-[[Issues."0.20.6"]]
-type = "missing_deps"
-
-    [[Issues."0.20.6".deps]]
-    name = "FilePaths"
-    uuid = "8fc22ac5-c921-52a6-82fd-178b2807b824"
-
-[[Issues."0.20.8"]]
-type = "missing_deps"
-
-    [[Issues."0.20.8".deps]]
-    name = "FilePaths"
-    uuid = "8fc22ac5-c921-52a6-82fd-178b2807b824"
-    [[Issues."0.20.8".deps]]
-    name = "Format"
-    uuid = "1fa38f19-a742-5d3f-a2b9-30dd87b9d5f8"
-
-[[Issues."0.20.5"]]
-type = "missing_deps"
-
-    [[Issues."0.20.5".deps]]
-    name = "FilePaths"
-    uuid = "8fc22ac5-c921-52a6-82fd-178b2807b824"
-
-[[Issues."0.20.1"]]
-type = "missing_deps"
-
-    [[Issues."0.20.1".deps]]
-    name = "FilePaths"
-    uuid = "8fc22ac5-c921-52a6-82fd-178b2807b824"
-
-[[Issues."0.20.2"]]
-type = "missing_deps"
-
-    [[Issues."0.20.2".deps]]
-    name = "FilePaths"
-    uuid = "8fc22ac5-c921-52a6-82fd-178b2807b824"
-
-[[Issues."0.20.7"]]
-type = "missing_deps"
-
-    [[Issues."0.20.7".deps]]
-    name = "FilePaths"
-    uuid = "8fc22ac5-c921-52a6-82fd-178b2807b824"
-
-[[Issues."0.20.3"]]
-type = "missing_deps"
-
-    [[Issues."0.20.3".deps]]
-    name = "FilePaths"
-    uuid = "8fc22ac5-c921-52a6-82fd-178b2807b824"
-
-[[Issues."0.20.4"]]
-type = "missing_deps"
-
-    [[Issues."0.20.4".deps]]
-    name = "FilePaths"
-    uuid = "8fc22ac5-c921-52a6-82fd-178b2807b824"
+[[Issues."0.19.12"]]
+dependent = ["WGLMakie [276b4fcb-3e11-5398-bf8b-a0c2d153d008]"]
+dependency = ["GridLayoutBase [3955a311-db13-416c-9275-1d80ed98e5e9]", "MakieCore [20f20a25-4f0e-4fdf-b5d1-57303727442b]"]
+type = "not_on_latest"
+version = "0.19.12"
+latest = "0.20.8"
