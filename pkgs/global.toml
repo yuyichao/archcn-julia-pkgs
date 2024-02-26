@@ -187,7 +187,7 @@ depversion = "3, 4"
 [[Overrides.DepsVersion]]
 pkg = "QuantumOpticsBase"
 version = "0.4.20"
-dep = "Arpack"
+dep = "Adapt"
 depversion = "3.3, 4"
 
 [[Overrides.DepsVersion]]
@@ -195,6 +195,12 @@ pkg = "YaoArrayRegister"
 version = "0.9.8"
 dep = "Adapt"
 depversion = "3, 4"
+
+[[Overrides.DepsVersion]]
+pkg = "Braket"
+version = "0.8.1"
+dep = "AWS"
+depversion = "1.90.3"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
@@ -207,6 +213,12 @@ pkg = "Braket"
 version = "0.8.1"
 dep = "Compat"
 depversion = "4.10"
+
+[[Overrides.DepsVersion]]
+pkg = "Braket"
+version = "0.8.1"
+dep = "DataStructures"
+depversion = "0.18.15"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
