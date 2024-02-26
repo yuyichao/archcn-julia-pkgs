@@ -3,11 +3,4 @@ name = "PartitionedArrays"
 uuid = "5a9dfac6-5c52-46f7-8278-5e2210713be9"
 
 [Status]
-version = "0.3.4"
-
-[[Issues."0.3.4"]]
-dependent = ["HYPRE [b5ffcf37-a2bd-41ab-a3da-4bd9bc8ad771]"]
-dependency = []
-type = "not_on_latest"
-version = "0.3.4"
-latest = "0.4.4"
+version = "0.4.4"
