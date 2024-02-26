@@ -2,6 +2,7 @@
 name = "Qt5Base_jll"
 uuid = "ea2cea3b-5b76-57ae-a6ef-0a8af62496e1"
 is_jll = true
+required = true
 
 [Status]
 version = "5.15.3+2"
