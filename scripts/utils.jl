@@ -327,8 +327,8 @@ end
 struct NotOnLatestInfo
     version::VersionNumber
     latest::VersionNumber
-    dependent::Vector{PkgId}
-    dependency::Vector{PkgId}
+    dependent::Vector{Base.PkgId}
+    dependency::Vector{Base.PkgId}
 end
 
 function todict(ctx::Context, info::NotOnLatestInfo)
@@ -557,17 +557,17 @@ function resolve_new_versions(ctx::Context, check_results)
         check_res = check_results[uuid]
         latest = check_res.latest
         if ver != latest && latest in check_res.good_versions
-            dependent = PkgId[]
-            dependency = PkgId[]
+            dependent = Base.PkgId[]
+            dependency = Base.PkgId[]
             for (dep, verspec) in compat[uuid][latest]
                 if !haskey(dep, solution) || !(solution[dep] in verspec)
-                    push!(dependency, dep)
+                    push!(dependency, Base.PkgId(uuid_to_name[dep], dep))
                 end
             end
             for (dep, depver) in solution
                 if !(latest in get(compat[dep][depver], uuid,
                                    Pkg.Versions.VersionSpec("*")))
-                    push!(dependent, dep)
+                    push!(dependent, Base.PkgId(uuid_to_name[dep], dep))
                 end
             end
             sort!(dependent)
