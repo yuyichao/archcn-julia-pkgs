@@ -197,37 +197,37 @@ dep = "Adapt"
 depversion = "3, 4"
 
 [[Overrides.DepsVersion]]
-pkg = "Bracket"
+pkg = "Braket"
 version = "0.8.1"
 dep = "CSV"
 depversion = "0.10"
 
 [[Overrides.DepsVersion]]
-pkg = "Bracket"
+pkg = "Braket"
 version = "0.8.1"
 dep = "Compat"
 depversion = "4.10"
 
 [[Overrides.DepsVersion]]
-pkg = "Bracket"
+pkg = "Braket"
 version = "0.8.1"
 dep = "HTTP"
 depversion = "1.10"
 
 [[Overrides.DepsVersion]]
-pkg = "Bracket"
+pkg = "Braket"
 version = "0.8.1"
 dep = "JLD2"
 depversion = "0.4"
 
 [[Overrides.DepsVersion]]
-pkg = "Bracket"
+pkg = "Braket"
 version = "0.8.1"
 dep = "JSON3"
 depversion = "1.14"
 
 [[Overrides.DepsVersion]]
-pkg = "Bracket"
+pkg = "Braket"
 version = "0.8.1"
 dep = "OrderedCollections"
 depversion = "1.6"
