@@ -260,13 +260,13 @@ depversion = ">= 0.7"
 pkg = "HYPRE"
 version = ">= 1.5.0"
 dep = "CEnum"
-depversion = "0.3, 0.4"
+depversion = "0.4, 0.5"
 
 [[Overrides.DepsVersion]]
 pkg = "HYPRE"
 version = ">= 1.5.0"
 dep = "PartitionedArrays"
-depversion = "0.4, 0.5"
+depversion = "0.3, 0.4"
 
 [[Overrides.DepsVersion]]
 pkg = "ModelingToolkit"
