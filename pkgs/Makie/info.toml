@@ -3,11 +3,4 @@ name = "Makie"
 uuid = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
 
 [Status]
-version = "0.19.12"
-
-[[Issues."0.19.12"]]
-dependent = ["WGLMakie [276b4fcb-3e11-5398-bf8b-a0c2d153d008]"]
-dependency = ["GridLayoutBase [3955a311-db13-416c-9275-1d80ed98e5e9]", "MakieCore [20f20a25-4f0e-4fdf-b5d1-57303727442b]"]
-type = "not_on_latest"
-version = "0.19.12"
-latest = "0.20.8"
+version = "0.20.8"
