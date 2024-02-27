@@ -1,6 +1,7 @@
 [Pkg]
 name = "BFloat16s"
 uuid = "ab4f0b2a-ad5b-11e8-123f-65d77653426b"
+required = true
 
 [Status]
 version = "0.5.0"
