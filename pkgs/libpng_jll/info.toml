@@ -4,7 +4,7 @@ uuid = "b53b4c65-9356-5827-b1ea-8c7a1a84506f"
 is_jll = true
 
 [Status]
-version = "1.6.42+0"
+version = "1.6.43+0"
 
 [JLL.products]
 library = ["libpng"]
