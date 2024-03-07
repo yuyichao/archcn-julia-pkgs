@@ -71,6 +71,12 @@ dep = "Arpack"
 depversion = "0.5"
 
 [[Overrides.DepsVersion]]
+pkg = "QuantumOptics"
+version = ">= 1.0"
+dep = "DiffEqCallbacks"
+depversion = "2, 3"
+
+[[Overrides.DepsVersion]]
 pkg = "JLD"
 version = ">= 0.13"
 dep = "HDF5"
@@ -93,6 +99,12 @@ pkg = "BloqadeODE"
 version = ">= 0.1"
 dep = "SciMLBase"
 depversion = "1, 2"
+
+[[Overrides.DepsVersion]]
+pkg = "BloqadeODE"
+version = ">= 0.1"
+dep = "DiffEqCallbacks"
+depversion = "2, 3"
 
 [[Overrides.DepsVersion]]
 pkg = "BloqadeWaveforms"
