@@ -5,4 +5,4 @@ required = true
 has_deps_build = true
 
 [Status]
-version = "0.5.5"
+version = "0.5.6"

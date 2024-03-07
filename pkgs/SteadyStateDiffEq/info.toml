@@ -4,3 +4,10 @@ uuid = "9672c7b4-1e72-59bd-8a11-6ac3964bc41f"
 
 [Status]
 version = "2.0.1"
+
+[[Issues."2.0.1"]]
+dependent = []
+dependency = ["DiffEqCallbacks [459566f4-90b8-5000-8ac3-15dfb0a30def]"]
+type = "not_on_latest"
+version = "2.0.1"
+latest = "2.1.0"
