@@ -5,3 +5,17 @@ required = true
 
 [Status]
 version = "0.25.8"
+
+[[Issues."0.26.0"]]
+type = "missing_deps"
+
+    [[Issues."0.26.0".deps]]
+    name = "Interfaces"
+    uuid = "85a1e053-f937-4924-92a5-1367d23b7b87"
+
+[[Issues."0.26.1"]]
+type = "missing_deps"
+
+    [[Issues."0.26.1".deps]]
+    name = "Interfaces"
+    uuid = "85a1e053-f937-4924-92a5-1367d23b7b87"

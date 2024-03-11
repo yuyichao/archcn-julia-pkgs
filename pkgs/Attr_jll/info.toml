@@ -4,7 +4,7 @@ uuid = "1fd713ca-387f-5abc-8002-d8b8b1623b73"
 is_jll = true
 
 [Status]
-version = "2.5.1+0"
+version = "2.5.2+0"
 
 [JLL.products]
 library = ["attr"]
