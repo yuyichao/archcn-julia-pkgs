@@ -5,9 +5,22 @@ uuid = "06fc5a27-2a28-4c7c-a15d-362465fb6821"
 [Status]
 version = "0.12.3"
 
+[[Issues."0.13.0"]]
+type = "missing_deps"
+
+    [[Issues."0.13.0".weak_deps]]
+    name = "ScientificTypes"
+    uuid = "321657f4-b219-11e9-178b-2701a2544e81"
+
 [[Issues."0.12.3"]]
 type = "missing_deps"
 
     [[Issues."0.12.3".weak_deps]]
     name = "ScientificTypes"
     uuid = "321657f4-b219-11e9-178b-2701a2544e81"
+[[Issues."0.12.3"]]
+dependent = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]"]
+dependency = []
+type = "not_on_latest"
+version = "0.12.3"
+latest = "0.13.0"

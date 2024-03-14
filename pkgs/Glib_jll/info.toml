@@ -4,7 +4,7 @@ uuid = "7746bdde-850d-59dc-9ae8-88ece973131d"
 is_jll = true
 
 [Status]
-version = "2.78.3+0"
+version = "2.80.0+0"
 
 [JLL.products]
 library = ["libgio", "libglib", "libgmodule", "libgobject", "libgthread"]
