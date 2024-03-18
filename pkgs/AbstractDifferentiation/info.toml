@@ -1,0 +1,6 @@
+[Pkg]
+name = "AbstractDifferentiation"
+uuid = "c29ec348-61ec-40c8-8164-b8c60e9d9f3d"
+
+[Status]
+version = "0.5.3"

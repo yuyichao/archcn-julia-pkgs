@@ -1,0 +1,7 @@
+[Pkg]
+name = "VideoIO"
+uuid = "d6d074c3-1acf-5d4c-9a43-ef38773959a2"
+required = true
+
+[Status]
+version = "1.1.0"
