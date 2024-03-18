@@ -5,10 +5,3 @@ required = true
 
 [Status]
 version = "3.24.0"
-
-[[Issues."3.24.0"]]
-type = "missing_deps"
-
-    [[Issues."3.24.0".deps]]
-    name = "OptimizationBase"
-    uuid = "bca83a33-5cc9-4baa-983d-23429ab6bcbb"

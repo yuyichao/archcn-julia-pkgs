@@ -4,3 +4,10 @@ uuid = "c29ec348-61ec-40c8-8164-b8c60e9d9f3d"
 
 [Status]
 version = "0.5.3"
+
+[[Issues."0.5.3"]]
+dependent = ["ExponentialAction [e24c0720-ea99-47e8-929e-571b494574d3]"]
+dependency = []
+type = "not_on_latest"
+version = "0.5.3"
+latest = "0.6.2"
