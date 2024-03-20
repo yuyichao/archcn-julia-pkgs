@@ -1,0 +1,8 @@
+[Pkg]
+name = "Clang"
+has_artifacts = true
+uuid = "40e3b903-d033-50b4-a0cc-940c62c95e31"
+required = true
+
+[Status]
+version = "0.17.8"
