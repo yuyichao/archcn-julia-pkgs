@@ -40,11 +40,12 @@ jobs:
         id: check
         run: julia scripts/check_update.jl
       - name: Send notification
-        uses: cinotify/github-action@main
+        uses: cinotify/github-action@v1
         if: ${{ steps.check.outputs.has_messages == 1 }}
         with:
           to: 'yyc1992@gmail.com'
           subject: 'Julia package update results'
+          type: 'text/plain'
           body: ${{ steps.check.outputs.messages }}
       - name: Commit changes
         if: ${{ steps.check.outputs.has_change == 1 }}
