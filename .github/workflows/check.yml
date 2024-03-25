@@ -40,7 +40,8 @@ jobs:
         id: check
         run: julia scripts/check_update.jl
       - name: Send notification
-        uses: cinotify/github-action@v1
+        uses: cinotify/github-action@main
+        continue-on-error: true
         if: ${{ steps.check.outputs.has_messages == 1 }}
         with:
           to: 'yyc1992@gmail.com'
