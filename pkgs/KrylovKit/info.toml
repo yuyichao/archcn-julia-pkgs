@@ -5,6 +5,13 @@ uuid = "0b1a1467-8014-51b9-945f-bf0ae24f4b77"
 [Status]
 version = "0.6.1"
 
+[[Issues."0.7.1"]]
+type = "missing_deps"
+
+    [[Issues."0.7.1".deps]]
+    name = "VectorInterface"
+    uuid = "409d34a3-91d5-4945-b6ec-7529ddf182d8"
+
 [[Issues."0.7.0"]]
 type = "missing_deps"
 

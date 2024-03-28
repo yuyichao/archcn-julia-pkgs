@@ -11,4 +11,4 @@ dependent = ["ImageIO [82e4d734-157c-48bb-816b-45c225c6df19]"]
 dependency = []
 type = "not_on_latest"
 version = "0.8.0"
-latest = "0.9.0"
+latest = "0.9.1"

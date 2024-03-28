@@ -3,11 +3,24 @@ name = "ModelingToolkit"
 uuid = "961ee093-0014-501f-94e3-6117800e7a78"
 
 [Status]
-version = "9.7.0"
+version = "9.7.1"
 
-[[Issues."9.7.0"]]
+[[Issues."9.7.1"]]
 type = "missing_deps"
 
-    [[Issues."9.7.0".weak_deps]]
+    [[Issues."9.7.1".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+[[Issues."9.7.1"]]
+dependent = []
+dependency = ["Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
+type = "not_on_latest"
+version = "9.7.1"
+latest = "9.8.0"
+
+[[Issues."9.8.0"]]
+type = "missing_deps"
+
+    [[Issues."9.8.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
