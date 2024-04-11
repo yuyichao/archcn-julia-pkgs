@@ -3,11 +3,4 @@ name = "EnzymeCore"
 uuid = "f151be2c-9106-41f4-ab19-57ee4f262869"
 
 [Status]
-version = "0.6.5"
-
-[[Issues."0.6.5"]]
-dependent = ["Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9]"]
-dependency = []
-type = "not_on_latest"
-version = "0.6.5"
-latest = "0.7.1"
+version = "0.7.2"

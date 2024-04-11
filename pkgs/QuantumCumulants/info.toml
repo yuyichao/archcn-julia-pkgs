@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.2.27"
+
+[[Issues."0.2.27"]]
+dependent = []
+dependency = ["TermInterface [8ea1fca8-c5ef-4a55-8b96-4e9afe9c9a3c]"]
+type = "not_on_latest"
+version = "0.2.27"
+latest = "0.2.28"

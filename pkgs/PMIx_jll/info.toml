@@ -4,7 +4,7 @@ uuid = "32165bc3-0280-59bc-8c0b-c33b6203efab"
 is_jll = true
 
 [Status]
-version = "4.2.7+0"
+version = "4.2.9+0"
 
 [JLL.products]
 executable = ["pmix_info"]
