@@ -285,3 +285,15 @@ pkg = "ModelingToolkit"
 version = ">= 1.5.0"
 dep = "DynamicQuantities"
 depversion = "0.11, 0.12"
+
+[[Overrides.DepsVersion]]
+pkg = "QuantumSymbolics"
+version = ">= 0.2.7"
+dep = "TermInterface"
+depversion = "0.3, 0.4"
+
+[[Overrides.DepsVersion]]
+pkg = "QuantumSavory"
+version = ">= 0.3.3"
+dep = "QuantumClifford"
+depversion = "0.8, 0.9"
