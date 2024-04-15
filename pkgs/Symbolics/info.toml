@@ -4,14 +4,14 @@ uuid = "0c5d862f-8b57-4792-8d23-62f2024744c7"
 required = true
 
 [Status]
-version = "5.27.1"
+version = "5.28.0"
 
-[[Issues."5.27.1"]]
+[[Issues."5.28.0"]]
 type = "missing_deps"
 
-    [[Issues."5.27.1".weak_deps]]
+    [[Issues."5.28.0".weak_deps]]
     name = "LuxCore"
     uuid = "bb33d45b-7691-41d6-9220-0943567d0623"
-    [[Issues."5.27.1".weak_deps]]
+    [[Issues."5.28.0".weak_deps]]
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
