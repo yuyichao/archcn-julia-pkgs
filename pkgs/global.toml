@@ -119,18 +119,6 @@ dep = "UnicodePlots"
 depversion = ">= 2"
 
 [[Overrides.DepsVersion]]
-pkg = "QuantumCumulants"
-version = ">= 0.1"
-dep = "Latexify"
-depversion = ">= 0.13"
-
-[[Overrides.DepsVersion]]
-pkg = "QuantumCumulants"
-version = ">= 0.1"
-dep = "ModelingToolkit"
-depversion = ">= 7"
-
-[[Overrides.DepsVersion]]
 pkg = "QuantumClifford"
 version = ">= 0.8"
 dep = "Nemo"
