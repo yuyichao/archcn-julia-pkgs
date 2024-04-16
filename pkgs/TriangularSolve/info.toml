@@ -3,11 +3,4 @@ name = "TriangularSolve"
 uuid = "d5829a12-d9aa-46ab-831f-fb7c9ab06edf"
 
 [Status]
-version = "0.1.21"
-
-[[Issues."0.1.21"]]
-dependent = ["RecursiveFactorization [f2c3362d-daeb-58d1-803e-2bc74f2840b4]"]
-dependency = []
-type = "not_on_latest"
-version = "0.1.21"
-latest = "0.2.0"
+version = "0.2.0"
