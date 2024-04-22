@@ -4,11 +4,4 @@ uuid = "31c24e10-a181-5473-b8eb-7969acd0382f"
 required = true
 
 [Status]
-version = "0.25.107"
-
-[[Issues."0.25.108"]]
-type = "missing_deps"
-
-    [[Issues."0.25.108".deps]]
-    name = "AliasTables"
-    uuid = "66dad0bd-aa9a-41b7-9441-69ab47430ed8"
+version = "0.25.108"
