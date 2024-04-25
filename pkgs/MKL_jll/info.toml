@@ -8,3 +8,10 @@ version = "2024.0.0+0"
 
 [JLL.products]
 library = ["libmkl_core", "libmkl_rt"]
+
+[[Issues."2024.1.0+0"]]
+type = "missing_deps"
+
+    [[Issues."2024.1.0+0".deps]]
+    name = "oneTBB_jll"
+    uuid = "1317d2d5-d96f-522e-a858-c73665f53c3e"
