@@ -1,6 +1,5 @@
 [Pkg]
 name = "TimeZones"
-has_artifacts = true
 uuid = "f269a46b-ccf7-5d73-abea-4c690281aa53"
 
 [Status]
