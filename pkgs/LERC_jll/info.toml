@@ -4,7 +4,7 @@ uuid = "88015f11-f218-50d7-93a8-a6af411a945d"
 is_jll = true
 
 [Status]
-version = "3.0.0+1"
+version = "4.0.0+0"
 
 [JLL.products]
 library = ["libLerc"]
