@@ -8,3 +8,6 @@ version = "0.401.100+0"
 
 [JLL.products]
 library = ["libcalcium"]
+
+[[Issues."0.401.100+0"]]
+type = "not_needed"

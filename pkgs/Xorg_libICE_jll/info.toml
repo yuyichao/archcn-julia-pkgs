@@ -7,3 +7,9 @@ is_jll = true
 version = "1.0.10+1"
 
 [JLL.products]
+
+[[Issues."1.1.1+0"]]
+type = "jll_changes"
+
+    [Issues."1.1.1+0".add]
+    library = ["libICE"]

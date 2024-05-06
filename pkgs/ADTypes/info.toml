@@ -6,8 +6,8 @@ uuid = "47edcb42-4c32-4615-8424-f2b9edc5f35b"
 version = "0.2.7"
 
 [[Issues."0.2.7"]]
-dependent = ["BoundaryValueDiffEq [764a87c0-6b3e-53db-9096-fe964310641d]", "NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]", "Optimization [7f7a1694-90dd-40f0-9382-eb1efda571ba]", "OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]", "OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed]", "SimpleNonlinearSolve [727e6d20-b764-4bd8-a329-72de5adea6c7]", "SparseDiffTools [47a9eef4-7e08-11e9-0b38-333d64bd3804]"]
+dependent = ["BoundaryValueDiffEq [764a87c0-6b3e-53db-9096-fe964310641d]", "NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]", "Optimization [7f7a1694-90dd-40f0-9382-eb1efda571ba]", "OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]", "SparseDiffTools [47a9eef4-7e08-11e9-0b38-333d64bd3804]"]
 dependency = []
 type = "not_on_latest"
 version = "0.2.7"
-latest = "1.0.0"
+latest = "1.1.0"
