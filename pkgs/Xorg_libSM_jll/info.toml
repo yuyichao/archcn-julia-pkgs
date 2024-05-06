@@ -7,9 +7,4 @@ is_jll = true
 version = "1.2.3+0"
 
 [JLL.products]
-
-[[Issues."1.2.4+0"]]
-type = "jll_changes"
-
-    [Issues."1.2.4+0".add]
-    library = ["libSM"]
+library = ["libSM"]
