@@ -10,4 +10,4 @@ dependent = ["Groebner [0b43b601-686d-58a3-8a1c-6623616c7cd4]", "Nemo [2edaba10-
 dependency = []
 type = "not_on_latest"
 version = "0.40.9"
-latest = "0.41.3"
+latest = "0.41.4"

@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "3.24.3"
+
+[[Issues."3.25.0"]]
+type = "missing_deps"
+
+    [[Issues."3.25.0".deps]]
+    name = "LBFGSB"
+    uuid = "5be7bae1-8223-5378-bac3-9e7378a2f6e6"

@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.9.10"
+
+[[Issues."0.9.10"]]
+dependent = []
+dependency = ["Makie [ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a]"]
+type = "not_on_latest"
+version = "0.9.10"
+latest = "0.10.0"

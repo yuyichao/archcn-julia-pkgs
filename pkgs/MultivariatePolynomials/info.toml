@@ -3,4 +3,4 @@ name = "MultivariatePolynomials"
 uuid = "102ac46a-7ee4-5c85-9060-abc95bfdeaa3"
 
 [Status]
-version = "0.5.4"
+version = "0.5.5"
