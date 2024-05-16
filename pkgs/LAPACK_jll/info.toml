@@ -4,7 +4,7 @@ uuid = "51474c39-65e3-53ba-86ba-03b1b862ec14"
 is_jll = true
 
 [Status]
-version = "3.11.0+0"
+version = "3.12.0+0"
 
 [JLL.products]
 library = ["liblapack"]
