@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "1.9.3"
+
+[[Issues."1.9.3"]]
+dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]"]
+dependency = []
+type = "not_on_latest"
+version = "1.9.3"
+latest = "1.9.4"

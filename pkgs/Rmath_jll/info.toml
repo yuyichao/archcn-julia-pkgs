@@ -4,7 +4,7 @@ uuid = "f50d1b31-88e8-58de-be2c-1cc44531875f"
 is_jll = true
 
 [Status]
-version = "0.4.0+0"
+version = "0.4.2+0"
 
 [JLL.products]
 library = ["libRmath"]
