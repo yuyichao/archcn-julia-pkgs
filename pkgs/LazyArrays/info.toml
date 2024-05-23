@@ -4,3 +4,10 @@ uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
 
 [Status]
 version = "1.10.0"
+
+[[Issues."1.10.0"]]
+dependent = ["FastAlmostBandedMatrices [9d29842c-ecb8-4973-b1e9-a27b1157504e]", "LinearSolve [7ed4a6bd-45f5-4d41-b270-4a48e9bafcae]", "NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]"]
+dependency = []
+type = "not_on_latest"
+version = "1.10.0"
+latest = "2.0.2"

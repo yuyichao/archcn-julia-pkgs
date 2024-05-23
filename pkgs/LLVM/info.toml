@@ -6,8 +6,8 @@ uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
 version = "6.6.3"
 
 [[Issues."6.6.3"]]
-dependent = ["GPUArrays [0c68f7d7-f131-5f86-a1c3-88cf8149b2d7]", "GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55]", "UnsafeAtomicsLLVM [d80eeb9a-aca5-4d75-85e5-170c8b632249]"]
+dependent = ["GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55]"]
 dependency = []
 type = "not_on_latest"
 version = "6.6.3"
-latest = "7.0.0"
+latest = "7.1.0"
