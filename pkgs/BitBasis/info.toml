@@ -10,4 +10,4 @@ dependent = ["BloqadeExpr [bd27d05e-4ce1-5e79-84dd-c5d7d508abe2]", "BloqadeMIS [
 dependency = []
 type = "not_on_latest"
 version = "0.8.1"
-latest = "0.9.1"
+latest = "0.9.2"

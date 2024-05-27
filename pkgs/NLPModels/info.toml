@@ -10,4 +10,4 @@ dependent = ["MadNLP [2621e9c9-9eb4-46b1-8089-e8c72242dfb6]"]
 dependency = []
 type = "not_on_latest"
 version = "0.20.0"
-latest = "0.21.0"
+latest = "0.21.1"

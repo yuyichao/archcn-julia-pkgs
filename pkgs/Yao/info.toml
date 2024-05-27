@@ -18,3 +18,17 @@ type = "missing_deps"
     [[Issues."0.8.14".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+
+[[Issues."0.9.0"]]
+type = "missing_deps"
+
+    [[Issues."0.9.0".deps]]
+    name = "YaoPlots"
+    uuid = "32cfe2d9-419e-45f2-8191-2267705d8dbc"
+    [[Issues."0.9.0".deps]]
+    name = "YaoToEinsum"
+    uuid = "9b173c7b-dc24-4dc5-a0e1-adab2f7b6ba9"
+
+    [[Issues."0.9.0".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"

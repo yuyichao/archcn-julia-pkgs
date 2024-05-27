@@ -3,11 +3,4 @@ name = "LLVM"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
 
 [Status]
-version = "6.6.3"
-
-[[Issues."6.6.3"]]
-dependent = ["GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55]"]
-dependency = []
-type = "not_on_latest"
-version = "6.6.3"
-latest = "7.1.0"
+version = "7.1.0"

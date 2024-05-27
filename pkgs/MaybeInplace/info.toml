@@ -3,4 +3,4 @@ name = "MaybeInplace"
 uuid = "bb5d69b7-63fc-4a16-80bd-7e42200c7bdb"
 
 [Status]
-version = "0.1.2"
+version = "0.1.3"

@@ -4,7 +4,7 @@ uuid = "3428059b-622b-5399-b16f-d347a77089a4"
 is_jll = true
 
 [Status]
-version = "0.11.2+0"
+version = "0.12.0+0"
 
 [JLL.products]
 library = ["libsymengine"]
