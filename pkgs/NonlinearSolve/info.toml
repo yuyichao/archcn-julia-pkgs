@@ -65,6 +65,25 @@ type = "missing_deps"
     name = "SpeedMapping"
     uuid = "f1835b91-879b-4a3f-a438-e4baacf14412"
 
+[[Issues."3.12.4"]]
+type = "missing_deps"
+
+    [[Issues."3.12.4".weak_deps]]
+    name = "FixedPointAcceleration"
+    uuid = "817d07cb-a79a-5c30-9a31-890123675176"
+    [[Issues."3.12.4".weak_deps]]
+    name = "MINPACK"
+    uuid = "4854310b-de5a-5eb6-a2a5-c1dee2bd17f9"
+    [[Issues."3.12.4".weak_deps]]
+    name = "NLSolvers"
+    uuid = "337daf1e-9722-11e9-073e-8b9effe078ba"
+    [[Issues."3.12.4".weak_deps]]
+    name = "SIAMFANLEquations"
+    uuid = "084e46ad-d928-497d-ad5e-07fa361a48c4"
+    [[Issues."3.12.4".weak_deps]]
+    name = "SpeedMapping"
+    uuid = "f1835b91-879b-4a3f-a438-e4baacf14412"
+
 [[Issues."3.11.0"]]
 type = "missing_deps"
 
@@ -88,7 +107,7 @@ dependent = []
 dependency = ["ADTypes [47edcb42-4c32-4615-8424-f2b9edc5f35b]", "SparseDiffTools [47a9eef4-7e08-11e9-0b38-333d64bd3804]"]
 type = "not_on_latest"
 version = "3.11.0"
-latest = "3.12.3"
+latest = "3.12.4"
 
 [[Issues."3.12.3"]]
 type = "missing_deps"
