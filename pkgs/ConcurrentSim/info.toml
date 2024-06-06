@@ -3,4 +3,4 @@ name = "ConcurrentSim"
 uuid = "6ed1e86c-fcaf-46a9-97e0-2b26a2cdb499"
 
 [Status]
-version = "1.4.0"
+version = "1.4.1"
