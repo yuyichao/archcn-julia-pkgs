@@ -16,6 +16,16 @@ type = "missing_deps"
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 
+[[Issues."5.30.3"]]
+type = "missing_deps"
+
+    [[Issues."5.30.3".weak_deps]]
+    name = "LuxCore"
+    uuid = "bb33d45b-7691-41d6-9220-0943567d0623"
+    [[Issues."5.30.3".weak_deps]]
+    name = "SymPy"
+    uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+
 [[Issues."5.30.0"]]
 type = "missing_deps"
 
@@ -23,6 +33,16 @@ type = "missing_deps"
     name = "LuxCore"
     uuid = "bb33d45b-7691-41d6-9220-0943567d0623"
     [[Issues."5.30.0".weak_deps]]
+    name = "SymPy"
+    uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+
+[[Issues."5.30.2"]]
+type = "missing_deps"
+
+    [[Issues."5.30.2".weak_deps]]
+    name = "LuxCore"
+    uuid = "bb33d45b-7691-41d6-9220-0943567d0623"
+    [[Issues."5.30.2".weak_deps]]
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 
@@ -40,7 +60,7 @@ dependent = []
 dependency = ["ADTypes [47edcb42-4c32-4615-8424-f2b9edc5f35b]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
 type = "not_on_latest"
 version = "5.28.0"
-latest = "5.30.1"
+latest = "5.30.3"
 
 [[Issues."5.30.1"]]
 type = "missing_deps"

@@ -10,4 +10,4 @@ dependent = ["ExactPredicates [429591f6-91af-11e9-00e2-59fbe8cec110]", "Interval
 dependency = []
 type = "not_on_latest"
 version = "0.20.9"
-latest = "0.22.13"
+latest = "0.22.14"

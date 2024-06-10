@@ -4,3 +4,10 @@ uuid = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
 
 [Status]
 version = "6.80.1"
+
+[[Issues."6.80.1"]]
+dependent = []
+dependency = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]"]
+type = "not_on_latest"
+version = "6.80.1"
+latest = "6.82.0"
