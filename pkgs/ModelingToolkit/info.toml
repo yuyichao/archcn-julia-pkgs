@@ -16,7 +16,14 @@ dependent = []
 dependency = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
 type = "not_on_latest"
 version = "9.15.0"
-latest = "9.18.1"
+latest = "9.19.0"
+
+[[Issues."9.19.0"]]
+type = "missing_deps"
+
+    [[Issues."9.19.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
 
 [[Issues."9.18.0"]]
 type = "missing_deps"
