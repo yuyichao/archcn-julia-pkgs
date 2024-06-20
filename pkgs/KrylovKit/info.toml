@@ -10,4 +10,4 @@ dependent = ["QuantumOptics [6e0679c1-51ea-5a7c-ac74-d61b76210b0c]", "YaoBlocks 
 dependency = []
 type = "not_on_latest"
 version = "0.6.1"
-latest = "0.8.0"
+latest = "0.8.1"

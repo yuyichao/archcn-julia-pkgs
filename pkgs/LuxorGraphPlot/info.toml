@@ -10,4 +10,4 @@ dependent = ["BloqadeLattices [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe4]"]
 dependency = []
 type = "not_on_latest"
 version = "0.2.2"
-latest = "0.5.0"
+latest = "0.5.1"

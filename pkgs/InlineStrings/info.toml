@@ -3,4 +3,4 @@ name = "InlineStrings"
 uuid = "842dd82b-1e85-43dc-bf29-5d0ee9dffc48"
 
 [Status]
-version = "1.4.0"
+version = "1.4.1"
