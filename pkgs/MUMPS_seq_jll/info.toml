@@ -4,7 +4,7 @@ uuid = "d7ed1dd3-d0ae-5e8e-bfb4-87a502085b8d"
 is_jll = true
 
 [Status]
-version = "500.600.201+0"
+version = "500.700.200+0"
 
 [JLL.products]
 library = ["libcmumps", "libdmumps", "libsmumps", "libzmumps"]
