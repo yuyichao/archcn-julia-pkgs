@@ -3,4 +3,4 @@ name = "TranscodingStreams"
 uuid = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
 
 [Status]
-version = "0.10.9"
+version = "0.10.10"

@@ -4,3 +4,10 @@ uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
 
 [Status]
 version = "7.2.1"
+
+[[Issues."7.2.1"]]
+dependent = ["Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9]", "GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55]"]
+dependency = []
+type = "not_on_latest"
+version = "7.2.1"
+latest = "8.0.0"

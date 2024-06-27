@@ -4,7 +4,7 @@ uuid = "c7cfdc94-dc32-55de-ac96-5a1b8d977c5b"
 is_jll = true
 
 [Status]
-version = "1.15.0+0"
+version = "1.17.0+0"
 
 [JLL.products]
 library = ["libxcb", "libxcb_composite", "libxcb_damage", "libxcb_dpms", "libxcb_dri2", "libxcb_dri3", "libxcb_glx", "libxcb_present", "libxcb_randr", "libxcb_record", "libxcb_render", "libxcb_res", "libxcb_screensaver", "libxcb_shape", "libxcb_shm", "libxcb_sync", "libxcb_xf86dri", "libxcb_xfixes", "libxcb_xinerama", "libxcb_xinput", "libxcb_xkb", "libxcb_xtest", "libxcb_xv", "libxcb_xvmc"]
