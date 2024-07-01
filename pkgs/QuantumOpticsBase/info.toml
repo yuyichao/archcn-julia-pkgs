@@ -6,7 +6,7 @@ uuid = "4f57444f-1401-5e15-980d-4471b28d5678"
 version = "0.4.22"
 
 [[Issues."0.4.22"]]
-dependent = ["QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]", "QuantumOptics [6e0679c1-51ea-5a7c-ac74-d61b76210b0c]", "QuantumSavory [2de2e421-972c-4cb5-a0c3-999c85908079]"]
+dependent = ["QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]", "QuantumSavory [2de2e421-972c-4cb5-a0c3-999c85908079]"]
 dependency = []
 type = "not_on_latest"
 version = "0.4.22"

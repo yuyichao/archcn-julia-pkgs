@@ -4,7 +4,7 @@ uuid = "0ee61d77-7f21-5576-8119-9fcc46b10100"
 is_jll = true
 
 [Status]
-version = "18.1.7+0"
+version = "18.1.7+1"
 
 [JLL.products]
 executable = ["clang"]

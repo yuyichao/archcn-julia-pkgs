@@ -10,4 +10,4 @@ dependent = []
 dependency = ["ADTypes [47edcb42-4c32-4615-8424-f2b9edc5f35b]"]
 type = "not_on_latest"
 version = "5.7.1"
-latest = "5.8.0"
+latest = "5.9.0"

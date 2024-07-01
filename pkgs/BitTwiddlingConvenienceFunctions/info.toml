@@ -3,4 +3,4 @@ name = "BitTwiddlingConvenienceFunctions"
 uuid = "62783981-4cbd-42fc-bca8-16325de8dc4b"
 
 [Status]
-version = "0.1.5"
+version = "0.1.6"

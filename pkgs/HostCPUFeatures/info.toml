@@ -3,4 +3,4 @@ name = "HostCPUFeatures"
 uuid = "3e5b6fbb-0976-4d2c-9146-d79de83f2fb0"
 
 [Status]
-version = "0.1.16"
+version = "0.1.17"

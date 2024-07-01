@@ -65,12 +65,6 @@ type = "missing_deps"
     [[Issues."5.28.0".weak_deps]]
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
-[[Issues."5.28.0"]]
-dependent = []
-dependency = ["ADTypes [47edcb42-4c32-4615-8424-f2b9edc5f35b]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
-type = "not_on_latest"
-version = "5.28.0"
-latest = "5.31.0"
 
 [[Issues."5.30.1"]]
 type = "missing_deps"
@@ -82,6 +76,20 @@ type = "missing_deps"
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 
+[[Issues."5.33.0"]]
+type = "missing_deps"
+
+    [[Issues."5.33.0".deps]]
+    name = "CommonWorldInvalidations"
+    uuid = "f70d9fcc-98c5-4d4a-abd7-e4cdeebd8ca8"
+
+    [[Issues."5.33.0".weak_deps]]
+    name = "LuxCore"
+    uuid = "bb33d45b-7691-41d6-9220-0943567d0623"
+    [[Issues."5.33.0".weak_deps]]
+    name = "SymPy"
+    uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+
 [[Issues."5.31.0"]]
 type = "missing_deps"
 
@@ -89,5 +97,15 @@ type = "missing_deps"
     name = "LuxCore"
     uuid = "bb33d45b-7691-41d6-9220-0943567d0623"
     [[Issues."5.31.0".weak_deps]]
+    name = "SymPy"
+    uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+
+[[Issues."5.32.0"]]
+type = "missing_deps"
+
+    [[Issues."5.32.0".weak_deps]]
+    name = "LuxCore"
+    uuid = "bb33d45b-7691-41d6-9220-0943567d0623"
+    [[Issues."5.32.0".weak_deps]]
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
