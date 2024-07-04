@@ -4,3 +4,10 @@ uuid = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
 
 [Status]
 version = "0.10.10"
+
+[[Issues."0.10.10"]]
+dependent = ["Arrow [69666777-d1a9-59fb-9406-91d4454c9d45]", "JLD2 [033835bb-8acc-5ee8-8aae-3f567f8a3819]"]
+dependency = []
+type = "not_on_latest"
+version = "0.10.10"
+latest = "0.11.0"
