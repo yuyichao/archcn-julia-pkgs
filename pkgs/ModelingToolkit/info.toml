@@ -5,6 +5,13 @@ uuid = "961ee093-0014-501f-94e3-6117800e7a78"
 [Status]
 version = "9.15.0"
 
+[[Issues."9.24.0"]]
+type = "missing_deps"
+
+    [[Issues."9.24.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+
 [[Issues."9.21.0"]]
 type = "missing_deps"
 
@@ -83,7 +90,7 @@ dependent = []
 dependency = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
 type = "not_on_latest"
 version = "9.15.0"
-latest = "9.23.0"
+latest = "9.24.0"
 
 [[Issues."9.17.0"]]
 type = "missing_deps"
