@@ -19,6 +19,13 @@ type = "missing_deps"
     name = "DifferentiationInterface"
     uuid = "a0c0ee7d-e4b9-4e03-894e-1c5f64a51d63"
 
+[[Issues."1.11.0"]]
+type = "missing_deps"
+
+    [[Issues."1.11.0".deps]]
+    name = "DifferentiationInterface"
+    uuid = "a0c0ee7d-e4b9-4e03-894e-1c5f64a51d63"
+
 [[Issues."1.8.1"]]
 type = "missing_deps"
 
