@@ -10,4 +10,4 @@ dependent = []
 dependency = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]"]
 type = "not_on_latest"
 version = "6.80.1"
-latest = "6.86.0"
+latest = "6.87.0"
