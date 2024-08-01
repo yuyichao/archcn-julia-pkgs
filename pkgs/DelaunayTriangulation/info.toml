@@ -11,3 +11,10 @@ type = "missing_deps"
     [[Issues."1.1.0".deps]]
     name = "AdaptivePredicates"
     uuid = "35492f91-a3bd-45ad-95db-fcad7dcfedb7"
+
+[[Issues."1.1.1"]]
+type = "missing_deps"
+
+    [[Issues."1.1.1".deps]]
+    name = "AdaptivePredicates"
+    uuid = "35492f91-a3bd-45ad-95db-fcad7dcfedb7"

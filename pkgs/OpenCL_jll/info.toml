@@ -4,7 +4,7 @@ uuid = "6cb37087-e8b6-5417-8430-1f242f1e46e4"
 is_jll = true
 
 [Status]
-version = "2023.12.14+0"
+version = "2024.5.8+0"
 
 [JLL.products]
 library = ["libopencl"]

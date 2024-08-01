@@ -5,9 +5,29 @@ uuid = "2b5f629d-d688-5b77-993f-72d75c75574e"
 [Status]
 version = "6.151.5"
 
+[[Issues."6.152.1"]]
+type = "missing_deps"
+
+    [[Issues."6.152.1".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+
+[[Issues."6.152.0"]]
+type = "missing_deps"
+
+    [[Issues."6.152.0".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+
 [[Issues."6.151.5"]]
 type = "missing_deps"
 
     [[Issues."6.151.5".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+[[Issues."6.151.5"]]
+dependent = []
+dependency = ["FastBroadcast [7034ab61-46d4-4ed7-9d0f-46aef9175898]", "Static [aedffcd0-7271-4cad-89d0-dc628f76c6d3]"]
+type = "not_on_latest"
+version = "6.151.5"
+latest = "6.152.1"

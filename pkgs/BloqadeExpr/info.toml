@@ -4,3 +4,10 @@ uuid = "bd27d05e-4ce1-5e79-84dd-c5d7d508abe2"
 
 [Status]
 version = "0.2.1"
+
+[[Issues."0.2.1"]]
+dependent = []
+dependency = ["BitBasis [50ba71b6-fa0f-514d-ae9a-0916efc90dcf]"]
+type = "not_on_latest"
+version = "0.2.1"
+latest = "0.2.2"
