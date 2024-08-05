@@ -3,4 +3,4 @@ name = "NamedArrays"
 uuid = "86f7a689-2022-50b4-a561-43c23ac3c673"
 
 [Status]
-version = "0.10.2"
+version = "0.10.3"

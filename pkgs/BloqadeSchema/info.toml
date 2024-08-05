@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.4.0"
+
+[[Issues."0.4.0"]]
+dependent = []
+dependency = ["BitBasis [50ba71b6-fa0f-514d-ae9a-0916efc90dcf]", "Yao [5872b779-8223-5990-8dd0-5abbb0748c8c]"]
+type = "not_on_latest"
+version = "0.4.0"
+latest = "0.4.1"
