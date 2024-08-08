@@ -10,4 +10,4 @@ dependent = ["LazyArrays [5078a376-72f3-5289-bfd5-ec5146d43c02]"]
 dependency = []
 type = "not_on_latest"
 version = "2.2.0"
-latest = "3.0.0"
+latest = "3.0.1"

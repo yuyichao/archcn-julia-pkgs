@@ -5,3 +5,31 @@ required = true
 
 [Status]
 version = "0.1.2"
+
+[[Issues."0.2.0"]]
+type = "missing_deps"
+
+    [[Issues."0.2.0".deps]]
+    name = "MultiFloats"
+    uuid = "bdf0d083-296b-4888-a5b6-7498122e68a5"
+
+[[Issues."0.2.1"]]
+type = "missing_deps"
+
+    [[Issues."0.2.1".deps]]
+    name = "MultiFloats"
+    uuid = "bdf0d083-296b-4888-a5b6-7498122e68a5"
+
+[[Issues."0.2.3"]]
+type = "missing_deps"
+
+    [[Issues."0.2.3".deps]]
+    name = "MultiFloats"
+    uuid = "bdf0d083-296b-4888-a5b6-7498122e68a5"
+
+[[Issues."0.2.2"]]
+type = "missing_deps"
+
+    [[Issues."0.2.2".deps]]
+    name = "MultiFloats"
+    uuid = "bdf0d083-296b-4888-a5b6-7498122e68a5"
