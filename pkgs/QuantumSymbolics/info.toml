@@ -10,4 +10,4 @@ dependent = ["QuantumSavory [2de2e421-972c-4cb5-a0c3-999c85908079]"]
 dependency = ["SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
 type = "not_on_latest"
 version = "0.2.7"
-latest = "0.4.0"
+latest = "0.4.2"

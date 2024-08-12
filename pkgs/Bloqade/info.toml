@@ -6,9 +6,9 @@ required = true
 [Status]
 version = "0.2.2"
 
-[[Issues."0.2.2"]]
-dependent = []
-dependency = ["Yao [5872b779-8223-5990-8dd0-5abbb0748c8c]"]
-type = "not_on_latest"
-version = "0.2.2"
-latest = "0.2.3"
+[[Issues."0.2.4"]]
+type = "missing_deps"
+
+    [[Issues."0.2.4".deps]]
+    name = "CairoMakie"
+    uuid = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
