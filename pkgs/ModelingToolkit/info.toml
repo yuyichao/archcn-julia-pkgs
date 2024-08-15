@@ -41,6 +41,17 @@ type = "missing_deps"
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
 
+[[Issues."9.33.0"]]
+type = "missing_deps"
+
+    [[Issues."9.33.0".deps]]
+    name = "Expronicon"
+    uuid = "6b7a57c9-7cc1-4fdf-b7f5-e857abae3636"
+
+    [[Issues."9.33.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+
 [[Issues."9.31.0"]]
 type = "missing_deps"
 

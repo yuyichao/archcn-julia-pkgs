@@ -16,6 +16,17 @@ type = "missing_deps"
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 
+[[Issues."2.49.0"]]
+type = "missing_deps"
+
+    [[Issues."2.49.0".deps]]
+    name = "Expronicon"
+    uuid = "6b7a57c9-7cc1-4fdf-b7f5-e857abae3636"
+
+    [[Issues."2.49.0".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
 [[Issues."2.46.0"]]
 type = "missing_deps"
 

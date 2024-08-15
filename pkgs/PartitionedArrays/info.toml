@@ -10,4 +10,4 @@ dependent = ["HYPRE [b5ffcf37-a2bd-41ab-a3da-4bd9bc8ad771]"]
 dependency = []
 type = "not_on_latest"
 version = "0.4.7"
-latest = "0.5.1"
+latest = "0.5.2"
