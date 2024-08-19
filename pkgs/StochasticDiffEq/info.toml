@@ -7,7 +7,7 @@ version = "6.65.1"
 
 [[Issues."6.65.1"]]
 dependent = []
-dependency = ["OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed]"]
+dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed]"]
 type = "not_on_latest"
 version = "6.65.1"
-latest = "6.67.0"
+latest = "6.68.0"
