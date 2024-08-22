@@ -10,4 +10,4 @@ dependent = ["AWSS3 [1c724243-ef5b-51ab-93f4-b0a88ac62a95]"]
 dependency = []
 type = "not_on_latest"
 version = "0.7.9"
-latest = "0.8.0"
+latest = "0.8.1"

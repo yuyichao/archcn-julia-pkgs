@@ -3,4 +3,4 @@ name = "CommonSubexpressions"
 uuid = "bbf7d656-a473-5ed7-a52c-81e309532950"
 
 [Status]
-version = "0.3.0"
+version = "0.3.1"
