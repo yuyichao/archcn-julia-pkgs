@@ -10,4 +10,4 @@ dependent = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "QuantumC
 dependency = ["TermInterface [8ea1fca8-c5ef-4a55-8b96-4e9afe9c9a3c]"]
 type = "not_on_latest"
 version = "1.7.1"
-latest = "3.3.0"
+latest = "3.4.1"

@@ -7,7 +7,7 @@ version = "0.26.7"
 
 [[Issues."0.26.7"]]
 dependent = ["Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9]"]
-dependency = []
+dependency = ["LLVM [929cbde3-209d-540e-8aea-75f648917ca0]"]
 type = "not_on_latest"
 version = "0.26.7"
-latest = "0.27.0"
+latest = "0.27.2"

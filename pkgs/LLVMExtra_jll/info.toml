@@ -4,7 +4,7 @@ uuid = "dad2f222-ce93-54a1-a47d-0025e8a3acab"
 is_jll = true
 
 [Status]
-version = "0.0.32+0"
+version = "0.0.33+0"
 
 [JLL.products]
 library = ["libLLVMExtra"]
