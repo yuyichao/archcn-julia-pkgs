@@ -1,0 +1,10 @@
+[Pkg]
+name = "Qt6Declarative_jll"
+uuid = "629bc702-f1f5-5709-abd5-49b8460ea067"
+is_jll = true
+
+[Status]
+version = "6.7.1+2"
+
+[JLL.products]
+library = ["libqt6labsanimation", "libqt6labsfolderlistmodel", "libqt6labsqmlmodels", "libqt6labssettings", "libqt6labssharedimage", "libqt6labswavefrontmesh", "libqt6qml", "libqt6qmlcompiler", "libqt6qmlcore", "libqt6qmllocalstorage", "libqt6qmlmodels", "libqt6qmlnetwork", "libqt6qmlworkerscript", "libqt6qmlxmllistmodel", "libqt6quick", "libqt6quickcontrols2", "libqt6quickcontrols2basic", "libqt6quickcontrols2basicstyleimpl", "libqt6quickcontrols2fusion", "libqt6quickcontrols2fusionstyleimpl", "libqt6quickcontrols2imagine", "libqt6quickcontrols2imaginestyleimpl", "libqt6quickcontrols2impl", "libqt6quickcontrols2material", "libqt6quickcontrols2materialstyleimpl", "libqt6quickcontrols2universal", "libqt6quickcontrols2universalstyleimpl", "libqt6quickdialogs2", "libqt6quickdialogs2quickimpl", "libqt6quickdialogs2utils", "libqt6quickeffects", "libqt6quicklayouts", "libqt6quickparticles", "libqt6quickshapes", "libqt6quicktemplates2", "libqt6quicktest", "libqt6quickwidgets"]

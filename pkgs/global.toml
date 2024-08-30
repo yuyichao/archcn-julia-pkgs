@@ -60,6 +60,11 @@ bea87d4a-7f5b-5778-9afe-8cc45184846c = "SuiteSparse_jll"
 8e850b90-86db-534c-a0d3-1478176c7d93 = "libblastrampoline_jll"
 
 [[Overrides.RemoveDeps]]
+pkg = "BlossomV"
+version = ">= 0.4"
+remove = ["BinDeps"]
+
+[[Overrides.RemoveDeps]]
 pkg = "StridedViews"
 version = ">= 0.2.0"
 remove = ["CUDA"]

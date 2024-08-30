@@ -3,7 +3,7 @@ name = "BloqadeMIS"
 uuid = "bd27d05e-4ce1-5e74-84dd-c5d7d508bbe2"
 
 [Status]
-version = "0.2.0"
+version = "0.2.1"
 
 [[Issues."0.2.0"]]
 dependent = []

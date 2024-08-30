@@ -1,0 +1,6 @@
+[Pkg]
+name = "Hungarian"
+uuid = "e91730f6-4275-51fb-a7a0-7064cfbd3b39"
+
+[Status]
+version = "0.6.0"

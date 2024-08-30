@@ -1,0 +1,10 @@
+[Pkg]
+name = "libdecor_jll"
+uuid = "1183f4f0-6f2a-5f1a-908b-139f9cdfea6f"
+is_jll = true
+
+[Status]
+version = "0.2.2+0"
+
+[JLL.products]
+library = ["libdecor"]

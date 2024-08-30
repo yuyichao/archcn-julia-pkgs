@@ -1,0 +1,6 @@
+[Pkg]
+name = "HybridArrays"
+uuid = "1baab800-613f-4b0a-84e4-9cd3431bfbb9"
+
+[Status]
+version = "0.4.16"

@@ -3,7 +3,7 @@ name = "OptimizationBase"
 uuid = "bca83a33-5cc9-4baa-983d-23429ab6bcbb"
 
 [Status]
-version = "0.0.5"
+version = "1.5.0"
 
 [[Issues."1.5.0"]]
 type = "missing_deps"

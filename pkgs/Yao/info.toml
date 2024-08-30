@@ -3,7 +3,7 @@ name = "Yao"
 uuid = "5872b779-8223-5990-8dd0-5abbb0748c8c"
 
 [Status]
-version = "0.8.13"
+version = "0.9.0"
 
 [[Issues."0.8.14"]]
 type = "missing_deps"

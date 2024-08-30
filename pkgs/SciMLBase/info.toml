@@ -3,7 +3,7 @@ name = "SciMLBase"
 uuid = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
 
 [Status]
-version = "2.44.0"
+version = "2.50.6"
 
 [[Issues."2.50.2"]]
 type = "missing_deps"

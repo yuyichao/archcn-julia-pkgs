@@ -3,7 +3,7 @@ name = "SparseDiffTools"
 uuid = "47a9eef4-7e08-11e9-0b38-333d64bd3804"
 
 [Status]
-version = "2.18.0"
+version = "2.20.0"
 
 [[Issues."2.20.0"]]
 type = "missing_deps"

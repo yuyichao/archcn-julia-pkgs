@@ -1,0 +1,10 @@
+[Pkg]
+name = "Qt6Wayland_jll"
+uuid = "e99dba38-086e-5de3-a5b1-6e4c66e897c3"
+is_jll = true
+
+[Status]
+version = "6.7.1+1"
+
+[JLL.products]
+file = ["qt6plugins_dir"]

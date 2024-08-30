@@ -4,7 +4,7 @@ uuid = "df0521af-66a0-42b3-822e-f30debbfe642"
 required = true
 
 [Status]
-version = "0.1.2"
+version = "0.2.5"
 
 [[Issues."0.2.5"]]
 type = "missing_deps"

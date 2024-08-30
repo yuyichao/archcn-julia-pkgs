@@ -4,7 +4,7 @@ uuid = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
 required = true
 
 [Status]
-version = "0.20.10"
+version = "0.21.9"
 
 [[Issues."0.20.10"]]
 dependent = ["QuantumSavory [2de2e421-972c-4cb5-a0c3-999c85908079]", "WGLMakie [276b4fcb-3e11-5398-bf8b-a0c2d153d008]"]

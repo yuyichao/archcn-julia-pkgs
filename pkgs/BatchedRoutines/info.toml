@@ -1,0 +1,6 @@
+[Pkg]
+name = "BatchedRoutines"
+uuid = "a9ab73d0-e05c-5df1-8fde-d6a4645b8d8e"
+
+[Status]
+version = "0.2.2"

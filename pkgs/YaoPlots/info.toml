@@ -1,0 +1,6 @@
+[Pkg]
+name = "YaoPlots"
+uuid = "32cfe2d9-419e-45f2-8191-2267705d8dbc"
+
+[Status]
+version = "0.9.3"

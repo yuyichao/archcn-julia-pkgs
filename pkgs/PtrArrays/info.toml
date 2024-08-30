@@ -1,0 +1,6 @@
+[Pkg]
+name = "PtrArrays"
+uuid = "43287f4e-b6f4-7ad1-bb20-aadabca52c3d"
+
+[Status]
+version = "1.2.1"

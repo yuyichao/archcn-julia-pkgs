@@ -1,0 +1,6 @@
+[Pkg]
+name = "Kronecker"
+uuid = "2c470bb0-bcc8-11e8-3dad-c9649493f05e"
+
+[Status]
+version = "0.5.5"

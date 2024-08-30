@@ -1,0 +1,7 @@
+[Pkg]
+name = "BlossomV"
+uuid = "6c721016-9dae-5d90-abf6-67daaccb2332"
+has_deps_build = true
+
+[Status]
+version = "0.4.3"

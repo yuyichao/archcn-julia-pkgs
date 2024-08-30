@@ -3,7 +3,7 @@ name = "FastBroadcast"
 uuid = "7034ab61-46d4-4ed7-9d0f-46aef9175898"
 
 [Status]
-version = "0.2.8"
+version = "0.3.5"
 
 [[Issues."0.2.8"]]
 dependent = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]"]

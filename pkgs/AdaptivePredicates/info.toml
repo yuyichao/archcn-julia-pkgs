@@ -1,0 +1,6 @@
+[Pkg]
+name = "AdaptivePredicates"
+uuid = "35492f91-a3bd-45ad-95db-fcad7dcfedb7"
+
+[Status]
+version = "1.1.1"

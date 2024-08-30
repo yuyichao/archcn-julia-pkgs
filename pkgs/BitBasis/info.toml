@@ -3,7 +3,7 @@ name = "BitBasis"
 uuid = "50ba71b6-fa0f-514d-ae9a-0916efc90dcf"
 
 [Status]
-version = "0.8.1"
+version = "0.9.6"
 
 [[Issues."0.8.1"]]
 dependent = ["BloqadeExpr [bd27d05e-4ce1-5e79-84dd-c5d7d508abe2]", "BloqadeMIS [bd27d05e-4ce1-5e74-84dd-c5d7d508bbe2]", "BloqadeSchema [a64e8dd8-bb5a-11ec-104d-290571fc3a8d]"]

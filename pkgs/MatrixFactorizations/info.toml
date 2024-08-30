@@ -3,7 +3,7 @@ name = "MatrixFactorizations"
 uuid = "a3b82374-2e81-5b9e-98ce-41277c0e4c87"
 
 [Status]
-version = "2.2.0"
+version = "3.0.1"
 
 [[Issues."2.2.0"]]
 dependent = ["LazyArrays [5078a376-72f3-5289-bfd5-ec5146d43c02]"]

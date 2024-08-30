@@ -1,0 +1,6 @@
+[Pkg]
+name = "CommonWorldInvalidations"
+uuid = "f70d9fcc-98c5-4d4a-abd7-e4cdeebd8ca8"
+
+[Status]
+version = "1.0.0"

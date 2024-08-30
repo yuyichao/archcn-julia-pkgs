@@ -3,7 +3,7 @@ name = "Static"
 uuid = "aedffcd0-7271-4cad-89d0-dc628f76c6d3"
 
 [Status]
-version = "0.8.10"
+version = "1.1.1"
 
 [[Issues."1.1.0"]]
 type = "missing_deps"
