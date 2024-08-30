@@ -4,10 +4,3 @@ uuid = "764a87c0-6b3e-53db-9096-fe964310641d"
 
 [Status]
 version = "5.9.1"
-
-[[Issues."5.7.1"]]
-dependent = []
-dependency = ["ADTypes [47edcb42-4c32-4615-8424-f2b9edc5f35b]"]
-type = "not_on_latest"
-version = "5.7.1"
-latest = "5.9.1"

@@ -4,10 +4,3 @@ uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
 
 [Status]
 version = "2.2.0"
-
-[[Issues."1.10.0"]]
-dependent = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]"]
-dependency = []
-type = "not_on_latest"
-version = "1.10.0"
-latest = "2.2.0"

@@ -4,10 +4,3 @@ uuid = "bd27d05e-4ce1-5e79-84dd-c5d7d508bbe5"
 
 [Status]
 version = "0.2.2"
-
-[[Issues."0.2.1"]]
-dependent = []
-dependency = ["Yao [5872b779-8223-5990-8dd0-5abbb0748c8c]"]
-type = "not_on_latest"
-version = "0.2.1"
-latest = "0.2.2"

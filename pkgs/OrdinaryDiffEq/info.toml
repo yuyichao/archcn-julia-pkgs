@@ -192,3 +192,97 @@ type = "missing_deps"
     [[Issues."6.88.0".deps]]
     name = "OrdinaryDiffEqVerner"
     uuid = "79d7bb75-1356-48c1-b8c0-6832512096c2"
+
+[[Issues."6.89.0"]]
+type = "missing_deps"
+
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqAdamsBashforthMoulton"
+    uuid = "89bda076-bce5-4f1c-845f-551c83cdda9a"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqBDF"
+    uuid = "6ad6398a-0878-4a85-9266-38940aa047c8"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqCore"
+    uuid = "bbf590c4-e513-4bbe-9b18-05decba2e5d8"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqDefault"
+    uuid = "50262376-6c5a-4cf5-baba-aaf4f84d72d7"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqDifferentiation"
+    uuid = "4302a76b-040a-498a-8c04-15b101fed76b"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqExplicitRK"
+    uuid = "9286f039-9fbf-40e8-bf65-aa933bdc4db0"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqExponentialRK"
+    uuid = "e0540318-69ee-4070-8777-9e2de6de23de"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqExtrapolation"
+    uuid = "becaefa8-8ca2-5cf9-886d-c06f3d2bd2c4"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqFIRK"
+    uuid = "5960d6e9-dd7a-4743-88e7-cf307b64f125"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqFeagin"
+    uuid = "101fe9f7-ebb6-4678-b671-3a81e7194747"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqFunctionMap"
+    uuid = "d3585ca7-f5d3-4ba6-8057-292ed1abd90f"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqHighOrderRK"
+    uuid = "d28bc4f8-55e1-4f49-af69-84c1a99f0f58"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqIMEXMultistep"
+    uuid = "9f002381-b378-40b7-97a6-27a27c83f129"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqLinear"
+    uuid = "521117fe-8c41-49f8-b3b6-30780b3f0fb5"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqLowOrderRK"
+    uuid = "1344f307-1e59-4825-a18e-ace9aa3fa4c6"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqLowStorageRK"
+    uuid = "b0944070-b475-4768-8dec-fb6eb410534d"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqNonlinearSolve"
+    uuid = "127b3ac7-2247-4354-8eb6-78cf4e7c58e8"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqNordsieck"
+    uuid = "c9986a66-5c92-4813-8696-a7ec84c806c8"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqPDIRK"
+    uuid = "5dd0a6cf-3d4b-4314-aa06-06d4e299bc89"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqPRK"
+    uuid = "5b33eab2-c0f1-4480-b2c3-94bc1e80bda1"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqQPRK"
+    uuid = "04162be5-8125-4266-98ed-640baecc6514"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqRKN"
+    uuid = "af6ede74-add8-4cfd-b1df-9a4dbb109d7a"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqRosenbrock"
+    uuid = "43230ef6-c299-4910-a778-202eb28ce4ce"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqSDIRK"
+    uuid = "2d112036-d095-4a1e-ab9a-08536f3ecdbf"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqSSPRK"
+    uuid = "669c94d9-1f4b-4b64-b377-1aa079aa2388"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqStabilizedIRK"
+    uuid = "e3e12d00-db14-5390-b879-ac3dd2ef6296"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqStabilizedRK"
+    uuid = "358294b1-0aab-51c3-aafe-ad5ab194a2ad"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqSymplecticRK"
+    uuid = "fa646aed-7ef9-47eb-84c4-9443fc8cbfa8"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqTsit5"
+    uuid = "b1df2697-797e-41e3-8120-5422d3b24e4a"
+    [[Issues."6.89.0".deps]]
+    name = "OrdinaryDiffEqVerner"
+    uuid = "79d7bb75-1356-48c1-b8c0-6832512096c2"
