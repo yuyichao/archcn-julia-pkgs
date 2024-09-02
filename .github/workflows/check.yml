@@ -27,7 +27,7 @@ jobs:
         with:
           path: ~/.julia/
           key: version-check-dot-julia-1.9.2-x64
-      - uses: julia-actions/setup-julia@v1
+      - uses: julia-actions/setup-julia@v2
         with:
           version: 1.9.2
           arch: x64
