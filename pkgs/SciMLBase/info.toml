@@ -3,11 +3,11 @@ name = "SciMLBase"
 uuid = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
 
 [Status]
-version = "2.50.6"
+version = "2.51.4"
 
-[[Issues."2.50.6"]]
+[[Issues."2.51.4"]]
 type = "missing_deps"
 
-    [[Issues."2.50.6".weak_deps]]
+    [[Issues."2.51.4".weak_deps]]
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"

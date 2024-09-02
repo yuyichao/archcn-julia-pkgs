@@ -5,6 +5,13 @@ uuid = "6f22d1fd-8eed-4bb7-9776-e7d684900715"
 [Status]
 version = "0.8.3"
 
+[[Issues."0.8.3"]]
+type = "missing_deps"
+
+    [[Issues."0.8.3".weak_deps]]
+    name = "KaHyPar"
+    uuid = "2a6221f6-aa48-11e9-3542-2d9e0ef01880"
+
 [[Issues."0.9.1"]]
 type = "missing_deps"
 

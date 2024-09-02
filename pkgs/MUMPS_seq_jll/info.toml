@@ -8,3 +8,9 @@ version = "500.700.300+0"
 
 [JLL.products]
 library = ["libcmumps", "libdmumps", "libsmumps", "libzmumps"]
+
+[[Issues."500.700.301+0"]]
+type = "jll_changes"
+
+    [Issues."500.700.301+0".add]
+    library = ["libcmumps64", "libdmumps64", "libsmumps64", "libzmumps64"]
