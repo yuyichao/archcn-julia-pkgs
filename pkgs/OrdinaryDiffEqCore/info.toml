@@ -1,0 +1,6 @@
+[Pkg]
+name = "OrdinaryDiffEqCore"
+uuid = "bbf590c4-e513-4bbe-9b18-05decba2e5d8"
+
+[Status]
+version = "1.4.0"

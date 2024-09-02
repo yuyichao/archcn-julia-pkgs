@@ -1,0 +1,6 @@
+[Pkg]
+name = "OrdinaryDiffEqLinear"
+uuid = "521117fe-8c41-49f8-b3b6-30780b3f0fb5"
+
+[Status]
+version = "1.1.0"

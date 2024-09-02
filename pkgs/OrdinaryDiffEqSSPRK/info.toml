@@ -1,0 +1,6 @@
+[Pkg]
+name = "OrdinaryDiffEqSSPRK"
+uuid = "669c94d9-1f4b-4b64-b377-1aa079aa2388"
+
+[Status]
+version = "1.2.0"
