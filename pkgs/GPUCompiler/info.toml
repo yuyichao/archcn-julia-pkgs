@@ -3,4 +3,4 @@ name = "GPUCompiler"
 uuid = "61eb1bfa-7361-4325-ad38-22787b887f55"
 
 [Status]
-version = "0.27.4"
+version = "0.27.5"
