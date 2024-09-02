@@ -76,12 +76,6 @@ dep = "Arpack"
 depversion = "0.5"
 
 [[Overrides.DepsVersion]]
-pkg = "QuantumOptics"
-version = ">= 1.0"
-dep = "DiffEqCallbacks"
-depversion = "2, 3"
-
-[[Overrides.DepsVersion]]
 pkg = "JLD"
 version = ">= 0.13"
 dep = "HDF5"
@@ -98,30 +92,6 @@ pkg = "BloqadeLattices"
 version = ">= 0.1"
 dep = "StatsBase"
 depversion = ">= 0.33"
-
-[[Overrides.DepsVersion]]
-pkg = "BloqadeODE"
-version = ">= 0.1"
-dep = "SciMLBase"
-depversion = "1, 2"
-
-[[Overrides.DepsVersion]]
-pkg = "BloqadeODE"
-version = ">= 0.1"
-dep = "DiffEqCallbacks"
-depversion = "2, 3"
-
-[[Overrides.DepsVersion]]
-pkg = "BloqadeWaveforms"
-version = ">= 0.1"
-dep = "Interpolations"
-depversion = ">= 0.13"
-
-[[Overrides.DepsVersion]]
-pkg = "BloqadeWaveforms"
-version = ">= 0.1"
-dep = "UnicodePlots"
-depversion = ">= 2"
 
 [[Overrides.DepsVersion]]
 pkg = "QuantumClifford"
@@ -148,12 +118,6 @@ dep = "Polynomials"
 depversion = ">= 1"
 
 [[Overrides.DepsVersion]]
-pkg = "BloqadeSchema"
-version = "0.4.0"
-dep = "Braket"
-depversion = "0.7, 0.8"
-
-[[Overrides.DepsVersion]]
 pkg = "Graphs"
 version = "1.9.0"
 dep = "ArnoldiMethod"
@@ -166,100 +130,52 @@ dep = "TiffImages"
 depversion = "0.3, 0.4, 0.5, 0.6, 0.7, 0.8"
 
 [[Overrides.DepsVersion]]
-pkg = "BloqadeExpr"
-version = "0.2.1"
-dep = "Adapt"
-depversion = "3, 4"
-
-[[Overrides.DepsVersion]]
-pkg = "BloqadeKrylov"
-version = "0.2.0"
-dep = "Adapt"
-depversion = "3, 4"
-
-[[Overrides.DepsVersion]]
-pkg = "BloqadeODE"
-version = "0.2.1"
-dep = "Adapt"
-depversion = "3, 4"
-
-[[Overrides.DepsVersion]]
-pkg = "YaoSubspaceArrayReg"
-version = "0.2.0"
-dep = "Adapt"
-depversion = "3, 4"
-
-[[Overrides.DepsVersion]]
-pkg = "QuantumOpticsBase"
-version = "0.4.20"
-dep = "Adapt"
-depversion = "3.3, 4"
-
-[[Overrides.DepsVersion]]
-pkg = "YaoArrayRegister"
-version = "0.9.8"
-dep = "Adapt"
-depversion = "3, 4"
-
-[[Overrides.DepsVersion]]
 pkg = "Braket"
-version = "0.8.1"
+version = ">=0.8.1"
 dep = "AWS"
-depversion = "1.90.3"
+depversion = "1.90.3, 1.91"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = "0.8.1"
+version = ">=0.8.1"
 dep = "CSV"
 depversion = "0.10"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = "0.8.1"
+version = ">=0.8.1"
 dep = "Compat"
-depversion = "4.10"
+depversion = ">=4.10"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = "0.8.1"
+version = ">=0.8.1"
 dep = "DataStructures"
 depversion = "0.18.15"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = "0.8.1"
+version = ">=0.8.1"
 dep = "HTTP"
 depversion = "1.10"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = "0.8.1"
+version = ">=0.8.1"
 dep = "JLD2"
 depversion = "0.4"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = "0.8.1"
+version = ">=0.8.1"
 dep = "JSON3"
 depversion = "1.14"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = "0.8.1"
+version = ">=0.8.1"
 dep = "OrderedCollections"
 depversion = "1.6"
-
-[[Overrides.DepsVersion]]
-pkg = "H5Zbzip2"
-version = ">= 0.1"
-dep = "CodecBzip2"
-depversion = ">= 0.7"
-
-[[Overrides.DepsVersion]]
-pkg = "H5Zzstd"
-version = ">= 0.1"
-dep = "CodecZstd"
-depversion = ">= 0.7"
 
 [[Overrides.DepsVersion]]
 pkg = "HYPRE"
@@ -272,12 +188,6 @@ pkg = "HYPRE"
 version = ">= 1.5.0"
 dep = "PartitionedArrays"
 depversion = "0.3, 0.4"
-
-[[Overrides.DepsVersion]]
-pkg = "ModelingToolkit"
-version = ">= 1.5.0"
-dep = "DynamicQuantities"
-depversion = "0.11, 0.12"
 
 [[Overrides.DepsVersion]]
 pkg = "QuantumSymbolics"
