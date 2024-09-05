@@ -4,3 +4,10 @@ uuid = "bca83a33-5cc9-4baa-983d-23429ab6bcbb"
 
 [Status]
 version = "1.5.0"
+
+[[Issues."2.0.0"]]
+type = "missing_deps"
+
+    [[Issues."2.0.0".deps]]
+    name = "SparseConnectivityTracer"
+    uuid = "9f842d2f-2579-4b1d-911e-f412cf18a3f5"
