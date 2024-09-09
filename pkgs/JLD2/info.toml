@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.4.53"
+
+[[Issues."0.4.53"]]
+dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]", "MetaGraphs [626554b9-1ddb-594c-aa3c-2596fe9399a5]"]
+dependency = []
+type = "not_on_latest"
+version = "0.4.53"
+latest = "0.5.1"
