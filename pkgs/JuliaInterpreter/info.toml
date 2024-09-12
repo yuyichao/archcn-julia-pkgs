@@ -3,4 +3,4 @@ name = "JuliaInterpreter"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
 
 [Status]
-version = "0.9.35"
+version = "0.9.36"
