@@ -10,4 +10,4 @@ dependent = ["Groebner [0b43b601-686d-58a3-8a1c-6623616c7cd4]"]
 dependency = ["AbstractAlgebra [c3fe647b-3220-5bb0-a1ea-a7954cac585d]"]
 type = "not_on_latest"
 version = "0.45.7"
-latest = "0.46.2"
+latest = "0.47.0"

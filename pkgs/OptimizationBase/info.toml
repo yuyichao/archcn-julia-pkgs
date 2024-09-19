@@ -32,3 +32,10 @@ type = "missing_deps"
     [[Issues."2.0.1".deps]]
     name = "SparseConnectivityTracer"
     uuid = "9f842d2f-2579-4b1d-911e-f412cf18a3f5"
+
+[[Issues."2.0.4"]]
+type = "missing_deps"
+
+    [[Issues."2.0.4".deps]]
+    name = "SparseConnectivityTracer"
+    uuid = "9f842d2f-2579-4b1d-911e-f412cf18a3f5"
