@@ -10,4 +10,4 @@ dependent = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "Enzyme [7da24
 dependency = []
 type = "not_on_latest"
 version = "0.7.8"
-latest = "0.8.0"
+latest = "0.8.2"

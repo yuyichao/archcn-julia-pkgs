@@ -4,3 +4,10 @@ uuid = "63c18a36-062a-441e-b654-da1e3ab1ce7c"
 
 [Status]
 version = "0.9.26"
+
+[[Issues."0.9.26"]]
+dependent = []
+dependency = ["EnzymeCore [f151be2c-9106-41f4-ab19-57ee4f262869]"]
+type = "not_on_latest"
+version = "0.9.26"
+latest = "0.9.27"
