@@ -3,11 +3,11 @@ name = "ModelingToolkit"
 uuid = "961ee093-0014-501f-94e3-6117800e7a78"
 
 [Status]
-version = "9.40.1"
+version = "9.41.0"
 
-[[Issues."9.40.1"]]
+[[Issues."9.41.0"]]
 type = "missing_deps"
 
-    [[Issues."9.40.1".weak_deps]]
+    [[Issues."9.41.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
