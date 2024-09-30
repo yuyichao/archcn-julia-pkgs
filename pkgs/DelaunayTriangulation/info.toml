@@ -3,4 +3,4 @@ name = "DelaunayTriangulation"
 uuid = "927a84f5-c5f4-47a5-9785-b46e178433df"
 
 [Status]
-version = "1.4.0"
+version = "1.5.1"

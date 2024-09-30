@@ -4,3 +4,10 @@ uuid = "86223c79-3864-5bf0-83f7-82e725a168b6"
 
 [Status]
 version = "1.11.2"
+
+[[Issues."1.11.2"]]
+dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]"]
+dependency = []
+type = "not_on_latest"
+version = "1.11.2"
+latest = "1.12.0"

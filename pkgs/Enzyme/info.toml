@@ -4,11 +4,4 @@ uuid = "7da242da-08ed-463a-9acd-ee780be4f1d9"
 required = true
 
 [Status]
-version = "0.12.36"
-
-[[Issues."0.12.36"]]
-dependent = []
-dependency = ["EnzymeCore [f151be2c-9106-41f4-ab19-57ee4f262869]"]
-type = "not_on_latest"
-version = "0.12.36"
-latest = "0.13.2"
+version = "0.13.5"
