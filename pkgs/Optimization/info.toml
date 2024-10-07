@@ -13,6 +13,13 @@ type = "missing_deps"
     name = "MLUtils"
     uuid = "f1d291b0-491e-4a28-83b9-f70985020b54"
 
+[[Issues."3.28.0"]]
+dependent = []
+dependency = ["OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]"]
+type = "not_on_latest"
+version = "3.28.0"
+latest = "4.0.3"
+
 [[Issues."4.0.0"]]
 type = "missing_deps"
 

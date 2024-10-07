@@ -4,3 +4,10 @@ uuid = "984bce1d-4616-540c-a9ee-88d1112d94c9"
 
 [Status]
 version = "0.4.6"
+
+[[Issues."0.4.6"]]
+dependent = ["Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
+dependency = []
+type = "not_on_latest"
+version = "0.4.6"
+latest = "1.0.0"

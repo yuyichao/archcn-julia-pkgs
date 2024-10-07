@@ -3,4 +3,4 @@ name = "ImageBinarization"
 uuid = "cbc4b850-ae4b-5111-9e64-df94c024a13d"
 
 [Status]
-version = "0.3.0"
+version = "0.3.1"
