@@ -4,7 +4,7 @@ uuid = "04572ae6-984a-583e-9378-9577a1c2574d"
 is_jll = true
 
 [Status]
-version = "1.33.4+0"
+version = "2.0.0+0"
 
 [JLL.products]
 executable = ["deno"]
