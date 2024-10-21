@@ -4,3 +4,10 @@ uuid = "626554b9-1ddb-594c-aa3c-2596fe9399a5"
 
 [Status]
 version = "0.7.2"
+
+[[Issues."0.7.2"]]
+dependent = ["ImageSegmentation [80713f31-8817-5129-9cf8-209ff8fb23e1]"]
+dependency = []
+type = "not_on_latest"
+version = "0.7.2"
+latest = "0.8.0"

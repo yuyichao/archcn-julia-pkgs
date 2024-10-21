@@ -4,3 +4,17 @@ uuid = "3da002f7-5984-5a60-b8a6-cbb66c0b333f"
 
 [Status]
 version = "0.11.5"
+
+[[Issues."0.11.5"]]
+dependent = ["ColorSchemes [35d6a980-a343-548e-a6ea-1d62b119f2f4]", "ColorVectorSpace [c3611d14-8923-5661-9e6a-0046d554d3a4]", "Colors [5ae59095-9a9b-59fe-a467-6f913c188581]", "ImageInTerminal [d8c32880-2388-543b-8c61-d9f865259254]", "IntegralArrays [1d092043-8f09-5a30-832f-7509e371ab51]", "Makie [ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a]", "MakieCore [20f20a25-4f0e-4fdf-b5d1-57303727442b]", "QOI [4b34888f-f399-49d4-9bb3-47ed5cae4e65]", "ShaderAbstractions [65257c39-d410-5151-9873-9b3e5be5013e]", "TiffImages [731e570b-9d59-4bfa-96dc-6df516fadf69]", "UnicodePlots [b8865327-cd53-5732-bb35-84acbb429228]", "VideoIO [d6d074c3-1acf-5d4c-9a43-ef38773959a2]"]
+dependency = []
+type = "not_on_latest"
+version = "0.11.5"
+latest = "0.12.0"
+
+[[Issues."0.12.0"]]
+type = "missing_deps"
+
+    [[Issues."0.12.0".weak_deps]]
+    name = "StyledStrings"
+    uuid = "f489334b-da3d-4c2e-b8f0-e476e12c162b"

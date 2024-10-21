@@ -4,3 +4,10 @@ uuid = "bbf590c4-e513-4bbe-9b18-05decba2e5d8"
 
 [Status]
 version = "1.7.1"
+
+[[Issues."1.8.0"]]
+type = "missing_deps"
+
+    [[Issues."1.8.0".deps]]
+    name = "FastPower"
+    uuid = "a4df4552-cc26-4903-aec0-212e50a0e84b"
