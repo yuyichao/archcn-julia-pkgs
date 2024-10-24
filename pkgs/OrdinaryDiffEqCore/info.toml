@@ -11,3 +11,10 @@ type = "missing_deps"
     [[Issues."1.8.0".deps]]
     name = "FastPower"
     uuid = "a4df4552-cc26-4903-aec0-212e50a0e84b"
+
+[[Issues."1.9.0"]]
+type = "missing_deps"
+
+    [[Issues."1.9.0".deps]]
+    name = "FastPower"
+    uuid = "a4df4552-cc26-4903-aec0-212e50a0e84b"

@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.10.2"
+
+[[Issues."0.10.2"]]
+dependent = ["ImageIO [82e4d734-157c-48bb-816b-45c225c6df19]"]
+dependency = []
+type = "not_on_latest"
+version = "0.10.2"
+latest = "0.11.0"
