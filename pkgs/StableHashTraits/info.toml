@@ -15,6 +15,13 @@ type = "missing_deps"
 [[Issues."1.2.0"]]
 type = "not_needed"
 
+[[Issues."1.3.2"]]
+type = "missing_deps"
+
+    [[Issues."1.3.2".deps]]
+    name = "WeakKeyIdDicts"
+    uuid = "ecbed89c-9d59-4137-ae1f-d1084086d01c"
+
 [[Issues."1.3.0"]]
 type = "missing_deps"
 

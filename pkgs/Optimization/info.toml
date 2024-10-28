@@ -18,7 +18,7 @@ dependent = []
 dependency = ["OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]"]
 type = "not_on_latest"
 version = "3.28.0"
-latest = "4.0.3"
+latest = "4.0.4"
 
 [[Issues."4.0.0"]]
 type = "missing_deps"

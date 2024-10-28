@@ -4,7 +4,7 @@ uuid = "ffd25f8a-64ca-5728-b0f7-c24cf3aae800"
 is_jll = true
 
 [Status]
-version = "5.6.1+0"
+version = "5.6.3+0"
 
 [JLL.products]
 executable = ["lzmadec", "lzmainfo", "xz", "xzdec"]
