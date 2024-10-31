@@ -10,4 +10,4 @@ dependent = ["Zygote [e88e6eb3-aa80-5325-afca-941959d7151f]"]
 dependency = ["GPUArraysCore [46192b85-c4d5-4398-a991-12ede77f4527]"]
 type = "not_on_latest"
 version = "10.3.1"
-latest = "11.0.0"
+latest = "11.1.0"
