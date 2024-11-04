@@ -4,4 +4,11 @@ uuid = "0703355e-b756-11e9-17c0-8b28908087d0"
 required = true
 
 [Status]
-version = "0.28.3"
+version = "0.29.0"
+
+[[Issues."0.29.0"]]
+type = "missing_deps"
+
+    [[Issues."0.29.0".weak_deps]]
+    name = "AlgebraOfGraphics"
+    uuid = "cbdf2221-f076-402e-a563-3d30da359d67"
