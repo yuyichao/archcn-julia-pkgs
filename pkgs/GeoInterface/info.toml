@@ -12,6 +12,13 @@ type = "missing_deps"
     name = "GeoFormatTypes"
     uuid = "68eda718-8dee-11e9-39e7-89f7f65f511f"
 
+[[Issues."1.3.8"]]
+type = "missing_deps"
+
+    [[Issues."1.3.8".deps]]
+    name = "GeoFormatTypes"
+    uuid = "68eda718-8dee-11e9-39e7-89f7f65f511f"
+
 [[Issues."1.3.6"]]
 type = "missing_deps"
 
