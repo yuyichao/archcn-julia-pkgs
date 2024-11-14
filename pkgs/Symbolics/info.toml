@@ -4,14 +4,14 @@ uuid = "0c5d862f-8b57-4792-8d23-62f2024744c7"
 required = true
 
 [Status]
-version = "6.18.3"
+version = "6.19.0"
 
-[[Issues."6.18.3"]]
+[[Issues."6.19.0"]]
 type = "missing_deps"
 
-    [[Issues."6.18.3".weak_deps]]
+    [[Issues."6.19.0".weak_deps]]
     name = "Lux"
     uuid = "b2108857-7c20-44ae-9111-449ecde12c47"
-    [[Issues."6.18.3".weak_deps]]
+    [[Issues."6.19.0".weak_deps]]
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"

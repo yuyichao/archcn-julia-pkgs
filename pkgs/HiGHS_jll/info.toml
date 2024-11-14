@@ -4,7 +4,7 @@ uuid = "8fd58aa0-07eb-5a78-9b36-339c94fd15ea"
 is_jll = true
 
 [Status]
-version = "1.8.0+0"
+version = "1.8.1+0"
 
 [JLL.products]
 executable = ["highs"]
