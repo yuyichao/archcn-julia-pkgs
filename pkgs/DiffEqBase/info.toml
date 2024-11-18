@@ -16,6 +16,17 @@ type = "missing_deps"
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
 
+[[Issues."6.160.0"]]
+type = "missing_deps"
+
+    [[Issues."6.160.0".deps]]
+    name = "FastPower"
+    uuid = "a4df4552-cc26-4903-aec0-212e50a0e84b"
+
+    [[Issues."6.160.0".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+
 [[Issues."6.158.3"]]
 type = "missing_deps"
 

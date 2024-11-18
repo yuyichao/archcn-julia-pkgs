@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.4.9"
+
+[[Issues."0.4.9"]]
+dependent = ["KrylovKit [0b1a1467-8014-51b9-945f-bf0ae24f4b77]"]
+dependency = []
+type = "not_on_latest"
+version = "0.4.9"
+latest = "0.5.0"
