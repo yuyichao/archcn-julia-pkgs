@@ -3,7 +3,7 @@ name = "Bonito"
 uuid = "824d6782-a2ef-11e9-3a09-e5662e0c26f8"
 
 [Status]
-version = "3.2.4"
+version = "4.0.0"
 
 [[Issues."3.2.4"]]
 dependent = ["WGLMakie [276b4fcb-3e11-5398-bf8b-a0c2d153d008]"]

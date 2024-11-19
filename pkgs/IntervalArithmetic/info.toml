@@ -3,7 +3,7 @@ name = "IntervalArithmetic"
 uuid = "d1acc4aa-44c8-5952-acd4-ba5d80a2a253"
 
 [Status]
-version = "0.20.9"
+version = "0.22.19"
 
 [[Issues."0.20.9"]]
 dependent = ["ExactPredicates [429591f6-91af-11e9-00e2-59fbe8cec110]", "IntervalRootFinding [d2bf35a9-74e0-55ec-b149-d360ff49b807]"]

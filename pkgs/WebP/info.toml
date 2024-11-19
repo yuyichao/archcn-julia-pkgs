@@ -1,0 +1,6 @@
+[Pkg]
+name = "WebP"
+uuid = "e3aaa7dc-3e4b-44e0-be63-ffb868ccd7c1"
+
+[Status]
+version = "0.1.3"

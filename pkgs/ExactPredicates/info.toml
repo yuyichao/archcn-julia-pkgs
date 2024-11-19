@@ -3,7 +3,7 @@ name = "ExactPredicates"
 uuid = "429591f6-91af-11e9-00e2-59fbe8cec110"
 
 [Status]
-version = "2.2.5"
+version = "2.2.8"
 
 [[Issues."2.2.5"]]
 dependent = []

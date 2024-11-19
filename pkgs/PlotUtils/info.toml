@@ -3,7 +3,7 @@ name = "PlotUtils"
 uuid = "995b91a9-d308-5afd-9ec6-746e21dbc043"
 
 [Status]
-version = "1.4.1"
+version = "1.4.3"
 
 [[Issues."1.4.3"]]
 type = "missing_deps"

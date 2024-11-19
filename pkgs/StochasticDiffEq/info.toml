@@ -3,7 +3,7 @@ name = "StochasticDiffEq"
 uuid = "789caeaf-c7a9-5a7d-9973-96adeb23e2a0"
 
 [Status]
-version = "6.69.1"
+version = "6.71.0"
 
 [[Issues."6.71.0"]]
 type = "missing_deps"

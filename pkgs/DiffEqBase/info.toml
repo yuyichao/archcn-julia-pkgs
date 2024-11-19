@@ -3,7 +3,7 @@ name = "DiffEqBase"
 uuid = "2b5f629d-d688-5b77-993f-72d75c75574e"
 
 [Status]
-version = "6.158.3"
+version = "6.160.0"
 
 [[Issues."6.159.0"]]
 type = "missing_deps"

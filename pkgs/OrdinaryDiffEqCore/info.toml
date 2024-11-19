@@ -3,7 +3,7 @@ name = "OrdinaryDiffEqCore"
 uuid = "bbf590c4-e513-4bbe-9b18-05decba2e5d8"
 
 [Status]
-version = "1.7.1"
+version = "1.11.0"
 
 [[Issues."1.8.0"]]
 type = "missing_deps"
