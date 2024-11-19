@@ -4,14 +4,14 @@ uuid = "0703355e-b756-11e9-17c0-8b28908087d0"
 required = true
 
 [Status]
-version = "0.29.1"
+version = "0.29.2"
 
-[[Issues."0.29.1"]]
+[[Issues."0.29.2"]]
 type = "missing_deps"
 
-    [[Issues."0.29.1".weak_deps]]
+    [[Issues."0.29.2".weak_deps]]
     name = "AlgebraOfGraphics"
     uuid = "cbdf2221-f076-402e-a563-3d30da359d67"
-    [[Issues."0.29.1".weak_deps]]
+    [[Issues."0.29.2".weak_deps]]
     name = "DiskArrays"
     uuid = "3c3547ce-8d99-4f5e-a174-61eb10b00ae3"
