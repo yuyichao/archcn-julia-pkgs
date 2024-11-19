@@ -4,10 +4,3 @@ uuid = "bcd4f6db-9728-5f36-b5f7-82caef46ccdb"
 
 [Status]
 version = "5.49.0"
-
-[[Issues."5.48.1"]]
-dependent = []
-dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
-type = "not_on_latest"
-version = "5.48.1"
-latest = "5.49.0"

@@ -4,10 +4,3 @@ uuid = "82e4d734-157c-48bb-816b-45c225c6df19"
 
 [Status]
 version = "0.6.9"
-
-[[Issues."0.6.9"]]
-type = "missing_deps"
-
-    [[Issues."0.6.9".deps]]
-    name = "WebP"
-    uuid = "e3aaa7dc-3e4b-44e0-be63-ffb868ccd7c1"

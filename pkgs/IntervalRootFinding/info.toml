@@ -5,10 +5,3 @@ required = true
 
 [Status]
 version = "0.6.0"
-
-[[Issues."0.6.0"]]
-type = "missing_deps"
-
-    [[Issues."0.6.0".deps]]
-    name = "BranchAndPrune"
-    uuid = "d3bc4f2e-91e6-11e9-365e-cd067da536ce"
