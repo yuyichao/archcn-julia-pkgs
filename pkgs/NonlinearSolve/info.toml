@@ -28,9 +28,6 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."4.2.0".deps]]
-    name = "BracketingNonlinearSolve"
-    uuid = "70df07ce-3d50-431d-a3e7-ca6ddb60ac1e"
-    [[Issues."4.2.0".deps]]
     name = "NonlinearSolveQuasiNewton"
     uuid = "9a2c21bd-3a47-402d-9113-8faf9a0ee114"
     [[Issues."4.2.0".deps]]
@@ -60,9 +57,6 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."4.1.0".deps]]
-    name = "BracketingNonlinearSolve"
-    uuid = "70df07ce-3d50-431d-a3e7-ca6ddb60ac1e"
-    [[Issues."4.1.0".deps]]
     name = "NonlinearSolveQuasiNewton"
     uuid = "9a2c21bd-3a47-402d-9113-8faf9a0ee114"
     [[Issues."4.1.0".deps]]
@@ -91,9 +85,6 @@ type = "missing_deps"
 [[Issues."4.0.0"]]
 type = "missing_deps"
 
-    [[Issues."4.0.0".deps]]
-    name = "BracketingNonlinearSolve"
-    uuid = "70df07ce-3d50-431d-a3e7-ca6ddb60ac1e"
     [[Issues."4.0.0".deps]]
     name = "NonlinearSolveQuasiNewton"
     uuid = "9a2c21bd-3a47-402d-9113-8faf9a0ee114"
