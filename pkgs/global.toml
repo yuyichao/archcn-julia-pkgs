@@ -131,39 +131,51 @@ depversion = "0.10"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.8.1"
+version = ">=0.9.5"
 dep = "Compat"
-depversion = ">=4.10"
+depversion = ">=4.16"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.8.1"
+version = ">=0.9.5"
 dep = "DataStructures"
-depversion = "0.18.15"
+depversion = "0.18"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.8.1"
+version = ">=0.9.5"
+dep = "Graphs"
+depversion = "1.11"
+
+[[Overrides.DepsVersion]]
+pkg = "Braket"
+version = ">=0.9.5"
 dep = "HTTP"
 depversion = "1.10"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.8.1"
+version = ">=0.9.5"
 dep = "JLD2"
 depversion = "0.5"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.8.1"
+version = ">=0.9.5"
 dep = "JSON3"
 depversion = "1.14"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.8.1"
+version = ">=0.9.5"
 dep = "OrderedCollections"
 depversion = "1.6"
+
+[[Overrides.DepsVersion]]
+pkg = "Braket"
+version = ">=0.9.5"
+dep = "StaticArrays"
+depversion = "1.9.7"
 
 [[Overrides.DepsVersion]]
 pkg = "H5Zbzip2"
