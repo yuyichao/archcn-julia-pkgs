@@ -1,0 +1,6 @@
+[Pkg]
+name = "MyterialColors"
+uuid = "1c23619d-4212-4747-83aa-717207fae70f"
+
+[Status]
+version = "0.3.0"
