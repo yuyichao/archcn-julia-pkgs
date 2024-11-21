@@ -23,16 +23,15 @@ type = "missing_deps"
     [[Issues."3.15.1".weak_deps]]
     name = "SpeedMapping"
     uuid = "f1835b91-879b-4a3f-a438-e4baacf14412"
+[[Issues."3.15.1"]]
+dependent = ["BoundaryValueDiffEq [764a87c0-6b3e-53db-9096-fe964310641d]", "DiffEqCallbacks [459566f4-90b8-5000-8ac3-15dfb0a30def]"]
+dependency = ["SimpleNonlinearSolve [727e6d20-b764-4bd8-a329-72de5adea6c7]"]
+type = "not_on_latest"
+version = "3.15.1"
+latest = "4.2.0"
 
 [[Issues."4.2.0"]]
 type = "missing_deps"
-
-    [[Issues."4.2.0".deps]]
-    name = "NonlinearSolveQuasiNewton"
-    uuid = "9a2c21bd-3a47-402d-9113-8faf9a0ee114"
-    [[Issues."4.2.0".deps]]
-    name = "NonlinearSolveSpectralMethods"
-    uuid = "26075421-4e9a-44e1-8bd1-420ed7ad02b2"
 
     [[Issues."4.2.0".weak_deps]]
     name = "FixedPointAcceleration"
@@ -56,13 +55,6 @@ type = "missing_deps"
 [[Issues."4.1.0"]]
 type = "missing_deps"
 
-    [[Issues."4.1.0".deps]]
-    name = "NonlinearSolveQuasiNewton"
-    uuid = "9a2c21bd-3a47-402d-9113-8faf9a0ee114"
-    [[Issues."4.1.0".deps]]
-    name = "NonlinearSolveSpectralMethods"
-    uuid = "26075421-4e9a-44e1-8bd1-420ed7ad02b2"
-
     [[Issues."4.1.0".weak_deps]]
     name = "FixedPointAcceleration"
     uuid = "817d07cb-a79a-5c30-9a31-890123675176"
@@ -84,13 +76,6 @@ type = "missing_deps"
 
 [[Issues."4.0.0"]]
 type = "missing_deps"
-
-    [[Issues."4.0.0".deps]]
-    name = "NonlinearSolveQuasiNewton"
-    uuid = "9a2c21bd-3a47-402d-9113-8faf9a0ee114"
-    [[Issues."4.0.0".deps]]
-    name = "NonlinearSolveSpectralMethods"
-    uuid = "26075421-4e9a-44e1-8bd1-420ed7ad02b2"
 
     [[Issues."4.0.0".weak_deps]]
     name = "FixedPointAcceleration"

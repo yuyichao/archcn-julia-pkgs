@@ -4,11 +4,4 @@ uuid = "90137ffa-7385-5640-81b9-e52037218182"
 required = true
 
 [Status]
-version = "1.9.7"
-
-[[Issues."1.9.7"]]
-dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]"]
-dependency = []
-type = "not_on_latest"
-version = "1.9.7"
-latest = "1.9.8"
+version = "1.9.8"
