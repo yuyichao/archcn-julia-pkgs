@@ -4,7 +4,7 @@ uuid = "d00139f3-1899-568f-a2f0-47f597d42d70"
 is_jll = true
 
 [Status]
-version = "5.1.2+0"
+version = "5.1.2+1"
 
 [JLL.products]
 library = ["libmetis", "libmetis_Int32_Real64", "libmetis_Int64_Real32", "libmetis_Int64_Real64"]
