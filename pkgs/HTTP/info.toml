@@ -3,4 +3,4 @@ name = "HTTP"
 uuid = "cd3eb016-35fb-5094-929b-558a96fad6f3"
 
 [Status]
-version = "1.10.10"
+version = "1.10.11"

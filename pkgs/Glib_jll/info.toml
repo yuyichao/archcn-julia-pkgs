@@ -8,3 +8,9 @@ version = "2.80.5+0"
 
 [JLL.products]
 library = ["libgio", "libglib", "libgmodule", "libgobject", "libgthread"]
+
+[[Issues."2.82.2+0"]]
+type = "jll_changes"
+
+    [Issues."2.82.2+0".add]
+    library = ["libgirepository"]
