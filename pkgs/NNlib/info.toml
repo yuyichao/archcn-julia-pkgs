@@ -3,17 +3,17 @@ name = "NNlib"
 uuid = "872c559c-99b0-510c-b3b7-b6c96a88d5cd"
 
 [Status]
-version = "0.9.24"
+version = "0.9.26"
 
-[[Issues."0.9.24"]]
+[[Issues."0.9.26"]]
 type = "missing_deps"
 
-    [[Issues."0.9.24".weak_deps]]
+    [[Issues."0.9.26".weak_deps]]
     name = "AMDGPU"
     uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."0.9.24".weak_deps]]
+    [[Issues."0.9.26".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-    [[Issues."0.9.24".weak_deps]]
+    [[Issues."0.9.26".weak_deps]]
     name = "cuDNN"
     uuid = "02a925ec-e4fe-4b08-9a7e-0d78e3d38ccd"
