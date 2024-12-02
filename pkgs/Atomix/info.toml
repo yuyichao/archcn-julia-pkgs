@@ -19,7 +19,7 @@ type = "missing_deps"
     uuid = "8f75cd03-7ff8-4ecb-9b8f-daf728133b1b"
 
 [[Issues."0.1.0"]]
-dependent = ["Groebner [0b43b601-686d-58a3-8a1c-6623616c7cd4]", "KernelAbstractions [63c18a36-062a-441e-b654-da1e3ab1ce7c]"]
+dependent = ["Groebner [0b43b601-686d-58a3-8a1c-6623616c7cd4]"]
 dependency = []
 type = "not_on_latest"
 version = "0.1.0"

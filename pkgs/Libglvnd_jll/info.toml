@@ -4,7 +4,7 @@ uuid = "7e76a0d4-f3c7-5321-8279-8d96eeed0f29"
 is_jll = true
 
 [Status]
-version = "1.6.0+0"
+version = "1.7.0+0"
 
 [JLL.products]
 library = ["libEGL", "libGL", "libGLESv1_CM", "libGLESv2", "libGLX", "libGLdispatch", "libOpenGL"]

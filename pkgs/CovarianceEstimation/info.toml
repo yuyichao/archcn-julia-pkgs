@@ -3,4 +3,4 @@ name = "CovarianceEstimation"
 uuid = "587fd27a-f159-11e8-2dae-1979310e6154"
 
 [Status]
-version = "0.2.12"
+version = "0.2.13"
