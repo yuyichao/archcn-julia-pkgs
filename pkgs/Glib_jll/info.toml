@@ -7,7 +7,7 @@ is_jll = true
 version = "2.80.5+0"
 
 [JLL.products]
-library = ["libgio", "libglib", "libgmodule", "libgobject", "libgthread"]
+library = ["libgio", "libglib", "libgmodule", "libgobject", "libgthread", "libgirepository"]
 
 [[Issues."2.82.2+0"]]
 type = "jll_changes"
