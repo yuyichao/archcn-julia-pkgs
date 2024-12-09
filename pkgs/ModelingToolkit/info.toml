@@ -17,3 +17,20 @@ type = "missing_deps"
     [[Issues."9.55.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."9.56.0"]]
+type = "missing_deps"
+
+    [[Issues."9.56.0".deps]]
+    name = "SCCNonlinearSolve"
+    uuid = "9dfe8606-65a1-4bb3-9748-cb89d1561431"
+
+    [[Issues."9.56.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.56.0".weak_deps]]
+    name = "HomotopyContinuation"
+    uuid = "f213a82b-91d6-5c5d-acf7-10f1c761b327"
+    [[Issues."9.56.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"

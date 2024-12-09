@@ -4,7 +4,7 @@ uuid = "2e76f6c2-a576-52d4-95c1-20adfe4de566"
 is_jll = true
 
 [Status]
-version = "8.3.1+0"
+version = "8.5.0+0"
 
 [JLL.products]
 library = ["libharfbuzz", "libharfbuzz_gobject", "libharfbuzz_subset"]

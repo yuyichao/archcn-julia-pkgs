@@ -4,7 +4,7 @@ uuid = "a3f928ae-7b40-5064-980b-68af3947d34b"
 is_jll = true
 
 [Status]
-version = "2.13.96+0"
+version = "2.15.0+0"
 
 [JLL.products]
 executable = ["fc_cache", "fc_cat", "fc_conflist", "fc_list", "fc_match", "fc_pattern", "fc_query", "fc_scan", "fc_validate"]
