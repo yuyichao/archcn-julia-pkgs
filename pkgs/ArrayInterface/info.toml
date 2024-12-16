@@ -3,14 +3,14 @@ name = "ArrayInterface"
 uuid = "4fba245c-0d91-5ea0-9b3e-6abc04ee57a9"
 
 [Status]
-version = "7.17.1"
+version = "7.18.0"
 
-[[Issues."7.17.1"]]
+[[Issues."7.18.0"]]
 type = "missing_deps"
 
-    [[Issues."7.17.1".weak_deps]]
+    [[Issues."7.18.0".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-    [[Issues."7.17.1".weak_deps]]
+    [[Issues."7.18.0".weak_deps]]
     name = "CUDSS"
     uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"

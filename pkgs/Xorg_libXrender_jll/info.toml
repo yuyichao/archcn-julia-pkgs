@@ -4,7 +4,7 @@ uuid = "ea2f1a96-1ddc-540d-b46f-429655e07cfa"
 is_jll = true
 
 [Status]
-version = "0.9.11+0"
+version = "0.9.11+1"
 
 [JLL.products]
 library = ["libXrender"]
