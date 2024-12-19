@@ -4,7 +4,7 @@ uuid = "935fb764-8cf2-53bf-bb30-45bb1f8bf724"
 is_jll = true
 
 [Status]
-version = "1.2.0+4"
+version = "1.2.3+0"
 
 [JLL.products]
 library = ["libXcursor"]

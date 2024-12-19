@@ -5,6 +5,28 @@ uuid = "8913a72c-1f9b-4ce2-8d82-65094dcecaec"
 [Status]
 version = "3.15.1"
 
+[[Issues."4.3.0"]]
+type = "missing_deps"
+
+    [[Issues."4.3.0".weak_deps]]
+    name = "FixedPointAcceleration"
+    uuid = "817d07cb-a79a-5c30-9a31-890123675176"
+    [[Issues."4.3.0".weak_deps]]
+    name = "MINPACK"
+    uuid = "4854310b-de5a-5eb6-a2a5-c1dee2bd17f9"
+    [[Issues."4.3.0".weak_deps]]
+    name = "NLSolvers"
+    uuid = "337daf1e-9722-11e9-073e-8b9effe078ba"
+    [[Issues."4.3.0".weak_deps]]
+    name = "PETSc"
+    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
+    [[Issues."4.3.0".weak_deps]]
+    name = "SIAMFANLEquations"
+    uuid = "084e46ad-d928-497d-ad5e-07fa361a48c4"
+    [[Issues."4.3.0".weak_deps]]
+    name = "SpeedMapping"
+    uuid = "f1835b91-879b-4a3f-a438-e4baacf14412"
+
 [[Issues."3.15.1"]]
 type = "missing_deps"
 
@@ -28,7 +50,7 @@ dependent = ["BoundaryValueDiffEq [764a87c0-6b3e-53db-9096-fe964310641d]", "Diff
 dependency = ["SimpleNonlinearSolve [727e6d20-b764-4bd8-a329-72de5adea6c7]"]
 type = "not_on_latest"
 version = "3.15.1"
-latest = "4.2.0"
+latest = "4.3.0"
 
 [[Issues."4.2.0"]]
 type = "missing_deps"
