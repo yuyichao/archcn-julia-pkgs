@@ -4,7 +4,7 @@ uuid = "efe28fd5-8261-553b-a9e1-b2916fc3738e"
 is_jll = true
 
 [Status]
-version = "0.5.5+0"
+version = "0.5.5+1"
 
 [JLL.products]
 library = ["libopenspecfun"]

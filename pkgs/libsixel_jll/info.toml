@@ -4,7 +4,7 @@ uuid = "075b6546-f08a-558a-be8f-8157d0f608a5"
 is_jll = true
 
 [Status]
-version = "1.10.3+1"
+version = "1.10.3+2"
 
 [JLL.products]
 library = ["libsixel"]

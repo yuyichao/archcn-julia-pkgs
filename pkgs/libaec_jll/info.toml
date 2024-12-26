@@ -4,7 +4,7 @@ uuid = "477f73a3-ac25-53e9-8cc3-50b2fa2566f0"
 is_jll = true
 
 [Status]
-version = "1.1.2+0"
+version = "1.1.2+1"
 
 [JLL.products]
 executable = ["aec"]

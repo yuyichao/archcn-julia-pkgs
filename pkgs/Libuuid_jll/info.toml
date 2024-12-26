@@ -4,7 +4,7 @@ uuid = "38a345b3-de98-5d2b-a5d3-14cd9215e700"
 is_jll = true
 
 [Status]
-version = "2.40.2+0"
+version = "2.40.2+1"
 
 [JLL.products]
 library = ["libuuid"]
