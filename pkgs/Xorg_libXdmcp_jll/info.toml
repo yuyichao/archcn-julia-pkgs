@@ -4,7 +4,7 @@ uuid = "a3789734-cfe1-5b06-b2d0-1dd0d9d62d05"
 is_jll = true
 
 [Status]
-version = "1.1.4+1"
+version = "1.1.4+2"
 
 [JLL.products]
 library = ["libXdmcp"]
