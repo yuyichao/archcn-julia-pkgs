@@ -4,7 +4,7 @@ uuid = "4f6342f7-b3d2-589e-9d20-edeb45f2b2bc"
 is_jll = true
 
 [Status]
-version = "1.8.6+2"
+version = "1.8.6+3"
 
 [JLL.products]
 library = ["libX11", "libX11_xcb"]

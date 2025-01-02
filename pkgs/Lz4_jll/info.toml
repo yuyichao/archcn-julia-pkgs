@@ -4,7 +4,7 @@ uuid = "5ced341a-0733-55b8-9ab6-a4889d929147"
 is_jll = true
 
 [Status]
-version = "1.10.0+2"
+version = "1.10.1+0"
 
 [JLL.products]
 executable = ["lz4", "lz4c", "lz4cat", "unlz4"]

@@ -4,7 +4,7 @@ uuid = "4b2f31a3-9ecc-558c-b454-b3730dcb73e9"
 is_jll = true
 
 [Status]
-version = "2.40.2+1"
+version = "2.40.2+2"
 
 [JLL.products]
 library = ["libmount"]

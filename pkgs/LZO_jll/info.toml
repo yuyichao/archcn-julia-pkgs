@@ -4,7 +4,7 @@ uuid = "dd4b983a-f0e5-5f8d-a1b7-129d4a5fb1ac"
 is_jll = true
 
 [Status]
-version = "2.10.2+2"
+version = "2.10.2+3"
 
 [JLL.products]
 library = ["liblzo2"]

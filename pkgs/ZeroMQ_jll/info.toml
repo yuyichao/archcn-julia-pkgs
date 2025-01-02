@@ -4,7 +4,7 @@ uuid = "8f1865be-045e-5c20-9c9f-bfbfb0764568"
 is_jll = true
 
 [Status]
-version = "4.3.5+2"
+version = "4.3.5+3"
 
 [JLL.products]
 library = ["libzmq"]

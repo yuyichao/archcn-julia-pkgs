@@ -4,7 +4,7 @@ uuid = "89763e89-9b03-5906-acba-b20f662cd828"
 is_jll = true
 
 [Status]
-version = "4.7.0+0"
+version = "4.7.1+0"
 
 [JLL.products]
 library = ["libtiff"]
