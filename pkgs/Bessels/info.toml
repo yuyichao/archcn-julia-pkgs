@@ -1,0 +1,7 @@
+[Pkg]
+name = "Bessels"
+uuid = "0e736298-9ec6-45e8-9647-e4fc86a2fe38"
+required = true
+
+[Status]
+version = "0.2.8"
