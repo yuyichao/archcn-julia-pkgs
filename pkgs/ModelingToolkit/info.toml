@@ -3,7 +3,7 @@ name = "ModelingToolkit"
 uuid = "961ee093-0014-501f-94e3-6117800e7a78"
 
 [Status]
-version = "9.55.0"
+version = "9.59.0"
 
 [[Issues."9.57.0"]]
 type = "missing_deps"
