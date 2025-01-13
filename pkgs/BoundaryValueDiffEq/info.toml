@@ -4,3 +4,13 @@ uuid = "764a87c0-6b3e-53db-9096-fe964310641d"
 
 [Status]
 version = "5.12.0"
+
+[[Issues."5.13.0"]]
+type = "missing_deps"
+
+    [[Issues."5.13.0".deps]]
+    name = "BoundaryValueDiffEqAscher"
+    uuid = "7227322d-7511-4e07-9247-ad6ff830280e"
+    [[Issues."5.13.0".deps]]
+    name = "BoundaryValueDiffEqMIRKN"
+    uuid = "9255f1d6-53bf-473e-b6bd-23f1ff009da4"
