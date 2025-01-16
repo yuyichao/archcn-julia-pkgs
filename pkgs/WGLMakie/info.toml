@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.10.18"
+
+[[Issues."0.10.18"]]
+dependent = []
+dependency = ["GeometryBasics [5c1252a2-5f33-56bf-86c9-59e7332b4326]", "Makie [ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a]", "ShaderAbstractions [65257c39-d410-5151-9873-9b3e5be5013e]"]
+type = "not_on_latest"
+version = "0.10.18"
+latest = "0.11.0"
