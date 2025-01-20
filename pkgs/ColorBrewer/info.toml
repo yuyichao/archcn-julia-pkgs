@@ -3,4 +3,4 @@ name = "ColorBrewer"
 uuid = "a2cac450-b92f-5266-8821-25eda20663c8"
 
 [Status]
-version = "0.4.0"
+version = "0.4.1"

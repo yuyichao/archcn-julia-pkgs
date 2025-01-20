@@ -11,4 +11,4 @@ dependent = ["CairoMakie [13f3f980-e62b-5c42-98c6-ff1f3baf88f0]", "WGLMakie [276
 dependency = ["GeometryBasics [5c1252a2-5f33-56bf-86c9-59e7332b4326]", "MakieCore [20f20a25-4f0e-4fdf-b5d1-57303727442b]", "ShaderAbstractions [65257c39-d410-5151-9873-9b3e5be5013e]"]
 type = "not_on_latest"
 version = "0.21.18"
-latest = "0.22.0"
+latest = "0.22.1"

@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.2.0"
+
+[[Issues."0.2.0"]]
+dependent = ["Luxor [ae8d54c2-7ccd-5906-9d76-62fc9837b5bc]"]
+dependency = []
+type = "not_on_latest"
+version = "0.2.0"
+latest = "0.3.2"
