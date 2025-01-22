@@ -3,46 +3,4 @@ name = "SymbolicUtils"
 uuid = "d1185830-fcd6-423d-90d6-eec64667417b"
 
 [Status]
-version = "3.7.2"
-
-[[Issues."3.10.1"]]
-type = "missing_deps"
-
-    [[Issues."3.10.1".deps]]
-    name = "WeakValueDicts"
-    uuid = "897b6980-f191-5a31-bcb0-bf3c4585e0c1"
-
-[[Issues."3.8.1"]]
-type = "missing_deps"
-
-    [[Issues."3.8.1".deps]]
-    name = "WeakValueDicts"
-    uuid = "897b6980-f191-5a31-bcb0-bf3c4585e0c1"
-
-[[Issues."3.8.0"]]
-type = "missing_deps"
-
-    [[Issues."3.8.0".deps]]
-    name = "WeakValueDicts"
-    uuid = "897b6980-f191-5a31-bcb0-bf3c4585e0c1"
-
-[[Issues."3.11.0"]]
-type = "missing_deps"
-
-    [[Issues."3.11.0".deps]]
-    name = "WeakValueDicts"
-    uuid = "897b6980-f191-5a31-bcb0-bf3c4585e0c1"
-
-[[Issues."3.9.0"]]
-type = "missing_deps"
-
-    [[Issues."3.9.0".deps]]
-    name = "WeakValueDicts"
-    uuid = "897b6980-f191-5a31-bcb0-bf3c4585e0c1"
-
-[[Issues."3.10.0"]]
-type = "missing_deps"
-
-    [[Issues."3.10.0".deps]]
-    name = "WeakValueDicts"
-    uuid = "897b6980-f191-5a31-bcb0-bf3c4585e0c1"
+version = "3.11.0"

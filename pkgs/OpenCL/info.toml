@@ -6,22 +6,9 @@ required = true
 [Status]
 version = "0.9.0"
 
-[[Issues."0.10.1"]]
-type = "missing_deps"
-
-    [[Issues."0.10.1".deps]]
-    name = "SPIRVIntrinsics"
-    uuid = "71d1d633-e7e8-4a92-83a1-de8814b09ba8"
-    [[Issues."0.10.1".deps]]
-    name = "SPIRV_LLVM_Translator_unified_jll"
-    uuid = "85f0d8ed-5b39-5caa-b1ae-7472de402361"
-
-[[Issues."0.10.0"]]
-type = "missing_deps"
-
-    [[Issues."0.10.0".deps]]
-    name = "SPIRVIntrinsics"
-    uuid = "71d1d633-e7e8-4a92-83a1-de8814b09ba8"
-    [[Issues."0.10.0".deps]]
-    name = "SPIRV_LLVM_Translator_unified_jll"
-    uuid = "85f0d8ed-5b39-5caa-b1ae-7472de402361"
+[[Issues."0.9.0"]]
+dependent = []
+dependency = ["GPUArrays [0c68f7d7-f131-5f86-a1c3-88cf8149b2d7]"]
+type = "not_on_latest"
+version = "0.9.0"
+latest = "0.10.1"

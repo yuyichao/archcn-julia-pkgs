@@ -3,7 +3,7 @@ name = "PythonCall"
 uuid = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
 
 [Status]
-version = "0.9.23"
+version = "0.9.24"
 
-[[Issues."0.9.23"]]
+[[Issues."0.9.24"]]
 type = "not_needed"

@@ -19,7 +19,7 @@ type = "missing_deps"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 [[Issues."9.59.0"]]
 dependent = []
-dependency = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
+dependency = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]"]
 type = "not_on_latest"
 version = "9.59.0"
 latest = "9.61.0"
