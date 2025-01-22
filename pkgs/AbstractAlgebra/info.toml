@@ -3,4 +3,4 @@ name = "AbstractAlgebra"
 uuid = "c3fe647b-3220-5bb0-a1ea-a7954cac585d"
 
 [Status]
-version = "0.44.3"
+version = "0.44.4"

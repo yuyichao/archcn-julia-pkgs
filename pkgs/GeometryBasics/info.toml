@@ -3,11 +3,4 @@ name = "GeometryBasics"
 uuid = "5c1252a2-5f33-56bf-86c9-59e7332b4326"
 
 [Status]
-version = "0.4.11"
-
-[[Issues."0.4.11"]]
-dependent = ["CairoMakie [13f3f980-e62b-5c42-98c6-ff1f3baf88f0]", "Makie [ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a]", "MakieCore [20f20a25-4f0e-4fdf-b5d1-57303727442b]", "ShaderAbstractions [65257c39-d410-5151-9873-9b3e5be5013e]", "WGLMakie [276b4fcb-3e11-5398-bf8b-a0c2d153d008]"]
-dependency = []
-type = "not_on_latest"
-version = "0.4.11"
-latest = "0.5.1"
+version = "0.5.1"

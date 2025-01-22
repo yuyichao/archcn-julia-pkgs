@@ -3,11 +3,4 @@ name = "ShaderAbstractions"
 uuid = "65257c39-d410-5151-9873-9b3e5be5013e"
 
 [Status]
-version = "0.4.1"
-
-[[Issues."0.4.1"]]
-dependent = ["Makie [ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a]", "WGLMakie [276b4fcb-3e11-5398-bf8b-a0c2d153d008]"]
-dependency = ["GeometryBasics [5c1252a2-5f33-56bf-86c9-59e7332b4326]"]
-type = "not_on_latest"
-version = "0.4.1"
-latest = "0.5.0"
+version = "0.5.0"
