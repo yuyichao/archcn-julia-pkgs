@@ -226,3 +226,33 @@ pkg = "YaoSym"
 version = "0.6.8"
 dep = "SymEngine"
 depversion = "0.11, 0.12"
+
+[[Overrides.DepsVersion]]
+pkg = "PyPlot"
+version = "2.11.5"
+dep = "Colors"
+depversion = "0.9, 0.10, 0.11, 0.12, 0.13, 1"
+
+[[Overrides.DepsVersion]]
+pkg = "Luxor"
+version = "4.1.0"
+dep = "Colors"
+depversion = "0.11, 0.12, 0.13"
+
+[[Overrides.DepsVersion]]
+pkg = "Bloqade"
+version = "0.2.4"
+dep = "Colors"
+depversion = "0.12, 0.13"
+
+[[Overrides.DepsVersion]]
+pkg = "Bloqade"
+version = ">= 0.2.4"
+dep = "CairoMakie"
+depversion = "0.12, 0.13"
+
+[[Overrides.DepsVersion]]
+pkg = "YaoBlocks"
+version = "0.13.13"
+dep = "KrylovKit"
+depversion = "0.5, 0.6, 0.7, 0.8"
