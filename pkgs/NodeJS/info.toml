@@ -2,7 +2,6 @@
 name = "NodeJS"
 has_artifacts = true
 uuid = "2bd173c7-0d6d-553b-b6af-13a54713934c"
-required = true
 
 [Status]
 version = "2.0.0"

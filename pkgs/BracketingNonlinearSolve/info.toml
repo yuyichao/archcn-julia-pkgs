@@ -1,7 +1,6 @@
 [Pkg]
 name = "BracketingNonlinearSolve"
 uuid = "70df07ce-3d50-431d-a3e7-ca6ddb60ac1e"
-required = true
 
 [Status]
 version = "1.1.0"

@@ -1,7 +1,6 @@
 [Pkg]
 name = "MbedTLS_jll"
 uuid = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
-required = true
 is_jll = true
 
 [Status]

@@ -1,7 +1,6 @@
 [Pkg]
 name = "DeepDiffs"
 uuid = "ab62b9b5-e342-54a8-a765-a90f495de1a6"
-required = true
 
 [Status]
 version = "1.2.0"

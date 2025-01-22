@@ -1,7 +1,6 @@
 [Pkg]
 name = "PCRE_jll"
 uuid = "2f80f16e-611a-54ab-bc61-aa92de5b98fc"
-required = true
 is_jll = true
 
 [Status]

@@ -1,7 +1,6 @@
 [Pkg]
 name = "HypothesisTests"
 uuid = "09f84164-cd44-5f33-b23f-e6b0d136a0d5"
-required = true
 
 [Status]
 version = "0.11.3"

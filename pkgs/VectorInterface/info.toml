@@ -1,7 +1,6 @@
 [Pkg]
 name = "VectorInterface"
 uuid = "409d34a3-91d5-4945-b6ec-7529ddf182d8"
-required = true
 
 [Status]
 version = "0.4.9"
