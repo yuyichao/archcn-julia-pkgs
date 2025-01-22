@@ -11,4 +11,3 @@ library = ["libqt5concurrent", "libqt5core", "libqt5dbus", "libqt5gui", "libqt5n
 
 [[Issues."5.15.3+2"]]
 type = "not_needed"
-has_weak = false
