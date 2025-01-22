@@ -1,9 +1,0 @@
-[Pkg]
-name = "Formatting"
-uuid = "59287772-0a20-5a39-b81b-1366585eb4c0"
-
-[Status]
-version = "0.4.3"
-
-[[Issues."0.4.3"]]
-type = "not_needed"
