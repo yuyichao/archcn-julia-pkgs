@@ -243,7 +243,14 @@ end
 
 function collect_latest_deps(ctx::Context, pkgentry, ver, latest_deps)
     for (uuid, ver) in get_compat_info(ctx, pkgentry)[ver]
-        push!(latest_deps, uuid)
+        latest_deps[uuid] = true
+    end
+    pkginfo = Pkg.Registry.registry_info(pkgentry)
+    weak_compat_info = Pkg.Registry.weak_compat_info(pkginfo)
+    if weak_compat_info !== nothing
+        for (uuid, depver) in weak_compat_info[ver]
+            get!(latest_deps, uuid, false)
+        end
     end
 end
 
@@ -348,10 +355,11 @@ function todict(ctx::Context, info::NotOnLatestInfo)
 end
 
 struct NotNeeded
+    has_weak::Bool
 end
 
 function todict(ctx::Context, info::NotNeeded)
-    return Dict{String,Any}("type"=>"not_needed")
+    return Dict{String,Any}("type"=>"not_needed", "has_weak"=>info.has_weak)
 end
 
 struct CheckError
@@ -599,8 +607,9 @@ function resolve_new_versions(ctx::Context, check_results, latest_deps)
             push!(get!(Vector{Any}, check_res.issues, ver),
                   NotOnLatestInfo(ver, latest, dependent, dependency))
         end
-        if !(uuid in latest_deps) && !get(arch_info["Pkg"], "required", false)
-            push!(get!(Vector{Any}, check_res.issues, ver), NotNeeded())
+        dep_type = get(latest_deps, uuid, nothing)
+        if dep_type !== true && !get(arch_info["Pkg"], "required", false)
+            push!(get!(Vector{Any}, check_res.issues, ver), NotNeeded(dep_type === false))
         end
         if ver == old_version
             continue
@@ -653,7 +662,7 @@ function scan(ctx::Context)
     messages = String[]
     check_results = Dict{Base.UUID,PackageVersionInfo}()
     npackages = length(ctx.packages_info)
-    latest_deps = Set{Base.UUID}()
+    latest_deps = Dict{Base.UUID,Bool}()
     for (idx, (uuid, arch_info)) in enumerate(ctx.packages_info)
         pkgentry = ctx.registry[uuid]
         @info "($(idx)/$(npackages)) Checking $(pkgentry.name) [$uuid]"
