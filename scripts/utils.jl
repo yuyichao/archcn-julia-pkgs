@@ -332,9 +332,7 @@ struct PkgCommitMissing
 end
 
 function todict(ctx::Context, info::PkgCommitMissing)
-    res = Dict{String,Any}("type"=>"commit_missing")
-    res["hash"] = info.tree_hash
-    return res
+    return Dict{String,Any}("type"=>"commit_missing", "hash"=>info.tree_hash)
 end
 
 struct NotOnLatestInfo
@@ -359,7 +357,11 @@ struct NotNeeded
 end
 
 function todict(ctx::Context, info::NotNeeded)
-    return Dict{String,Any}("type"=>"not_needed", "has_weak"=>info.has_weak)
+    res = Dict{String,Any}("type"=>"not_needed")
+    if info.has_weak
+        res["has_weak"] = true
+    end
+    return res
 end
 
 struct CheckError
