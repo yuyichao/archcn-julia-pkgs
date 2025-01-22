@@ -14,3 +14,5 @@ type = "missing_deps"
     [[Issues."0.29.6".weak_deps]]
     name = "DiskArrays"
     uuid = "3c3547ce-8d99-4f5e-a174-61eb10b00ae3"
+[[Issues."0.29.6"]]
+type = "not_needed"
