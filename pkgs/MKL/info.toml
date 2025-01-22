@@ -7,3 +7,4 @@ version = "0.7.0"
 
 [[Issues."0.7.0"]]
 type = "not_needed"
+has_weak = false
