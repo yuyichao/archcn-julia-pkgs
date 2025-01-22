@@ -3,11 +3,4 @@ name = "SymEngine"
 uuid = "123dc426-2d89-5057-bbad-38513e3affd8"
 
 [Status]
-version = "0.11.0"
-
-[[Issues."0.11.0"]]
-dependent = ["YaoSym [3b27209a-d3d6-11e9-3c0f-41eb92b2cb9d]"]
-dependency = []
-type = "not_on_latest"
-version = "0.11.0"
-latest = "0.12.0"
+version = "0.12.0"
