@@ -3,4 +3,11 @@ name = "Measurements"
 uuid = "eff96d63-e80a-5855-80a2-b1b0885c5ab7"
 
 [Status]
-version = "2.11.0"
+version = "2.12.0"
+
+[[Issues."2.12.0"]]
+type = "missing_deps"
+
+    [[Issues."2.12.0".weak_deps]]
+    name = "Juno"
+    uuid = "e5e0dc1b-0480-54bc-9374-aad01c23163d"
