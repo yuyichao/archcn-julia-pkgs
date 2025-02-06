@@ -4,7 +4,7 @@ uuid = "079eb43e-fd8e-5478-9966-2cf3e3edb778"
 is_jll = true
 
 [Status]
-version = "2.9.0+0"
+version = "2.10.0+0"
 
 [JLL.products]
 library = ["libnlopt"]
