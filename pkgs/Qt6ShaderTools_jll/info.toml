@@ -4,7 +4,7 @@ uuid = "ce943373-25bb-56aa-8eca-768745ed7b5a"
 is_jll = true
 
 [Status]
-version = "6.7.1+1"
+version = "6.8.2+1"
 
 [JLL.products]
 library = ["libqt6shadertools"]

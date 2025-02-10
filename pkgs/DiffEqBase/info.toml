@@ -3,11 +3,14 @@ name = "DiffEqBase"
 uuid = "2b5f629d-d688-5b77-993f-72d75c75574e"
 
 [Status]
-version = "6.161.0"
+version = "6.162.0"
 
-[[Issues."6.161.0"]]
+[[Issues."6.162.0"]]
 type = "missing_deps"
 
-    [[Issues."6.161.0".weak_deps]]
+    [[Issues."6.162.0".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+    [[Issues."6.162.0".weak_deps]]
+    name = "GTPSA"
+    uuid = "b27dd330-f138-47c5-815b-40db9dd9b6e8"
