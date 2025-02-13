@@ -18,11 +18,24 @@ type = "missing_deps"
     name = "Metal"
     uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
 [[Issues."2.39.0"]]
-dependent = ["BoundaryValueDiffEqAscher [7227322d-7511-4e07-9247-ad6ff830280e]", "BoundaryValueDiffEqCore [56b672f2-a5fe-4263-ab2d-da677488eb3a]", "BoundaryValueDiffEqFIRK [85d9eb09-370e-4000-bb32-543851f73618]", "BoundaryValueDiffEqMIRK [1a22d4ce-7765-49ea-b6f2-13c8438986a6]", "BoundaryValueDiffEqMIRKN [9255f1d6-53bf-473e-b6bd-23f1ff009da4]", "BoundaryValueDiffEqShooting [ed55bfe0-3725-4db6-871e-a1dc9f42a757]", "DifferentialEquations [0c46a032-eb83-5123-abaf-570d42b7fbaa]", "NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]", "NonlinearSolveFirstOrder [5959db7a-ea39-4486-b5fe-2dd0bf03d60d]", "NonlinearSolveQuasiNewton [9a2c21bd-3a47-402d-9113-8faf9a0ee114]", "OrdinaryDiffEqDefault [50262376-6c5a-4cf5-baba-aaf4f84d72d7]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]", "OrdinaryDiffEqExtrapolation [becaefa8-8ca2-5cf9-886d-c06f3d2bd2c4]", "OrdinaryDiffEqFIRK [5960d6e9-dd7a-4743-88e7-cf307b64f125]", "OrdinaryDiffEqNonlinearSolve [127b3ac7-2247-4354-8eb6-78cf4e7c58e8]", "OrdinaryDiffEqRosenbrock [43230ef6-c299-4910-a778-202eb28ce4ce]"]
+dependent = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]", "OrdinaryDiffEqDefault [50262376-6c5a-4cf5-baba-aaf4f84d72d7]", "OrdinaryDiffEqExtrapolation [becaefa8-8ca2-5cf9-886d-c06f3d2bd2c4]", "OrdinaryDiffEqFIRK [5960d6e9-dd7a-4743-88e7-cf307b64f125]"]
 dependency = []
 type = "not_on_latest"
 version = "2.39.0"
-latest = "3.0.0"
+latest = "3.1.0"
+
+[[Issues."3.1.0"]]
+type = "missing_deps"
+
+    [[Issues."3.1.0".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+    [[Issues."3.1.0".weak_deps]]
+    name = "CUDSS"
+    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+    [[Issues."3.1.0".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
 
 [[Issues."3.0.0"]]
 type = "missing_deps"

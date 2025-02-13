@@ -10,4 +10,4 @@ dependent = ["SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]"]
 dependency = []
 type = "not_on_latest"
 version = "0.7.10"
-latest = "0.8.1"
+latest = "0.8.2"
