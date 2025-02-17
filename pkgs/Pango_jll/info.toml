@@ -4,7 +4,7 @@ uuid = "36c8627f-9965-5494-a995-c6b170f724f3"
 is_jll = true
 
 [Status]
-version = "1.55.5+0"
+version = "1.56.1+0"
 
 [JLL.products]
 library = ["libpango", "libpangocairo", "libpangoft"]
