@@ -4,3 +4,10 @@ uuid = "992eb4ea-22a4-4c89-a5bb-47a3300528ab"
 
 [Status]
 version = "0.2.24"
+
+[[Issues."0.2.25"]]
+type = "missing_deps"
+
+    [[Issues."0.2.25".deps]]
+    name = "pixi_jll"
+    uuid = "4d7b5844-a134-5dcd-ac86-c8f19cd51bed"
