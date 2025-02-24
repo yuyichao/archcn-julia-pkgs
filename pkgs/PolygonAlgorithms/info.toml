@@ -3,11 +3,4 @@ name = "PolygonAlgorithms"
 uuid = "32a0d02f-32d9-4438-b5ed-3a2932b48f96"
 
 [Status]
-version = "0.2.0"
-
-[[Issues."0.2.0"]]
-dependent = ["Luxor [ae8d54c2-7ccd-5906-9d76-62fc9837b5bc]"]
-dependency = []
-type = "not_on_latest"
-version = "0.2.0"
-latest = "0.3.2"
+version = "0.3.2"
