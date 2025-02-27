@@ -22,3 +22,14 @@ type = "missing_deps"
     [[Issues."2.74.1".weak_deps]]
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
+[[Issues."2.75.1"]]
+type = "missing_deps"
+
+    [[Issues."2.75.1".deps]]
+    name = "Moshi"
+    uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
+
+    [[Issues."2.75.1".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
