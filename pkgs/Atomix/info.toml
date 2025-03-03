@@ -3,17 +3,17 @@ name = "Atomix"
 uuid = "a9b6321e-bd34-4604-b9c9-b65b8de01458"
 
 [Status]
-version = "1.1.0"
+version = "1.1.1"
 
-[[Issues."1.1.0"]]
+[[Issues."1.1.1"]]
 type = "missing_deps"
 
-    [[Issues."1.1.0".weak_deps]]
+    [[Issues."1.1.1".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-    [[Issues."1.1.0".weak_deps]]
+    [[Issues."1.1.1".weak_deps]]
     name = "Metal"
     uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."1.1.0".weak_deps]]
+    [[Issues."1.1.1".weak_deps]]
     name = "oneAPI"
     uuid = "8f75cd03-7ff8-4ecb-9b8f-daf728133b1b"

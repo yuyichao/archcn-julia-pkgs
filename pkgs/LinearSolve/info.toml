@@ -5,24 +5,18 @@ uuid = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
 [Status]
 version = "2.39.0"
 
-[[Issues."2.39.0"]]
+[[Issues."3.4.0"]]
 type = "missing_deps"
 
-    [[Issues."2.39.0".weak_deps]]
+    [[Issues."3.4.0".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-    [[Issues."2.39.0".weak_deps]]
+    [[Issues."3.4.0".weak_deps]]
     name = "CUDSS"
     uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."2.39.0".weak_deps]]
+    [[Issues."3.4.0".weak_deps]]
     name = "Metal"
     uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-[[Issues."2.39.0"]]
-dependent = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]"]
-dependency = []
-type = "not_on_latest"
-version = "2.39.0"
-latest = "3.3.1"
 
 [[Issues."3.1.0"]]
 type = "missing_deps"
@@ -49,6 +43,25 @@ type = "missing_deps"
     [[Issues."3.3.0".weak_deps]]
     name = "Metal"
     uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+
+[[Issues."2.39.0"]]
+type = "missing_deps"
+
+    [[Issues."2.39.0".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+    [[Issues."2.39.0".weak_deps]]
+    name = "CUDSS"
+    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+    [[Issues."2.39.0".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+[[Issues."2.39.0"]]
+dependent = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]"]
+dependency = []
+type = "not_on_latest"
+version = "2.39.0"
+latest = "3.4.0"
 
 [[Issues."3.2.0"]]
 type = "missing_deps"

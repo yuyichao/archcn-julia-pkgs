@@ -3,4 +3,4 @@ name = "LazyArrays"
 uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
 
 [Status]
-version = "2.6.0"
+version = "2.6.1"
