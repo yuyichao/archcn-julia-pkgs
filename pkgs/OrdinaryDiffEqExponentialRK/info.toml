@@ -3,4 +3,4 @@ name = "OrdinaryDiffEqExponentialRK"
 uuid = "e0540318-69ee-4070-8777-9e2de6de23de"
 
 [Status]
-version = "1.3.0"
+version = "1.4.0"

@@ -3,4 +3,4 @@ name = "OrdinaryDiffEqStabilizedIRK"
 uuid = "e3e12d00-db14-5390-b879-ac3dd2ef6296"
 
 [Status]
-version = "1.2.0"
+version = "1.3.0"

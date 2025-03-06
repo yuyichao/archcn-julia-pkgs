@@ -4,7 +4,7 @@ uuid = "f1f71cc9-e9ae-5b93-9b94-4fe0e1ad3748"
 is_jll = true
 
 [Status]
-version = "5.5.2+0"
+version = "5.5.3+0"
 
 [JLL.products]
 executable = ["generate_compile_time_mpi_constants", "mpicc", "mpich_mpiexec", "mpicxx", "mpiexec", "mpifc", "mpifort", "mpiwrapperexec"]
