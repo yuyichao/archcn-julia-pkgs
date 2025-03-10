@@ -4,7 +4,7 @@ uuid = "85f0d8ed-5b39-5caa-b1ae-7472de402361"
 is_jll = true
 
 [Status]
-version = "0.7.0+0"
+version = "0.7.1+0"
 
 [JLL.products]
 executable = ["llvm_spirv"]

@@ -4,3 +4,10 @@ uuid = "d1185830-fcd6-423d-90d6-eec64667417b"
 
 [Status]
 version = "3.16.0"
+
+[[Issues."3.17.0"]]
+type = "missing_deps"
+
+    [[Issues."3.17.0".deps]]
+    name = "TaskLocalValues"
+    uuid = "ed4db957-447d-4319-bfb6-7fa9ae7ecf34"

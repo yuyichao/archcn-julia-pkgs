@@ -4,3 +4,10 @@ uuid = "a80b9123-70ca-4bc0-993e-6e3bcb318db6"
 
 [Status]
 version = "0.8.15"
+
+[[Issues."0.8.15"]]
+dependent = ["JuliaFormatter [98e50ef6-434e-11e9-1051-2b60c6c9e899]"]
+dependency = []
+type = "not_on_latest"
+version = "0.8.15"
+latest = "0.9.0"

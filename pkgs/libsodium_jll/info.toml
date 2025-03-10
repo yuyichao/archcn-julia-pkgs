@@ -4,7 +4,7 @@ uuid = "a9144af2-ca23-56d9-984f-0d03f7b5ccf8"
 is_jll = true
 
 [Status]
-version = "1.0.20+3"
+version = "1.0.21+0"
 
 [JLL.products]
 library = ["libsodium"]
