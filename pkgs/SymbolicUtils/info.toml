@@ -11,3 +11,10 @@ type = "missing_deps"
     [[Issues."3.17.0".deps]]
     name = "TaskLocalValues"
     uuid = "ed4db957-447d-4319-bfb6-7fa9ae7ecf34"
+
+[[Issues."3.17.1"]]
+type = "missing_deps"
+
+    [[Issues."3.17.1".deps]]
+    name = "TaskLocalValues"
+    uuid = "ed4db957-447d-4319-bfb6-7fa9ae7ecf34"
