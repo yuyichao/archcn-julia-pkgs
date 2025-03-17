@@ -11,3 +11,10 @@ type = "missing_deps"
     [[Issues."0.22.24".deps]]
     name = "OpenBLASConsistentFPCSR_jll"
     uuid = "6cdc7f73-28fd-5e50-80fb-958a8875b1af"
+
+[[Issues."0.22.25"]]
+type = "missing_deps"
+
+    [[Issues."0.22.25".deps]]
+    name = "OpenBLASConsistentFPCSR_jll"
+    uuid = "6cdc7f73-28fd-5e50-80fb-958a8875b1af"
