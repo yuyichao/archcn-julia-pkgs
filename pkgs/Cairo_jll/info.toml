@@ -4,7 +4,7 @@ uuid = "83423d85-b0ee-5818-9007-b63ccbeb887a"
 is_jll = true
 
 [Status]
-version = "1.18.2+1"
+version = "1.18.4+0"
 
 [JLL.products]
 library = ["libcairo", "libcairo_gobject", "libcairo_script_interpreter"]

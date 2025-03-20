@@ -12,6 +12,13 @@ type = "missing_deps"
     name = "TaskLocalValues"
     uuid = "ed4db957-447d-4319-bfb6-7fa9ae7ecf34"
 
+[[Issues."3.19.0"]]
+type = "missing_deps"
+
+    [[Issues."3.19.0".deps]]
+    name = "TaskLocalValues"
+    uuid = "ed4db957-447d-4319-bfb6-7fa9ae7ecf34"
+
 [[Issues."3.18.0"]]
 type = "missing_deps"
 
@@ -23,5 +30,12 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."3.17.1".deps]]
+    name = "TaskLocalValues"
+    uuid = "ed4db957-447d-4319-bfb6-7fa9ae7ecf34"
+
+[[Issues."3.20.0"]]
+type = "missing_deps"
+
+    [[Issues."3.20.0".deps]]
     name = "TaskLocalValues"
     uuid = "ed4db957-447d-4319-bfb6-7fa9ae7ecf34"
