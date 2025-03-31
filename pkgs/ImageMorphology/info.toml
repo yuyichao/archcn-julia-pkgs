@@ -3,4 +3,4 @@ name = "ImageMorphology"
 uuid = "787d08f9-d448-5407-9aad-5290dd7ab264"
 
 [Status]
-version = "0.4.5"
+version = "0.4.6"

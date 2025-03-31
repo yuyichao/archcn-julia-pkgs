@@ -11,3 +11,10 @@ dependency = []
 type = "not_on_latest"
 version = "1.12.3"
 latest = "2.2.0"
+
+[[Issues."1.12.4"]]
+type = "missing_deps"
+
+    [[Issues."1.12.4".weak_deps]]
+    name = "TaylorDiff"
+    uuid = "b36ab563-344f-407b-a36a-4f200bebf99c"
