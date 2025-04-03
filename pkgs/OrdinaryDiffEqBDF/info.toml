@@ -3,4 +3,4 @@ name = "OrdinaryDiffEqBDF"
 uuid = "6ad6398a-0878-4a85-9266-38940aa047c8"
 
 [Status]
-version = "1.3.0"
+version = "1.4.0"

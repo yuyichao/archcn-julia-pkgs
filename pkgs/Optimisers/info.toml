@@ -3,4 +3,11 @@ name = "Optimisers"
 uuid = "3bd65402-5787-11e9-1adc-39752487f4e2"
 
 [Status]
-version = "0.4.5"
+version = "0.4.6"
+
+[[Issues."0.4.6"]]
+type = "missing_deps"
+
+    [[Issues."0.4.6".weak_deps]]
+    name = "Reactant"
+    uuid = "3c362404-f566-11ee-1572-e11a4b42c853"

@@ -30,7 +30,17 @@ dependent = []
 dependency = ["SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
 type = "not_on_latest"
 version = "6.29.2"
-latest = "6.34.0"
+latest = "6.36.0"
+
+[[Issues."6.36.0"]]
+type = "missing_deps"
+
+    [[Issues."6.36.0".weak_deps]]
+    name = "Lux"
+    uuid = "b2108857-7c20-44ae-9111-449ecde12c47"
+    [[Issues."6.36.0".weak_deps]]
+    name = "SymPy"
+    uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 
 [[Issues."6.31.1"]]
 type = "missing_deps"
@@ -79,6 +89,16 @@ type = "missing_deps"
     name = "Lux"
     uuid = "b2108857-7c20-44ae-9111-449ecde12c47"
     [[Issues."6.33.0".weak_deps]]
+    name = "SymPy"
+    uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+
+[[Issues."6.35.0"]]
+type = "missing_deps"
+
+    [[Issues."6.35.0".weak_deps]]
+    name = "Lux"
+    uuid = "b2108857-7c20-44ae-9111-449ecde12c47"
+    [[Issues."6.35.0".weak_deps]]
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 
