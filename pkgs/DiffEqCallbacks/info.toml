@@ -3,11 +3,4 @@ name = "DiffEqCallbacks"
 uuid = "459566f4-90b8-5000-8ac3-15dfb0a30def"
 
 [Status]
-version = "3.9.1"
-
-[[Issues."3.9.1"]]
-dependent = ["BloqadeODE [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe5]"]
-dependency = ["Functors [d9f16b24-f501-4c13-a1f2-28368ffc5196]"]
-type = "not_on_latest"
-version = "3.9.1"
-latest = "4.3.0"
+version = "4.3.0"

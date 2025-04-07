@@ -4,7 +4,7 @@ uuid = "a2964d1f-97da-50d4-b82a-358c7fce9d89"
 is_jll = true
 
 [Status]
-version = "1.21.0+2"
+version = "1.23.1+0"
 
 [JLL.products]
 executable = ["wayland_scanner"]

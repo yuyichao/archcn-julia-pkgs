@@ -3,18 +3,4 @@ name = "SimpleNonlinearSolve"
 uuid = "727e6d20-b764-4bd8-a329-72de5adea6c7"
 
 [Status]
-version = "1.12.3"
-
-[[Issues."1.12.3"]]
-dependent = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]"]
-dependency = []
-type = "not_on_latest"
-version = "1.12.3"
-latest = "2.2.0"
-
-[[Issues."1.12.4"]]
-type = "missing_deps"
-
-    [[Issues."1.12.4".weak_deps]]
-    name = "TaylorDiff"
-    uuid = "b36ab563-344f-407b-a36a-4f200bebf99c"
+version = "2.2.0"

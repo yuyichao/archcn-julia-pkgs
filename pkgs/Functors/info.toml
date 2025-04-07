@@ -3,11 +3,4 @@ name = "Functors"
 uuid = "d9f16b24-f501-4c13-a1f2-28368ffc5196"
 
 [Status]
-version = "0.4.12"
-
-[[Issues."0.4.12"]]
-dependent = ["DiffEqCallbacks [459566f4-90b8-5000-8ac3-15dfb0a30def]"]
-dependency = []
-type = "not_on_latest"
-version = "0.4.12"
-latest = "0.5.2"
+version = "0.5.2"
