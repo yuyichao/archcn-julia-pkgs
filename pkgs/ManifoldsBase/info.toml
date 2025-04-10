@@ -10,4 +10,4 @@ dependent = ["ManifoldDiff [af67fdf4-a580-4b9f-bbec-742ef357defd]", "Manifolds [
 dependency = []
 type = "not_on_latest"
 version = "0.15.24"
-latest = "1.0.1"
+latest = "1.0.3"
