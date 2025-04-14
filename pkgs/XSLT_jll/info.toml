@@ -8,3 +8,6 @@ version = "1.1.43+0"
 
 [JLL.products]
 library = ["libexslt", "libxslt"]
+
+[[Issues."1.1.43+0"]]
+type = "not_needed"
