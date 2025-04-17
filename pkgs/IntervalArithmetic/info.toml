@@ -5,6 +5,13 @@ uuid = "d1acc4aa-44c8-5952-acd4-ba5d80a2a253"
 [Status]
 version = "0.22.23"
 
+[[Issues."0.22.29"]]
+type = "missing_deps"
+
+    [[Issues."0.22.29".deps]]
+    name = "OpenBLASConsistentFPCSR_jll"
+    uuid = "6cdc7f73-28fd-5e50-80fb-958a8875b1af"
+
 [[Issues."0.22.27"]]
 type = "missing_deps"
 

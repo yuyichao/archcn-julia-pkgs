@@ -3,11 +3,11 @@ name = "SparseConnectivityTracer"
 uuid = "9f842d2f-2579-4b1d-911e-f412cf18a3f5"
 
 [Status]
-version = "0.6.16"
+version = "0.6.17"
 
-[[Issues."0.6.16"]]
+[[Issues."0.6.17"]]
 type = "missing_deps"
 
-    [[Issues."0.6.16".weak_deps]]
+    [[Issues."0.6.17".weak_deps]]
     name = "DataInterpolations"
     uuid = "82cc6244-b520-54b8-b5a6-8a565e85f1d0"
