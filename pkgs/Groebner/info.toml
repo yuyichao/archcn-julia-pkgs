@@ -3,8 +3,8 @@ name = "Groebner"
 uuid = "0b43b601-686d-58a3-8a1c-6623616c7cd4"
 
 [Status]
-version = "0.9.3"
+version = "0.9.4"
 
-[[Issues."0.9.3"]]
+[[Issues."0.9.4"]]
 type = "not_needed"
 has_weak = true

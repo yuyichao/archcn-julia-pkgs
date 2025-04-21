@@ -3,4 +3,11 @@ name = "BandedMatrices"
 uuid = "aae01518-5342-5314-be14-df237901396f"
 
 [Status]
-version = "1.9.3"
+version = "1.9.4"
+
+[[Issues."1.9.4"]]
+type = "missing_deps"
+
+    [[Issues."1.9.4".weak_deps]]
+    name = "CliqueTrees"
+    uuid = "60701a23-6482-424a-84db-faee86b9b1f8"

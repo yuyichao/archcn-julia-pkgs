@@ -5,6 +5,19 @@ uuid = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
 [Status]
 version = "3.7.2"
 
+[[Issues."3.8.0"]]
+type = "missing_deps"
+
+    [[Issues."3.8.0".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+    [[Issues."3.8.0".weak_deps]]
+    name = "CUDSS"
+    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+    [[Issues."3.8.0".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+
 [[Issues."3.7.2"]]
 type = "missing_deps"
 
@@ -17,3 +30,9 @@ type = "missing_deps"
     [[Issues."3.7.2".weak_deps]]
     name = "Metal"
     uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+[[Issues."3.7.2"]]
+dependent = []
+dependency = ["Krylov [ba0b0d4f-ebba-5204-a429-3ac8c609bfb7]"]
+type = "not_on_latest"
+version = "3.7.2"
+latest = "3.8.0"

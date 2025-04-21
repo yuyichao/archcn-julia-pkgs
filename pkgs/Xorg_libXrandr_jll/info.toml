@@ -4,7 +4,7 @@ uuid = "ec84b674-ba8e-5d96-8ba1-2a689ba10484"
 is_jll = true
 
 [Status]
-version = "1.5.4+0"
+version = "1.5.5+0"
 
 [JLL.products]
 library = ["libXrandr"]
