@@ -5,20 +5,20 @@ uuid = "961ee093-0014-501f-94e3-6117800e7a78"
 [Status]
 version = "9.64.3"
 
-[[Issues."9.69.0"]]
+[[Issues."9.74.0"]]
 type = "missing_deps"
 
-    [[Issues."9.69.0".deps]]
+    [[Issues."9.74.0".deps]]
     name = "Moshi"
     uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
 
-    [[Issues."9.69.0".weak_deps]]
+    [[Issues."9.74.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.69.0".weak_deps]]
+    [[Issues."9.74.0".weak_deps]]
     name = "FMI"
     uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.69.0".weak_deps]]
+    [[Issues."9.74.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 
@@ -73,23 +73,6 @@ type = "missing_deps"
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 
-[[Issues."9.65.0"]]
-type = "missing_deps"
-
-    [[Issues."9.65.0".deps]]
-    name = "Moshi"
-    uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
-
-    [[Issues."9.65.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.65.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.65.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
 [[Issues."9.67.0"]]
 type = "missing_deps"
 
@@ -107,6 +90,74 @@ type = "missing_deps"
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 
+[[Issues."9.66.0"]]
+type = "missing_deps"
+
+    [[Issues."9.66.0".deps]]
+    name = "Moshi"
+    uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
+
+    [[Issues."9.66.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.66.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.66.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."9.69.0"]]
+type = "missing_deps"
+
+    [[Issues."9.69.0".deps]]
+    name = "Moshi"
+    uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
+
+    [[Issues."9.69.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.69.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.69.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."9.65.0"]]
+type = "missing_deps"
+
+    [[Issues."9.65.0".deps]]
+    name = "Moshi"
+    uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
+
+    [[Issues."9.65.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.65.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.65.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."9.73.0"]]
+type = "missing_deps"
+
+    [[Issues."9.73.0".deps]]
+    name = "Moshi"
+    uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
+
+    [[Issues."9.73.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.73.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.73.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
 [[Issues."9.64.3"]]
 type = "missing_deps"
 
@@ -117,23 +168,6 @@ type = "missing_deps"
     name = "FMI"
     uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
     [[Issues."9.64.3".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."9.68.1"]]
-type = "missing_deps"
-
-    [[Issues."9.68.1".deps]]
-    name = "Moshi"
-    uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
-
-    [[Issues."9.68.1".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.68.1".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.68.1".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 
@@ -154,19 +188,19 @@ type = "missing_deps"
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 
-[[Issues."9.66.0"]]
+[[Issues."9.68.1"]]
 type = "missing_deps"
 
-    [[Issues."9.66.0".deps]]
+    [[Issues."9.68.1".deps]]
     name = "Moshi"
     uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
 
-    [[Issues."9.66.0".weak_deps]]
+    [[Issues."9.68.1".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.66.0".weak_deps]]
+    [[Issues."9.68.1".weak_deps]]
     name = "FMI"
     uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.66.0".weak_deps]]
+    [[Issues."9.68.1".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
