@@ -4,6 +4,3 @@ uuid = "96374032-68de-5a5b-8d9e-752f78720389"
 
 [Status]
 version = "1.0.2"
-
-[[Issues."1.0.2"]]
-type = "not_needed"

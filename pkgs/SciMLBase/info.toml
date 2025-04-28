@@ -60,6 +60,17 @@ type = "missing_deps"
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 
+[[Issues."2.86.1"]]
+type = "missing_deps"
+
+    [[Issues."2.86.1".deps]]
+    name = "Moshi"
+    uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
+
+    [[Issues."2.86.1".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
 [[Issues."2.78.0"]]
 type = "missing_deps"
 
@@ -148,6 +159,17 @@ type = "missing_deps"
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 
+[[Issues."2.86.0"]]
+type = "missing_deps"
+
+    [[Issues."2.86.0".deps]]
+    name = "Moshi"
+    uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
+
+    [[Issues."2.86.0".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
 [[Issues."2.82.1"]]
 type = "missing_deps"
 
@@ -181,13 +203,6 @@ type = "missing_deps"
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 
-[[Issues."2.74.1"]]
-type = "missing_deps"
-
-    [[Issues."2.74.1".weak_deps]]
-    name = "RCall"
-    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
-
 [[Issues."2.77.0"]]
 type = "missing_deps"
 
@@ -196,5 +211,12 @@ type = "missing_deps"
     uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
 
     [[Issues."2.77.0".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
+[[Issues."2.74.1"]]
+type = "missing_deps"
+
+    [[Issues."2.74.1".weak_deps]]
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
