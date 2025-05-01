@@ -4,11 +4,11 @@ uuid = "e88e6eb3-aa80-5325-afca-941959d7151f"
 required = true
 
 [Status]
-version = "0.7.6"
+version = "0.7.7"
 
-[[Issues."0.7.6"]]
+[[Issues."0.7.7"]]
 type = "missing_deps"
 
-    [[Issues."0.7.6".weak_deps]]
+    [[Issues."0.7.7".weak_deps]]
     name = "Atom"
     uuid = "c52e3926-4ff0-5f6e-af25-54175e0327b1"

@@ -3,11 +3,11 @@ name = "SparseMatrixColorings"
 uuid = "0a514795-09f3-496d-8182-132a7b665d35"
 
 [Status]
-version = "0.4.18"
+version = "0.4.19"
 
-[[Issues."0.4.18"]]
+[[Issues."0.4.19"]]
 type = "missing_deps"
 
-    [[Issues."0.4.18".weak_deps]]
+    [[Issues."0.4.19".weak_deps]]
     name = "CliqueTrees"
     uuid = "60701a23-6482-424a-84db-faee86b9b1f8"

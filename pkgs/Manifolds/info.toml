@@ -3,11 +3,11 @@ name = "Manifolds"
 uuid = "1cead3c2-87b3-11e9-0ccd-23c62b72b94e"
 
 [Status]
-version = "0.9.20"
+version = "0.10.14"
 
-[[Issues."0.9.20"]]
-dependent = ["SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]"]
-dependency = ["ManifoldDiff [af67fdf4-a580-4b9f-bbec-742ef357defd]", "ManifoldsBase [3362f125-f0bb-47a3-aa74-596ffd7ef2fb]", "MatrixEquations [99c1a7ee-ab34-5fd5-8076-27c950a045f4]"]
+[[Issues."0.10.14"]]
+dependent = []
+dependency = ["MatrixEquations [99c1a7ee-ab34-5fd5-8076-27c950a045f4]"]
 type = "not_on_latest"
-version = "0.9.20"
+version = "0.10.14"
 latest = "0.10.17"
