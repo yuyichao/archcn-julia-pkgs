@@ -3,8 +3,8 @@ name = "MonteCarloMeasurements"
 uuid = "0987c9cc-fe09-11e8-30f0-b96dd679fdca"
 
 [Status]
-version = "1.4.5"
+version = "1.4.6"
 
-[[Issues."1.4.5"]]
+[[Issues."1.4.6"]]
 type = "not_needed"
 has_weak = true
