@@ -3,4 +3,4 @@ name = "OrdinaryDiffEqDifferentiation"
 uuid = "4302a76b-040a-498a-8c04-15b101fed76b"
 
 [Status]
-version = "1.7.0"
+version = "1.8.0"
