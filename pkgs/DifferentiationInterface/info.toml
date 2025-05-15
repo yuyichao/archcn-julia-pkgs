@@ -23,3 +23,28 @@ type = "missing_deps"
     [[Issues."0.6.54".weak_deps]]
     name = "PolyesterForwardDiff"
     uuid = "98d1487c-24ca-40b6-b7ab-df2af84e126b"
+[[Issues."0.6.54"]]
+dependent = ["BoundaryValueDiffEqAscher [7227322d-7511-4e07-9247-ad6ff830280e]", "BoundaryValueDiffEqFIRK [85d9eb09-370e-4000-bb32-543851f73618]", "BoundaryValueDiffEqMIRK [1a22d4ce-7765-49ea-b6f2-13c8438986a6]", "BoundaryValueDiffEqMIRKN [9255f1d6-53bf-473e-b6bd-23f1ff009da4]", "BoundaryValueDiffEqShooting [ed55bfe0-3725-4db6-871e-a1dc9f42a757]", "ManifoldDiff [af67fdf4-a580-4b9f-bbec-742ef357defd]", "NLSolversBase [d41bc354-129a-5804-8e4c-c37616107c6c]", "NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]", "OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]", "OrdinaryDiffEqRosenbrock [43230ef6-c299-4910-a778-202eb28ce4ce]"]
+dependency = []
+type = "not_on_latest"
+version = "0.6.54"
+latest = "0.7.0"
+
+[[Issues."0.7.0"]]
+type = "missing_deps"
+
+    [[Issues."0.7.0".weak_deps]]
+    name = "Diffractor"
+    uuid = "9f5e2b26-1114-432f-b630-d3fe2085c51c"
+    [[Issues."0.7.0".weak_deps]]
+    name = "FastDifferentiation"
+    uuid = "eb9bf01b-bf85-4b60-bf87-ee5de06c00be"
+    [[Issues."0.7.0".weak_deps]]
+    name = "GTPSA"
+    uuid = "b27dd330-f138-47c5-815b-40db9dd9b6e8"
+    [[Issues."0.7.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."0.7.0".weak_deps]]
+    name = "PolyesterForwardDiff"
+    uuid = "98d1487c-24ca-40b6-b7ab-df2af84e126b"

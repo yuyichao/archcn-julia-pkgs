@@ -3,4 +3,11 @@ name = "NonlinearSolveBase"
 uuid = "be0214bd-f91f-a760-ac4e-3421ce2b2da0"
 
 [Status]
-version = "1.7.0"
+version = "1.8.0"
+
+[[Issues."1.8.0"]]
+dependent = []
+dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
+type = "not_on_latest"
+version = "1.8.0"
+latest = "1.9.0"

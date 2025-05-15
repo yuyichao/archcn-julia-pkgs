@@ -10,4 +10,4 @@ dependent = []
 dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 type = "not_on_latest"
 version = "1.8.0"
-latest = "1.8.1"
+latest = "1.9.0"

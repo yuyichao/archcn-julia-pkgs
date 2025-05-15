@@ -3,4 +3,4 @@ name = "NonlinearSolveQuasiNewton"
 uuid = "9a2c21bd-3a47-402d-9113-8faf9a0ee114"
 
 [Status]
-version = "1.4.0"
+version = "1.5.0"
