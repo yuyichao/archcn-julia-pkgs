@@ -12,6 +12,13 @@ type = "missing_deps"
     name = "OpenBLASConsistentFPCSR_jll"
     uuid = "6cdc7f73-28fd-5e50-80fb-958a8875b1af"
 
+[[Issues."0.22.35"]]
+type = "missing_deps"
+
+    [[Issues."0.22.35".deps]]
+    name = "OpenBLASConsistentFPCSR_jll"
+    uuid = "6cdc7f73-28fd-5e50-80fb-958a8875b1af"
+
 [[Issues."0.22.27"]]
 type = "missing_deps"
 
@@ -40,10 +47,10 @@ type = "missing_deps"
     name = "OpenBLASConsistentFPCSR_jll"
     uuid = "6cdc7f73-28fd-5e50-80fb-958a8875b1af"
 
-[[Issues."0.22.30"]]
+[[Issues."0.22.34"]]
 type = "missing_deps"
 
-    [[Issues."0.22.30".deps]]
+    [[Issues."0.22.34".deps]]
     name = "OpenBLASConsistentFPCSR_jll"
     uuid = "6cdc7f73-28fd-5e50-80fb-958a8875b1af"
 
@@ -54,10 +61,10 @@ type = "missing_deps"
     name = "OpenBLASConsistentFPCSR_jll"
     uuid = "6cdc7f73-28fd-5e50-80fb-958a8875b1af"
 
-[[Issues."0.22.34"]]
+[[Issues."0.22.30"]]
 type = "missing_deps"
 
-    [[Issues."0.22.34".deps]]
+    [[Issues."0.22.30".deps]]
     name = "OpenBLASConsistentFPCSR_jll"
     uuid = "6cdc7f73-28fd-5e50-80fb-958a8875b1af"
 
