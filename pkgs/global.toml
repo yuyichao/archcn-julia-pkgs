@@ -265,13 +265,19 @@ depversion = "0.3, 0.4, 1"
 
 [[Overrides.DepsVersion]]
 pkg = "NonlinearSolveQuasiNewton"
-version = "1.15"
+version = "1.5"
 dep = "SciMLOperators"
 depversion = "0.3, 0.4, 1"
 
 [[Overrides.DepsVersion]]
 pkg = "SciMLJacobianOperators"
-version = "0.15"
+version = "0.1.5"
+dep = "SciMLOperators"
+depversion = "0.3, 0.4, 1"
+
+[[Overrides.DepsVersion]]
+pkg = "SparseDiffTools"
+version = "2.26.0"
 dep = "SciMLOperators"
 depversion = "0.3, 0.4, 1"
 
