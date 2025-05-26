@@ -274,3 +274,9 @@ pkg = "SciMLJacobianOperators"
 version = "0.15"
 dep = "SciMLOperators"
 depversion = "0.3, 0.4, 1"
+
+[[Overrides.DepsVersion]]
+pkg = "Tulip"
+version = "0.9.7"
+dep = "Krylov"
+depversion = "0.8, 0.9, 0.10"
