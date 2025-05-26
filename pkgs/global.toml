@@ -121,13 +121,13 @@ depversion = ">= 1"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.8.1"
+version = ">=0.9.5"
 dep = "AWS"
-depversion = "1.90.3, 1.91"
+depversion = "1.91, 1.92"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.8.1"
+version = ">=0.9.5"
 dep = "CSV"
 depversion = "0.10"
 
@@ -193,9 +193,9 @@ depversion = "0.4, 0.5"
 
 [[Overrides.DepsVersion]]
 pkg = "HYPRE"
-version = ">= 1.5.0"
+version = ">= 1.6.0"
 dep = "PartitionedArrays"
-depversion = "0.3, 0.4"
+depversion = "0.5"
 
 [[Overrides.DepsVersion]]
 pkg = "QuantumSymbolics"
@@ -204,22 +204,10 @@ dep = "Symbolics"
 depversion = "5, 6"
 
 [[Overrides.DepsVersion]]
-pkg = "QuantumSavory"
-version = ">= 0.3.3"
-dep = "QuantumClifford"
-depversion = "0.8, 0.9"
-
-[[Overrides.DepsVersion]]
 pkg = "Enzyme"
 version = ">= 0.12"
 dep = "LLVM"
 depversion = "8, 9"
-
-[[Overrides.DepsVersion]]
-pkg = "ImageSegmentation"
-version = ">= 1.8.2"
-dep = "MetaGraphs"
-depversion = "0.7, 0.8"
 
 [[Overrides.DepsVersion]]
 pkg = "Bloqade"
