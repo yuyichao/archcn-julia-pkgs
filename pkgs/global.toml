@@ -256,3 +256,9 @@ pkg = "Tulip"
 version = "0.9.7"
 dep = "Krylov"
 depversion = "0.8, 0.9, 0.10"
+
+[[Overrides.DepsVersion]]
+pkg = "IntervalRootFinding"
+version = "0.6"
+dep = "ForwardDiff"
+depversion = "0.10, 1"
