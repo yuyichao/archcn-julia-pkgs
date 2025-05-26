@@ -256,3 +256,21 @@ pkg = "YaoBlocks"
 version = "0.13.13"
 dep = "KrylovKit"
 depversion = "0.5, 0.6, 0.7, 0.8"
+
+[[Overrides.DepsVersion]]
+pkg = "NonlinearSolveBase"
+version = "1.8, 1.9, 1.10"
+dep = "SciMLOperators"
+depversion = "0.3, 0.4, 1"
+
+[[Overrides.DepsVersion]]
+pkg = "NonlinearSolveQuasiNewton"
+version = "1.15"
+dep = "SciMLOperators"
+depversion = "0.3, 0.4, 1"
+
+[[Overrides.DepsVersion]]
+pkg = "SciMLJacobianOperators"
+version = "0.15"
+dep = "SciMLOperators"
+depversion = "0.3, 0.4, 1"
