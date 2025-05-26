@@ -4,10 +4,3 @@ uuid = "85d9eb09-370e-4000-bb32-543851f73618"
 
 [Status]
 version = "1.7.0"
-
-[[Issues."1.6.0"]]
-dependent = []
-dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
-type = "not_on_latest"
-version = "1.6.0"
-latest = "1.7.0"

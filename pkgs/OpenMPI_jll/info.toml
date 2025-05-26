@@ -9,9 +9,3 @@ version = "5.0.7+2"
 [JLL.products]
 executable = ["mpiexec"]
 library = ["libmpi", "libmpi_mpifh", "libmpi_usempi_ignore_tkr", "libmpi_usempif08"]
-
-[[Issues."5.0.7+2"]]
-type = "jll_changes"
-
-    [Issues."5.0.7+2".add]
-    library = ["libmpi_mpifh", "libmpi_usempi_ignore_tkr", "libmpi_usempif08"]

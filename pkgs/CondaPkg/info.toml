@@ -4,38 +4,3 @@ uuid = "992eb4ea-22a4-4c89-a5bb-47a3300528ab"
 
 [Status]
 version = "0.2.29"
-
-[[Issues."0.2.28"]]
-type = "missing_deps"
-
-    [[Issues."0.2.28".deps]]
-    name = "pixi_jll"
-    uuid = "4d7b5844-a134-5dcd-ac86-c8f19cd51bed"
-
-[[Issues."0.2.27"]]
-type = "missing_deps"
-
-    [[Issues."0.2.27".deps]]
-    name = "pixi_jll"
-    uuid = "4d7b5844-a134-5dcd-ac86-c8f19cd51bed"
-
-[[Issues."0.2.29"]]
-type = "missing_deps"
-
-    [[Issues."0.2.29".deps]]
-    name = "pixi_jll"
-    uuid = "4d7b5844-a134-5dcd-ac86-c8f19cd51bed"
-
-[[Issues."0.2.26"]]
-type = "missing_deps"
-
-    [[Issues."0.2.26".deps]]
-    name = "pixi_jll"
-    uuid = "4d7b5844-a134-5dcd-ac86-c8f19cd51bed"
-
-[[Issues."0.2.25"]]
-type = "missing_deps"
-
-    [[Issues."0.2.25".deps]]
-    name = "pixi_jll"
-    uuid = "4d7b5844-a134-5dcd-ac86-c8f19cd51bed"
