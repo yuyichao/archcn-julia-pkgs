@@ -187,7 +187,7 @@ type = "missing_deps"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 [[Issues."9.70.0"]]
 dependent = []
-dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
+dependency = ["SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
 type = "not_on_latest"
 version = "9.70.0"
 latest = "9.80.1"
