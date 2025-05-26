@@ -3,7 +3,7 @@ name = "OMEinsumContractionOrders"
 uuid = "6f22d1fd-8eed-4bb7-9776-e7d684900715"
 
 [Status]
-version = "0.9.5"
+version = "0.9.9"
 
 [[Issues."0.9.9"]]
 type = "missing_deps"

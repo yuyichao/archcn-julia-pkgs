@@ -3,7 +3,7 @@ name = "GPUCompiler"
 uuid = "61eb1bfa-7361-4325-ad38-22787b887f55"
 
 [Status]
-version = "1.3.2"
+version = "1.5.1"
 
 [[Issues."1.5.0"]]
 type = "missing_deps"

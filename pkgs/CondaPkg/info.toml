@@ -3,7 +3,7 @@ name = "CondaPkg"
 uuid = "992eb4ea-22a4-4c89-a5bb-47a3300528ab"
 
 [Status]
-version = "0.2.24"
+version = "0.2.29"
 
 [[Issues."0.2.28"]]
 type = "missing_deps"

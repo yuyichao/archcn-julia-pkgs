@@ -1,0 +1,6 @@
+[Pkg]
+name = "TaskLocalValues"
+uuid = "ed4db957-447d-4319-bfb6-7fa9ae7ecf34"
+
+[Status]
+version = "0.1.2"

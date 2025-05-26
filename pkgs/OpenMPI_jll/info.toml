@@ -4,11 +4,11 @@ uuid = "fe0851c0-eecd-5654-98d4-656369965a5c"
 is_jll = true
 
 [Status]
-version = "5.0.7+1"
+version = "5.0.7+2"
 
 [JLL.products]
 executable = ["mpiexec"]
-library = ["libmpi"]
+library = ["libmpi", "libmpi_mpifh", "libmpi_usempi_ignore_tkr", "libmpi_usempif08"]
 
 [[Issues."5.0.7+2"]]
 type = "jll_changes"

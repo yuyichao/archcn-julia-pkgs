@@ -1,0 +1,6 @@
+[Pkg]
+name = "Moshi"
+uuid = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
+
+[Status]
+version = "0.3.5"
