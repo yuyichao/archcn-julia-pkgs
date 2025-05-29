@@ -3,7 +3,7 @@ name = "Aqua"
 uuid = "4c88cf16-eb10-579e-8560-4a9242c79595"
 
 [Status]
-version = "0.8.12"
+version = "0.8.13"
 
-[[Issues."0.8.12"]]
+[[Issues."0.8.13"]]
 type = "not_needed"
