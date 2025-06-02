@@ -3,14 +3,30 @@ name = "OptimizationBase"
 uuid = "bca83a33-5cc9-4baa-983d-23429ab6bcbb"
 
 [Status]
-version = "2.5.0"
+version = "2.7.0"
 
-[[Issues."2.5.0"]]
+[[Issues."2.8.0"]]
 type = "missing_deps"
 
-    [[Issues."2.5.0".weak_deps]]
+    [[Issues."2.8.0".weak_deps]]
     name = "MLDataDevices"
     uuid = "7e8f7934-dd98-4c1a-8fe8-92b47a384d40"
-    [[Issues."2.5.0".weak_deps]]
+    [[Issues."2.8.0".weak_deps]]
     name = "MLUtils"
     uuid = "f1d291b0-491e-4a28-83b9-f70985020b54"
+
+[[Issues."2.7.0"]]
+type = "missing_deps"
+
+    [[Issues."2.7.0".weak_deps]]
+    name = "MLDataDevices"
+    uuid = "7e8f7934-dd98-4c1a-8fe8-92b47a384d40"
+    [[Issues."2.7.0".weak_deps]]
+    name = "MLUtils"
+    uuid = "f1d291b0-491e-4a28-83b9-f70985020b54"
+[[Issues."2.7.0"]]
+dependent = []
+dependency = ["DifferentiationInterface [a0c0ee7d-e4b9-4e03-894e-1c5f64a51d63]"]
+type = "not_on_latest"
+version = "2.7.0"
+latest = "2.8.0"

@@ -3,4 +3,11 @@ name = "Latexify"
 uuid = "23fbe1c1-3f47-55db-b15f-69d7ec21a316"
 
 [Status]
-version = "0.16.7"
+version = "0.16.8"
+
+[[Issues."0.16.8"]]
+type = "missing_deps"
+
+    [[Issues."0.16.8".weak_deps]]
+    name = "tectonic_jll"
+    uuid = "d7dd28d6-a5e6-559c-9131-7eb760cdacc5"

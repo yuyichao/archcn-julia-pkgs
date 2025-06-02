@@ -10,4 +10,4 @@ dependent = []
 dependency = ["MatrixEquations [99c1a7ee-ab34-5fd5-8076-27c950a045f4]"]
 type = "not_on_latest"
 version = "0.10.14"
-latest = "0.10.17"
+latest = "0.10.18"
