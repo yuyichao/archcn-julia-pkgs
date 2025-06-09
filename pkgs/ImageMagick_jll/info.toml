@@ -4,7 +4,7 @@ uuid = "c73af94c-d91f-53ed-93a7-00f77d67a9d7"
 is_jll = true
 
 [Status]
-version = "7.1.1047+0"
+version = "7.1.1048+0"
 
 [JLL.products]
 executable = ["identify", "imagemagick_convert", "mogrify", "montage"]
