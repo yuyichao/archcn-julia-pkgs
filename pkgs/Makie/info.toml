@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.22.10"
+
+[[Issues."0.22.10"]]
+dependent = ["CairoMakie [13f3f980-e62b-5c42-98c6-ff1f3baf88f0]", "WGLMakie [276b4fcb-3e11-5398-bf8b-a0c2d153d008]"]
+dependency = ["MakieCore [20f20a25-4f0e-4fdf-b5d1-57303727442b]"]
+type = "not_on_latest"
+version = "0.22.10"
+latest = "0.23.0"

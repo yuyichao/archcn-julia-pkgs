@@ -4,7 +4,7 @@ uuid = "975044d2-76e6-5fbe-bf08-97ce7c6574c7"
 is_jll = true
 
 [Status]
-version = "0.4.0+1"
+version = "0.4.1+0"
 
 [JLL.products]
 library = ["libxcb_keysyms"]

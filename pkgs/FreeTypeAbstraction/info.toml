@@ -5,6 +5,13 @@ uuid = "663a7486-cb36-511b-a19d-713bb74d65c9"
 [Status]
 version = "0.10.6"
 
+[[Issues."0.10.8"]]
+type = "missing_deps"
+
+    [[Issues."0.10.8".deps]]
+    name = "BaseDirs"
+    uuid = "18cc8868-cbac-4acf-b575-c8ff214dc66f"
+
 [[Issues."0.10.7"]]
 type = "missing_deps"
 

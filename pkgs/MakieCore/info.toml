@@ -4,3 +4,10 @@ uuid = "20f20a25-4f0e-4fdf-b5d1-57303727442b"
 
 [Status]
 version = "0.9.5"
+
+[[Issues."0.9.5"]]
+dependent = ["Makie [ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a]"]
+dependency = []
+type = "not_on_latest"
+version = "0.9.5"
+latest = "0.10.0"

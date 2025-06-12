@@ -4,7 +4,7 @@ uuid = "2def613f-5ad1-5310-b15b-b15d46f528f5"
 is_jll = true
 
 [Status]
-version = "0.4.0+1"
+version = "0.4.1+0"
 
 [JLL.products]
 library = ["libxcb_util"]
