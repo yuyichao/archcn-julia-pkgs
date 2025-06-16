@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.3.8"
+
+[[Issues."0.4.0"]]
+type = "missing_deps"
+
+    [[Issues."0.4.0".deps]]
+    name = "SecondQuantizedAlgebra"
+    uuid = "f7aa4685-e143-4cb6-a7f3-073579757907"
