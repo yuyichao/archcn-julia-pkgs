@@ -3,4 +3,11 @@ name = "SparseMatrixColorings"
 uuid = "0a514795-09f3-496d-8182-132a7b665d35"
 
 [Status]
-version = "0.4.20"
+version = "0.4.21"
+
+[[Issues."0.4.21"]]
+type = "missing_deps"
+
+    [[Issues."0.4.21".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"

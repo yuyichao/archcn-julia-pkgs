@@ -11,3 +11,6 @@ dependency = []
 type = "not_on_latest"
 version = "0.9.5"
 latest = "0.10.0"
+[[Issues."0.9.5"]]
+type = "not_needed"
+has_weak = true
