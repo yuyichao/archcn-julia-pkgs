@@ -180,6 +180,12 @@ dep = "StaticArrays"
 depversion = "1.9.7"
 
 [[Overrides.DepsVersion]]
+pkg = "Braket"
+version = ">=0.9.5"
+dep = "DecFP"
+depversion = "1.3.2"
+
+[[Overrides.DepsVersion]]
 pkg = "H5Zbzip2"
 version = ">= 0.1"
 dep = "CodecBzip2"
