@@ -7,3 +7,9 @@ is_jll = true
 version = "6.8.2+0"
 
 [JLL.products]
+
+[[Issues."6.8.2+1"]]
+type = "jll_changes"
+
+    [Issues."6.8.2+1".add]
+    file = ["qt6plugins_dir"]
