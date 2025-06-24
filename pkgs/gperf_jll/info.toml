@@ -8,3 +8,6 @@ version = "3.3.0+0"
 
 [JLL.products]
 executable = ["gperf"]
+
+[[Issues."3.3.0+0"]]
+type = "not_needed"

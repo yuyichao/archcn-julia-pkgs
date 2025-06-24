@@ -3,4 +3,4 @@ name = "ThreadingUtilities"
 uuid = "8290d209-cae3-49c0-8002-c8c24d57dab5"
 
 [Status]
-version = "0.5.4"
+version = "0.5.5"

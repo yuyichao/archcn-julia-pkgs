@@ -3,14 +3,14 @@ name = "OMEinsum"
 uuid = "ebe7aa44-baf0-506c-a96f-8464559b3922"
 
 [Status]
-version = "0.8.7"
+version = "0.8.8"
 
-[[Issues."0.8.7"]]
+[[Issues."0.8.8"]]
 type = "missing_deps"
 
-    [[Issues."0.8.7".weak_deps]]
+    [[Issues."0.8.8".weak_deps]]
     name = "AMDGPU"
     uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."0.8.7".weak_deps]]
+    [[Issues."0.8.8".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"

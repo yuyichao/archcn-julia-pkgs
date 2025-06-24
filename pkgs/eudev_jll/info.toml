@@ -4,7 +4,7 @@ uuid = "35ca27e7-8b34-5b7f-bca9-bdc33f59eb06"
 is_jll = true
 
 [Status]
-version = "3.2.9+0"
+version = "3.2.14+0"
 
 [JLL.products]
 executable = ["udevadm", "udevd"]

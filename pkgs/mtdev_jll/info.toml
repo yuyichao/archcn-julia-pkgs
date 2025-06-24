@@ -4,7 +4,7 @@ uuid = "009596ad-96f7-51b1-9f1b-5ce2d5e8a71e"
 is_jll = true
 
 [Status]
-version = "1.1.6+0"
+version = "1.1.7+0"
 
 [JLL.products]
 library = ["libmtdev"]

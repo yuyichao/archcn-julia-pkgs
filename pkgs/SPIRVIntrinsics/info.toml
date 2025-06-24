@@ -4,3 +4,17 @@ uuid = "71d1d633-e7e8-4a92-83a1-de8814b09ba8"
 
 [Status]
 version = "0.2.0"
+
+[[Issues."0.2.1"]]
+type = "missing_deps"
+
+    [[Issues."0.2.1".deps]]
+    name = "GPUToolbox"
+    uuid = "096a3bc2-3ced-46d0-87f4-dd12716f4bfc"
+
+[[Issues."0.3.0"]]
+type = "missing_deps"
+
+    [[Issues."0.3.0".deps]]
+    name = "GPUToolbox"
+    uuid = "096a3bc2-3ced-46d0-87f4-dd12716f4bfc"
