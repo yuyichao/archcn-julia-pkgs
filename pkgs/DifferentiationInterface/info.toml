@@ -24,7 +24,7 @@ type = "missing_deps"
     name = "PolyesterForwardDiff"
     uuid = "98d1487c-24ca-40b6-b7ab-df2af84e126b"
 [[Issues."0.6.54"]]
-dependent = ["ManifoldDiff [af67fdf4-a580-4b9f-bbec-742ef357defd]", "ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]"]
+dependent = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]"]
 dependency = []
 type = "not_on_latest"
 version = "0.6.54"

@@ -8,3 +8,6 @@ version = "0.21.0+0"
 
 [JLL.products]
 library = ["libgettext"]
+
+[[Issues."0.21.0+0"]]
+type = "not_needed"
