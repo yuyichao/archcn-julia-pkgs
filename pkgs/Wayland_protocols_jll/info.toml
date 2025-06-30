@@ -7,3 +7,6 @@ is_jll = true
 version = "1.44.0+0"
 
 [JLL.products]
+
+[[Issues."1.44.0+0"]]
+type = "not_needed"

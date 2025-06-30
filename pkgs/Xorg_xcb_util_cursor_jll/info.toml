@@ -4,7 +4,7 @@ uuid = "e920d4aa-a673-5f3a-b3d7-f755a4d47c43"
 is_jll = true
 
 [Status]
-version = "0.1.4+0"
+version = "0.1.5+0"
 
 [JLL.products]
 library = ["libxcb_cursor"]

@@ -4,7 +4,7 @@ uuid = "d8fb68d0-12a3-5cfd-a85a-d49703b185fd"
 is_jll = true
 
 [Status]
-version = "1.8.1+0"
+version = "1.9.2+0"
 
 [JLL.products]
 library = ["libxkbcommon", "libxkbcommon_x11"]
