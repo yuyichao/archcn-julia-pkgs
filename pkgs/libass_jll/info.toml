@@ -4,7 +4,7 @@ uuid = "0ac62f75-1d6f-5e53-bd7c-93b484bb37c0"
 is_jll = true
 
 [Status]
-version = "0.15.2+0"
+version = "0.17.4+0"
 
 [JLL.products]
 library = ["libass"]

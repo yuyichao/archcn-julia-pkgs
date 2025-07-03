@@ -3,4 +3,11 @@ name = "Tracy"
 uuid = "e689c965-62c8-4b79-b2c5-8359227902fd"
 
 [Status]
-version = "0.1.4"
+version = "0.1.5"
+
+[[Issues."0.1.5"]]
+type = "missing_deps"
+
+    [[Issues."0.1.5".weak_deps]]
+    name = "TracyProfiler_jll"
+    uuid = "0c351ed6-8a68-550e-8b79-de6f926da83c"

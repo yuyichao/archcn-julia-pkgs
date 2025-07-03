@@ -5,9 +5,9 @@ uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
 [Status]
 version = "3.2.0"
 
-[[Issues."3.2.0"]]
-dependent = []
-dependency = ["JuliaInterpreter [aa1ae85d-cabe-5617-a682-6adf51b2e16a]"]
-type = "not_on_latest"
-version = "3.2.0"
-latest = "3.3.0"
+[[Issues."3.4.0"]]
+type = "missing_deps"
+
+    [[Issues."3.4.0".deps]]
+    name = "Compiler"
+    uuid = "807dbc54-b67e-4c79-8afb-eafe4df6f2e1"
