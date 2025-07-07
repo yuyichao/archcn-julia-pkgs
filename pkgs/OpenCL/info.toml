@@ -5,3 +5,13 @@ required = true
 
 [Status]
 version = "0.10.2"
+
+[[Issues."0.10.3"]]
+type = "missing_deps"
+
+    [[Issues."0.10.3".deps]]
+    name = "SPIRV_LLVM_Backend_jll"
+    uuid = "4376b9bf-cff8-51b6-bb48-39421dff0d0c"
+    [[Issues."0.10.3".deps]]
+    name = "SPIRV_Tools_jll"
+    uuid = "6ac6d60f-d740-5983-97d7-a4482c0689f4"

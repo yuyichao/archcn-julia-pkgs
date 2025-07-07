@@ -9,3 +9,6 @@ version = "0.7.1+0"
 [JLL.products]
 executable = ["llvm_spirv"]
 library = ["libLLVMSPIRV"]
+
+[[Issues."0.7.1+0"]]
+type = "not_needed"

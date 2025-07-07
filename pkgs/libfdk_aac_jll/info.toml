@@ -4,7 +4,7 @@ uuid = "f638f0a6-7fb0-5443-88ba-1cc74229b280"
 is_jll = true
 
 [Status]
-version = "2.0.3+0"
+version = "2.0.4+0"
 
 [JLL.products]
 library = ["libfdk"]
