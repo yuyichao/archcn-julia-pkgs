@@ -7,3 +7,10 @@ version = "0.2.0"
 
 [[Issues."0.2.0"]]
 type = "not_needed"
+
+[[Issues."0.2.1"]]
+type = "missing_deps"
+
+    [[Issues."0.2.1".deps]]
+    name = "LEMONGraphs"
+    uuid = "14b1564f-c77f-4800-9e89-efd961faef7c"

@@ -11,3 +11,10 @@ type = "missing_deps"
     [[Issues."3.4.0".deps]]
     name = "Compiler"
     uuid = "807dbc54-b67e-4c79-8afb-eafe4df6f2e1"
+
+[[Issues."3.4.1"]]
+type = "missing_deps"
+
+    [[Issues."3.4.1".deps]]
+    name = "Compiler"
+    uuid = "807dbc54-b67e-4c79-8afb-eafe4df6f2e1"
