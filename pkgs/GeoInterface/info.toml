@@ -3,8 +3,8 @@ name = "GeoInterface"
 uuid = "cf35fbd7-0cd7-5166-be24-54bfbe79505f"
 
 [Status]
-version = "1.4.1"
+version = "1.5.0"
 
-[[Issues."1.4.1"]]
+[[Issues."1.5.0"]]
 type = "not_needed"
 has_weak = true

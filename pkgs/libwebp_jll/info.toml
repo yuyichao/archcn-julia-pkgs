@@ -4,7 +4,7 @@ uuid = "c5f90fcd-3b7e-5836-afba-fc50a0988cb2"
 is_jll = true
 
 [Status]
-version = "1.5.0+0"
+version = "1.6.0+0"
 
 [JLL.products]
 executable = ["cwebp", "dwebp", "gif2webp", "img2webp", "webpinfo", "webpmux"]
