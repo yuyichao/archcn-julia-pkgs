@@ -11,3 +11,9 @@ type = "missing_deps"
     [[Issues."0.6.21".weak_deps]]
     name = "DataInterpolations"
     uuid = "82cc6244-b520-54b8-b5a6-8a565e85f1d0"
+[[Issues."0.6.21"]]
+dependent = ["BoundaryValueDiffEqCore [56b672f2-a5fe-4263-ab2d-da677488eb3a]", "OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]"]
+dependency = []
+type = "not_on_latest"
+version = "0.6.21"
+latest = "1.0.0"

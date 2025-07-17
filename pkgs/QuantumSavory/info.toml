@@ -5,3 +5,17 @@ required = true
 
 [Status]
 version = "0.5.0"
+
+[[Issues."0.5.1"]]
+type = "missing_deps"
+
+    [[Issues."0.5.1".weak_deps]]
+    name = "Tyler"
+    uuid = "e170d443-b9d6-418a-9ee8-061e966341ef"
+
+[[Issues."0.5.0"]]
+dependent = []
+dependency = ["ConcurrentSim [6ed1e86c-fcaf-46a9-97e0-2b26a2cdb499]", "GraphsMatching [c3af3a8c-b79e-4b01-bf44-c718d7e0e0d6]", "QuantumClifford [0525e862-1e90-11e9-3e4d-1b39d7109de1]", "QuantumInterface [5717a53b-5d69-4fa3-b976-0bf2f97ca1e5]", "ResumableFunctions [c5292f4c-5179-55e1-98c5-05642aab7184]"]
+type = "not_on_latest"
+version = "0.5.0"
+latest = "0.5.1"

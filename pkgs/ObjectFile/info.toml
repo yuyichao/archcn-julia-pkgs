@@ -4,3 +4,10 @@ uuid = "d8793406-e978-5875-9003-1fc021f44a92"
 
 [Status]
 version = "0.4.4"
+
+[[Issues."0.4.4"]]
+dependent = ["Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9]"]
+dependency = []
+type = "not_on_latest"
+version = "0.4.4"
+latest = "0.5.0"
