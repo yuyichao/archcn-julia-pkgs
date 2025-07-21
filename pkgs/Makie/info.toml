@@ -36,6 +36,16 @@ type = "missing_deps"
 type = "extern"
 artifacts = 1
 
+[[Issues."0.24.4"]]
+type = "missing_deps"
+
+    [[Issues."0.24.4".deps]]
+    name = "ComputePipeline"
+    uuid = "95dc2771-c249-4cd0-9c9f-1f3b4330693c"
+[[Issues."0.24.4"]]
+type = "extern"
+artifacts = 1
+
 [[Issues."0.24.3"]]
 type = "missing_deps"
 
