@@ -3,4 +3,4 @@ name = "OrdinaryDiffEqFunctionMap"
 uuid = "d3585ca7-f5d3-4ba6-8057-292ed1abd90f"
 
 [Status]
-version = "1.1.1"
+version = "1.2.0"

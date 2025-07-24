@@ -4,3 +4,10 @@ uuid = "bcd4f6db-9728-5f36-b5f7-82caef46ccdb"
 
 [Status]
 version = "5.54.0"
+
+[[Issues."5.54.0"]]
+dependent = []
+dependency = ["ForwardDiff [f6369f11-7733-5829-9624-2563aa707210]"]
+type = "not_on_latest"
+version = "5.54.0"
+latest = "5.55.0"

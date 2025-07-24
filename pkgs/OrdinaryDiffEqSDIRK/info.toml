@@ -3,4 +3,4 @@ name = "OrdinaryDiffEqSDIRK"
 uuid = "2d112036-d095-4a1e-ab9a-08536f3ecdbf"
 
 [Status]
-version = "1.3.0"
+version = "1.4.0"
