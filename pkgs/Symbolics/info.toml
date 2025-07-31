@@ -86,6 +86,23 @@ type = "missing_deps"
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 
+[[Issues."6.47.0"]]
+type = "missing_deps"
+
+    [[Issues."6.47.0".deps]]
+    name = "SymPyPythonCall"
+    uuid = "bc8888f7-b21e-4b7c-a06a-5d9c9496438c"
+
+    [[Issues."6.47.0".weak_deps]]
+    name = "D3Trees"
+    uuid = "e3df1716-f71e-5df9-9e2d-98e193103c45"
+    [[Issues."6.47.0".weak_deps]]
+    name = "Lux"
+    uuid = "b2108857-7c20-44ae-9111-449ecde12c47"
+    [[Issues."6.47.0".weak_deps]]
+    name = "SymPy"
+    uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+
 [[Issues."6.43.0"]]
 type = "missing_deps"
 
@@ -116,6 +133,19 @@ type = "missing_deps"
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 
+[[Issues."6.46.0"]]
+type = "missing_deps"
+
+    [[Issues."6.46.0".weak_deps]]
+    name = "D3Trees"
+    uuid = "e3df1716-f71e-5df9-9e2d-98e193103c45"
+    [[Issues."6.46.0".weak_deps]]
+    name = "Lux"
+    uuid = "b2108857-7c20-44ae-9111-449ecde12c47"
+    [[Issues."6.46.0".weak_deps]]
+    name = "SymPy"
+    uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+
 [[Issues."6.39.0"]]
 type = "missing_deps"
 
@@ -135,12 +165,6 @@ type = "missing_deps"
     [[Issues."6.31.1".weak_deps]]
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
-[[Issues."6.31.1"]]
-dependent = []
-dependency = ["SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
-type = "not_on_latest"
-version = "6.31.1"
-latest = "6.45.0"
 
 [[Issues."6.41.0"]]
 type = "missing_deps"

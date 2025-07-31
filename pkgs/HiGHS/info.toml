@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "1.18.2"
+
+[[Issues."1.19.0"]]
+type = "missing_deps"
+
+    [[Issues."1.19.0".deps]]
+    name = "MathOptIIS"
+    uuid = "8c4f8055-bd93-4160-a86b-a0c04941dbff"
