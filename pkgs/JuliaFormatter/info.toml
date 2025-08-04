@@ -10,4 +10,4 @@ dependent = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]"]
 dependency = ["JuliaSyntax [70703baa-626e-46a2-a12c-08ffd08c73b4]"]
 type = "not_on_latest"
 version = "1.0.62"
-latest = "2.1.4"
+latest = "2.1.6"

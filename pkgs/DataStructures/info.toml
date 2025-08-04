@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.18.22"
+
+[[Issues."0.18.22"]]
+dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]", "ConcurrentSim [6ed1e86c-fcaf-46a9-97e0-2b26a2cdb499]", "DataFrames [a93c6f00-e57d-5684-b7b6-d8193f3e46c0]", "DelayDiffEq [bcd4f6db-9728-5f36-b5f7-82caef46ccdb]", "DiffEqCallbacks [459566f4-90b8-5000-8ac3-15dfb0a30def]", "GeneralizedGenerated [6b9d7cbe-bcb9-11e9-073f-15a7a543e2eb]", "Graphs [86223c79-3864-5bf0-83f7-82e725a168b6]", "HCubature [19dc6840-f33b-545b-b366-655c7e3ffd49]", "ImageFiltering [6a3955dd-da59-5b1f-98d4-e7296123deb5]", "ImageMorphology [787d08f9-d448-5407-9aad-5290dd7ab264]", "ImageSegmentation [80713f31-8817-5129-9cf8-209ff8fb23e1]", "JuliaFormatter [98e50ef6-434e-11e9-1051-2b60c6c9e899]", "JumpProcesses [ccbc3e58-028d-4f4c-8cd5-9ae44345cda5]", "Luxor [ae8d54c2-7ccd-5906-9d76-62fc9837b5bc]", "MathOptInterface [b8f27783-ece8-5eb3-8dc8-9495eed66fee]", "MathTeXEngine [0a4f8689-d25c-4efe-a92b-7142dfc1aa53]", "ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "MultivariatePolynomials [102ac46a-7ee4-5c85-9060-abc95bfdeaa3]", "NamedArrays [86f7a689-2022-50b4-a561-43c23ac3c673]", "OMEinsumContractionOrders [6f22d1fd-8eed-4bb7-9776-e7d684900715]", "OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed]", "OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "QuantumClifford [0525e862-1e90-11e9-3e4d-1b39d7109de1]", "SimpleGraphs [55797a34-41de-5266-9ec1-32ac4eb504d3]", "SortingAlgorithms [a2af1166-a08f-5f64-846c-94a0d3cef48c]", "SparseDiffTools [47a9eef4-7e08-11e9-0b38-333d64bd3804]", "StatsBase [2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91]", "StatsModels [3eaba693-59b7-5ba5-a881-562e759f1c8d]", "StochasticDiffEq [789caeaf-c7a9-5a7d-9973-96adeb23e2a0]", "Sundials [c3572dad-4567-51f8-b174-8c6c989267f4]", "SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]", "TiffImages [731e570b-9d59-4bfa-96dc-6df516fadf69]"]
+dependency = []
+type = "not_on_latest"
+version = "0.18.22"
+latest = "0.19.0"

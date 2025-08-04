@@ -3,4 +3,4 @@ name = "CategoricalArrays"
 uuid = "324d7699-5711-5eae-9e2f-1d82baa6b597"
 
 [Status]
-version = "0.10.8"
+version = "1.0.1"
