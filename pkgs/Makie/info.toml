@@ -16,13 +16,13 @@ type = "missing_deps"
 type = "extern"
 artifacts = 1
 
-[[Issues."0.24.0"]]
+[[Issues."0.24.5"]]
 type = "missing_deps"
 
-    [[Issues."0.24.0".deps]]
+    [[Issues."0.24.5".deps]]
     name = "ComputePipeline"
     uuid = "95dc2771-c249-4cd0-9c9f-1f3b4330693c"
-[[Issues."0.24.0"]]
+[[Issues."0.24.5"]]
 type = "extern"
 artifacts = 1
 
@@ -43,6 +43,16 @@ type = "missing_deps"
     name = "ComputePipeline"
     uuid = "95dc2771-c249-4cd0-9c9f-1f3b4330693c"
 [[Issues."0.24.4"]]
+type = "extern"
+artifacts = 1
+
+[[Issues."0.24.0"]]
+type = "missing_deps"
+
+    [[Issues."0.24.0".deps]]
+    name = "ComputePipeline"
+    uuid = "95dc2771-c249-4cd0-9c9f-1f3b4330693c"
+[[Issues."0.24.0"]]
 type = "extern"
 artifacts = 1
 

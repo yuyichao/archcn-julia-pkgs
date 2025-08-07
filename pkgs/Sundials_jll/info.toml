@@ -8,3 +8,15 @@ version = "6.6.0+0"
 
 [JLL.products]
 library = ["libsundials_arkode", "libsundials_cvode", "libsundials_cvodes", "libsundials_ida", "libsundials_idas", "libsundials_kinsol", "libsundials_nvecmanyvector", "libsundials_nvecserial", "libsundials_sunlinsolband", "libsundials_sunlinsoldense", "libsundials_sunlinsolklu", "libsundials_sunlinsollapackband", "libsundials_sunlinsollapackdense", "libsundials_sunlinsolpcg", "libsundials_sunlinsolspbcgs", "libsundials_sunlinsolspfgmr", "libsundials_sunlinsolspgmr", "libsundials_sunlinsolsptfqmr", "libsundials_sunmatrixband", "libsundials_sunmatrixdense", "libsundials_sunmatrixsparse", "libsundials_sunnonlinsolfixedpoint", "libsundials_sunnonlinsolnewton"]
+
+[[Issues."7.4.0+1"]]
+type = "jll_changes"
+
+    [Issues."7.4.0+1".add]
+    library = ["libsundials_core"]
+
+[[Issues."7.4.0+0"]]
+type = "jll_changes"
+
+    [Issues."7.4.0+0".add]
+    library = ["libsundials_core"]
