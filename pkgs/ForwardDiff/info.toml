@@ -6,7 +6,7 @@ uuid = "f6369f11-7733-5829-9624-2563aa707210"
 version = "0.10.38"
 
 [[Issues."0.10.38"]]
-dependent = ["Bloqade [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe1]", "BloqadeExpr [bd27d05e-4ce1-5e79-84dd-c5d7d508abe2]", "ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "QuantumOptics [6e0679c1-51ea-5a7c-ac74-d61b76210b0c]", "SIMDDualNumbers [3cdde19b-5bb0-4aaf-8931-af3e248e098b]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
+dependent = ["Bloqade [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe1]", "BloqadeExpr [bd27d05e-4ce1-5e79-84dd-c5d7d508abe2]", "ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "OrdinaryDiffEqNonlinearSolve [127b3ac7-2247-4354-8eb6-78cf4e7c58e8]", "QuantumOptics [6e0679c1-51ea-5a7c-ac74-d61b76210b0c]", "SIMDDualNumbers [3cdde19b-5bb0-4aaf-8931-af3e248e098b]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
 dependency = []
 type = "not_on_latest"
 version = "0.10.38"

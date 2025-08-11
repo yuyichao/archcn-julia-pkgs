@@ -4,7 +4,7 @@ uuid = "925c91fb-5dd6-59dd-8e8c-345e74382d89"
 is_jll = true
 
 [Status]
-version = "2.54.7+0"
+version = "2.58.5+0"
 
 [JLL.products]
 executable = ["rsvg_convert"]

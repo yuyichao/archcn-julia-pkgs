@@ -10,4 +10,4 @@ dependent = ["LoweredCodeUtils [6f1432cf-f94c-5a45-995e-cdbf5db27b0b]", "Revise 
 dependency = ["CodeTracking [da1fd8a2-8d9e-5ec2-8556-3022fb5608a2]"]
 type = "not_on_latest"
 version = "0.9.42"
-latest = "0.10.4"
+latest = "0.10.5"
