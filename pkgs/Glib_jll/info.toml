@@ -1,17 +1,10 @@
 [Pkg]
 name = "Glib_jll"
-uuid = "7746bdde-850d-59dc-9ae8-88ece973131d"
 is_jll = true
+uuid = "7746bdde-850d-59dc-9ae8-88ece973131d"
 
 [Status]
-version = "2.84.0+0"
+version = "2.84.3+0"
 
 [JLL.products]
-library = ["libgio", "libglib", "libgmodule", "libgobject", "libgthread", "libgirepository"]
-
-[[Issues."2.84.3+0"]]
-type = "missing_deps"
-
-    [[Issues."2.84.3+0".deps]]
-    name = "GettextRuntime_jll"
-    uuid = "b0724c58-0f36-5564-988d-3bb0596ebc4a"
+library = ["libgio", "libgirepository", "libglib", "libgmodule", "libgobject", "libgthread"]

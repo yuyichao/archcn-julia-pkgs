@@ -1,0 +1,6 @@
+[Pkg]
+name = "QECCore"
+uuid = "b50d4dc9-2544-401f-bae9-a24ba40d0c7a"
+
+[Status]
+version = "0.1.1"

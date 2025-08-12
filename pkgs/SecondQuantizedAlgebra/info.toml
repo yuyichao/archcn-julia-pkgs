@@ -1,0 +1,13 @@
+[Pkg]
+name = "SecondQuantizedAlgebra"
+uuid = "f7aa4685-e143-4cb6-a7f3-073579757907"
+
+[Status]
+version = "0.1.0"
+
+[[Issues."0.1.0"]]
+type = "not_on_latest"
+latest = "0.4.1"
+dependent = ["QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]"]
+version = "0.1.0"
+dependency = []

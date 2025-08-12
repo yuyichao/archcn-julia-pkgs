@@ -6,8 +6,8 @@ uuid = "d1185830-fcd6-423d-90d6-eec64667417b"
 version = "3.20.0"
 
 [[Issues."3.20.0"]]
-dependent = ["QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]"]
-dependency = []
 type = "not_on_latest"
-version = "3.20.0"
 latest = "3.30.0"
+dependent = ["QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]", "SecondQuantizedAlgebra [f7aa4685-e143-4cb6-a7f3-073579757907]"]
+version = "3.20.0"
+dependency = []

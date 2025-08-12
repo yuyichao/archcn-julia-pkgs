@@ -3,11 +3,4 @@ name = "QuantumOpticsBase"
 uuid = "4f57444f-1401-5e15-980d-4471b28d5678"
 
 [Status]
-version = "0.5.7"
-
-[[Issues."0.5.7"]]
-dependent = []
-dependency = ["QuantumInterface [5717a53b-5d69-4fa3-b976-0bf2f97ca1e5]"]
-type = "not_on_latest"
-version = "0.5.7"
-latest = "0.5.8"
+version = "0.5.8"

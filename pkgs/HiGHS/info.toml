@@ -1,14 +1,7 @@
 [Pkg]
+required = true
 name = "HiGHS"
 uuid = "87dc4568-4c63-4d18-b0c0-bb2238e4078b"
-required = true
 
 [Status]
-version = "1.18.2"
-
-[[Issues."1.19.0"]]
-type = "missing_deps"
-
-    [[Issues."1.19.0".deps]]
-    name = "MathOptIIS"
-    uuid = "8c4f8055-bd93-4160-a86b-a0c04941dbff"
+version = "1.19.0"

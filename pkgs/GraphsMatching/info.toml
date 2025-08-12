@@ -3,11 +3,4 @@ name = "GraphsMatching"
 uuid = "c3af3a8c-b79e-4b01-bf44-c718d7e0e0d6"
 
 [Status]
-version = "0.2.0"
-
-[[Issues."0.2.1"]]
-type = "missing_deps"
-
-    [[Issues."0.2.1".deps]]
-    name = "LEMONGraphs"
-    uuid = "14b1564f-c77f-4800-9e89-efd961faef7c"
+version = "0.2.1"

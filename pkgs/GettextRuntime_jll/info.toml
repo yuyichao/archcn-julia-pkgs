@@ -1,0 +1,11 @@
+[Pkg]
+name = "GettextRuntime_jll"
+is_jll = true
+uuid = "b0724c58-0f36-5564-988d-3bb0596ebc4a"
+
+[Status]
+version = "0.22.4+0"
+
+[JLL.products]
+library = ["libasprintf", "libintl"]
+executable = ["envsubst", "gettext", "ngettext"]

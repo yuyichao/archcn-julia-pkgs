@@ -1,0 +1,6 @@
+[Pkg]
+name = "FixedSizeArrays"
+uuid = "3821ddf9-e5b5-40d5-8e25-6813ab96b5e2"
+
+[Status]
+version = "1.2.0"

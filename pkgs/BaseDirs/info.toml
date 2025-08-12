@@ -1,0 +1,6 @@
+[Pkg]
+name = "BaseDirs"
+uuid = "18cc8868-cbac-4acf-b575-c8ff214dc66f"
+
+[Status]
+version = "1.3.2"
