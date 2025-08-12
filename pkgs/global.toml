@@ -418,3 +418,9 @@ pkg = "OpenCL"
 version = "0.10"
 dep = "OpenCL_jll"
 depversion = ">=2024"
+
+[[Overrides.DepsVersion]]
+pkg = "QuantumCumulants"
+version = "0.4.0"
+dep = "SecondQuantizedAlgebra"
+depversion = "0.1, 0.2, 0.3"
