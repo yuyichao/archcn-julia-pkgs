@@ -5,30 +5,9 @@ uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
 [Status]
 version = "3.2.0"
 
-[[Issues."3.4.0"]]
-type = "missing_deps"
-
-    [[Issues."3.4.0".deps]]
-    name = "Compiler"
-    uuid = "807dbc54-b67e-4c79-8afb-eafe4df6f2e1"
-
-[[Issues."3.4.3"]]
-type = "missing_deps"
-
-    [[Issues."3.4.3".deps]]
-    name = "Compiler"
-    uuid = "807dbc54-b67e-4c79-8afb-eafe4df6f2e1"
-
-[[Issues."3.4.2"]]
-type = "missing_deps"
-
-    [[Issues."3.4.2".deps]]
-    name = "Compiler"
-    uuid = "807dbc54-b67e-4c79-8afb-eafe4df6f2e1"
-
-[[Issues."3.4.1"]]
-type = "missing_deps"
-
-    [[Issues."3.4.1".deps]]
-    name = "Compiler"
-    uuid = "807dbc54-b67e-4c79-8afb-eafe4df6f2e1"
+[[Issues."3.2.0"]]
+type = "not_on_latest"
+latest = "3.4.3"
+dependent = []
+version = "3.2.0"
+dependency = ["CodeTracking [da1fd8a2-8d9e-5ec2-8556-3022fb5608a2]", "JuliaInterpreter [aa1ae85d-cabe-5617-a682-6adf51b2e16a]"]

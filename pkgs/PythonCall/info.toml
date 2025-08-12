@@ -4,7 +4,3 @@ uuid = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
 
 [Status]
 version = "0.9.26"
-
-[[Issues."0.9.26"]]
-type = "not_needed"
-has_weak = true

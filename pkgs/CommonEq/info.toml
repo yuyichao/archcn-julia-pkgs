@@ -1,0 +1,6 @@
+[Pkg]
+name = "CommonEq"
+uuid = "3709ef60-1bee-4518-9f2f-acd86f176c50"
+
+[Status]
+version = "0.2.1"

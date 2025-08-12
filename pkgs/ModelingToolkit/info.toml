@@ -8,13 +8,6 @@ version = "9.70.0"
 [[Issues."10.14.0"]]
 type = "missing_deps"
 
-    [[Issues."10.14.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.14.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
-
     [[Issues."10.14.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
@@ -47,13 +40,6 @@ type = "missing_deps"
 [[Issues."10.13.0"]]
 type = "missing_deps"
 
-    [[Issues."10.13.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.13.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
-
     [[Issues."10.13.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
@@ -85,13 +71,6 @@ type = "missing_deps"
 
 [[Issues."10.6.0"]]
 type = "missing_deps"
-
-    [[Issues."10.6.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.6.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
 
     [[Issues."10.6.0".weak_deps]]
     name = "BifurcationKit"
@@ -128,13 +107,6 @@ type = "missing_deps"
 [[Issues."10.7.0"]]
 type = "missing_deps"
 
-    [[Issues."10.7.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.7.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
-
     [[Issues."10.7.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
@@ -170,13 +142,6 @@ type = "missing_deps"
 [[Issues."10.4.0"]]
 type = "missing_deps"
 
-    [[Issues."10.4.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.4.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
-
     [[Issues."10.4.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
@@ -196,13 +161,6 @@ type = "missing_deps"
 [[Issues."10.0.0"]]
 type = "missing_deps"
 
-    [[Issues."10.0.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.0.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
-
     [[Issues."10.0.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
@@ -218,13 +176,6 @@ type = "missing_deps"
 
 [[Issues."10.10.0"]]
 type = "missing_deps"
-
-    [[Issues."10.10.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.10.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
 
     [[Issues."10.10.0".weak_deps]]
     name = "BifurcationKit"
@@ -277,13 +228,6 @@ type = "missing_deps"
 [[Issues."10.1.0"]]
 type = "missing_deps"
 
-    [[Issues."10.1.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.1.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
-
     [[Issues."10.1.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
@@ -299,13 +243,6 @@ type = "missing_deps"
 
 [[Issues."10.9.0"]]
 type = "missing_deps"
-
-    [[Issues."10.9.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.9.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
 
     [[Issues."10.9.0".weak_deps]]
     name = "BifurcationKit"
@@ -325,13 +262,6 @@ type = "missing_deps"
 
 [[Issues."10.8.0"]]
 type = "missing_deps"
-
-    [[Issues."10.8.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.8.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
 
     [[Issues."10.8.0".weak_deps]]
     name = "BifurcationKit"
@@ -367,13 +297,6 @@ type = "missing_deps"
 
 [[Issues."10.3.0"]]
 type = "missing_deps"
-
-    [[Issues."10.3.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.3.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
 
     [[Issues."10.3.0".weak_deps]]
     name = "BifurcationKit"
@@ -423,13 +346,6 @@ type = "missing_deps"
 [[Issues."10.15.0"]]
 type = "missing_deps"
 
-    [[Issues."10.15.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.15.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
-
     [[Issues."10.15.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
@@ -464,13 +380,6 @@ type = "missing_deps"
 
 [[Issues."10.17.0"]]
 type = "missing_deps"
-
-    [[Issues."10.17.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.17.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
 
     [[Issues."10.17.0".weak_deps]]
     name = "BifurcationKit"
@@ -520,13 +429,6 @@ type = "missing_deps"
 [[Issues."10.16.0"]]
 type = "missing_deps"
 
-    [[Issues."10.16.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.16.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
-
     [[Issues."10.16.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
@@ -555,16 +457,15 @@ type = "missing_deps"
     [[Issues."9.70.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+[[Issues."9.70.0"]]
+type = "not_on_latest"
+latest = "10.18.0"
+dependent = ["QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]", "SecondQuantizedAlgebra [f7aa4685-e143-4cb6-a7f3-073579757907]"]
+version = "9.70.0"
+dependency = ["SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
 
 [[Issues."10.12.0"]]
 type = "missing_deps"
-
-    [[Issues."10.12.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.12.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
 
     [[Issues."10.12.0".weak_deps]]
     name = "BifurcationKit"
@@ -614,13 +515,6 @@ type = "missing_deps"
 [[Issues."10.5.0"]]
 type = "missing_deps"
 
-    [[Issues."10.5.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.5.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
-
     [[Issues."10.5.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
@@ -640,13 +534,6 @@ type = "missing_deps"
 [[Issues."10.11.0"]]
 type = "missing_deps"
 
-    [[Issues."10.11.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.11.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
-
     [[Issues."10.11.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
@@ -665,13 +552,6 @@ type = "missing_deps"
 
 [[Issues."10.18.0"]]
 type = "missing_deps"
-
-    [[Issues."10.18.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.18.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
 
     [[Issues."10.18.0".weak_deps]]
     name = "BifurcationKit"
@@ -705,13 +585,6 @@ type = "missing_deps"
 [[Issues."10.0.1"]]
 type = "missing_deps"
 
-    [[Issues."10.0.1".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.0.1".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
-
     [[Issues."10.0.1".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
@@ -727,13 +600,6 @@ type = "missing_deps"
 
 [[Issues."10.2.0"]]
 type = "missing_deps"
-
-    [[Issues."10.2.0".deps]]
-    name = "ImplicitDiscreteSolve"
-    uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
-    [[Issues."10.2.0".deps]]
-    name = "SciMLPublic"
-    uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
 
     [[Issues."10.2.0".weak_deps]]
     name = "BifurcationKit"

@@ -1,67 +1,8 @@
 [Pkg]
+required = true
 name = "Makie"
 uuid = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
-required = true
+has_artifacts = true
 
 [Status]
-version = "0.22.10"
-
-[[Issues."0.24.2"]]
-type = "missing_deps"
-
-    [[Issues."0.24.2".deps]]
-    name = "ComputePipeline"
-    uuid = "95dc2771-c249-4cd0-9c9f-1f3b4330693c"
-[[Issues."0.24.2"]]
-type = "extern"
-artifacts = 1
-
-[[Issues."0.24.5"]]
-type = "missing_deps"
-
-    [[Issues."0.24.5".deps]]
-    name = "ComputePipeline"
-    uuid = "95dc2771-c249-4cd0-9c9f-1f3b4330693c"
-[[Issues."0.24.5"]]
-type = "extern"
-artifacts = 1
-
-[[Issues."0.24.1"]]
-type = "missing_deps"
-
-    [[Issues."0.24.1".deps]]
-    name = "ComputePipeline"
-    uuid = "95dc2771-c249-4cd0-9c9f-1f3b4330693c"
-[[Issues."0.24.1"]]
-type = "extern"
-artifacts = 1
-
-[[Issues."0.24.4"]]
-type = "missing_deps"
-
-    [[Issues."0.24.4".deps]]
-    name = "ComputePipeline"
-    uuid = "95dc2771-c249-4cd0-9c9f-1f3b4330693c"
-[[Issues."0.24.4"]]
-type = "extern"
-artifacts = 1
-
-[[Issues."0.24.0"]]
-type = "missing_deps"
-
-    [[Issues."0.24.0".deps]]
-    name = "ComputePipeline"
-    uuid = "95dc2771-c249-4cd0-9c9f-1f3b4330693c"
-[[Issues."0.24.0"]]
-type = "extern"
-artifacts = 1
-
-[[Issues."0.24.3"]]
-type = "missing_deps"
-
-    [[Issues."0.24.3".deps]]
-    name = "ComputePipeline"
-    uuid = "95dc2771-c249-4cd0-9c9f-1f3b4330693c"
-[[Issues."0.24.3"]]
-type = "extern"
-artifacts = 1
+version = "0.24.5"

@@ -1,0 +1,10 @@
+[Pkg]
+name = "SymPyPythonCall"
+uuid = "bc8888f7-b21e-4b7c-a06a-5d9c9496438c"
+
+[Status]
+version = "0.5.1"
+
+[[Issues."0.5.1"]]
+has_weak = true
+type = "not_needed"

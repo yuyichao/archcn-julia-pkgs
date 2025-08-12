@@ -1,0 +1,6 @@
+[Pkg]
+name = "SciMLPublic"
+uuid = "431bcebd-1456-4ced-9d72-93c2757fff0b"
+
+[Status]
+version = "1.0.0"
