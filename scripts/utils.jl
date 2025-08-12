@@ -568,13 +568,7 @@ function resolve_new_versions(ctx::Context, check_results, latest_deps)
             if haskey(compat_info, ver)
                 for (dep_uuid, dep_ver) in compat_info[ver]
                     if haskey(ctx.packages_info, dep_uuid) && (dep_uuid in deps)
-                        dep_pkgentry = get(ctx.registry, dep_uuid, nothing)
-                        if (dep_pkgentry !== nothing &&
-                            endswith(dep_pkgentry.name, "_jll"))
-                            __compat[dep_uuid] = Pkg.Versions.VersionSpec("*")
-                        else
-                            __compat[dep_uuid] = dep_ver
-                        end
+                        __compat[dep_uuid] = dep_ver
                     end
                 end
             end
@@ -801,13 +795,7 @@ function resolve_all_dependencies(ctx::Context, uuids)
                 if !(dep_uuid in done_pkgs)
                     push!(todo_pkgs, dep_uuid)
                 end
-                dep_pkgentry = get(ctx.registry, dep_uuid, nothing)
-                if (dep_pkgentry !== nothing &&
-                    endswith(dep_pkgentry.name, "_jll"))
-                    __compat[dep_uuid] = Pkg.Versions.VersionSpec("*")
-                else
-                    __compat[dep_uuid] = dep_ver
-                end
+                __compat[dep_uuid] = dep_ver
             end
         end
     end
