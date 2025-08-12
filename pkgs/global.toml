@@ -141,7 +141,7 @@ depversion = ">=4.16"
 pkg = "Braket"
 version = ">=0.9.5"
 dep = "DataStructures"
-depversion = "0.18"
+depversion = "0.18, 0.19"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
