@@ -1,12 +1,12 @@
 [Pkg]
-name = "LibArchive_jll"
-uuid = "1e303b3e-d4db-56ce-88c4-91e52606a1a8"
 required = true
+name = "LibArchive_jll"
 is_jll = true
+uuid = "1e303b3e-d4db-56ce-88c4-91e52606a1a8"
 
 [Status]
-version = "3.8.0+0"
+version = "3.8.1+0"
 
 [JLL.products]
-executable = ["bsdcat", "bsdcpio", "bsdtar"]
 library = ["libarchive"]
+executable = ["bsdcat", "bsdcpio", "bsdtar"]

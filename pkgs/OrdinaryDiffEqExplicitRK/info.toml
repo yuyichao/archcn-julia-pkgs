@@ -3,4 +3,4 @@ name = "OrdinaryDiffEqExplicitRK"
 uuid = "9286f039-9fbf-40e8-bf65-aa933bdc4db0"
 
 [Status]
-version = "1.3.0"
+version = "1.4.0"

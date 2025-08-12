@@ -3,4 +3,4 @@ name = "OrdinaryDiffEqAdamsBashforthMoulton"
 uuid = "89bda076-bce5-4f1c-845f-551c83cdda9a"
 
 [Status]
-version = "1.4.0"
+version = "1.5.0"
