@@ -250,3 +250,171 @@ pkg = "IntervalRootFinding"
 version = "0.6"
 dep = "ForwardDiff"
 depversion = "0.10, 1"
+
+[[Overrides.DepsVersion]]
+pkg = "Makie"
+version = "0.22, 0.23, 0.24, 0.25"
+dep = "FFMPEG_jll"
+depversion = "4, 6, 7"
+
+[[Overrides.DepsVersion]]
+pkg = "ImageMagick_jll"
+version = "6, 7"
+dep = "Libtiff_jll"
+depversion = "4"
+
+[[Overrides.DepsVersion]]
+pkg = "Antic_jll"
+version = ">=0.200"
+dep = "FLINT_jll"
+depversion = ">=200.900"
+
+[[Overrides.DepsVersion]]
+pkg = "Arb_jll"
+version = ">=0.200"
+dep = "FLINT_jll"
+depversion = ">=200.900"
+
+[[Overrides.DepsVersion]]
+pkg = "Bonito"
+version = "4"
+dep = "Deno_jll"
+depversion = "1, 2"
+
+[[Overrides.DepsVersion]]
+pkg = "MicroMamba"
+version = "0.1"
+dep = "micromamba_jll"
+depversion = "1.4.7, 2"
+
+[[Overrides.DepsVersion]]
+pkg = "Arpack"
+version = "0.5"
+dep = "Arpack_jll"
+depversion = "3.5"
+
+[[Overrides.DepsVersion]]
+pkg = "Clang"
+version = "0.18"
+dep = "Clang_jll"
+depversion = "16, 17, 18, 19, 20"
+
+[[Overrides.DepsVersion]]
+pkg = "Cbc_jll"
+version = "200.1000"
+dep = "Clp_jll"
+depversion = "100.1700"
+
+[[Overrides.DepsVersion]]
+pkg = "Cbc_jll"
+version = "200.1000"
+dep = "CoinUtils_jll"
+depversion = "200.1100"
+
+[[Overrides.DepsVersion]]
+pkg = "Cbc_jll"
+version = "200.1000"
+dep = "Osi_jll"
+depversion = "0.10800"
+
+[[Overrides.DepsVersion]]
+pkg = "Cgl_jll"
+version = "0.6000"
+dep = "Clp_jll"
+depversion = "100.1700"
+
+[[Overrides.DepsVersion]]
+pkg = "Cgl_jll"
+version = "0.6000"
+dep = "CoinUtils_jll"
+depversion = "200.1100"
+
+[[Overrides.DepsVersion]]
+pkg = "Cgl_jll"
+version = "0.6000"
+dep = "Osi_jll"
+depversion = "0.10800"
+
+[[Overrides.DepsVersion]]
+pkg = "Clp_jll"
+version = "100.1700"
+dep = "CoinUtils_jll"
+depversion = "200.1100"
+
+[[Overrides.DepsVersion]]
+pkg = "Clp_jll"
+version = "100.1700"
+dep = "METIS_jll"
+depversion = "5.1.2"
+
+[[Overrides.DepsVersion]]
+pkg = "Clp_jll"
+version = "100.1700"
+dep = "MUMPS_seq_jll"
+depversion = "500.700"
+
+[[Overrides.DepsVersion]]
+pkg = "Clp_jll"
+version = "100.1700"
+dep = "Osi_jll"
+depversion = "0.10800"
+
+[[Overrides.DepsVersion]]
+pkg = "Osi_jll"
+version = "0.10800"
+dep = "CoinUtils_jll"
+depversion = "200.1100"
+
+[[Overrides.DepsVersion]]
+pkg = "Ipopt_jll"
+version = "300.1400"
+dep = "MUMPS_seq_jll"
+depversion = "500.800"
+
+[[Overrides.DepsVersion]]
+pkg = "Ipopt_jll"
+version = "300.1400"
+dep = "SPRAL_jll"
+depversion = ">=2025"
+
+[[Overrides.DepsVersion]]
+pkg = "Ipopt"
+version = "1"
+dep = "Ipopt_jll"
+depversion = ">=300.1400"
+
+[[Overrides.DepsVersion]]
+pkg = "Cairo_jll"
+version = "1.18"
+dep = "Pixman_jll"
+depversion = ">=0.44"
+
+[[Overrides.DepsVersion]]
+pkg = "Librsvg_jll"
+version = "2.58"
+dep = "XML2_jll"
+depversion = "2.9.14"
+
+[[Overrides.DepsVersion]]
+pkg = "Gettext_jll"
+version = "0.21"
+dep = "XML2_jll"
+depversion = "2.9.14"
+
+[[Overrides.DepsVersion]]
+pkg = "XSLT_jll"
+version = "1.1"
+dep = "XML2_jll"
+depversion = "2.9.14"
+
+[[Overrides.DepsVersion]]
+pkg = "CDDLib"
+version = "0.10.1"
+dep = "cddlib_jll"
+depversion = "0.94"
+
+[[Overrides.DepsVersion]]
+pkg = "OpenCL"
+version = "0.10"
+dep = "OpenCL_jll"
+depversion = ">=2024"
