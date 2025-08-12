@@ -8,3 +8,6 @@ version = "0.201.500+0"
 
 [JLL.products]
 library = ["libantic"]
+
+[[Issues."0.201.500+0"]]
+type = "not_needed"

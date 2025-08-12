@@ -9,3 +9,6 @@ version = "6.0.0+0"
 [JLL.products]
 executable = ["pmix_info"]
 library = ["libpmix"]
+
+[[Issues."6.0.0+0"]]
+type = "not_needed"
