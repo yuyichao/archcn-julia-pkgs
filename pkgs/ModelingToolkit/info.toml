@@ -24,35 +24,6 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."9.80.5"]]
-type = "missing_deps"
-
-    [[Issues."9.80.5".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.80.5".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."9.80.5".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.80.5".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."9.74.0"]]
-type = "missing_deps"
-
-    [[Issues."9.74.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.74.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.74.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
 [[Issues."9.75.0"]]
 type = "missing_deps"
 
@@ -63,45 +34,6 @@ type = "missing_deps"
     name = "FMI"
     uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
     [[Issues."9.75.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."9.72.0"]]
-type = "missing_deps"
-
-    [[Issues."9.72.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.72.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.72.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."9.71.0"]]
-type = "missing_deps"
-
-    [[Issues."9.71.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.71.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.71.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."9.77.0"]]
-type = "missing_deps"
-
-    [[Issues."9.77.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.77.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.77.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 
@@ -118,22 +50,6 @@ type = "missing_deps"
     name = "FMI"
     uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
     [[Issues."9.80.4".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."9.81.1"]]
-type = "missing_deps"
-
-    [[Issues."9.81.1".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.81.1".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."9.81.1".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.81.1".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 
@@ -156,22 +72,6 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."10.1.0"]]
-type = "missing_deps"
-
-    [[Issues."10.1.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.1.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.1.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.1.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
 [[Issues."9.80.1"]]
 type = "missing_deps"
 
@@ -188,60 +88,6 @@ type = "missing_deps"
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 
-[[Issues."9.80.6"]]
-type = "missing_deps"
-
-    [[Issues."9.80.6".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.80.6".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."9.80.6".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.80.6".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."10.18.0"]]
-type = "missing_deps"
-
-    [[Issues."10.18.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.18.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.18.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.18.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."10.18.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."10.8.0"]]
-type = "missing_deps"
-
-    [[Issues."10.8.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.8.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.8.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.8.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."10.8.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
 [[Issues."9.80.2"]]
 type = "missing_deps"
 
@@ -255,22 +101,6 @@ type = "missing_deps"
     name = "FMI"
     uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
     [[Issues."9.80.2".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."9.80.3"]]
-type = "missing_deps"
-
-    [[Issues."9.80.3".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.80.3".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."9.80.3".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.80.3".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 
@@ -289,79 +119,6 @@ type = "missing_deps"
     [[Issues."10.0.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."10.4.0"]]
-type = "missing_deps"
-
-    [[Issues."10.4.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.4.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.4.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.4.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."10.4.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."10.11.0"]]
-type = "missing_deps"
-
-    [[Issues."10.11.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.11.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.11.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.11.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."10.11.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."9.80.0"]]
-type = "missing_deps"
-
-    [[Issues."9.80.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.80.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."9.80.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.80.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."10.10.0"]]
-type = "missing_deps"
-
-    [[Issues."10.10.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.10.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.10.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.10.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."10.10.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
 [[Issues."10.9.0"]]
 type = "missing_deps"
@@ -382,54 +139,6 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."9.82.0"]]
-type = "missing_deps"
-
-    [[Issues."9.82.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.82.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."9.82.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.82.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."9.81.0"]]
-type = "missing_deps"
-
-    [[Issues."9.81.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.81.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."9.81.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.81.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."9.79.1"]]
-type = "missing_deps"
-
-    [[Issues."9.79.1".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.79.1".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."9.79.1".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.79.1".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
 [[Issues."10.0.1"]]
 type = "missing_deps"
 
@@ -443,54 +152,6 @@ type = "missing_deps"
     name = "FMI"
     uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
     [[Issues."10.0.1".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."10.2.0"]]
-type = "missing_deps"
-
-    [[Issues."10.2.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.2.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.2.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.2.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."10.3.0"]]
-type = "missing_deps"
-
-    [[Issues."10.3.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.3.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.3.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.3.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."10.3.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."9.73.0"]]
-type = "missing_deps"
-
-    [[Issues."9.73.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.73.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.73.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
 
@@ -513,25 +174,6 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."10.12.0"]]
-type = "missing_deps"
-
-    [[Issues."10.12.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.12.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.12.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.12.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."10.12.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
 [[Issues."9.76.0"]]
 type = "missing_deps"
 
@@ -544,38 +186,6 @@ type = "missing_deps"
     [[Issues."9.76.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."9.78.0"]]
-type = "missing_deps"
-
-    [[Issues."9.78.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.78.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.78.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-
-[[Issues."10.7.0"]]
-type = "missing_deps"
-
-    [[Issues."10.7.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.7.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.7.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.7.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."10.7.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
 [[Issues."10.14.0"]]
 type = "missing_deps"
@@ -634,40 +244,302 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."10.15.0"]]
+[[Issues."9.80.5"]]
 type = "missing_deps"
 
-    [[Issues."10.15.0".weak_deps]]
+    [[Issues."9.80.5".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.15.0".weak_deps]]
+    [[Issues."9.80.5".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.15.0".weak_deps]]
+    [[Issues."9.80.5".weak_deps]]
     name = "FMI"
     uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.15.0".weak_deps]]
+    [[Issues."9.80.5".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."10.15.0".weak_deps]]
+
+[[Issues."9.72.0"]]
+type = "missing_deps"
+
+    [[Issues."9.72.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.72.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.72.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."9.81.1"]]
+type = "missing_deps"
+
+    [[Issues."9.81.1".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.81.1".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."9.81.1".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.81.1".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."10.1.0"]]
+type = "missing_deps"
+
+    [[Issues."10.1.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.1.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.1.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.1.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."9.82.0"]]
+type = "missing_deps"
+
+    [[Issues."9.82.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.82.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."9.82.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.82.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."10.18.0"]]
+type = "missing_deps"
+
+    [[Issues."10.18.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.18.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.18.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.18.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."10.18.0".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."9.79.0"]]
+[[Issues."9.80.3"]]
 type = "missing_deps"
 
-    [[Issues."9.79.0".weak_deps]]
+    [[Issues."9.80.3".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."9.79.0".weak_deps]]
+    [[Issues."9.80.3".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."9.79.0".weak_deps]]
+    [[Issues."9.80.3".weak_deps]]
     name = "FMI"
     uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."9.79.0".weak_deps]]
+    [[Issues."9.80.3".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."10.11.0"]]
+type = "missing_deps"
+
+    [[Issues."10.11.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.11.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.11.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.11.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."10.11.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."10.10.0"]]
+type = "missing_deps"
+
+    [[Issues."10.10.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.10.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.10.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.10.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."10.10.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."9.81.0"]]
+type = "missing_deps"
+
+    [[Issues."9.81.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.81.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."9.81.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.81.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."10.12.0"]]
+type = "missing_deps"
+
+    [[Issues."10.12.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.12.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.12.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.12.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."10.12.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."9.71.0"]]
+type = "missing_deps"
+
+    [[Issues."9.71.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.71.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.71.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."10.8.0"]]
+type = "missing_deps"
+
+    [[Issues."10.8.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.8.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.8.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.8.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."10.8.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."9.80.0"]]
+type = "missing_deps"
+
+    [[Issues."9.80.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.80.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."9.80.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.80.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."10.3.0"]]
+type = "missing_deps"
+
+    [[Issues."10.3.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.3.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.3.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.3.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."10.3.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."9.73.0"]]
+type = "missing_deps"
+
+    [[Issues."9.73.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.73.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.73.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."9.78.0"]]
+type = "missing_deps"
+
+    [[Issues."9.78.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.78.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.78.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."10.7.0"]]
+type = "missing_deps"
+
+    [[Issues."10.7.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.7.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.7.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.7.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."10.7.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
 [[Issues."9.70.0"]]
 type = "missing_deps"
@@ -686,4 +558,151 @@ dependent = ["QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]", "SecondQ
 dependency = ["SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
 type = "not_on_latest"
 version = "9.70.0"
-latest = "10.18.0"
+latest = "10.19.0"
+
+[[Issues."9.74.0"]]
+type = "missing_deps"
+
+    [[Issues."9.74.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.74.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.74.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."9.77.0"]]
+type = "missing_deps"
+
+    [[Issues."9.77.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.77.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.77.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."9.80.6"]]
+type = "missing_deps"
+
+    [[Issues."9.80.6".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.80.6".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."9.80.6".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.80.6".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."10.4.0"]]
+type = "missing_deps"
+
+    [[Issues."10.4.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.4.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.4.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.4.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."10.4.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."10.19.0"]]
+type = "missing_deps"
+
+    [[Issues."10.19.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.19.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.19.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.19.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."10.19.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."9.79.1"]]
+type = "missing_deps"
+
+    [[Issues."9.79.1".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.79.1".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."9.79.1".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.79.1".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."10.2.0"]]
+type = "missing_deps"
+
+    [[Issues."10.2.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.2.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.2.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.2.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."9.79.0"]]
+type = "missing_deps"
+
+    [[Issues."9.79.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."9.79.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."9.79.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."9.79.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+
+[[Issues."10.15.0"]]
+type = "missing_deps"
+
+    [[Issues."10.15.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.15.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.15.0".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.15.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."10.15.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
