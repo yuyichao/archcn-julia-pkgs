@@ -296,7 +296,7 @@ depversion = "3.5"
 
 [[Overrides.DepsVersion]]
 pkg = "Clang"
-version = "0.18"
+version = "0.18, 0.19"
 dep = "Clang_jll"
 depversion = "16, 17, 18, 19, 20"
 
