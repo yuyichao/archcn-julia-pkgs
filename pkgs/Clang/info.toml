@@ -6,3 +6,10 @@ required = true
 
 [Status]
 version = "0.18.3"
+
+[[Issues."0.18.3"]]
+dependent = []
+dependency = ["Clang_jll [0ee61d77-7f21-5576-8119-9fcc46b10100]"]
+type = "not_on_latest"
+version = "0.18.3"
+latest = "0.19.0"

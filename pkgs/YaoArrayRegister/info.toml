@@ -10,4 +10,4 @@ dependent = []
 dependency = ["LuxurySparse [d05aeea4-b7d4-55ac-b691-9e7fabb07ba2]"]
 type = "not_on_latest"
 version = "0.9.10"
-latest = "0.9.11"
+latest = "0.9.12"
