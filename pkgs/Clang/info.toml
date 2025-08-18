@@ -5,11 +5,4 @@ uuid = "40e3b903-d033-50b4-a0cc-940c62c95e31"
 required = true
 
 [Status]
-version = "0.18.3"
-
-[[Issues."0.18.3"]]
-dependent = []
-dependency = ["Clang_jll [0ee61d77-7f21-5576-8119-9fcc46b10100]"]
-type = "not_on_latest"
-version = "0.18.3"
-latest = "0.19.0"
+version = "0.19.0"
