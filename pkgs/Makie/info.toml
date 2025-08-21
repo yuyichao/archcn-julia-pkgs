@@ -1,8 +1,8 @@
 [Pkg]
-required = true
 name = "Makie"
-uuid = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
 has_artifacts = true
+uuid = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
+required = true
 
 [Status]
-version = "0.24.5"
+version = "0.24.6"
