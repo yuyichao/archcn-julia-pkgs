@@ -5,3 +5,13 @@ required = true
 
 [Status]
 version = "0.5.15"
+
+[[Issues."0.6.0"]]
+type = "missing_deps"
+
+    [[Issues."0.6.0".deps]]
+    name = "ChunkCodecLibZlib"
+    uuid = "4c0bbee4-addc-4d73-81a0-b6caacae83c8"
+    [[Issues."0.6.0".deps]]
+    name = "ChunkCodecLibZstd"
+    uuid = "55437552-ac27-4d47-9aa3-63184e8fd398"

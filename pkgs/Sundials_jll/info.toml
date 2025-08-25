@@ -20,3 +20,15 @@ type = "jll_changes"
 
     [Issues."7.4.0+0".add]
     library = ["libsundials_core"]
+
+[[Issues."7.4.1+0"]]
+type = "missing_deps"
+
+    [[Issues."7.4.1+0".deps]]
+    name = "SuiteSparse32_jll"
+    uuid = "ca45d3f4-326b-53b0-9957-23b75aacb3f2"
+[[Issues."7.4.1+0"]]
+type = "jll_changes"
+
+    [Issues."7.4.1+0".add]
+    library = ["libsundials_core"]
