@@ -1,0 +1,11 @@
+
+[JLL.products]
+executable = ["zipcmp", "zipmerge", "ziptool"]
+library = ["libzip"]
+[Status]
+version = "1.11.3+0"
+
+[Pkg]
+is_jll = true
+name = "libzip_jll"
+uuid = "337d8026-41b4-5cde-a456-74a10e5b31d1"
