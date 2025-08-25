@@ -1,18 +1,11 @@
+[Pkg]
+name = "ImageMagick_jll"
+uuid = "c73af94c-d91f-53ed-93a7-00f77d67a9d7"
+is_jll = true
+
+[Status]
+version = "7.1.2002+0"
 
 [JLL.products]
 executable = ["identify", "imagemagick_convert", "mogrify", "montage"]
 library = ["libwand"]
-[Status]
-version = "7.1.2002+0"
-
-[[Issues."7.1.2002+0"]]
-type = "missing_deps"
-
-    [[Issues."7.1.2002+0".deps]]
-    name = "libzip_jll"
-    uuid = "337d8026-41b4-5cde-a456-74a10e5b31d1"
-
-[Pkg]
-is_jll = true
-name = "ImageMagick_jll"
-uuid = "c73af94c-d91f-53ed-93a7-00f77d67a9d7"

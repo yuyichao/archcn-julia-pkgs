@@ -1,20 +1,20 @@
+[Pkg]
+name = "Symbolics"
+uuid = "0c5d862f-8b57-4792-8d23-62f2024744c7"
+required = true
+
 [Status]
 version = "6.52.0"
 
-[[Issues."6.51.0"]]
+[[Issues."6.52.0"]]
 type = "missing_deps"
 
-    [[Issues."6.51.0".weak_deps]]
+    [[Issues."6.52.0".weak_deps]]
     name = "D3Trees"
     uuid = "e3df1716-f71e-5df9-9e2d-98e193103c45"
-    [[Issues."6.51.0".weak_deps]]
+    [[Issues."6.52.0".weak_deps]]
     name = "Lux"
     uuid = "b2108857-7c20-44ae-9111-449ecde12c47"
-    [[Issues."6.51.0".weak_deps]]
+    [[Issues."6.52.0".weak_deps]]
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
-
-[Pkg]
-name = "Symbolics"
-required = true
-uuid = "0c5d862f-8b57-4792-8d23-62f2024744c7"
