@@ -1,0 +1,7 @@
+[Status]
+version = "0.6.2"
+
+[Pkg]
+required = true
+name = "FlatBuffers"
+uuid = "53afe959-3a16-52fa-a8da-cf864710bae9"
