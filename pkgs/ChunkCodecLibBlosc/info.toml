@@ -1,0 +1,7 @@
+[Status]
+version = "0.3.0"
+
+[Pkg]
+required = true
+name = "ChunkCodecLibBlosc"
+uuid = "c6a955be-ab7f-4fbb-b38f-caf93db6b928"

@@ -1,0 +1,7 @@
+[Status]
+version = "0.2.0"
+
+[Pkg]
+required = true
+name = "ChunkCodecBitshuffle"
+uuid = "1d859bbf-6282-4c80-a370-34c59bf7ec11"

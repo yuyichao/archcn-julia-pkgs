@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libsnappy"]
+[Status]
+version = "1.2.3+0"
+
+[Pkg]
+is_jll = true
+name = "snappy_jll"
+uuid = "fe1e1685-f7be-5f59-ac9f-4ca204017dfd"

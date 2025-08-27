@@ -1,0 +1,7 @@
+[Status]
+version = "0.3.0"
+
+[Pkg]
+required = true
+name = "ChunkCodecLibZstd"
+uuid = "55437552-ac27-4d47-9aa3-63184e8fd398"

@@ -1,0 +1,7 @@
+[Status]
+version = "0.2.5"
+
+[Pkg]
+required = true
+name = "IOCapture"
+uuid = "b5f81e59-6552-4d32-b1f0-c071b021bf89"
