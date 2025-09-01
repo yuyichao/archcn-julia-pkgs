@@ -10,4 +10,4 @@ dependent = ["DataFrames [a93c6f00-e57d-5684-b7b6-d8193f3e46c0]"]
 dependency = []
 type = "not_on_latest"
 version = "2.4.0"
-latest = "3.0.6"
+latest = "3.0.8"
