@@ -6,8 +6,8 @@ uuid = "becaefa8-8ca2-5cf9-886d-c06f3d2bd2c4"
 version = "1.7.0"
 
 [[Issues."1.7.0"]]
-type = "not_on_latest"
-latest = "1.8.0"
 dependent = []
-version = "1.7.0"
 dependency = ["OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]"]
+type = "not_on_latest"
+version = "1.7.0"
+latest = "1.9.0"

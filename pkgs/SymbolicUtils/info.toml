@@ -7,7 +7,7 @@ version = "3.24.1"
 
 [[Issues."3.24.1"]]
 dependent = ["QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]"]
-dependency = []
+dependency = ["Combinatorics [861a8166-3701-5b0c-9a16-15d98fcdc6aa]"]
 type = "not_on_latest"
 version = "3.24.1"
-latest = "3.31.0"
+latest = "3.32.0"
