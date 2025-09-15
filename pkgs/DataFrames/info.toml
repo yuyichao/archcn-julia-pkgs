@@ -1,7 +1,7 @@
-[Status]
-version = "1.7.1"
-
 [Pkg]
 name = "DataFrames"
-required = true
 uuid = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+required = true
+
+[Status]
+version = "1.8.0"
