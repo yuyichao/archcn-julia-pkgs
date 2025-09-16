@@ -1,0 +1,6 @@
+[Status]
+version = "0.35.0"
+
+[Pkg]
+name = "QuantumToolbox"
+uuid = "6c2fb7c5-b903-41d2-bc5e-5a7c320b9fab"
