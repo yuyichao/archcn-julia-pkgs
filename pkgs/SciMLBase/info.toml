@@ -1,9 +1,5 @@
-[Pkg]
-name = "SciMLBase"
-uuid = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
-
 [Status]
-version = "2.118.1"
+version = "2.119.0"
 
 [[Issues."2.118.1"]]
 type = "missing_deps"
@@ -14,3 +10,7 @@ type = "missing_deps"
     [[Issues."2.118.1".weak_deps]]
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
+[Pkg]
+name = "SciMLBase"
+uuid = "0bca4576-84f4-4d90-8ffe-ffa030f20462"

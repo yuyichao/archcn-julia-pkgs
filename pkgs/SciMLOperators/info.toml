@@ -1,6 +1,6 @@
+[Status]
+version = "1.7.2"
+
 [Pkg]
 name = "SciMLOperators"
 uuid = "c0aeaf25-5076-4817-a8d5-81caf7dfa961"
-
-[Status]
-version = "1.7.1"
