@@ -1,11 +1,11 @@
 [Pkg]
 name = "SPIRV_Tools_jll"
-is_jll = true
 uuid = "6ac6d60f-d740-5983-97d7-a4482c0689f4"
+is_jll = true
 
 [Status]
-version = "2025.1.0+2"
+version = "2025.1.0+3"
 
 [JLL.products]
-library = ["libSPIRV_Tools", "libSPIRV_Tools_diff", "libSPIRV_Tools_link", "libSPIRV_Tools_lint", "libSPIRV_Tools_opt"]
 executable = ["spirv_as", "spirv_cfg", "spirv_dis", "spirv_link", "spirv_lint", "spirv_objdump", "spirv_opt", "spirv_reduce", "spirv_val"]
+library = ["libSPIRV_Tools", "libSPIRV_Tools_diff", "libSPIRV_Tools_link", "libSPIRV_Tools_lint", "libSPIRV_Tools_opt"]

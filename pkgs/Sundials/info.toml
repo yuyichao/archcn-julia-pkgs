@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "4.28.0"
+
+[[Issues."4.28.0"]]
+dependent = ["DifferentialEquations [0c46a032-eb83-5123-abaf-570d42b7fbaa]"]
+dependency = ["NonlinearSolveBase [be0214bd-f91f-a760-ac4e-3421ce2b2da0]", "Sundials_jll [fb77eaff-e24c-56d4-86b1-d163f2edb164]"]
+type = "not_on_latest"
+version = "4.28.0"
+latest = "5.0.0"

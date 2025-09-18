@@ -9,3 +9,9 @@ version = "7.1.2004+0"
 [JLL.products]
 executable = ["identify", "imagemagick_convert", "mogrify", "montage"]
 library = ["libwand"]
+
+[[Issues."7.1.2005+0"]]
+type = "jll_changes"
+
+    [Issues."7.1.2005+0".add]
+    executable = ["magick"]
