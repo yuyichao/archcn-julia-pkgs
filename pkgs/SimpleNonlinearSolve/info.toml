@@ -1,13 +1,13 @@
-[Pkg]
-name = "SimpleNonlinearSolve"
-uuid = "727e6d20-b764-4bd8-a329-72de5adea6c7"
-
 [Status]
 version = "2.7.0"
 
 [[Issues."2.7.0"]]
-dependent = []
-dependency = ["DifferentiationInterface [a0c0ee7d-e4b9-4e03-894e-1c5f64a51d63]", "NonlinearSolveBase [be0214bd-f91f-a760-ac4e-3421ce2b2da0]"]
-type = "not_on_latest"
 version = "2.7.0"
+type = "not_on_latest"
 latest = "2.8.0"
+dependent = []
+dependency = ["DifferentiationInterface [a0c0ee7d-e4b9-4e03-894e-1c5f64a51d63]"]
+
+[Pkg]
+name = "SimpleNonlinearSolve"
+uuid = "727e6d20-b764-4bd8-a329-72de5adea6c7"

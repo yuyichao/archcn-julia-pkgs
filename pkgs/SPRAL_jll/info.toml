@@ -1,11 +1,11 @@
-[Pkg]
-name = "SPRAL_jll"
-uuid = "319450e9-13b8-58e8-aa9f-8fd1420848ab"
-is_jll = true
-
-[Status]
-version = "2025.5.20+0"
 
 [JLL.products]
 executable = ["spral_ssids"]
 library = ["libspral"]
+[Status]
+version = "2025.9.18+0"
+
+[Pkg]
+is_jll = true
+name = "SPRAL_jll"
+uuid = "319450e9-13b8-58e8-aa9f-8fd1420848ab"
