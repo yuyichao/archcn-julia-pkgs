@@ -1,7 +1,7 @@
-[Status]
-version = "0.13.77"
-
 [Pkg]
 name = "Enzyme"
-required = true
 uuid = "7da242da-08ed-463a-9acd-ee780be4f1d9"
+required = true
+
+[Status]
+version = "0.13.78"
