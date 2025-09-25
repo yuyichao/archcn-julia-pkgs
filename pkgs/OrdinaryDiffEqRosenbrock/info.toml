@@ -3,11 +3,4 @@ name = "OrdinaryDiffEqRosenbrock"
 uuid = "43230ef6-c299-4910-a778-202eb28ce4ce"
 
 [Status]
-version = "1.14.0"
-
-[[Issues."1.14.0"]]
-dependent = []
-dependency = ["DifferentiationInterface [a0c0ee7d-e4b9-4e03-894e-1c5f64a51d63]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]"]
-type = "not_on_latest"
-version = "1.14.0"
-latest = "1.18.0"
+version = "1.18.1"

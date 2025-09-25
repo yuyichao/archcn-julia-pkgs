@@ -3,11 +3,4 @@ name = "OrdinaryDiffEqFIRK"
 uuid = "5960d6e9-dd7a-4743-88e7-cf307b64f125"
 
 [Status]
-version = "1.15.0"
-
-[[Issues."1.15.0"]]
-type = "not_on_latest"
-latest = "1.16.0"
-dependent = []
-version = "1.15.0"
-dependency = ["OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]"]
+version = "1.16.0"

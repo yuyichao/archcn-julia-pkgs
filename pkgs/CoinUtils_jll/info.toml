@@ -4,7 +4,7 @@ uuid = "be027038-0da8-5614-b30d-e42594cb92df"
 is_jll = true
 
 [Status]
-version = "200.1100.1100+0"
+version = "200.1100.1200+0"
 
 [JLL.products]
 library = ["libCoinUtils"]

@@ -3,18 +3,4 @@ name = "OrdinaryDiffEq"
 uuid = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
 
 [Status]
-version = "6.101.0"
-
-[[Issues."6.101.0"]]
-dependent = []
-dependency = ["OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]", "OrdinaryDiffEqRosenbrock [43230ef6-c299-4910-a778-202eb28ce4ce]"]
-type = "not_on_latest"
-version = "6.101.0"
-latest = "6.102.1"
-
-[[Issues."6.102.0"]]
-type = "missing_deps"
-
-    [[Issues."6.102.0".deps]]
-    name = "ExplicitImports"
-    uuid = "7d51a73a-1435-4ff3-83d9-f097790105c7"
+version = "6.102.1"

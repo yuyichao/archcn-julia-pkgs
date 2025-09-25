@@ -4,4 +4,4 @@ uuid = "e2554f3b-3117-50c0-817c-e040a3ddf72d"
 required = true
 
 [Status]
-version = "1.2.2"
+version = "1.3.0"

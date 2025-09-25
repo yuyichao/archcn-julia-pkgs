@@ -3,11 +3,4 @@ name = "OrdinaryDiffEqDefault"
 uuid = "50262376-6c5a-4cf5-baba-aaf4f84d72d7"
 
 [Status]
-version = "1.7.0"
-
-[[Issues."1.7.0"]]
-type = "not_on_latest"
-latest = "1.8.0"
-dependent = []
-version = "1.7.0"
-dependency = ["OrdinaryDiffEqRosenbrock [43230ef6-c299-4910-a778-202eb28ce4ce]"]
+version = "1.8.0"

@@ -4,3 +4,10 @@ uuid = "787d08f9-d448-5407-9aad-5290dd7ab264"
 
 [Status]
 version = "0.4.6"
+
+[[Issues."0.4.6"]]
+dependent = []
+dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]"]
+type = "not_on_latest"
+version = "0.4.6"
+latest = "0.4.7"

@@ -4,7 +4,7 @@ uuid = "38041ee0-ae04-5750-a4d2-bb4d0d83d27d"
 is_jll = true
 
 [Status]
-version = "200.1000.800+0"
+version = "200.1000.1200+0"
 
 [JLL.products]
 executable = ["cbc"]

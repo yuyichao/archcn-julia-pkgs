@@ -1,14 +1,14 @@
+[Pkg]
+name = "DataStructures"
+uuid = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+required = true
+
 [Status]
 version = "0.18.22"
 
 [[Issues."0.18.22"]]
-version = "0.18.22"
-type = "not_on_latest"
-latest = "0.19.1"
-dependent = ["ConcurrentSim [6ed1e86c-fcaf-46a9-97e0-2b26a2cdb499]", "GeneralizedGenerated [6b9d7cbe-bcb9-11e9-073f-15a7a543e2eb]", "HCubature [19dc6840-f33b-545b-b366-655c7e3ffd49]", "ImageMorphology [787d08f9-d448-5407-9aad-5290dd7ab264]", "ImageSegmentation [80713f31-8817-5129-9cf8-209ff8fb23e1]", "JuliaFormatter [98e50ef6-434e-11e9-1051-2b60c6c9e899]", "Luxor [ae8d54c2-7ccd-5906-9d76-62fc9837b5bc]", "ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "MultivariatePolynomials [102ac46a-7ee4-5c85-9060-abc95bfdeaa3]", "NamedArrays [86f7a689-2022-50b4-a561-43c23ac3c673]", "OMEinsumContractionOrders [6f22d1fd-8eed-4bb7-9776-e7d684900715]", "OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed]", "QuantumClifford [0525e862-1e90-11e9-3e4d-1b39d7109de1]", "SparseDiffTools [47a9eef4-7e08-11e9-0b38-333d64bd3804]", "Sundials [c3572dad-4567-51f8-b174-8c6c989267f4]", "SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
+dependent = ["ConcurrentSim [6ed1e86c-fcaf-46a9-97e0-2b26a2cdb499]", "GeneralizedGenerated [6b9d7cbe-bcb9-11e9-073f-15a7a543e2eb]", "HCubature [19dc6840-f33b-545b-b366-655c7e3ffd49]", "ImageMorphology [787d08f9-d448-5407-9aad-5290dd7ab264]", "ImageSegmentation [80713f31-8817-5129-9cf8-209ff8fb23e1]", "JuliaFormatter [98e50ef6-434e-11e9-1051-2b60c6c9e899]", "Luxor [ae8d54c2-7ccd-5906-9d76-62fc9837b5bc]", "ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "MultivariatePolynomials [102ac46a-7ee4-5c85-9060-abc95bfdeaa3]", "NamedArrays [86f7a689-2022-50b4-a561-43c23ac3c673]", "OMEinsumContractionOrders [6f22d1fd-8eed-4bb7-9776-e7d684900715]", "QuantumClifford [0525e862-1e90-11e9-3e4d-1b39d7109de1]", "SparseDiffTools [47a9eef4-7e08-11e9-0b38-333d64bd3804]", "Sundials [c3572dad-4567-51f8-b174-8c6c989267f4]", "SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
 dependency = []
-
-[Pkg]
-name = "DataStructures"
-required = true
-uuid = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+type = "not_on_latest"
+version = "0.18.22"
+latest = "0.19.1"
