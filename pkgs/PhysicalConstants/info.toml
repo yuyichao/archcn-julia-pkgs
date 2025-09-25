@@ -1,0 +1,7 @@
+[Status]
+version = "0.2.4"
+
+[Pkg]
+required = true
+name = "PhysicalConstants"
+uuid = "5ad8b20f-a522-5ce9-bfc9-ddf1d5bda6ab"

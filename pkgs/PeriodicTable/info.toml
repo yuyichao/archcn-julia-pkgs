@@ -1,0 +1,7 @@
+[Status]
+version = "1.2.1"
+
+[Pkg]
+required = true
+name = "PeriodicTable"
+uuid = "7b2266bf-644c-5ea3-82d8-af4bbd25a884"
