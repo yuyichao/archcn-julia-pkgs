@@ -5,6 +5,16 @@ uuid = "f2c3362d-daeb-58d1-803e-2bc74f2840b4"
 [Status]
 version = "0.2.23"
 
+[[Issues."0.2.24"]]
+type = "missing_deps"
+
+    [[Issues."0.2.24".deps]]
+    name = "SparseBandedMatrices"
+    uuid = "bd59d7e1-4699-4102-944e-d05209cb92aa"
+    [[Issues."0.2.24".deps]]
+    name = "VectorizedRNG"
+    uuid = "33b4df10-0173-11e9-2a0c-851a7edac40e"
+
 [[Issues."0.2.23"]]
 type = "not_needed"
 has_weak = true
