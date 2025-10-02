@@ -6,8 +6,8 @@ uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
 version = "3.2.0"
 
 [[Issues."3.2.0"]]
-type = "not_on_latest"
-latest = "3.4.3"
 dependent = []
-version = "3.2.0"
 dependency = ["CodeTracking [da1fd8a2-8d9e-5ec2-8556-3022fb5608a2]", "JuliaInterpreter [aa1ae85d-cabe-5617-a682-6adf51b2e16a]"]
+type = "not_on_latest"
+version = "3.2.0"
+latest = "3.4.4"

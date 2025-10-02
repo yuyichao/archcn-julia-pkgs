@@ -3,7 +3,7 @@ name = "StableHashTraits"
 uuid = "c5dd0088-6c3f-4803-b00e-f31a60c170fa"
 
 [Status]
-version = "2.0.1"
+version = "2.0.2"
 
-[[Issues."2.0.1"]]
+[[Issues."2.0.2"]]
 type = "not_needed"

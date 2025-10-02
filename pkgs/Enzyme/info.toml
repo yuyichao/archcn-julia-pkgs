@@ -4,11 +4,11 @@ uuid = "7da242da-08ed-463a-9acd-ee780be4f1d9"
 required = true
 
 [Status]
-version = "0.13.81"
+version = "0.13.84"
 
-[[Issues."0.13.81"]]
+[[Issues."0.13.84"]]
 type = "missing_deps"
 
-    [[Issues."0.13.81".weak_deps]]
+    [[Issues."0.13.84".weak_deps]]
     name = "DynamicPPL"
     uuid = "366bfd00-2699-11ea-058f-f148b4cae6d8"
