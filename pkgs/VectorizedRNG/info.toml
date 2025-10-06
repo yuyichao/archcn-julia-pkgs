@@ -1,0 +1,6 @@
+[Status]
+version = "0.2.25"
+
+[Pkg]
+name = "VectorizedRNG"
+uuid = "33b4df10-0173-11e9-2a0c-851a7edac40e"

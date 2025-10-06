@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libpciaccess"]
+[Status]
+version = "0.18.1+0"
+
+[Pkg]
+is_jll = true
+name = "Xorg_libpciaccess_jll"
+uuid = "a65dc6b1-eb27-53a1-bb3e-dea574b5389e"

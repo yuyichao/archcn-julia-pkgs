@@ -1,9 +1,9 @@
-[Pkg]
-name = "RecursiveFactorization"
-uuid = "f2c3362d-daeb-58d1-803e-2bc74f2840b4"
-
 [Status]
-version = "0.2.23"
+version = "0.2.24"
+
+[[Issues."0.2.23"]]
+type = "not_needed"
+has_weak = true
 
 [[Issues."0.2.24"]]
 type = "missing_deps"
@@ -15,6 +15,6 @@ type = "missing_deps"
     name = "VectorizedRNG"
     uuid = "33b4df10-0173-11e9-2a0c-851a7edac40e"
 
-[[Issues."0.2.23"]]
-type = "not_needed"
-has_weak = true
+[Pkg]
+name = "RecursiveFactorization"
+uuid = "f2c3362d-daeb-58d1-803e-2bc74f2840b4"

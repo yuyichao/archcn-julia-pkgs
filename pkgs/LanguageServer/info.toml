@@ -1,0 +1,7 @@
+[Status]
+version = "4.5.1"
+
+[Pkg]
+required = true
+name = "LanguageServer"
+uuid = "2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7"
