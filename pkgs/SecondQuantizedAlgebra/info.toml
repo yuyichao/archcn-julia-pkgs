@@ -10,4 +10,4 @@ dependent = ["QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]"]
 dependency = []
 type = "not_on_latest"
 version = "0.3.1"
-latest = "0.4.2"
+latest = "0.4.3"

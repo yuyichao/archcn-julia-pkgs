@@ -3,7 +3,7 @@ name = "ChainRulesTestUtils"
 uuid = "cdddcdb0-9152-4a09-a978-84456f9df70a"
 
 [Status]
-version = "1.13.0"
+version = "1.13.1"
 
-[[Issues."1.13.0"]]
+[[Issues."1.13.1"]]
 type = "not_needed"

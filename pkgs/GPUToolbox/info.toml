@@ -3,11 +3,4 @@ name = "GPUToolbox"
 uuid = "096a3bc2-3ced-46d0-87f4-dd12716f4bfc"
 
 [Status]
-version = "0.2.0"
-
-[[Issues."0.2.0"]]
-type = "not_on_latest"
-latest = "0.3.0"
-dependent = ["SPIRVIntrinsics [71d1d633-e7e8-4a92-83a1-de8814b09ba8]"]
-version = "0.2.0"
-dependency = []
+version = "0.3.0"

@@ -3,35 +3,35 @@ name = "CliqueTrees"
 uuid = "60701a23-6482-424a-84db-faee86b9b1f8"
 
 [Status]
-version = "1.11.1"
+version = "1.12.1"
 
-[[Issues."1.11.1"]]
+[[Issues."1.12.1"]]
 type = "missing_deps"
 
-    [[Issues."1.11.1".weak_deps]]
+    [[Issues."1.12.1".weak_deps]]
     name = "Catlab"
     uuid = "134e5e36-593f-5add-ad60-77f754baafbe"
-    [[Issues."1.11.1".weak_deps]]
+    [[Issues."1.12.1".weak_deps]]
     name = "CryptoMiniSat_jll"
     uuid = "cf02a7a8-8cd0-5932-97be-477f95a4d9ce"
-    [[Issues."1.11.1".weak_deps]]
+    [[Issues."1.12.1".weak_deps]]
     name = "FlowCutterPACE17_jll"
     uuid = "008204e2-cd5c-5c6d-9360-d31f32b5f6c2"
-    [[Issues."1.11.1".weak_deps]]
+    [[Issues."1.12.1".weak_deps]]
     name = "KaHyPar"
     uuid = "2a6221f6-aa48-11e9-3542-2d9e0ef01880"
-    [[Issues."1.11.1".weak_deps]]
+    [[Issues."1.12.1".weak_deps]]
     name = "Laplacians"
     uuid = "6f8e5838-0efe-5de0-80a3-5fb4f8dbb1de"
-    [[Issues."1.11.1".weak_deps]]
+    [[Issues."1.12.1".weak_deps]]
     name = "Lingeling_jll"
     uuid = "54ea7443-b7cf-5485-b0d0-86c7d7a308e1"
-    [[Issues."1.11.1".weak_deps]]
+    [[Issues."1.12.1".weak_deps]]
     name = "Metis"
     uuid = "2679e427-3c69-5b7f-982b-ece356f1e94b"
-    [[Issues."1.11.1".weak_deps]]
+    [[Issues."1.12.1".weak_deps]]
     name = "PicoSAT_jll"
     uuid = "e78fa76d-a187-569f-aede-ad11521a2edf"
-    [[Issues."1.11.1".weak_deps]]
+    [[Issues."1.12.1".weak_deps]]
     name = "libpicosat_jll"
     uuid = "6b231c3b-13f8-5ced-86ae-8860c7f75d86"

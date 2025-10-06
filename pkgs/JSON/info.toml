@@ -5,3 +5,17 @@ required = true
 
 [Status]
 version = "0.21.4"
+
+[[Issues."1.0.0"]]
+type = "missing_deps"
+
+    [[Issues."1.0.0".deps]]
+    name = "StructUtils"
+    uuid = "ec057cc2-7a8d-4b58-b3b3-92acb9f63b42"
+
+[[Issues."1.0.1"]]
+type = "missing_deps"
+
+    [[Issues."1.0.1".deps]]
+    name = "StructUtils"
+    uuid = "ec057cc2-7a8d-4b58-b3b3-92acb9f63b42"
