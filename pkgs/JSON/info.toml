@@ -6,16 +6,9 @@ required = true
 [Status]
 version = "0.21.4"
 
-[[Issues."1.0.0"]]
-type = "missing_deps"
-
-    [[Issues."1.0.0".deps]]
-    name = "StructUtils"
-    uuid = "ec057cc2-7a8d-4b58-b3b3-92acb9f63b42"
-
-[[Issues."1.0.1"]]
-type = "missing_deps"
-
-    [[Issues."1.0.1".deps]]
-    name = "StructUtils"
-    uuid = "ec057cc2-7a8d-4b58-b3b3-92acb9f63b42"
+[[Issues."0.21.4"]]
+dependent = ["AWS [fbe9abb3-538b-5e4e-ba9e-bc94f4f92ebc]", "BenchmarkTools [6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf]", "BloqadeSchema [a64e8dd8-bb5a-11ec-104d-290571fc3a8d]", "ColorBrewer [a2cac450-b92f-5266-8821-25eda20663c8]", "Conda [8f4d0f93-b110-5947-807f-2305c1781a2d]", "GitHub [bc5e4493-9b4d-5f90-b8aa-2b2bcaad7a26]", "GitHubActions [6b79fd1a-b13a-48ab-b6b0-aaee1fee41df]", "JSONRPC [b9b8584e-8fd3-41f9-ad0c-7255d428e418]", "LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]", "OMEinsumContractionOrders [6f22d1fd-8eed-4bb7-9776-e7d684900715]"]
+dependency = []
+type = "not_on_latest"
+version = "0.21.4"
+latest = "1.0.1"

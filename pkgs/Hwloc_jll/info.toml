@@ -10,9 +10,9 @@ version = "2.12.1+0"
 executable = ["lstopo_no_graphics"]
 library = ["libhwloc"]
 
-[[Issues."2.12.2+0"]]
-type = "missing_deps"
-
-    [[Issues."2.12.2+0".deps]]
-    name = "Xorg_libpciaccess_jll"
-    uuid = "a65dc6b1-eb27-53a1-bb3e-dea574b5389e"
+[[Issues."2.12.1+0"]]
+dependent = []
+dependency = ["XML2_jll [02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a]"]
+type = "not_on_latest"
+version = "2.12.1+0"
+latest = "2.12.2+0"
