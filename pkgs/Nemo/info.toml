@@ -1,13 +1,6 @@
-[Status]
-version = "0.52.1"
-
-[[Issues."0.51.1"]]
-version = "0.51.1"
-type = "not_on_latest"
-latest = "0.52.1"
-dependent = ["Groebner [0b43b601-686d-58a3-8a1c-6623616c7cd4]"]
-dependency = ["AbstractAlgebra [c3fe647b-3220-5bb0-a1ea-a7954cac585d]"]
-
 [Pkg]
 name = "Nemo"
 uuid = "2edaba10-b0f1-5616-af89-8c11ac63239a"
+
+[Status]
+version = "0.52.1"

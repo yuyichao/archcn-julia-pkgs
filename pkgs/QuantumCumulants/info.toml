@@ -1,7 +1,14 @@
 [Pkg]
-required = true
 name = "QuantumCumulants"
 uuid = "35bcea6d-e19f-57db-af74-8011de6c7255"
+required = true
 
 [Status]
 version = "0.4.0"
+
+[[Issues."0.4.0"]]
+dependent = []
+dependency = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]"]
+type = "not_on_latest"
+version = "0.4.0"
+latest = "0.4.1"
