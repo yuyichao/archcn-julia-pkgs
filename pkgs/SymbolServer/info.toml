@@ -1,6 +1,13 @@
-[Status]
-version = "7.4.0"
-
 [Pkg]
 name = "SymbolServer"
 uuid = "cf896787-08d5-524d-9de7-132aaa0cb996"
+
+[Status]
+version = "7.4.0"
+
+[[Issues."7.4.0"]]
+dependent = ["LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]"]
+dependency = []
+type = "not_on_latest"
+version = "7.4.0"
+latest = "8.0.0"

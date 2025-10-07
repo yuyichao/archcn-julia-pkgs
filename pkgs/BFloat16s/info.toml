@@ -1,10 +1,10 @@
-[Status]
-version = "0.6.0"
-
-[[Issues."0.5.1"]]
-type = "not_needed"
-has_weak = true
-
 [Pkg]
 name = "BFloat16s"
 uuid = "ab4f0b2a-ad5b-11e8-123f-65d77653426b"
+
+[Status]
+version = "0.6.0"
+
+[[Issues."0.6.0"]]
+type = "not_needed"
+has_weak = true
