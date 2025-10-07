@@ -1,9 +1,5 @@
-[Pkg]
-name = "LinearSolve"
-uuid = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
-
 [Status]
-version = "3.41.0"
+version = "3.42.0"
 
 [[Issues."3.41.0"]]
 type = "missing_deps"
@@ -26,3 +22,7 @@ type = "missing_deps"
     [[Issues."3.41.0".weak_deps]]
     name = "blis_jll"
     uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
+
+[Pkg]
+name = "LinearSolve"
+uuid = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"

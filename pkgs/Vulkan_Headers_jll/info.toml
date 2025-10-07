@@ -1,0 +1,10 @@
+
+[JLL.products]
+[Status]
+version = "1.4.321+0"
+
+[Pkg]
+is_jll = true
+required = true
+name = "Vulkan_Headers_jll"
+uuid = "8d446b21-f3ad-5576-a034-752265b9b6f9"

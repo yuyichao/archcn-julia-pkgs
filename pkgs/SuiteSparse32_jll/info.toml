@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libamd", "libbtf", "libcamd", "libccolamd", "libcholmod", "libcolamd", "libklu", "libldl", "librbio", "libspqr", "libsuitesparseconfig", "libumfpack"]
+[Status]
+version = "7.11.0+0"
+
+[Pkg]
+is_jll = true
+name = "SuiteSparse32_jll"
+uuid = "ca45d3f4-326b-53b0-9957-23b75aacb3f2"

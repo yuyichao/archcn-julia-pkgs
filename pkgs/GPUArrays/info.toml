@@ -1,6 +1,6 @@
+[Status]
+version = "11.2.6"
+
 [Pkg]
 name = "GPUArrays"
 uuid = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
-
-[Status]
-version = "11.2.5"
