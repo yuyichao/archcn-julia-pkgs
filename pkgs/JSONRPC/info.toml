@@ -5,16 +5,9 @@ uuid = "b9b8584e-8fd3-41f9-ad0c-7255d428e418"
 [Status]
 version = "1.4.2"
 
-[[Issues."2.0.0"]]
-type = "missing_deps"
-
-    [[Issues."2.0.0".deps]]
-    name = "CancellationTokens"
-    uuid = "2e8d271d-f2e2-407b-a864-17eb2156783e"
-
-[[Issues."2.0.1"]]
-type = "missing_deps"
-
-    [[Issues."2.0.1".deps]]
-    name = "CancellationTokens"
-    uuid = "2e8d271d-f2e2-407b-a864-17eb2156783e"
+[[Issues."1.4.2"]]
+dependent = ["LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]"]
+dependency = []
+type = "not_on_latest"
+version = "1.4.2"
+latest = "2.0.1"
