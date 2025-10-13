@@ -21,6 +21,12 @@ type = "jll_changes"
     [Issues."7.4.0+0".add]
     library = ["libsundials_core"]
 
+[[Issues."7.5.0+0"]]
+type = "jll_changes"
+
+    [Issues."7.5.0+0".add]
+    library = ["libsundials_core"]
+
 [[Issues."7.4.1+0"]]
 type = "jll_changes"
 

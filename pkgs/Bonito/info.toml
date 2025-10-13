@@ -1,6 +1,6 @@
-[Status]
-version = "4.1.4"
-
 [Pkg]
 name = "Bonito"
 uuid = "824d6782-a2ef-11e9-3a09-e5662e0c26f8"
+
+[Status]
+version = "4.1.5"

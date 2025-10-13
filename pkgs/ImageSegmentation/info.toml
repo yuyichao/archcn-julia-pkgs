@@ -4,3 +4,10 @@ uuid = "80713f31-8817-5129-9cf8-209ff8fb23e1"
 
 [Status]
 version = "1.9.0"
+
+[[Issues."1.9.0"]]
+dependent = []
+dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]", "ImageMorphology [787d08f9-d448-5407-9aad-5290dd7ab264]"]
+type = "not_on_latest"
+version = "1.9.0"
+latest = "1.10.0"
