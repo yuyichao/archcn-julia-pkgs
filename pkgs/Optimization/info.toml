@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "4.8.0"
+
+[[Issues."4.8.0"]]
+dependent = []
+dependency = ["OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]"]
+type = "not_on_latest"
+version = "4.8.0"
+latest = "5.0.0"

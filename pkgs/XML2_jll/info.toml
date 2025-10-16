@@ -4,15 +4,8 @@ uuid = "02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a"
 is_jll = true
 
 [Status]
-version = "2.14.4+0"
+version = "2.15.0+0"
 
 [JLL.products]
 executable = ["xmlcatalog", "xmllint"]
 library = ["libxml2"]
-
-[[Issues."2.14.4+0"]]
-dependent = ["EzXML [8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615]", "LightXML [9c8b4983-aa76-5018-a973-4c85ecc9e179]"]
-dependency = []
-type = "not_on_latest"
-version = "2.14.4+0"
-latest = "2.15.0+0"

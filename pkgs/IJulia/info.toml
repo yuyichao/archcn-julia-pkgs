@@ -1,8 +1,8 @@
-[Status]
-version = "1.30.6"
-
 [Pkg]
 name = "IJulia"
+uuid = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
 required = true
 has_deps_build = true
-uuid = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
+
+[Status]
+version = "1.31.0"
