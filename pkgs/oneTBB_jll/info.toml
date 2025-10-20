@@ -4,7 +4,7 @@ uuid = "1317d2d5-d96f-522e-a858-c73665f53c3e"
 is_jll = true
 
 [Status]
-version = "2022.0.0+0"
+version = "2022.0.0+1"
 
 [JLL.products]
 library = ["libtbb", "libtbbmalloc", "libtbbmalloc_proxy"]

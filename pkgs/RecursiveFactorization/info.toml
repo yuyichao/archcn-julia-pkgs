@@ -3,8 +3,8 @@ name = "RecursiveFactorization"
 uuid = "f2c3362d-daeb-58d1-803e-2bc74f2840b4"
 
 [Status]
-version = "0.2.25"
+version = "0.2.26"
 
-[[Issues."0.2.25"]]
+[[Issues."0.2.26"]]
 type = "not_needed"
 has_weak = true

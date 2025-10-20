@@ -10,4 +10,4 @@ dependent = ["UnitfulLatexify [45397f5d-5981-4c77-b2b3-fc36d6e9b728]"]
 dependency = []
 type = "not_on_latest"
 version = "1.24.0"
-latest = "1.25.0"
+latest = "1.25.1"

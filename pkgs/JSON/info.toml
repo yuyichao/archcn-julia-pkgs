@@ -7,8 +7,8 @@ required = true
 version = "0.21.4"
 
 [[Issues."0.21.4"]]
-dependent = ["AWS [fbe9abb3-538b-5e4e-ba9e-bc94f4f92ebc]", "BenchmarkTools [6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf]", "BloqadeSchema [a64e8dd8-bb5a-11ec-104d-290571fc3a8d]", "Conda [8f4d0f93-b110-5947-807f-2305c1781a2d]", "GitHub [bc5e4493-9b4d-5f90-b8aa-2b2bcaad7a26]", "GitHubActions [6b79fd1a-b13a-48ab-b6b0-aaee1fee41df]", "JSONRPC [b9b8584e-8fd3-41f9-ad0c-7255d428e418]", "LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]", "OMEinsumContractionOrders [6f22d1fd-8eed-4bb7-9776-e7d684900715]"]
+dependent = ["AWS [fbe9abb3-538b-5e4e-ba9e-bc94f4f92ebc]", "BloqadeSchema [a64e8dd8-bb5a-11ec-104d-290571fc3a8d]", "Conda [8f4d0f93-b110-5947-807f-2305c1781a2d]", "GitHub [bc5e4493-9b4d-5f90-b8aa-2b2bcaad7a26]", "GitHubActions [6b79fd1a-b13a-48ab-b6b0-aaee1fee41df]", "JSONRPC [b9b8584e-8fd3-41f9-ad0c-7255d428e418]", "LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]", "OMEinsumContractionOrders [6f22d1fd-8eed-4bb7-9776-e7d684900715]"]
 dependency = []
 type = "not_on_latest"
 version = "0.21.4"
-latest = "1.1.0"
+latest = "1.2.0"
