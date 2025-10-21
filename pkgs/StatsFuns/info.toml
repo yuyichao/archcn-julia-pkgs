@@ -1,6 +1,6 @@
+[Status]
+version = "1.5.1"
+
 [Pkg]
 name = "StatsFuns"
 uuid = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
-
-[Status]
-version = "1.5.0"

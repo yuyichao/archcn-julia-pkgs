@@ -1,11 +1,11 @@
-[Pkg]
-name = "Expat_jll"
-uuid = "2e619515-83b5-522b-bb60-26c02a35a201"
-is_jll = true
-
-[Status]
-version = "2.7.1+0"
 
 [JLL.products]
 executable = ["xmlwf"]
 library = ["libexpat"]
+[Status]
+version = "2.7.3+0"
+
+[Pkg]
+is_jll = true
+name = "Expat_jll"
+uuid = "2e619515-83b5-522b-bb60-26c02a35a201"

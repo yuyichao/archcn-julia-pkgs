@@ -1,7 +1,7 @@
+[Status]
+version = "1.6.3"
+
 [Pkg]
 name = "BenchmarkTools"
-uuid = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
 required = true
-
-[Status]
-version = "1.6.2"
+uuid = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"

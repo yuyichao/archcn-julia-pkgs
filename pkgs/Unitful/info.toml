@@ -1,13 +1,13 @@
+[Status]
+version = "1.25.1"
+
+[[Issues."1.24.0"]]
+version = "1.24.0"
+type = "not_on_latest"
+latest = "1.25.1"
+dependent = ["UnitfulLatexify [45397f5d-5981-4c77-b2b3-fc36d6e9b728]"]
+dependency = []
+
 [Pkg]
 name = "Unitful"
 uuid = "1986cc42-f94f-5a68-af5c-568840ba703d"
-
-[Status]
-version = "1.24.0"
-
-[[Issues."1.24.0"]]
-dependent = ["UnitfulLatexify [45397f5d-5981-4c77-b2b3-fc36d6e9b728]"]
-dependency = []
-type = "not_on_latest"
-version = "1.24.0"
-latest = "1.25.1"
