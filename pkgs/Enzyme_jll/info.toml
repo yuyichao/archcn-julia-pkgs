@@ -8,3 +8,10 @@ version = "0.0.203+1"
 
 [JLL.products]
 library = ["libEnzyme", "libEnzymeBCLoad"]
+
+[[Issues."0.0.203+1"]]
+dependent = ["Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9]"]
+dependency = []
+type = "not_on_latest"
+version = "0.0.203+1"
+latest = "0.0.204+0"

@@ -10,4 +10,11 @@ dependent = ["BloqadeExpr [bd27d05e-4ce1-5e79-84dd-c5d7d508abe2]", "Yao [5872b77
 dependency = ["LuxurySparse [d05aeea4-b7d4-55ac-b691-9e7fabb07ba2]"]
 type = "not_on_latest"
 version = "0.13.15"
-latest = "0.14.1"
+latest = "0.14.2"
+
+[[Issues."0.14.2"]]
+type = "missing_deps"
+
+    [[Issues."0.14.2".weak_deps]]
+    name = "PauliPropagation"
+    uuid = "293282d5-3c99-4fb6-92d0-fd3280a19750"
