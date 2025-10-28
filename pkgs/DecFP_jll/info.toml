@@ -1,10 +1,10 @@
-[Pkg]
-name = "DecFP_jll"
-uuid = "47200ebd-12ce-5be5-abb7-8e082af23329"
-is_jll = true
-
-[Status]
-version = "2.0.3+1"
 
 [JLL.products]
 library = ["libbid"]
+[Status]
+version = "2.0.300+0"
+
+[Pkg]
+is_jll = true
+name = "DecFP_jll"
+uuid = "47200ebd-12ce-5be5-abb7-8e082af23329"

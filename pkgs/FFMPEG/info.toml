@@ -1,6 +1,6 @@
+[Status]
+version = "0.4.5"
+
 [Pkg]
 name = "FFMPEG"
 uuid = "c87230d0-a227-11e9-1b43-d7ebe4e7570a"
-
-[Status]
-version = "0.4.4"

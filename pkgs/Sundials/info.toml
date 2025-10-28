@@ -1,14 +1,14 @@
-[Pkg]
-name = "Sundials"
-uuid = "c3572dad-4567-51f8-b174-8c6c989267f4"
-required = true
-
 [Status]
-version = "4.28.0"
+version = "5.1.0"
 
 [[Issues."4.28.0"]]
+version = "4.28.0"
+type = "not_on_latest"
+latest = "5.1.0"
 dependent = []
 dependency = ["Sundials_jll [fb77eaff-e24c-56d4-86b1-d163f2edb164]"]
-type = "not_on_latest"
-version = "4.28.0"
-latest = "5.1.0"
+
+[Pkg]
+name = "Sundials"
+required = true
+uuid = "c3572dad-4567-51f8-b174-8c6c989267f4"
