@@ -1,17 +1,10 @@
+[Pkg]
+name = "Enzyme_jll"
+uuid = "7cc45869-7501-5eee-bdea-0790c847d4ef"
+is_jll = true
 
-[JLL.products]
-library = ["libEnzyme", "libEnzymeBCLoad"]
 [Status]
 version = "0.0.205+0"
 
-[[Issues."0.0.203+1"]]
-version = "0.0.203+1"
-type = "not_on_latest"
-latest = "0.0.204+0"
-dependent = ["Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9]"]
-dependency = []
-
-[Pkg]
-is_jll = true
-name = "Enzyme_jll"
-uuid = "7cc45869-7501-5eee-bdea-0790c847d4ef"
+[JLL.products]
+library = ["libEnzyme", "libEnzymeBCLoad"]

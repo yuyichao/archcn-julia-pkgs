@@ -1,40 +1,10 @@
+[Pkg]
+name = "Sundials_jll"
+uuid = "fb77eaff-e24c-56d4-86b1-d163f2edb164"
+is_jll = true
 
-[JLL.products]
-library = ["libsundials_arkode", "libsundials_core", "libsundials_cvode", "libsundials_cvodes", "libsundials_ida", "libsundials_idas", "libsundials_kinsol", "libsundials_nvecmanyvector", "libsundials_nvecserial", "libsundials_sunlinsolband", "libsundials_sunlinsoldense", "libsundials_sunlinsolklu", "libsundials_sunlinsollapackband", "libsundials_sunlinsollapackdense", "libsundials_sunlinsolpcg", "libsundials_sunlinsolspbcgs", "libsundials_sunlinsolspfgmr", "libsundials_sunlinsolspgmr", "libsundials_sunlinsolsptfqmr", "libsundials_sunmatrixband", "libsundials_sunmatrixdense", "libsundials_sunmatrixsparse", "libsundials_sunnonlinsolfixedpoint", "libsundials_sunnonlinsolnewton"]
 [Status]
 version = "7.5.0+0"
 
-[[Issues."7.4.0+0"]]
-type = "jll_changes"
-
-    [Issues."7.4.0+0".add]
-    library = ["libsundials_core"]
-
-[[Issues."7.4.1+0"]]
-type = "jll_changes"
-
-    [Issues."7.4.1+0".add]
-    library = ["libsundials_core"]
-
-[[Issues."7.4.1+1"]]
-type = "jll_changes"
-
-    [Issues."7.4.1+1".add]
-    library = ["libsundials_core"]
-
-[[Issues."7.5.0+0"]]
-type = "jll_changes"
-
-    [Issues."7.5.0+0".add]
-    library = ["libsundials_core"]
-
-[[Issues."7.4.0+1"]]
-type = "jll_changes"
-
-    [Issues."7.4.0+1".add]
-    library = ["libsundials_core"]
-
-[Pkg]
-is_jll = true
-name = "Sundials_jll"
-uuid = "fb77eaff-e24c-56d4-86b1-d163f2edb164"
+[JLL.products]
+library = ["libsundials_arkode", "libsundials_core", "libsundials_cvode", "libsundials_cvodes", "libsundials_ida", "libsundials_idas", "libsundials_kinsol", "libsundials_nvecmanyvector", "libsundials_nvecserial", "libsundials_sunlinsolband", "libsundials_sunlinsoldense", "libsundials_sunlinsolklu", "libsundials_sunlinsollapackband", "libsundials_sunlinsollapackdense", "libsundials_sunlinsolpcg", "libsundials_sunlinsolspbcgs", "libsundials_sunlinsolspfgmr", "libsundials_sunlinsolspgmr", "libsundials_sunlinsolsptfqmr", "libsundials_sunmatrixband", "libsundials_sunmatrixdense", "libsundials_sunmatrixsparse", "libsundials_sunnonlinsolfixedpoint", "libsundials_sunnonlinsolnewton"]

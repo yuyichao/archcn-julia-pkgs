@@ -1,30 +1,16 @@
-[Status]
-version = "2.124.0"
-
-[[Issues."2.122.1"]]
-type = "missing_deps"
-
-    [[Issues."2.122.1".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."2.122.1".weak_deps]]
-    name = "RCall"
-    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
-
-[[Issues."2.123.0"]]
-type = "missing_deps"
-
-    [[Issues."2.123.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."2.123.0".weak_deps]]
-    name = "RCall"
-    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
-
-    [[Issues."2.123.0".deps]]
-    name = "SciMLLogging"
-    uuid = "a6db7da4-7206-11f0-1eab-35f2a5dbe1d1"
-
 [Pkg]
 name = "SciMLBase"
 uuid = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
+
+[Status]
+version = "2.124.0"
+
+[[Issues."2.124.0"]]
+type = "missing_deps"
+
+    [[Issues."2.124.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."2.124.0".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"

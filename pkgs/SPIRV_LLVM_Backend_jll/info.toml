@@ -1,10 +1,17 @@
+[Pkg]
+name = "SPIRV_LLVM_Backend_jll"
+uuid = "4376b9bf-cff8-51b6-bb48-39421dff0d0c"
+is_jll = true
 
-[JLL.products]
-executable = ["llc"]
 [Status]
 version = "20.1.5+3"
 
-[Pkg]
-is_jll = true
-name = "SPIRV_LLVM_Backend_jll"
-uuid = "4376b9bf-cff8-51b6-bb48-39421dff0d0c"
+[JLL.products]
+executable = ["llc"]
+
+[[Issues."20.1.5+3"]]
+dependent = ["OpenCL [08131aa3-fb12-5dee-8b74-c09406e224a2]"]
+dependency = []
+type = "not_on_latest"
+version = "20.1.5+3"
+latest = "21.1.4+0"
