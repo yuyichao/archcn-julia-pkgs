@@ -193,64 +193,16 @@ dep = "CodecBzip2"
 depversion = ">= 0.7"
 
 [[Overrides.DepsVersion]]
-pkg = "HYPRE"
-version = ">= 1.5.0"
-dep = "CEnum"
-depversion = "0.4, 0.5"
-
-[[Overrides.DepsVersion]]
-pkg = "QuantumSymbolics"
-version = ">= 0.2.7"
-dep = "Symbolics"
-depversion = "5, 6"
-
-[[Overrides.DepsVersion]]
-pkg = "Enzyme"
-version = ">= 0.12"
-dep = "LLVM"
-depversion = "8, 9"
-
-[[Overrides.DepsVersion]]
 pkg = "Bloqade"
 version = ">= 0.2.4"
 dep = "CairoMakie"
 depversion = "0.12, 0.13, 0.14, 0.15"
 
 [[Overrides.DepsVersion]]
-pkg = "NonlinearSolveBase"
-version = "1.8, 1.9, 1.10"
-dep = "SciMLOperators"
-depversion = "0.3, 0.4, 1"
-
-[[Overrides.DepsVersion]]
-pkg = "NonlinearSolveQuasiNewton"
-version = "1.5"
-dep = "SciMLOperators"
-depversion = "0.3, 0.4, 1"
-
-[[Overrides.DepsVersion]]
-pkg = "SciMLJacobianOperators"
-version = "0.1.5"
-dep = "SciMLOperators"
-depversion = "0.3, 0.4, 1"
-
-[[Overrides.DepsVersion]]
 pkg = "SparseDiffTools"
 version = "2.26.0"
 dep = "SciMLOperators"
 depversion = "0.3, 0.4, 1"
-
-[[Overrides.DepsVersion]]
-pkg = "Tulip"
-version = "0.9.7"
-dep = "Krylov"
-depversion = "0.8, 0.9, 0.10"
-
-[[Overrides.DepsVersion]]
-pkg = "IntervalRootFinding"
-version = "0.6"
-dep = "ForwardDiff"
-depversion = "0.10, 1"
 
 [[Overrides.DepsVersion]]
 pkg = "Makie"
@@ -298,7 +250,7 @@ depversion = "3.5"
 pkg = "Clang"
 version = "0.18, 0.19"
 dep = "Clang_jll"
-depversion = "16, 17, 18, 19, 20"
+depversion = "16, 17, 18, 19, 20, 21"
 
 [[Overrides.DepsVersion]]
 pkg = "Cbc_jll"
