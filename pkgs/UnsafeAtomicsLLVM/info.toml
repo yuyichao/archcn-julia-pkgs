@@ -1,9 +1,0 @@
-[Pkg]
-name = "UnsafeAtomicsLLVM"
-uuid = "d80eeb9a-aca5-4d75-85e5-170c8b632249"
-
-[Status]
-version = "0.2.2"
-
-[[Issues."0.2.2"]]
-type = "not_needed"
