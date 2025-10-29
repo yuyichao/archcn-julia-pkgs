@@ -3,11 +3,11 @@ name = "SymbolicUtils"
 uuid = "d1185830-fcd6-423d-90d6-eec64667417b"
 
 [Status]
-version = "3.24.1"
+version = "3.31.0"
 
-[[Issues."3.24.1"]]
+[[Issues."3.31.0"]]
 dependent = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]", "QuantumSymbolics [efa7fd63-0460-4890-beb7-be1bbdfbaeae]", "SecondQuantizedAlgebra [f7aa4685-e143-4cb6-a7f3-073579757907]", "SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]", "SymbolicLimits [19f23fe9-fdab-4a78-91af-e7b7767979c3]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
 dependency = ["Combinatorics [861a8166-3701-5b0c-9a16-15d98fcdc6aa]", "DynamicPolynomials [7c1d4256-1411-5781-91ec-d7bc3513ac07]", "MultivariatePolynomials [102ac46a-7ee4-5c85-9060-abc95bfdeaa3]"]
 type = "not_on_latest"
-version = "3.24.1"
+version = "3.31.0"
 latest = "4.2.0"

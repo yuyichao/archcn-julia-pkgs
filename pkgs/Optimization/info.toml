@@ -4,11 +4,4 @@ uuid = "7f7a1694-90dd-40f0-9382-eb1efda571ba"
 required = true
 
 [Status]
-version = "4.8.0"
-
-[[Issues."4.8.0"]]
-dependent = []
-dependency = ["OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]"]
-type = "not_on_latest"
-version = "4.8.0"
-latest = "5.1.0"
+version = "5.1.0"

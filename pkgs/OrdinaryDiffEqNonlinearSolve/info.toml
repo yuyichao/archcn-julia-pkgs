@@ -3,11 +3,4 @@ name = "OrdinaryDiffEqNonlinearSolve"
 uuid = "127b3ac7-2247-4354-8eb6-78cf4e7c58e8"
 
 [Status]
-version = "1.14.1"
-
-[[Issues."1.14.1"]]
-dependent = []
-dependency = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]"]
-type = "not_on_latest"
-version = "1.14.1"
-latest = "1.15.0"
+version = "1.15.0"
