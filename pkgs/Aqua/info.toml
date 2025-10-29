@@ -1,10 +1,7 @@
 [Pkg]
 name = "Aqua"
-required = true
 uuid = "4c88cf16-eb10-579e-8560-4a9242c79595"
+required = true
 
 [Status]
 version = "0.8.14"
-
-[[Issues."0.8.14"]]
-type = "not_needed"

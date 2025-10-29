@@ -3,11 +3,4 @@ name = "UnsafeAtomics"
 uuid = "013be700-e6cd-48c3-b4a1-df204f14c38f"
 
 [Status]
-version = "0.2.1"
-
-[[Issues."0.2.1"]]
-dependent = ["UnsafeAtomicsLLVM [d80eeb9a-aca5-4d75-85e5-170c8b632249]"]
-dependency = []
-type = "not_on_latest"
-version = "0.2.1"
-latest = "0.3.0"
+version = "0.3.0"
