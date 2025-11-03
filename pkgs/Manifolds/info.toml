@@ -10,4 +10,4 @@ dependent = ["SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]"]
 dependency = ["ManifoldsBase [3362f125-f0bb-47a3-aa74-596ffd7ef2fb]"]
 type = "not_on_latest"
 version = "0.10.23"
-latest = "0.11.1"
+latest = "0.11.2"
