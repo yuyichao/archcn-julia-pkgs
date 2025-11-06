@@ -11,4 +11,4 @@ dependent = ["ConcurrentSim [6ed1e86c-fcaf-46a9-97e0-2b26a2cdb499]", "Generalize
 dependency = []
 type = "not_on_latest"
 version = "0.18.22"
-latest = "0.19.1"
+latest = "0.19.3"
