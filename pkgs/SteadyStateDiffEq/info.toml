@@ -3,4 +3,4 @@ name = "SteadyStateDiffEq"
 uuid = "9672c7b4-1e72-59bd-8a11-6ac3964bc41f"
 
 [Status]
-version = "2.7.0"
+version = "2.8.0"

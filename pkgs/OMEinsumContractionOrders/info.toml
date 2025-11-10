@@ -27,10 +27,10 @@ type = "missing_deps"
     uuid = "2a6221f6-aa48-11e9-3542-2d9e0ef01880"
 [[Issues."0.9.11"]]
 dependent = ["OMEinsum [ebe7aa44-baf0-506c-a96f-8464559b3922]"]
-dependency = []
+dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]"]
 type = "not_on_latest"
 version = "0.9.11"
-latest = "1.2.2"
+latest = "1.2.3"
 
 [[Issues."1.2.1"]]
 type = "missing_deps"
@@ -43,6 +43,13 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."1.2.0".weak_deps]]
+    name = "KaHyPar"
+    uuid = "2a6221f6-aa48-11e9-3542-2d9e0ef01880"
+
+[[Issues."1.2.3"]]
+type = "missing_deps"
+
+    [[Issues."1.2.3".weak_deps]]
     name = "KaHyPar"
     uuid = "2a6221f6-aa48-11e9-3542-2d9e0ef01880"
 
