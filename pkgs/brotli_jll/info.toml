@@ -1,11 +1,11 @@
+[Pkg]
+name = "brotli_jll"
+uuid = "4611771a-a7d2-5e23-8d00-b1becdba1aae"
+is_jll = true
+
+[Status]
+version = "1.2.0+0"
 
 [JLL.products]
 executable = ["brotli"]
 library = ["libbrotlicommon", "libbrotlidec", "libbrotlienc"]
-[Status]
-version = "1.1.1+0"
-
-[Pkg]
-is_jll = true
-name = "brotli_jll"
-uuid = "4611771a-a7d2-5e23-8d00-b1becdba1aae"
