@@ -4,8 +4,8 @@ uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
 has_deps_build = true
 
 [Status]
-version = "1.1.0"
+version = "1.1.1"
 
-[[Issues."1.1.0"]]
+[[Issues."1.1.1"]]
 type = "not_needed"
 has_weak = true
