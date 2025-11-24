@@ -3,14 +3,7 @@ name = "FilePaths"
 uuid = "8fc22ac5-c921-52a6-82fd-178b2807b824"
 
 [Status]
-version = "0.8.3"
-
-[[Issues."0.8.3"]]
-dependent = ["Makie [ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a]"]
-dependency = []
-type = "not_on_latest"
-version = "0.8.3"
-latest = "0.9.0"
+version = "0.9.0"
 
 [[Issues."0.9.0"]]
 type = "missing_deps"

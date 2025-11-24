@@ -8,3 +8,10 @@ version = "3.4.7+0"
 
 [JLL.products]
 library = ["libffi"]
+
+[[Issues."3.4.7+0"]]
+dependent = ["Glib_jll [7746bdde-850d-59dc-9ae8-88ece973131d]", "HarfBuzz_jll [2e76f6c2-a576-52d4-95c1-20adfe4de566]", "Wayland_jll [a2964d1f-97da-50d4-b82a-358c7fce9d89]"]
+dependency = []
+type = "not_on_latest"
+version = "3.4.7+0"
+latest = "3.5.2+0"
