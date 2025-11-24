@@ -18,7 +18,7 @@ jobs:
         with:
           APP_PEM: ${{ secrets.ARCHLINUXCN_JULIA_BOT_PEM }}
           APP_ID: ${{ secrets.ARCHLINUXCN_JULIA_BOT_ID }}
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           token: ${{ steps.get_token.outputs.app_token }}
       - uses: actions/cache@v4
