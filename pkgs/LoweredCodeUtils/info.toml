@@ -10,4 +10,4 @@ dependent = []
 dependency = ["CodeTracking [da1fd8a2-8d9e-5ec2-8556-3022fb5608a2]", "JuliaInterpreter [aa1ae85d-cabe-5617-a682-6adf51b2e16a]"]
 type = "not_on_latest"
 version = "3.2.0"
-latest = "3.4.4"
+latest = "3.5.0"

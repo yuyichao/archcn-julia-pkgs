@@ -3,38 +3,11 @@ name = "IntervalArithmetic"
 uuid = "d1acc4aa-44c8-5952-acd4-ba5d80a2a253"
 
 [Status]
-version = "0.23.0"
-
-[[Issues."0.23.0"]]
-type = "missing_deps"
-
-    [[Issues."0.23.0".weak_deps]]
-    name = "Arblib"
-    uuid = "fb37089c-8514-4489-9461-98f9c8763369"
-[[Issues."0.23.0"]]
-dependent = ["IntervalRootFinding [d2bf35a9-74e0-55ec-b149-d360ff49b807]"]
-dependency = []
-type = "not_on_latest"
-version = "0.23.0"
-latest = "1.0.2"
-
-[[Issues."1.0.0"]]
-type = "missing_deps"
-
-    [[Issues."1.0.0".weak_deps]]
-    name = "Arblib"
-    uuid = "fb37089c-8514-4489-9461-98f9c8763369"
+version = "1.0.2"
 
 [[Issues."1.0.2"]]
 type = "missing_deps"
 
     [[Issues."1.0.2".weak_deps]]
-    name = "Arblib"
-    uuid = "fb37089c-8514-4489-9461-98f9c8763369"
-
-[[Issues."1.0.1"]]
-type = "missing_deps"
-
-    [[Issues."1.0.1".weak_deps]]
     name = "Arblib"
     uuid = "fb37089c-8514-4489-9461-98f9c8763369"

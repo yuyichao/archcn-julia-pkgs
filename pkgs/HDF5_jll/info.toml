@@ -9,3 +9,23 @@ version = "1.14.6+0"
 [JLL.products]
 executable = ["h5clear", "h5copy", "h5debug", "h5delete", "h5diff", "h5dump", "h5format_convert", "h5import", "h5jam", "h5ls", "h5mkgrp", "h5perf_serial", "h5repack", "h5repart", "h5stat", "h5unjam", "h5watch"]
 library = ["libhdf5", "libhdf5_cpp", "libhdf5_fortran", "libhdf5_hl", "libhdf5_hl_cpp", "libhdf5_hl_fortran"]
+
+[[Issues."2.0.0+0"]]
+type = "missing_deps"
+
+    [[Issues."2.0.0+0".deps]]
+    name = "aws_c_s3_jll"
+    uuid = "bd1f34fb-993f-5903-a121-aaf302eed6d4"
+    [[Issues."2.0.0+0".deps]]
+    name = "dlfcn_win32_jll"
+    uuid = "c4b69c83-5512-53e3-94e6-de98773c479f"
+
+[[Issues."2.0.0+1"]]
+type = "missing_deps"
+
+    [[Issues."2.0.0+1".deps]]
+    name = "aws_c_s3_jll"
+    uuid = "bd1f34fb-993f-5903-a121-aaf302eed6d4"
+    [[Issues."2.0.0+1".deps]]
+    name = "dlfcn_win32_jll"
+    uuid = "c4b69c83-5512-53e3-94e6-de98773c479f"
