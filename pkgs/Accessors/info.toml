@@ -3,11 +3,11 @@ name = "Accessors"
 uuid = "7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"
 
 [Status]
-version = "0.1.42"
+version = "0.1.43"
 
-[[Issues."0.1.42"]]
+[[Issues."0.1.43"]]
 type = "missing_deps"
 
-    [[Issues."0.1.42".weak_deps]]
+    [[Issues."0.1.43".weak_deps]]
     name = "AxisKeys"
     uuid = "94b1ba4f-4ee9-5380-92f1-94cde586c3c5"
