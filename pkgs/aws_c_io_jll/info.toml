@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libaws_c_io"]
+[Status]
+version = "0.23.3+0"
+
+[Pkg]
+is_jll = true
+name = "aws_c_io_jll"
+uuid = "13c41daa-f319-5298-b5eb-5754e0170d52"

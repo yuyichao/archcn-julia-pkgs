@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libaws_checksums"]
+[Status]
+version = "0.2.8+0"
+
+[Pkg]
+is_jll = true
+name = "aws_checksums_jll"
+uuid = "b2a88e68-78e7-5e94-8c20-c02986ec140e"

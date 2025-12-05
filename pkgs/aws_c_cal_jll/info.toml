@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libaws_c_cal"]
+[Status]
+version = "0.9.13+0"
+
+[Pkg]
+is_jll = true
+name = "aws_c_cal_jll"
+uuid = "70f11efc-bab2-57f1-b0f3-22aad4e67c4b"
