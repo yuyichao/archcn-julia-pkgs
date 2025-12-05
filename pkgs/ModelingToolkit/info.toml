@@ -1,9 +1,5 @@
-[Pkg]
-name = "ModelingToolkit"
-uuid = "961ee093-0014-501f-94e3-6117800e7a78"
-
 [Status]
-version = "10.30.0"
+version = "10.31.0"
 
 [[Issues."10.30.0"]]
 type = "missing_deps"
@@ -23,3 +19,7 @@ type = "missing_deps"
     [[Issues."10.30.0".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[Pkg]
+name = "ModelingToolkit"
+uuid = "961ee093-0014-501f-94e3-6117800e7a78"

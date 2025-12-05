@@ -1,6 +1,6 @@
+[Status]
+version = "0.3.9"
+
 [Pkg]
 name = "SolverCore"
 uuid = "ff4d7338-4cf1-434d-91df-b86cb86fb843"
-
-[Status]
-version = "0.3.8"

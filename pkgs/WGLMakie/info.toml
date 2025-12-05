@@ -1,7 +1,7 @@
+[Status]
+version = "0.13.8"
+
 [Pkg]
 name = "WGLMakie"
-uuid = "276b4fcb-3e11-5398-bf8b-a0c2d153d008"
 required = true
-
-[Status]
-version = "0.13.7"
+uuid = "276b4fcb-3e11-5398-bf8b-a0c2d153d008"
