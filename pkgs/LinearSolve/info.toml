@@ -1,31 +1,31 @@
-[Status]
-version = "3.48.1"
-
-[[Issues."3.48.0"]]
-type = "missing_deps"
-
-    [[Issues."3.48.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."3.48.0".weak_deps]]
-    name = "CUDA"
-    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-    [[Issues."3.48.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."3.48.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."3.48.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."3.48.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."3.48.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-
 [Pkg]
 name = "LinearSolve"
 uuid = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
+
+[Status]
+version = "3.48.1"
+
+[[Issues."3.48.1"]]
+type = "missing_deps"
+
+    [[Issues."3.48.1".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."3.48.1".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+    [[Issues."3.48.1".weak_deps]]
+    name = "CUDSS"
+    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+    [[Issues."3.48.1".weak_deps]]
+    name = "CUSOLVERRF"
+    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
+    [[Issues."3.48.1".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+    [[Issues."3.48.1".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."3.48.1".weak_deps]]
+    name = "blis_jll"
+    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"

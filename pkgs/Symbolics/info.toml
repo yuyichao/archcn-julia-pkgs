@@ -9,10 +9,6 @@ version = "6.58.0"
 [[Issues."7.1.1"]]
 type = "missing_deps"
 
-    [[Issues."7.1.1".deps]]
-    name = "AbstractPlutoDingetjes"
-    uuid = "6e696c72-6542-2067-7265-42206c756150"
-
     [[Issues."7.1.1".weak_deps]]
     name = "D3Trees"
     uuid = "e3df1716-f71e-5df9-9e2d-98e193103c45"
@@ -25,10 +21,6 @@ type = "missing_deps"
 
 [[Issues."7.0.2"]]
 type = "missing_deps"
-
-    [[Issues."7.0.2".deps]]
-    name = "AbstractPlutoDingetjes"
-    uuid = "6e696c72-6542-2067-7265-42206c756150"
 
     [[Issues."7.0.2".weak_deps]]
     name = "D3Trees"
@@ -52,13 +44,15 @@ type = "missing_deps"
     [[Issues."6.58.0".weak_deps]]
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+[[Issues."6.58.0"]]
+dependent = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]", "QuantumSavory [2de2e421-972c-4cb5-a0c3-999c85908079]", "QuantumSymbolics [efa7fd63-0460-4890-beb7-be1bbdfbaeae]", "SecondQuantizedAlgebra [f7aa4685-e143-4cb6-a7f3-073579757907]", "SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]"]
+dependency = ["MultivariatePolynomials [102ac46a-7ee4-5c85-9060-abc95bfdeaa3]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
+type = "not_on_latest"
+version = "6.58.0"
+latest = "7.1.1"
 
 [[Issues."7.0.1"]]
 type = "missing_deps"
-
-    [[Issues."7.0.1".deps]]
-    name = "AbstractPlutoDingetjes"
-    uuid = "6e696c72-6542-2067-7265-42206c756150"
 
     [[Issues."7.0.1".weak_deps]]
     name = "D3Trees"
@@ -73,10 +67,6 @@ type = "missing_deps"
 [[Issues."7.1.0"]]
 type = "missing_deps"
 
-    [[Issues."7.1.0".deps]]
-    name = "AbstractPlutoDingetjes"
-    uuid = "6e696c72-6542-2067-7265-42206c756150"
-
     [[Issues."7.1.0".weak_deps]]
     name = "D3Trees"
     uuid = "e3df1716-f71e-5df9-9e2d-98e193103c45"
@@ -89,10 +79,6 @@ type = "missing_deps"
 
 [[Issues."7.0.0"]]
 type = "missing_deps"
-
-    [[Issues."7.0.0".deps]]
-    name = "AbstractPlutoDingetjes"
-    uuid = "6e696c72-6542-2067-7265-42206c756150"
 
     [[Issues."7.0.0".weak_deps]]
     name = "D3Trees"

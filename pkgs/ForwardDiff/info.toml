@@ -6,7 +6,7 @@ uuid = "f6369f11-7733-5829-9624-2563aa707210"
 version = "0.10.39"
 
 [[Issues."0.10.39"]]
-dependent = ["Bloqade [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe1]", "BloqadeExpr [bd27d05e-4ce1-5e79-84dd-c5d7d508abe2]", "SIMDDualNumbers [3cdde19b-5bb0-4aaf-8931-af3e248e098b]"]
+dependent = ["Bloqade [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe1]", "BloqadeExpr [bd27d05e-4ce1-5e79-84dd-c5d7d508abe2]"]
 dependency = []
 type = "not_on_latest"
 version = "0.10.39"
