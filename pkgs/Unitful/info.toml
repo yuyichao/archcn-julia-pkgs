@@ -3,4 +3,4 @@ name = "Unitful"
 uuid = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
 [Status]
-version = "1.25.1"
+version = "1.26.0"

@@ -15,4 +15,4 @@ dependent = ["HDF5 [f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f]"]
 dependency = ["aws_c_s3_jll [bd1f34fb-993f-5903-a121-aaf302eed6d4]"]
 type = "not_on_latest"
 version = "1.14.6+0"
-latest = "2.0.0+1"
+latest = "2.0.0+2"
