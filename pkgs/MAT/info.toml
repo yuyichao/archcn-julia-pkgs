@@ -1,7 +1,7 @@
-[Status]
-version = "0.11.3"
-
 [Pkg]
 name = "MAT"
-required = true
 uuid = "23992714-dd62-5051-b70f-ba57cb901cac"
+required = true
+
+[Status]
+version = "0.11.4"

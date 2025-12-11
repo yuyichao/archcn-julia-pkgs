@@ -32,6 +32,19 @@ type = "missing_deps"
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 
+[[Issues."7.2.0"]]
+type = "missing_deps"
+
+    [[Issues."7.2.0".weak_deps]]
+    name = "D3Trees"
+    uuid = "e3df1716-f71e-5df9-9e2d-98e193103c45"
+    [[Issues."7.2.0".weak_deps]]
+    name = "Lux"
+    uuid = "b2108857-7c20-44ae-9111-449ecde12c47"
+    [[Issues."7.2.0".weak_deps]]
+    name = "SymPy"
+    uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+
 [[Issues."6.58.0"]]
 type = "missing_deps"
 
@@ -49,7 +62,7 @@ dependent = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "QuantumC
 dependency = ["MultivariatePolynomials [102ac46a-7ee4-5c85-9060-abc95bfdeaa3]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
 type = "not_on_latest"
 version = "6.58.0"
-latest = "7.1.1"
+latest = "7.2.0"
 
 [[Issues."7.0.1"]]
 type = "missing_deps"

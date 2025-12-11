@@ -1,10 +1,10 @@
+[Pkg]
+name = "s2n_tls_jll"
+uuid = "cddc5d3d-934d-5d3a-9747-62fc12ea3f48"
+is_jll = true
+
+[Status]
+version = "1.6.3+0"
 
 [JLL.products]
 library = ["libs2n"]
-[Status]
-version = "1.6.2+0"
-
-[Pkg]
-is_jll = true
-name = "s2n_tls_jll"
-uuid = "cddc5d3d-934d-5d3a-9747-62fc12ea3f48"
