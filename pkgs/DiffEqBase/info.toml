@@ -15,5 +15,8 @@ type = "missing_deps"
     name = "GTPSA"
     uuid = "b27dd330-f138-47c5-815b-40db9dd9b6e8"
     [[Issues."6.192.0".weak_deps]]
+    name = "GeneralizedGenerated"
+    uuid = "6b9d7cbe-bcb9-11e9-073f-15a7a543e2eb"
+    [[Issues."6.192.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"

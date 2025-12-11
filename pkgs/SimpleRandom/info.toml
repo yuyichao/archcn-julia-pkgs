@@ -4,3 +4,6 @@ uuid = "a6525b86-64cd-54fa-8f65-62fc48bdc0e8"
 
 [Status]
 version = "0.3.2"
+
+[[Issues."0.3.2"]]
+type = "not_needed"
