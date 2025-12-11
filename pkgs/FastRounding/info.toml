@@ -1,9 +1,0 @@
-[Pkg]
-name = "FastRounding"
-uuid = "fa42c844-2597-5d31-933b-ebd51ab2693f"
-
-[Status]
-version = "0.3.1"
-
-[[Issues."0.3.1"]]
-type = "not_needed"
