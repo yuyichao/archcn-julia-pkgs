@@ -128,13 +128,13 @@ depversion = "1.92"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.9.6"
+version = ">=0.9.5"
 dep = "AWSS3"
 depversion = "0.11"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.9.6"
+version = ">=0.9.5"
 dep = "AxisArrays"
 depversion = "0.4"
 
@@ -146,7 +146,7 @@ depversion = "0.10"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.9.6"
+version = ">=0.9.5"
 dep = "CodeTracking"
 depversion = "1.3, 2, 3"
 
@@ -188,7 +188,7 @@ depversion = "1.14"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.9.6"
+version = ">=0.9.5"
 dep = "OrderedCollections"
 depversion = "1.7"
 
