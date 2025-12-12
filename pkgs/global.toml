@@ -124,7 +124,7 @@ depversion = ">= 1"
 pkg = "Braket"
 version = ">=0.9.5"
 dep = "AWS"
-depversion = "1.91, 1.92"
+depversion = "1.92"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
@@ -170,9 +170,9 @@ depversion = "1.14"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
-version = ">=0.9.5"
+version = ">=0.9.6"
 dep = "OrderedCollections"
-depversion = "1.6"
+depversion = "1.7"
 
 [[Overrides.DepsVersion]]
 pkg = "Braket"
@@ -197,12 +197,6 @@ pkg = "Bloqade"
 version = ">= 0.2.4"
 dep = "CairoMakie"
 depversion = "0.12, 0.13, 0.14, 0.15"
-
-[[Overrides.DepsVersion]]
-pkg = "SparseDiffTools"
-version = "2.26.0"
-dep = "SciMLOperators"
-depversion = "0.3, 0.4, 1"
 
 [[Overrides.DepsVersion]]
 pkg = "ImageMagick_jll"
@@ -242,7 +236,7 @@ depversion = "3.5"
 
 [[Overrides.DepsVersion]]
 pkg = "Clang"
-version = "0.18, 0.19"
+version = "0.19"
 dep = "Clang_jll"
 depversion = "16, 17, 18, 19, 20, 21"
 
