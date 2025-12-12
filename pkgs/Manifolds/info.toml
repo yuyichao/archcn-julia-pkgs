@@ -1,13 +1,13 @@
-[Status]
-version = "0.11.8"
-
-[[Issues."0.10.23"]]
-version = "0.10.23"
-type = "not_on_latest"
-latest = "0.11.8"
-dependent = ["SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]"]
-dependency = ["ManifoldsBase [3362f125-f0bb-47a3-aa74-596ffd7ef2fb]"]
-
 [Pkg]
 name = "Manifolds"
 uuid = "1cead3c2-87b3-11e9-0ccd-23c62b72b94e"
+
+[Status]
+version = "0.10.23"
+
+[[Issues."0.10.23"]]
+dependent = ["SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]"]
+dependency = ["ManifoldsBase [3362f125-f0bb-47a3-aa74-596ffd7ef2fb]"]
+type = "not_on_latest"
+version = "0.10.23"
+latest = "0.11.8"

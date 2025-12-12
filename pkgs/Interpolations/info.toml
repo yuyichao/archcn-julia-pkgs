@@ -1,13 +1,13 @@
-[Status]
-version = "0.16.2"
-
-[[Issues."0.15.1"]]
-version = "0.15.1"
-type = "not_on_latest"
-latest = "0.16.2"
-dependent = ["BloqadeWaveforms [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe7]"]
-dependency = []
-
 [Pkg]
 name = "Interpolations"
 uuid = "a98d9a8b-a2ab-59e6-89dd-64a1c18fca59"
+
+[Status]
+version = "0.15.1"
+
+[[Issues."0.15.1"]]
+dependent = ["BloqadeWaveforms [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe7]"]
+dependency = []
+type = "not_on_latest"
+version = "0.15.1"
+latest = "0.16.2"

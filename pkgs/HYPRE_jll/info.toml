@@ -1,17 +1,17 @@
+[Pkg]
+name = "HYPRE_jll"
+uuid = "0a602bbd-b08b-5d75-8d32-0de6eef44785"
+is_jll = true
+
+[Status]
+version = "2.23.1+1"
 
 [JLL.products]
 library = ["libHYPRE"]
-[Status]
-version = "3.0.0+0"
 
 [[Issues."2.23.1+1"]]
-version = "2.23.1+1"
-type = "not_on_latest"
-latest = "3.0.0+0"
 dependent = ["HYPRE [b5ffcf37-a2bd-41ab-a3da-4bd9bc8ad771]"]
 dependency = []
-
-[Pkg]
-is_jll = true
-name = "HYPRE_jll"
-uuid = "0a602bbd-b08b-5d75-8d32-0de6eef44785"
+type = "not_on_latest"
+version = "2.23.1+1"
+latest = "3.0.0+0"

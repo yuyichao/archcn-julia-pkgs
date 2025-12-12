@@ -1,13 +1,13 @@
-[Status]
-version = "1.9.0"
-
-[[Issues."1.8.0"]]
-version = "1.8.0"
-type = "not_on_latest"
-latest = "1.9.0"
-dependent = []
-dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
-
 [Pkg]
 name = "OrdinaryDiffEqExponentialRK"
 uuid = "e0540318-69ee-4070-8777-9e2de6de23de"
+
+[Status]
+version = "1.8.0"
+
+[[Issues."1.8.0"]]
+dependent = []
+dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
+type = "not_on_latest"
+version = "1.8.0"
+latest = "1.9.0"

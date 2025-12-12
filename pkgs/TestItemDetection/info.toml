@@ -1,13 +1,13 @@
-[Status]
-version = "1.1.0"
-
-[[Issues."0.2.0"]]
-version = "0.2.0"
-type = "not_on_latest"
-latest = "1.1.0"
-dependent = ["LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]"]
-dependency = ["JuliaSyntax [70703baa-626e-46a2-a12c-08ffd08c73b4]"]
-
 [Pkg]
 name = "TestItemDetection"
 uuid = "76b0de8b-5c4b-48ef-a724-914b33ca988d"
+
+[Status]
+version = "0.2.0"
+
+[[Issues."0.2.0"]]
+dependent = ["LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]"]
+dependency = ["JuliaSyntax [70703baa-626e-46a2-a12c-08ffd08c73b4]"]
+type = "not_on_latest"
+version = "0.2.0"
+latest = "1.1.0"

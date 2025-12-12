@@ -1,13 +1,13 @@
-[Status]
-version = "1.8.0"
-
-[[Issues."1.7.0"]]
-version = "1.7.0"
-type = "not_on_latest"
-latest = "1.8.0"
-dependent = []
-dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
-
 [Pkg]
 name = "OrdinaryDiffEqIMEXMultistep"
 uuid = "9f002381-b378-40b7-97a6-27a27c83f129"
+
+[Status]
+version = "1.7.0"
+
+[[Issues."1.7.0"]]
+dependent = []
+dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
+type = "not_on_latest"
+version = "1.7.0"
+latest = "1.8.0"

@@ -1,18 +1,9 @@
+[Pkg]
+name = "Luxor"
+uuid = "ae8d54c2-7ccd-5906-9d76-62fc9837b5bc"
+
 [Status]
-version = "4.4.0"
-
-[[Issues."4.3.0"]]
-type = "missing_deps"
-
-    [[Issues."4.3.0".weak_deps]]
-    name = "Typstry"
-    uuid = "f0ed7684-a786-439e-b1e3-3b82803b501e"
-[[Issues."4.3.0"]]
 version = "4.3.0"
-type = "not_on_latest"
-latest = "4.4.0"
-dependent = []
-dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]"]
 
 [[Issues."4.4.0"]]
 type = "missing_deps"
@@ -21,6 +12,15 @@ type = "missing_deps"
     name = "Typstry"
     uuid = "f0ed7684-a786-439e-b1e3-3b82803b501e"
 
-[Pkg]
-name = "Luxor"
-uuid = "ae8d54c2-7ccd-5906-9d76-62fc9837b5bc"
+[[Issues."4.3.0"]]
+type = "missing_deps"
+
+    [[Issues."4.3.0".weak_deps]]
+    name = "Typstry"
+    uuid = "f0ed7684-a786-439e-b1e3-3b82803b501e"
+[[Issues."4.3.0"]]
+dependent = []
+dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]"]
+type = "not_on_latest"
+version = "4.3.0"
+latest = "4.4.0"

@@ -1,13 +1,13 @@
-[Status]
-version = "2.0.1"
-
-[[Issues."1.4.2"]]
-version = "1.4.2"
-type = "not_on_latest"
-latest = "2.0.1"
-dependent = ["LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]"]
-dependency = []
-
 [Pkg]
 name = "JSONRPC"
 uuid = "b9b8584e-8fd3-41f9-ad0c-7255d428e418"
+
+[Status]
+version = "1.4.2"
+
+[[Issues."1.4.2"]]
+dependent = ["LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]"]
+dependency = []
+type = "not_on_latest"
+version = "1.4.2"
+latest = "2.0.1"

@@ -1,18 +1,18 @@
+[Pkg]
+name = "Hwloc_jll"
+uuid = "e33a78d0-f292-5ffc-b300-72abe9b543c8"
+is_jll = true
+
+[Status]
+version = "2.12.1+0"
 
 [JLL.products]
 executable = ["lstopo_no_graphics"]
 library = ["libhwloc"]
-[Status]
-version = "2.12.2+0"
 
 [[Issues."2.12.1+0"]]
-version = "2.12.1+0"
-type = "not_on_latest"
-latest = "2.12.2+0"
 dependent = []
 dependency = ["XML2_jll [02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a]"]
-
-[Pkg]
-is_jll = true
-name = "Hwloc_jll"
-uuid = "e33a78d0-f292-5ffc-b300-72abe9b543c8"
+type = "not_on_latest"
+version = "2.12.1+0"
+latest = "2.12.2+0"
