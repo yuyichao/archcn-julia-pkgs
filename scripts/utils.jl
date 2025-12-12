@@ -13,6 +13,29 @@ else
     return get(d, key, default)
 end
 
+const use_compress = :uncompressed_compat in fieldnames(Pkg.Registry.VersionInfo)
+
+if use_compress
+    registry_info(reg, pkgentry) = Pkg.Registry.registry_info(pkgentry)
+    pkginfo_compat(pkginfo) = Pkg.Registry.compat_info(pkginfo)
+    pkginfo_weak_compat(pkginfo) = Pkg.Registry.weak_compat_info(pkginfo)
+else
+    registry_info(reg, pkgentry) = Pkg.Registry.registry_info(reg, pkgentry)
+    function decompress_ver_range(pkginfo, dict::Dict{K,T}) where {K,T}
+        res = Dict{VersionNumber,T}()
+        for (vr, val) in dict
+            for (ver, _) in pkginfo.version_info
+                if ver in vr
+                    res[ver] = val
+                end
+            end
+        end
+        return res
+    end
+    pkginfo_compat(pkginfo) = decompress_ver_range(pkginfo, pkginfo.compat)
+    pkginfo_weak_compat(pkginfo) = decompress_ver_range(pkginfo, pkginfo.weak_compat)
+end
+
 function find_general_registry()
     Pkg.Registry.update("General")
     for reg in Pkg.Registry.reachable_registries()
@@ -171,7 +194,7 @@ end
 
 function checkout_pkg_ver(ctx::Context, uuid, ver)
     pkgentry = ctx.registry[uuid]
-    pkginfo = Pkg.Registry.registry_info(pkgentry)
+    pkginfo = registry_info(ctx.registry, pkgentry)
     name = pkgentry.name
     url = pkginfo.repo
     hash = pkginfo.version_info[ver].git_tree_sha1.bytes
@@ -214,8 +237,8 @@ end
 const JLLWrappers_UUID = Base.UUID("692b3bcd-3c85-4b1f-b108-f13ce0eb3210")
 
 function get_compat_info(ctx::Context, pkgentry)
-    pkginfo = Pkg.Registry.registry_info(pkgentry)
-    compat_infos = Pkg.Registry.compat_info(pkginfo)
+    pkginfo = registry_info(ctx.registry, pkgentry)
+    compat_infos = pkginfo_compat(pkginfo)
     remove_deps = get(ctx.remove_deps, pkgentry.uuid, nothing)
     if remove_deps !== nothing
         for r in remove_deps
@@ -245,8 +268,8 @@ function collect_latest_deps(ctx::Context, pkgentry, ver, latest_deps)
     for (uuid, ver) in get_compat_info(ctx, pkgentry)[ver]
         latest_deps[uuid] = true
     end
-    pkginfo = Pkg.Registry.registry_info(pkgentry)
-    weak_compat_info = Pkg.Registry.weak_compat_info(pkginfo)
+    pkginfo = registry_info(ctx.registry, pkgentry)
+    weak_compat_info = pkginfo_weak_compat(pkginfo)
     if weak_compat_info !== nothing
         for (uuid, depver) in weak_compat_info[ver]
             get!(latest_deps, uuid, false)
@@ -257,7 +280,7 @@ end
 function check_missing_deps(ctx::Context, pkgentry, new_ver, is_jll,
                             out::MissingDepsInfo)
     stdlibs = get(Dict{String,Any}, ctx.global_info, "StdLibs")
-    pkginfo = Pkg.Registry.registry_info(pkgentry)
+    pkginfo = registry_info(ctx.registry, pkgentry)
 
     compat_info = get_compat_info(ctx, pkgentry)[new_ver]
     for (uuid, ver) in compat_info
@@ -275,7 +298,7 @@ function check_missing_deps(ctx::Context, pkgentry, new_ver, is_jll,
         push!(out.deps, uuid)
     end
 
-    _weak_compat_info = Pkg.Registry.weak_compat_info(pkginfo)
+    _weak_compat_info = pkginfo_weak_compat(pkginfo)
     if _weak_compat_info === nothing
         return isempty(out.deps)
     end
@@ -378,7 +401,7 @@ end
 
 function find_new_versions(ctx::Context, uuid, version, latest_deps)
     pkgentry = ctx.registry[uuid]
-    pkginfo = Pkg.Registry.registry_info(pkgentry)
+    pkginfo = registry_info(ctx.registry, pkgentry)
     arch_info = ctx.packages_info[uuid]
     is_jll = get(arch_info["Pkg"], "is_jll", false)
 
@@ -546,7 +569,7 @@ function resolve_new_versions(ctx::Context, check_results, latest_deps)
             Pkg.Versions.VersionBound(cur_ver), ver_ub))
 
         pkgentry = ctx.registry[uuid]
-        pkginfo = Pkg.Registry.registry_info(pkgentry)
+        pkginfo = registry_info(ctx.registry, pkgentry)
 
         push!(versions, cur_ver)
 
@@ -639,7 +662,7 @@ function find_package_commit(ctx::Context, uuid, ver, arch_info)
         end
     end
     pkgentry = ctx.registry[uuid]
-    pkginfo = Pkg.Registry.registry_info(pkgentry)
+    pkginfo = registry_info(ctx.registry, pkgentry)
     name = pkgentry.name
     url = pkginfo.repo
     tree = pkginfo.version_info[ver].git_tree_sha1
@@ -698,7 +721,7 @@ end
 
 function collect_full_pkg_info(ctx::Context, uuid, ver)
     pkgentry = ctx.registry[uuid]
-    pkginfo = Pkg.Registry.registry_info(pkgentry)
+    pkginfo = registry_info(ctx.registry, pkgentry)
     name = pkgentry.name
     url = pkginfo.repo
     @info "Collecting info for package $(name) [$(uuid)] @ $(ver)"
@@ -746,7 +769,7 @@ function resolve_all_dependencies(ctx::Context, uuids)
 
     function process_package(uuid)
         pkgentry = ctx.registry[uuid]
-        pkginfo = Pkg.Registry.registry_info(pkgentry)
+        pkginfo = registry_info(ctx.registry, pkgentry)
         name = pkgentry.name
         uuid_to_name[uuid] = name
 
@@ -1272,7 +1295,7 @@ function find_dependents(ctx::Context, pkg)
     for (uuid, arch_info) in ctx.packages_info
         cur_ver = VersionNumber(arch_info["Status"]["version"])
         pkgentry = ctx.registry[uuid]
-        pkginfo = Pkg.Registry.registry_info(pkgentry)
+        pkginfo = registry_info(ctx.registry, pkgentry)
         for (vrange, vdeps) in pkginfo.deps
             cur_ver in vrange || continue
             if pkg_uuid in values(vdeps)
