@@ -205,12 +205,6 @@ dep = "SciMLOperators"
 depversion = "0.3, 0.4, 1"
 
 [[Overrides.DepsVersion]]
-pkg = "Makie"
-version = "0.22, 0.23, 0.24, 0.25"
-dep = "FFMPEG_jll"
-depversion = "4, 6, 7"
-
-[[Overrides.DepsVersion]]
 pkg = "ImageMagick_jll"
 version = "6, 7"
 dep = "Libtiff_jll"
