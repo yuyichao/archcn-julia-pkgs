@@ -26,7 +26,11 @@ else
         for (vr, val) in dict
             for (ver, _) in pkginfo.version_info
                 if ver in vr
-                    res[ver] = val
+                    if haskey(res, ver)
+                        merge!(res[ver], val)
+                    else
+                        res[ver] = val
+                    end
                 end
             end
         end
