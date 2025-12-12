@@ -4,3 +4,10 @@ uuid = "9286f039-9fbf-40e8-bf65-aa933bdc4db0"
 
 [Status]
 version = "1.4.0"
+
+[[Issues."1.4.0"]]
+dependent = []
+dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
+type = "not_on_latest"
+version = "1.4.0"
+latest = "1.5.0"
