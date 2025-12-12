@@ -1,13 +1,13 @@
+[Status]
+version = "0.9.1"
+
+[[Issues."0.8.16"]]
+version = "0.8.16"
+type = "not_on_latest"
+latest = "0.9.1"
+dependent = ["JuliaFormatter [98e50ef6-434e-11e9-1051-2b60c6c9e899]"]
+dependency = []
+
 [Pkg]
 name = "CommonMark"
 uuid = "a80b9123-70ca-4bc0-993e-6e3bcb318db6"
-
-[Status]
-version = "0.8.16"
-
-[[Issues."0.8.16"]]
-dependent = ["JuliaFormatter [98e50ef6-434e-11e9-1051-2b60c6c9e899]"]
-dependency = []
-type = "not_on_latest"
-version = "0.8.16"
-latest = "0.9.1"

@@ -1,13 +1,13 @@
+[Status]
+version = "1.11.0"
+
+[[Issues."1.10.1"]]
+version = "1.10.1"
+type = "not_on_latest"
+latest = "1.11.0"
+dependent = []
+dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
+
 [Pkg]
 name = "OrdinaryDiffEqBDF"
 uuid = "6ad6398a-0878-4a85-9266-38940aa047c8"
-
-[Status]
-version = "1.10.1"
-
-[[Issues."1.10.1"]]
-dependent = []
-dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
-type = "not_on_latest"
-version = "1.10.1"
-latest = "1.11.0"

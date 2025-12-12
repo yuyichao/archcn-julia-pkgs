@@ -1,13 +1,13 @@
+[Status]
+version = "2.3.0"
+
+[[Issues."1.2.0"]]
+version = "1.2.0"
+type = "not_on_latest"
+latest = "2.3.0"
+dependent = ["Manifolds [1cead3c2-87b3-11e9-0ccd-23c62b72b94e]"]
+dependency = []
+
 [Pkg]
 name = "ManifoldsBase"
 uuid = "3362f125-f0bb-47a3-aa74-596ffd7ef2fb"
-
-[Status]
-version = "1.2.0"
-
-[[Issues."1.2.0"]]
-dependent = ["Manifolds [1cead3c2-87b3-11e9-0ccd-23c62b72b94e]"]
-dependency = []
-type = "not_on_latest"
-version = "1.2.0"
-latest = "2.3.0"

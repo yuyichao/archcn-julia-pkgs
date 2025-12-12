@@ -1,13 +1,13 @@
+[Status]
+version = "0.22.0"
+
+[[Issues."0.21.6"]]
+version = "0.21.6"
+type = "not_on_latest"
+latest = "0.22.0"
+dependent = ["MadNLP [2621e9c9-9eb4-46b1-8089-e8c72242dfb6]"]
+dependency = []
+
 [Pkg]
 name = "NLPModels"
 uuid = "a4795742-8479-5a88-8948-cc11e1c8c1a6"
-
-[Status]
-version = "0.21.6"
-
-[[Issues."0.21.6"]]
-dependent = ["MadNLP [2621e9c9-9eb4-46b1-8089-e8c72242dfb6]"]
-dependency = []
-type = "not_on_latest"
-version = "0.21.6"
-latest = "0.22.0"

@@ -1,13 +1,13 @@
+[Status]
+version = "0.11.4"
+
+[[Issues."0.11.2"]]
+version = "0.11.2"
+type = "not_on_latest"
+latest = "0.11.4"
+dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]"]
+dependency = []
+
 [Pkg]
 name = "AWSS3"
 uuid = "1c724243-ef5b-51ab-93f4-b0a88ac62a95"
-
-[Status]
-version = "0.11.2"
-
-[[Issues."0.11.2"]]
-dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]"]
-dependency = []
-type = "not_on_latest"
-version = "0.11.2"
-latest = "0.11.4"

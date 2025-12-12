@@ -1,13 +1,13 @@
+[Status]
+version = "0.6.4"
+
+[[Issues."0.6.3"]]
+version = "0.6.3"
+type = "not_on_latest"
+latest = "0.6.4"
+dependent = []
+dependency = ["MultivariatePolynomials [102ac46a-7ee4-5c85-9060-abc95bfdeaa3]"]
+
 [Pkg]
 name = "DynamicPolynomials"
 uuid = "7c1d4256-1411-5781-91ec-d7bc3513ac07"
-
-[Status]
-version = "0.6.3"
-
-[[Issues."0.6.3"]]
-dependent = []
-dependency = ["MultivariatePolynomials [102ac46a-7ee4-5c85-9060-abc95bfdeaa3]"]
-type = "not_on_latest"
-version = "0.6.3"
-latest = "0.6.4"

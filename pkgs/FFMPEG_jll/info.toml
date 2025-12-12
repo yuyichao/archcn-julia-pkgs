@@ -1,17 +1,17 @@
-[Pkg]
-name = "FFMPEG_jll"
-uuid = "b22a6f82-2f65-5046-a5b2-351ab43fb4e5"
-is_jll = true
-
-[Status]
-version = "7.1.1+0"
 
 [JLL.products]
 executable = ["ffmpeg", "ffprobe"]
-library = ["libavcodec", "libavdevice", "libavfilter", "libavformat", "libavutil", "libpostproc", "libswresample", "libswscale"]
+library = ["libavcodec", "libavdevice", "libavfilter", "libavformat", "libavutil", "libswresample", "libswscale"]
+[Status]
+version = "8.0.0+0"
 
 [[Issues."8.0.0+0"]]
 type = "jll_changes"
 
     [Issues."8.0.0+0".remove]
     library = ["libpostproc"]
+
+[Pkg]
+is_jll = true
+name = "FFMPEG_jll"
+uuid = "b22a6f82-2f65-5046-a5b2-351ab43fb4e5"

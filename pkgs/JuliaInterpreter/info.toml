@@ -1,13 +1,13 @@
+[Status]
+version = "0.10.9"
+
+[[Issues."0.9.42"]]
+version = "0.9.42"
+type = "not_on_latest"
+latest = "0.10.9"
+dependent = ["LoweredCodeUtils [6f1432cf-f94c-5a45-995e-cdbf5db27b0b]", "Revise [295af30f-e4ad-537b-8983-00126c2a3abe]"]
+dependency = ["CodeTracking [da1fd8a2-8d9e-5ec2-8556-3022fb5608a2]"]
+
 [Pkg]
 name = "JuliaInterpreter"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
-
-[Status]
-version = "0.9.42"
-
-[[Issues."0.9.42"]]
-dependent = ["LoweredCodeUtils [6f1432cf-f94c-5a45-995e-cdbf5db27b0b]", "Revise [295af30f-e4ad-537b-8983-00126c2a3abe]"]
-dependency = ["CodeTracking [da1fd8a2-8d9e-5ec2-8556-3022fb5608a2]"]
-type = "not_on_latest"
-version = "0.9.42"
-latest = "0.10.9"
