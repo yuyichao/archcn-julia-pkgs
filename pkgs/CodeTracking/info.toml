@@ -3,11 +3,11 @@ name = "CodeTracking"
 uuid = "da1fd8a2-8d9e-5ec2-8556-3022fb5608a2"
 
 [Status]
-version = "1.3.6"
+version = "1.3.9"
 
-[[Issues."1.3.6"]]
-dependent = ["Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]", "JuliaInterpreter [aa1ae85d-cabe-5617-a682-6adf51b2e16a]", "Revise [295af30f-e4ad-537b-8983-00126c2a3abe]", "Term [22787eb5-b846-44ae-b979-8e399b8463ab]"]
+[[Issues."1.3.9"]]
+dependent = ["JuliaInterpreter [aa1ae85d-cabe-5617-a682-6adf51b2e16a]", "Revise [295af30f-e4ad-537b-8983-00126c2a3abe]", "Term [22787eb5-b846-44ae-b979-8e399b8463ab]"]
 dependency = []
 type = "not_on_latest"
-version = "1.3.6"
+version = "1.3.9"
 latest = "3.0.0"
