@@ -3,14 +3,14 @@ name = "MonteCarloMeasurements"
 uuid = "0987c9cc-fe09-11e8-30f0-b96dd679fdca"
 
 [Status]
-version = "1.5.1"
+version = "1.5.2"
 
-[[Issues."1.5.1"]]
+[[Issues."1.5.2"]]
 type = "missing_deps"
 
-    [[Issues."1.5.1".weak_deps]]
+    [[Issues."1.5.2".weak_deps]]
     name = "AccessorsExtra"
     uuid = "33016aad-b69d-45be-9359-82a41f556fd4"
-[[Issues."1.5.1"]]
+[[Issues."1.5.2"]]
 type = "not_needed"
 has_weak = true
