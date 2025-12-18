@@ -10,4 +10,4 @@ dependent = []
 dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
 type = "not_on_latest"
 version = "1.7.0"
-latest = "1.8.0"
+latest = "1.9.0"
