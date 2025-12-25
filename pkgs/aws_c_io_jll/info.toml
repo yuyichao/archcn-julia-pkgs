@@ -14,4 +14,4 @@ dependent = ["aws_c_http_jll [3254fc65-9028-534d-aa9d-d76d128babc6]"]
 dependency = []
 type = "not_on_latest"
 version = "0.23.4+0"
-latest = "0.24.0+0"
+latest = "0.24.2+0"

@@ -1,6 +1,6 @@
-[Status]
-version = "0.11.36"
-
 [Pkg]
 name = "PDMats"
 uuid = "90014a1f-27ba-587c-ab20-58faa44d9150"
+
+[Status]
+version = "0.11.37"
