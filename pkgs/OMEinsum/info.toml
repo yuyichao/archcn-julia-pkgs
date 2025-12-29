@@ -5,6 +5,19 @@ uuid = "ebe7aa44-baf0-506c-a96f-8464559b3922"
 [Status]
 version = "0.8.8"
 
+[[Issues."0.9.3"]]
+type = "missing_deps"
+
+    [[Issues."0.9.3".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."0.9.3".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+    [[Issues."0.9.3".weak_deps]]
+    name = "cuTENSOR"
+    uuid = "011b41b2-24ef-40a8-b3eb-fa098493e9e1"
+
 [[Issues."0.9.1"]]
 type = "missing_deps"
 
@@ -29,7 +42,7 @@ dependent = ["YaoToEinsum [9b173c7b-dc24-4dc5-a0e1-adab2f7b6ba9]"]
 dependency = ["OMEinsumContractionOrders [6f22d1fd-8eed-4bb7-9776-e7d684900715]"]
 type = "not_on_latest"
 version = "0.8.8"
-latest = "0.9.2"
+latest = "0.9.3"
 
 [[Issues."0.9.2"]]
 type = "missing_deps"
