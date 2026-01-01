@@ -4,7 +4,7 @@ uuid = "18a262bb-aa17-5467-a713-aee519bc75cb"
 is_jll = true
 
 [Status]
-version = "3.2.4+0"
+version = "3.4.4+0"
 
 [JLL.products]
 library = ["libIex", "libIlmThread", "libOpenEXR", "libOpenEXRCore", "libOpenEXRUtil"]

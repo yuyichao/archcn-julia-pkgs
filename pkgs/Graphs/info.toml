@@ -10,4 +10,4 @@ dependent = []
 dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]"]
 type = "not_on_latest"
 version = "1.13.1"
-latest = "1.13.2"
+latest = "1.13.3"
