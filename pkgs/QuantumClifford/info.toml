@@ -6,6 +6,38 @@ required = true
 [Status]
 version = "0.10.1"
 
+[[Issues."0.11.0"]]
+type = "missing_deps"
+
+    [[Issues."0.11.0".deps]]
+    name = "AutoHashEquals"
+    uuid = "15f4f7f2-30c1-5605-9d31-71845cf9641f"
+    [[Issues."0.11.0".deps]]
+    name = "WeakDepHelpers"
+    uuid = "7869a13a-7328-4bcf-a489-0f4bb64497c7"
+
+    [[Issues."0.11.0".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+    [[Issues."0.11.0".weak_deps]]
+    name = "Hecke"
+    uuid = "3e1990a7-5d81-5526-99ce-9ba3ff248f21"
+    [[Issues."0.11.0".weak_deps]]
+    name = "LDPCDecoders"
+    uuid = "3c486d74-64b9-4c60-8b1a-13a564e77efb"
+    [[Issues."0.11.0".weak_deps]]
+    name = "Oscar"
+    uuid = "f1435218-dba5-11e9-1e4d-f1a5fab5fc13"
+    [[Issues."0.11.0".weak_deps]]
+    name = "PyQDecoders"
+    uuid = "17f5de1a-9b79-4409-a58d-4d45812840f7"
+    [[Issues."0.11.0".weak_deps]]
+    name = "PyTesseractDecoder"
+    uuid = "cb7393ab-d93b-4096-98de-53f8be4e08d3"
+    [[Issues."0.11.0".weak_deps]]
+    name = "Quantikz"
+    uuid = "b0d11df0-eea3-4d79-b4a5-421488cbf74b"
+
 [[Issues."0.10.1"]]
 type = "missing_deps"
 
