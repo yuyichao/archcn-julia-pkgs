@@ -64,6 +64,26 @@ type = "missing_deps"
     name = "FMI"
     uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
 
+[[Issues."11.5.1"]]
+type = "missing_deps"
+
+    [[Issues."11.5.1".deps]]
+    name = "BipartiteGraphs"
+    uuid = "caf10ac8-0290-4205-88aa-f15908547e8d"
+    [[Issues."11.5.1".deps]]
+    name = "ModelingToolkitBase"
+    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
+    [[Issues."11.5.1".deps]]
+    name = "ModelingToolkitTearing"
+    uuid = "6bb917b9-1269-42b9-9f7c-b0dca72083ab"
+    [[Issues."11.5.1".deps]]
+    name = "StateSelection"
+    uuid = "64909d44-ed92-46a8-bbd9-f047dfbdc84b"
+
+    [[Issues."11.5.1".weak_deps]]
+    name = "FMIImport"
+    uuid = "9fcbc62e-52a0-44e9-a616-1359a0008194"
+
 [[Issues."11.5.0"]]
 type = "missing_deps"
 
