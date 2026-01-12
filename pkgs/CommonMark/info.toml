@@ -10,4 +10,4 @@ dependent = ["JuliaFormatter [98e50ef6-434e-11e9-1051-2b60c6c9e899]"]
 dependency = []
 type = "not_on_latest"
 version = "0.8.16"
-latest = "0.9.1"
+latest = "0.10.0"

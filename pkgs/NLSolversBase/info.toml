@@ -4,3 +4,10 @@ uuid = "d41bc354-129a-5804-8e4c-c37616107c6c"
 
 [Status]
 version = "7.10.0"
+
+[[Issues."7.10.0"]]
+dependent = ["LineSearches [d3d80556-e9d4-5f37-9878-2ab0fcc64255]", "LsqFit [2fda8390-95c7-5789-9bda-21331edee243]", "NLsolve [2774e3e8-f4cf-5e23-947b-6d7e65073b56]", "Optim [429524aa-4258-5aef-a3af-852621145aeb]"]
+dependency = []
+type = "not_on_latest"
+version = "7.10.0"
+latest = "8.0.0"

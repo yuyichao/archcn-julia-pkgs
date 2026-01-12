@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "1.13.3"
+
+[[Issues."1.13.3"]]
+dependent = ["BloqadeWaveforms [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe7]", "LeastSquaresOptim [0fc2ff8b-aaa3-5acd-a817-1944a5e08891]"]
+dependency = ["LineSearches [d3d80556-e9d4-5f37-9878-2ab0fcc64255]", "NLSolversBase [d41bc354-129a-5804-8e4c-c37616107c6c]"]
+type = "not_on_latest"
+version = "1.13.3"
+latest = "2.0.0"

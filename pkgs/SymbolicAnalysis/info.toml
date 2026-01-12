@@ -3,8 +3,8 @@ name = "SymbolicAnalysis"
 uuid = "4297ee4d-0239-47d8-ba5d-195ecdf594fe"
 
 [Status]
-version = "0.3.3"
+version = "0.3.5"
 
-[[Issues."0.3.3"]]
+[[Issues."0.3.5"]]
 type = "not_needed"
 has_weak = true
