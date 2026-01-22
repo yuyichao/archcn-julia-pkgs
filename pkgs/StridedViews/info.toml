@@ -3,11 +3,11 @@ name = "StridedViews"
 uuid = "4db3bf67-4bd7-4b4e-b153-31dc3fb37143"
 
 [Status]
-version = "0.4.2"
+version = "0.4.3"
 
-[[Issues."0.4.2"]]
+[[Issues."0.4.3"]]
 type = "missing_deps"
 
-    [[Issues."0.4.2".weak_deps]]
+    [[Issues."0.4.3".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
