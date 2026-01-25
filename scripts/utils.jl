@@ -29,7 +29,7 @@ else
                     if haskey(res, ver)
                         merge!(res[ver], val)
                     else
-                        res[ver] = val
+                        res[ver] = copy(val)
                     end
                 end
             end
