@@ -1,10 +1,10 @@
-[Pkg]
-name = "OpenBLAS32_jll"
-uuid = "656ef2d0-ae68-5445-9ca0-591084a874a2"
-is_jll = true
-
-[Status]
-version = "0.3.29+0"
 
 [JLL.products]
 library = ["libopenblas"]
+[Status]
+version = "0.3.30+0"
+
+[Pkg]
+is_jll = true
+name = "OpenBLAS32_jll"
+uuid = "656ef2d0-ae68-5445-9ca0-591084a874a2"

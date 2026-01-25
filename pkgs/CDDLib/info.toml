@@ -1,7 +1,7 @@
+[Status]
+version = "0.10.2"
+
 [Pkg]
 name = "CDDLib"
-uuid = "3391f64e-dcde-5f30-b752-e11513730f60"
 required = true
-
-[Status]
-version = "0.10.1"
+uuid = "3391f64e-dcde-5f30-b752-e11513730f60"

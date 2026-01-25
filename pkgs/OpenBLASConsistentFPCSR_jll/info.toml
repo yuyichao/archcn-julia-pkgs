@@ -1,10 +1,10 @@
-[Pkg]
-name = "OpenBLASConsistentFPCSR_jll"
-uuid = "6cdc7f73-28fd-5e50-80fb-958a8875b1af"
-is_jll = true
-
-[Status]
-version = "0.3.29+0"
 
 [JLL.products]
 library = ["libopenblas"]
+[Status]
+version = "0.3.30+0"
+
+[Pkg]
+is_jll = true
+name = "OpenBLASConsistentFPCSR_jll"
+uuid = "6cdc7f73-28fd-5e50-80fb-958a8875b1af"

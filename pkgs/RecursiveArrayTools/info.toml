@@ -1,6 +1,6 @@
+[Status]
+version = "3.45.1"
+
 [Pkg]
 name = "RecursiveArrayTools"
 uuid = "731186ca-8d62-57ce-b412-fbd966d074cd"
-
-[Status]
-version = "3.45.0"
