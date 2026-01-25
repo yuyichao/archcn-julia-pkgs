@@ -1,13 +1,6 @@
-[Status]
-version = "0.6.11"
-
-[[Issues."0.6.11"]]
-type = "missing_deps"
-
-    [[Issues."0.6.11".deps]]
-    name = "FFTA"
-    uuid = "b86e33f2-c0db-4aa1-a6e0-ab43e668529e"
-
 [Pkg]
 name = "KernelDensity"
 uuid = "5ab0869b-81aa-558d-bb23-cbf5423bbe9b"
+
+[Status]
+version = "0.6.11"
