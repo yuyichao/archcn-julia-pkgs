@@ -20,7 +20,14 @@ type = "missing_deps"
     uuid = "f0ed7684-a786-439e-b1e3-3b82803b501e"
 [[Issues."4.3.0"]]
 dependent = []
-dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]"]
+dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]", "PolygonAlgorithms [32a0d02f-32d9-4438-b5ed-3a2932b48f96]"]
 type = "not_on_latest"
 version = "4.3.0"
-latest = "4.4.0"
+latest = "4.4.1"
+
+[[Issues."4.4.1"]]
+type = "missing_deps"
+
+    [[Issues."4.4.1".weak_deps]]
+    name = "Typstry"
+    uuid = "f0ed7684-a786-439e-b1e3-3b82803b501e"
