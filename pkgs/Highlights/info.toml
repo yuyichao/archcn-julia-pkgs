@@ -4,3 +4,13 @@ uuid = "eafb193a-b7ab-5a9e-9068-77385905fa72"
 
 [Status]
 version = "0.5.3"
+
+[[Issues."0.6.0"]]
+type = "missing_deps"
+
+    [[Issues."0.6.0".deps]]
+    name = "TreeSitter"
+    uuid = "f42328cb-ece0-4cf2-995f-9e7abb27d006"
+[[Issues."0.6.0"]]
+type = "extern"
+artifacts = 1

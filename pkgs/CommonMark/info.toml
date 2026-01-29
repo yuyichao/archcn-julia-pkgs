@@ -5,9 +5,23 @@ uuid = "a80b9123-70ca-4bc0-993e-6e3bcb318db6"
 [Status]
 version = "0.8.16"
 
+[[Issues."0.10.2"]]
+type = "missing_deps"
+
+    [[Issues."0.10.2".weak_deps]]
+    name = "MarkdownAST"
+    uuid = "d0879d2d-cac2-40c8-9cee-1863dc0c7391"
+
+[[Issues."0.10.1"]]
+type = "missing_deps"
+
+    [[Issues."0.10.1".weak_deps]]
+    name = "MarkdownAST"
+    uuid = "d0879d2d-cac2-40c8-9cee-1863dc0c7391"
+
 [[Issues."0.8.16"]]
 dependent = ["JuliaFormatter [98e50ef6-434e-11e9-1051-2b60c6c9e899]"]
 dependency = []
 type = "not_on_latest"
 version = "0.8.16"
-latest = "0.10.0"
+latest = "0.10.2"

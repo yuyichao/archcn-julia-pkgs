@@ -10,4 +10,4 @@ dependent = ["BoundaryValueDiffEqAscher [7227322d-7511-4e07-9247-ad6ff830280e]",
 dependency = []
 type = "not_on_latest"
 version = "0.4.34"
-latest = "1.1.0"
+latest = "1.1.2"
