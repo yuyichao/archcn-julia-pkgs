@@ -9,3 +9,10 @@ version = "100.1700.1000+1"
 [JLL.products]
 executable = ["clp"]
 library = ["libClp", "libClpSolver", "libOsiClp"]
+
+[[Issues."100.1700.1000+1"]]
+dependent = ["Clp [e2554f3b-3117-50c0-817c-e040a3ddf72d]"]
+dependency = []
+type = "not_on_latest"
+version = "100.1700.1000+1"
+latest = "100.1700.1001+0"

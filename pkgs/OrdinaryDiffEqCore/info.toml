@@ -16,7 +16,7 @@ dependent = ["DelayDiffEq [bcd4f6db-9728-5f36-b5f7-82caef46ccdb]", "ImplicitDisc
 dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]"]
 type = "not_on_latest"
 version = "1.36.0"
-latest = "3.2.0"
+latest = "3.3.0"
 
 [[Issues."2.3.0"]]
 type = "missing_deps"
@@ -36,6 +36,13 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."3.1.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
+[[Issues."3.3.0"]]
+type = "missing_deps"
+
+    [[Issues."3.3.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
