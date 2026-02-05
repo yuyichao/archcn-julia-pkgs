@@ -3,11 +3,11 @@ name = "DelayDiffEq"
 uuid = "bcd4f6db-9728-5f36-b5f7-82caef46ccdb"
 
 [Status]
-version = "5.64.0"
+version = "5.67.1"
 
-[[Issues."5.64.0"]]
+[[Issues."5.67.1"]]
 dependent = []
-dependency = ["ForwardDiff [f6369f11-7733-5829-9624-2563aa707210]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]"]
+dependency = ["OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]"]
 type = "not_on_latest"
-version = "5.64.0"
+version = "5.67.1"
 latest = "5.68.0"

@@ -3,11 +3,4 @@ name = "ForwardDiff"
 uuid = "f6369f11-7733-5829-9624-2563aa707210"
 
 [Status]
-version = "0.10.39"
-
-[[Issues."0.10.39"]]
-dependent = ["Bloqade [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe1]", "BloqadeExpr [bd27d05e-4ce1-5e79-84dd-c5d7d508abe2]"]
-dependency = []
-type = "not_on_latest"
-version = "0.10.39"
-latest = "1.3.2"
+version = "1.3.2"
