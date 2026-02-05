@@ -7,7 +7,7 @@ version = "1.8.0"
 
 [[Issues."1.8.0"]]
 dependent = []
-dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
+dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]"]
 type = "not_on_latest"
 version = "1.8.0"
-latest = "1.12.0"
+latest = "1.13.0"

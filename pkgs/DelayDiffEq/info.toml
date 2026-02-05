@@ -10,4 +10,4 @@ dependent = []
 dependency = ["ForwardDiff [f6369f11-7733-5829-9624-2563aa707210]", "OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "OrdinaryDiffEqDefault [50262376-6c5a-4cf5-baba-aaf4f84d72d7]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]", "OrdinaryDiffEqFunctionMap [d3585ca7-f5d3-4ba6-8057-292ed1abd90f]", "OrdinaryDiffEqNonlinearSolve [127b3ac7-2247-4354-8eb6-78cf4e7c58e8]", "OrdinaryDiffEqRosenbrock [43230ef6-c299-4910-a778-202eb28ce4ce]"]
 type = "not_on_latest"
 version = "5.63.0"
-latest = "5.67.1"
+latest = "5.68.0"

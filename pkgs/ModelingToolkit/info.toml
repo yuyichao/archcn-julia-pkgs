@@ -3,7 +3,7 @@ name = "ModelingToolkit"
 uuid = "961ee093-0014-501f-94e3-6117800e7a78"
 
 [Status]
-version = "10.32.0"
+version = "10.32.1"
 
 [[Issues."11.4.0"]]
 type = "missing_deps"
@@ -64,6 +64,25 @@ type = "missing_deps"
     [[Issues."11.7.0".weak_deps]]
     name = "FMIImport"
     uuid = "9fcbc62e-52a0-44e9-a616-1359a0008194"
+
+[[Issues."10.32.1"]]
+type = "missing_deps"
+
+    [[Issues."10.32.1".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."10.32.1".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."10.32.1".weak_deps]]
+    name = "FMI"
+    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
+    [[Issues."10.32.1".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."10.32.1".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
 [[Issues."11.7.2"]]
 type = "missing_deps"
@@ -187,25 +206,6 @@ type = "missing_deps"
     [[Issues."11.6.1".weak_deps]]
     name = "FMIImport"
     uuid = "9fcbc62e-52a0-44e9-a616-1359a0008194"
-
-[[Issues."10.32.0"]]
-type = "missing_deps"
-
-    [[Issues."10.32.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."10.32.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."10.32.0".weak_deps]]
-    name = "FMI"
-    uuid = "14a09403-18e3-468f-ad8a-74f8dda2d9ac"
-    [[Issues."10.32.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."10.32.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
 [[Issues."11.0.0"]]
 type = "missing_deps"

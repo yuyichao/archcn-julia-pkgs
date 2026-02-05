@@ -8,3 +8,9 @@ version = "0.10.9+0"
 
 [JLL.products]
 library = ["libaws_c_http"]
+
+[[Issues."0.10.10+0"]]
+type = "jll_changes"
+
+    [Issues."0.10.10+0".add]
+    library = ["libaws_c_http_jq"]

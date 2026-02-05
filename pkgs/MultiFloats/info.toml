@@ -4,3 +4,10 @@ uuid = "bdf0d083-296b-4888-a5b6-7498122e68a5"
 
 [Status]
 version = "2.3.0"
+
+[[Issues."2.3.0"]]
+dependent = ["Loraine [df0521af-66a0-42b3-822e-f30debbfe642]"]
+dependency = []
+type = "not_on_latest"
+version = "2.3.0"
+latest = "3.0.1"
