@@ -1,9 +1,0 @@
-[Pkg]
-name = "MakieCore"
-uuid = "20f20a25-4f0e-4fdf-b5d1-57303727442b"
-
-[Status]
-version = "0.10.0"
-
-[[Issues."0.10.0"]]
-type = "not_needed"
