@@ -383,3 +383,15 @@ pkg = "Manifolds"
 version = "0.10, 0.11"
 dep = "MatrixEquations"
 depversion = "2.4.4"
+
+[[Overrides.DepsVersion]]
+pkg = "DelayDiffEq"
+version = "5.63.0"
+dep = "OrdinaryDiffEqCore"
+depversion = "1.34.0, 2"
+
+[[Overrides.DepsVersion]]
+pkg = "QuantumOptics"
+version = "1.2"
+dep = "OrdinaryDiffEqCore"
+depversion = "1.21, 2"
