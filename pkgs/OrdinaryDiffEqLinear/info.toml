@@ -3,11 +3,11 @@ name = "OrdinaryDiffEqLinear"
 uuid = "521117fe-8c41-49f8-b3b6-30780b3f0fb5"
 
 [Status]
-version = "1.6.0"
+version = "1.9.0"
 
-[[Issues."1.6.0"]]
+[[Issues."1.9.0"]]
 dependent = []
 dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
 type = "not_on_latest"
-version = "1.6.0"
+version = "1.9.0"
 latest = "1.10.0"

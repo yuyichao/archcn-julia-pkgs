@@ -3,11 +3,11 @@ name = "OrdinaryDiffEqFIRK"
 uuid = "5960d6e9-dd7a-4743-88e7-cf307b64f125"
 
 [Status]
-version = "1.16.0"
+version = "1.19.0"
 
-[[Issues."1.16.0"]]
+[[Issues."1.19.0"]]
 dependent = []
-dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]", "OrdinaryDiffEqNonlinearSolve [127b3ac7-2247-4354-8eb6-78cf4e7c58e8]"]
+dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]"]
 type = "not_on_latest"
-version = "1.16.0"
+version = "1.19.0"
 latest = "1.22.0"

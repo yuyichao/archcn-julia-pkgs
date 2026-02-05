@@ -3,11 +3,11 @@ name = "OrdinaryDiffEqStabilizedRK"
 uuid = "358294b1-0aab-51c3-aafe-ad5ab194a2ad"
 
 [Status]
-version = "1.4.0"
+version = "1.7.0"
 
-[[Issues."1.4.0"]]
+[[Issues."1.7.0"]]
 dependent = []
 dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
 type = "not_on_latest"
-version = "1.4.0"
+version = "1.7.0"
 latest = "1.8.0"
