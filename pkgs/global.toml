@@ -217,6 +217,18 @@ dep = "CairoMakie"
 depversion = "0.12, 0.13, 0.14, 0.15"
 
 [[Overrides.DepsVersion]]
+pkg = "Bloqade"
+version = ">= 0.2.4"
+dep = "ForwardDiff"
+depversion = "0.10, 1"
+
+[[Overrides.DepsVersion]]
+pkg = "BloqadeExpr"
+version = ">= 0.2.3"
+dep = "ForwardDiff"
+depversion = "0.10, 1"
+
+[[Overrides.DepsVersion]]
 pkg = "ImageMagick_jll"
 version = "6, 7"
 dep = "Libtiff_jll"
