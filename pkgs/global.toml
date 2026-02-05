@@ -398,9 +398,9 @@ depversion = "2.4.4"
 
 [[Overrides.DepsVersion]]
 pkg = "DelayDiffEq"
-version = "5.63.0"
+version = "^5.67.1"
 dep = "OrdinaryDiffEqCore"
-depversion = "1.34.0, 2"
+depversion = "2, 3"
 
 [[Overrides.DepsVersion]]
 pkg = "QuantumOptics"
