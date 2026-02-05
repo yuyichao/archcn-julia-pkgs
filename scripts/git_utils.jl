@@ -196,7 +196,13 @@ function find_commit_for_tree(repo, tree, head, last_commit, url)
     for toplevel_only in (true, false)
         visited = toplevel_only ? visited_toponly : visited_full
         for head in remote_heads
-            res = _find_commit_for_tree(tree, LibGit2.GitCommit(repo, head.oid),
+            remote_head_commit = try
+                LibGit2.GitCommit(repo, head.oid)
+            catch
+                @warn "Cannot find commit for remote head $(head)"
+                continue
+            end
+            res = _find_commit_for_tree(tree, remote_head_commit,
                                         visited, toplevel_only)
             if res !== nothing
                 return res
