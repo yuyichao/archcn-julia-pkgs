@@ -1,9 +1,0 @@
-[Pkg]
-name = "Cassette"
-uuid = "7057c7e9-c182-5462-911a-8362d720325c"
-
-[Status]
-version = "0.3.14"
-
-[[Issues."0.3.14"]]
-type = "not_needed"

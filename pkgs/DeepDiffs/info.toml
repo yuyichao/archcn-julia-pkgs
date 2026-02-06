@@ -1,9 +1,0 @@
-[Pkg]
-name = "DeepDiffs"
-uuid = "ab62b9b5-e342-54a8-a765-a90f495de1a6"
-
-[Status]
-version = "1.2.0"
-
-[[Issues."1.2.0"]]
-type = "not_needed"
