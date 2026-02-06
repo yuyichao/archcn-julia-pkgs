@@ -23,14 +23,11 @@ else
     registry_info(reg, pkgentry) = Pkg.Registry.registry_info(reg, pkgentry)
     function decompress_ver_range(pkginfo, dict::Dict{K,T}) where {K,T}
         res = Dict{VersionNumber,T}()
-        for (vr, val) in dict
-            for (ver, _) in pkginfo.version_info
+        for (ver, _) in pkginfo.version_info
+            res[ver] = T()
+            for (vr, val) in dict
                 if ver in vr
-                    if haskey(res, ver)
-                        merge!(res[ver], val)
-                    else
-                        res[ver] = copy(val)
-                    end
+                    merge!(res[ver], val)
                 end
             end
         end
