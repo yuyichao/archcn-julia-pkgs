@@ -9,3 +9,10 @@ version = "4.3.2+0"
 [JLL.products]
 executable = ["mpiexec"]
 library = ["libmpi", "libmpicxx", "libmpifort"]
+
+[[Issues."4.3.2+0"]]
+dependent = ["HDF5_jll [0234f1f7-429e-5d53-9886-15a909be8d59]", "HYPRE_jll [0a602bbd-b08b-5d75-8d32-0de6eef44785]", "MPI [da04e1cc-30fd-572f-bb4f-1f8673147195]"]
+dependency = ["Hwloc_jll [e33a78d0-f292-5ffc-b300-72abe9b543c8]"]
+type = "not_on_latest"
+version = "4.3.2+0"
+latest = "5.0.0+0"
