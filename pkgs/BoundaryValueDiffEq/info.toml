@@ -4,3 +4,10 @@ uuid = "764a87c0-6b3e-53db-9096-fe964310641d"
 
 [Status]
 version = "5.19.0"
+
+[[Issues."5.19.0"]]
+dependent = []
+dependency = ["BoundaryValueDiffEqCore [56b672f2-a5fe-4263-ab2d-da677488eb3a]"]
+type = "not_on_latest"
+version = "5.19.0"
+latest = "5.19.1"

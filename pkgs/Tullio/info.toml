@@ -1,6 +1,13 @@
-[Status]
-version = "0.3.8"
-
 [Pkg]
 name = "Tullio"
 uuid = "bc48ee85-29a4-5162-ae0b-a64e1601d4bc"
+
+[Status]
+version = "0.3.9"
+
+[[Issues."0.3.9"]]
+type = "missing_deps"
+
+    [[Issues."0.3.9".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"

@@ -4,7 +4,7 @@ uuid = "b2a88e68-78e7-5e94-8c20-c02986ec140e"
 is_jll = true
 
 [Status]
-version = "0.2.9+0"
+version = "0.2.10+0"
 
 [JLL.products]
 library = ["libaws_checksums"]
