@@ -8,3 +8,16 @@ version = "6.8.2+2"
 
 [JLL.products]
 file = ["qt6plugins_dir"]
+
+[[Issues."6.10.2+0"]]
+type = "jll_changes"
+
+    [Issues."6.10.2+0".remove]
+    file = ["qt6plugins_dir"]
+
+[[Issues."6.8.2+2"]]
+dependent = []
+dependency = ["Qt6Base_jll [c0090381-4147-56d7-9ebc-da0b1113ec56]", "Qt6Declarative_jll [629bc702-f1f5-5709-abd5-49b8460ea067]"]
+type = "not_on_latest"
+version = "6.8.2+2"
+latest = "6.10.2+1"

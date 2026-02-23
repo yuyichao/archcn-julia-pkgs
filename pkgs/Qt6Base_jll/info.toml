@@ -8,3 +8,16 @@ version = "6.8.2+2"
 
 [JLL.products]
 library = ["libqt6concurrent", "libqt6core", "libqt6dbus", "libqt6gui", "libqt6network", "libqt6opengl", "libqt6openglwidgets", "libqt6printsupport", "libqt6sql", "libqt6test", "libqt6widgets", "libqt6xml"]
+
+[[Issues."6.10.2+0"]]
+type = "jll_changes"
+
+    [Issues."6.10.2+0".remove]
+    library = ["libqt6concurrent", "libqt6core", "libqt6dbus", "libqt6gui", "libqt6network", "libqt6opengl", "libqt6openglwidgets", "libqt6printsupport", "libqt6sql", "libqt6test", "libqt6widgets", "libqt6xml"]
+
+[[Issues."6.8.2+2"]]
+dependent = ["GR_jll [d2c73de3-f751-5644-a686-071e5b155ba9]", "Qt6Declarative_jll [629bc702-f1f5-5709-abd5-49b8460ea067]", "Qt6ShaderTools_jll [ce943373-25bb-56aa-8eca-768745ed7b5a]", "Qt6Wayland_jll [e99dba38-086e-5de3-a5b1-6e4c66e897c3]"]
+dependency = []
+type = "not_on_latest"
+version = "6.8.2+2"
+latest = "6.10.2+1"
