@@ -16,7 +16,7 @@ dependent = []
 dependency = ["PreallocationTools [d236fae5-4411-538c-8e31-a6e3d9e00b46]"]
 type = "not_on_latest"
 version = "2.11.2"
-latest = "2.14.0"
+latest = "2.15.0"
 
 [[Issues."2.12.0"]]
 type = "missing_deps"
@@ -36,5 +36,12 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."2.13.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
+[[Issues."2.15.0"]]
+type = "missing_deps"
+
+    [[Issues."2.15.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
