@@ -9,3 +9,10 @@ version = "0.73.22+0"
 [JLL.products]
 executable = ["gksqt", "grplot"]
 library = ["libGKS", "libGR", "libGR3", "libGRM"]
+
+[[Issues."0.73.22+0"]]
+dependent = ["GR [28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71]"]
+dependency = ["Qt6Base_jll [c0090381-4147-56d7-9ebc-da0b1113ec56]"]
+type = "not_on_latest"
+version = "0.73.22+0"
+latest = "0.73.24+0"

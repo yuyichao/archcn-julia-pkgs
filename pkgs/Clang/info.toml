@@ -6,3 +6,10 @@ required = true
 
 [Status]
 version = "0.19.2"
+
+[[Issues."0.19.3"]]
+type = "missing_deps"
+
+    [[Issues."0.19.3".deps]]
+    name = "Clang_unified_jll"
+    uuid = "ffc816e1-ba66-5fa9-9ecc-bcc5cb19bea1"

@@ -10,4 +10,4 @@ dependent = []
 dependency = ["BoundaryValueDiffEqCore [56b672f2-a5fe-4263-ab2d-da677488eb3a]"]
 type = "not_on_latest"
 version = "1.9.0"
-latest = "1.10.0"
+latest = "1.11.0"

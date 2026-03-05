@@ -4,3 +4,10 @@ uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
 
 [Status]
 version = "0.73.22"
+
+[[Issues."0.73.22"]]
+dependent = []
+dependency = ["GR_jll [d2c73de3-f751-5644-a686-071e5b155ba9]"]
+type = "not_on_latest"
+version = "0.73.22"
+latest = "0.73.24"

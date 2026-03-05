@@ -25,3 +25,10 @@ type = "missing_deps"
     [[Issues."1.12.0".deps]]
     name = "Integrals"
     uuid = "de52edbc-65ea-441a-8357-d3a637375a31"
+
+[[Issues."2.1.0"]]
+type = "missing_deps"
+
+    [[Issues."2.1.0".deps]]
+    name = "Integrals"
+    uuid = "de52edbc-65ea-441a-8357-d3a637375a31"

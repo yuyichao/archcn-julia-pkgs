@@ -9,3 +9,6 @@ version = "21.1.2+0"
 [JLL.products]
 executable = ["clang"]
 library = ["libclang", "libclang_cpp"]
+
+[[Issues."21.1.2+0"]]
+type = "not_needed"
