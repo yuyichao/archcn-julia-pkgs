@@ -5,6 +5,20 @@ uuid = "da04e1cc-30fd-572f-bb4f-1f8673147195"
 [Status]
 version = "0.20.23"
 
+[[Issues."0.20.24"]]
+type = "missing_deps"
+
+    [[Issues."0.20.24".deps]]
+    name = "MPIABI_jll"
+    uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
+
+    [[Issues."0.20.24".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."0.20.24".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+
 [[Issues."0.20.23"]]
 type = "missing_deps"
 

@@ -19,6 +19,13 @@ type = "missing_deps"
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
+[[Issues."3.19.0"]]
+type = "missing_deps"
+
+    [[Issues."3.19.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
 [[Issues."3.3.0"]]
 type = "missing_deps"
 
@@ -100,7 +107,7 @@ dependent = ["ImplicitDiscreteSolve [3263718b-31ed-49cf-8a0f-35a466e8af96]", "Or
 dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]"]
 type = "not_on_latest"
 version = "2.3.0"
-latest = "3.17.1"
+latest = "3.20.0"
 
 [[Issues."3.1.0"]]
 type = "missing_deps"
@@ -130,6 +137,13 @@ type = "missing_deps"
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
+[[Issues."3.20.0"]]
+type = "missing_deps"
+
+    [[Issues."3.20.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
 [[Issues."3.4.1"]]
 type = "missing_deps"
 
@@ -151,10 +165,10 @@ type = "missing_deps"
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
-[[Issues."3.4.0"]]
+[[Issues."3.18.0"]]
 type = "missing_deps"
 
-    [[Issues."3.4.0".weak_deps]]
+    [[Issues."3.18.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
@@ -162,6 +176,13 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."3.5.2".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
+[[Issues."3.4.0"]]
+type = "missing_deps"
+
+    [[Issues."3.4.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 

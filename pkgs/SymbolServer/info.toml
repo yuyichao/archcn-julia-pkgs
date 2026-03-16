@@ -10,4 +10,4 @@ dependent = ["LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]"]
 dependency = []
 type = "not_on_latest"
 version = "7.4.0"
-latest = "8.0.0"
+latest = "8.0.1"

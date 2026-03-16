@@ -9,3 +9,10 @@ version = "8.0.1+0"
 [JLL.products]
 executable = ["ffmpeg", "ffprobe"]
 library = ["libavcodec", "libavdevice", "libavfilter", "libavformat", "libavutil", "libswresample", "libswscale"]
+
+[[Issues."8.0.1+1"]]
+type = "missing_deps"
+
+    [[Issues."8.0.1+1".deps]]
+    name = "libva_jll"
+    uuid = "9a156e7d-b971-5f62-b2c9-67348b8fb97c"

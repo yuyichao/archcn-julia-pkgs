@@ -11,3 +11,5 @@ dependency = ["JuliaSyntax [70703baa-626e-46a2-a12c-08ffd08c73b4]"]
 type = "not_on_latest"
 version = "0.2.0"
 latest = "1.1.0"
+[[Issues."0.2.0"]]
+type = "not_needed"
