@@ -10,6 +10,16 @@ version = "1.14.6+0"
 executable = ["h5clear", "h5copy", "h5debug", "h5delete", "h5diff", "h5dump", "h5format_convert", "h5import", "h5jam", "h5ls", "h5mkgrp", "h5perf_serial", "h5repack", "h5repart", "h5stat", "h5unjam", "h5watch"]
 library = ["libhdf5", "libhdf5_cpp", "libhdf5_fortran", "libhdf5_hl", "libhdf5_hl_cpp", "libhdf5_hl_fortran"]
 
+[[Issues."2.1.1+0"]]
+type = "missing_deps"
+
+    [[Issues."2.1.1+0".deps]]
+    name = "MPIABI_jll"
+    uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
+    [[Issues."2.1.1+0".deps]]
+    name = "mpif_jll"
+    uuid = "9aeb927a-4695-514f-a259-621a69f20ec0"
+
 [[Issues."2.1.0+0"]]
 type = "missing_deps"
 

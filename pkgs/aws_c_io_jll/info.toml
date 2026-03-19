@@ -4,7 +4,7 @@ uuid = "13c41daa-f319-5298-b5eb-5754e0170d52"
 is_jll = true
 
 [Status]
-version = "0.26.1+0"
+version = "0.26.3+0"
 
 [JLL.products]
 library = ["libaws_c_io"]

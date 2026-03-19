@@ -7,7 +7,7 @@ version = "1.4.2"
 
 [[Issues."1.4.2"]]
 dependent = ["LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]"]
-dependency = []
+dependency = ["CancellationTokens [2e8d271d-f2e2-407b-a864-17eb2156783e]"]
 type = "not_on_latest"
 version = "1.4.2"
 latest = "2.1.0"
