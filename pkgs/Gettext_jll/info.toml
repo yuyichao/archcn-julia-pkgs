@@ -10,4 +10,10 @@ version = "0.21.0+0"
 library = ["libgettext"]
 
 [[Issues."0.21.0+0"]]
+dependent = []
+dependency = ["XML2_jll [02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a]"]
+type = "not_on_latest"
+version = "0.21.0+0"
+latest = "1.0.0+0"
+[[Issues."0.21.0+0"]]
 type = "not_needed"

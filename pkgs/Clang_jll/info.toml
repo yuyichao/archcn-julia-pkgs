@@ -12,3 +12,9 @@ library = ["libclang", "libclang_cpp"]
 
 [[Issues."21.1.2+0"]]
 type = "not_needed"
+
+[[Issues."21.1.8+0"]]
+type = "jll_changes"
+
+    [Issues."21.1.8+0".add]
+    executable = ["clang_apply_replacements", "clang_check", "clang_format", "clang_scan_deps", "clang_tidy"]
