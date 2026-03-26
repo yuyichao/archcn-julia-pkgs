@@ -20,12 +20,22 @@ dependent = ["Loraine [df0521af-66a0-42b3-822e-f30debbfe642]"]
 dependency = []
 type = "not_on_latest"
 version = "2.3.0"
-latest = "3.2.3"
+latest = "3.2.4"
 
 [[Issues."3.1.0"]]
 type = "missing_deps"
 
     [[Issues."3.1.0".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+
+[[Issues."3.2.4"]]
+type = "missing_deps"
+
+    [[Issues."3.2.4".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."3.2.4".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
 

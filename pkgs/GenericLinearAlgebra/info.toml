@@ -4,3 +4,10 @@ uuid = "14197337-ba66-59df-a3e3-ca00e7dcff7a"
 
 [Status]
 version = "0.3.19"
+
+[[Issues."0.3.19"]]
+dependent = ["Loraine [df0521af-66a0-42b3-822e-f30debbfe642]", "Polyhedra [67491407-f73d-577b-9b50-8179a7c68029]"]
+dependency = []
+type = "not_on_latest"
+version = "0.3.19"
+latest = "0.4.0"

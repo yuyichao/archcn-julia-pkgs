@@ -4,7 +4,7 @@ uuid = "3254fc65-9028-534d-aa9d-d76d128babc6"
 is_jll = true
 
 [Status]
-version = "0.10.12+0"
+version = "0.10.13+0"
 
 [JLL.products]
 library = ["libaws_c_http", "libaws_c_http_jq"]
