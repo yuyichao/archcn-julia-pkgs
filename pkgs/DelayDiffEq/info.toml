@@ -5,9 +5,16 @@ uuid = "bcd4f6db-9728-5f36-b5f7-82caef46ccdb"
 [Status]
 version = "5.67.1"
 
+[[Issues."5.70.0"]]
+type = "missing_deps"
+
+    [[Issues."5.70.0".weak_deps]]
+    name = "StochasticDiffEqCore"
+    uuid = "19c5a474-6cd1-4a5f-be79-46dc34e54d7f"
+
 [[Issues."5.67.1"]]
 dependent = []
 dependency = ["OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]"]
 type = "not_on_latest"
 version = "5.67.1"
-latest = "5.69.0"
+latest = "5.70.0"

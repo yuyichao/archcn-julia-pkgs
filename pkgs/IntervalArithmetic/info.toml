@@ -5,6 +5,17 @@ uuid = "d1acc4aa-44c8-5952-acd4-ba5d80a2a253"
 [Status]
 version = "1.0.3"
 
+[[Issues."1.0.4"]]
+type = "missing_deps"
+
+    [[Issues."1.0.4".deps]]
+    name = "CoreMath"
+    uuid = "b7a15901-be09-4a0e-87d2-2e66b0e09b5a"
+
+    [[Issues."1.0.4".weak_deps]]
+    name = "Arblib"
+    uuid = "fb37089c-8514-4489-9461-98f9c8763369"
+
 [[Issues."1.0.3"]]
 type = "missing_deps"
 

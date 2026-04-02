@@ -3,23 +3,23 @@ name = "CliqueTrees"
 uuid = "60701a23-6482-424a-84db-faee86b9b1f8"
 
 [Status]
-version = "1.18.1"
+version = "1.19.0"
 
-[[Issues."1.18.1"]]
+[[Issues."1.19.0"]]
 type = "missing_deps"
 
-    [[Issues."1.18.1".weak_deps]]
+    [[Issues."1.19.0".weak_deps]]
     name = "Catlab"
     uuid = "134e5e36-593f-5add-ad60-77f754baafbe"
-    [[Issues."1.18.1".weak_deps]]
+    [[Issues."1.19.0".weak_deps]]
     name = "FlowCutterPACE17_jll"
     uuid = "008204e2-cd5c-5c6d-9360-d31f32b5f6c2"
-    [[Issues."1.18.1".weak_deps]]
+    [[Issues."1.19.0".weak_deps]]
     name = "KaHyPar"
     uuid = "2a6221f6-aa48-11e9-3542-2d9e0ef01880"
-    [[Issues."1.18.1".weak_deps]]
+    [[Issues."1.19.0".weak_deps]]
     name = "Laplacians"
     uuid = "6f8e5838-0efe-5de0-80a3-5fb4f8dbb1de"
-    [[Issues."1.18.1".weak_deps]]
+    [[Issues."1.19.0".weak_deps]]
     name = "Metis"
     uuid = "2679e427-3c69-5b7f-982b-ece356f1e94b"

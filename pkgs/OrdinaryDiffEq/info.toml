@@ -7,7 +7,7 @@ version = "6.105.0"
 
 [[Issues."6.105.0"]]
 dependent = []
-dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]"]
+dependency = ["OrdinaryDiffEqBDF [6ad6398a-0878-4a85-9266-38940aa047c8]", "OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]", "OrdinaryDiffEqExtrapolation [becaefa8-8ca2-5cf9-886d-c06f3d2bd2c4]", "OrdinaryDiffEqFIRK [5960d6e9-dd7a-4743-88e7-cf307b64f125]", "OrdinaryDiffEqLowStorageRK [b0944070-b475-4768-8dec-fb6eb410534d]", "OrdinaryDiffEqNordsieck [c9986a66-5c92-4813-8696-a7ec84c806c8]"]
 type = "not_on_latest"
 version = "6.105.0"
-latest = "6.108.0"
+latest = "6.109.0"
