@@ -8,3 +8,6 @@ version = "2.10.3+0"
 
 [JLL.products]
 library = ["liblzo2"]
+
+[[Issues."2.10.3+0"]]
+type = "not_needed"

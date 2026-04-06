@@ -5,6 +5,13 @@ uuid = "b9b8584e-8fd3-41f9-ad0c-7255d428e418"
 [Status]
 version = "1.4.2"
 
+[[Issues."1.4.2"]]
+dependent = ["LanguageServer [2b0e0bc5-e4fd-59b4-8912-456d1b03d8d7]"]
+dependency = []
+type = "not_on_latest"
+version = "1.4.2"
+latest = "3.0.1"
+
 [[Issues."3.0.0"]]
 type = "missing_deps"
 

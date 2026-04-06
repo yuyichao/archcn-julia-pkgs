@@ -5,10 +5,17 @@ uuid = "be0214bd-f91f-a760-ac4e-3421ce2b2da0"
 [Status]
 version = "2.11.2"
 
-[[Issues."2.17.0"]]
+[[Issues."2.16.0"]]
 type = "missing_deps"
 
-    [[Issues."2.17.0".weak_deps]]
+    [[Issues."2.16.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
+[[Issues."2.21.0"]]
+type = "missing_deps"
+
+    [[Issues."2.21.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
@@ -27,15 +34,15 @@ type = "missing_deps"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 [[Issues."2.11.2"]]
 dependent = []
-dependency = ["PreallocationTools [d236fae5-4411-538c-8e31-a6e3d9e00b46]"]
+dependency = ["FunctionWrappersWrappers [77dc65aa-8811-40c2-897b-53d922fa7daf]", "PreallocationTools [d236fae5-4411-538c-8e31-a6e3d9e00b46]"]
 type = "not_on_latest"
 version = "2.11.2"
-latest = "2.19.0"
+latest = "2.21.0"
 
-[[Issues."2.12.0"]]
+[[Issues."2.20.0"]]
 type = "missing_deps"
 
-    [[Issues."2.12.0".weak_deps]]
+    [[Issues."2.20.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
@@ -53,10 +60,24 @@ type = "missing_deps"
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
-[[Issues."2.16.0"]]
+[[Issues."2.19.0"]]
 type = "missing_deps"
 
-    [[Issues."2.16.0".weak_deps]]
+    [[Issues."2.19.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
+[[Issues."2.17.0"]]
+type = "missing_deps"
+
+    [[Issues."2.17.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
+[[Issues."2.12.0"]]
+type = "missing_deps"
+
+    [[Issues."2.12.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
@@ -64,12 +85,5 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."2.15.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-
-[[Issues."2.19.0"]]
-type = "missing_deps"
-
-    [[Issues."2.19.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"

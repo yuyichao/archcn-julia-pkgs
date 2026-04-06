@@ -7,7 +7,7 @@ version = "1.12.0"
 
 [[Issues."1.12.0"]]
 dependent = ["BoundaryValueDiffEqCore [56b672f2-a5fe-4263-ab2d-da677488eb3a]", "NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]"]
-dependency = []
+dependency = ["NonlinearSolveBase [be0214bd-f91f-a760-ac4e-3421ce2b2da0]"]
 type = "not_on_latest"
 version = "1.12.0"
-latest = "2.0.0"
+latest = "2.1.0"
