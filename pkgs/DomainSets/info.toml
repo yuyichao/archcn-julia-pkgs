@@ -4,3 +4,24 @@ uuid = "5b8099bc-c8ec-5219-889f-1d9e522a28bf"
 
 [Status]
 version = "0.7.16"
+
+[[Issues."0.7.18"]]
+type = "missing_deps"
+
+    [[Issues."0.7.18".deps]]
+    name = "FunctionMaps"
+    uuid = "a85aefff-f8ca-4649-a888-c8e5398bc76c"
+
+[[Issues."0.7.17"]]
+type = "missing_deps"
+
+    [[Issues."0.7.17".deps]]
+    name = "FunctionMaps"
+    uuid = "a85aefff-f8ca-4649-a888-c8e5398bc76c"
+
+[[Issues."0.8.0"]]
+type = "missing_deps"
+
+    [[Issues."0.8.0".deps]]
+    name = "FunctionMaps"
+    uuid = "a85aefff-f8ca-4649-a888-c8e5398bc76c"

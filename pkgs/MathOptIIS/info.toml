@@ -3,11 +3,4 @@ name = "MathOptIIS"
 uuid = "8c4f8055-bd93-4160-a86b-a0c04941dbff"
 
 [Status]
-version = "0.1.2"
-
-[[Issues."0.1.2"]]
-dependent = ["HiGHS [87dc4568-4c63-4d18-b0c0-bb2238e4078b]"]
-dependency = []
-type = "not_on_latest"
-version = "0.1.2"
-latest = "0.2.0"
+version = "0.2.0"
