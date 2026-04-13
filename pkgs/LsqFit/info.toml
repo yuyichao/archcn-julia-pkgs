@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.15.1"
+
+[[Issues."0.15.1"]]
+dependent = []
+dependency = ["NLSolversBase [d41bc354-129a-5804-8e4c-c37616107c6c]"]
+type = "not_on_latest"
+version = "0.15.1"
+latest = "0.16.0"

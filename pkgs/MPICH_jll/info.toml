@@ -15,4 +15,4 @@ dependent = ["HDF5_jll [0234f1f7-429e-5d53-9886-15a909be8d59]", "HYPRE_jll [0a60
 dependency = ["Hwloc_jll [e33a78d0-f292-5ffc-b300-72abe9b543c8]"]
 type = "not_on_latest"
 version = "4.3.2+0"
-latest = "5.0.0+0"
+latest = "5.0.1+0"

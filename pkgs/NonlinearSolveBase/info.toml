@@ -12,6 +12,13 @@ type = "missing_deps"
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
+[[Issues."2.24.0"]]
+type = "missing_deps"
+
+    [[Issues."2.24.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
 [[Issues."2.21.0"]]
 type = "missing_deps"
 
@@ -37,7 +44,7 @@ dependent = []
 dependency = ["FunctionWrappersWrappers [77dc65aa-8811-40c2-897b-53d922fa7daf]", "PreallocationTools [d236fae5-4411-538c-8e31-a6e3d9e00b46]"]
 type = "not_on_latest"
 version = "2.11.2"
-latest = "2.22.0"
+latest = "2.24.0"
 
 [[Issues."2.20.0"]]
 type = "missing_deps"
@@ -50,6 +57,13 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."2.14.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
+[[Issues."2.23.0"]]
+type = "missing_deps"
+
+    [[Issues."2.23.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
