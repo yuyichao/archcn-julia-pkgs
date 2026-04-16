@@ -3,47 +3,47 @@ name = "LinearSolve"
 uuid = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
 
 [Status]
-version = "3.73.0"
+version = "3.75.0"
 
-[[Issues."3.73.0"]]
+[[Issues."3.75.0"]]
 type = "missing_deps"
 
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "AMDGPU"
     uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "AlgebraicMultigrid"
     uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "CUDSS"
     uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "CUSOLVERRF"
     uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "Elemental"
     uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "Ginkgo"
     uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "Metal"
     uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "PETSc"
     uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "ParU_jll"
     uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "Pardiso"
     uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."3.73.0".weak_deps]]
+    [[Issues."3.75.0".weak_deps]]
     name = "blis_jll"
     uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"

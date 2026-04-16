@@ -6,4 +6,10 @@ uuid = "09f84164-cd44-5f33-b23f-e6b0d136a0d5"
 version = "0.11.6"
 
 [[Issues."0.11.6"]]
+dependent = []
+dependency = ["Roots [f2b01f46-fcfa-551c-844a-d8ac1e96c665]"]
+type = "not_on_latest"
+version = "0.11.6"
+latest = "0.11.7"
+[[Issues."0.11.6"]]
 type = "not_needed"
