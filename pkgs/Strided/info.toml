@@ -3,17 +3,17 @@ name = "Strided"
 uuid = "5e0ebb24-38b0-5f93-81fe-25c709ecae67"
 
 [Status]
-version = "2.3.6"
+version = "2.4.0"
 
-[[Issues."2.3.6"]]
+[[Issues."2.4.0"]]
 type = "missing_deps"
 
-    [[Issues."2.3.6".weak_deps]]
+    [[Issues."2.4.0".weak_deps]]
     name = "AMDGPU"
     uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."2.3.6".weak_deps]]
-    name = "CUDA"
-    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-    [[Issues."2.3.6".weak_deps]]
+    [[Issues."2.4.0".weak_deps]]
+    name = "CUDACore"
+    uuid = "bd0ed864-bdfe-4181-a5ed-ce625a5fdea2"
+    [[Issues."2.4.0".weak_deps]]
     name = "JLArrays"
     uuid = "27aeb0d3-9eb9-45fb-866b-73c2ecf80fcb"

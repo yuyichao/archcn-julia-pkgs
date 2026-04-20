@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "5.1.0"
+
+[[Issues."5.1.0"]]
+dependent = []
+dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]"]
+type = "not_on_latest"
+version = "5.1.0"
+latest = "5.2.0"

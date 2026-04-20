@@ -12,3 +12,14 @@ type = "missing_deps"
     [[Issues."0.44.0".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+
+[[Issues."0.45.0"]]
+type = "missing_deps"
+
+    [[Issues."0.45.0".deps]]
+    name = "StochasticDiffEqHighOrder"
+    uuid = "0520c28c-50fd-4d16-9c96-902fc80b3bab"
+
+    [[Issues."0.45.0".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
