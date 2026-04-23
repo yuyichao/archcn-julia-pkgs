@@ -12,7 +12,7 @@ type = "missing_deps"
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 [[Issues."2.3.0"]]
-dependent = ["BloqadeSchema [a64e8dd8-bb5a-11ec-104d-290571fc3a8d]", "HypothesisTests [09f84164-cd44-5f33-b23f-e6b0d136a0d5]", "PhysicalConstants [5ad8b20f-a522-5ce9-bfc9-ddf1d5bda6ab]"]
+dependent = ["BloqadeSchema [a64e8dd8-bb5a-11ec-104d-290571fc3a8d]", "HypothesisTests [09f84164-cd44-5f33-b23f-e6b0d136a0d5]"]
 dependency = []
 type = "not_on_latest"
 version = "2.3.0"
