@@ -6,10 +6,10 @@ uuid = "3263718b-31ed-49cf-8a0f-35a466e8af96"
 version = "1.5.0"
 
 [[Issues."1.5.0"]]
-dependent = []
-dependency = ["OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]"]
+dependent = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]"]
+dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 type = "not_on_latest"
 version = "1.5.0"
-latest = "1.11.0"
+latest = "2.0.0"
 [[Issues."1.5.0"]]
 type = "not_needed"

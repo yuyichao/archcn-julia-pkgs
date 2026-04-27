@@ -6,8 +6,10 @@ uuid = "e0540318-69ee-4070-8777-9e2de6de23de"
 version = "1.11.0"
 
 [[Issues."1.11.0"]]
-dependent = []
-dependency = ["FastBroadcast [7034ab61-46d4-4ed7-9d0f-46aef9175898]", "OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]"]
+dependent = ["OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed]"]
+dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "FastBroadcast [7034ab61-46d4-4ed7-9d0f-46aef9175898]", "OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 type = "not_on_latest"
 version = "1.11.0"
-latest = "1.15.0"
+latest = "2.0.0"
+[[Issues."1.11.0"]]
+type = "not_needed"

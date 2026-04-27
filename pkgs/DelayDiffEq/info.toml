@@ -5,6 +5,13 @@ uuid = "bcd4f6db-9728-5f36-b5f7-82caef46ccdb"
 [Status]
 version = "5.67.1"
 
+[[Issues."5.67.1"]]
+dependent = ["DifferentialEquations [0c46a032-eb83-5123-abaf-570d42b7fbaa]"]
+dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "FastBroadcast [7034ab61-46d4-4ed7-9d0f-46aef9175898]", "OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "OrdinaryDiffEqDefault [50262376-6c5a-4cf5-baba-aaf4f84d72d7]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]", "OrdinaryDiffEqFunctionMap [d3585ca7-f5d3-4ba6-8057-292ed1abd90f]", "OrdinaryDiffEqNonlinearSolve [127b3ac7-2247-4354-8eb6-78cf4e7c58e8]", "OrdinaryDiffEqRosenbrock [43230ef6-c299-4910-a778-202eb28ce4ce]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
+type = "not_on_latest"
+version = "5.67.1"
+latest = "6.0.0"
+
 [[Issues."5.70.0"]]
 type = "missing_deps"
 
@@ -47,9 +54,9 @@ type = "missing_deps"
     name = "StochasticDiffEqCore"
     uuid = "19c5a474-6cd1-4a5f-be79-46dc34e54d7f"
 
-[[Issues."5.67.1"]]
-dependent = []
-dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "FastBroadcast [7034ab61-46d4-4ed7-9d0f-46aef9175898]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]"]
-type = "not_on_latest"
-version = "5.67.1"
-latest = "5.74.1"
+[[Issues."6.0.0"]]
+type = "missing_deps"
+
+    [[Issues."6.0.0".weak_deps]]
+    name = "StochasticDiffEqCore"
+    uuid = "19c5a474-6cd1-4a5f-be79-46dc34e54d7f"
