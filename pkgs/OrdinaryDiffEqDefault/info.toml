@@ -10,4 +10,4 @@ dependent = ["DelayDiffEq [bcd4f6db-9728-5f36-b5f7-82caef46ccdb]", "OrdinaryDiff
 dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "OrdinaryDiffEqBDF [6ad6398a-0878-4a85-9266-38940aa047c8]", "OrdinaryDiffEqCore [bbf590c4-e513-4bbe-9b18-05decba2e5d8]", "OrdinaryDiffEqRosenbrock [43230ef6-c299-4910-a778-202eb28ce4ce]", "OrdinaryDiffEqTsit5 [b1df2697-797e-41e3-8120-5422d3b24e4a]", "OrdinaryDiffEqVerner [79d7bb75-1356-48c1-b8c0-6832512096c2]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 type = "not_on_latest"
 version = "1.11.0"
-latest = "2.0.0"
+latest = "2.1.0"

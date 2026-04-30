@@ -3,4 +3,7 @@ name = "JumpProcesses"
 uuid = "ccbc3e58-028d-4f4c-8cd5-9ae44345cda5"
 
 [Status]
-version = "9.26.0"
+version = "9.28.0"
+
+[[Issues."9.28.0"]]
+type = "not_needed"

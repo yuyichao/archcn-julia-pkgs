@@ -7,8 +7,8 @@ required = true
 version = "5.1.0"
 
 [[Issues."5.1.0"]]
-dependent = ["DifferentialEquations [0c46a032-eb83-5123-abaf-570d42b7fbaa]"]
+dependent = []
 dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]"]
 type = "not_on_latest"
 version = "5.1.0"
-latest = "6.0.0"
+latest = "6.1.0"
