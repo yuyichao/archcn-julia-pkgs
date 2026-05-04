@@ -13,4 +13,3 @@ version = "5.19.0"
 latest = "5.23.0"
 [[Issues."5.19.0"]]
 type = "not_needed"
-has_weak = true
