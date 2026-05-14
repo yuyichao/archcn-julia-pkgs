@@ -45,6 +45,16 @@ type = "missing_deps"
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 
+[[Issues."3.11.0"]]
+type = "missing_deps"
+
+    [[Issues."3.11.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."3.11.0".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
 [[Issues."3.9.0"]]
 type = "missing_deps"
 
@@ -69,7 +79,7 @@ dependent = ["BloqadeODE [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe5]", "BoundaryValue
 dependency = ["FunctionWrappersWrappers [77dc65aa-8811-40c2-897b-53d922fa7daf]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]"]
 type = "not_on_latest"
 version = "2.153.1"
-latest = "3.9.1"
+latest = "3.11.0"
 
 [[Issues."2.155.0"]]
 type = "missing_deps"
@@ -198,6 +208,16 @@ type = "missing_deps"
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
     [[Issues."3.4.0".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
+[[Issues."3.10.0"]]
+type = "missing_deps"
+
+    [[Issues."3.10.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."3.10.0".weak_deps]]
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 

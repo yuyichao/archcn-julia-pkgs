@@ -5,9 +5,23 @@ uuid = "c0aeaf25-5076-4817-a8d5-81caf7dfa961"
 [Status]
 version = "1.18.0"
 
+[[Issues."1.20.0"]]
+type = "missing_deps"
+
+    [[Issues."1.20.0".deps]]
+    name = "SafeTestsets"
+    uuid = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
+
 [[Issues."1.19.0"]]
 type = "missing_deps"
 
     [[Issues."1.19.0".deps]]
+    name = "SafeTestsets"
+    uuid = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
+
+[[Issues."1.21.0"]]
+type = "missing_deps"
+
+    [[Issues."1.21.0".deps]]
     name = "SafeTestsets"
     uuid = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
