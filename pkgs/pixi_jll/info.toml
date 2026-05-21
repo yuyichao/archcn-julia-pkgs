@@ -4,7 +4,7 @@ uuid = "4d7b5844-a134-5dcd-ac86-c8f19cd51bed"
 is_jll = true
 
 [Status]
-version = "0.41.3+0"
+version = "0.63.2+0"
 
 [JLL.products]
 executable = ["pixi"]

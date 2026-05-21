@@ -6,4 +6,10 @@ uuid = "64ca27bc-2ba2-4a57-88aa-44e436879224"
 version = "1.8.0"
 
 [[Issues."1.8.0"]]
+dependent = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]"]
+dependency = []
+type = "not_on_latest"
+version = "1.8.0"
+latest = "2.0.0"
+[[Issues."1.8.0"]]
 type = "not_needed"
