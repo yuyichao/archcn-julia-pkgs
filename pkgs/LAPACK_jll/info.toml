@@ -8,3 +8,7 @@ version = "3.12.1+1"
 
 [JLL.products]
 library = ["liblapack"]
+
+[[Issues."3.12.1+1"]]
+type = "not_needed"
+has_weak = true
