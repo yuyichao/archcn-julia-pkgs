@@ -10,4 +10,4 @@ dependent = ["ForwardDiff [f6369f11-7733-5829-9624-2563aa707210]", "ReverseDiff 
 dependency = []
 type = "not_on_latest"
 version = "0.3.29"
-latest = "1.0.0"
+latest = "1.0.1"
