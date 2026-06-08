@@ -10,4 +10,4 @@ dependent = []
 dependency = ["GR_jll [d2c73de3-f751-5644-a686-071e5b155ba9]"]
 type = "not_on_latest"
 version = "0.73.22"
-latest = "0.73.24"
+latest = "0.73.25"
