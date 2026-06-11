@@ -48,10 +48,10 @@ type = "missing_deps"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 [[Issues."2.11.2"]]
 dependent = []
-dependency = ["FunctionWrappersWrappers [77dc65aa-8811-40c2-897b-53d922fa7daf]", "PreallocationTools [d236fae5-4411-538c-8e31-a6e3d9e00b46]"]
+dependency = ["FunctionWrappersWrappers [77dc65aa-8811-40c2-897b-53d922fa7daf]", "PreallocationTools [d236fae5-4411-538c-8e31-a6e3d9e00b46]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 type = "not_on_latest"
 version = "2.11.2"
-latest = "2.30.3"
+latest = "2.31.0"
 
 [[Issues."2.20.0"]]
 type = "missing_deps"
@@ -85,6 +85,13 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."2.26.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
+[[Issues."2.31.0"]]
+type = "missing_deps"
+
+    [[Issues."2.31.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 

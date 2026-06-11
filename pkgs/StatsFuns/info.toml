@@ -10,4 +10,4 @@ dependent = ["HypothesisTests [09f84164-cd44-5f33-b23f-e6b0d136a0d5]", "Makie [e
 dependency = []
 type = "not_on_latest"
 version = "1.5.2"
-latest = "2.0.1"
+latest = "2.1.0"

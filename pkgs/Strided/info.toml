@@ -3,4 +3,14 @@ name = "Strided"
 uuid = "5e0ebb24-38b0-5f93-81fe-25c709ecae67"
 
 [Status]
-version = "2.5.0"
+version = "2.6.0"
+
+[[Issues."2.6.0"]]
+type = "missing_deps"
+
+    [[Issues."2.6.0".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."2.6.0".weak_deps]]
+    name = "cuBLAS"
+    uuid = "182d3088-87b7-4494-8cad-fc6afaa545bc"
