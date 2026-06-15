@@ -26,3 +26,17 @@ type = "missing_deps"
     [[Issues."0.5.1".weak_deps]]
     name = "Tyler"
     uuid = "e170d443-b9d6-418a-9ee8-061e966341ef"
+
+[[Issues."0.7.0"]]
+type = "missing_deps"
+
+    [[Issues."0.7.0".deps]]
+    name = "Gabs"
+    uuid = "0eb812ee-a11f-4f5e-b8d4-bb8a44f06f50"
+    [[Issues."0.7.0".deps]]
+    name = "Genqo"
+    uuid = "75f83073-4d85-4669-9473-9dff7d7e5b78"
+
+    [[Issues."0.7.0".weak_deps]]
+    name = "Tyler"
+    uuid = "e170d443-b9d6-418a-9ee8-061e966341ef"
