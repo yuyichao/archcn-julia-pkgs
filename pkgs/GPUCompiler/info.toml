@@ -3,14 +3,14 @@ name = "GPUCompiler"
 uuid = "61eb1bfa-7361-4325-ad38-22787b887f55"
 
 [Status]
-version = "1.21.0"
+version = "1.22.1"
 
-[[Issues."1.21.0"]]
+[[Issues."1.22.1"]]
 type = "missing_deps"
 
-    [[Issues."1.21.0".weak_deps]]
+    [[Issues."1.22.1".weak_deps]]
     name = "LLVMDowngrader_jll"
     uuid = "f52de702-fb25-5922-94ba-81dd59b07444"
-    [[Issues."1.21.0".weak_deps]]
+    [[Issues."1.22.1".weak_deps]]
     name = "NVPTX_LLVM_Backend_jll"
     uuid = "ef6e0fe3-e6ef-59c0-bde6-4989574699e0"

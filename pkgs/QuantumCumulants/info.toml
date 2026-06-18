@@ -5,3 +5,17 @@ required = true
 
 [Status]
 version = "0.4.3"
+
+[[Issues."0.5.1"]]
+type = "missing_deps"
+
+    [[Issues."0.5.1".deps]]
+    name = "ModelingToolkitBase"
+    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
+
+[[Issues."0.5.0"]]
+type = "missing_deps"
+
+    [[Issues."0.5.0".deps]]
+    name = "ModelingToolkitBase"
+    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"

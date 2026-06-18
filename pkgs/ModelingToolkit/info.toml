@@ -46,6 +46,8 @@ type = "missing_deps"
     [[Issues."10.32.1".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+[[Issues."10.32.1"]]
+type = "not_needed"
 
 [[Issues."11.10.0"]]
 type = "missing_deps"
