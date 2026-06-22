@@ -6,8 +6,8 @@ uuid = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
 version = "1.5.2"
 
 [[Issues."1.5.2"]]
-dependent = ["HypothesisTests [09f84164-cd44-5f33-b23f-e6b0d136a0d5]", "Makie [ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a]"]
+dependent = ["HypothesisTests [09f84164-cd44-5f33-b23f-e6b0d136a0d5]"]
 dependency = []
 type = "not_on_latest"
 version = "1.5.2"
-latest = "2.1.0"
+latest = "2.2.0"

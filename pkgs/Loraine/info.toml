@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.2.5"
+
+[[Issues."0.2.6"]]
+type = "missing_deps"
+
+    [[Issues."0.2.6".deps]]
+    name = "DocumenterTools"
+    uuid = "35a29f4d-8980-5a13-9543-d66fff28ecb8"
