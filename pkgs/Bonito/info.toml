@@ -4,3 +4,17 @@ uuid = "824d6782-a2ef-11e9-3a09-e5662e0c26f8"
 
 [Status]
 version = "4.2.0"
+
+[[Issues."5.0.0"]]
+type = "missing_deps"
+
+    [[Issues."5.0.0".deps]]
+    name = "ANSIColoredPrinters"
+    uuid = "a4c015fc-c6ff-483c-b24f-f7ea428134e9"
+
+    [[Issues."5.0.0".weak_deps]]
+    name = "Documenter"
+    uuid = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+    [[Issues."5.0.0".weak_deps]]
+    name = "MarkdownAST"
+    uuid = "d0879d2d-cac2-40c8-9cee-1863dc0c7391"
