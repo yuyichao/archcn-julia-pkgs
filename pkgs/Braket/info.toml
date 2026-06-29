@@ -4,3 +4,10 @@ uuid = "19504a0f-b47d-4348-9127-acc6cc69ef67"
 
 [Status]
 version = "0.9.5"
+
+[[Issues."0.9.5"]]
+dependent = ["BloqadeSchema [a64e8dd8-bb5a-11ec-104d-290571fc3a8d]"]
+dependency = []
+type = "not_on_latest"
+version = "0.9.5"
+latest = "0.10.0"
