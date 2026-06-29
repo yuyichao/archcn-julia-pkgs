@@ -10,4 +10,4 @@ dependent = ["OpenCL [08131aa3-fb12-5dee-8b74-c09406e224a2]"]
 dependency = []
 type = "not_on_latest"
 version = "0.5.9"
-latest = "1.0.0"
+latest = "1.0.1"
