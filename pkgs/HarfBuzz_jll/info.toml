@@ -8,3 +8,10 @@ version = "8.5.1+0"
 
 [JLL.products]
 library = ["libharfbuzz", "libharfbuzz_gobject", "libharfbuzz_subset"]
+
+[[Issues."8.5.1+0"]]
+dependent = ["Pango_jll [36c8627f-9965-5494-a995-c6b170f724f3]", "libass_jll [0ac62f75-1d6f-5e53-bd7c-93b484bb37c0]"]
+dependency = []
+type = "not_on_latest"
+version = "8.5.1+0"
+latest = "100.14002.1+0"
