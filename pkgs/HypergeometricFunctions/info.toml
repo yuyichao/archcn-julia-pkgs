@@ -4,3 +4,10 @@ uuid = "34004b35-14d8-5ef3-9330-4cdb6864b03a"
 
 [Status]
 version = "0.3.28"
+
+[[Issues."0.3.29"]]
+type = "missing_deps"
+
+    [[Issues."0.3.29".deps]]
+    name = "Gamma"
+    uuid = "a0844989-3bd2-4988-8bea-c9407ab0941b"

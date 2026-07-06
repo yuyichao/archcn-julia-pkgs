@@ -3,11 +3,14 @@ name = "PrettyTables"
 uuid = "08abe8d2-0d0c-5749-adfa-8a2ac140af0d"
 
 [Status]
-version = "3.3.2"
+version = "3.4.0"
 
-[[Issues."3.3.2"]]
+[[Issues."3.4.0"]]
 type = "missing_deps"
 
-    [[Issues."3.3.2".weak_deps]]
+    [[Issues."3.4.0".weak_deps]]
     name = "Typstry"
     uuid = "f0ed7684-a786-439e-b1e3-3b82803b501e"
+    [[Issues."3.4.0".weak_deps]]
+    name = "XLSX"
+    uuid = "fdbf4ff8-1666-58a4-91e7-1b58723a45e0"

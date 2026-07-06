@@ -5,6 +5,13 @@ uuid = "43230ef6-c299-4910-a778-202eb28ce4ce"
 [Status]
 version = "1.21.0"
 
+[[Issues."2.2.0"]]
+type = "missing_deps"
+
+    [[Issues."2.2.0".deps]]
+    name = "OrdinaryDiffEqRosenbrockTableaus"
+    uuid = "b4bd8bb3-f80f-41d2-9b21-73a655b304b9"
+
 [[Issues."2.0.0"]]
 type = "missing_deps"
 
@@ -26,10 +33,10 @@ type = "missing_deps"
     name = "OrdinaryDiffEqRosenbrockTableaus"
     uuid = "b4bd8bb3-f80f-41d2-9b21-73a655b304b9"
 
-[[Issues."2.2.0"]]
+[[Issues."2.3.2"]]
 type = "missing_deps"
 
-    [[Issues."2.2.0".deps]]
+    [[Issues."2.3.2".deps]]
     name = "OrdinaryDiffEqRosenbrockTableaus"
     uuid = "b4bd8bb3-f80f-41d2-9b21-73a655b304b9"
 
