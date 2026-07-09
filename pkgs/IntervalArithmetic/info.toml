@@ -49,14 +49,14 @@ type = "missing_deps"
     name = "Arblib"
     uuid = "fb37089c-8514-4489-9461-98f9c8763369"
 
-[[Issues."1.0.8"]]
+[[Issues."1.0.10"]]
 type = "missing_deps"
 
-    [[Issues."1.0.8".deps]]
+    [[Issues."1.0.10".deps]]
     name = "CoreMath"
     uuid = "b7a15901-be09-4a0e-87d2-2e66b0e09b5a"
 
-    [[Issues."1.0.8".weak_deps]]
+    [[Issues."1.0.10".weak_deps]]
     name = "Arblib"
     uuid = "fb37089c-8514-4489-9461-98f9c8763369"
 
@@ -68,6 +68,17 @@ type = "missing_deps"
     uuid = "b7a15901-be09-4a0e-87d2-2e66b0e09b5a"
 
     [[Issues."1.0.5".weak_deps]]
+    name = "Arblib"
+    uuid = "fb37089c-8514-4489-9461-98f9c8763369"
+
+[[Issues."1.0.8"]]
+type = "missing_deps"
+
+    [[Issues."1.0.8".deps]]
+    name = "CoreMath"
+    uuid = "b7a15901-be09-4a0e-87d2-2e66b0e09b5a"
+
+    [[Issues."1.0.8".weak_deps]]
     name = "Arblib"
     uuid = "fb37089c-8514-4489-9461-98f9c8763369"
 
