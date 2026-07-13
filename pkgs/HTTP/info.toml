@@ -5,6 +5,13 @@ uuid = "cd3eb016-35fb-5094-929b-558a96fad6f3"
 [Status]
 version = "1.11.0"
 
+[[Issues."2.5.5"]]
+type = "missing_deps"
+
+    [[Issues."2.5.5".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
 [[Issues."2.5.2"]]
 type = "missing_deps"
 

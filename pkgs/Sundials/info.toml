@@ -8,7 +8,7 @@ version = "5.1.0"
 
 [[Issues."5.1.0"]]
 dependent = []
-dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]", "DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]"]
+dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]", "DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 type = "not_on_latest"
 version = "5.1.0"
-latest = "6.2.2"
+latest = "6.4.2"

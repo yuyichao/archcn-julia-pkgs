@@ -3,7 +3,7 @@ name = "EllipsisNotation"
 uuid = "da5c29d0-fa7d-589e-88eb-ea29b0a81949"
 
 [Status]
-version = "1.10.1"
+version = "1.10.3"
 
-[[Issues."1.10.1"]]
+[[Issues."1.10.3"]]
 type = "not_needed"

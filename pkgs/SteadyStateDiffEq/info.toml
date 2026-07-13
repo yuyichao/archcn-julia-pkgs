@@ -10,6 +10,6 @@ dependent = []
 dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]"]
 type = "not_on_latest"
 version = "2.11.0"
-latest = "2.11.1"
+latest = "2.11.3"
 [[Issues."2.11.0"]]
 type = "not_needed"
