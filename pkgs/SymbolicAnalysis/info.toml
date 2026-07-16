@@ -10,7 +10,7 @@ dependent = []
 dependency = ["SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
 type = "not_on_latest"
 version = "0.3.6"
-latest = "0.3.8"
+latest = "0.3.9"
 [[Issues."0.3.6"]]
 type = "not_needed"
 has_weak = true

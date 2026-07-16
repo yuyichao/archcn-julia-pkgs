@@ -10,6 +10,6 @@ dependent = []
 dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]", "DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "Graphs [86223c79-3864-5bf0-83f7-82e725a168b6]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 type = "not_on_latest"
 version = "9.29.0"
-latest = "9.29.1"
+latest = "9.29.2"
 [[Issues."9.29.0"]]
 type = "not_needed"

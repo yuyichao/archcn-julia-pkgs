@@ -3,11 +3,4 @@ name = "JuliaInterpreter"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
 
 [Status]
-version = "0.10.12"
-
-[[Issues."0.10.12"]]
-dependent = ["LoweredCodeUtils [6f1432cf-f94c-5a45-995e-cdbf5db27b0b]", "Revise [295af30f-e4ad-537b-8983-00126c2a3abe]"]
-dependency = []
-type = "not_on_latest"
-version = "0.10.12"
-latest = "0.11.2"
+version = "0.11.2"

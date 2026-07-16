@@ -5,6 +5,23 @@ uuid = "61eb1bfa-7361-4325-ad38-22787b887f55"
 [Status]
 version = "1.23.0"
 
+[[Issues."2.0.0"]]
+type = "missing_deps"
+
+    [[Issues."2.0.0".deps]]
+    name = "CompilerCaching"
+    uuid = "9db33cc3-5358-4881-8759-fa4194144afd"
+
+    [[Issues."2.0.0".weak_deps]]
+    name = "AMDGPU_LLVM_Backend_jll"
+    uuid = "cc5c0156-bd05-5a77-8a68-bb0aafb29019"
+    [[Issues."2.0.0".weak_deps]]
+    name = "LLVMDowngrader_jll"
+    uuid = "f52de702-fb25-5922-94ba-81dd59b07444"
+    [[Issues."2.0.0".weak_deps]]
+    name = "NVPTX_LLVM_Backend_jll"
+    uuid = "ef6e0fe3-e6ef-59c0-bde6-4989574699e0"
+
 [[Issues."1.23.0"]]
 type = "missing_deps"
 
@@ -15,5 +32,63 @@ type = "missing_deps"
     name = "LLVMDowngrader_jll"
     uuid = "f52de702-fb25-5922-94ba-81dd59b07444"
     [[Issues."1.23.0".weak_deps]]
+    name = "NVPTX_LLVM_Backend_jll"
+    uuid = "ef6e0fe3-e6ef-59c0-bde6-4989574699e0"
+
+[[Issues."2.0.1"]]
+type = "missing_deps"
+
+    [[Issues."2.0.1".deps]]
+    name = "CompilerCaching"
+    uuid = "9db33cc3-5358-4881-8759-fa4194144afd"
+    [[Issues."2.0.1".deps]]
+    name = "tree_sitter_gcn_jll"
+    uuid = "8b5cbfcf-8811-596e-8e87-0e51e05ee4b2"
+    [[Issues."2.0.1".deps]]
+    name = "tree_sitter_llvm_jll"
+    uuid = "44208993-ee63-5069-9443-8e43b04a9b30"
+    [[Issues."2.0.1".deps]]
+    name = "tree_sitter_ptx_jll"
+    uuid = "71e3f6e6-c059-5e7c-a2f2-d560fdad7ce5"
+    [[Issues."2.0.1".deps]]
+    name = "tree_sitter_spirv_jll"
+    uuid = "f0e86581-c468-54df-a4de-3266e11a3c86"
+
+    [[Issues."2.0.1".weak_deps]]
+    name = "AMDGPU_LLVM_Backend_jll"
+    uuid = "cc5c0156-bd05-5a77-8a68-bb0aafb29019"
+    [[Issues."2.0.1".weak_deps]]
+    name = "LLVMDowngrader_jll"
+    uuid = "f52de702-fb25-5922-94ba-81dd59b07444"
+    [[Issues."2.0.1".weak_deps]]
+    name = "NVPTX_LLVM_Backend_jll"
+    uuid = "ef6e0fe3-e6ef-59c0-bde6-4989574699e0"
+
+[[Issues."2.1.0"]]
+type = "missing_deps"
+
+    [[Issues."2.1.0".deps]]
+    name = "CompilerCaching"
+    uuid = "9db33cc3-5358-4881-8759-fa4194144afd"
+    [[Issues."2.1.0".deps]]
+    name = "tree_sitter_gcn_jll"
+    uuid = "8b5cbfcf-8811-596e-8e87-0e51e05ee4b2"
+    [[Issues."2.1.0".deps]]
+    name = "tree_sitter_llvm_jll"
+    uuid = "44208993-ee63-5069-9443-8e43b04a9b30"
+    [[Issues."2.1.0".deps]]
+    name = "tree_sitter_ptx_jll"
+    uuid = "71e3f6e6-c059-5e7c-a2f2-d560fdad7ce5"
+    [[Issues."2.1.0".deps]]
+    name = "tree_sitter_spirv_jll"
+    uuid = "f0e86581-c468-54df-a4de-3266e11a3c86"
+
+    [[Issues."2.1.0".weak_deps]]
+    name = "AMDGPU_LLVM_Backend_jll"
+    uuid = "cc5c0156-bd05-5a77-8a68-bb0aafb29019"
+    [[Issues."2.1.0".weak_deps]]
+    name = "LLVMDowngrader_jll"
+    uuid = "f52de702-fb25-5922-94ba-81dd59b07444"
+    [[Issues."2.1.0".weak_deps]]
     name = "NVPTX_LLVM_Backend_jll"
     uuid = "ef6e0fe3-e6ef-59c0-bde6-4989574699e0"
