@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.10.9"
+
+[[Issues."0.10.10"]]
+type = "missing_deps"
+
+    [[Issues."0.10.10".deps]]
+    name = "spirv2clc_jll"
+    uuid = "f0274c0c-8c8a-59f1-85b7-f7d60330c5fb"
