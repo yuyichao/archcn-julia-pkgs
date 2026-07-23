@@ -4,3 +4,10 @@ uuid = "a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f"
 
 [Status]
 version = "0.5.29"
+
+[[Issues."0.5.29"]]
+dependent = ["Groebner [0b43b601-686d-58a3-8a1c-6623616c7cd4]", "LinearOperators [5c8ed15e-5a4c-59e4-a42b-c7e8811fb125]", "Loraine [df0521af-66a0-42b3-822e-f30debbfe642]", "NonlinearSolveBase [be0214bd-f91f-a760-ac4e-3421ce2b2da0]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]", "Tulip [6dd1b50a-3aae-11e9-10b5-ef983d2400fa]"]
+dependency = []
+type = "not_on_latest"
+version = "0.5.29"
+latest = "1.1.0"
