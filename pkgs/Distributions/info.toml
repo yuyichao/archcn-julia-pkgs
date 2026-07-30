@@ -11,4 +11,4 @@ dependent = []
 dependency = ["Roots [f2b01f46-fcfa-551c-844a-d8ac1e96c665]"]
 type = "not_on_latest"
 version = "0.25.127"
-latest = "0.25.129"
+latest = "0.25.130"

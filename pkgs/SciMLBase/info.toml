@@ -537,6 +537,19 @@ type = "missing_deps"
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 
+[[Issues."3.38.0"]]
+type = "missing_deps"
+
+    [[Issues."3.38.0".weak_deps]]
+    name = "FunctionProperties"
+    uuid = "f62d2435-5019-4c03-9749-2d4c77af0cbc"
+    [[Issues."3.38.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."3.38.0".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
 [[Issues."3.1.0"]]
 type = "missing_deps"
 

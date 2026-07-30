@@ -11,3 +11,10 @@ type = "missing_deps"
     [[Issues."0.3.29".deps]]
     name = "Gamma"
     uuid = "a0844989-3bd2-4988-8bea-c9407ab0941b"
+
+[[Issues."0.3.30"]]
+type = "missing_deps"
+
+    [[Issues."0.3.30".deps]]
+    name = "Gamma"
+    uuid = "a0844989-3bd2-4988-8bea-c9407ab0941b"

@@ -8,3 +8,10 @@ version = "5.2.3+0"
 
 [JLL.products]
 library = ["libgif"]
+
+[[Issues."5.2.3+0"]]
+dependent = ["libwebp_jll [c5f90fcd-3b7e-5836-afba-fc50a0988cb2]"]
+dependency = []
+type = "not_on_latest"
+version = "5.2.3+0"
+latest = "6.1.3+0"
