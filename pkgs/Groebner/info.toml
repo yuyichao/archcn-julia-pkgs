@@ -16,6 +16,13 @@ type = "missing_deps"
 type = "not_needed"
 has_weak = true
 
+[[Issues."0.10.6"]]
+type = "missing_deps"
+
+    [[Issues."0.10.6".deps]]
+    name = "SmallCollections"
+    uuid = "2b935e18-93d6-40ac-ae34-fe54c09f00e1"
+
 [[Issues."0.10.5"]]
 type = "missing_deps"
 
