@@ -1,13 +1,13 @@
+[Status]
+version = "1.4.1"
+
+[[Issues."0.4.34"]]
+version = "0.4.34"
+type = "not_on_latest"
+latest = "1.4.1"
+dependent = ["OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed]"]
+dependency = []
+
 [Pkg]
 name = "PreallocationTools"
 uuid = "d236fae5-4411-538c-8e31-a6e3d9e00b46"
-
-[Status]
-version = "0.4.34"
-
-[[Issues."0.4.34"]]
-dependent = ["OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed]"]
-dependency = []
-type = "not_on_latest"
-version = "0.4.34"
-latest = "1.4.1"

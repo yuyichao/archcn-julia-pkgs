@@ -1,13 +1,13 @@
+[Status]
+version = "0.8.6"
+
+[[Issues."0.7.10"]]
+version = "0.7.10"
+type = "not_on_latest"
+latest = "0.8.6"
+dependent = ["SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]"]
+dependency = []
+
 [Pkg]
 name = "DSP"
 uuid = "717857b8-e6f2-59f4-9121-6e50c889abd2"
-
-[Status]
-version = "0.7.10"
-
-[[Issues."0.7.10"]]
-dependent = ["SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]"]
-dependency = []
-type = "not_on_latest"
-version = "0.7.10"
-latest = "0.8.6"

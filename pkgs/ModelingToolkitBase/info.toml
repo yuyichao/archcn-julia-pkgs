@@ -1,0 +1,6 @@
+[Status]
+version = "1.42.2"
+
+[Pkg]
+name = "ModelingToolkitBase"
+uuid = "7771a370-6774-4173-bd38-47e70ca0b839"

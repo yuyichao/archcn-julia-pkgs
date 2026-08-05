@@ -1,15 +1,45 @@
-[Pkg]
-name = "QuantumCumulants"
-uuid = "35bcea6d-e19f-57db-af74-8011de6c7255"
-required = true
-
 [Status]
-version = "0.4.3"
+version = "0.7.0"
 
-[[Issues."0.5.2"]]
+[[Issues."0.5.6"]]
 type = "missing_deps"
 
-    [[Issues."0.5.2".deps]]
+    [[Issues."0.5.6".deps]]
+    name = "ModelingToolkitBase"
+    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
+
+[[Issues."0.7.0"]]
+type = "missing_deps"
+
+    [[Issues."0.7.0".deps]]
+    name = "ModelingToolkitBase"
+    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
+
+[[Issues."0.5.0"]]
+type = "missing_deps"
+
+    [[Issues."0.5.0".deps]]
+    name = "ModelingToolkitBase"
+    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
+
+[[Issues."0.5.7"]]
+type = "missing_deps"
+
+    [[Issues."0.5.7".deps]]
+    name = "ModelingToolkitBase"
+    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
+
+[[Issues."0.5.5"]]
+type = "missing_deps"
+
+    [[Issues."0.5.5".deps]]
+    name = "ModelingToolkitBase"
+    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
+
+[[Issues."0.5.4"]]
+type = "missing_deps"
+
+    [[Issues."0.5.4".deps]]
     name = "ModelingToolkitBase"
     uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
 
@@ -34,44 +64,14 @@ type = "missing_deps"
     name = "ModelingToolkitBase"
     uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
 
-[[Issues."0.5.5"]]
+[[Issues."0.5.2"]]
 type = "missing_deps"
 
-    [[Issues."0.5.5".deps]]
+    [[Issues."0.5.2".deps]]
     name = "ModelingToolkitBase"
     uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
 
-[[Issues."0.5.0"]]
-type = "missing_deps"
-
-    [[Issues."0.5.0".deps]]
-    name = "ModelingToolkitBase"
-    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
-
-[[Issues."0.5.6"]]
-type = "missing_deps"
-
-    [[Issues."0.5.6".deps]]
-    name = "ModelingToolkitBase"
-    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
-
-[[Issues."0.5.7"]]
-type = "missing_deps"
-
-    [[Issues."0.5.7".deps]]
-    name = "ModelingToolkitBase"
-    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
-
-[[Issues."0.5.4"]]
-type = "missing_deps"
-
-    [[Issues."0.5.4".deps]]
-    name = "ModelingToolkitBase"
-    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
-
-[[Issues."0.7.0"]]
-type = "missing_deps"
-
-    [[Issues."0.7.0".deps]]
-    name = "ModelingToolkitBase"
-    uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
+[Pkg]
+name = "QuantumCumulants"
+required = true
+uuid = "35bcea6d-e19f-57db-af74-8011de6c7255"

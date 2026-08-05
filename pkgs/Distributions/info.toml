@@ -1,14 +1,14 @@
-[Pkg]
-name = "Distributions"
-uuid = "31c24e10-a181-5473-b8eb-7969acd0382f"
-required = true
-
 [Status]
-version = "0.25.127"
+version = "0.25.130"
 
 [[Issues."0.25.127"]]
+version = "0.25.127"
+type = "not_on_latest"
+latest = "0.25.130"
 dependent = []
 dependency = ["Roots [f2b01f46-fcfa-551c-844a-d8ac1e96c665]"]
-type = "not_on_latest"
-version = "0.25.127"
-latest = "0.25.130"
+
+[Pkg]
+name = "Distributions"
+required = true
+uuid = "31c24e10-a181-5473-b8eb-7969acd0382f"

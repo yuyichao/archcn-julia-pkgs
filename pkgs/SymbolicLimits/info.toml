@@ -1,13 +1,13 @@
+[Status]
+version = "1.1.5"
+
+[[Issues."0.2.3"]]
+version = "0.2.3"
+type = "not_on_latest"
+latest = "1.1.5"
+dependent = ["Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
+dependency = ["SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
+
 [Pkg]
 name = "SymbolicLimits"
 uuid = "19f23fe9-fdab-4a78-91af-e7b7767979c3"
-
-[Status]
-version = "0.2.3"
-
-[[Issues."0.2.3"]]
-dependent = ["Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
-dependency = ["SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
-type = "not_on_latest"
-version = "0.2.3"
-latest = "1.1.5"
