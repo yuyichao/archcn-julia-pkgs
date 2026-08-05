@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libdrm"]
+[Status]
+version = "2.4.134+0"
+
+[Pkg]
+is_jll = true
+name = "libdrm_jll"
+uuid = "8e53e030-5e6c-5a89-a30b-be5b7263a166"
