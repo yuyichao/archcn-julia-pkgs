@@ -1,13 +1,6 @@
-[Status]
-version = "1.20.2"
-
-[[Issues."1.19.0"]]
-version = "1.19.0"
-type = "not_on_latest"
-latest = "1.20.2"
-dependent = []
-dependency = ["PreallocationTools [d236fae5-4411-538c-8e31-a6e3d9e00b46]"]
-
 [Pkg]
 name = "LabelledArrays"
 uuid = "2ee39098-c373-598a-b85f-a56591580800"
+
+[Status]
+version = "1.20.2"

@@ -1,13 +1,6 @@
-[Status]
-version = "1.2.0"
-
-[[Issues."0.1.2"]]
-version = "0.1.2"
-type = "not_on_latest"
-latest = "1.2.0"
-dependent = []
-dependency = ["FunctionWrappersWrappers [77dc65aa-8811-40c2-897b-53d922fa7daf]"]
-
 [Pkg]
 name = "RespecializeParams"
 uuid = "9fe22ead-9e00-4db2-8b46-706a60d40f5e"
+
+[Status]
+version = "1.2.0"

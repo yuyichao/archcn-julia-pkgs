@@ -1,13 +1,6 @@
-[Status]
-version = "0.5.19"
-
-[[Issues."0.5.9"]]
-version = "0.5.9"
-type = "not_on_latest"
-latest = "0.5.19"
-dependent = []
-dependency = ["DataStructures [864edb3b-99cc-5e75-8d2d-829cb0a9cfe8]"]
-
 [Pkg]
 name = "MultivariatePolynomials"
 uuid = "102ac46a-7ee4-5c85-9060-abc95bfdeaa3"
+
+[Status]
+version = "0.5.19"

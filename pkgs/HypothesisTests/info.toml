@@ -1,15 +1,9 @@
-[Status]
-version = "0.11.8"
-
-[[Issues."0.11.6"]]
-version = "0.11.6"
-type = "not_on_latest"
-latest = "0.11.8"
-dependent = []
-dependency = ["Roots [f2b01f46-fcfa-551c-844a-d8ac1e96c665]"]
-[[Issues."0.11.6"]]
-type = "not_needed"
-
 [Pkg]
 name = "HypothesisTests"
 uuid = "09f84164-cd44-5f33-b23f-e6b0d136a0d5"
+
+[Status]
+version = "0.11.8"
+
+[[Issues."0.11.8"]]
+type = "not_needed"

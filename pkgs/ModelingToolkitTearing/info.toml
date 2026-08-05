@@ -1,6 +1,13 @@
-[Status]
-version = "1.15.0"
-
 [Pkg]
 name = "ModelingToolkitTearing"
 uuid = "6bb917b9-1269-42b9-9f7c-b0dca72083ab"
+
+[Status]
+version = "1.15.0"
+
+[[Issues."1.15.0"]]
+dependent = []
+dependency = ["ModelingToolkitBase [7771a370-6774-4173-bd38-47e70ca0b839]"]
+type = "not_on_latest"
+version = "1.15.0"
+latest = "1.20.5"

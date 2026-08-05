@@ -1,6 +1,13 @@
-[Status]
-version = "1.1.0"
-
 [Pkg]
 name = "StochasticDiffEqLevyArea"
 uuid = "90dbc90e-856a-4131-af2c-e8c5aa0f35b5"
+
+[Status]
+version = "1.1.0"
+
+[[Issues."1.1.0"]]
+dependent = ["StochasticDiffEq [789caeaf-c7a9-5a7d-9973-96adeb23e2a0]", "StochasticDiffEqCore [19c5a474-6cd1-4a5f-be79-46dc34e54d7f]", "StochasticDiffEqMilstein [8c95a807-c8e7-4581-8419-890d001af53e]"]
+dependency = []
+type = "not_on_latest"
+version = "1.1.0"
+latest = "2.0.3"

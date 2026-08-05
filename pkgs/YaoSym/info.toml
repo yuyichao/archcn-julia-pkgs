@@ -1,13 +1,6 @@
-[Status]
-version = "0.6.12"
-
-[[Issues."0.6.9"]]
-version = "0.6.9"
-type = "not_on_latest"
-latest = "0.6.12"
-dependent = []
-dependency = ["LuxurySparse [d05aeea4-b7d4-55ac-b691-9e7fabb07ba2]", "SymEngine [123dc426-2d89-5057-bbad-38513e3affd8]", "YaoBlocks [418bc28f-b43b-5e0b-a6e7-61bbc1a2c1df]"]
-
 [Pkg]
 name = "YaoSym"
 uuid = "3b27209a-d3d6-11e9-3c0f-41eb92b2cb9d"
+
+[Status]
+version = "0.6.12"

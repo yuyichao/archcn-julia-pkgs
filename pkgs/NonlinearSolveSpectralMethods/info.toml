@@ -1,13 +1,13 @@
-[Status]
-version = "1.7.1"
-
-[[Issues."1.6.0"]]
-version = "1.6.0"
-type = "not_on_latest"
-latest = "1.7.4"
-dependent = []
-dependency = ["NonlinearSolveBase [be0214bd-f91f-a760-ac4e-3421ce2b2da0]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
-
 [Pkg]
 name = "NonlinearSolveSpectralMethods"
 uuid = "26075421-4e9a-44e1-8bd1-420ed7ad02b2"
+
+[Status]
+version = "1.7.1"
+
+[[Issues."1.7.1"]]
+dependent = []
+dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
+type = "not_on_latest"
+version = "1.7.1"
+latest = "1.7.4"
