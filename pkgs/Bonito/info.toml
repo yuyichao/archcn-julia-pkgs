@@ -7,7 +7,7 @@ version = "4.2.0"
 
 [[Issues."4.2.0"]]
 dependent = []
-dependency = ["CommonMark [a80b9123-70ca-4bc0-993e-6e3bcb318db6]", "Deno_jll [04572ae6-984a-583e-9378-9577a1c2574d]", "HTTP [cd3eb016-35fb-5094-929b-558a96fad6f3]"]
+dependency = ["Deno_jll [04572ae6-984a-583e-9378-9577a1c2574d]", "HTTP [cd3eb016-35fb-5094-929b-558a96fad6f3]"]
 type = "not_on_latest"
 version = "4.2.0"
 latest = "5.1.1"
