@@ -437,3 +437,9 @@ pkg = "SymbolicUtils"
 version = "3, 4"
 dep = "Combinatorics"
 depversion = "1.1"
+
+[[Overrides.DepsVersion]]
+pkg = "GitHubActions"
+version = "0.1.8"
+dep = "JSON"
+depversion = "0.21, 1"
