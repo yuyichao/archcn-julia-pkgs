@@ -63,6 +63,24 @@ type = "missing_deps"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
 [[Issues."1.42.2"]]
+type = "missing_deps"
+
+    [[Issues."1.42.2".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.42.2".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.42.2".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.42.2".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.42.2".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+[[Issues."1.42.2"]]
 dependent = []
 dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 type = "not_on_latest"
