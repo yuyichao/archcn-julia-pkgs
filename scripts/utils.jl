@@ -626,10 +626,12 @@ function resolve_new_versions(ctx::Context, check_results, latest_deps)
                     push!(dependent, Base.PkgId(dep, uuid_to_name[dep]))
                 end
             end
-            sort!(dependent, by=x->(x.name, x.uuid))
-            sort!(dependency, by=x->(x.name, x.uuid))
-            push!(get!(Vector{Any}, check_res.issues, ver),
-                  NotOnLatestInfo(ver, latest, dependent, dependency))
+            if !isempty(dependent) || !isempty(dependency)
+                sort!(dependent, by=x->(x.name, x.uuid))
+                sort!(dependency, by=x->(x.name, x.uuid))
+                push!(get!(Vector{Any}, check_res.issues, ver),
+                      NotOnLatestInfo(ver, latest, dependent, dependency))
+            end
         end
         dep_type = get(latest_deps, uuid, nothing)
         if dep_type !== true && !get(arch_info["Pkg"], "required", false)
