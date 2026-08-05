@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libva", "libva_drm", "libva_x11"]
+[Status]
+version = "2.23.0+0"
+
+[Pkg]
+is_jll = true
+name = "libva_jll"
+uuid = "9a156e7d-b971-5f62-b2c9-67348b8fb97c"

@@ -1,9 +1,0 @@
-[Pkg]
-name = "StaticLint"
-uuid = "b3cc710f-9c33-5bdb-a03d-a94903873e97"
-
-[Status]
-version = "9.0.0"
-
-[[Issues."9.0.0"]]
-type = "not_needed"
