@@ -1,0 +1,6 @@
+[Status]
+version = "1.3.0"
+
+[Pkg]
+name = "LazilyInitializedFields"
+uuid = "0e77f7df-68c5-4e49-93ce-4cd80f5598bf"

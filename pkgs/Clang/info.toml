@@ -1,11 +1,5 @@
-[Pkg]
-name = "Clang"
-has_artifacts = true
-uuid = "40e3b903-d033-50b4-a0cc-940c62c95e31"
-required = true
-
 [Status]
-version = "0.19.2"
+version = "0.19.3"
 
 [[Issues."0.19.3"]]
 type = "missing_deps"
@@ -13,3 +7,9 @@ type = "missing_deps"
     [[Issues."0.19.3".deps]]
     name = "Clang_unified_jll"
     uuid = "ffc816e1-ba66-5fa9-9ecc-bcc5cb19bea1"
+
+[Pkg]
+has_artifacts = true
+name = "Clang"
+required = true
+uuid = "40e3b903-d033-50b4-a0cc-940c62c95e31"

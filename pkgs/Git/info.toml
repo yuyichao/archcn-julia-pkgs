@@ -1,0 +1,6 @@
+[Status]
+version = "1.5.0"
+
+[Pkg]
+name = "Git"
+uuid = "d7ba0133-e1db-5d97-8f8c-041e4b3a1eb2"

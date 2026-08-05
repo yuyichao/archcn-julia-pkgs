@@ -1,0 +1,10 @@
+
+[JLL.products]
+executable = ["git_lfs"]
+[Status]
+version = "3.7.1+0"
+
+[Pkg]
+is_jll = true
+name = "Git_LFS_jll"
+uuid = "020c3dae-16b3-5ae5-87b3-4cb189e250b2"

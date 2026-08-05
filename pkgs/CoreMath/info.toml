@@ -1,0 +1,6 @@
+[Status]
+version = "0.1.0"
+
+[Pkg]
+name = "CoreMath"
+uuid = "b7a15901-be09-4a0e-87d2-2e66b0e09b5a"

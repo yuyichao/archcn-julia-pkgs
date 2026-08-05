@@ -1,8 +1,8 @@
+[Status]
+version = "0.5.2"
+
 [Pkg]
 name = "ODEInterface"
-uuid = "54ca160b-1b9f-5127-a996-1867f4bc2a2c"
 required = true
 has_deps_build = true
-
-[Status]
-version = "0.5.1"
+uuid = "54ca160b-1b9f-5127-a996-1867f4bc2a2c"

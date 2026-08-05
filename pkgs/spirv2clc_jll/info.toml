@@ -1,0 +1,10 @@
+
+[JLL.products]
+executable = ["spirv2clc"]
+[Status]
+version = "0.2.0+4"
+
+[Pkg]
+is_jll = true
+name = "spirv2clc_jll"
+uuid = "f0274c0c-8c8a-59f1-85b7-f7d60330c5fb"

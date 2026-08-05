@@ -1,16 +1,16 @@
-[Pkg]
-name = "MUMPS_seq_jll"
-uuid = "d7ed1dd3-d0ae-5e8e-bfb4-87a502085b8d"
-is_jll = true
-
-[Status]
-version = "500.900.0+0"
 
 [JLL.products]
-library = ["libcmumps", "libdmumps", "libsmumps", "libzmumps", "libcmumps64", "libdmumps64", "libsmumps64", "libzmumps64"]
+library = ["libcmumps", "libdmumps", "libsmumps", "libzmumps"]
+[Status]
+version = "500.900.100+0"
 
 [[Issues."500.900.100+0"]]
 type = "jll_changes"
 
     [Issues."500.900.100+0".remove]
     library = ["libcmumps64", "libdmumps64", "libsmumps64", "libzmumps64"]
+
+[Pkg]
+is_jll = true
+name = "MUMPS_seq_jll"
+uuid = "d7ed1dd3-d0ae-5e8e-bfb4-87a502085b8d"

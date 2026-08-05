@@ -1,0 +1,11 @@
+
+[JLL.products]
+executable = ["clang", "clang_apply_replacements", "clang_check", "clang_format", "clang_scan_deps", "clang_tidy"]
+library = ["libclang", "libclang_cpp"]
+[Status]
+version = "0.1.6+0"
+
+[Pkg]
+is_jll = true
+name = "Clang_unified_jll"
+uuid = "ffc816e1-ba66-5fa9-9ecc-bcc5cb19bea1"

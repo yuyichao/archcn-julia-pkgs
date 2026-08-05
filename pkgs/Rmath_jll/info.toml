@@ -1,10 +1,10 @@
-[Pkg]
-name = "Rmath_jll"
-uuid = "f50d1b31-88e8-58de-be2c-1cc44531875f"
-is_jll = true
-
-[Status]
-version = "0.5.1+0"
 
 [JLL.products]
 library = ["libRmath"]
+[Status]
+version = "0.5.2+0"
+
+[Pkg]
+is_jll = true
+name = "Rmath_jll"
+uuid = "f50d1b31-88e8-58de-be2c-1cc44531875f"

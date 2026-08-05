@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libcoremath"]
+[Status]
+version = "0.1.0+0"
+
+[Pkg]
+is_jll = true
+name = "CoreMath_jll"
+uuid = "a38c48d9-6df1-5ac9-9223-b6ada3b5572b"

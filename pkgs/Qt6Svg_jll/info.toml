@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libqt6svg", "libqt6svgwidgets"]
+[Status]
+version = "6.10.2+0"
+
+[Pkg]
+is_jll = true
+name = "Qt6Svg_jll"
+uuid = "6de9746b-f93d-5813-b365-ba18ad4a9cf3"

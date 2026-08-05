@@ -1,0 +1,6 @@
+[Status]
+version = "0.2.0"
+
+[Pkg]
+name = "MonteCarloIntegration"
+uuid = "4886b29c-78c9-11e9-0a6e-41e1f4161f7b"

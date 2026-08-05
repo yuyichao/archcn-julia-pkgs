@@ -1,9 +1,5 @@
-[Pkg]
-name = "NNlib"
-uuid = "872c559c-99b0-510c-b3b7-b6c96a88d5cd"
-
 [Status]
-version = "0.9.39"
+version = "0.9.42"
 
 [[Issues."0.9.39"]]
 type = "missing_deps"
@@ -23,3 +19,7 @@ type = "missing_deps"
     [[Issues."0.9.39".weak_deps]]
     name = "cuDNN"
     uuid = "02a925ec-e4fe-4b08-9a7e-0d78e3d38ccd"
+
+[Pkg]
+name = "NNlib"
+uuid = "872c559c-99b0-510c-b3b7-b6c96a88d5cd"

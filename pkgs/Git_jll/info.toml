@@ -1,0 +1,10 @@
+
+[JLL.products]
+executable = ["git"]
+[Status]
+version = "2.55.0+0"
+
+[Pkg]
+is_jll = true
+name = "Git_jll"
+uuid = "f8c6e375-362e-5223-8a59-34ff63f689eb"

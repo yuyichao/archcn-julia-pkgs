@@ -1,17 +1,9 @@
-[Pkg]
-name = "Clang_jll"
-uuid = "0ee61d77-7f21-5576-8119-9fcc46b10100"
-is_jll = true
-
-[Status]
-version = "21.1.2+0"
 
 [JLL.products]
-executable = ["clang"]
+executable = ["clang", "clang_apply_replacements", "clang_check", "clang_format", "clang_scan_deps", "clang_tidy"]
 library = ["libclang", "libclang_cpp"]
-
-[[Issues."21.1.2+0"]]
-type = "not_needed"
+[Status]
+version = "21.1.8+1"
 
 [[Issues."21.1.8+1"]]
 type = "jll_changes"
@@ -19,8 +11,16 @@ type = "jll_changes"
     [Issues."21.1.8+1".add]
     executable = ["clang_apply_replacements", "clang_check", "clang_format", "clang_scan_deps", "clang_tidy"]
 
+[[Issues."21.1.2+0"]]
+type = "not_needed"
+
 [[Issues."21.1.8+0"]]
 type = "jll_changes"
 
     [Issues."21.1.8+0".add]
     executable = ["clang_apply_replacements", "clang_check", "clang_format", "clang_scan_deps", "clang_tidy"]
+
+[Pkg]
+is_jll = true
+name = "Clang_jll"
+uuid = "0ee61d77-7f21-5576-8119-9fcc46b10100"
