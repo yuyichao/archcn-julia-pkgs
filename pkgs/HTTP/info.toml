@@ -54,6 +54,13 @@ type = "missing_deps"
     name = "Reseau"
     uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
 
+[[Issues."1.11.0"]]
+dependent = ["AWS [fbe9abb3-538b-5e4e-ba9e-bc94f4f92ebc]", "AWSS3 [1c724243-ef5b-51ab-93f4-b0a88ac62a95]", "Bonito [824d6782-a2ef-11e9-3a09-e5662e0c26f8]", "Braket [19504a0f-b47d-4348-9127-acc6cc69ef67]", "GR [28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71]"]
+dependency = []
+type = "not_on_latest"
+version = "1.11.0"
+latest = "2.6.1"
+
 [[Issues."2.1.1"]]
 type = "missing_deps"
 

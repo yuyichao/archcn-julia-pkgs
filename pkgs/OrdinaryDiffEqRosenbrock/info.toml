@@ -95,3 +95,10 @@ type = "missing_deps"
     [[Issues."2.3.2".deps]]
     name = "OrdinaryDiffEqRosenbrockTableaus"
     uuid = "b4bd8bb3-f80f-41d2-9b21-73a655b304b9"
+
+[[Issues."1.21.0"]]
+dependent = ["DelayDiffEq [bcd4f6db-9728-5f36-b5f7-82caef46ccdb]", "OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed]", "OrdinaryDiffEqDefault [50262376-6c5a-4cf5-baba-aaf4f84d72d7]"]
+dependency = []
+type = "not_on_latest"
+version = "1.21.0"
+latest = "2.6.3"

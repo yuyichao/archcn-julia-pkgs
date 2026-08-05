@@ -63,6 +63,12 @@ type = "missing_deps"
     [[Issues."1.23.0".weak_deps]]
     name = "NVPTX_LLVM_Backend_jll"
     uuid = "ef6e0fe3-e6ef-59c0-bde6-4989574699e0"
+[[Issues."1.23.0"]]
+dependent = ["Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9]", "OpenCL [08131aa3-fb12-5dee-8b74-c09406e224a2]"]
+dependency = []
+type = "not_on_latest"
+version = "1.23.0"
+latest = "2.1.1"
 
 [[Issues."2.0.1"]]
 type = "missing_deps"

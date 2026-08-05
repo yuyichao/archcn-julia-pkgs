@@ -20,6 +20,13 @@ type = "missing_deps"
     name = "mpif_jll"
     uuid = "9aeb927a-4695-514f-a259-621a69f20ec0"
 
+[[Issues."1.14.6+0"]]
+dependent = ["HDF5 [f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f]"]
+dependency = []
+type = "not_on_latest"
+version = "1.14.6+0"
+latest = "2.2.0+0"
+
 [[Issues."2.1.2+0"]]
 type = "missing_deps"
 

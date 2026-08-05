@@ -25,6 +25,13 @@ type = "missing_deps"
 type = "extern"
 artifacts = 1
 
+[[Issues."0.5.3"]]
+dependent = ["Term [22787eb5-b846-44ae-b979-8e399b8463ab]"]
+dependency = []
+type = "not_on_latest"
+version = "0.5.3"
+latest = "0.6.2"
+
 [[Issues."0.6.2"]]
 type = "missing_deps"
 
