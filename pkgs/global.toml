@@ -403,12 +403,6 @@ dep = "OrdinaryDiffEqCore"
 depversion = "2, 3"
 
 [[Overrides.DepsVersion]]
-pkg = "QuantumOptics"
-version = "1.2"
-dep = "OrdinaryDiffEqCore"
-depversion = "1.21, 2, 3"
-
-[[Overrides.DepsVersion]]
 pkg = "SymbolicAnalysis"
 version = "0.3"
 dep = "Manifolds"
