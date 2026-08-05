@@ -520,9 +520,9 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
             elseif isa(issue, NotOnLatestInfo)
                 issue_dict = todict(ctx, issue)
                 push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
-                # if issue_dict in get(old_issues, ver_str, empty_issue)
-                #     continue
-                # end
+                if issue_dict in get(old_issues, ver_str, empty_issue)
+                    continue
+                end
                 push!(messages,
                       "Package not on latest version $(pkgprefix):\nLatest $(issue.latest)\n$(sprint(TOML.print, issue_dict))")
             elseif isa(issue, NotNeeded)
