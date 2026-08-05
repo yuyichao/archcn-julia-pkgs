@@ -520,9 +520,9 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
             elseif isa(issue, NotOnLatestInfo)
                 issue_dict = todict(ctx, issue)
                 push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
-                if issue_dict in get(old_issues, ver_str, empty_issue)
-                    continue
-                end
+                # if issue_dict in get(old_issues, ver_str, empty_issue)
+                #     continue
+                # end
                 push!(messages,
                       "Package not on latest version $(pkgprefix):\nLatest $(issue.latest)\n$(sprint(TOML.print, issue_dict))")
             elseif isa(issue, NotNeeded)
@@ -611,23 +611,25 @@ function resolve_new_versions(ctx::Context, check_results, latest_deps)
         if ver != latest
             dependent = Base.PkgId[]
             dependency = Base.PkgId[]
-            for (dep, verspec) in get(compat[uuid], latest, ())
+            pkg_compat = get(compat[uuid], latest, nothing)
+            pkg_compat !== nothing && for (dep, verspec) in pkg_compat
                 if !haskey(solution, dep) || !(solution[dep] in verspec)
                     push!(dependency, Base.PkgId(dep, uuid_to_name[dep]))
                 end
             end
             for (dep, depver) in solution
-                if !(latest in get(get(Dict, compat[dep], depver), uuid,
-                                   Pkg.Versions.VersionSpec("*")))
+                dep_compat = get(compat[dep], depver, nothing)
+                if dep_compat === nothing
+                    continue
+                end
+                if !(latest in get(dep_compat, uuid, Pkg.Versions.VersionSpec("*")))
                     push!(dependent, Base.PkgId(dep, uuid_to_name[dep]))
                 end
             end
             sort!(dependent, by=x->(x.name, x.uuid))
             sort!(dependency, by=x->(x.name, x.uuid))
-            if !isempty(dependent) || !isempty(dependency)
-                push!(get!(Vector{Any}, check_res.issues, ver),
-                      NotOnLatestInfo(ver, latest, dependent, dependency))
-            end
+            push!(get!(Vector{Any}, check_res.issues, ver),
+                  NotOnLatestInfo(ver, latest, dependent, dependency))
         end
         dep_type = get(latest_deps, uuid, nothing)
         if dep_type !== true && !get(arch_info["Pkg"], "required", false)
