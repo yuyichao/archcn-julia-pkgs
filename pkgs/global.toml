@@ -229,6 +229,12 @@ dep = "ForwardDiff"
 depversion = "0.10, 1"
 
 [[Overrides.DepsVersion]]
+pkg = "BloqadeExpr"
+version = "0.2.3, 0.2.4"
+dep = "YaoBlocks"
+depversion = "0.13, 0.14"
+
+[[Overrides.DepsVersion]]
 pkg = "ImageMagick_jll"
 version = "6, 7"
 dep = "Libtiff_jll"
