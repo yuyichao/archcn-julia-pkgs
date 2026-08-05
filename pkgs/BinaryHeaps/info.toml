@@ -1,0 +1,6 @@
+[Status]
+version = "1.0.4"
+
+[Pkg]
+name = "BinaryHeaps"
+uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
