@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libsass_so"]
+[Status]
+version = "3.6.6+0"
+
+[Pkg]
+is_jll = true
+name = "libsass_jll"
+uuid = "47bcb7c8-5119-555a-9eeb-0afcc36cd728"
