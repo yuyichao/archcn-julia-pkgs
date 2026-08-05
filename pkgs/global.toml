@@ -93,7 +93,7 @@ depversion = ">= 0.33"
 [[Overrides.DepsVersion]]
 pkg = "YaoSubspaceArrayReg"
 version = ">= 0.1"
-dep = "Yao"
+dep = "YaoBlocks"
 depversion = "0.13, 0.14"
 
 [[Overrides.DepsVersion]]
