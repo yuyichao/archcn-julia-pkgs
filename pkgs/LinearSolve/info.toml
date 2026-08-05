@@ -1,474 +1,9 @@
+[Pkg]
+name = "LinearSolve"
+uuid = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
+
 [Status]
 version = "3.87.0"
-
-[[Issues."3.82.0"]]
-type = "missing_deps"
-
-    [[Issues."3.82.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."3.82.0".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."3.82.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."3.82.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."3.82.0".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."3.82.0".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."3.82.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."3.82.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."3.82.0".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."3.82.0".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."3.82.0".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."3.82.0".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."3.82.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."3.82.0".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-[[Issues."5.0.1"]]
-type = "missing_deps"
-
-    [[Issues."5.0.1".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."5.0.1".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."5.0.1".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."5.0.1".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."5.0.1".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."5.0.1".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."5.0.1".weak_deps]]
-    name = "HSL"
-    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."5.0.1".weak_deps]]
-    name = "JacobiDavidson"
-    uuid = "11c68b98-9c9b-11e8-267b-bbb95576cead"
-    [[Issues."5.0.1".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."5.0.1".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."5.0.1".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."5.0.1".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."5.0.1".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."5.0.1".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."5.0.1".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."5.0.1".weak_deps]]
-    name = "PureUMFPACK"
-    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."5.0.1".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."5.0.1".weak_deps]]
-    name = "SpecializingFactorizations"
-    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."5.0.1".weak_deps]]
-    name = "SuperLUDIST"
-    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
-    [[Issues."5.0.1".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."5.0.1".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."5.0.1".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."5.0.1".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."5.1.0"]]
-type = "missing_deps"
-
-    [[Issues."5.1.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."5.1.0".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."5.1.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."5.1.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."5.1.0".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."5.1.0".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."5.1.0".weak_deps]]
-    name = "HSL"
-    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."5.1.0".weak_deps]]
-    name = "JacobiDavidson"
-    uuid = "11c68b98-9c9b-11e8-267b-bbb95576cead"
-    [[Issues."5.1.0".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."5.1.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."5.1.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."5.1.0".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."5.1.0".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."5.1.0".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."5.1.0".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."5.1.0".weak_deps]]
-    name = "PureUMFPACK"
-    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."5.1.0".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."5.1.0".weak_deps]]
-    name = "SpecializingFactorizations"
-    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."5.1.0".weak_deps]]
-    name = "SuperLUDIST"
-    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
-    [[Issues."5.1.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."5.1.0".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."5.1.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."5.1.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."3.85.0"]]
-type = "missing_deps"
-
-    [[Issues."3.85.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."3.85.0".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."3.85.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."3.85.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."3.85.0".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."3.85.0".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."3.85.0".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."3.85.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."3.85.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."3.85.0".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."3.85.0".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."3.85.0".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."3.85.0".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."3.85.0".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."3.85.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."3.85.0".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."3.85.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."3.85.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."5.3.0"]]
-type = "missing_deps"
-
-    [[Issues."5.3.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."5.3.0".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."5.3.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."5.3.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."5.3.0".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."5.3.0".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."5.3.0".weak_deps]]
-    name = "HSL"
-    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."5.3.0".weak_deps]]
-    name = "JacobiDavidson"
-    uuid = "11c68b98-9c9b-11e8-267b-bbb95576cead"
-    [[Issues."5.3.0".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."5.3.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."5.3.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."5.3.0".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."5.3.0".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."5.3.0".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."5.3.0".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."5.3.0".weak_deps]]
-    name = "PureUMFPACK"
-    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."5.3.0".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."5.3.0".weak_deps]]
-    name = "SpecializingFactorizations"
-    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."5.3.0".weak_deps]]
-    name = "SuperLUDIST"
-    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
-    [[Issues."5.3.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."5.3.0".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."5.3.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."5.3.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."4.2.1"]]
-type = "missing_deps"
-
-    [[Issues."4.2.1".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."4.2.1".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."4.2.1".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."4.2.1".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."4.2.1".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."4.2.1".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."4.2.1".weak_deps]]
-    name = "HSL"
-    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."4.2.1".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."4.2.1".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."4.2.1".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."4.2.1".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."4.2.1".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."4.2.1".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."4.2.1".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."4.2.1".weak_deps]]
-    name = "PureUMFPACK"
-    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."4.2.1".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."4.2.1".weak_deps]]
-    name = "SpecializingFactorizations"
-    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."4.2.1".weak_deps]]
-    name = "SuperLUDIST"
-    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
-    [[Issues."4.2.1".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."4.2.1".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."4.2.1".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."4.2.1".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."4.0.0"]]
-type = "missing_deps"
-
-    [[Issues."4.0.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."4.0.0".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."4.0.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."4.0.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."4.0.0".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."4.0.0".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."4.0.0".weak_deps]]
-    name = "HSL"
-    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."4.0.0".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."4.0.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."4.0.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."4.0.0".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."4.0.0".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."4.0.0".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."4.0.0".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."4.0.0".weak_deps]]
-    name = "PureUMFPACK"
-    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."4.0.0".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."4.0.0".weak_deps]]
-    name = "SpecializingFactorizations"
-    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."4.0.0".weak_deps]]
-    name = "SuperLUDIST"
-    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
-    [[Issues."4.0.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."4.0.0".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."4.0.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."4.0.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
 
 [[Issues."5.4.0"]]
 type = "missing_deps"
@@ -537,139 +72,69 @@ type = "missing_deps"
     name = "cuSOLVER"
     uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
 
-    [[Issues."5.4.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."5.4.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."3.84.0"]]
+[[Issues."4.2.1"]]
 type = "missing_deps"
 
-    [[Issues."3.84.0".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "AMDGPU"
     uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."3.84.0".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "AlgebraicMultigrid"
     uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."3.84.0".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "CUDSS"
     uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."3.84.0".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "CUSOLVERRF"
     uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."3.84.0".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "Elemental"
     uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."3.84.0".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "Ginkgo"
     uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."3.84.0".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."3.84.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."3.84.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."3.84.0".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."3.84.0".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."3.84.0".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."3.84.0".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."3.84.0".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."3.84.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."3.84.0".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."3.84.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."3.84.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."3.85.2"]]
-type = "missing_deps"
-
-    [[Issues."3.85.2".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."3.85.2".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."3.85.2".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."3.85.2".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."3.85.2".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."3.85.2".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "HSL"
     uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "MUMPS"
     uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "Metal"
     uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "PETSc"
     uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "ParU_jll"
     uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "Pardiso"
     uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "PartitionedSolvers"
     uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "PureUMFPACK"
     uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "STRUMPACK_jll"
     uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "SpecializingFactorizations"
     uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
+    name = "SuperLUDIST"
+    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
+    [[Issues."4.2.1".weak_deps]]
     name = "blis_jll"
     uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."3.85.2".weak_deps]]
+    [[Issues."4.2.1".weak_deps]]
     name = "cuSOLVER"
     uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."3.85.2".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."3.85.2".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
 
 [[Issues."4.1.0"]]
 type = "missing_deps"
@@ -734,374 +199,6 @@ type = "missing_deps"
     [[Issues."4.1.0".weak_deps]]
     name = "cuSOLVER"
     uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."4.1.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."4.1.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."3.86.1"]]
-type = "missing_deps"
-
-    [[Issues."3.86.1".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."3.86.1".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."3.86.1".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."3.86.1".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."3.86.1".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."3.86.1".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."3.86.1".weak_deps]]
-    name = "HSL"
-    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."3.86.1".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."3.86.1".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."3.86.1".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."3.86.1".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."3.86.1".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."3.86.1".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."3.86.1".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."3.86.1".weak_deps]]
-    name = "PureUMFPACK"
-    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."3.86.1".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."3.86.1".weak_deps]]
-    name = "SpecializingFactorizations"
-    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."3.86.1".weak_deps]]
-    name = "SuperLUDIST"
-    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
-    [[Issues."3.86.1".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."3.86.1".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."3.86.1".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."3.86.1".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."4.3.0"]]
-type = "missing_deps"
-
-    [[Issues."4.3.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."4.3.0".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."4.3.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."4.3.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."4.3.0".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."4.3.0".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."4.3.0".weak_deps]]
-    name = "HSL"
-    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."4.3.0".weak_deps]]
-    name = "JacobiDavidson"
-    uuid = "11c68b98-9c9b-11e8-267b-bbb95576cead"
-    [[Issues."4.3.0".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."4.3.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."4.3.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."4.3.0".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."4.3.0".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."4.3.0".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."4.3.0".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."4.3.0".weak_deps]]
-    name = "PureUMFPACK"
-    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."4.3.0".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."4.3.0".weak_deps]]
-    name = "SpecializingFactorizations"
-    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."4.3.0".weak_deps]]
-    name = "SuperLUDIST"
-    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
-    [[Issues."4.3.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."4.3.0".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."4.3.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."4.3.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."4.2.0"]]
-type = "missing_deps"
-
-    [[Issues."4.2.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."4.2.0".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."4.2.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."4.2.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."4.2.0".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."4.2.0".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."4.2.0".weak_deps]]
-    name = "HSL"
-    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."4.2.0".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."4.2.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."4.2.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."4.2.0".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."4.2.0".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."4.2.0".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."4.2.0".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."4.2.0".weak_deps]]
-    name = "PureUMFPACK"
-    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."4.2.0".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."4.2.0".weak_deps]]
-    name = "SpecializingFactorizations"
-    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."4.2.0".weak_deps]]
-    name = "SuperLUDIST"
-    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
-    [[Issues."4.2.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."4.2.0".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."4.2.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."4.2.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."3.87.0"]]
-type = "missing_deps"
-
-    [[Issues."3.87.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."3.87.0".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."3.87.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."3.87.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."3.87.0".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."3.87.0".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."3.87.0".weak_deps]]
-    name = "HSL"
-    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."3.87.0".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."3.87.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."3.87.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."3.87.0".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."3.87.0".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."3.87.0".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."3.87.0".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."3.87.0".weak_deps]]
-    name = "PureUMFPACK"
-    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."3.87.0".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."3.87.0".weak_deps]]
-    name = "SpecializingFactorizations"
-    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."3.87.0".weak_deps]]
-    name = "SuperLUDIST"
-    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
-    [[Issues."3.87.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."3.87.0".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."3.87.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."3.87.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."5.0.0"]]
-type = "missing_deps"
-
-    [[Issues."5.0.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."5.0.0".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."5.0.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."5.0.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."5.0.0".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."5.0.0".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."5.0.0".weak_deps]]
-    name = "HSL"
-    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."5.0.0".weak_deps]]
-    name = "JacobiDavidson"
-    uuid = "11c68b98-9c9b-11e8-267b-bbb95576cead"
-    [[Issues."5.0.0".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."5.0.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."5.0.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."5.0.0".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."5.0.0".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."5.0.0".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."5.0.0".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."5.0.0".weak_deps]]
-    name = "PureUMFPACK"
-    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."5.0.0".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."5.0.0".weak_deps]]
-    name = "SpecializingFactorizations"
-    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."5.0.0".weak_deps]]
-    name = "SuperLUDIST"
-    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
-    [[Issues."5.0.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."5.0.0".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."5.0.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."5.0.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
 
 [[Issues."5.2.0"]]
 type = "missing_deps"
@@ -1170,196 +267,535 @@ type = "missing_deps"
     name = "cuSOLVER"
     uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
 
-    [[Issues."5.2.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."5.2.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."3.85.1"]]
+[[Issues."5.1.0"]]
 type = "missing_deps"
 
-    [[Issues."3.85.1".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "AMDGPU"
     uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."3.85.1".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "AlgebraicMultigrid"
     uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."3.85.1".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "CUDSS"
     uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."3.85.1".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "CUSOLVERRF"
     uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."3.85.1".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "Elemental"
     uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."3.85.1".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "Ginkgo"
     uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."3.85.1".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."3.85.1".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."3.85.1".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."3.85.1".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."3.85.1".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."3.85.1".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."3.85.1".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."3.85.1".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."3.85.1".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."3.85.1".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."3.85.1".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."3.85.1".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
-
-[[Issues."3.83.0"]]
-type = "missing_deps"
-
-    [[Issues."3.83.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."3.83.0".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."3.83.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."3.83.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."3.83.0".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."3.83.0".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."3.83.0".weak_deps]]
-    name = "MUMPS"
-    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."3.83.0".weak_deps]]
-    name = "Metal"
-    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."3.83.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."3.83.0".weak_deps]]
-    name = "PETSc"
-    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."3.83.0".weak_deps]]
-    name = "ParU_jll"
-    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."3.83.0".weak_deps]]
-    name = "Pardiso"
-    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."3.83.0".weak_deps]]
-    name = "PartitionedSolvers"
-    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."3.83.0".weak_deps]]
-    name = "STRUMPACK_jll"
-    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."3.83.0".weak_deps]]
-    name = "blis_jll"
-    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."3.83.0".weak_deps]]
-    name = "cuSOLVER"
-    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
-
-    [[Issues."3.83.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-
-[[Issues."3.86.0"]]
-type = "missing_deps"
-
-    [[Issues."3.86.0".weak_deps]]
-    name = "AMDGPU"
-    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    [[Issues."3.86.0".weak_deps]]
-    name = "AlgebraicMultigrid"
-    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
-    [[Issues."3.86.0".weak_deps]]
-    name = "CUDSS"
-    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
-    [[Issues."3.86.0".weak_deps]]
-    name = "CUSOLVERRF"
-    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
-    [[Issues."3.86.0".weak_deps]]
-    name = "Elemental"
-    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
-    [[Issues."3.86.0".weak_deps]]
-    name = "Ginkgo"
-    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "HSL"
     uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
+    name = "JacobiDavidson"
+    uuid = "11c68b98-9c9b-11e8-267b-bbb95576cead"
+    [[Issues."5.1.0".weak_deps]]
     name = "MUMPS"
     uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "Metal"
     uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "PETSc"
     uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "ParU_jll"
     uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "Pardiso"
     uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "PartitionedSolvers"
     uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "PureUMFPACK"
     uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "STRUMPACK_jll"
     uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "SpecializingFactorizations"
     uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
+    name = "SuperLUDIST"
+    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
+    [[Issues."5.1.0".weak_deps]]
     name = "blis_jll"
     uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
-    [[Issues."3.86.0".weak_deps]]
+    [[Issues."5.1.0".weak_deps]]
     name = "cuSOLVER"
     uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
 
-    [[Issues."3.86.0".deps]]
-    name = "PureKLU"
-    uuid = "0c0d3e7f-3a8b-4f7e-b6f1-9a4d2e7c1f01"
-    [[Issues."3.86.0".deps]]
-    name = "SparseColumnPivotedQR"
-    uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
+[[Issues."4.3.0"]]
+type = "missing_deps"
 
-[Pkg]
-name = "LinearSolve"
-uuid = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
+    [[Issues."4.3.0".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."4.3.0".weak_deps]]
+    name = "AlgebraicMultigrid"
+    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
+    [[Issues."4.3.0".weak_deps]]
+    name = "CUDSS"
+    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+    [[Issues."4.3.0".weak_deps]]
+    name = "CUSOLVERRF"
+    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
+    [[Issues."4.3.0".weak_deps]]
+    name = "Elemental"
+    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
+    [[Issues."4.3.0".weak_deps]]
+    name = "Ginkgo"
+    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
+    [[Issues."4.3.0".weak_deps]]
+    name = "HSL"
+    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
+    [[Issues."4.3.0".weak_deps]]
+    name = "JacobiDavidson"
+    uuid = "11c68b98-9c9b-11e8-267b-bbb95576cead"
+    [[Issues."4.3.0".weak_deps]]
+    name = "MUMPS"
+    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
+    [[Issues."4.3.0".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+    [[Issues."4.3.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."4.3.0".weak_deps]]
+    name = "PETSc"
+    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
+    [[Issues."4.3.0".weak_deps]]
+    name = "ParU_jll"
+    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
+    [[Issues."4.3.0".weak_deps]]
+    name = "Pardiso"
+    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
+    [[Issues."4.3.0".weak_deps]]
+    name = "PartitionedSolvers"
+    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
+    [[Issues."4.3.0".weak_deps]]
+    name = "PureUMFPACK"
+    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
+    [[Issues."4.3.0".weak_deps]]
+    name = "STRUMPACK_jll"
+    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
+    [[Issues."4.3.0".weak_deps]]
+    name = "SpecializingFactorizations"
+    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
+    [[Issues."4.3.0".weak_deps]]
+    name = "SuperLUDIST"
+    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
+    [[Issues."4.3.0".weak_deps]]
+    name = "blis_jll"
+    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
+    [[Issues."4.3.0".weak_deps]]
+    name = "cuSOLVER"
+    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
+
+[[Issues."5.0.0"]]
+type = "missing_deps"
+
+    [[Issues."5.0.0".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."5.0.0".weak_deps]]
+    name = "AlgebraicMultigrid"
+    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
+    [[Issues."5.0.0".weak_deps]]
+    name = "CUDSS"
+    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+    [[Issues."5.0.0".weak_deps]]
+    name = "CUSOLVERRF"
+    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
+    [[Issues."5.0.0".weak_deps]]
+    name = "Elemental"
+    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
+    [[Issues."5.0.0".weak_deps]]
+    name = "Ginkgo"
+    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
+    [[Issues."5.0.0".weak_deps]]
+    name = "HSL"
+    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
+    [[Issues."5.0.0".weak_deps]]
+    name = "JacobiDavidson"
+    uuid = "11c68b98-9c9b-11e8-267b-bbb95576cead"
+    [[Issues."5.0.0".weak_deps]]
+    name = "MUMPS"
+    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
+    [[Issues."5.0.0".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+    [[Issues."5.0.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."5.0.0".weak_deps]]
+    name = "PETSc"
+    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
+    [[Issues."5.0.0".weak_deps]]
+    name = "ParU_jll"
+    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
+    [[Issues."5.0.0".weak_deps]]
+    name = "Pardiso"
+    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
+    [[Issues."5.0.0".weak_deps]]
+    name = "PartitionedSolvers"
+    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
+    [[Issues."5.0.0".weak_deps]]
+    name = "PureUMFPACK"
+    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
+    [[Issues."5.0.0".weak_deps]]
+    name = "STRUMPACK_jll"
+    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
+    [[Issues."5.0.0".weak_deps]]
+    name = "SpecializingFactorizations"
+    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
+    [[Issues."5.0.0".weak_deps]]
+    name = "SuperLUDIST"
+    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
+    [[Issues."5.0.0".weak_deps]]
+    name = "blis_jll"
+    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
+    [[Issues."5.0.0".weak_deps]]
+    name = "cuSOLVER"
+    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
+
+[[Issues."3.87.0"]]
+type = "missing_deps"
+
+    [[Issues."3.87.0".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."3.87.0".weak_deps]]
+    name = "AlgebraicMultigrid"
+    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
+    [[Issues."3.87.0".weak_deps]]
+    name = "CUDSS"
+    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+    [[Issues."3.87.0".weak_deps]]
+    name = "CUSOLVERRF"
+    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
+    [[Issues."3.87.0".weak_deps]]
+    name = "Elemental"
+    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
+    [[Issues."3.87.0".weak_deps]]
+    name = "Ginkgo"
+    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
+    [[Issues."3.87.0".weak_deps]]
+    name = "HSL"
+    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
+    [[Issues."3.87.0".weak_deps]]
+    name = "MUMPS"
+    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
+    [[Issues."3.87.0".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+    [[Issues."3.87.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."3.87.0".weak_deps]]
+    name = "PETSc"
+    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
+    [[Issues."3.87.0".weak_deps]]
+    name = "ParU_jll"
+    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
+    [[Issues."3.87.0".weak_deps]]
+    name = "Pardiso"
+    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
+    [[Issues."3.87.0".weak_deps]]
+    name = "PartitionedSolvers"
+    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
+    [[Issues."3.87.0".weak_deps]]
+    name = "PureUMFPACK"
+    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
+    [[Issues."3.87.0".weak_deps]]
+    name = "STRUMPACK_jll"
+    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
+    [[Issues."3.87.0".weak_deps]]
+    name = "SpecializingFactorizations"
+    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
+    [[Issues."3.87.0".weak_deps]]
+    name = "SuperLUDIST"
+    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
+    [[Issues."3.87.0".weak_deps]]
+    name = "blis_jll"
+    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
+    [[Issues."3.87.0".weak_deps]]
+    name = "cuSOLVER"
+    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
+[[Issues."3.87.0"]]
+dependent = ["NonlinearSolve [8913a72c-1f9b-4ce2-8d82-65094dcecaec]", "NonlinearSolveFirstOrder [5959db7a-ea39-4486-b5fe-2dd0bf03d60d]", "NonlinearSolveQuasiNewton [9a2c21bd-3a47-402d-9113-8faf9a0ee114]", "OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed]", "OrdinaryDiffEqDefault [50262376-6c5a-4cf5-baba-aaf4f84d72d7]", "OrdinaryDiffEqDifferentiation [4302a76b-040a-498a-8c04-15b101fed76b]", "OrdinaryDiffEqExtrapolation [becaefa8-8ca2-5cf9-886d-c06f3d2bd2c4]", "OrdinaryDiffEqFIRK [5960d6e9-dd7a-4743-88e7-cf307b64f125]", "OrdinaryDiffEqNonlinearSolve [127b3ac7-2247-4354-8eb6-78cf4e7c58e8]", "OrdinaryDiffEqRosenbrock [43230ef6-c299-4910-a778-202eb28ce4ce]", "QuantumToolbox [6c2fb7c5-b903-41d2-bc5e-5a7c320b9fab]", "Sundials [c3572dad-4567-51f8-b174-8c6c989267f4]"]
+dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
+type = "not_on_latest"
+version = "3.87.0"
+latest = "5.4.0"
+
+[[Issues."5.0.1"]]
+type = "missing_deps"
+
+    [[Issues."5.0.1".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."5.0.1".weak_deps]]
+    name = "AlgebraicMultigrid"
+    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
+    [[Issues."5.0.1".weak_deps]]
+    name = "CUDSS"
+    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+    [[Issues."5.0.1".weak_deps]]
+    name = "CUSOLVERRF"
+    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
+    [[Issues."5.0.1".weak_deps]]
+    name = "Elemental"
+    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
+    [[Issues."5.0.1".weak_deps]]
+    name = "Ginkgo"
+    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
+    [[Issues."5.0.1".weak_deps]]
+    name = "HSL"
+    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
+    [[Issues."5.0.1".weak_deps]]
+    name = "JacobiDavidson"
+    uuid = "11c68b98-9c9b-11e8-267b-bbb95576cead"
+    [[Issues."5.0.1".weak_deps]]
+    name = "MUMPS"
+    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
+    [[Issues."5.0.1".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+    [[Issues."5.0.1".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."5.0.1".weak_deps]]
+    name = "PETSc"
+    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
+    [[Issues."5.0.1".weak_deps]]
+    name = "ParU_jll"
+    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
+    [[Issues."5.0.1".weak_deps]]
+    name = "Pardiso"
+    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
+    [[Issues."5.0.1".weak_deps]]
+    name = "PartitionedSolvers"
+    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
+    [[Issues."5.0.1".weak_deps]]
+    name = "PureUMFPACK"
+    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
+    [[Issues."5.0.1".weak_deps]]
+    name = "STRUMPACK_jll"
+    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
+    [[Issues."5.0.1".weak_deps]]
+    name = "SpecializingFactorizations"
+    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
+    [[Issues."5.0.1".weak_deps]]
+    name = "SuperLUDIST"
+    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
+    [[Issues."5.0.1".weak_deps]]
+    name = "blis_jll"
+    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
+    [[Issues."5.0.1".weak_deps]]
+    name = "cuSOLVER"
+    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
+
+[[Issues."4.0.0"]]
+type = "missing_deps"
+
+    [[Issues."4.0.0".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."4.0.0".weak_deps]]
+    name = "AlgebraicMultigrid"
+    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
+    [[Issues."4.0.0".weak_deps]]
+    name = "CUDSS"
+    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+    [[Issues."4.0.0".weak_deps]]
+    name = "CUSOLVERRF"
+    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
+    [[Issues."4.0.0".weak_deps]]
+    name = "Elemental"
+    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
+    [[Issues."4.0.0".weak_deps]]
+    name = "Ginkgo"
+    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
+    [[Issues."4.0.0".weak_deps]]
+    name = "HSL"
+    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
+    [[Issues."4.0.0".weak_deps]]
+    name = "MUMPS"
+    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
+    [[Issues."4.0.0".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+    [[Issues."4.0.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."4.0.0".weak_deps]]
+    name = "PETSc"
+    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
+    [[Issues."4.0.0".weak_deps]]
+    name = "ParU_jll"
+    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
+    [[Issues."4.0.0".weak_deps]]
+    name = "Pardiso"
+    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
+    [[Issues."4.0.0".weak_deps]]
+    name = "PartitionedSolvers"
+    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
+    [[Issues."4.0.0".weak_deps]]
+    name = "PureUMFPACK"
+    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
+    [[Issues."4.0.0".weak_deps]]
+    name = "STRUMPACK_jll"
+    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
+    [[Issues."4.0.0".weak_deps]]
+    name = "SpecializingFactorizations"
+    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
+    [[Issues."4.0.0".weak_deps]]
+    name = "SuperLUDIST"
+    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
+    [[Issues."4.0.0".weak_deps]]
+    name = "blis_jll"
+    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
+    [[Issues."4.0.0".weak_deps]]
+    name = "cuSOLVER"
+    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
+
+[[Issues."5.3.0"]]
+type = "missing_deps"
+
+    [[Issues."5.3.0".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."5.3.0".weak_deps]]
+    name = "AlgebraicMultigrid"
+    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
+    [[Issues."5.3.0".weak_deps]]
+    name = "CUDSS"
+    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+    [[Issues."5.3.0".weak_deps]]
+    name = "CUSOLVERRF"
+    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
+    [[Issues."5.3.0".weak_deps]]
+    name = "Elemental"
+    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
+    [[Issues."5.3.0".weak_deps]]
+    name = "Ginkgo"
+    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
+    [[Issues."5.3.0".weak_deps]]
+    name = "HSL"
+    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
+    [[Issues."5.3.0".weak_deps]]
+    name = "JacobiDavidson"
+    uuid = "11c68b98-9c9b-11e8-267b-bbb95576cead"
+    [[Issues."5.3.0".weak_deps]]
+    name = "MUMPS"
+    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
+    [[Issues."5.3.0".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+    [[Issues."5.3.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."5.3.0".weak_deps]]
+    name = "PETSc"
+    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
+    [[Issues."5.3.0".weak_deps]]
+    name = "ParU_jll"
+    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
+    [[Issues."5.3.0".weak_deps]]
+    name = "Pardiso"
+    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
+    [[Issues."5.3.0".weak_deps]]
+    name = "PartitionedSolvers"
+    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
+    [[Issues."5.3.0".weak_deps]]
+    name = "PureUMFPACK"
+    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
+    [[Issues."5.3.0".weak_deps]]
+    name = "STRUMPACK_jll"
+    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
+    [[Issues."5.3.0".weak_deps]]
+    name = "SpecializingFactorizations"
+    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
+    [[Issues."5.3.0".weak_deps]]
+    name = "SuperLUDIST"
+    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
+    [[Issues."5.3.0".weak_deps]]
+    name = "blis_jll"
+    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
+    [[Issues."5.3.0".weak_deps]]
+    name = "cuSOLVER"
+    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"
+
+[[Issues."4.2.0"]]
+type = "missing_deps"
+
+    [[Issues."4.2.0".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."4.2.0".weak_deps]]
+    name = "AlgebraicMultigrid"
+    uuid = "2169fc97-5a83-5252-b627-83903c6c433c"
+    [[Issues."4.2.0".weak_deps]]
+    name = "CUDSS"
+    uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+    [[Issues."4.2.0".weak_deps]]
+    name = "CUSOLVERRF"
+    uuid = "a8cc9031-bad2-4722-94f5-40deabb4245c"
+    [[Issues."4.2.0".weak_deps]]
+    name = "Elemental"
+    uuid = "902c3f28-d1ec-5e7e-8399-a24c3845ee38"
+    [[Issues."4.2.0".weak_deps]]
+    name = "Ginkgo"
+    uuid = "4c8bd3c9-ead9-4b5e-a625-08f1338ba0ec"
+    [[Issues."4.2.0".weak_deps]]
+    name = "HSL"
+    uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
+    [[Issues."4.2.0".weak_deps]]
+    name = "MUMPS"
+    uuid = "55d2b088-9f4e-11e9-26c0-150b02ea6a46"
+    [[Issues."4.2.0".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+    [[Issues."4.2.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."4.2.0".weak_deps]]
+    name = "PETSc"
+    uuid = "ace2c81b-2b5f-4b1e-a30d-d662738edfe0"
+    [[Issues."4.2.0".weak_deps]]
+    name = "ParU_jll"
+    uuid = "9e0b026c-e8ce-559c-a2c4-6a3d5c955bc9"
+    [[Issues."4.2.0".weak_deps]]
+    name = "Pardiso"
+    uuid = "46dd5b70-b6fb-5a00-ae2d-e8fea33afaf2"
+    [[Issues."4.2.0".weak_deps]]
+    name = "PartitionedSolvers"
+    uuid = "11b65f7f-80ac-401b-9ef2-3db765482d62"
+    [[Issues."4.2.0".weak_deps]]
+    name = "PureUMFPACK"
+    uuid = "b7e1f0a2-3c4d-4e5f-9a0b-1c2d3e4f5a6b"
+    [[Issues."4.2.0".weak_deps]]
+    name = "STRUMPACK_jll"
+    uuid = "86fbd0b9-476f-557c-b766-62c724b42d8c"
+    [[Issues."4.2.0".weak_deps]]
+    name = "SpecializingFactorizations"
+    uuid = "fa08b7a1-13d3-4faf-875d-5cbc1520e3f3"
+    [[Issues."4.2.0".weak_deps]]
+    name = "SuperLUDIST"
+    uuid = "4cd002a6-0da4-410d-a012-232df062f478"
+    [[Issues."4.2.0".weak_deps]]
+    name = "blis_jll"
+    uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
+    [[Issues."4.2.0".weak_deps]]
+    name = "cuSOLVER"
+    uuid = "887afef0-6a32-4de5-add4-7827692ba8fc"

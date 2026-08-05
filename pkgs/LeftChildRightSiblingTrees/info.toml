@@ -1,13 +1,6 @@
-[Status]
-version = "0.3.0"
-
-[[Issues."0.2.1"]]
-version = "0.2.1"
-type = "not_on_latest"
-latest = "0.3.0"
-dependent = ["TerminalLoggers [5d786b92-1e48-4d6f-9151-6b4477ca9bed]"]
-dependency = []
-
 [Pkg]
 name = "LeftChildRightSiblingTrees"
 uuid = "1d6d02ad-be62-4b6b-8a6d-2f90e265016e"
+
+[Status]
+version = "0.3.0"

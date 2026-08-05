@@ -1,13 +1,6 @@
-[Status]
-version = "0.73.26"
-
-[[Issues."0.73.22"]]
-version = "0.73.22"
-type = "not_on_latest"
-latest = "0.73.26"
-dependent = []
-dependency = ["GR_jll [d2c73de3-f751-5644-a686-071e5b155ba9]"]
-
 [Pkg]
 name = "GR"
 uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
+
+[Status]
+version = "0.73.26"

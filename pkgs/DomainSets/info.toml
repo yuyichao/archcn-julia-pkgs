@@ -1,34 +1,13 @@
-[Status]
-version = "0.7.18"
-
-[[Issues."0.7.17"]]
-type = "missing_deps"
-
-    [[Issues."0.7.17".deps]]
-    name = "FunctionMaps"
-    uuid = "a85aefff-f8ca-4649-a888-c8e5398bc76c"
-
-[[Issues."0.8.1"]]
-type = "missing_deps"
-
-    [[Issues."0.8.1".deps]]
-    name = "FunctionMaps"
-    uuid = "a85aefff-f8ca-4649-a888-c8e5398bc76c"
-
-[[Issues."0.7.18"]]
-type = "missing_deps"
-
-    [[Issues."0.7.18".deps]]
-    name = "FunctionMaps"
-    uuid = "a85aefff-f8ca-4649-a888-c8e5398bc76c"
-
-[[Issues."0.8.0"]]
-type = "missing_deps"
-
-    [[Issues."0.8.0".deps]]
-    name = "FunctionMaps"
-    uuid = "a85aefff-f8ca-4649-a888-c8e5398bc76c"
-
 [Pkg]
 name = "DomainSets"
 uuid = "5b8099bc-c8ec-5219-889f-1d9e522a28bf"
+
+[Status]
+version = "0.7.18"
+
+[[Issues."0.7.18"]]
+dependent = ["ModelingToolkit [961ee093-0014-501f-94e3-6117800e7a78]", "SymbolicAnalysis [4297ee4d-0239-47d8-ba5d-195ecdf594fe]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
+dependency = []
+type = "not_on_latest"
+version = "0.7.18"
+latest = "0.8.1"
