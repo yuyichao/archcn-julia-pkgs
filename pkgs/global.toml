@@ -413,3 +413,9 @@ pkg = "Genqo"
 version = "1"
 dep = "Nemo"
 depversion = "0.53, 0.54, 0.55, 0.56, 0.57"
+
+[[Overrides.DepsVersion]]
+pkg = "SymbolicUtils"
+version = "3, 4"
+dep = "Combinatorics"
+depversion = "1.1"
