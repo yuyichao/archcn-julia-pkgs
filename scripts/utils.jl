@@ -33,7 +33,19 @@ else
         end
         return res
     end
-    pkginfo_compat(pkginfo) = decompress_ver_range(pkginfo, pkginfo.compat)
+    function pkginfo_compat(pkginfo)
+        res = decompress_ver_range(pkginfo, pkginfo.compat)
+        for (vr, deps) in pkginfo.deps
+            for (ver, compat) in res
+                for dep in deps
+                    if !haskey(compat, dep)
+                        compat[dep] = Pkg.Versions.VersionSpec("*")
+                    end
+                end
+            end
+        end
+        return res
+    end
     pkginfo_weak_compat(pkginfo) = decompress_ver_range(pkginfo, pkginfo.weak_compat)
 end
 
