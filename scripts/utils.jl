@@ -770,6 +770,7 @@ function resolve_all_dependencies(ctx::Context, uuids)
     uuid_to_name = Dict{Base.UUID,String}()
     reqs = Dict{Base.UUID,Pkg.Versions.VersionSpec}()
     fixed = Dict{Base.UUID,Resolve.Fixed}()
+    latest_vers = Dict{Base.UUID,VersionNumber}()
 
     ver_ub = Pkg.Versions.VersionBound("*")
     stdlibs = get(Dict{String,Any}, ctx.global_info, "StdLibs")
@@ -779,6 +780,7 @@ function resolve_all_dependencies(ctx::Context, uuids)
         pkginfo = registry_info(ctx.registry, pkgentry)
         name = pkgentry.name
         uuid_to_name[uuid] = name
+        latest_vers[uuid] = maximum(keys(pkginfo.version_info))
 
         arch_info = get(ctx.packages_info, uuid, nothing)
         arch_info_status = _get(arch_info, "Status", nothing)
@@ -836,9 +838,44 @@ function resolve_all_dependencies(ctx::Context, uuids)
         process_package(uuid)
     end
 
-    graph = Resolve.Graph(compat, compat_weak, uuid_to_name, reqs, fixed,
-                              true, nothing)
-    return Resolve.resolve(graph)
+    graph = Resolve.Graph(compat, compat_weak, uuid_to_name, reqs, fixed, true, nothing)
+    versions = Resolve.resolve(graph)
+
+    if get(ENV, "JL_ARCHCN_ADD_PACKAGE_DEBUG", "0") != "0"
+        for (uuid, ver) in versions
+            latest = latest_vers[uuid]
+            if ver != latest
+                dependent = Base.PkgId[]
+                dependency = Base.PkgId[]
+                pkg_compat = get(compat[uuid], latest, nothing)
+                pkg_compat !== nothing && for (dep, verspec) in pkg_compat
+                    if !haskey(versions, dep) || !(versions[dep] in verspec)
+                        push!(dependency, Base.PkgId(dep, uuid_to_name[dep]))
+                    end
+                end
+                for (dep, depver) in versions
+                    dep_compat = get(compat[dep], depver, nothing)
+                    if dep_compat === nothing
+                        continue
+                    end
+                    if !(latest in get(dep_compat, uuid, Pkg.Versions.VersionSpec("*")))
+                        push!(dependent, Base.PkgId(dep, uuid_to_name[dep]))
+                    end
+                end
+                if !isempty(dependent) || !isempty(dependency)
+                    sort!(dependent, by=x->(x.name, x.uuid))
+                    sort!(dependency, by=x->(x.name, x.uuid))
+                    issue_dict = todict(ctx, NotOnLatestInfo(ver, latest, dependent,
+                                                             dependency))
+                    pkgentry = ctx.registry[uuid]
+                    pkginfo = registry_info(ctx.registry, pkgentry)
+                    name = pkgentry.name
+                    println("Package not on latest version $(name)@$(ver) [$(uuid)]:\nLatest $(latest)\n$(sprint(TOML.print, issue_dict))")
+                end
+            end
+        end
+    end
+    return versions
 end
 
 function collect_all_pkg_info(ctx::Context, versions)
