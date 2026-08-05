@@ -1,0 +1,6 @@
+[Status]
+version = "1.2.0"
+
+[Pkg]
+name = "Genqo"
+uuid = "75f83073-4d85-4669-9473-9dff7d7e5b78"
