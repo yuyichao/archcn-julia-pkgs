@@ -36,10 +36,6 @@ type = "missing_deps"
 [[Issues."4.7.1"]]
 type = "missing_deps"
 
-    [[Issues."4.7.1".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
-
     [[Issues."4.7.1".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
@@ -67,10 +63,6 @@ type = "missing_deps"
 
 [[Issues."4.11.0"]]
 type = "missing_deps"
-
-    [[Issues."4.11.0".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
 
     [[Issues."4.11.0".weak_deps]]
     name = "Mooncake"
@@ -113,10 +105,6 @@ type = "missing_deps"
 
 [[Issues."4.8.1"]]
 type = "missing_deps"
-
-    [[Issues."4.8.1".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
 
     [[Issues."4.8.1".weak_deps]]
     name = "Mooncake"
@@ -229,10 +217,6 @@ type = "missing_deps"
 [[Issues."4.8.0"]]
 type = "missing_deps"
 
-    [[Issues."4.8.0".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
-
     [[Issues."4.8.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
@@ -246,10 +230,6 @@ type = "missing_deps"
 
 [[Issues."4.4.0"]]
 type = "missing_deps"
-
-    [[Issues."4.4.0".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
 
     [[Issues."4.4.0".weak_deps]]
     name = "Mooncake"
@@ -286,10 +266,6 @@ type = "missing_deps"
 [[Issues."4.13.0"]]
 type = "missing_deps"
 
-    [[Issues."4.13.0".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
-
     [[Issues."4.13.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
@@ -303,10 +279,6 @@ type = "missing_deps"
 
 [[Issues."4.5.0"]]
 type = "missing_deps"
-
-    [[Issues."4.5.0".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
 
     [[Issues."4.5.0".weak_deps]]
     name = "Mooncake"
@@ -350,10 +322,6 @@ type = "missing_deps"
 [[Issues."4.12.0"]]
 type = "missing_deps"
 
-    [[Issues."4.12.0".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
-
     [[Issues."4.12.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
@@ -389,20 +357,12 @@ type = "missing_deps"
 [[Issues."4.10.0"]]
 type = "missing_deps"
 
-    [[Issues."4.10.0".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
-
     [[Issues."4.10.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
 [[Issues."4.9.0"]]
 type = "missing_deps"
-
-    [[Issues."4.9.0".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
 
     [[Issues."4.9.0".weak_deps]]
     name = "Mooncake"
@@ -411,20 +371,12 @@ type = "missing_deps"
 [[Issues."4.6.0"]]
 type = "missing_deps"
 
-    [[Issues."4.6.0".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
-
     [[Issues."4.6.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
 [[Issues."4.7.0"]]
 type = "missing_deps"
-
-    [[Issues."4.7.0".deps]]
-    name = "BinaryHeaps"
-    uuid = "b2a6c25c-c996-4615-94ab-6e519ffb8690"
 
     [[Issues."4.7.0".weak_deps]]
     name = "Mooncake"
