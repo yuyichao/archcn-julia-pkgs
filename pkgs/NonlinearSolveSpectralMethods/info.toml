@@ -7,7 +7,7 @@ version = "1.7.1"
 
 [[Issues."1.7.1"]]
 dependent = []
-dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
+dependency = ["NonlinearSolveBase [be0214bd-f91f-a760-ac4e-3421ce2b2da0]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 type = "not_on_latest"
 version = "1.7.1"
-latest = "1.7.4"
+latest = "1.8.0"

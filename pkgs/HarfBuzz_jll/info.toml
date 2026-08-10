@@ -14,4 +14,4 @@ dependent = ["Pango_jll [36c8627f-9965-5494-a995-c6b170f724f3]", "libass_jll [0a
 dependency = []
 type = "not_on_latest"
 version = "8.5.1+0"
-latest = "100.14002.1+0"
+latest = "100.14003.0+0"

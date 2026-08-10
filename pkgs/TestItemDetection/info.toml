@@ -3,13 +3,7 @@ name = "TestItemDetection"
 uuid = "76b0de8b-5c4b-48ef-a724-914b33ca988d"
 
 [Status]
-version = "0.2.0"
+version = "1.1.1"
 
-[[Issues."0.2.0"]]
-dependent = []
-dependency = ["JuliaSyntax [70703baa-626e-46a2-a12c-08ffd08c73b4]"]
-type = "not_on_latest"
-version = "0.2.0"
-latest = "1.1.0"
-[[Issues."0.2.0"]]
+[[Issues."1.1.1"]]
 type = "not_needed"

@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "0.10.10"
+
+[[Issues."0.10.10"]]
+dependent = []
+dependency = ["GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55]"]
+type = "not_on_latest"
+version = "0.10.10"
+latest = "0.10.11"
