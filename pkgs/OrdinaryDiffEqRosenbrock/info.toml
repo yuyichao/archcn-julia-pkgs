@@ -10,7 +10,7 @@ dependent = ["DelayDiffEq [bcd4f6db-9728-5f36-b5f7-82caef46ccdb]", "OrdinaryDiff
 dependency = []
 type = "not_on_latest"
 version = "1.31.1"
-latest = "2.6.3"
+latest = "2.6.5"
 
 [[Issues."2.6.0"]]
 type = "missing_deps"
@@ -37,6 +37,13 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."2.6.1".deps]]
+    name = "OrdinaryDiffEqRosenbrockTableaus"
+    uuid = "b4bd8bb3-f80f-41d2-9b21-73a655b304b9"
+
+[[Issues."2.6.4"]]
+type = "missing_deps"
+
+    [[Issues."2.6.4".deps]]
     name = "OrdinaryDiffEqRosenbrockTableaus"
     uuid = "b4bd8bb3-f80f-41d2-9b21-73a655b304b9"
 
@@ -79,6 +86,13 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."2.3.0".deps]]
+    name = "OrdinaryDiffEqRosenbrockTableaus"
+    uuid = "b4bd8bb3-f80f-41d2-9b21-73a655b304b9"
+
+[[Issues."2.6.5"]]
+type = "missing_deps"
+
+    [[Issues."2.6.5".deps]]
     name = "OrdinaryDiffEqRosenbrockTableaus"
     uuid = "b4bd8bb3-f80f-41d2-9b21-73a655b304b9"
 

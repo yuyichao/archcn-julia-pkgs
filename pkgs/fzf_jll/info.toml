@@ -8,3 +8,10 @@ version = "0.61.1+0"
 
 [JLL.products]
 executable = ["fzf"]
+
+[[Issues."0.61.1+0"]]
+dependent = ["JLFzf [1019f520-868f-41f5-a6de-eb00f4b6a39c]"]
+dependency = []
+type = "not_on_latest"
+version = "0.61.1+0"
+latest = "0.74.2+0"

@@ -69,7 +69,7 @@ type = "missing_deps"
     uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
 
 [[Issues."1.11.0"]]
-dependent = ["AWSS3 [1c724243-ef5b-51ab-93f4-b0a88ac62a95]", "Bonito [824d6782-a2ef-11e9-3a09-e5662e0c26f8]", "GR [28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71]"]
+dependent = ["Bonito [824d6782-a2ef-11e9-3a09-e5662e0c26f8]", "GR [28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71]"]
 dependency = []
 type = "not_on_latest"
 version = "1.11.0"

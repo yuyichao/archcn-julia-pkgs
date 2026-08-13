@@ -4,11 +4,11 @@ uuid = "0ee61d77-7f21-5576-8119-9fcc46b10100"
 is_jll = true
 
 [Status]
-version = "21.1.8+1"
+version = "22.1.8+0"
 
 [JLL.products]
 executable = ["clang", "clang_apply_replacements", "clang_check", "clang_format", "clang_scan_deps", "clang_tidy"]
 library = ["libclang", "libclang_cpp"]
 
-[[Issues."21.1.8+1"]]
+[[Issues."22.1.8+0"]]
 type = "not_needed"

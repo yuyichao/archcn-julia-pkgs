@@ -1,6 +1,13 @@
-[Status]
-version = "1.1.0"
-
 [Pkg]
 name = "Gamma"
 uuid = "a0844989-3bd2-4988-8bea-c9407ab0941b"
+
+[Status]
+version = "1.1.0"
+
+[[Issues."1.1.0"]]
+dependent = []
+dependency = ["LogExpFunctions [2ab3a3ac-af41-5b50-aa03-7779005ae688]"]
+type = "not_on_latest"
+version = "1.1.0"
+latest = "1.2.0"

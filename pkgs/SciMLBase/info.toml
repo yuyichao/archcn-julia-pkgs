@@ -61,6 +61,19 @@ type = "missing_deps"
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 
+[[Issues."3.45.0"]]
+type = "missing_deps"
+
+    [[Issues."3.45.0".weak_deps]]
+    name = "FunctionProperties"
+    uuid = "f62d2435-5019-4c03-9749-2d4c77af0cbc"
+    [[Issues."3.45.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."3.45.0".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
 [[Issues."2.155.2"]]
 type = "missing_deps"
 
@@ -75,7 +88,7 @@ dependent = ["BloqadeODE [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe5]", "DelayDiffEq [
 dependency = ["RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]"]
 type = "not_on_latest"
 version = "2.155.2"
-latest = "3.44.0"
+latest = "3.46.1"
 
 [[Issues."3.3.1"]]
 type = "missing_deps"
@@ -368,6 +381,19 @@ type = "missing_deps"
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 
+[[Issues."3.46.0"]]
+type = "missing_deps"
+
+    [[Issues."3.46.0".weak_deps]]
+    name = "FunctionProperties"
+    uuid = "f62d2435-5019-4c03-9749-2d4c77af0cbc"
+    [[Issues."3.46.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."3.46.0".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
 [[Issues."3.4.3"]]
 type = "missing_deps"
 
@@ -375,6 +401,19 @@ type = "missing_deps"
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
     [[Issues."3.4.3".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
+[[Issues."3.46.1"]]
+type = "missing_deps"
+
+    [[Issues."3.46.1".weak_deps]]
+    name = "FunctionProperties"
+    uuid = "f62d2435-5019-4c03-9749-2d4c77af0cbc"
+    [[Issues."3.46.1".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."3.46.1".weak_deps]]
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 
