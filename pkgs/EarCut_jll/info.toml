@@ -8,3 +8,10 @@ version = "2.2.4+0"
 
 [JLL.products]
 library = ["libearcut"]
+
+[[Issues."2.2.4+0"]]
+dependent = ["GeometryBasics [5c1252a2-5f33-56bf-86c9-59e7332b4326]"]
+dependency = []
+type = "not_on_latest"
+version = "2.2.4+0"
+latest = "3.2.3+0"

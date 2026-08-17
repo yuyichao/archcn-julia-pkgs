@@ -88,7 +88,7 @@ dependent = ["BloqadeODE [bd27d05e-4ce1-5e79-84dd-c5d7d508bbe5]", "DelayDiffEq [
 dependency = ["RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLLogging [a6db7da4-7206-11f0-1eab-35f2a5dbe1d1]"]
 type = "not_on_latest"
 version = "2.155.2"
-latest = "3.48.0"
+latest = "3.49.0"
 
 [[Issues."3.3.1"]]
 type = "missing_deps"
@@ -565,6 +565,19 @@ type = "missing_deps"
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
     [[Issues."3.7.1".weak_deps]]
+    name = "RCall"
+    uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
+
+[[Issues."3.49.0"]]
+type = "missing_deps"
+
+    [[Issues."3.49.0".weak_deps]]
+    name = "FunctionProperties"
+    uuid = "f62d2435-5019-4c03-9749-2d4c77af0cbc"
+    [[Issues."3.49.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."3.49.0".weak_deps]]
     name = "RCall"
     uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 

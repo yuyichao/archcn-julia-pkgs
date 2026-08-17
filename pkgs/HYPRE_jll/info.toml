@@ -16,6 +16,13 @@ type = "missing_deps"
     name = "MPIABI_jll"
     uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
 
+[[Issues."3.1.2+0"]]
+type = "missing_deps"
+
+    [[Issues."3.1.2+0".deps]]
+    name = "MPIABI_jll"
+    uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
+
 [[Issues."3.0.1+0"]]
 type = "missing_deps"
 
