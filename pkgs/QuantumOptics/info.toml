@@ -5,3 +5,10 @@ required = true
 
 [Status]
 version = "1.2.6"
+
+[[Issues."1.2.6"]]
+dependent = []
+dependency = ["OrdinaryDiffEqLowOrderRK [1344f307-1e59-4825-a18e-ace9aa3fa4c6]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "StochasticDiffEq [789caeaf-c7a9-5a7d-9973-96adeb23e2a0]"]
+type = "not_on_latest"
+version = "1.2.6"
+latest = "1.2.7"

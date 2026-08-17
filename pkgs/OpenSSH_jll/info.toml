@@ -1,10 +1,10 @@
+[Pkg]
+name = "OpenSSH_jll"
+uuid = "9bd350c2-7e96-507f-8002-3f2e150b4e1b"
+is_jll = true
+
+[Status]
+version = "10.5.1+0"
 
 [JLL.products]
 executable = ["scp", "sftp", "ssh", "ssh_add", "ssh_agent", "ssh_keygen", "ssh_keyscan"]
-[Status]
-version = "10.4.1+0"
-
-[Pkg]
-is_jll = true
-name = "OpenSSH_jll"
-uuid = "9bd350c2-7e96-507f-8002-3f2e150b4e1b"

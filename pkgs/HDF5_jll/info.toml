@@ -25,7 +25,7 @@ dependent = ["HDF5 [f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f]"]
 dependency = []
 type = "not_on_latest"
 version = "1.14.6+0"
-latest = "2.2.0+0"
+latest = "2.2.1+0"
 
 [[Issues."2.1.2+0"]]
 type = "missing_deps"
@@ -53,3 +53,13 @@ type = "missing_deps"
     [[Issues."2.1.0+0".deps]]
     name = "MPIABI_jll"
     uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
+
+[[Issues."2.2.1+0"]]
+type = "missing_deps"
+
+    [[Issues."2.2.1+0".deps]]
+    name = "MPIABI_jll"
+    uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
+    [[Issues."2.2.1+0".deps]]
+    name = "mpif_jll"
+    uuid = "9aeb927a-4695-514f-a259-621a69f20ec0"
