@@ -1157,7 +1157,7 @@ repo_depends:
 
 update_on:
   - source: regex
-    url: https://raw.githubusercontent.com/yuyichao/archcn-julia-pkgs/master/pkgs/$(name)/version
+    url: https://build.archlinuxcn.org/~yuyichao/julia/pkgs/$(name)/version
     regex: 'version: *([^ ]*@[^ ]*)'
   - source: manual
     manual: 1
