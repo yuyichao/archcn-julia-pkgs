@@ -19,6 +19,23 @@ type = "missing_deps"
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
 
+[[Issues."0.20.27"]]
+type = "missing_deps"
+
+    [[Issues."0.20.27".deps]]
+    name = "MPIABI_jll"
+    uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
+
+    [[Issues."0.20.27".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."0.20.27".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+    [[Issues."0.20.27".weak_deps]]
+    name = "oneAPI"
+    uuid = "8f75cd03-7ff8-4ecb-9b8f-daf728133b1b"
+
 [[Issues."0.20.26"]]
 type = "missing_deps"
 

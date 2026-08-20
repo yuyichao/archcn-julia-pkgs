@@ -10,4 +10,4 @@ dependent = ["LineSearches [d3d80556-e9d4-5f37-9878-2ab0fcc64255]", "LsqFit [2fd
 dependency = []
 type = "not_on_latest"
 version = "7.10.0"
-latest = "8.0.0"
+latest = "8.0.1"

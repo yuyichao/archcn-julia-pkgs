@@ -10,4 +10,4 @@ dependent = []
 dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 type = "not_on_latest"
 version = "9.29.0"
-latest = "9.29.2"
+latest = "9.29.3"

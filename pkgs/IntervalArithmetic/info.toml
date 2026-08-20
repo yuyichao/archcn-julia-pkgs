@@ -3,11 +3,11 @@ name = "IntervalArithmetic"
 uuid = "d1acc4aa-44c8-5952-acd4-ba5d80a2a253"
 
 [Status]
-version = "1.0.10"
+version = "1.0.11"
 
-[[Issues."1.0.10"]]
+[[Issues."1.0.11"]]
 type = "missing_deps"
 
-    [[Issues."1.0.10".weak_deps]]
+    [[Issues."1.0.11".weak_deps]]
     name = "Arblib"
     uuid = "fb37089c-8514-4489-9461-98f9c8763369"

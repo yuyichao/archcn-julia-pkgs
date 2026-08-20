@@ -10,4 +10,4 @@ dependent = ["StochasticDiffEq [789caeaf-c7a9-5a7d-9973-96adeb23e2a0]", "Stochas
 dependency = []
 type = "not_on_latest"
 version = "1.1.0"
-latest = "2.0.3"
+latest = "2.1.0"

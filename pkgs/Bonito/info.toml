@@ -10,4 +10,4 @@ dependent = []
 dependency = ["Deno_jll [04572ae6-984a-583e-9378-9577a1c2574d]", "HTTP [cd3eb016-35fb-5094-929b-558a96fad6f3]"]
 type = "not_on_latest"
 version = "4.2.0"
-latest = "5.1.1"
+latest = "5.2.0"
