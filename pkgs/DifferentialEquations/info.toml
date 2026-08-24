@@ -1,7 +1,14 @@
+[Pkg]
+name = "DifferentialEquations"
+uuid = "0c46a032-eb83-5123-abaf-570d42b7fbaa"
+required = true
+
 [Status]
 version = "8.0.3"
 
-[Pkg]
-name = "DifferentialEquations"
-required = true
-uuid = "0c46a032-eb83-5123-abaf-570d42b7fbaa"
+[[Issues."8.0.3"]]
+dependent = []
+dependency = ["OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
+type = "not_on_latest"
+version = "8.0.3"
+latest = "8.1.0"
