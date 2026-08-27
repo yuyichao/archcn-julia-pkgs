@@ -6,3 +6,7 @@ required = true
 
 [Status]
 version = "0.10.16"
+
+[[Issues."0.10.17"]]
+type = "extern"
+artifacts = -1

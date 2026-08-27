@@ -1,10 +1,17 @@
+[Pkg]
+name = "aws_c_compression_jll"
+uuid = "73a04cd5-f3d7-5bac-9290-e8adb709f224"
+is_jll = true
 
-[JLL.products]
-library = ["libaws_c_compression"]
 [Status]
 version = "0.3.2+0"
 
-[Pkg]
-is_jll = true
-name = "aws_c_compression_jll"
-uuid = "73a04cd5-f3d7-5bac-9290-e8adb709f224"
+[JLL.products]
+library = ["libaws_c_compression"]
+
+[[Issues."0.3.2+0"]]
+dependent = []
+dependency = ["aws_c_common_jll [73048d1d-b8c4-5092-a58d-866c5e8d1e50]"]
+type = "not_on_latest"
+version = "0.3.2+0"
+latest = "0.3.3+0"
