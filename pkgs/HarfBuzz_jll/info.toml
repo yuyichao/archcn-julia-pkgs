@@ -1,17 +1,10 @@
+[Pkg]
+name = "HarfBuzz_jll"
+uuid = "2e76f6c2-a576-52d4-95c1-20adfe4de566"
+is_jll = true
 
-[JLL.products]
-library = ["libharfbuzz", "libharfbuzz_gobject", "libharfbuzz_subset"]
 [Status]
 version = "100.14003.0+0"
 
-[[Issues."8.5.1+0"]]
-version = "8.5.1+0"
-type = "not_on_latest"
-latest = "100.14003.0+0"
-dependent = ["Pango_jll [36c8627f-9965-5494-a995-c6b170f724f3]", "libass_jll [0ac62f75-1d6f-5e53-bd7c-93b484bb37c0]"]
-dependency = []
-
-[Pkg]
-is_jll = true
-name = "HarfBuzz_jll"
-uuid = "2e76f6c2-a576-52d4-95c1-20adfe4de566"
+[JLL.products]
+library = ["libharfbuzz", "libharfbuzz_gobject", "libharfbuzz_subset"]

@@ -73,7 +73,7 @@ dependent = ["Bonito [824d6782-a2ef-11e9-3a09-e5662e0c26f8]"]
 dependency = []
 type = "not_on_latest"
 version = "1.11.0"
-latest = "2.6.5"
+latest = "2.6.6"
 
 [[Issues."2.1.1"]]
 type = "missing_deps"
@@ -93,6 +93,13 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."2.4.0".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.6.6"]]
+type = "missing_deps"
+
+    [[Issues."2.6.6".deps]]
     name = "Reseau"
     uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
 

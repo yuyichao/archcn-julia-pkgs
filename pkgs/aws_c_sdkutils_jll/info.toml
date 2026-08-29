@@ -1,10 +1,17 @@
+[Pkg]
+name = "aws_c_sdkutils_jll"
+uuid = "1282aa60-004d-510b-9f52-12498d409daa"
+is_jll = true
 
-[JLL.products]
-library = ["libaws_c_sdkutils"]
 [Status]
 version = "0.2.4+1"
 
-[Pkg]
-is_jll = true
-name = "aws_c_sdkutils_jll"
-uuid = "1282aa60-004d-510b-9f52-12498d409daa"
+[JLL.products]
+library = ["libaws_c_sdkutils"]
+
+[[Issues."0.2.4+1"]]
+dependent = []
+dependency = ["aws_c_common_jll [73048d1d-b8c4-5092-a58d-866c5e8d1e50]"]
+type = "not_on_latest"
+version = "0.2.4+1"
+latest = "0.2.10+0"

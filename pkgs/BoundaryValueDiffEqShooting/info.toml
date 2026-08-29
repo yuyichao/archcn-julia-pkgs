@@ -7,7 +7,7 @@ version = "1.14.0"
 
 [[Issues."1.14.0"]]
 dependent = []
-dependency = ["BoundaryValueDiffEqCore [56b672f2-a5fe-4263-ab2d-da677488eb3a]", "OrdinaryDiffEqTsit5 [b1df2697-797e-41e3-8120-5422d3b24e4a]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
+dependency = ["BoundaryValueDiffEqCore [56b672f2-a5fe-4263-ab2d-da677488eb3a]", "OrdinaryDiffEqTsit5 [b1df2697-797e-41e3-8120-5422d3b24e4a]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SciMLLogging [a6db7da4-7206-11f0-1eab-35f2a5dbe1d1]"]
 type = "not_on_latest"
 version = "1.14.0"
-latest = "1.18.0"
+latest = "1.18.1"

@@ -14,4 +14,4 @@ dependent = ["aws_c_cal_jll [70f11efc-bab2-57f1-b0f3-22aad4e67c4b]", "aws_c_comp
 dependency = []
 type = "not_on_latest"
 version = "0.12.6+0"
-latest = "0.14.5+0"
+latest = "1.0.0+0"

@@ -33,6 +33,13 @@ type = "missing_deps"
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
+[[Issues."2.48.2"]]
+type = "missing_deps"
+
+    [[Issues."2.48.2".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
 [[Issues."2.31.3"]]
 type = "missing_deps"
 
@@ -65,6 +72,13 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."2.38.1".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
+[[Issues."2.48.1"]]
+type = "missing_deps"
+
+    [[Issues."2.48.1".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 
@@ -132,10 +146,10 @@ type = "missing_deps"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 [[Issues."2.30.3"]]
 dependent = ["NonlinearSolveQuasiNewton [9a2c21bd-3a47-402d-9113-8faf9a0ee114]"]
-dependency = ["RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SciMLLogging [a6db7da4-7206-11f0-1eab-35f2a5dbe1d1]"]
+dependency = ["RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SciMLLogging [a6db7da4-7206-11f0-1eab-35f2a5dbe1d1]", "TimerOutputs [a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f]"]
 type = "not_on_latest"
 version = "2.30.3"
-latest = "2.48.0"
+latest = "2.48.2"
 
 [[Issues."2.43.0"]]
 type = "missing_deps"
