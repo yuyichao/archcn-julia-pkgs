@@ -359,3 +359,9 @@ pkg = "GitHubActions"
 version = "0.1.8"
 dep = "JSON"
 depversion = "0.21, 1"
+
+[[Overrides.DepsVersion]]
+pkg = "ModelingToolkitBase"
+version = "1.0.0 - 1.68.0"
+dep = "SymbolicUtils"
+depversion = "4.45 - 4"
