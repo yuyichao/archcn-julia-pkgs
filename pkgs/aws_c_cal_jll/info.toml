@@ -4,14 +4,7 @@ uuid = "70f11efc-bab2-57f1-b0f3-22aad4e67c4b"
 is_jll = true
 
 [Status]
-version = "0.9.13+0"
+version = "1.0.0+0"
 
 [JLL.products]
 library = ["libaws_c_cal"]
-
-[[Issues."0.9.13+0"]]
-dependent = ["aws_c_auth_jll [2b3700d1-4306-52e2-a478-c162f0c514be]", "aws_c_io_jll [13c41daa-f319-5298-b5eb-5754e0170d52]"]
-dependency = ["aws_c_common_jll [73048d1d-b8c4-5092-a58d-866c5e8d1e50]"]
-type = "not_on_latest"
-version = "0.9.13+0"
-latest = "1.0.0+0"

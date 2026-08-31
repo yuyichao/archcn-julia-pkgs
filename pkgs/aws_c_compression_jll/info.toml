@@ -4,14 +4,7 @@ uuid = "73a04cd5-f3d7-5bac-9290-e8adb709f224"
 is_jll = true
 
 [Status]
-version = "0.3.2+0"
+version = "1.0.0+0"
 
 [JLL.products]
 library = ["libaws_c_compression"]
-
-[[Issues."0.3.2+0"]]
-dependent = ["aws_c_http_jll [3254fc65-9028-534d-aa9d-d76d128babc6]"]
-dependency = ["aws_c_common_jll [73048d1d-b8c4-5092-a58d-866c5e8d1e50]"]
-type = "not_on_latest"
-version = "0.3.2+0"
-latest = "1.0.0+0"

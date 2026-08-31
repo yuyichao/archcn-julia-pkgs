@@ -3,11 +3,4 @@ name = "LogExpFunctions"
 uuid = "2ab3a3ac-af41-5b50-aa03-7779005ae688"
 
 [Status]
-version = "0.3.29"
-
-[[Issues."0.3.29"]]
-dependent = ["Tracker [9f7883ad-71c0-57eb-9f7f-b5c9e6d3789c]"]
-dependency = []
-type = "not_on_latest"
-version = "0.3.29"
-latest = "1.0.1"
+version = "1.0.1"

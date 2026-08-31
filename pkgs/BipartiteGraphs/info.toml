@@ -3,4 +3,4 @@ name = "BipartiteGraphs"
 uuid = "caf10ac8-0290-4205-88aa-f15908547e8d"
 
 [Status]
-version = "0.1.12"
+version = "0.1.13"
