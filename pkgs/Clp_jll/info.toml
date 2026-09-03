@@ -4,15 +4,15 @@ uuid = "06985876-5285-5a41-9fcb-8948a742cc53"
 is_jll = true
 
 [Status]
-version = "100.1700.1000+1"
+version = "100.1700.1100+0"
 
 [JLL.products]
 executable = ["clp"]
 library = ["libClp", "libClpSolver", "libOsiClp"]
 
-[[Issues."100.1700.1000+1"]]
+[[Issues."100.1700.1100+0"]]
 dependent = ["Clp [e2554f3b-3117-50c0-817c-e040a3ddf72d]"]
 dependency = []
 type = "not_on_latest"
-version = "100.1700.1000+1"
-latest = "100.1700.1001+0"
+version = "100.1700.1100+0"
+latest = "100.1700.1101+0"

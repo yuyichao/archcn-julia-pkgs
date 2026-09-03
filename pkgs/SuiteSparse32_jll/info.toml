@@ -4,7 +4,7 @@ uuid = "ca45d3f4-326b-53b0-9957-23b75aacb3f2"
 is_jll = true
 
 [Status]
-version = "7.12.1+0"
+version = "7.12.1+1"
 
 [JLL.products]
 library = ["libamd", "libbtf", "libcamd", "libccolamd", "libcholmod", "libcolamd", "libklu", "libldl", "librbio", "libspqr", "libsuitesparseconfig", "libumfpack"]

@@ -3,7 +3,7 @@ name = "JSONRPC"
 uuid = "b9b8584e-8fd3-41f9-ad0c-7255d428e418"
 
 [Status]
-version = "3.0.4"
+version = "3.1.0"
 
-[[Issues."3.0.4"]]
+[[Issues."3.1.0"]]
 type = "not_needed"

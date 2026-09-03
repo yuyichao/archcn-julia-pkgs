@@ -4,4 +4,11 @@ uuid = "22787eb5-b846-44ae-b979-8e399b8463ab"
 required = true
 
 [Status]
-version = "2.1.0"
+version = "2.1.1"
+
+[[Issues."2.2.0"]]
+type = "missing_deps"
+
+    [[Issues."2.2.0".deps]]
+    name = "tree_sitter_julia_jll"
+    uuid = "52be201e-a5e9-5cfe-8bf2-2dc4b062171c"
