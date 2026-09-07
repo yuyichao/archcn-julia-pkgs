@@ -3,8 +3,8 @@ name = "JuliaFormatter"
 uuid = "98e50ef6-434e-11e9-1051-2b60c6c9e899"
 
 [Status]
-version = "2.13.0"
+version = "2.14.0"
 
-[[Issues."2.13.0"]]
+[[Issues."2.14.0"]]
 type = "not_needed"
 has_weak = true

@@ -3,4 +3,4 @@ name = "SparseColumnPivotedQR"
 uuid = "a57abbd0-fea5-4d57-96be-5e525945e8e4"
 
 [Status]
-version = "2.1.7"
+version = "2.1.8"

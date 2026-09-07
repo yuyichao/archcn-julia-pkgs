@@ -10,4 +10,4 @@ dependent = ["Loraine [df0521af-66a0-42b3-822e-f30debbfe642]", "Polyhedra [67491
 dependency = []
 type = "not_on_latest"
 version = "0.3.19"
-latest = "0.4.0"
+latest = "0.4.1"

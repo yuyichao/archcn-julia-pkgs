@@ -3,11 +3,11 @@ name = "Parsers"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
 
 [Status]
-version = "2.8.7"
+version = "2.8.8"
 
-[[Issues."2.8.7"]]
-dependent = ["CSV [336ed68f-0bac-5ca0-87d4-7b16caf5d00b]", "InlineStrings [842dd82b-1e85-43dc-bf29-5d0ee9dffc48]", "JSON [682c06a0-de6a-54ab-a142-c8b1cf79cde6]", "JSON3 [0f8b85d8-7281-11e9-16c2-39a750bddbf1]", "WeakRefStrings [ea10d353-3f73-51f8-a26c-33c1cb351aa5]"]
+[[Issues."2.8.8"]]
+dependent = ["CSV [336ed68f-0bac-5ca0-87d4-7b16caf5d00b]", "JSON3 [0f8b85d8-7281-11e9-16c2-39a750bddbf1]", "WeakRefStrings [ea10d353-3f73-51f8-a26c-33c1cb351aa5]"]
 dependency = []
 type = "not_on_latest"
-version = "2.8.7"
+version = "2.8.8"
 latest = "3.0.0"
