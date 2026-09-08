@@ -10,4 +10,4 @@ dependent = []
 dependency = ["Moshi [2e0e35c7-a2e4-4343-998d-7ef72827ed2d]"]
 type = "not_on_latest"
 version = "4.46.1"
-latest = "4.46.2"
+latest = "4.46.3"

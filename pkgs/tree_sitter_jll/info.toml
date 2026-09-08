@@ -1,10 +1,17 @@
+[Pkg]
+name = "tree_sitter_jll"
+uuid = "695101d5-1b81-5434-9529-70430e482717"
+is_jll = true
 
-[JLL.products]
-library = ["libtreesitter"]
 [Status]
 version = "0.25.10+0"
 
-[Pkg]
-is_jll = true
-name = "tree_sitter_jll"
-uuid = "695101d5-1b81-5434-9529-70430e482717"
+[JLL.products]
+library = ["libtreesitter"]
+
+[[Issues."0.25.10+0"]]
+dependent = ["TreeSitter [f42328cb-ece0-4cf2-995f-9e7abb27d006]"]
+dependency = []
+type = "not_on_latest"
+version = "0.25.10+0"
+latest = "0.26.9+0"
