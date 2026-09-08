@@ -1,0 +1,10 @@
+
+[JLL.products]
+library = ["libtreesitter"]
+[Status]
+version = "0.25.10+0"
+
+[Pkg]
+is_jll = true
+name = "tree_sitter_jll"
+uuid = "695101d5-1b81-5434-9529-70430e482717"
