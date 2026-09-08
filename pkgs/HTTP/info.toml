@@ -1,112 +1,10 @@
-[Pkg]
-name = "HTTP"
-uuid = "cd3eb016-35fb-5094-929b-558a96fad6f3"
-
 [Status]
-version = "1.11.0"
-
-[[Issues."2.6.0"]]
-type = "missing_deps"
-
-    [[Issues."2.6.0".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+version = "2.6.7"
 
 [[Issues."2.5.5"]]
 type = "missing_deps"
 
     [[Issues."2.5.5".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."2.5.2"]]
-type = "missing_deps"
-
-    [[Issues."2.5.2".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."2.6.3"]]
-type = "missing_deps"
-
-    [[Issues."2.6.3".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."2.5.1"]]
-type = "missing_deps"
-
-    [[Issues."2.5.1".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."2.2.0"]]
-type = "missing_deps"
-
-    [[Issues."2.2.0".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."2.6.1"]]
-type = "missing_deps"
-
-    [[Issues."2.6.1".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."2.6.4"]]
-type = "missing_deps"
-
-    [[Issues."2.6.4".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."2.0.0"]]
-type = "missing_deps"
-
-    [[Issues."2.0.0".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."1.11.0"]]
-dependent = ["Bonito [824d6782-a2ef-11e9-3a09-e5662e0c26f8]"]
-dependency = []
-type = "not_on_latest"
-version = "1.11.0"
-latest = "2.6.7"
-
-[[Issues."2.6.7"]]
-type = "missing_deps"
-
-    [[Issues."2.6.7".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."2.1.1"]]
-type = "missing_deps"
-
-    [[Issues."2.1.1".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."2.6.2"]]
-type = "missing_deps"
-
-    [[Issues."2.6.2".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."2.4.0"]]
-type = "missing_deps"
-
-    [[Issues."2.4.0".deps]]
-    name = "Reseau"
-    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
-
-[[Issues."2.6.6"]]
-type = "missing_deps"
-
-    [[Issues."2.6.6".deps]]
     name = "Reseau"
     uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
 
@@ -117,10 +15,24 @@ type = "missing_deps"
     name = "Reseau"
     uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
 
-[[Issues."2.3.0"]]
+[[Issues."2.5.4"]]
 type = "missing_deps"
 
-    [[Issues."2.3.0".deps]]
+    [[Issues."2.5.4".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.5.2"]]
+type = "missing_deps"
+
+    [[Issues."2.5.2".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.2.0"]]
+type = "missing_deps"
+
+    [[Issues."2.2.0".deps]]
     name = "Reseau"
     uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
 
@@ -128,6 +40,83 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."2.5.0".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.4.0"]]
+type = "missing_deps"
+
+    [[Issues."2.4.0".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.6.7"]]
+type = "missing_deps"
+
+    [[Issues."2.6.7".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.3.0"]]
+type = "missing_deps"
+
+    [[Issues."2.3.0".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.6.3"]]
+type = "missing_deps"
+
+    [[Issues."2.6.3".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."1.11.0"]]
+version = "1.11.0"
+type = "not_on_latest"
+latest = "2.6.7"
+dependent = ["Bonito [824d6782-a2ef-11e9-3a09-e5662e0c26f8]"]
+dependency = []
+
+[[Issues."2.5.3"]]
+type = "missing_deps"
+
+    [[Issues."2.5.3".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.6.4"]]
+type = "missing_deps"
+
+    [[Issues."2.6.4".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.6.0"]]
+type = "missing_deps"
+
+    [[Issues."2.6.0".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.6.1"]]
+type = "missing_deps"
+
+    [[Issues."2.6.1".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.0.0"]]
+type = "missing_deps"
+
+    [[Issues."2.0.0".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.6.2"]]
+type = "missing_deps"
+
+    [[Issues."2.6.2".deps]]
     name = "Reseau"
     uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
 
@@ -145,16 +134,27 @@ type = "missing_deps"
     name = "Reseau"
     uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
 
-[[Issues."2.5.4"]]
+[[Issues."2.5.1"]]
 type = "missing_deps"
 
-    [[Issues."2.5.4".deps]]
+    [[Issues."2.5.1".deps]]
     name = "Reseau"
     uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
 
-[[Issues."2.5.3"]]
+[[Issues."2.6.6"]]
 type = "missing_deps"
 
-    [[Issues."2.5.3".deps]]
+    [[Issues."2.6.6".deps]]
     name = "Reseau"
     uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[[Issues."2.1.1"]]
+type = "missing_deps"
+
+    [[Issues."2.1.1".deps]]
+    name = "Reseau"
+    uuid = "802f3686-a58f-41ce-bb0c-3c43c75bba36"
+
+[Pkg]
+name = "HTTP"
+uuid = "cd3eb016-35fb-5094-929b-558a96fad6f3"

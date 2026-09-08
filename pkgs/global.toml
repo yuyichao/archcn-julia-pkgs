@@ -182,7 +182,7 @@ depversion = ">=200.900"
 
 [[Overrides.DepsVersion]]
 pkg = "Bonito"
-version = "4"
+version = "4, 5"
 dep = "Deno_jll"
 depversion = "1, 2"
 
