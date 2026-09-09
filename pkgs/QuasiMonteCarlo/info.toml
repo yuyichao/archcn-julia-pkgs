@@ -1,8 +1,8 @@
 
 [[Issues."0.3.11"]]
-dependency = []
+dependency = ["LatticeRules [73f95e8e-ec14-4e6a-8b18-0d2e271c4e55]"]
 dependent = ["MonteCarloIntegration [4886b29c-78c9-11e9-0a6e-41e1f4161f7b]"]
-latest = "0.4.2"
+latest = "0.4.3"
 type = "not_on_latest"
 version = "0.3.11"
 [Pkg]

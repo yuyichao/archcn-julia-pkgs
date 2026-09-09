@@ -8,6 +8,32 @@ type = "missing_deps"
     [[Issues."7.39.0".weak_deps]]
     name = "SymPy"
     uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+[[Issues."7.39.0"]]
+dependency = ["SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
+dependent = []
+latest = "7.39.2"
+type = "not_on_latest"
+version = "7.39.0"
+
+[[Issues."7.39.1"]]
+type = "missing_deps"
+
+    [[Issues."7.39.1".weak_deps]]
+    name = "D3Trees"
+    uuid = "e3df1716-f71e-5df9-9e2d-98e193103c45"
+    [[Issues."7.39.1".weak_deps]]
+    name = "SymPy"
+    uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+
+[[Issues."7.39.2"]]
+type = "missing_deps"
+
+    [[Issues."7.39.2".weak_deps]]
+    name = "D3Trees"
+    uuid = "e3df1716-f71e-5df9-9e2d-98e193103c45"
+    [[Issues."7.39.2".weak_deps]]
+    name = "SymPy"
+    uuid = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 [Pkg]
 name = "Symbolics"
 required = true
