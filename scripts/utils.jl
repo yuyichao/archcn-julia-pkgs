@@ -13,6 +13,10 @@ else
     return get(d, key, default)
 end
 
+toml_print(x) = sprint(x) do io, x
+    TOML.print(io, x, sorted=true)
+end
+
 const use_compress = :uncompressed_compat in fieldnames(Pkg.Registry.VersionInfo)
 
 if use_compress
@@ -188,7 +192,7 @@ function write_back_info(ctx::Context)
         end
         changed = true
         open(joinpath(ctx.package_paths[k], "info.toml"), "w") do io
-            TOML.print(io, v)
+            TOML.print(io, v, sorted=true)
         end
     end
     return changed
@@ -507,28 +511,28 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
                 if issue_dict in get(old_issues, ver_str, empty_issue)
                     continue
                 end
-                push!(messages, "Missing dependencies for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
+                push!(messages, "Missing dependencies for $(pkgprefix):\n$(toml_print(issue_dict))")
             elseif isa(issue, JLLChanges)
                 issue_dict = todict(ctx, issue)
                 push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
                 if issue_dict in get(old_issues, ver_str, empty_issue)
                     continue
                 end
-                push!(messages, "JLL changed for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
+                push!(messages, "JLL changed for $(pkgprefix):\n$(toml_print(issue_dict))")
             elseif isa(issue, ExternInfo)
                 issue_dict = todict(ctx, issue)
                 push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
                 if issue_dict in get(old_issues, ver_str, empty_issue)
                     continue
                 end
-                push!(messages, "External dependencies changed for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
+                push!(messages, "External dependencies changed for $(pkgprefix):\n$(toml_print(issue_dict))")
             elseif isa(issue, PkgCommitMissing)
                 issue_dict = todict(ctx, issue)
                 push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
                 if issue_dict in get(old_issues, ver_str, empty_issue)
                     continue
                 end
-                push!(messages, "Package commit not found for $(pkgprefix):\n$(sprint(TOML.print, issue_dict))")
+                push!(messages, "Package commit not found for $(pkgprefix):\n$(toml_print(issue_dict))")
             elseif isa(issue, NotOnLatestInfo)
                 issue_dict = todict(ctx, issue)
                 push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
@@ -536,7 +540,7 @@ function collect_messages(ctx::Context, uuid, info::PackageVersionInfo,
                     continue
                 end
                 push!(messages,
-                      "Package not on latest version $(pkgprefix):\nLatest $(issue.latest)\n$(sprint(TOML.print, issue_dict))")
+                      "Package not on latest version $(pkgprefix):\nLatest $(issue.latest)\n$(toml_print(issue_dict))")
             elseif isa(issue, NotNeeded)
                 issue_dict = todict(ctx, issue)
                 push!(get!(Vector{Any}, new_issues, ver_str), issue_dict)
@@ -882,7 +886,7 @@ function resolve_all_dependencies(ctx::Context, uuids)
                     pkgentry = ctx.registry[uuid]
                     pkginfo = registry_info(ctx.registry, pkgentry)
                     name = pkgentry.name
-                    println("Package not on latest version $(name)@$(ver) [$(uuid)]:\nLatest $(latest)\n$(sprint(TOML.print, issue_dict))")
+                    println("Package not on latest version $(name)@$(ver) [$(uuid)]:\nLatest $(latest)\n$(toml_print(issue_dict))")
                 end
             end
         end
