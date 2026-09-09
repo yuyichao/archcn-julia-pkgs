@@ -1,18 +1,18 @@
-[Pkg]
-name = "x264_jll"
-uuid = "1270edf5-f2f9-52d2-97e9-ab00b5d0237a"
-is_jll = true
 
-[Status]
+[[Issues."10164.0.1+0"]]
+dependency = []
+dependent = ["FFMPEG_jll [b22a6f82-2f65-5046-a5b2-351ab43fb4e5]"]
+latest = "10165.0.0+0"
+type = "not_on_latest"
 version = "10164.0.1+0"
 
 [JLL.products]
 executable = ["x264"]
 library = ["libx264"]
+[Pkg]
+is_jll = true
+name = "x264_jll"
+uuid = "1270edf5-f2f9-52d2-97e9-ab00b5d0237a"
 
-[[Issues."10164.0.1+0"]]
-dependent = ["FFMPEG_jll [b22a6f82-2f65-5046-a5b2-351ab43fb4e5]"]
-dependency = []
-type = "not_on_latest"
+[Status]
 version = "10164.0.1+0"
-latest = "10165.0.0+0"

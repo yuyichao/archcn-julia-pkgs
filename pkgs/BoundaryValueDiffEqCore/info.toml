@@ -1,13 +1,13 @@
+
+[[Issues."2.3.1"]]
+dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SciMLLogging [a6db7da4-7206-11f0-1eab-35f2a5dbe1d1]"]
+dependent = []
+latest = "2.8.3"
+type = "not_on_latest"
+version = "2.3.1"
 [Pkg]
 name = "BoundaryValueDiffEqCore"
 uuid = "56b672f2-a5fe-4263-ab2d-da677488eb3a"
 
 [Status]
 version = "2.3.1"
-
-[[Issues."2.3.1"]]
-dependent = []
-dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SciMLLogging [a6db7da4-7206-11f0-1eab-35f2a5dbe1d1]"]
-type = "not_on_latest"
-version = "2.3.1"
-latest = "2.8.3"

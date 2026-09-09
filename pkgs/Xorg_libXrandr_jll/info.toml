@@ -1,10 +1,10 @@
-[Pkg]
-name = "Xorg_libXrandr_jll"
-uuid = "ec84b674-ba8e-5d96-8ba1-2a689ba10484"
-is_jll = true
-
-[Status]
-version = "1.5.6+0"
 
 [JLL.products]
 library = ["libXrandr"]
+[Pkg]
+is_jll = true
+name = "Xorg_libXrandr_jll"
+uuid = "ec84b674-ba8e-5d96-8ba1-2a689ba10484"
+
+[Status]
+version = "1.5.6+0"

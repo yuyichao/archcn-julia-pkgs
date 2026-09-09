@@ -1,10 +1,10 @@
-[Pkg]
-name = "micromamba_jll"
-uuid = "f8abcde7-e9b7-5caa-b8af-a437887ae8e4"
-is_jll = true
-
-[Status]
-version = "2.3.1+0"
 
 [JLL.products]
 executable = ["micromamba"]
+[Pkg]
+is_jll = true
+name = "micromamba_jll"
+uuid = "f8abcde7-e9b7-5caa-b8af-a437887ae8e4"
+
+[Status]
+version = "2.3.1+0"

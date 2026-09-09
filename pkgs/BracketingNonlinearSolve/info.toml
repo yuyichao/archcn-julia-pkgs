@@ -1,13 +1,13 @@
+
+[[Issues."1.12.1"]]
+dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SciMLLogging [a6db7da4-7206-11f0-1eab-35f2a5dbe1d1]"]
+dependent = []
+latest = "1.12.6"
+type = "not_on_latest"
+version = "1.12.1"
 [Pkg]
 name = "BracketingNonlinearSolve"
 uuid = "70df07ce-3d50-431d-a3e7-ca6ddb60ac1e"
 
 [Status]
 version = "1.12.1"
-
-[[Issues."1.12.1"]]
-dependent = []
-dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SciMLLogging [a6db7da4-7206-11f0-1eab-35f2a5dbe1d1]"]
-type = "not_on_latest"
-version = "1.12.1"
-latest = "1.12.6"

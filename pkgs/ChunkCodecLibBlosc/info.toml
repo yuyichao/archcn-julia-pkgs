@@ -1,7 +1,7 @@
 [Pkg]
 name = "ChunkCodecLibBlosc"
-uuid = "c6a955be-ab7f-4fbb-b38f-caf93db6b928"
 required = true
+uuid = "c6a955be-ab7f-4fbb-b38f-caf93db6b928"
 
 [Status]
 version = "0.4.0"

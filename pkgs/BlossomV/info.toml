@@ -1,11 +1,11 @@
+
+[[Issues."0.4.3"]]
+has_weak = true
+type = "not_needed"
 [Pkg]
+has_deps_build = true
 name = "BlossomV"
 uuid = "6c721016-9dae-5d90-abf6-67daaccb2332"
-has_deps_build = true
 
 [Status]
 version = "0.4.3"
-
-[[Issues."0.4.3"]]
-type = "not_needed"
-has_weak = true

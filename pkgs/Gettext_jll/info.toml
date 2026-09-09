@@ -1,19 +1,19 @@
-[Pkg]
-name = "Gettext_jll"
-uuid = "78b55507-aeef-58d4-861c-77aaff3498b1"
-is_jll = true
 
-[Status]
+[[Issues."0.21.0+0"]]
+dependency = ["XML2_jll [02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a]"]
+dependent = []
+latest = "1.0.0+0"
+type = "not_on_latest"
 version = "0.21.0+0"
+[[Issues."0.21.0+0"]]
+type = "not_needed"
 
 [JLL.products]
 library = ["libgettext"]
+[Pkg]
+is_jll = true
+name = "Gettext_jll"
+uuid = "78b55507-aeef-58d4-861c-77aaff3498b1"
 
-[[Issues."0.21.0+0"]]
-dependent = []
-dependency = ["XML2_jll [02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a]"]
-type = "not_on_latest"
+[Status]
 version = "0.21.0+0"
-latest = "1.0.0+0"
-[[Issues."0.21.0+0"]]
-type = "not_needed"

@@ -1,10 +1,10 @@
+
+[[Issues."0.2.39"]]
+has_weak = true
+type = "not_needed"
 [Pkg]
 name = "Tracker"
 uuid = "9f7883ad-71c0-57eb-9f7f-b5c9e6d3789c"
 
 [Status]
 version = "0.2.39"
-
-[[Issues."0.2.39"]]
-type = "not_needed"
-has_weak = true

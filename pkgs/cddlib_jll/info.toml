@@ -1,10 +1,10 @@
-[Pkg]
-name = "cddlib_jll"
-uuid = "f07e07eb-5685-515a-97c8-3014f6152feb"
-is_jll = true
-
-[Status]
-version = "0.94.15+0"
 
 [JLL.products]
 library = ["libcdd", "libcddgmp"]
+[Pkg]
+is_jll = true
+name = "cddlib_jll"
+uuid = "f07e07eb-5685-515a-97c8-3014f6152feb"
+
+[Status]
+version = "0.94.15+0"

@@ -1,9 +1,9 @@
+
+[[Issues."1.0.2"]]
+type = "not_needed"
 [Pkg]
 name = "Grisu"
 uuid = "42e2da0e-8278-4e71-bc24-59509adca0fe"
 
 [Status]
 version = "1.0.2"
-
-[[Issues."1.0.2"]]
-type = "not_needed"

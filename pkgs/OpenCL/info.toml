@@ -1,14 +1,14 @@
+
+[[Issues."0.10.10"]]
+dependency = ["GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55]"]
+dependent = []
+latest = "0.10.11"
+type = "not_on_latest"
+version = "0.10.10"
 [Pkg]
 name = "OpenCL"
-uuid = "08131aa3-fb12-5dee-8b74-c09406e224a2"
 required = true
+uuid = "08131aa3-fb12-5dee-8b74-c09406e224a2"
 
 [Status]
 version = "0.10.10"
-
-[[Issues."0.10.10"]]
-dependent = []
-dependency = ["GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55]"]
-type = "not_on_latest"
-version = "0.10.10"
-latest = "0.10.11"

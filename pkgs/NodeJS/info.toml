@@ -1,10 +1,10 @@
+
+[[Issues."2.0.0"]]
+type = "not_needed"
 [Pkg]
-name = "NodeJS"
 has_artifacts = true
+name = "NodeJS"
 uuid = "2bd173c7-0d6d-553b-b6af-13a54713934c"
 
 [Status]
 version = "2.0.0"
-
-[[Issues."2.0.0"]]
-type = "not_needed"

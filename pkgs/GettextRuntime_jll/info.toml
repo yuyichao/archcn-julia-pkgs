@@ -1,18 +1,18 @@
-[Pkg]
-name = "GettextRuntime_jll"
-uuid = "b0724c58-0f36-5564-988d-3bb0596ebc4a"
-is_jll = true
 
-[Status]
+[[Issues."0.22.4+0"]]
+dependency = []
+dependent = ["Glib_jll [7746bdde-850d-59dc-9ae8-88ece973131d]"]
+latest = "1.0.0+0"
+type = "not_on_latest"
 version = "0.22.4+0"
 
 [JLL.products]
 executable = ["envsubst", "gettext", "ngettext"]
 library = ["libasprintf", "libintl"]
+[Pkg]
+is_jll = true
+name = "GettextRuntime_jll"
+uuid = "b0724c58-0f36-5564-988d-3bb0596ebc4a"
 
-[[Issues."0.22.4+0"]]
-dependent = ["Glib_jll [7746bdde-850d-59dc-9ae8-88ece973131d]"]
-dependency = []
-type = "not_on_latest"
+[Status]
 version = "0.22.4+0"
-latest = "1.0.0+0"

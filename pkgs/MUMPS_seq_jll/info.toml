@@ -1,10 +1,10 @@
-[Pkg]
-name = "MUMPS_seq_jll"
-uuid = "d7ed1dd3-d0ae-5e8e-bfb4-87a502085b8d"
-is_jll = true
-
-[Status]
-version = "500.900.100+0"
 
 [JLL.products]
 library = ["libcmumps", "libdmumps", "libsmumps", "libzmumps"]
+[Pkg]
+is_jll = true
+name = "MUMPS_seq_jll"
+uuid = "d7ed1dd3-d0ae-5e8e-bfb4-87a502085b8d"
+
+[Status]
+version = "500.900.100+0"

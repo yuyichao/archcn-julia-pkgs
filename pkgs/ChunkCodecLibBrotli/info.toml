@@ -1,7 +1,7 @@
 [Pkg]
 name = "ChunkCodecLibBrotli"
-uuid = "653b0ff7-85b5-4442-93c1-dcc330d3ec7d"
 required = true
+uuid = "653b0ff7-85b5-4442-93c1-dcc330d3ec7d"
 
 [Status]
 version = "1.0.0"

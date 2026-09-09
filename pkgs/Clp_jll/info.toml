@@ -1,18 +1,18 @@
-[Pkg]
-name = "Clp_jll"
-uuid = "06985876-5285-5a41-9fcb-8948a742cc53"
-is_jll = true
 
-[Status]
+[[Issues."100.1700.1100+0"]]
+dependency = []
+dependent = ["Clp [e2554f3b-3117-50c0-817c-e040a3ddf72d]"]
+latest = "100.1700.1101+0"
+type = "not_on_latest"
 version = "100.1700.1100+0"
 
 [JLL.products]
 executable = ["clp"]
 library = ["libClp", "libClpSolver", "libOsiClp"]
+[Pkg]
+is_jll = true
+name = "Clp_jll"
+uuid = "06985876-5285-5a41-9fcb-8948a742cc53"
 
-[[Issues."100.1700.1100+0"]]
-dependent = ["Clp [e2554f3b-3117-50c0-817c-e040a3ddf72d]"]
-dependency = []
-type = "not_on_latest"
+[Status]
 version = "100.1700.1100+0"
-latest = "100.1700.1101+0"

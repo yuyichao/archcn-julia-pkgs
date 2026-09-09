@@ -1,13 +1,17 @@
-[Pkg]
-name = "HYPRE_jll"
-uuid = "0a602bbd-b08b-5d75-8d32-0de6eef44785"
-is_jll = true
 
-[Status]
-version = "3.0.0+0"
+[[Issues."3.0.1+0"]]
+type = "missing_deps"
 
-[JLL.products]
-library = ["libHYPRE"]
+    [[Issues."3.0.1+0".deps]]
+    name = "MPIABI_jll"
+    uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
+
+[[Issues."3.1.0+0"]]
+type = "missing_deps"
+
+    [[Issues."3.1.0+0".deps]]
+    name = "MPIABI_jll"
+    uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
 
 [[Issues."3.1.1+0"]]
 type = "missing_deps"
@@ -23,16 +27,12 @@ type = "missing_deps"
     name = "MPIABI_jll"
     uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
 
-[[Issues."3.0.1+0"]]
-type = "missing_deps"
+[JLL.products]
+library = ["libHYPRE"]
+[Pkg]
+is_jll = true
+name = "HYPRE_jll"
+uuid = "0a602bbd-b08b-5d75-8d32-0de6eef44785"
 
-    [[Issues."3.0.1+0".deps]]
-    name = "MPIABI_jll"
-    uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
-
-[[Issues."3.1.0+0"]]
-type = "missing_deps"
-
-    [[Issues."3.1.0+0".deps]]
-    name = "MPIABI_jll"
-    uuid = "b5ada748-db0f-5fc0-8972-9331c762740c"
+[Status]
+version = "3.0.0+0"

@@ -1,10 +1,10 @@
+
+[[Issues."1.17.0"]]
+has_weak = true
+type = "not_needed"
 [Pkg]
 name = "ReverseDiff"
 uuid = "37e2e3b7-166d-5795-8a7a-e32c996b4267"
 
 [Status]
 version = "1.17.0"
-
-[[Issues."1.17.0"]]
-type = "not_needed"
-has_weak = true

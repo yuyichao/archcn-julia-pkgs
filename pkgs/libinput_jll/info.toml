@@ -1,10 +1,10 @@
-[Pkg]
-name = "libinput_jll"
-uuid = "36db933b-70db-51c0-b978-0f229ee0e533"
-is_jll = true
-
-[Status]
-version = "1.28.1+0"
 
 [JLL.products]
 library = ["libinput"]
+[Pkg]
+is_jll = true
+name = "libinput_jll"
+uuid = "36db933b-70db-51c0-b978-0f229ee0e533"
+
+[Status]
+version = "1.28.1+0"

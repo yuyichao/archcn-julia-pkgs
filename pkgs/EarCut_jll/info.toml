@@ -1,17 +1,17 @@
-[Pkg]
-name = "EarCut_jll"
-uuid = "5ae413db-bbd1-5e63-b57d-d24a61df00f5"
-is_jll = true
 
-[Status]
+[[Issues."2.2.4+0"]]
+dependency = []
+dependent = ["GeometryBasics [5c1252a2-5f33-56bf-86c9-59e7332b4326]"]
+latest = "3.2.3+0"
+type = "not_on_latest"
 version = "2.2.4+0"
 
 [JLL.products]
 library = ["libearcut"]
+[Pkg]
+is_jll = true
+name = "EarCut_jll"
+uuid = "5ae413db-bbd1-5e63-b57d-d24a61df00f5"
 
-[[Issues."2.2.4+0"]]
-dependent = ["GeometryBasics [5c1252a2-5f33-56bf-86c9-59e7332b4326]"]
-dependency = []
-type = "not_on_latest"
+[Status]
 version = "2.2.4+0"
-latest = "3.2.3+0"

@@ -1,10 +1,10 @@
-[Pkg]
-name = "Arpack_jll"
-uuid = "68821587-b530-5797-8361-c406ea357684"
-is_jll = true
-
-[Status]
-version = "3.9.2+0"
 
 [JLL.products]
 library = ["libarpack"]
+[Pkg]
+is_jll = true
+name = "Arpack_jll"
+uuid = "68821587-b530-5797-8361-c406ea357684"
+
+[Status]
+version = "3.9.2+0"

@@ -1,10 +1,10 @@
-[Pkg]
-name = "Enzyme_jll"
-uuid = "7cc45869-7501-5eee-bdea-0790c847d4ef"
-is_jll = true
-
-[Status]
-version = "0.0.292+0"
 
 [JLL.products]
 library = ["libEnzyme", "libEnzymeBCLoad"]
+[Pkg]
+is_jll = true
+name = "Enzyme_jll"
+uuid = "7cc45869-7501-5eee-bdea-0790c847d4ef"
+
+[Status]
+version = "0.0.292+0"

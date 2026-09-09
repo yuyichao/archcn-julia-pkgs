@@ -1,12 +1,12 @@
-[Pkg]
-name = "XZ_jll"
-uuid = "ffd25f8a-64ca-5728-b0f7-c24cf3aae800"
-is_jll = true
-
-[Status]
-version = "5.8.3+0"
 
 [JLL.products]
 executable = ["lzmadec", "lzmainfo", "xz", "xzdec"]
 file = ["liblzma_a"]
 library = ["liblzma"]
+[Pkg]
+is_jll = true
+name = "XZ_jll"
+uuid = "ffd25f8a-64ca-5728-b0f7-c24cf3aae800"
+
+[Status]
+version = "5.8.3+0"

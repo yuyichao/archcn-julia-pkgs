@@ -1,14 +1,14 @@
-[Pkg]
-name = "PMIx_jll"
-uuid = "32165bc3-0280-59bc-8c0b-c33b6203efab"
-is_jll = true
 
-[Status]
-version = "6.1.0+0"
+[[Issues."6.1.0+0"]]
+type = "not_needed"
 
 [JLL.products]
 executable = ["pmix_info"]
 library = ["libpmix"]
+[Pkg]
+is_jll = true
+name = "PMIx_jll"
+uuid = "32165bc3-0280-59bc-8c0b-c33b6203efab"
 
-[[Issues."6.1.0+0"]]
-type = "not_needed"
+[Status]
+version = "6.1.0+0"

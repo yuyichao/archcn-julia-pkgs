@@ -1,14 +1,14 @@
-[Pkg]
-name = "Clang_jll"
-uuid = "0ee61d77-7f21-5576-8119-9fcc46b10100"
-is_jll = true
 
-[Status]
-version = "22.1.8+1"
+[[Issues."22.1.8+1"]]
+type = "not_needed"
 
 [JLL.products]
 executable = ["clang", "clang_apply_replacements", "clang_check", "clang_format", "clang_scan_deps", "clang_tidy"]
 library = ["libclang", "libclang_cpp"]
+[Pkg]
+is_jll = true
+name = "Clang_jll"
+uuid = "0ee61d77-7f21-5576-8119-9fcc46b10100"
 
-[[Issues."22.1.8+1"]]
-type = "not_needed"
+[Status]
+version = "22.1.8+1"

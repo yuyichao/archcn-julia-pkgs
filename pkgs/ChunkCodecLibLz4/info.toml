@@ -1,7 +1,7 @@
 [Pkg]
 name = "ChunkCodecLibLz4"
-uuid = "7e9cc85e-5614-42a3-ad86-b78f920b38a5"
 required = true
+uuid = "7e9cc85e-5614-42a3-ad86-b78f920b38a5"
 
 [Status]
 version = "1.0.0"

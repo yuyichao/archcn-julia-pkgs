@@ -1,10 +1,10 @@
+
+[[Issues."1.8.0"]]
+has_weak = true
+type = "not_needed"
 [Pkg]
 name = "HYPRE"
 uuid = "b5ffcf37-a2bd-41ab-a3da-4bd9bc8ad771"
 
 [Status]
 version = "1.8.0"
-
-[[Issues."1.8.0"]]
-type = "not_needed"
-has_weak = true

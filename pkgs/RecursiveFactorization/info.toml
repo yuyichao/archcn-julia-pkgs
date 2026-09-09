@@ -1,10 +1,10 @@
+
+[[Issues."0.2.30"]]
+has_weak = true
+type = "not_needed"
 [Pkg]
 name = "RecursiveFactorization"
 uuid = "f2c3362d-daeb-58d1-803e-2bc74f2840b4"
 
 [Status]
 version = "0.2.30"
-
-[[Issues."0.2.30"]]
-type = "not_needed"
-has_weak = true

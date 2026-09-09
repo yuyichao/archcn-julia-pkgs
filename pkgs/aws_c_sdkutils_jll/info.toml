@@ -1,10 +1,10 @@
-[Pkg]
-name = "aws_c_sdkutils_jll"
-uuid = "1282aa60-004d-510b-9f52-12498d409daa"
-is_jll = true
-
-[Status]
-version = "1.0.0+0"
 
 [JLL.products]
 library = ["libaws_c_sdkutils"]
+[Pkg]
+is_jll = true
+name = "aws_c_sdkutils_jll"
+uuid = "1282aa60-004d-510b-9f52-12498d409daa"
+
+[Status]
+version = "1.0.0+0"

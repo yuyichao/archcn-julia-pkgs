@@ -1,10 +1,10 @@
-[Pkg]
-name = "Xorg_libSM_jll"
-uuid = "c834827a-8449-5923-a945-d239c165b7dd"
-is_jll = true
-
-[Status]
-version = "1.2.6+0"
 
 [JLL.products]
 library = ["libSM"]
+[Pkg]
+is_jll = true
+name = "Xorg_libSM_jll"
+uuid = "c834827a-8449-5923-a945-d239c165b7dd"
+
+[Status]
+version = "1.2.6+0"

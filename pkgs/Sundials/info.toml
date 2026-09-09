@@ -1,14 +1,14 @@
+
+[[Issues."6.3.0"]]
+dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "LinearSolve [7ed4a6bd-45f5-4d41-b270-4a48e9bafcae]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SciMLLogging [a6db7da4-7206-11f0-1eab-35f2a5dbe1d1]"]
+dependent = []
+latest = "6.7.0"
+type = "not_on_latest"
+version = "6.3.0"
 [Pkg]
 name = "Sundials"
-uuid = "c3572dad-4567-51f8-b174-8c6c989267f4"
 required = true
+uuid = "c3572dad-4567-51f8-b174-8c6c989267f4"
 
 [Status]
 version = "6.3.0"
-
-[[Issues."6.3.0"]]
-dependent = []
-dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "LinearSolve [7ed4a6bd-45f5-4d41-b270-4a48e9bafcae]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SciMLLogging [a6db7da4-7206-11f0-1eab-35f2a5dbe1d1]"]
-type = "not_on_latest"
-version = "6.3.0"
-latest = "6.7.0"

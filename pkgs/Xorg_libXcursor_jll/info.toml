@@ -1,10 +1,10 @@
-[Pkg]
-name = "Xorg_libXcursor_jll"
-uuid = "935fb764-8cf2-53bf-bb30-45bb1f8bf724"
-is_jll = true
-
-[Status]
-version = "1.2.4+0"
 
 [JLL.products]
 library = ["libXcursor"]
+[Pkg]
+is_jll = true
+name = "Xorg_libXcursor_jll"
+uuid = "935fb764-8cf2-53bf-bb30-45bb1f8bf724"
+
+[Status]
+version = "1.2.4+0"

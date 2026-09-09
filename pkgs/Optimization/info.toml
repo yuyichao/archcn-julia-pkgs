@@ -1,14 +1,14 @@
+
+[[Issues."5.7.0"]]
+dependency = ["OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
+dependent = []
+latest = "5.9.0"
+type = "not_on_latest"
+version = "5.7.0"
 [Pkg]
 name = "Optimization"
-uuid = "7f7a1694-90dd-40f0-9382-eb1efda571ba"
 required = true
+uuid = "7f7a1694-90dd-40f0-9382-eb1efda571ba"
 
 [Status]
 version = "5.7.0"
-
-[[Issues."5.7.0"]]
-dependent = []
-dependency = ["OptimizationBase [bca83a33-5cc9-4baa-983d-23429ab6bcbb]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
-type = "not_on_latest"
-version = "5.7.0"
-latest = "5.9.0"

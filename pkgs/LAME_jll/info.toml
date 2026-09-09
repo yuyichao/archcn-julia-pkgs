@@ -1,11 +1,11 @@
-[Pkg]
-name = "LAME_jll"
-uuid = "c1c5ebd0-6772-5130-a774-d5fcae4a789d"
-is_jll = true
-
-[Status]
-version = "3.100.3+0"
 
 [JLL.products]
 executable = ["lame"]
 library = ["libmp3lame"]
+[Pkg]
+is_jll = true
+name = "LAME_jll"
+uuid = "c1c5ebd0-6772-5130-a774-d5fcae4a789d"
+
+[Status]
+version = "3.100.3+0"

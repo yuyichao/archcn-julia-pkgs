@@ -1,11 +1,11 @@
-[Pkg]
-name = "acl_jll"
-uuid = "ed5aba05-e74d-5cf7-8b09-107ba3463b8e"
-is_jll = true
-
-[Status]
-version = "2.3.3+0"
 
 [JLL.products]
 executable = ["chacl", "getfacl", "setfacl"]
 library = ["libacl"]
+[Pkg]
+is_jll = true
+name = "acl_jll"
+uuid = "ed5aba05-e74d-5cf7-8b09-107ba3463b8e"
+
+[Status]
+version = "2.3.3+0"

@@ -1,17 +1,17 @@
-[Pkg]
-name = "fzf_jll"
-uuid = "214eeab7-80f7-51ab-84ad-2988db7cef09"
-is_jll = true
 
-[Status]
+[[Issues."0.61.1+0"]]
+dependency = []
+dependent = ["JLFzf [1019f520-868f-41f5-a6de-eb00f4b6a39c]"]
+latest = "0.74.2+0"
+type = "not_on_latest"
 version = "0.61.1+0"
 
 [JLL.products]
 executable = ["fzf"]
+[Pkg]
+is_jll = true
+name = "fzf_jll"
+uuid = "214eeab7-80f7-51ab-84ad-2988db7cef09"
 
-[[Issues."0.61.1+0"]]
-dependent = ["JLFzf [1019f520-868f-41f5-a6de-eb00f4b6a39c]"]
-dependency = []
-type = "not_on_latest"
+[Status]
 version = "0.61.1+0"
-latest = "0.74.2+0"

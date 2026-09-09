@@ -1,9 +1,3 @@
-[Pkg]
-name = "Luxor"
-uuid = "ae8d54c2-7ccd-5906-9d76-62fc9837b5bc"
-
-[Status]
-version = "4.5.0"
 
 [[Issues."4.5.0"]]
 type = "missing_deps"
@@ -11,3 +5,9 @@ type = "missing_deps"
     [[Issues."4.5.0".weak_deps]]
     name = "Typstry"
     uuid = "f0ed7684-a786-439e-b1e3-3b82803b501e"
+[Pkg]
+name = "Luxor"
+uuid = "ae8d54c2-7ccd-5906-9d76-62fc9837b5bc"
+
+[Status]
+version = "4.5.0"

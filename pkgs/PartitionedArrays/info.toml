@@ -1,10 +1,10 @@
+
+[[Issues."0.5.14"]]
+has_weak = true
+type = "not_needed"
 [Pkg]
 name = "PartitionedArrays"
 uuid = "5a9dfac6-5c52-46f7-8278-5e2210713be9"
 
 [Status]
 version = "0.5.14"
-
-[[Issues."0.5.14"]]
-type = "not_needed"
-has_weak = true

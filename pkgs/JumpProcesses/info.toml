@@ -1,13 +1,13 @@
+
+[[Issues."9.29.0"]]
+dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
+dependent = []
+latest = "9.32.2"
+type = "not_on_latest"
+version = "9.29.0"
 [Pkg]
 name = "JumpProcesses"
 uuid = "ccbc3e58-028d-4f4c-8cd5-9ae44345cda5"
 
 [Status]
 version = "9.29.0"
-
-[[Issues."9.29.0"]]
-dependent = []
-dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
-type = "not_on_latest"
-version = "9.29.0"
-latest = "9.32.2"

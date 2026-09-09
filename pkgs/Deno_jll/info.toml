@@ -1,10 +1,10 @@
-[Pkg]
-name = "Deno_jll"
-uuid = "04572ae6-984a-583e-9378-9577a1c2574d"
-is_jll = true
-
-[Status]
-version = "2.9.5+0"
 
 [JLL.products]
 executable = ["deno"]
+[Pkg]
+is_jll = true
+name = "Deno_jll"
+uuid = "04572ae6-984a-583e-9378-9577a1c2574d"
+
+[Status]
+version = "2.9.5+0"

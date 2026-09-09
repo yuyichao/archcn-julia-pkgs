@@ -1,10 +1,10 @@
-[Pkg]
-name = "Xorg_xcb_util_renderutil_jll"
-uuid = "0d47668e-0667-5a69-a72c-f761630bfb7e"
-is_jll = true
-
-[Status]
-version = "0.3.10+0"
 
 [JLL.products]
 library = ["libxcb_render_util"]
+[Pkg]
+is_jll = true
+name = "Xorg_xcb_util_renderutil_jll"
+uuid = "0d47668e-0667-5a69-a72c-f761630bfb7e"
+
+[Status]
+version = "0.3.10+0"

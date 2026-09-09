@@ -1,10 +1,10 @@
+
+[[Issues."1.6.2"]]
+has_weak = true
+type = "not_needed"
 [Pkg]
 name = "GeoInterface"
 uuid = "cf35fbd7-0cd7-5166-be24-54bfbe79505f"
 
 [Status]
 version = "1.6.2"
-
-[[Issues."1.6.2"]]
-type = "not_needed"
-has_weak = true

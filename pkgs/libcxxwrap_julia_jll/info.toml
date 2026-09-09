@@ -1,10 +1,10 @@
-[Pkg]
-name = "libcxxwrap_julia_jll"
-uuid = "3eaa8342-bff7-56a5-9981-c04077f7cee7"
-is_jll = true
-
-[Status]
-version = "0.14.10+1"
 
 [JLL.products]
 library = ["libcxxwrap_julia", "libcxxwrap_julia_stl"]
+[Pkg]
+is_jll = true
+name = "libcxxwrap_julia_jll"
+uuid = "3eaa8342-bff7-56a5-9981-c04077f7cee7"
+
+[Status]
+version = "0.14.10+1"

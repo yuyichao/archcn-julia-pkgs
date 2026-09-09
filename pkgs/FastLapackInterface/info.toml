@@ -1,10 +1,10 @@
+
+[[Issues."2.1.1"]]
+has_weak = true
+type = "not_needed"
 [Pkg]
 name = "FastLapackInterface"
 uuid = "29a986be-02c6-4525-aec4-84b980013641"
 
 [Status]
 version = "2.1.1"
-
-[[Issues."2.1.1"]]
-type = "not_needed"
-has_weak = true

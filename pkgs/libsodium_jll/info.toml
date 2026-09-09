@@ -1,10 +1,10 @@
-[Pkg]
-name = "libsodium_jll"
-uuid = "a9144af2-ca23-56d9-984f-0d03f7b5ccf8"
-is_jll = true
-
-[Status]
-version = "1.0.22+0"
 
 [JLL.products]
 library = ["libsodium"]
+[Pkg]
+is_jll = true
+name = "libsodium_jll"
+uuid = "a9144af2-ca23-56d9-984f-0d03f7b5ccf8"
+
+[Status]
+version = "1.0.22+0"

@@ -1,10 +1,10 @@
+
+[[Issues."0.5.1"]]
+has_weak = true
+type = "not_needed"
 [Pkg]
 name = "SymbolicAnalysis"
 uuid = "4297ee4d-0239-47d8-ba5d-195ecdf594fe"
 
 [Status]
 version = "0.5.1"
-
-[[Issues."0.5.1"]]
-type = "not_needed"
-has_weak = true

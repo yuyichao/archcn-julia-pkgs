@@ -1,10 +1,10 @@
-[Pkg]
-name = "Qt6ShaderTools_jll"
-uuid = "ce943373-25bb-56aa-8eca-768745ed7b5a"
-is_jll = true
-
-[Status]
-version = "6.10.2+1"
 
 [JLL.products]
 library = ["libqt6shadertools"]
+[Pkg]
+is_jll = true
+name = "Qt6ShaderTools_jll"
+uuid = "ce943373-25bb-56aa-8eca-768745ed7b5a"
+
+[Status]
+version = "6.10.2+1"

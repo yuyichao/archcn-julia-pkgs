@@ -1,10 +1,10 @@
-[Pkg]
-name = "Bzip2_jll"
-uuid = "6e34b625-4abd-537c-b88f-471c36dfa7a0"
-is_jll = true
-
-[Status]
-version = "1.0.9+0"
 
 [JLL.products]
 library = ["libbzip2"]
+[Pkg]
+is_jll = true
+name = "Bzip2_jll"
+uuid = "6e34b625-4abd-537c-b88f-471c36dfa7a0"
+
+[Status]
+version = "1.0.9+0"

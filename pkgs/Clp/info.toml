@@ -1,7 +1,7 @@
 [Pkg]
 name = "Clp"
-uuid = "e2554f3b-3117-50c0-817c-e040a3ddf72d"
 required = true
+uuid = "e2554f3b-3117-50c0-817c-e040a3ddf72d"
 
 [Status]
 version = "1.4.0"

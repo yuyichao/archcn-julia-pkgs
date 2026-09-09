@@ -1,13 +1,13 @@
+
+[[Issues."1.20.2"]]
+dependency = ["RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]"]
+dependent = []
+latest = "1.20.4"
+type = "not_on_latest"
+version = "1.20.2"
 [Pkg]
 name = "LabelledArrays"
 uuid = "2ee39098-c373-598a-b85f-a56591580800"
 
 [Status]
 version = "1.20.2"
-
-[[Issues."1.20.2"]]
-dependent = []
-dependency = ["RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]"]
-type = "not_on_latest"
-version = "1.20.2"
-latest = "1.20.4"

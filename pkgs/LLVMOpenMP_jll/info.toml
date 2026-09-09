@@ -1,10 +1,10 @@
-[Pkg]
-name = "LLVMOpenMP_jll"
-uuid = "1d63c593-3942-5779-bab2-d838dc0a180e"
-is_jll = true
-
-[Status]
-version = "22.1.7+0"
 
 [JLL.products]
 library = ["libomp"]
+[Pkg]
+is_jll = true
+name = "LLVMOpenMP_jll"
+uuid = "1d63c593-3942-5779-bab2-d838dc0a180e"
+
+[Status]
+version = "22.1.7+0"

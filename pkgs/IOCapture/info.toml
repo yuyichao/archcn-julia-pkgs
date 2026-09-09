@@ -1,7 +1,7 @@
 [Pkg]
 name = "IOCapture"
-uuid = "b5f81e59-6552-4d32-b1f0-c071b021bf89"
 required = true
+uuid = "b5f81e59-6552-4d32-b1f0-c071b021bf89"
 
 [Status]
 version = "1.0.0"

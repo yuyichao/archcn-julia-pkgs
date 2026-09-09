@@ -1,13 +1,13 @@
+
+[[Issues."4.19.2"]]
+dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
+dependent = []
+latest = "4.19.3"
+type = "not_on_latest"
+version = "4.19.2"
 [Pkg]
 name = "DiffEqCallbacks"
 uuid = "459566f4-90b8-5000-8ac3-15dfb0a30def"
 
 [Status]
 version = "4.19.2"
-
-[[Issues."4.19.2"]]
-dependent = []
-dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
-type = "not_on_latest"
-version = "4.19.2"
-latest = "4.19.3"

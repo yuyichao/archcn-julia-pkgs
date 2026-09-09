@@ -1,10 +1,10 @@
-[Pkg]
-name = "bitshuffle_jll"
-uuid = "228fe19c-1b83-5282-a626-13744502a320"
-is_jll = true
-
-[Status]
-version = "0.5.2+0"
 
 [JLL.products]
 library = ["libbitshuffle"]
+[Pkg]
+is_jll = true
+name = "bitshuffle_jll"
+uuid = "228fe19c-1b83-5282-a626-13744502a320"
+
+[Status]
+version = "0.5.2+0"

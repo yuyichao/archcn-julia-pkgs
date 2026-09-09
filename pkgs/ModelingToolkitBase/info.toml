@@ -1,83 +1,45 @@
-[Pkg]
-name = "ModelingToolkitBase"
-uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
 
-[Status]
+[[Issues."1.42.2"]]
+type = "missing_deps"
+
+    [[Issues."1.42.2".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.42.2".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.42.2".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.42.2".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.42.2".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+[[Issues."1.42.2"]]
+dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "ImplicitDiscreteSolve [3263718b-31ed-49cf-8a0f-35a466e8af96]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
+dependent = []
+latest = "1.69.0"
+type = "not_on_latest"
 version = "1.42.2"
 
-[[Issues."1.64.0"]]
+[[Issues."1.43.0"]]
 type = "missing_deps"
 
-    [[Issues."1.64.0".weak_deps]]
+    [[Issues."1.43.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.64.0".weak_deps]]
+    [[Issues."1.43.0".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.64.0".weak_deps]]
+    [[Issues."1.43.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.64.0".weak_deps]]
+    [[Issues."1.43.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.64.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.68.3"]]
-type = "missing_deps"
-
-    [[Issues."1.68.3".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.68.3".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.68.3".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.68.3".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.68.3".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.68.0"]]
-type = "missing_deps"
-
-    [[Issues."1.68.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.68.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.68.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.68.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.68.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.45.0"]]
-type = "missing_deps"
-
-    [[Issues."1.45.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.45.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.45.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.45.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.45.0".weak_deps]]
+    [[Issues."1.43.0".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
@@ -100,218 +62,41 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."1.57.0"]]
+[[Issues."1.44.1"]]
 type = "missing_deps"
 
-    [[Issues."1.57.0".weak_deps]]
+    [[Issues."1.44.1".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.57.0".weak_deps]]
+    [[Issues."1.44.1".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.57.0".weak_deps]]
+    [[Issues."1.44.1".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.57.0".weak_deps]]
+    [[Issues."1.44.1".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.57.0".weak_deps]]
+    [[Issues."1.44.1".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."1.61.0"]]
+[[Issues."1.45.0"]]
 type = "missing_deps"
 
-    [[Issues."1.61.0".weak_deps]]
+    [[Issues."1.45.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.61.0".weak_deps]]
+    [[Issues."1.45.0".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.61.0".weak_deps]]
+    [[Issues."1.45.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.61.0".weak_deps]]
+    [[Issues."1.45.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.61.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.42.2"]]
-type = "missing_deps"
-
-    [[Issues."1.42.2".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.42.2".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.42.2".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.42.2".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.42.2".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-[[Issues."1.42.2"]]
-dependent = []
-dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "ImplicitDiscreteSolve [3263718b-31ed-49cf-8a0f-35a466e8af96]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
-type = "not_on_latest"
-version = "1.42.2"
-latest = "1.69.0"
-
-[[Issues."1.54.1"]]
-type = "missing_deps"
-
-    [[Issues."1.54.1".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.54.1".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.54.1".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.54.1".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.54.1".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.50.0"]]
-type = "missing_deps"
-
-    [[Issues."1.50.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.50.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.50.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.50.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.50.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.67.0"]]
-type = "missing_deps"
-
-    [[Issues."1.67.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.67.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.67.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.67.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.67.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.46.0"]]
-type = "missing_deps"
-
-    [[Issues."1.46.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.46.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.46.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.46.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.46.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.49.0"]]
-type = "missing_deps"
-
-    [[Issues."1.49.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.49.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.49.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.49.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.49.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.63.0"]]
-type = "missing_deps"
-
-    [[Issues."1.63.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.63.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.63.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.63.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.63.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.54.2"]]
-type = "missing_deps"
-
-    [[Issues."1.54.2".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.54.2".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.54.2".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.54.2".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.54.2".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.48.1"]]
-type = "missing_deps"
-
-    [[Issues."1.48.1".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.48.1".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.48.1".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.48.1".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.48.1".weak_deps]]
+    [[Issues."1.45.0".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
@@ -334,193 +119,22 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."1.56.0"]]
+[[Issues."1.46.0"]]
 type = "missing_deps"
 
-    [[Issues."1.56.0".weak_deps]]
+    [[Issues."1.46.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.56.0".weak_deps]]
+    [[Issues."1.46.0".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.56.0".weak_deps]]
+    [[Issues."1.46.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.56.0".weak_deps]]
+    [[Issues."1.46.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.56.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.51.1"]]
-type = "missing_deps"
-
-    [[Issues."1.51.1".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.51.1".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.51.1".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.51.1".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.51.1".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.53.0"]]
-type = "missing_deps"
-
-    [[Issues."1.53.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.53.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.53.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.53.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.53.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.58.2"]]
-type = "missing_deps"
-
-    [[Issues."1.58.2".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.58.2".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.58.2".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.58.2".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.58.2".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.68.2"]]
-type = "missing_deps"
-
-    [[Issues."1.68.2".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.68.2".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.68.2".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.68.2".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.68.2".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.59.0"]]
-type = "missing_deps"
-
-    [[Issues."1.59.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.59.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.59.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.59.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.59.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.69.0"]]
-type = "missing_deps"
-
-    [[Issues."1.69.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.69.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.69.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.69.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.69.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.54.0"]]
-type = "missing_deps"
-
-    [[Issues."1.54.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.54.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.54.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.54.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.54.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.48.0"]]
-type = "missing_deps"
-
-    [[Issues."1.48.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.48.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.48.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.48.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.48.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.44.1"]]
-type = "missing_deps"
-
-    [[Issues."1.44.1".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.44.1".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.44.1".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.44.1".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.44.1".weak_deps]]
+    [[Issues."1.46.0".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
@@ -543,6 +157,82 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
+[[Issues."1.48.0"]]
+type = "missing_deps"
+
+    [[Issues."1.48.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.48.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.48.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.48.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.48.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.48.1"]]
+type = "missing_deps"
+
+    [[Issues."1.48.1".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.48.1".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.48.1".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.48.1".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.48.1".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.49.0"]]
+type = "missing_deps"
+
+    [[Issues."1.49.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.49.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.49.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.49.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.49.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.50.0"]]
+type = "missing_deps"
+
+    [[Issues."1.50.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.50.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.50.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.50.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.50.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
 [[Issues."1.51.0"]]
 type = "missing_deps"
 
@@ -562,60 +252,22 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."1.60.0"]]
+[[Issues."1.51.1"]]
 type = "missing_deps"
 
-    [[Issues."1.60.0".weak_deps]]
+    [[Issues."1.51.1".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.60.0".weak_deps]]
+    [[Issues."1.51.1".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.60.0".weak_deps]]
+    [[Issues."1.51.1".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.60.0".weak_deps]]
+    [[Issues."1.51.1".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.60.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.65.0"]]
-type = "missing_deps"
-
-    [[Issues."1.65.0".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.65.0".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.65.0".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.65.0".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.65.0".weak_deps]]
-    name = "Pyomo"
-    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
-
-[[Issues."1.58.1"]]
-type = "missing_deps"
-
-    [[Issues."1.58.1".weak_deps]]
-    name = "BifurcationKit"
-    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.58.1".weak_deps]]
-    name = "CasADi"
-    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.58.1".weak_deps]]
-    name = "InfiniteOpt"
-    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.58.1".weak_deps]]
-    name = "Mooncake"
-    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.58.1".weak_deps]]
+    [[Issues."1.51.1".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
@@ -638,79 +290,79 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."1.58.0"]]
+[[Issues."1.53.0"]]
 type = "missing_deps"
 
-    [[Issues."1.58.0".weak_deps]]
+    [[Issues."1.53.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.58.0".weak_deps]]
+    [[Issues."1.53.0".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.58.0".weak_deps]]
+    [[Issues."1.53.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.58.0".weak_deps]]
+    [[Issues."1.53.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.58.0".weak_deps]]
+    [[Issues."1.53.0".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."1.57.1"]]
+[[Issues."1.54.0"]]
 type = "missing_deps"
 
-    [[Issues."1.57.1".weak_deps]]
+    [[Issues."1.54.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.57.1".weak_deps]]
+    [[Issues."1.54.0".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.57.1".weak_deps]]
+    [[Issues."1.54.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.57.1".weak_deps]]
+    [[Issues."1.54.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.57.1".weak_deps]]
+    [[Issues."1.54.0".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."1.60.1"]]
+[[Issues."1.54.1"]]
 type = "missing_deps"
 
-    [[Issues."1.60.1".weak_deps]]
+    [[Issues."1.54.1".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.60.1".weak_deps]]
+    [[Issues."1.54.1".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.60.1".weak_deps]]
+    [[Issues."1.54.1".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.60.1".weak_deps]]
+    [[Issues."1.54.1".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.60.1".weak_deps]]
+    [[Issues."1.54.1".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."1.68.1"]]
+[[Issues."1.54.2"]]
 type = "missing_deps"
 
-    [[Issues."1.68.1".weak_deps]]
+    [[Issues."1.54.2".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.68.1".weak_deps]]
+    [[Issues."1.54.2".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.68.1".weak_deps]]
+    [[Issues."1.54.2".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.68.1".weak_deps]]
+    [[Issues."1.54.2".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.68.1".weak_deps]]
+    [[Issues."1.54.2".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
@@ -733,22 +385,193 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
-[[Issues."1.43.0"]]
+[[Issues."1.56.0"]]
 type = "missing_deps"
 
-    [[Issues."1.43.0".weak_deps]]
+    [[Issues."1.56.0".weak_deps]]
     name = "BifurcationKit"
     uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
-    [[Issues."1.43.0".weak_deps]]
+    [[Issues."1.56.0".weak_deps]]
     name = "CasADi"
     uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
-    [[Issues."1.43.0".weak_deps]]
+    [[Issues."1.56.0".weak_deps]]
     name = "InfiniteOpt"
     uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
-    [[Issues."1.43.0".weak_deps]]
+    [[Issues."1.56.0".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
-    [[Issues."1.43.0".weak_deps]]
+    [[Issues."1.56.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.57.0"]]
+type = "missing_deps"
+
+    [[Issues."1.57.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.57.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.57.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.57.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.57.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.57.1"]]
+type = "missing_deps"
+
+    [[Issues."1.57.1".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.57.1".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.57.1".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.57.1".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.57.1".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.58.0"]]
+type = "missing_deps"
+
+    [[Issues."1.58.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.58.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.58.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.58.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.58.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.58.1"]]
+type = "missing_deps"
+
+    [[Issues."1.58.1".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.58.1".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.58.1".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.58.1".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.58.1".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.58.2"]]
+type = "missing_deps"
+
+    [[Issues."1.58.2".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.58.2".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.58.2".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.58.2".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.58.2".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.59.0"]]
+type = "missing_deps"
+
+    [[Issues."1.59.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.59.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.59.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.59.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.59.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.60.0"]]
+type = "missing_deps"
+
+    [[Issues."1.60.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.60.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.60.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.60.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.60.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.60.1"]]
+type = "missing_deps"
+
+    [[Issues."1.60.1".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.60.1".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.60.1".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.60.1".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.60.1".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.61.0"]]
+type = "missing_deps"
+
+    [[Issues."1.61.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.61.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.61.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.61.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.61.0".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
@@ -771,6 +594,63 @@ type = "missing_deps"
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 
+[[Issues."1.63.0"]]
+type = "missing_deps"
+
+    [[Issues."1.63.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.63.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.63.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.63.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.63.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.64.0"]]
+type = "missing_deps"
+
+    [[Issues."1.64.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.64.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.64.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.64.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.64.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.65.0"]]
+type = "missing_deps"
+
+    [[Issues."1.65.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.65.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.65.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.65.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.65.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
 [[Issues."1.66.0"]]
 type = "missing_deps"
 
@@ -789,3 +669,123 @@ type = "missing_deps"
     [[Issues."1.66.0".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.67.0"]]
+type = "missing_deps"
+
+    [[Issues."1.67.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.67.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.67.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.67.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.67.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.68.0"]]
+type = "missing_deps"
+
+    [[Issues."1.68.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.68.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.68.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.68.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.68.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.68.1"]]
+type = "missing_deps"
+
+    [[Issues."1.68.1".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.68.1".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.68.1".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.68.1".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.68.1".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.68.2"]]
+type = "missing_deps"
+
+    [[Issues."1.68.2".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.68.2".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.68.2".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.68.2".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.68.2".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.68.3"]]
+type = "missing_deps"
+
+    [[Issues."1.68.3".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.68.3".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.68.3".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.68.3".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.68.3".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.69.0"]]
+type = "missing_deps"
+
+    [[Issues."1.69.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.69.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.69.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.69.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.69.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+[Pkg]
+name = "ModelingToolkitBase"
+uuid = "7771a370-6774-4173-bd38-47e70ca0b839"
+
+[Status]
+version = "1.42.2"

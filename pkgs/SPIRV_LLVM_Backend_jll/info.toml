@@ -1,10 +1,10 @@
-[Pkg]
-name = "SPIRV_LLVM_Backend_jll"
-uuid = "4376b9bf-cff8-51b6-bb48-39421dff0d0c"
-is_jll = true
-
-[Status]
-version = "22.1.8+1"
 
 [JLL.products]
 executable = ["llc"]
+[Pkg]
+is_jll = true
+name = "SPIRV_LLVM_Backend_jll"
+uuid = "4376b9bf-cff8-51b6-bb48-39421dff0d0c"
+
+[Status]
+version = "22.1.8+1"

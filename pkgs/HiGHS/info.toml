@@ -1,7 +1,7 @@
-[Status]
-version = "1.25.2"
-
 [Pkg]
 name = "HiGHS"
 required = true
 uuid = "87dc4568-4c63-4d18-b0c0-bb2238e4078b"
+
+[Status]
+version = "1.25.2"

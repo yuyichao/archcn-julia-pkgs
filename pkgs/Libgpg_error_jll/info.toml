@@ -1,10 +1,10 @@
-[Pkg]
-name = "Libgpg_error_jll"
-uuid = "7add5ba3-2f88-524e-9cd5-f83b8a55f7b8"
-is_jll = true
-
-[Status]
-version = "1.60.0+0"
 
 [JLL.products]
 library = ["libgpg_error"]
+[Pkg]
+is_jll = true
+name = "Libgpg_error_jll"
+uuid = "7add5ba3-2f88-524e-9cd5-f83b8a55f7b8"
+
+[Status]
+version = "1.60.0+0"

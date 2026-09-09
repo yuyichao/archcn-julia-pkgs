@@ -1,21 +1,15 @@
-[Pkg]
-name = "ExponentialUtilities"
-uuid = "d4d017d3-3776-5f7e-afef-a10c40355c18"
-
-[Status]
-version = "1.31.0"
-
-[[Issues."1.35.1"]]
-type = "missing_deps"
-
-    [[Issues."1.35.1".deps]]
-    name = "PureGebal"
-    uuid = "78ab2635-e639-479d-9f80-4ef5c3b42ac6"
 
 [[Issues."1.35.0"]]
 type = "missing_deps"
 
     [[Issues."1.35.0".deps]]
+    name = "PureGebal"
+    uuid = "78ab2635-e639-479d-9f80-4ef5c3b42ac6"
+
+[[Issues."1.35.1"]]
+type = "missing_deps"
+
+    [[Issues."1.35.1".deps]]
     name = "PureGebal"
     uuid = "78ab2635-e639-479d-9f80-4ef5c3b42ac6"
 
@@ -25,3 +19,9 @@ type = "missing_deps"
     [[Issues."1.35.2".deps]]
     name = "PureGebal"
     uuid = "78ab2635-e639-479d-9f80-4ef5c3b42ac6"
+[Pkg]
+name = "ExponentialUtilities"
+uuid = "d4d017d3-3776-5f7e-afef-a10c40355c18"
+
+[Status]
+version = "1.31.0"

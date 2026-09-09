@@ -1,10 +1,10 @@
-[Pkg]
-name = "Glib_jll"
-uuid = "7746bdde-850d-59dc-9ae8-88ece973131d"
-is_jll = true
-
-[Status]
-version = "2.88.3+0"
 
 [JLL.products]
 library = ["libgio", "libgirepository", "libglib", "libgmodule", "libgobject", "libgthread"]
+[Pkg]
+is_jll = true
+name = "Glib_jll"
+uuid = "7746bdde-850d-59dc-9ae8-88ece973131d"
+
+[Status]
+version = "2.88.3+0"

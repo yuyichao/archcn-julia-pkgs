@@ -1,14 +1,14 @@
-[Pkg]
-name = "LAPACK_jll"
-uuid = "51474c39-65e3-53ba-86ba-03b1b862ec14"
-is_jll = true
 
-[Status]
-version = "3.12.1+1"
+[[Issues."3.12.1+1"]]
+has_weak = true
+type = "not_needed"
 
 [JLL.products]
 library = ["liblapack"]
+[Pkg]
+is_jll = true
+name = "LAPACK_jll"
+uuid = "51474c39-65e3-53ba-86ba-03b1b862ec14"
 
-[[Issues."3.12.1+1"]]
-type = "not_needed"
-has_weak = true
+[Status]
+version = "3.12.1+1"

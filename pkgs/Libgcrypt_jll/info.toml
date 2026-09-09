@@ -1,10 +1,10 @@
-[Pkg]
-name = "Libgcrypt_jll"
-uuid = "d4300ac3-e22c-5743-9152-c294e39db1e4"
-is_jll = true
-
-[Status]
-version = "1.12.3+0"
 
 [JLL.products]
 library = ["libgcrypt"]
+[Pkg]
+is_jll = true
+name = "Libgcrypt_jll"
+uuid = "d4300ac3-e22c-5743-9152-c294e39db1e4"
+
+[Status]
+version = "1.12.3+0"

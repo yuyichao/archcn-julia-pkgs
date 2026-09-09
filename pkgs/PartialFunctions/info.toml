@@ -1,10 +1,10 @@
+
+[[Issues."1.2.1"]]
+has_weak = true
+type = "not_needed"
 [Pkg]
 name = "PartialFunctions"
 uuid = "570af359-4316-4cb7-8c74-252c00c2016b"
 
 [Status]
 version = "1.2.1"
-
-[[Issues."1.2.1"]]
-type = "not_needed"
-has_weak = true
