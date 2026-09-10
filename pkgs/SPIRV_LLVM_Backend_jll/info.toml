@@ -1,4 +1,20 @@
 
+[[Issues."22.1.8+1"]]
+dependency = []
+dependent = ["OpenCL [08131aa3-fb12-5dee-8b74-c09406e224a2]"]
+latest = "23.1.1+0"
+type = "not_on_latest"
+version = "22.1.8+1"
+
+[[Issues."23.1.1+0"]]
+type = "jll_changes"
+
+    [Issues."23.1.1+0".add]
+    library = ["libspirv"]
+
+    [Issues."23.1.1+0".remove]
+    executable = ["llc"]
+
 [JLL.products]
 executable = ["llc"]
 [Pkg]
