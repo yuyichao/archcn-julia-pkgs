@@ -2,7 +2,7 @@
 [[Issues."0.1.14"]]
 dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 dependent = []
-latest = "0.1.16"
+latest = "0.1.18"
 type = "not_on_latest"
 version = "0.1.14"
 [Pkg]

@@ -2,7 +2,7 @@
 [[Issues."1.20.2"]]
 dependency = ["RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]"]
 dependent = []
-latest = "1.20.4"
+latest = "1.20.5"
 type = "not_on_latest"
 version = "1.20.2"
 [Pkg]

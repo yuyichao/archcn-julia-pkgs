@@ -1,3 +1,10 @@
+
+[[Issues."0.2.0"]]
+dependency = []
+dependent = ["Integrals [de52edbc-65ea-441a-8357-d3a637375a31]"]
+latest = "0.3.0"
+type = "not_on_latest"
+version = "0.2.0"
 [Pkg]
 name = "MonteCarloIntegration"
 uuid = "4886b29c-78c9-11e9-0a6e-41e1f4161f7b"

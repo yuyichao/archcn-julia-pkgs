@@ -1,3 +1,10 @@
+
+[[Issues."0.7.1"]]
+dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SecondQuantizedAlgebra [f7aa4685-e143-4cb6-a7f3-073579757907]", "SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]"]
+dependent = []
+latest = "0.7.2"
+type = "not_on_latest"
+version = "0.7.1"
 [Pkg]
 name = "QuantumCumulants"
 required = true
