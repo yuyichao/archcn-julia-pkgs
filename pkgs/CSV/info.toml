@@ -1,3 +1,17 @@
+
+[[Issues."1.0.0"]]
+type = "missing_deps"
+
+    [[Issues."1.0.0".deps]]
+    name = "DataStrings"
+    uuid = "48204bd6-5611-42ea-b167-fc1d713f9be2"
+    [[Issues."1.0.0".deps]]
+    name = "Durations"
+    uuid = "41ac09f5-0a95-4810-aa18-c88bf48ee130"
+
+    [[Issues."1.0.0".weak_deps]]
+    name = "DataDecimals"
+    uuid = "3e2245cb-6932-498d-a7cf-39d39de8bde3"
 [Pkg]
 name = "CSV"
 required = true

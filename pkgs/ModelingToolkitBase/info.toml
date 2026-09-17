@@ -20,7 +20,7 @@ type = "missing_deps"
 [[Issues."1.42.2"]]
 dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "ImplicitDiscreteSolve [3263718b-31ed-49cf-8a0f-35a466e8af96]", "NonlinearSolveBase [be0214bd-f91f-a760-ac4e-3421ce2b2da0]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
 dependent = []
-latest = "1.72.0"
+latest = "1.73.0"
 type = "not_on_latest"
 version = "1.42.2"
 
@@ -952,6 +952,25 @@ type = "missing_deps"
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
     [[Issues."1.72.0".weak_deps]]
+    name = "Pyomo"
+    uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
+
+[[Issues."1.73.0"]]
+type = "missing_deps"
+
+    [[Issues."1.73.0".weak_deps]]
+    name = "BifurcationKit"
+    uuid = "0f109fa4-8a5d-4b75-95aa-f515264e7665"
+    [[Issues."1.73.0".weak_deps]]
+    name = "CasADi"
+    uuid = "c49709b8-5c63-11e9-2fb2-69db5844192f"
+    [[Issues."1.73.0".weak_deps]]
+    name = "InfiniteOpt"
+    uuid = "20393b10-9daf-11e9-18c9-8db751c92c57"
+    [[Issues."1.73.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+    [[Issues."1.73.0".weak_deps]]
     name = "Pyomo"
     uuid = "0e8e1daf-01b5-4eba-a626-3897743a3816"
 [Pkg]
