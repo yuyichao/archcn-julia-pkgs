@@ -59,6 +59,16 @@ type = "missing_deps"
     [[Issues."0.48.0".deps]]
     name = "QuantumToolboxCore"
     uuid = "7fbe806f-1706-4992-b132-86e53e431434"
+
+[[Issues."0.49.0"]]
+type = "missing_deps"
+
+    [[Issues."0.49.0".deps]]
+    name = "QuantumToolboxCore"
+    uuid = "7fbe806f-1706-4992-b132-86e53e431434"
+    [[Issues."0.49.0".deps]]
+    name = "QuantumToolboxVisual"
+    uuid = "f2591f1c-fdd7-47fd-9d44-967f3caec145"
 [Pkg]
 name = "QuantumToolbox"
 required = true
