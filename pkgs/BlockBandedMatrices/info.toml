@@ -1,5 +1,5 @@
 
-[[Issues."0.13.5"]]
+[[Issues."0.13.7"]]
 has_weak = true
 type = "not_needed"
 [Pkg]
@@ -7,4 +7,4 @@ name = "BlockBandedMatrices"
 uuid = "ffab5731-97b5-5995-9138-79e8c1846df0"
 
 [Status]
-version = "0.13.5"
+version = "0.13.7"

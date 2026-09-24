@@ -1,3 +1,10 @@
+
+[[Issues."0.2.0"]]
+dependency = []
+dependent = ["GPUArrays [0c68f7d7-f131-5f86-a1c3-88cf8149b2d7]"]
+latest = "0.2.1"
+type = "not_on_latest"
+version = "0.2.0"
 [Pkg]
 name = "GPUArraysCore"
 uuid = "46192b85-c4d5-4398-a991-12ede77f4527"
