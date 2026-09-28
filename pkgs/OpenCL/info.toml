@@ -1,8 +1,8 @@
 
 [[Issues."0.10.10"]]
-dependency = ["GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55]"]
+dependency = ["GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55]", "SPIRV_LLVM_Backend_jll [4376b9bf-cff8-51b6-bb48-39421dff0d0c]"]
 dependent = []
-latest = "0.10.11"
+latest = "0.10.12"
 type = "not_on_latest"
 version = "0.10.10"
 [Pkg]
