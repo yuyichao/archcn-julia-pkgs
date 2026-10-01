@@ -1,11 +1,4 @@
 
-[[Issues."0.0.294+0"]]
-dependency = []
-dependent = ["Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9]"]
-latest = "0.0.296+0"
-type = "not_on_latest"
-version = "0.0.294+0"
-
 [JLL.products]
 library = ["libEnzyme", "libEnzymeBCLoad"]
 [Pkg]
@@ -14,4 +7,4 @@ name = "Enzyme_jll"
 uuid = "7cc45869-7501-5eee-bdea-0790c847d4ef"
 
 [Status]
-version = "0.0.294+0"
+version = "0.0.299+0"

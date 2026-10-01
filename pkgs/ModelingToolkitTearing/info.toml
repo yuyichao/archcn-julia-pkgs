@@ -2,7 +2,7 @@
 [[Issues."1.15.0"]]
 dependency = ["ModelingToolkitBase [7771a370-6774-4173-bd38-47e70ca0b839]"]
 dependent = []
-latest = "1.20.6"
+latest = "1.20.7"
 type = "not_on_latest"
 version = "1.15.0"
 [Pkg]

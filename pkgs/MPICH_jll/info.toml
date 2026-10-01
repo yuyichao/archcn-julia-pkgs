@@ -2,7 +2,7 @@
 [[Issues."4.3.2+0"]]
 dependency = []
 dependent = ["HDF5_jll [0234f1f7-429e-5d53-9886-15a909be8d59]", "HYPRE_jll [0a602bbd-b08b-5d75-8d32-0de6eef44785]", "MPI [da04e1cc-30fd-572f-bb4f-1f8673147195]"]
-latest = "5.0.1+0"
+latest = "5.0.2+0"
 type = "not_on_latest"
 version = "4.3.2+0"
 
