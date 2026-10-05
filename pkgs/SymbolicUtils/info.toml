@@ -1,13 +1,6 @@
-
-[[Issues."4.46.1"]]
-dependency = ["Moshi [2e0e35c7-a2e4-4343-998d-7ef72827ed2d]"]
-dependent = []
-latest = "4.48.0"
-type = "not_on_latest"
-version = "4.46.1"
 [Pkg]
 name = "SymbolicUtils"
 uuid = "d1185830-fcd6-423d-90d6-eec64667417b"
 
 [Status]
-version = "4.46.1"
+version = "4.49.0"

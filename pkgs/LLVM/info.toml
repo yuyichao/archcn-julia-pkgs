@@ -1,3 +1,10 @@
+
+[[Issues."9.13.2"]]
+dependency = ["LLVMExtra_jll [dad2f222-ce93-54a1-a47d-0025e8a3acab]"]
+dependent = ["Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9]", "GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55]", "OpenCL [08131aa3-fb12-5dee-8b74-c09406e224a2]", "SPIRVIntrinsics [71d1d633-e7e8-4a92-83a1-de8814b09ba8]"]
+latest = "10.0.0"
+type = "not_on_latest"
+version = "9.13.2"
 [Pkg]
 name = "LLVM"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"

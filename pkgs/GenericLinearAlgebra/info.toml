@@ -1,7 +1,7 @@
 
 [[Issues."0.3.19"]]
 dependency = []
-dependent = ["Loraine [df0521af-66a0-42b3-822e-f30debbfe642]", "Polyhedra [67491407-f73d-577b-9b50-8179a7c68029]"]
+dependent = ["Loraine [df0521af-66a0-42b3-822e-f30debbfe642]"]
 latest = "0.4.1"
 type = "not_on_latest"
 version = "0.3.19"

@@ -2,7 +2,7 @@
 [[Issues."0.0.47+0"]]
 dependency = []
 dependent = ["LLVM [929cbde3-209d-540e-8aea-75f648917ca0]"]
-latest = "0.0.48+0"
+latest = "0.0.50+0"
 type = "not_on_latest"
 version = "0.0.47+0"
 

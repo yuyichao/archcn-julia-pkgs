@@ -1,3 +1,10 @@
+
+[[Issues."1.1.4"]]
+dependency = ["LLVM [929cbde3-209d-540e-8aea-75f648917ca0]"]
+dependent = []
+latest = "1.2.0"
+type = "not_on_latest"
+version = "1.1.4"
 [Pkg]
 name = "SPIRVIntrinsics"
 uuid = "71d1d633-e7e8-4a92-83a1-de8814b09ba8"
