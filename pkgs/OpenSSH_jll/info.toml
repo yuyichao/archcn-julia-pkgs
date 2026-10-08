@@ -7,4 +7,4 @@ name = "OpenSSH_jll"
 uuid = "9bd350c2-7e96-507f-8002-3f2e150b4e1b"
 
 [Status]
-version = "10.5.1+0"
+version = "10.6.1+0"

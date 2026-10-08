@@ -7,4 +7,4 @@ name = "spirv2clc_jll"
 uuid = "f0274c0c-8c8a-59f1-85b7-f7d60330c5fb"
 
 [Status]
-version = "0.2.1+0"
+version = "0.2.3+0"

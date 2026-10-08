@@ -2,7 +2,7 @@
 [[Issues."0.11.0"]]
 dependency = []
 dependent = ["QuantumCumulants [35bcea6d-e19f-57db-af74-8011de6c7255]"]
-latest = "0.12.0"
+latest = "0.13.0"
 type = "not_on_latest"
 version = "0.11.0"
 [Pkg]

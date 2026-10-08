@@ -1,3 +1,10 @@
+
+[[Issues."0.50.3"]]
+dependency = []
+dependent = ["Groebner [0b43b601-686d-58a3-8a1c-6623616c7cd4]", "Nemo [2edaba10-b0f1-5616-af89-8c11ac63239a]"]
+latest = "0.51.0"
+type = "not_on_latest"
+version = "0.50.3"
 [Pkg]
 name = "AbstractAlgebra"
 uuid = "c3fe647b-3220-5bb0-a1ea-a7954cac585d"

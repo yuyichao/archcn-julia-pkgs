@@ -1,6 +1,13 @@
+
+[[Issues."0.3.4"]]
+dependency = ["LLVM [929cbde3-209d-540e-8aea-75f648917ca0]"]
+dependent = ["Atomix [a9b6321e-bd34-4604-b9c9-b65b8de01458]"]
+latest = "0.4.0"
+type = "not_on_latest"
+version = "0.3.4"
 [Pkg]
 name = "UnsafeAtomics"
 uuid = "013be700-e6cd-48c3-b4a1-df204f14c38f"
 
 [Status]
-version = "0.3.3"
+version = "0.3.4"

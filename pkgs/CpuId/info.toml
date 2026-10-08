@@ -3,4 +3,4 @@ name = "CpuId"
 uuid = "adafc99b-e345-5852-983c-f28acb93d879"
 
 [Status]
-version = "0.3.1"
+version = "0.3.2"
