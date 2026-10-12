@@ -1,8 +1,8 @@
 
 [[Issues."9.29.0"]]
 dependency = ["DiffEqBase [2b5f629d-d688-5b77-993f-72d75c75574e]", "RecursiveArrayTools [731186ca-8d62-57ce-b412-fbd966d074cd]", "SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
-dependent = []
-latest = "9.33.1"
+dependent = ["ModelingToolkitBase [7771a370-6774-4173-bd38-47e70ca0b839]", "StochasticDiffEqCore [19c5a474-6cd1-4a5f-be79-46dc34e54d7f]", "StochasticDiffEqImplicit [5080b986-4c76-4669-b5dc-373a41579d5b]", "StochasticDiffEqLeaping [aefaaa88-39f2-4e89-b162-d61b7e8cc81b]"]
+latest = "10.0.0"
 type = "not_on_latest"
 version = "9.29.0"
 [Pkg]

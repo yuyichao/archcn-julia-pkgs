@@ -2,7 +2,7 @@
 [[Issues."11.5.16"]]
 dependency = []
 dependent = ["OpenCL [08131aa3-fb12-5dee-8b74-c09406e224a2]"]
-latest = "12.0.2"
+latest = "12.1.0"
 type = "not_on_latest"
 version = "11.5.16"
 
@@ -24,6 +24,20 @@ type = "missing_deps"
 type = "missing_deps"
 
     [[Issues."12.0.2".deps]]
+    name = "AcceleratedKernels"
+    uuid = "6a4ca0a5-0e36-4168-a932-d9be78d558f1"
+
+[[Issues."12.0.3"]]
+type = "missing_deps"
+
+    [[Issues."12.0.3".deps]]
+    name = "AcceleratedKernels"
+    uuid = "6a4ca0a5-0e36-4168-a932-d9be78d558f1"
+
+[[Issues."12.1.0"]]
+type = "missing_deps"
+
+    [[Issues."12.1.0".deps]]
     name = "AcceleratedKernels"
     uuid = "6a4ca0a5-0e36-4168-a932-d9be78d558f1"
 [Pkg]
