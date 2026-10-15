@@ -1,3 +1,10 @@
+
+[[Issues."0.15.15"]]
+dependency = ["Makie [ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a]"]
+dependent = []
+latest = "0.15.16"
+type = "not_on_latest"
+version = "0.15.15"
 [Pkg]
 name = "CairoMakie"
 uuid = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"

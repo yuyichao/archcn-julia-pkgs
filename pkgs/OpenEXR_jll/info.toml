@@ -1,4 +1,14 @@
 
+[[Issues."3.5.2+0"]]
+type = "missing_deps"
+
+    [[Issues."3.5.2+0".deps]]
+    name = "OpenJPH_jll"
+    uuid = "95196869-6d61-5868-8eee-c38c33804e0c"
+    [[Issues."3.5.2+0".deps]]
+    name = "libdeflate_jll"
+    uuid = "46979653-d7f6-5232-b59e-dd310c4598de"
+
 [JLL.products]
 library = ["libIex", "libIlmThread", "libOpenEXR", "libOpenEXRCore", "libOpenEXRUtil"]
 [Pkg]

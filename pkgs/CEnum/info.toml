@@ -1,3 +1,10 @@
+
+[[Issues."0.5.0"]]
+dependency = []
+dependent = ["Clang [40e3b903-d033-50b4-a0cc-940c62c95e31]", "Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9]", "FreeType [b38be410-82b0-50bf-ab77-7b57e271db43]", "HYPRE [b5ffcf37-a2bd-41ab-a3da-4bd9bc8ad771]", "JpegTurbo [b835a17e-a41a-41e7-81f0-2f016b05efe0]", "LLVM [929cbde3-209d-540e-8aea-75f648917ca0]", "NLopt [76087f3c-5699-56af-9a33-bf431cd00edd]", "PNGFiles [f57f5aa1-a3ce-4bc8-8ab9-96f992907883]", "Sundials [c3572dad-4567-51f8-b174-8c6c989267f4]", "WebP [e3aaa7dc-3e4b-44e0-be63-ffb868ccd7c1]"]
+latest = "1.0.0"
+type = "not_on_latest"
+version = "0.5.0"
 [Pkg]
 name = "CEnum"
 uuid = "fa961155-64e5-5f13-b03f-caf6b980ea82"

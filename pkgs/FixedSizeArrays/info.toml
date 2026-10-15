@@ -1,3 +1,33 @@
+
+[[Issues."1.4.0"]]
+type = "missing_deps"
+
+    [[Issues."1.4.0".deps]]
+    name = "CheckedSizeProduct"
+    uuid = "1b2cc9da-92e3-4b71-9788-30fc110eefda"
+    [[Issues."1.4.0".deps]]
+    name = "LightBoundsErrors"
+    uuid = "e21c612c-4641-4669-b9c3-3f4360ced9da"
+
+[[Issues."1.4.1"]]
+type = "missing_deps"
+
+    [[Issues."1.4.1".deps]]
+    name = "CheckedSizeProduct"
+    uuid = "1b2cc9da-92e3-4b71-9788-30fc110eefda"
+    [[Issues."1.4.1".deps]]
+    name = "LightBoundsErrors"
+    uuid = "e21c612c-4641-4669-b9c3-3f4360ced9da"
+
+[[Issues."1.4.2"]]
+type = "missing_deps"
+
+    [[Issues."1.4.2".deps]]
+    name = "CheckedSizeProduct"
+    uuid = "1b2cc9da-92e3-4b71-9788-30fc110eefda"
+    [[Issues."1.4.2".deps]]
+    name = "LightBoundsErrors"
+    uuid = "e21c612c-4641-4669-b9c3-3f4360ced9da"
 [Pkg]
 name = "FixedSizeArrays"
 uuid = "3821ddf9-e5b5-40d5-8e25-6813ab96b5e2"

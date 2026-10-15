@@ -2,7 +2,7 @@
 [[Issues."0.2.0"]]
 dependency = []
 dependent = ["Integrals [de52edbc-65ea-441a-8357-d3a637375a31]"]
-latest = "0.3.0"
+latest = "0.3.1"
 type = "not_on_latest"
 version = "0.2.0"
 [Pkg]

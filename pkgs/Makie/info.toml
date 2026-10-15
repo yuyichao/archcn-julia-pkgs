@@ -1,3 +1,17 @@
+
+[[Issues."0.24.15"]]
+dependency = []
+dependent = ["CairoMakie [13f3f980-e62b-5c42-98c6-ff1f3baf88f0]", "WGLMakie [276b4fcb-3e11-5398-bf8b-a0c2d153d008]"]
+latest = "0.24.16"
+type = "not_on_latest"
+version = "0.24.15"
+
+[[Issues."0.24.16"]]
+type = "missing_deps"
+
+    [[Issues."0.24.16".deps]]
+    name = "FastInterpolations"
+    uuid = "9ea80cae-fc13-4c00-8066-6eaedb12f34b"
 [Pkg]
 has_artifacts = true
 name = "Makie"
