@@ -9,10 +9,20 @@ type = "missing_deps"
     name = "pocl_standalone_jll"
     uuid = "54f56a70-6062-5590-a942-1226658f6c83"
 
+[[Issues."0.10.1"]]
+type = "missing_deps"
+
+    [[Issues."0.10.1".deps]]
+    name = "KernelInterface"
+    uuid = "4ee993da-d684-4d17-a7dd-4e58e78d92bf"
+    [[Issues."0.10.1".deps]]
+    name = "pocl_standalone_jll"
+    uuid = "54f56a70-6062-5590-a942-1226658f6c83"
+
 [[Issues."0.9.45"]]
 dependency = []
 dependent = ["NNlib [872c559c-99b0-510c-b3b7-b6c96a88d5cd]", "OpenCL [08131aa3-fb12-5dee-8b74-c09406e224a2]"]
-latest = "0.10.0"
+latest = "0.10.1"
 type = "not_on_latest"
 version = "0.9.45"
 [Pkg]

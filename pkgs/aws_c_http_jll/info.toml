@@ -7,4 +7,4 @@ name = "aws_c_http_jll"
 uuid = "3254fc65-9028-534d-aa9d-d76d128babc6"
 
 [Status]
-version = "1.1.0+0"
+version = "1.1.1+0"
