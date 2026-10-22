@@ -1,4 +1,10 @@
 
+[[Issues."2.18.3+0"]]
+type = "jll_changes"
+
+    [Issues."2.18.3+0".add]
+    executable = ["fc_genconf"]
+
 [JLL.products]
 executable = ["fc_cache", "fc_cat", "fc_conflist", "fc_list", "fc_match", "fc_pattern", "fc_query", "fc_scan", "fc_validate"]
 file = ["fonts_conf"]

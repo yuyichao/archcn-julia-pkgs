@@ -1,4 +1,17 @@
 
+[[Issues."2.0.4+0"]]
+dependency = []
+dependent = ["FFMPEG_jll [b22a6f82-2f65-5046-a5b2-351ab43fb4e5]"]
+latest = "3.0.0+0"
+type = "not_on_latest"
+version = "2.0.4+0"
+
+[[Issues."3.0.0+0"]]
+type = "jll_changes"
+
+    [Issues."3.0.0+0".add]
+    library = ["libfdk_xhe"]
+
 [JLL.products]
 library = ["libfdk"]
 [Pkg]

@@ -1,4 +1,10 @@
 
+[[Issues."0.2.6+0"]]
+type = "jll_changes"
+
+    [Issues."0.2.6+0".add]
+    library = ["libspirv2clc"]
+
 [JLL.products]
 executable = ["spirv2clc"]
 [Pkg]

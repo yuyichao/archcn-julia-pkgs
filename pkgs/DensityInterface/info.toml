@@ -1,13 +1,10 @@
 
-[[Issues."0.4.0"]]
-dependency = []
-dependent = ["Distributions [31c24e10-a181-5473-b8eb-7969acd0382f]"]
-latest = "1.0.0"
-type = "not_on_latest"
-version = "0.4.0"
+[[Issues."1.0.0"]]
+has_weak = true
+type = "not_needed"
 [Pkg]
 name = "DensityInterface"
 uuid = "b429d917-457f-4dbc-8f4c-0cc954292b1d"
 
 [Status]
-version = "0.4.0"
+version = "1.0.0"
