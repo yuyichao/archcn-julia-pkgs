@@ -5,6 +5,8 @@ type = "missing_deps"
     [[Issues."0.3.9".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+[[Issues."0.3.9"]]
+type = "not_needed"
 [Pkg]
 name = "Tullio"
 uuid = "bc48ee85-29a4-5162-ae0b-a64e1601d4bc"

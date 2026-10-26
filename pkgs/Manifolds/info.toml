@@ -1,3 +1,24 @@
+
+[[Issues."0.11.34"]]
+type = "missing_deps"
+
+    [[Issues."0.11.34".deps]]
+    name = "TensorOperations"
+    uuid = "6aa20fa7-93e2-5fca-9bc0-fbd0db3c71a2"
+
+[[Issues."0.11.35"]]
+type = "missing_deps"
+
+    [[Issues."0.11.35".deps]]
+    name = "TensorOperations"
+    uuid = "6aa20fa7-93e2-5fca-9bc0-fbd0db3c71a2"
+
+[[Issues."0.11.36"]]
+type = "missing_deps"
+
+    [[Issues."0.11.36".deps]]
+    name = "TensorOperations"
+    uuid = "6aa20fa7-93e2-5fca-9bc0-fbd0db3c71a2"
 [Pkg]
 name = "Manifolds"
 uuid = "1cead3c2-87b3-11e9-0ccd-23c62b72b94e"
