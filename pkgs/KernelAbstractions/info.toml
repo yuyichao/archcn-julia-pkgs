@@ -19,10 +19,70 @@ type = "missing_deps"
     name = "pocl_standalone_jll"
     uuid = "54f56a70-6062-5590-a942-1226658f6c83"
 
+[[Issues."0.10.2"]]
+type = "missing_deps"
+
+    [[Issues."0.10.2".deps]]
+    name = "KernelInterface"
+    uuid = "4ee993da-d684-4d17-a7dd-4e58e78d92bf"
+    [[Issues."0.10.2".deps]]
+    name = "pocl_standalone_jll"
+    uuid = "54f56a70-6062-5590-a942-1226658f6c83"
+
+    [[Issues."0.10.2".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."0.10.2".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+    [[Issues."0.10.2".weak_deps]]
+    name = "oneAPI"
+    uuid = "8f75cd03-7ff8-4ecb-9b8f-daf728133b1b"
+
+[[Issues."0.10.3"]]
+type = "missing_deps"
+
+    [[Issues."0.10.3".deps]]
+    name = "KernelInterface"
+    uuid = "4ee993da-d684-4d17-a7dd-4e58e78d92bf"
+    [[Issues."0.10.3".deps]]
+    name = "pocl_standalone_jll"
+    uuid = "54f56a70-6062-5590-a942-1226658f6c83"
+
+    [[Issues."0.10.3".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."0.10.3".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+    [[Issues."0.10.3".weak_deps]]
+    name = "oneAPI"
+    uuid = "8f75cd03-7ff8-4ecb-9b8f-daf728133b1b"
+
+[[Issues."0.10.4"]]
+type = "missing_deps"
+
+    [[Issues."0.10.4".deps]]
+    name = "KernelInterface"
+    uuid = "4ee993da-d684-4d17-a7dd-4e58e78d92bf"
+    [[Issues."0.10.4".deps]]
+    name = "pocl_standalone_jll"
+    uuid = "54f56a70-6062-5590-a942-1226658f6c83"
+
+    [[Issues."0.10.4".weak_deps]]
+    name = "AMDGPU"
+    uuid = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    [[Issues."0.10.4".weak_deps]]
+    name = "Metal"
+    uuid = "dde4c033-4e86-420c-a63e-0dd931031962"
+    [[Issues."0.10.4".weak_deps]]
+    name = "oneAPI"
+    uuid = "8f75cd03-7ff8-4ecb-9b8f-daf728133b1b"
+
 [[Issues."0.9.45"]]
 dependency = []
 dependent = ["OpenCL [08131aa3-fb12-5dee-8b74-c09406e224a2]"]
-latest = "0.10.1"
+latest = "0.10.4"
 type = "not_on_latest"
 version = "0.9.45"
 [Pkg]

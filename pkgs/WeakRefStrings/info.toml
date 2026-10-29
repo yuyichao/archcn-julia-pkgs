@@ -2,7 +2,7 @@
 [[Issues."1.4.3"]]
 dependency = []
 dependent = ["CSV [336ed68f-0bac-5ca0-87d4-7b16caf5d00b]"]
-latest = "2.0.0"
+latest = "2.0.1"
 type = "not_on_latest"
 version = "1.4.3"
 [[Issues."1.4.3"]]

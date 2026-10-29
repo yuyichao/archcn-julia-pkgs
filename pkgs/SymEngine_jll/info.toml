@@ -1,4 +1,11 @@
 
+[[Issues."0.12.0+0"]]
+dependency = []
+dependent = ["SymEngine [123dc426-2d89-5057-bbad-38513e3affd8]"]
+latest = "0.15.0+0"
+type = "not_on_latest"
+version = "0.12.0+0"
+
 [JLL.products]
 library = ["libsymengine"]
 [Pkg]

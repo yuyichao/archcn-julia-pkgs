@@ -2,7 +2,7 @@
 [[Issues."0.3.19"]]
 dependency = []
 dependent = ["Loraine [df0521af-66a0-42b3-822e-f30debbfe642]"]
-latest = "0.4.1"
+latest = "0.4.2"
 type = "not_on_latest"
 version = "0.3.19"
 [Pkg]

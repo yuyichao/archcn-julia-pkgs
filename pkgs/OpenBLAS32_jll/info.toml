@@ -7,4 +7,4 @@ name = "OpenBLAS32_jll"
 uuid = "656ef2d0-ae68-5445-9ca0-591084a874a2"
 
 [Status]
-version = "0.3.34+0"
+version = "0.3.34+1"
