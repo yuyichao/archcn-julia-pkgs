@@ -1,3 +1,10 @@
+
+[[Issues."0.6.8"]]
+dependency = ["MultivariatePolynomials [102ac46a-7ee4-5c85-9060-abc95bfdeaa3]"]
+dependent = ["SymbolicUtils [d1185830-fcd6-423d-90d6-eec64667417b]", "Symbolics [0c5d862f-8b57-4792-8d23-62f2024744c7]"]
+latest = "0.7.0"
+type = "not_on_latest"
+version = "0.6.8"
 [Pkg]
 name = "DynamicPolynomials"
 uuid = "7c1d4256-1411-5781-91ec-d7bc3513ac07"

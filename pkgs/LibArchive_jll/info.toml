@@ -5,6 +5,12 @@ type = "jll_changes"
     [Issues."3.8.10+0".add]
     executable = ["bsdunzip"]
 
+[[Issues."3.8.11+0"]]
+type = "jll_changes"
+
+    [Issues."3.8.11+0".add]
+    executable = ["bsdunzip"]
+
 [JLL.products]
 executable = ["bsdcat", "bsdcpio", "bsdtar"]
 library = ["libarchive"]
