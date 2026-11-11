@@ -230,19 +230,44 @@ function _find_commit_for_tree(tree, commit, visited, toplevel_only)
         if toplevel_only
             return
         end
-        found = Ref(false)
-        LibGit2.treewalk(commit_toplevel) do root, entry
-            if LibGit2.entryid(entry) == tree
-                found[] = true
-                return -1
-            end
-            return 0
-        end
-        if found[]
+        if _tree_contains(commit_toplevel, tree)
             return hash
         end
         return
     end
+end
+
+mutable struct _TreeSearch
+    const target::LibGit2.GitHash
+    found::Bool
+end
+
+function _tree_search_cb(root::Cstring, entry::Ptr{Cvoid}, s::_TreeSearch)::Cint
+    oid = unsafe_load(ccall((:git_tree_entry_id, :libgit2), Ptr{LibGit2.GitHash},
+                            (Ptr{Cvoid},), entry))
+    if oid == s.target
+        s.found = true
+        return -1 # Stop the walk
+    end
+    return 0
+end
+
+# Whether `target` is in `tree` recursively.
+# Not using `LibGit2.treewalk` since it uses libgit2's last error to tell
+# whether the walk was stopped by the callback. The last error is per OS thread
+# and `LibGit2.Error.last_error` may yield (it takes a lock) and resume
+# the task on another thread so a successful search may be reported as an error.
+function _tree_contains(tree::LibGit2.GitTree, target::LibGit2.GitHash)
+    s = _TreeSearch(target, false)
+    cb = @cfunction(_tree_search_cb, Cint, (Cstring, Ptr{Cvoid}, Ref{_TreeSearch}))
+    err = ccall((:git_tree_walk, :libgit2), Cint,
+                (Ptr{Cvoid}, Cint, Ptr{Cvoid}, Any),
+                tree.ptr, 0 #= GIT_TREEWALK_PRE =#, cb, s)
+    s.found && return true
+    if err < 0
+        throw(LibGit2.GitError(err))
+    end
+    return false
 end
 
 function find_commit_for_tree(repo, tree, head, last_commit, url)
