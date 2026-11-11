@@ -26,7 +26,11 @@ jobs:
           cache-name: cache-julia
         with:
           path: ~/.julia/
-          key: version-check-dot-julia-1.11.6-x64
+          # Rolling key so that the cache is saved after every run
+          # and the most recent one is restored via the prefix match.
+          # Change the prefix to start from a clean cache.
+          key: version-check-dot-julia-1.11.6-x64-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: version-check-dot-julia-1.11.6-x64-
       # Cache for immutable package information (tree hash -> commit / content info).
       # Uses a unique key for each run so that the cache is saved every time
       # and restores the most recent one via the prefix match.
