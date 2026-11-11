@@ -220,7 +220,7 @@ function checkout_pkg_ver(ctx::Context, uuid, ver)
     url = pkginfo.repo
     hash = pkginfo.version_info[ver].git_tree_sha1.bytes
     workdir = joinpath(ctx.workdir, "gitcache")
-    return LibGit2.with(get_repo(url, name, workdir)) do repo
+    return LibGit2.with(get_repo(url, name, workdir, need=hash)) do repo
         reset_tree(repo, hash)
         return LibGit2.workdir(repo)
     end

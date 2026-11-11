@@ -2,30 +2,75 @@
 
 import LibGit2
 
-function _open_repo(repopath, url)
-    try
-        repo = LibGit2.GitRepo(repopath)
-        remote = LibGit2.GitRemoteAnon(repo, url)
+# (repopath, url) pairs that have already been fetched in this run.
+# The same repopath may be shared by multiple URLs (packages with the same name)
+# so the URL is part of the key.
+const _fetched_repos = Set{Tuple{String,String}}()
+
+function _fetch_repo(repo, repopath, url)
+    LibGit2.with(LibGit2.GitRemoteAnon(repo, url)) do remote
         fetch_opts = LibGit2.FetchOptions(download_tags=true)
         LibGit2.fetch(remote, String["+refs/heads/*:refs/remotes/origin/*"],
                       msg="from $(url)", options=fetch_opts)
+    end
+    push!(_fetched_repos, (repopath, url))
+    return
+end
+
+function _has_object(repo, hash)
+    obj = try
+        LibGit2.GitObject(repo, LibGit2.GitHash(hash))
+    catch e
+        e isa LibGit2.GitError || rethrow()
+        return false
+    end
+    close(obj)
+    return true
+end
+
+function _open_repo(repopath, url, need)
+    repo = try
+        LibGit2.GitRepo(repopath)
+    catch
+        return
+    end
+    try
+        # Skip fetching if we already have what we need
+        # or if the repo was already fetched from the same URL in this run.
+        if (need !== nothing && _has_object(repo, need)) ||
+            (repopath, url) in _fetched_repos
+            return repo
+        end
+        _fetch_repo(repo, repopath, url)
         return repo
     catch
+        close(repo)
         return
     end
 end
 
-function get_repo(url, name, workdir)
+"""
+    get_repo(url, name, workdir; need=nothing)
+
+Open (or clone) the repo for `url` at `workdir/name`.
+The repo is fetched from `url` unless it was already fetched from `url`
+in this run or the object `need` (if not `nothing`) already exists locally.
+"""
+function get_repo(url, name, workdir; need=nothing)
     repopath = joinpath(workdir, name)
     if isdir(repopath)
-        repo = _open_repo(repopath, url)
+        repo = _open_repo(repopath, url, need)
         if repo !== nothing
             return repo
         end
         rm(repopath, recursive=true, force=true)
     end
+    # Anything previously fetched into this path is gone now.
+    filter!(k->k[1] != repopath, _fetched_repos)
     fetch_opts = LibGit2.FetchOptions(download_tags=true)
-    return LibGit2.clone(url, repopath, LibGit2.CloneOptions(fetch_opts=fetch_opts))
+    repo = LibGit2.clone(url, repopath, LibGit2.CloneOptions(fetch_opts=fetch_opts))
+    push!(_fetched_repos, (repopath, url))
+    return repo
 end
 
 function reset_commit(repo, hash)
@@ -225,6 +270,10 @@ function find_package_commit(url, name, workdir, branch, tree, last_commit)
         end
         if remote_head === nothing
             @warn "Cannot find remote default branch at $(url)."
+        elseif !_has_object(repo, remote_head)
+            # The fetch may have been skipped or done earlier in this run
+            # before the remote was updated.
+            _fetch_repo(repo, joinpath(workdir, name), url)
         end
         return find_commit_for_tree(repo, tree, remote_head, last_commit, url)
     end
