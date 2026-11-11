@@ -27,6 +27,15 @@ jobs:
         with:
           path: ~/.julia/
           key: version-check-dot-julia-1.11.6-x64
+      # Cache for immutable package information (tree hash -> commit / content info).
+      # Uses a unique key for each run so that the cache is saved every time
+      # and restores the most recent one via the prefix match.
+      - name: Restore package info cache
+        uses: actions/cache/restore@v6
+        with:
+          path: ${{ runner.temp }}/archcn-info-cache
+          key: version-check-info-cache-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: version-check-info-cache-
       - uses: julia-actions/setup-julia@v3
         with:
           version: 1.11.6
@@ -38,7 +47,16 @@ jobs:
             Pkg.add("GitHubActions")'
       - name: Check version
         id: check
+        env:
+          JL_ARCHCN_INFO_CACHE: ${{ runner.temp }}/archcn-info-cache
         run: julia scripts/check_update.jl
+      - name: Save package info cache
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v6
+        with:
+          path: ${{ runner.temp }}/archcn-info-cache
+          key: version-check-info-cache-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Send notification
         uses: cinotify/github-action@main
         continue-on-error: true

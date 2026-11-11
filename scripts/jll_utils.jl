@@ -100,8 +100,9 @@ function todict(ctx::Context, changes::JLLChanges)
 end
 
 function check_jll_content(ctx::Context, arch_info, new_ver, out::JLLChanges)
-    repopath = checkout_pkg_ver(ctx, Base.UUID(arch_info["Pkg"]["uuid"]), new_ver)
-    products = collect_jll_product_names(repopath)
+    products = Dict(k=>sort!(collect(keys(v)))
+                    for (k, v) in get_pkg_jll_products(
+                        ctx, Base.UUID(arch_info["Pkg"]["uuid"]), new_ver))
     old_products = get!(Dict{String,Vector{String}},
                         get!(Dict{String,Any}, arch_info, "JLL"), "products")
     for key in ("library", "executable", "file")

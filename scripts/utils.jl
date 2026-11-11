@@ -4,6 +4,7 @@ using Pkg
 using TOML
 
 include("Resolve/Resolve.jl")
+include("info_cache.jl")
 
 const project_toml_names = ("Project.toml", "JuliaProject.toml")
 
@@ -163,18 +164,21 @@ struct Context
     deps_version_ovr::Dict{Base.UUID,Vector{DepsVersionOvr}}
     _packages_info::Dict{Base.UUID,Any}
     _global_info::Dict{String,Any}
+    info_cache::InfoCache
     function Context()
         pkgsdir = joinpath(@__DIR__, "../pkgs")
         workdir = get(ENV, "JL_ARCHCN_WORKDIR",
                       joinpath(Base.DEPOT_PATH[1], "archcn"))
         mkpath(workdir)
+        info_cache = InfoCache(get(ENV, "JL_ARCHCN_INFO_CACHE",
+                                   joinpath(workdir, "infocache")))
         registry = find_general_registry()
         packages_info, paths = load_packages(pkgsdir)
         global_info = TOML.parsefile(joinpath(pkgsdir, "global.toml"))
         return new(pkgsdir, workdir, registry, packages_info, global_info, paths,
                    load_remove_deps(registry, global_info),
                    load_deps_version_ovr(registry, global_info),
-                   deepcopy(packages_info), deepcopy(global_info))
+                   deepcopy(packages_info), deepcopy(global_info), info_cache)
     end
 end
 
@@ -220,6 +224,41 @@ function checkout_pkg_ver(ctx::Context, uuid, ver)
         reset_tree(repo, hash)
         return LibGit2.workdir(repo)
     end
+end
+
+# Get information computed from the content of the package at version `ver`.
+# The tree hash is always looked up from the registry
+# but the information for each tree hash is cached.
+function get_pkg_tree_info(f, ctx::Context, uuid, ver, key)
+    pkgentry = ctx.registry[uuid]
+    pkginfo = registry_info(ctx.registry, pkgentry)
+    tree = string(pkginfo.version_info[ver].git_tree_sha1)
+    return get_tree_info(ctx.info_cache, tree, key) do
+        return f(checkout_pkg_ver(ctx, uuid, ver))
+    end
+end
+
+struct NormalPkgInfo
+    deps_build::Bool
+    artifacts::Bool
+end
+
+function get_pkg_extern_info(ctx::Context, uuid, ver)
+    info = get_pkg_tree_info(ctx, uuid, ver, "extern") do repopath
+        return Dict{String,Any}(
+            "deps_build"=>isfile(joinpath(repopath, "deps/build.jl")),
+            "artifacts"=>isfile(joinpath(repopath, "Artifacts.toml")))
+    end
+    return NormalPkgInfo(info["deps_build"], info["artifacts"])
+end
+
+# Returns product type => product name => product path
+function get_pkg_jll_products(ctx::Context, uuid, ver)
+    products = get_pkg_tree_info(collect_jll_products, ctx, uuid, ver,
+                                 "jll_products")
+    # Make a copy so that the cached version won't be mutated
+    return Dict{String,Dict{String,String}}(k=>Dict{String,String}(v)
+                                            for (k, v) in products)
 end
 
 include("git_utils.jl")
@@ -359,12 +398,9 @@ function check_extern(ctx::Context, arch_info, new_ver)
     arch_info_pkg = arch_info["Pkg"]
     has_deps_build = get(arch_info_pkg, "has_deps_build", false)
     has_artifacts = get(arch_info_pkg, "has_artifacts", false)
-    repopath = checkout_pkg_ver(ctx, Base.UUID(arch_info_pkg["uuid"]), new_ver)
-
-    found_deps_build = isfile(joinpath(repopath, "deps/build.jl"))
-    found_artifacts = isfile(joinpath(repopath, "Artifacts.toml"))
-    return ExternInfo(found_deps_build - has_deps_build,
-                      found_artifacts - has_artifacts)
+    info = get_pkg_extern_info(ctx, Base.UUID(arch_info_pkg["uuid"]), new_ver)
+    return ExternInfo(info.deps_build - has_deps_build,
+                      info.artifacts - has_artifacts)
 end
 
 struct PkgCommitMissing
@@ -670,6 +706,19 @@ function resolve_new_versions(ctx::Context, check_results, latest_deps)
 end
 
 function find_package_commit(ctx::Context, uuid, ver, arch_info)
+    pkgentry = ctx.registry[uuid]
+    pkginfo = registry_info(ctx.registry, pkgentry)
+    name = pkgentry.name
+    url = pkginfo.repo
+    tree = pkginfo.version_info[ver].git_tree_sha1
+    tree_str = string(tree)
+    # The tree hash for the version always comes from the registry,
+    # but the commit for a tree hash in a repo never needs to be looked up again.
+    cached_commit = lookup_cached_commit(ctx.info_cache, url, tree_str)
+    if cached_commit !== nothing
+        return LibGit2.GitHash(cached_commit)
+    end
+
     package_path = get(ctx.package_paths, uuid, nothing)
     last_commit = nothing
     if package_path !== nothing
@@ -684,18 +733,15 @@ function find_package_commit(ctx::Context, uuid, ver, arch_info)
             end
         end
     end
-    pkgentry = ctx.registry[uuid]
-    pkginfo = registry_info(ctx.registry, pkgentry)
-    name = pkgentry.name
-    url = pkginfo.repo
-    tree = pkginfo.version_info[ver].git_tree_sha1
     commit = find_package_commit(url, name, joinpath(ctx.workdir, "gitcache"),
                                  _get(_get(arch_info, "Pkg", nothing),
                                       "branch", nothing),
                                  tree.bytes, last_commit)
     if commit === nothing
-        return PkgCommitMissing(string(tree))
+        # Not cached since the commit may become available later.
+        return PkgCommitMissing(tree_str)
     else
+        cache_commit!(ctx.info_cache, url, tree_str, string(commit))
         return commit
     end
 end
@@ -727,11 +773,6 @@ struct JLLPkgInfo
     products::Dict{String,Vector{Tuple{String,String}}}
 end
 
-struct NormalPkgInfo
-    deps_build::Bool
-    artifacts::Bool
-end
-
 struct FullPkgInfo
     name::String
     uuid::Base.UUID
@@ -759,15 +800,11 @@ function collect_full_pkg_info(ctx::Context, uuid, ver)
         commit = string(commit)
     end
 
-    repopath = checkout_pkg_ver(ctx, uuid, ver)
-
     if endswith(name, "_jll")
         extra = JLLPkgInfo(Dict(k=>sort!([(name, path) for (name, path) in v])
-                                for (k, v) in collect_jll_products(repopath)))
+                                for (k, v) in get_pkg_jll_products(ctx, uuid, ver)))
     else
-        deps_build = isfile(joinpath(repopath, "deps/build.jl"))
-        artifacts = isfile(joinpath(repopath, "Artifacts.toml"))
-        extra = NormalPkgInfo(deps_build, artifacts)
+        extra = get_pkg_extern_info(ctx, uuid, ver)
     end
     return FullPkgInfo(name, uuid, url, ver, commit, extra)
 end
