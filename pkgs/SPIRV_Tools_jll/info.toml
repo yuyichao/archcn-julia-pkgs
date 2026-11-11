@@ -1,4 +1,18 @@
 
+[[Issues."2025.4.0+0"]]
+dependency = []
+dependent = ["OpenCL [08131aa3-fb12-5dee-8b74-c09406e224a2]"]
+latest = "2026.4.0+0"
+type = "not_on_latest"
+version = "2025.4.0+0"
+
+[[Issues."2026.4.0+0"]]
+type = "jll_changes"
+
+    [Issues."2026.4.0+0".add]
+    executable = ["spirv_diff"]
+    library = ["libSPIRV_Tools_reduce"]
+
 [JLL.products]
 executable = ["spirv_as", "spirv_cfg", "spirv_dis", "spirv_link", "spirv_lint", "spirv_objdump", "spirv_opt", "spirv_reduce", "spirv_val"]
 library = ["libSPIRV_Tools", "libSPIRV_Tools_diff", "libSPIRV_Tools_link", "libSPIRV_Tools_lint", "libSPIRV_Tools_opt"]

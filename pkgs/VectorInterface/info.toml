@@ -8,7 +8,7 @@ type = "missing_deps"
 [[Issues."0.6.1"]]
 dependency = []
 dependent = ["KrylovKit [0b1a1467-8014-51b9-945f-bf0ae24f4b77]"]
-latest = "0.7.0"
+latest = "0.7.1"
 type = "not_on_latest"
 version = "0.6.1"
 
@@ -16,6 +16,13 @@ version = "0.6.1"
 type = "missing_deps"
 
     [[Issues."0.7.0".weak_deps]]
+    name = "Mooncake"
+    uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
+
+[[Issues."0.7.1"]]
+type = "missing_deps"
+
+    [[Issues."0.7.1".weak_deps]]
     name = "Mooncake"
     uuid = "da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"
 [Pkg]

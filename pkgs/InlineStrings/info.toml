@@ -1,7 +1,7 @@
 
 [[Issues."1.4.6"]]
 dependency = []
-dependent = ["CSV [336ed68f-0bac-5ca0-87d4-7b16caf5d00b]", "DataFrames [a93c6f00-e57d-5684-b7b6-d8193f3e46c0]", "WeakRefStrings [ea10d353-3f73-51f8-a26c-33c1cb351aa5]"]
+dependent = ["CSV [336ed68f-0bac-5ca0-87d4-7b16caf5d00b]", "WeakRefStrings [ea10d353-3f73-51f8-a26c-33c1cb351aa5]"]
 latest = "2.0.1"
 type = "not_on_latest"
 version = "1.4.6"

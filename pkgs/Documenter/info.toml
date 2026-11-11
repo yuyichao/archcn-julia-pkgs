@@ -1,3 +1,10 @@
+
+[[Issues."1.20.0"]]
+type = "missing_deps"
+
+    [[Issues."1.20.0".deps]]
+    name = "SimpleImageMetadata"
+    uuid = "67d14529-f57e-4d48-b504-d486213b7963"
 [Pkg]
 name = "Documenter"
 uuid = "e30172f5-a6a5-5a46-863b-614d45cd2de4"

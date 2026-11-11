@@ -1,4 +1,7 @@
 
+[[Issues."7.12.1+1"]]
+type = "not_needed"
+
 [JLL.products]
 library = ["libamd", "libbtf", "libcamd", "libccolamd", "libcholmod", "libcolamd", "libklu", "libldl", "librbio", "libspqr", "libsuitesparseconfig", "libumfpack"]
 [Pkg]

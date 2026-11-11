@@ -1,10 +1,10 @@
 
-[[Issues."0.1.14"]]
-dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]"]
-dependent = []
-latest = "0.1.19"
-type = "not_on_latest"
-version = "0.1.14"
+[[Issues."0.1.20"]]
+type = "missing_deps"
+
+    [[Issues."0.1.20".deps]]
+    name = "ReactantCore"
+    uuid = "a3311ec8-5e00-46d5-b541-4f83e724a433"
 [Pkg]
 name = "LineSearch"
 uuid = "87fe0de2-c867-4266-b59a-2f0a94fc965b"
