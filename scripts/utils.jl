@@ -881,7 +881,15 @@ function prefetch_pkg_info(ctx::Context, jobs)
     end
     @info "Gathering package information for $(length(jobs)) package versions in $(length(groups)) repos using $(nthreads) threads"
     # Make sure libgit2 is initialized before using it from multiple threads.
-    LibGit2.version()
+    LibGit2.ensure_initialized()
+    # The finalizer of a LibGit2 object that wasn't closed explicitly
+    # takes a global lock in LibGit2 (`ensure_initialized`).
+    # Finalizers may run when any lock is released and are not allowed
+    # to wait on a lock so this will crash if the lock is held by another thread.
+    # All LibGit2 objects created in the parallel section must be closed
+    # explicitly, and make sure no unclosed objects from before are left for
+    # the GC to finalize in the parallel section.
+    GC.gc()
     @sync for group in values(groups)
         Threads.@spawn for job in group
             _run_prefetch_job(ctx, job)
