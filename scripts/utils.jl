@@ -165,6 +165,10 @@ struct Context
     _packages_info::Dict{Base.UUID,Any}
     _global_info::Dict{String,Any}
     info_cache::InfoCache
+    # Results of commit lookup for (uuid, version) in this run,
+    # including the ones that are not found (which are not stored in info_cache).
+    commit_results::Dict{Tuple{Base.UUID,VersionNumber},Any}
+    lock::ReentrantLock
     function Context()
         pkgsdir = joinpath(@__DIR__, "../pkgs")
         workdir = get(ENV, "JL_ARCHCN_WORKDIR",
@@ -178,7 +182,8 @@ struct Context
         return new(pkgsdir, workdir, registry, packages_info, global_info, paths,
                    load_remove_deps(registry, global_info),
                    load_deps_version_ovr(registry, global_info),
-                   deepcopy(packages_info), deepcopy(global_info), info_cache)
+                   deepcopy(packages_info), deepcopy(global_info), info_cache,
+                   Dict{Tuple{Base.UUID,VersionNumber},Any}(), ReentrantLock())
     end
 end
 
@@ -213,28 +218,48 @@ function get_pkg_uuid_names(ctx::Context, pkgs)
     return info
 end
 
-function checkout_pkg_ver(ctx::Context, uuid, ver)
+# Where to find the source of a package version.
+# This is looked up from the registry on the main thread
+# since the registry may not be thread safe
+# and is all the information needed to do the git operations,
+# which may run on other threads.
+struct PkgSource
+    uuid::Base.UUID
+    ver::VersionNumber
+    name::String
+    url::String
+    tree::String
+end
+
+function PkgSource(ctx::Context, uuid, ver)
     pkgentry = ctx.registry[uuid]
     pkginfo = registry_info(ctx.registry, pkgentry)
-    name = pkgentry.name
-    url = pkginfo.repo
-    hash = pkginfo.version_info[ver].git_tree_sha1.bytes
-    workdir = joinpath(ctx.workdir, "gitcache")
-    return LibGit2.with(get_repo(url, name, workdir, need=hash)) do repo
-        reset_tree(repo, hash)
+    return PkgSource(uuid, ver, pkgentry.name, pkginfo.repo,
+                     string(pkginfo.version_info[ver].git_tree_sha1))
+end
+
+gitcache_dir(ctx::Context) = joinpath(ctx.workdir, "gitcache")
+
+# Note that the returned path is only valid until the repo is used again.
+function checkout_pkg_ver(ctx::Context, uuid, ver)
+    src = PkgSource(ctx, uuid, ver)
+    return with_repo(src.url, src.name, gitcache_dir(ctx), need=src.tree) do repo
+        reset_tree(repo, src.tree)
         return LibGit2.workdir(repo)
     end
 end
 
-# Get information computed from the content of the package at version `ver`.
+# Get information computed from the content of the package source.
 # The tree hash is always looked up from the registry
 # but the information for each tree hash is cached.
-function get_pkg_tree_info(f, ctx::Context, uuid, ver, key)
-    pkgentry = ctx.registry[uuid]
-    pkginfo = registry_info(ctx.registry, pkgentry)
-    tree = string(pkginfo.version_info[ver].git_tree_sha1)
-    return get_tree_info(ctx.info_cache, tree, key) do
-        return f(checkout_pkg_ver(ctx, uuid, ver))
+# Thread safe.
+function get_pkg_tree_info(f, ctx::Context, src::PkgSource, key)
+    return get_tree_info(ctx.info_cache, src.tree, key) do
+        return with_repo(src.url, src.name, gitcache_dir(ctx),
+                         need=src.tree) do repo
+            reset_tree(repo, src.tree)
+            return f(LibGit2.workdir(repo))
+        end
     end
 end
 
@@ -243,8 +268,10 @@ struct NormalPkgInfo
     artifacts::Bool
 end
 
-function get_pkg_extern_info(ctx::Context, uuid, ver)
-    info = get_pkg_tree_info(ctx, uuid, ver, "extern") do repopath
+get_pkg_extern_info(ctx::Context, uuid, ver) =
+    get_pkg_extern_info(ctx, PkgSource(ctx, uuid, ver))
+function get_pkg_extern_info(ctx::Context, src::PkgSource)
+    info = get_pkg_tree_info(ctx, src, "extern") do repopath
         return Dict{String,Any}(
             "deps_build"=>isfile(joinpath(repopath, "deps/build.jl")),
             "artifacts"=>isfile(joinpath(repopath, "Artifacts.toml")))
@@ -253,9 +280,10 @@ function get_pkg_extern_info(ctx::Context, uuid, ver)
 end
 
 # Returns product type => product name => product path
-function get_pkg_jll_products(ctx::Context, uuid, ver)
-    products = get_pkg_tree_info(collect_jll_products, ctx, uuid, ver,
-                                 "jll_products")
+get_pkg_jll_products(ctx::Context, uuid, ver) =
+    get_pkg_jll_products(ctx, PkgSource(ctx, uuid, ver))
+function get_pkg_jll_products(ctx::Context, src::PkgSource)
+    products = get_pkg_tree_info(collect_jll_products, ctx, src, "jll_products")
     # Make a copy so that the cached version won't be mutated
     return Dict{String,Dict{String,String}}(k=>Dict{String,String}(v)
                                             for (k, v) in products)
@@ -452,6 +480,31 @@ struct PackageVersionInfo
         new(Dict{VersionNumber,Vector{Any}}(), Set{VersionNumber}(), latest)
 end
 
+function need_check_version(new_ver, version, had_issues)
+    new_ver >= version || return false
+    # Only rescan current version if we had some issue for this package
+    # to see if it is resolved.
+    return new_ver != version || had_issues
+end
+
+# Gather the info from the package source needed by `find_new_versions`
+# in parallel.
+function prefetch_new_versions(ctx::Context)
+    jobs = PrefetchJob[]
+    for (uuid, arch_info) in ctx.packages_info
+        pkginfo = registry_info(ctx.registry, ctx.registry[uuid])
+        version = VersionNumber(arch_info["Status"]["version"])
+        had_issues = haskey(arch_info, "Issues")
+        is_jll = get(arch_info["Pkg"], "is_jll", false)
+        for new_ver in keys(pkginfo.version_info)
+            need_check_version(new_ver, version, had_issues) || continue
+            push!(jobs, PrefetchJob(ctx, uuid, new_ver,
+                                    extern=!is_jll, jll=is_jll))
+        end
+    end
+    prefetch_pkg_info(ctx, jobs)
+end
+
 function find_new_versions(ctx::Context, uuid, version, latest_deps)
     pkgentry = ctx.registry[uuid]
     pkginfo = registry_info(ctx.registry, pkgentry)
@@ -468,11 +521,7 @@ function find_new_versions(ctx::Context, uuid, version, latest_deps)
         if new_ver == pkg_ver_info.latest
             collect_latest_deps(ctx, pkgentry, new_ver, latest_deps)
         end
-        if new_ver == version && !had_issues
-            # Only rescan current version if we had some issue for this package
-            # to see if it is resolved.
-            continue
-        end
+        need_check_version(new_ver, version, had_issues) || continue
         ver_ok = true
 
         try
@@ -654,6 +703,10 @@ function resolve_new_versions(ctx::Context, check_results, latest_deps)
     graph = Resolve.Graph(compat, compat_weak, uuid_to_name, reqs, fixed,
                           true, nothing)
     solution = Resolve.resolve(graph)
+    prefetch_pkg_info(ctx, [PrefetchJob(ctx, uuid, ver, commit=true,
+                                        arch_info=ctx.packages_info[uuid])
+                            for (uuid, ver) in solution
+                            if ver != VersionNumber(ctx.packages_info[uuid]["Status"]["version"])])
     for (uuid, ver) in solution
         arch_info = ctx.packages_info[uuid]
         arch_info_status = arch_info["Status"]
@@ -705,20 +758,15 @@ function resolve_new_versions(ctx::Context, check_results, latest_deps)
     end
 end
 
-function find_package_commit(ctx::Context, uuid, ver, arch_info)
-    pkgentry = ctx.registry[uuid]
-    pkginfo = registry_info(ctx.registry, pkgentry)
-    name = pkgentry.name
-    url = pkginfo.repo
-    tree = pkginfo.version_info[ver].git_tree_sha1
-    tree_str = string(tree)
-    # The tree hash for the version always comes from the registry,
-    # but the commit for a tree hash in a repo never needs to be looked up again.
-    cached_commit = lookup_cached_commit(ctx.info_cache, url, tree_str)
-    if cached_commit !== nothing
-        return LibGit2.GitHash(cached_commit)
-    end
+# All the information needed to look for the commit of a package version.
+# Collected on the main thread.
+struct PkgCommitQuery
+    src::PkgSource
+    branch::Union{Nothing,String}
+    last_commit::Union{Nothing,String}
+end
 
+function PkgCommitQuery(ctx::Context, uuid, ver, arch_info)
     package_path = get(ctx.package_paths, uuid, nothing)
     last_commit = nothing
     if package_path !== nothing
@@ -728,22 +776,118 @@ function find_package_commit(ctx::Context, uuid, ver, arch_info)
             if length(verstrs) == 2
                 hash_str = strip(verstrs[2])
                 if length(hash_str) == 40
-                    last_commit = hash_str
+                    last_commit = String(hash_str)
                 end
             end
         end
     end
-    commit = find_package_commit(url, name, joinpath(ctx.workdir, "gitcache"),
-                                 _get(_get(arch_info, "Pkg", nothing),
-                                      "branch", nothing),
-                                 tree.bytes, last_commit)
+    branch = _get(_get(arch_info, "Pkg", nothing), "branch", nothing)
+    return PkgCommitQuery(PkgSource(ctx, uuid, ver), branch, last_commit)
+end
+
+# Thread safe.
+function find_package_commit(ctx::Context, q::PkgCommitQuery)
+    src = q.src
+    # The tree hash for the version always comes from the registry,
+    # but the commit for a tree hash in a repo never needs to be looked up again.
+    cached_commit = lookup_cached_commit(ctx.info_cache, src.url, src.tree)
+    if cached_commit !== nothing
+        return LibGit2.GitHash(cached_commit)
+    end
+    commit = find_package_commit(src.url, src.name, gitcache_dir(ctx),
+                                 q.branch, src.tree, q.last_commit)
     if commit === nothing
         # Not cached since the commit may become available later.
-        return PkgCommitMissing(tree_str)
+        return PkgCommitMissing(src.tree)
     else
-        cache_commit!(ctx.info_cache, url, tree_str, string(commit))
+        cache_commit!(ctx.info_cache, src.url, src.tree, string(commit))
         return commit
     end
+end
+
+function find_package_commit(ctx::Context, uuid, ver, arch_info)
+    # Use the result from `prefetch_pkg_info` if available.
+    res = @lock ctx.lock get(ctx.commit_results, (uuid, ver), nothing)
+    if res !== nothing
+        return res
+    end
+    res = find_package_commit(ctx, PkgCommitQuery(ctx, uuid, ver, arch_info))
+    @lock ctx.lock ctx.commit_results[(uuid, ver)] = res
+    return res
+end
+
+# Package information to be gathered by `prefetch_pkg_info`.
+struct PrefetchJob
+    src::PkgSource
+    commit::Union{Nothing,PkgCommitQuery}
+    extern::Bool
+    jll::Bool
+end
+
+function PrefetchJob(ctx::Context, uuid, ver; arch_info=nothing,
+                     commit=false, extern=false, jll=false)
+    src = PkgSource(ctx, uuid, ver)
+    query = commit ? PkgCommitQuery(ctx, uuid, ver, arch_info) : nothing
+    return PrefetchJob(src, query, extern, jll)
+end
+
+function _run_prefetch_job(ctx::Context, job::PrefetchJob)
+    # Errors are ignored here. They'll show up again and get reported
+    # when the information is requested by the main (sequential) code.
+    if job.extern
+        try
+            get_pkg_extern_info(ctx, job.src)
+        catch
+            @debug "Error getting external dependency info" job.src exception=current_exceptions()
+        end
+    end
+    if job.jll
+        try
+            get_pkg_jll_products(ctx, job.src)
+        catch
+            @debug "Error getting JLL info" job.src exception=current_exceptions()
+        end
+    end
+    if job.commit !== nothing
+        try
+            res = find_package_commit(ctx, job.commit)
+            @lock ctx.lock ctx.commit_results[(job.src.uuid, job.src.ver)] = res
+        catch
+            @debug "Error finding commit" job.src exception=current_exceptions()
+        end
+    end
+end
+
+"""
+    prefetch_pkg_info(ctx, jobs)
+
+Gather the package information requested in `jobs` in parallel
+if more than one thread is available. Otherwise do nothing
+since the information will be gathered when it is used anyway.
+
+The results are stored in the info cache (tree info and found commits)
+and `ctx.commit_results` (all commit lookups) to be used by the main code.
+
+Jobs using the same repo directory are run sequentially in the same task.
+"""
+function prefetch_pkg_info(ctx::Context, jobs)
+    nthreads = Threads.nthreads()
+    if nthreads <= 1 || isempty(jobs)
+        return
+    end
+    groups = Dict{String,Vector{PrefetchJob}}()
+    for job in jobs
+        push!(get!(Vector{PrefetchJob}, groups, job.src.name), job)
+    end
+    @info "Gathering package information for $(length(jobs)) package versions in $(length(groups)) repos using $(nthreads) threads"
+    # Make sure libgit2 is initialized before using it from multiple threads.
+    LibGit2.version()
+    @sync for group in values(groups)
+        Threads.@spawn for job in group
+            _run_prefetch_job(ctx, job)
+        end
+    end
+    return
 end
 
 function scan(ctx::Context)
@@ -751,6 +895,7 @@ function scan(ctx::Context)
     check_results = Dict{Base.UUID,PackageVersionInfo}()
     npackages = length(ctx.packages_info)
     latest_deps = Dict{Base.UUID,Bool}()
+    prefetch_new_versions(ctx)
     for (idx, (uuid, arch_info)) in enumerate(ctx.packages_info)
         pkgentry = ctx.registry[uuid]
         @info "($(idx)/$(npackages)) Checking $(pkgentry.name) [$uuid]"
@@ -933,6 +1078,7 @@ end
 
 function collect_all_pkg_info(ctx::Context, versions)
     res = Dict{Base.UUID,FullPkgInfo}()
+    todo = Pair{Base.UUID,VersionNumber}[]
     for (uuid, ver) in versions
         arch_info = get(ctx.packages_info, uuid, nothing)
         arch_info_status = _get(arch_info, "Status", nothing)
@@ -940,6 +1086,15 @@ function collect_all_pkg_info(ctx::Context, versions)
         if old_ver == ver
             continue
         end
+        push!(todo, uuid=>ver)
+    end
+    prefetch_pkg_info(ctx, [begin
+                                is_jll = endswith(ctx.registry[uuid].name, "_jll")
+                                PrefetchJob(ctx, uuid, ver, commit=true,
+                                            arch_info=get(ctx.packages_info, uuid, nothing),
+                                            extern=!is_jll, jll=is_jll)
+                            end for (uuid, ver) in todo])
+    for (uuid, ver) in todo
         res[uuid] = collect_full_pkg_info(ctx, uuid, ver)
     end
     return res

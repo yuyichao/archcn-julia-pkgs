@@ -23,11 +23,13 @@ struct InfoCache
     dir::String
     commits::Dict{String,Dict{String,Any}}
     trees::Dict{String,Dict{String,Any}}
+    # Protects all the in-memory states and the cache files.
+    lock::ReentrantLock
     function InfoCache(dir)
         dir = joinpath(abspath(dir), INFO_CACHE_VERSION)
         mkpath(dir)
         return new(dir, Dict{String,Dict{String,Any}}(),
-                   Dict{String,Dict{String,Any}}())
+                   Dict{String,Dict{String,Any}}(), ReentrantLock())
     end
 end
 
@@ -72,17 +74,19 @@ Return the commit hash (as a string) in the repo `url` that was previously
 found for tree hash `tree` or `nothing` if not found.
 """
 function lookup_cached_commit(cache::InfoCache, url, tree::AbstractString)
-    commit = get(_repo_commits(cache, url), tree, nothing)
+    commit = @lock cache.lock get(_repo_commits(cache, url), tree, nothing)
     return commit isa String ? commit : nothing
 end
 
 function cache_commit!(cache::InfoCache, url, tree::AbstractString,
                        commit::AbstractString)
-    commits = _repo_commits(cache, url)
-    get(commits, tree, nothing) == commit && return
-    commits[tree] = String(commit)
-    _save_cache_file(_commits_cache_path(cache, url),
-                     Dict{String,Any}("url"=>url, "commits"=>commits))
+    @lock cache.lock begin
+        commits = _repo_commits(cache, url)
+        get(commits, tree, nothing) == commit && return
+        commits[tree] = String(commit)
+        _save_cache_file(_commits_cache_path(cache, url),
+                         Dict{String,Any}("url"=>url, "commits"=>commits))
+    end
     return
 end
 
@@ -98,14 +102,21 @@ _tree_info(cache::InfoCache, tree) =
 Return the information named `key` for the content of tree `tree`.
 If the information is not in the cache, compute it with `f()`
 (the result must be representable in TOML) and save it in the cache.
+The returned value must not be mutated.
 """
 function get_tree_info(f, cache::InfoCache, tree::AbstractString, key)
-    info = _tree_info(cache, tree)
-    if haskey(info, key)
-        return info[key]
+    @lock cache.lock begin
+        info = _tree_info(cache, tree)
+        if haskey(info, key)
+            return info[key]
+        end
     end
+    # Compute without holding the lock so that other threads can make progress.
     val = f()
-    info[key] = val
-    _save_cache_file(_tree_cache_path(cache, tree), info)
+    @lock cache.lock begin
+        info = _tree_info(cache, tree)
+        info[key] = val
+        _save_cache_file(_tree_cache_path(cache, tree), info)
+    end
     return val
 end

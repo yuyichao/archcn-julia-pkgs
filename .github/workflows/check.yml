@@ -53,7 +53,7 @@ jobs:
         id: check
         env:
           JL_ARCHCN_INFO_CACHE: ${{ runner.temp }}/archcn-info-cache
-        run: julia scripts/check_update.jl
+        run: julia --threads=auto scripts/check_update.jl
       - name: Save package info cache
         if: always()
         continue-on-error: true

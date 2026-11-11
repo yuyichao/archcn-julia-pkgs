@@ -6,6 +6,33 @@ import LibGit2
 # The same repopath may be shared by multiple URLs (packages with the same name)
 # so the URL is part of the key.
 const _fetched_repos = Set{Tuple{String,String}}()
+const _fetched_repos_lock = ReentrantLock()
+
+_is_fetched(repopath, url) =
+    @lock _fetched_repos_lock (repopath, url) in _fetched_repos
+
+# Lock for each repo directory.
+# Everything that uses a repo directory (fetching, checking out
+# and reading the checked out files) must hold the lock for the directory.
+const _repo_locks = Dict{String,ReentrantLock}()
+const _repo_locks_lock = ReentrantLock()
+
+function with_repo_lock(f, repopath)
+    l = @lock _repo_locks_lock get!(ReentrantLock, _repo_locks, repopath)
+    return @lock l f()
+end
+
+"""
+    with_repo(f, url, name, workdir; need=nothing)
+
+Call `f(repo)` with the repo for `url` (see `get_repo`)
+while holding the lock for the repo directory.
+"""
+function with_repo(f, url, name, workdir; need=nothing)
+    return with_repo_lock(joinpath(workdir, name)) do
+        return LibGit2.with(f, get_repo(url, name, workdir, need=need))
+    end
+end
 
 function _fetch_repo(repo, repopath, url)
     LibGit2.with(LibGit2.GitRemoteAnon(repo, url)) do remote
@@ -13,7 +40,7 @@ function _fetch_repo(repo, repopath, url)
         LibGit2.fetch(remote, String["+refs/heads/*:refs/remotes/origin/*"],
                       msg="from $(url)", options=fetch_opts)
     end
-    push!(_fetched_repos, (repopath, url))
+    @lock _fetched_repos_lock push!(_fetched_repos, (repopath, url))
     return
 end
 
@@ -38,7 +65,7 @@ function _open_repo(repopath, url, need)
         # Skip fetching if we already have what we need
         # or if the repo was already fetched from the same URL in this run.
         if (need !== nothing && _has_object(repo, need)) ||
-            (repopath, url) in _fetched_repos
+            _is_fetched(repopath, url)
             return repo
         end
         _fetch_repo(repo, repopath, url)
@@ -55,6 +82,9 @@ end
 Open (or clone) the repo for `url` at `workdir/name`.
 The repo is fetched from `url` unless it was already fetched from `url`
 in this run or the object `need` (if not `nothing`) already exists locally.
+
+The caller must hold the lock for the repo directory (see `with_repo_lock`)
+if this may be called from multiple threads.
 """
 function get_repo(url, name, workdir; need=nothing)
     repopath = joinpath(workdir, name)
@@ -66,10 +96,10 @@ function get_repo(url, name, workdir; need=nothing)
         rm(repopath, recursive=true, force=true)
     end
     # Anything previously fetched into this path is gone now.
-    filter!(k->k[1] != repopath, _fetched_repos)
+    @lock _fetched_repos_lock filter!(k->k[1] != repopath, _fetched_repos)
     fetch_opts = LibGit2.FetchOptions(download_tags=true)
     repo = LibGit2.clone(url, repopath, LibGit2.CloneOptions(fetch_opts=fetch_opts))
-    push!(_fetched_repos, (repopath, url))
+    @lock _fetched_repos_lock push!(_fetched_repos, (repopath, url))
     return repo
 end
 
@@ -262,7 +292,7 @@ function find_package_commit(url, name, workdir, branch, tree, last_commit)
         last_commit = LibGit2.GitHash(last_commit)
     end
     tree = LibGit2.GitHash(tree)
-    return LibGit2.with(get_repo(url, name, workdir)) do repo
+    return with_repo(url, name, workdir) do repo
         remote_head = find_remote_head_commit(repo, url, branch)
         if remote_head === nothing && branch !== nothing
             @warn "Cannot find remote branch $(branch) at $(url), try remote default branch."
