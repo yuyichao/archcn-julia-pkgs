@@ -389,3 +389,15 @@ pkg = "aws_c_io_jll"
 version = "1.0 - 1.1"
 dep = "aws_c_cal_jll"
 depversion = "1.0 - 1.1"
+
+[[Overrides.DepsVersion]]
+pkg = "aws_c_s3_jll"
+version = "1.0 - 1.3"
+dep = "aws_c_auth_jll"
+depversion = "1.0 - 1.1"
+
+[[Overrides.DepsVersion]]
+pkg = "aws_c_s3_jll"
+version = "1.0 - 1.3"
+dep = "aws_c_http_jll"
+depversion = "1.0 - 1.1"
