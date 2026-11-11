@@ -365,3 +365,27 @@ pkg = "ModelingToolkitBase"
 version = "1.0.0 - 1.68.0"
 dep = "SymbolicUtils"
 depversion = "4.45 - 4"
+
+[[Overrides.DepsVersion]]
+pkg = "aws_c_auth_jll"
+version = "1.0"
+dep = "aws_c_http_jll"
+depversion = "1.0 - 1.1"
+
+[[Overrides.DepsVersion]]
+pkg = "aws_c_http_jll"
+version = "1.0 - 1.1"
+dep = "aws_c_io_jll"
+depversion = "1.0 - 1.1"
+
+[[Overrides.DepsVersion]]
+pkg = "aws_c_io_jll"
+version = "1.0 - 1.1"
+dep = "aws_c_common_jll"
+depversion = "1.0 - 1.1"
+
+[[Overrides.DepsVersion]]
+pkg = "aws_c_io_jll"
+version = "1.0 - 1.1"
+dep = "aws_c_cal_jll"
+depversion = "1.0 - 1.1"
