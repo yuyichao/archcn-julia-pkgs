@@ -1,4 +1,11 @@
 
+[[Issues."9.55.1+0"]]
+dependency = []
+dependent = ["ImageMagick_jll [c73af94c-d91f-53ed-93a7-00f77d67a9d7]", "Latexify [23fbe1c1-3f47-55db-b15f-69d7ec21a316]"]
+latest = "10.8.0+0"
+type = "not_on_latest"
+version = "9.55.1+0"
+
 [JLL.products]
 executable = ["gs", "gsc", "gsx"]
 file = ["dvipdf", "eps2eps", "gsbj", "gsdj", "gsdj500", "gserrors_h", "gslj", "gslp", "gsnd", "iapi_h", "ierrors_h", "pdf2dsc", "pdf2ps", "pf2afm", "pfbtopfa", "pphs", "printafm", "ps2ascii", "ps2epsi", "ps2pdf", "ps2pdf12", "ps2pdf13", "ps2pdf14", "ps2pdfwr", "ps2ps", "ps2ps2"]
