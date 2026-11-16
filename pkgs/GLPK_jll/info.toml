@@ -1,11 +1,4 @@
 
-[[Issues."5.0.1+1"]]
-dependency = []
-dependent = ["GLPK [60bf3e95-4087-53dc-ae20-288a0d20c6a6]"]
-latest = "5.0.2+0"
-type = "not_on_latest"
-version = "5.0.1+1"
-
 [JLL.products]
 library = ["libglpk"]
 [Pkg]
@@ -14,4 +7,4 @@ name = "GLPK_jll"
 uuid = "e8aa6df9-e6ca-548a-97ff-1f85fc5b8b98"
 
 [Status]
-version = "5.0.1+1"
+version = "5.0.2+0"

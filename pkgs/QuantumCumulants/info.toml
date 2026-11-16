@@ -2,7 +2,7 @@
 [[Issues."0.7.1"]]
 dependency = ["SciMLBase [0bca4576-84f4-4d90-8ffe-ffa030f20462]", "SecondQuantizedAlgebra [f7aa4685-e143-4cb6-a7f3-073579757907]"]
 dependent = []
-latest = "0.7.2"
+latest = "0.8.0"
 type = "not_on_latest"
 version = "0.7.1"
 [Pkg]

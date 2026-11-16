@@ -145,15 +145,15 @@ type = "missing_deps"
     name = "oneAPI"
     uuid = "8f75cd03-7ff8-4ecb-9b8f-daf728133b1b"
 
-[[Issues."0.9.46"]]
+[[Issues."0.9.47"]]
 dependency = []
 dependent = ["OpenCL [08131aa3-fb12-5dee-8b74-c09406e224a2]"]
 latest = "0.10.7"
 type = "not_on_latest"
-version = "0.9.46"
+version = "0.9.47"
 [Pkg]
 name = "KernelAbstractions"
 uuid = "63c18a36-062a-441e-b654-da1e3ab1ce7c"
 
 [Status]
-version = "0.9.46"
+version = "0.9.47"
