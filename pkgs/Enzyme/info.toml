@@ -5,6 +5,19 @@ type = "missing_deps"
     [[Issues."0.13.220".weak_deps]]
     name = "CUDA"
     uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
+[[Issues."0.13.220"]]
+dependency = ["GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55]", "LLVM [929cbde3-209d-540e-8aea-75f648917ca0]"]
+dependent = []
+latest = "0.13.221"
+type = "not_on_latest"
+version = "0.13.220"
+
+[[Issues."0.13.221"]]
+type = "missing_deps"
+
+    [[Issues."0.13.221".weak_deps]]
+    name = "CUDA"
+    uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
 [Pkg]
 name = "Enzyme"
 required = true
